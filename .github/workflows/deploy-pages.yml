@@ -43,6 +43,7 @@ jobs:
           cp -r web/* dist/
           mkdir -p dist/icons
           cp -r icons/* dist/icons/ || true
+          touch dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
