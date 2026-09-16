@@ -13,4 +13,4 @@ const jsonSchema = zodToJsonSchema(appManifestSchema, {
 });
 
 writeFileSync(targetPath, JSON.stringify(jsonSchema, null, 2) + "\n");
-console.log(`✅ Generated JSON Schema at ${targetPath}`);
+console.log(`Generated JSON Schema at ${targetPath}`);

@@ -188,7 +188,7 @@ async function importApp(appEntry: { name: string; slug: string; repo: string; u
 
   let plaPath = candidates.find((c) => existsSync(c));
   if (!plaPath) {
-    console.warn(`⚠️ [${slug}]: No match in Portable-Linux-Apps apps/`);
+    console.warn(`WARN [${slug}]: No match in Portable-Linux-Apps apps/`);
     return false;
   }
 
@@ -314,13 +314,13 @@ async function importApp(appEntry: { name: string; slug: string; repo: string; u
 
   const validation = appManifestSchema.safeParse(manifest);
   if (!validation.success) {
-    console.error(`❌ Validation failed for generated manifest ${slug}:`, validation.error.format());
+    console.error(`FAIL Validation failed for generated manifest ${slug}:`, validation.error.format());
     return false;
   }
 
   await mkdir(targetAppsDir, { recursive: true });
   await writeFile(resolve(targetAppsDir, `${slug}.json`), JSON.stringify(manifest, null, 2) + "\n");
-  console.log(`✅ [${slug}]: Successfully imported -> apps/${slug}.json`);
+  console.log(`OK [${slug}]: apps/${slug}.json`);
   return true;
 }
 
@@ -330,7 +330,7 @@ async function main() {
   const limitIdx = args.indexOf("--limit");
   const limit = limitIdx !== -1 ? parseInt(args[limitIdx + 1], 10) : 18; // Default pilot batch: 18 apps
 
-  console.log(`📥 Starting Portable-Linux-Apps Ingestion (Limit: ${isAll ? "ALL" : limit})...\n`);
+  console.log(`Starting Portable-Linux-Apps Ingestion (Limit: ${isAll ? "ALL" : limit})...\n`);
 
   if (!existsSync(statusJsonPath)) {
     console.error("status.json not found. Run `bun run sync` first.");
@@ -387,7 +387,7 @@ async function main() {
     if (ok) successCount++;
   }
 
-  console.log(`\n🎉 Ingestion complete! Successfully created ${successCount} manifest(s) and icons.`);
+  console.log(`\nIngestion complete: ${successCount} manifest(s) and icons created.`);
 }
 
 main().catch((err) => {

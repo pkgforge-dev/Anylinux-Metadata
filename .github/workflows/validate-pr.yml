@@ -47,8 +47,8 @@ jobs:
             const appsDir = path.resolve('apps');
             const files = fs.readdirSync(appsDir).filter(f => f.endsWith('.json'));
             
-            let comment = `### 🚀 Anylinux-Metadata Review Preview\n\n`;
-            comment += `✅ **Validation:** All tests and strict schema checks passed successfully!\n\n`;
+            let comment = `### AnyLinux Metadata Verification Report\n\n`;
+            comment += `**Status:** All schema validations and unit tests passed.\n\n`;
 
             for (const file of files.slice(0, 3)) {
               try {

@@ -13,7 +13,7 @@ async function validateAll() {
   }
 
   const files = (await readdir(appsDir)).filter((f) => f.endsWith(".json"));
-  console.log(`\n🔍 Validating ${files.length} application manifest(s) in apps/...\n`);
+  console.log(`\nValidating ${files.length} application manifest(s) in apps/...\n`);
 
   let errorCount = 0;
   const seenSlugs = new Set<string>();
@@ -26,13 +26,13 @@ async function validateAll() {
     // 1. Slug format validation
     const slugCheck = applicationSlugSchema.safeParse(slug);
     if (!slugCheck.success) {
-      console.error(`❌ [${file}]: Invalid filename slug "${slug}". Must be lowercase alphanumeric with hyphens.`);
+      console.error(`FAIL [${file}]: Invalid filename slug "${slug}". Must be lowercase alphanumeric with hyphens.`);
       errorCount++;
       continue;
     }
 
     if (seenSlugs.has(slug)) {
-      console.error(`❌ [${file}]: Duplicate slug "${slug}".`);
+      console.error(`FAIL [${file}]: Duplicate slug "${slug}".`);
       errorCount++;
     }
     seenSlugs.add(slug);
@@ -44,7 +44,7 @@ async function validateAll() {
       content = await readFile(filePath, "utf8");
       json = JSON.parse(content);
     } catch (err: any) {
-      console.error(`❌ [${file}]: Invalid JSON syntax - ${err.message}`);
+      console.error(`FAIL [${file}]: Invalid JSON syntax - ${err.message}`);
       errorCount++;
       continue;
     }
@@ -52,10 +52,10 @@ async function validateAll() {
     // 3. Zod schema validation
     const result = appManifestSchema.safeParse(json);
     if (!result.success) {
-      console.error(`❌ [${file}]: Schema validation failed:`);
+      console.error(`FAIL [${file}]: Schema validation failed:`);
       for (const issue of result.error.issues) {
         const path = issue.path.join(".");
-        console.error(`   • ${path || "root"}: ${issue.message}`);
+        console.error(`  - ${path || "root"}: ${issue.message}`);
       }
       errorCount++;
       continue;
@@ -66,7 +66,7 @@ async function validateAll() {
 
     // 4. Global AppStream ID uniqueness
     if (seenAppIds.has(appId)) {
-      console.error(`❌ [${file}]: Duplicate AppStream ID "${appId}" (already used in ${seenAppIds.get(appId)}).`);
+      console.error(`FAIL [${file}]: Duplicate AppStream ID "${appId}" (already used in ${seenAppIds.get(appId)}).`);
       errorCount++;
     } else {
       seenAppIds.set(appId, file);
@@ -77,17 +77,17 @@ async function validateAll() {
     if (iconUrl.includes("Anylinux-Metadata/main/icons/") || iconUrl.includes("Anylinux-Metadata/master/icons/")) {
       const iconFilename = iconUrl.split("/").pop();
       if (iconFilename && !existsSync(resolve(iconsDir, iconFilename))) {
-        console.error(`❌ [${file}]: Referenced icon "${iconFilename}" not found in icons/ directory.`);
+        console.error(`FAIL [${file}]: Referenced icon "${iconFilename}" not found in icons/ directory.`);
         errorCount++;
       }
     }
   }
 
   if (errorCount > 0) {
-    console.error(`\n🚨 Validation failed with ${errorCount} error(s).\n`);
+    console.error(`\nValidation failed with ${errorCount} error(s).\n`);
     process.exit(1);
   } else {
-    console.log(`\n✨ All ${files.length} application manifests passed strict validation!\n`);
+    console.log(`All ${files.length} application manifests passed validation.\n`);
   }
 }
 

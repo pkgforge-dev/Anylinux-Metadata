@@ -1,93 +1,105 @@
-# Contributing to AnyLinux-Metadata
+# Contributing to AnyLinux Metadata
 
-Thank you for helping build the definitive metadata database for AnyLinux AppImages!
-Our goal is to make contributing effortless for everyone—including non-technical users.
+This document outlines the workflow and quality standards for contributing application metadata to the AnyLinux Metadata database.
 
 ---
 
-## 🎯 Contribution Options
+## Contribution Channels
 
-### Option 1: Web-Based Metadata Editor (Easiest)
-1. Open the [AnyLinux Metadata Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
-2. Fill in the app details. You'll get real-time feedback, preview the app card, and see the rendered description.
-3. Click **"Submit to GitHub Issue"** to open a pre-filled submission form, or **"Copy JSON"** to submit a PR.
+### 1. Web Metadata Editor
 
-### Option 2: GitHub Issue Form (No Git Required)
-1. Go to [New Issue](../../issues/new/choose).
-2. Choose **✨ Add New App Metadata**.
-3. Fill in the form fields.
-4. Submit the issue! Our automated GitHub Action bot will parse your form, validate the data, and automatically create a Pull Request on your behalf.
+Contributors may use the browser-based [AnyLinux Metadata Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/). The editor provides:
+- Client-side validation against the canonical schema.
+- Real-time syntax checking (such as trailing period detection on summaries).
+- AST generation for descriptions and list items.
+- Live asset previews for icons and screenshots.
+- Direct export to a pre-filled GitHub issue or downloadable JSON manifest.
 
-### Option 3: Direct Pull Request (For Developers)
-1. Clone the repository:
+### 2. GitHub Issue Forms
+
+For contributions submitted through the web interface without using Git:
+1. Open a new issue using the [Application Submission Form](../../issues/new?template=add-app.yml).
+2. Complete the required fields (Name, Slug, Reverse-DNS ID, Summary, Description, License, Category, and URLs).
+3. Submit the issue. An automated workflow validates the payload and opens a pull request on your behalf.
+
+### 3. Direct Pull Request
+
+For contributors using Git:
+1. Fork and clone the repository:
    ```bash
    git clone https://github.com/pkgforge-dev/Anylinux-Metadata.git
    cd Anylinux-Metadata
    bun install
    ```
-2. Check [STATUS.md](STATUS.md) to pick an unassigned app from the pending backlog.
-3. Create your manifest in `apps/<slug>.json`. Add `$schema` at the top for instant autocompletion in VS Code / Neovim / Cursor:
+2. Check [STATUS.md](STATUS.md) to select an application from the pending backlog.
+3. Create the manifest file at `apps/<slug>.json`. Reference the schema at the top of the file:
    ```json
    {
      "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
      "appstream": { ... }
    }
    ```
-4. Place a 128x128 or 256x256 PNG or SVG icon in `icons/<slug>.png`.
-5. Run the validator:
+4. Place a clean 128x128 or 256x256 PNG or SVG icon at `icons/<slug>.png`.
+5. Validate the manifest locally:
    ```bash
    bun run validate
    ```
-6. Commit and open a Pull Request.
+6. Commit the changes and open a pull request.
 
 ---
 
-## 📐 Metadata Style Guidelines
+## Metadata Standards and Guidelines
 
-To keep our metadata equal to or exceeding Flathub standards, please observe the following conventions:
+Submissions must conform to the Freedesktop AppStream 1.0 standard and project guidelines.
 
-### 1. Reverse-DNS Application ID (`metadata.id`)
-- Use a valid reverse-DNS ID following the Freedesktop AppStream specification:
-  - If upstream is on GitHub: `io.github.<owner>.<repo>` (e.g. `io.github.ghostty_org.ghostty`).
-  - If upstream has its own domain: `org.<domain>.<app>` (e.g. `org.ladybird.ladybird`).
-- Never use simple un-namespaced IDs like `ghostty` or `myapp`.
+### Application Slug
+- The manifest filename must match `apps/<slug>.json`.
+- Slugs must be lowercase alphanumeric with hyphens (regex: `^[a-z0-9]+(?:-[a-z0-9]+)*$`).
+- Examples: `ghostty`, `12to11`, `daggerfall-unity`.
 
-### 2. Summary (`metadata.summary`)
-- Single, short sentence (under 200 characters).
-- **Must NOT end with a period (`.`)** per AppStream guidelines.
-- Capitalize properly (e.g. *"Fast, feature-rich terminal emulator"*).
+### Reverse-DNS Application ID (`metadata.id`)
+- Must follow Freedesktop reverse-DNS naming conventions.
+- GitHub-hosted upstreams: `io.github.<owner>.<repo>` (replace hyphens with underscores).
+- Custom domains: `org.<domain>.<app>` or `com.<domain>.<app>`.
+- Do not use bare un-namespaced identifiers.
 
-### 3. Description AST (`metadata.description`)
-- Descriptions are stored as structured semantic blocks:
+### Summary (`metadata.summary`)
+- Single, concise sentence under 200 characters describing the core function of the program.
+- **Must not end with a period (`.`)**, per the AppStream specification.
+- Capitalize the initial letter. Avoid generic phrases such as "an app that".
+
+### Description (`metadata.description`)
+- Descriptions must be structured as semantic AST blocks:
   - Paragraph: `{ "type": "paragraph", "content": [{ "type": "text", "value": "..." }] }`
-  - Unordered list: `{ "type": "unordered-list", "items": [ [ { "type": "text", "value": "Feature 1" } ] ] }`
-- Avoid redundant marketing fluff or repeating the app name excessively.
+  - Unordered list: `{ "type": "unordered-list", "items": [ [ { "type": "text", "value": "..." } ] ] }`
+- Avoid redundant marketing phrases and avoid repeatedly naming the application.
 
-### 4. License Expression (`metadata.projectLicense`)
-- Must be a valid [SPDX license expression](https://spdx.org/licenses/) (e.g. `MIT`, `GPL-3.0-or-later`, `Apache-2.0`, `BSD-2-Clause`, `LGPL-3.0-only`).
+### License (`metadata.projectLicense`)
+- Must be a valid [SPDX 2.0+ license identifier](https://spdx.org/licenses/) (e.g. `MIT`, `GPL-3.0-or-later`, `Apache-2.0`, `BSD-2-Clause`, `LGPL-3.0-only`).
+- Proprietary or unlisted licenses must be explicitly declared where applicable.
 
-### 5. Categories (`metadata.categories`)
+### Categories (`metadata.categories`)
 - Must contain at least one registered Freedesktop Main Category:
   - `AudioVideo`, `Development`, `Education`, `Game`, `Graphics`, `Network`, `Office`, `Science`, `Settings`, `System`, `Utility`.
-- Optional subcategories can be appended (e.g. `TerminalEmulator`, `Emulator`, `Chat`, `Viewer`).
+- Relevant subcategories may be included (e.g. `TerminalEmulator`, `Emulator`, `Chat`, `Viewer`).
 
-### 6. Media Assets
-- **Icon**: High-resolution PNG (>= 128x128) or vector SVG.
-- **Screenshots**: 1 to 5 screenshots with clear captions and direct HTTPS image URLs.
+### Media Assets
+- **Icon**: PNG (minimum 128x128 resolution) or vector SVG. Must be placed in `icons/<slug>.png` and referenced via its canonical repository URL.
+- **Screenshots**: Between 1 and 5 screenshots with descriptive captions and direct HTTPS image sources.
 
 ---
 
-## 🧪 Testing Your Changes
+## Local Verification
 
-Before submitting, always verify your changes locally:
+Run the test and validation commands prior to committing:
 
 ```bash
-# Run unit tests
+# Execute schema unit tests
 bun test
 
-# Run manifest validation
+# Validate all manifests against schema and local icon assets
 bun run validate
 
-# Test downstream export
+# Verify catalog compilation
 bun run export
 ```

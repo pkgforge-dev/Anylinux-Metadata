@@ -1,13 +1,13 @@
-name: "✨ Add New App Metadata"
-description: "Submit metadata for an AnyLinux AppImage that is not on Flathub"
+name: "Add Application Metadata"
+description: "Submit metadata for an AnyLinux AppImage that is not distributed via Flathub"
 title: "feat(app): add metadata for <app-name>"
 labels: ["app-submission", "automated-pr"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for contributing to **Anylinux-Metadata**!
-        Fill out the form below. An automated GitHub Action will convert this issue into a Pull Request with full validation checks!
+        Submit application metadata for the AnyLinux Metadata catalog.
+        Submissions will be automatically parsed, validated against the schema, and converted into a pull request.
   - type: input
     id: name
     attributes:

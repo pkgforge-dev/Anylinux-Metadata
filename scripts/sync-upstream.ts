@@ -112,7 +112,7 @@ async function checkFlathubPresence(entry: AppImageEntry, flathubIds: Set<string
 }
 
 async function main() {
-  console.log("📡 Running Anylinux-Metadata Upstream Synchronization...\n");
+  console.log("Synchronizing AnyLinux-Metadata with upstream and Flathub...\n");
 
   const apps = await getAnylinuxApps();
   console.log(`Found ${apps.length} applications in pkgforge-dev/Anylinux-AppImages`);
@@ -160,12 +160,12 @@ async function main() {
   const targetTotal = targetCompleted.length + targetPending.length;
   const progressPercent = targetTotal > 0 ? Math.round((targetCompleted.length / targetTotal) * 100) : 0;
 
-  console.log(`\n📊 Status Summary:`);
-  console.log(`   • Total Anylinux AppImages: ${apps.length}`);
-  console.log(`   • Flathub Covered: ${flathubCovered.length}`);
-  console.log(`   • Target Non-Flathub Apps: ${targetTotal}`);
-  console.log(`   • Completed in Anylinux-Metadata: ${targetCompleted.length} (${progressPercent}%)`);
-  console.log(`   • Pending Backlog: ${targetPending.length}\n`);
+  console.log(`\nStatus Summary:`);
+  console.log(`  Total AnyLinux AppImages: ${apps.length}`);
+  console.log(`  Flathub Covered: ${flathubCovered.length}`);
+  console.log(`  Target Non-Flathub Apps: ${targetTotal}`);
+  console.log(`  Completed in AnyLinux-Metadata: ${targetCompleted.length} (${progressPercent}%)`);
+  console.log(`  Pending Backlog: ${targetPending.length}\n`);
 
   // Write status.json
   const statusData = {
@@ -183,19 +183,19 @@ async function main() {
   await writeFile(statusJsonPath, JSON.stringify(statusData, null, 2) + "\n");
 
   // Write STATUS.md
-  let md = `# Anylinux-Metadata Status & Backlog Dashboard\n\n`;
+  let md = `# Catalog Coverage and Status Dashboard\n\n`;
   md += `*Last synchronized: ${new Date().toISOString().split("T")[0]}*\n\n`;
   md += `| Metric | Count | Details |\n`;
   md += `| :--- | :--- | :--- |\n`;
-  md += `| **Total Anylinux AppImages** | \`${apps.length}\` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |\n`;
+  md += `| **Total AnyLinux AppImages** | \`${apps.length}\` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |\n`;
   md += `| **Flathub Covered** | \`${flathubCovered.length}\` | Handled directly by Flathub AppStream |\n`;
   md += `| **Target Database Apps** | \`${targetTotal}\` | Exclusive non-Flathub apps requiring metadata |\n`;
-  md += `| **Completed Manifests** | \`${targetCompleted.length}\` (\`${progressPercent}%\`) | Fully validated & ready |\n`;
-  md += `| **Pending Backlog** | \`${targetPending.length}\` | Needs contribution / review |\n\n`;
+  md += `| **Completed Manifests** | \`${targetCompleted.length}\` (\`${progressPercent}%\`) | Fully validated and ready |\n`;
+  md += `| **Pending Backlog** | \`${targetPending.length}\` | Pending manifest creation or verification |\n\n`;
 
-  md += `## 🚀 Completed Applications (${targetCompleted.length})\n\n`;
+  md += `## Completed Applications (${targetCompleted.length})\n\n`;
   if (targetCompleted.length === 0) {
-    md += `*No applications completed yet. Run \`bun run import\` to scaffold from Portable-Linux-Apps!*\n\n`;
+    md += `*No applications completed yet. Run \`bun run import\` to scaffold from Portable-Linux-Apps.*\n\n`;
   } else {
     md += `| Application | Manifest | Release Source |\n`;
     md += `| :--- | :--- | :--- |\n`;
@@ -205,19 +205,19 @@ async function main() {
     md += `\n`;
   }
 
-  md += `## 📋 Pending Backlog (${targetPending.length})\n\n`;
-  md += `Want to contribute? Pick an application below and submit its metadata using the [Add App Issue Template](../../issues/new?template=add-app.yml) or via the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/)!\n\n`;
+  md += `## Pending Backlog (${targetPending.length})\n\n`;
+  md += `To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).\n\n`;
   md += `| Application | Slug | Release Source |\n`;
   md += `| :--- | :--- | :--- |\n`;
   for (const a of targetPending.slice(0, 100)) {
     md += `| **${a.name}** | \`${a.slug}\` | [\`${a.repo}\`](${a.url}) |\n`;
   }
   if (targetPending.length > 100) {
-    md += `\n*... and ${targetPending.length - 100} more apps.*\n`;
+    md += `\n*... and ${targetPending.length - 100} more applications.*\n`;
   }
 
   await writeFile(statusMdPath, md);
-  console.log(`✅ Updated STATUS.md and status.json`);
+  console.log(`Updated STATUS.md and status.json`);
 }
 
 main().catch((err) => {

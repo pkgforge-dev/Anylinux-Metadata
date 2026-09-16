@@ -261,8 +261,8 @@ function escapeHtml(str) {
 btnCopyJson.addEventListener("click", () => {
   if (!currentManifest) return;
   navigator.clipboard.writeText(JSON.stringify(currentManifest, null, 2));
-  btnCopyJson.innerText = "✅ Copied!";
-  setTimeout(() => { btnCopyJson.innerText = "📋 Copy JSON"; }, 2000);
+  btnCopyJson.innerText = "Copied to Clipboard";
+  setTimeout(() => { btnCopyJson.innerText = "Copy JSON"; }, 2000);
 });
 
 // Download JSON

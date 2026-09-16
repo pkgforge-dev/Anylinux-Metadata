@@ -1,16 +1,16 @@
-# Anylinux-Metadata Status & Backlog Dashboard
+# Catalog Coverage and Status Dashboard
 
 *Last synchronized: 2026-09-16*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total Anylinux AppImages** | `445` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `445` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `264` | Handled directly by Flathub AppStream |
 | **Target Database Apps** | `181` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `147` (`81%`) | Fully validated & ready |
-| **Pending Backlog** | `34` | Needs contribution / review |
+| **Completed Manifests** | `147` (`81%`) | Fully validated and ready |
+| **Pending Backlog** | `34` | Pending manifest creation or verification |
 
-## 🚀 Completed Applications (147)
+## Completed Applications (147)
 
 | Application | Manifest | Release Source |
 | :--- | :--- | :--- |
@@ -162,9 +162,9 @@
 | **yt-dlp** | [`apps/yt-dlp.json`](apps/yt-dlp.json) | [`pkgforge-dev/yt-dlp-AppImage`](https://github.com/pkgforge-dev/yt-dlp-AppImage) |
 | **Zod-Engine** | [`apps/zod-engine.json`](apps/zod-engine.json) | [`pkgforge-dev/Zod-Engine-AppImage`](https://github.com/pkgforge-dev/Zod-Engine-AppImage) |
 
-## 📋 Pending Backlog (34)
+## Pending Backlog (34)
 
-Want to contribute? Pick an application below and submit its metadata using the [Add App Issue Template](../../issues/new?template=add-app.yml) or via the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/)!
+To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
 | Application | Slug | Release Source |
 | :--- | :--- | :--- |

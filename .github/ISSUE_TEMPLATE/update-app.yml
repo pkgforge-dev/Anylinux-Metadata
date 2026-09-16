@@ -1,4 +1,4 @@
-name: "✏️ Update Existing App Metadata"
+name: "Update Application Metadata"
 description: "Propose improvements or corrections for an existing application manifest"
 title: "fix(app): update metadata for <app-slug>"
 labels: ["app-update", "automated-pr"]

@@ -38,7 +38,7 @@ async function exportCatalog() {
   await mkdir(distDir, { recursive: true });
 
   const files = (await readdir(appsDir)).filter((f) => f.endsWith(".json")).sort();
-  console.log(`📦 Compiling catalog from ${files.length} application manifests...\n`);
+  console.log(`Compiling catalog from ${files.length} application manifests...\n`);
 
   const apps: Record<string, AppManifest> = {};
   let xmlComponents = "";
@@ -105,7 +105,7 @@ async function exportCatalog() {
     apps,
   };
   await writeFile(resolve(distDir, "catalog.json"), JSON.stringify(catalogJson, null, 2) + "\n");
-  console.log(`✅ Generated dist/catalog.json (${(Buffer.byteLength(JSON.stringify(catalogJson)) / 1024).toFixed(1)} KB)`);
+  console.log(`Generated dist/catalog.json (${(Buffer.byteLength(JSON.stringify(catalogJson)) / 1024).toFixed(1)} KB)`);
 
   // 2. Write dist/appstream.xml & dist/appstream.xml.gz
   const appstreamXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -115,7 +115,7 @@ ${xmlComponents}</components>
   await writeFile(resolve(distDir, "appstream.xml"), appstreamXml);
   const compressed = gzipSync(Buffer.from(appstreamXml, "utf8"));
   await writeFile(resolve(distDir, "appstream.xml.gz"), compressed);
-  console.log(`✅ Generated dist/appstream.xml and dist/appstream.xml.gz (${(compressed.length / 1024).toFixed(1)} KB compressed)`);
+  console.log(`Generated dist/appstream.xml and dist/appstream.xml.gz (${(compressed.length / 1024).toFixed(1)} KB compressed)`);
 }
 
 exportCatalog().catch((err) => {
