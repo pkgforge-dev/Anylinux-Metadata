@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.brave.brave_browser_brave_origin",
+      "name": "Brave Origin",
+      "summary": "Brave Origin is a stripped-down, debloated variant of the Brave web browser",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Brave Origin is a stripped-down, debloated variant of the Brave web browser. It removes cryptocurrency wallets, sponsored rewards, VPN promotions, and other non-essential additions while preserving Brave's core privacy shields and performance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Streamlined browsing experience free of cryptocurrency and Web3 features"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in ad-blocking and privacy tracking protection enabled by default"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fast Chromium-based rendering engine with low memory footprint"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete support for Chrome Web Store extensions and themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Private browsing mode with built-in fingerprinting protections"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Brave Origin Developers",
+        "url": "https://github.com/brave/brave-browser"
+      },
+      "homepage": "https://github.com/brave/brave-browser",
+      "repository": "https://github.com/pkgforge-dev/Brave-Origin-AppImage",
+      "keywords": [
+        "brave-origin",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/brave-origin.png",
+      "screenshots": [
+        {
+          "caption": "Brave Origin interface screenshot 1",
+          "source": "https://github.com/user-attachments/assets/e40de7aa-8605-4a81-9487-582f13f77f0c"
+        },
+        {
+          "caption": "Brave Origin interface screenshot 2",
+          "source": "https://github.com/user-attachments/assets/2e291e68-782d-4eeb-878e-a72f42b57867"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Brave-Origin-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

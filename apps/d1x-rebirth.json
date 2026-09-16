@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.dxx_rebirth.dxx_rebirth_d1x_rebirth",
+      "name": "D1X-Rebirth",
+      "summary": "D1X-Rebirth is an open-source source port of the classic six-degrees-of-freedom first-person shooter Descent",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "D1X-Rebirth is an open-source source port of the classic six-degrees-of-freedom first-person shooter Descent. It upgrades the original 1995 Parallax Software title to run natively on modern operating systems with high-definition rendering."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full 6DoF (six degrees of freedom) zero-gravity movement and flight combat"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "OpenGL hardware-accelerated rendering with arbitrary screen resolutions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern gamepad, flight stick, and mouse-look control configuration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced multiplayer networking supporting TCP/IP and UDP matches"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with the original Descent mission data and custom add-ons"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "D1X-Rebirth Developers",
+        "url": "https://github.com/dxx-rebirth/dxx-rebirth"
+      },
+      "homepage": "https://github.com/dxx-rebirth/dxx-rebirth",
+      "repository": "https://github.com/pkgforge-dev/d1x-rebirth-AppImage",
+      "keywords": [
+        "d1x-rebirth",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/d1x-rebirth.png",
+      "screenshots": [
+        {
+          "caption": "D1X-Rebirth interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/D1X-Rebirth-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

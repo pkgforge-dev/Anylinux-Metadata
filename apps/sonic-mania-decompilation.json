@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rubberduckycooly.sonic_mania_decompilation",
+      "name": "Sonic Mania Decompilation",
+      "summary": "Sonic Mania Decompilation is a native PC port created from the byte-accurate decompilation of Sonic Mania (2017) and the Retro Engine v5",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Sonic Mania Decompilation is a native PC port created from the byte-accurate decompilation of Sonic Mania (2017) and the Retro Engine v5. It runs natively on Linux with zero overhead and full mod support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native Linux execution delivering responsive 60 FPS platforming action"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and ultrawide display support with scalable UI elements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete support for the Sonic Mania Plus expansion and Encore Mode"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Rich modding ecosystem with integrated mod manager support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern gamepad and arcade fight-stick compatibility with rumble feedback"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Sonic Mania Decompilation Developers",
+        "url": "https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation"
+      },
+      "homepage": "https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation",
+      "repository": "https://github.com/pkgforge-dev/Sonic-Mania-Decompilation-AppImage",
+      "keywords": [
+        "sonic-mania-decompilation",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sonic-mania-decompilation.png",
+      "screenshots": [
+        {
+          "caption": "Sonic Mania Decompilation interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Sonic-Mania-Decompilation-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

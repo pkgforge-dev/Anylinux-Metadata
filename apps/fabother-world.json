@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.fabiensanglard.another_world_bytecode_interpreter_fabother_world",
+      "name": "Fabother World",
+      "summary": "Fabother World is an open-source bytecode interpreter for Another World (Out of This World), the revolutionary 1991 cinematic action-adventure game",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Fabother World is an open-source bytecode interpreter for Another World (Out of This World), the revolutionary 1991 cinematic action-adventure game designed by Éric Chahi. It executes the original game bytecode on modern hardware."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Faithful recreation of cinematic vector animations and gameplay scenes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native cross-platform execution with smooth performance"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Scalable high-resolution display rendering while preserving artistic integrity"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate digital sound and atmospheric musical score playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Uses original game data files from DOS or Amiga editions"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Fabother World Developers",
+        "url": "https://github.com/fabiensanglard/Another-World-Bytecode-Interpreter"
+      },
+      "homepage": "https://github.com/fabiensanglard/Another-World-Bytecode-Interpreter",
+      "repository": "https://github.com/pkgforge-dev/Fabother-World-AppImage",
+      "keywords": [
+        "fabother-world",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/fabother-world.png",
+      "screenshots": [
+        {
+          "caption": "Fabother World interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Fabother-World-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.banjorecomp.banjorecomp",
+      "name": "BanjoRecomp",
+      "summary": "Banjo-Kazooie Recompiled is an enhanced native PC port of the classic Nintendo 64 platformer Banjo-Kazooie, created using static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Banjo-Kazooie Recompiled is an enhanced native PC port of the classic Nintendo 64 platformer Banjo-Kazooie, created using static recompilation. It translates the original N64 binary into native C/C++ code, allowing the game to run with modern PC graphics and uncapped performance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution without emulation overhead, providing smooth high framerates"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen, ultrawide, and arbitrary resolution rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern camera controls with full analog stick and mouse support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity audio playback with support for enhanced sound output"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native game controller support with remappable button layouts"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "BanjoRecomp Developers",
+        "url": "https://github.com/BanjoRecomp/BanjoRecomp"
+      },
+      "homepage": "https://github.com/BanjoRecomp/BanjoRecomp",
+      "repository": "https://github.com/pkgforge-dev/banjorecomp-appimage",
+      "keywords": [
+        "banjorecomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/banjorecomp.png",
+      "screenshots": [
+        {
+          "caption": "BanjoRecomp interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/BanjoRecomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

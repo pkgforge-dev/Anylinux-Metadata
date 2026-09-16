@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.openloco.openloco",
+      "name": "OpenLoco",
+      "summary": "OpenLoco is an open-source reimplementation of Chris Sawyer's Locomotion, the transport management simulation successor to Transport Tycoon",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenLoco is an open-source reimplementation of Chris Sawyer's Locomotion, the transport management simulation successor to Transport Tycoon. It reconstructs the original assembly code into modern, maintainable C++."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit systems with high-resolution support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern user interface enhancements, UI scaling, and multi-monitor compatibility"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with original Locomotion scenarios, vehicles, and save games"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Active bug fixing and performance optimizations over the original 2004 release"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Chris Sawyer's Locomotion game assets to run"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenLoco Developers",
+        "url": "https://github.com/OpenLoco/OpenLoco"
+      },
+      "homepage": "https://github.com/OpenLoco/OpenLoco",
+      "repository": "https://github.com/pkgforge-dev/OpenLoco-AppImage",
+      "keywords": [
+        "openloco",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openloco.png",
+      "screenshots": [
+        {
+          "caption": "OpenLoco interface screenshot 1",
+          "source": "https://user-images.githubusercontent.com/604665/55420349-1a2aea00-5577-11e9-87da-78fe5cdb09e1.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenLoco-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

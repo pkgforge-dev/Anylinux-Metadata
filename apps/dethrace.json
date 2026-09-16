@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.link4electronics.dethrace",
+      "name": "Dethrace",
+      "summary": "dethrace is a reverse-engineered, open-source source port of Carmageddon (1997), the iconic vehicular combat and racing game",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "dethrace is a reverse-engineered, open-source source port of Carmageddon (1997), the iconic vehicular combat and racing game. It reconstructs the original game logic to execute natively on modern operating systems without DOS emulation."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit systems with high framerates"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution rendering with support for widescreen and modern display scaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full physics-driven vehicular collisions and destructible car geometry"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern controller and steering wheel configuration alongside keyboard controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Carmageddon game data files to run"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Dethrace Developers",
+        "url": "https://github.com/Link4Electronics/dethrace"
+      },
+      "homepage": "https://github.com/Link4Electronics/dethrace",
+      "repository": "https://github.com/pkgforge-dev/dethrace-AppImage",
+      "keywords": [
+        "dethrace",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dethrace.png",
+      "screenshots": [
+        {
+          "caption": "Dethrace interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/dethrace-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

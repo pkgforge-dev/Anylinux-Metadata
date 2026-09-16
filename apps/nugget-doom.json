@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.mralaux.nugget_doom",
+      "name": "nugget-doom",
+      "summary": "Nugget Doom is a Doom game source port forked from Woof! with additional features",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Nugget Doom is a Doom game source port forked from Woof! with additional features."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "nugget-doom Developers",
+        "url": "https://github.com/mralaux/nugget-doom"
+      },
+      "homepage": "https://github.com/mralaux/nugget-doom",
+      "repository": "https://github.com/pkgforge-dev/Nugget-Doom-AppImage-Enhanced",
+      "keywords": [
+        "nugget-doom",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nugget-doom.png",
+      "screenshots": [
+        {
+          "caption": "nugget-doom interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Nugget-Doom-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

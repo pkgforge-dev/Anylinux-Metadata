@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.drhelius.gearboy",
+      "name": "Gearboy",
+      "summary": "Gearboy is a cross-platform, open-source Game Boy and Game Boy Color emulator written in C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gearboy is a cross-platform, open-source Game Boy and Game Boy Color emulator written in C++. Designed for high fidelity, it accurately reproduces the audio and video hardware of Nintendo's iconic handheld consoles."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Cycle-accurate Z80-like processor and memory bank controller (MBC) emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate Game Boy Color dual-speed CPU and palette color rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-quality audio synthesis recreating the original four-channel sound chip"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Save states, battery-backed SRAM persistence, and Game Genie cheat codes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gamepad controller support with customizable button layouts"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Gearboy Developers",
+        "url": "https://github.com/drhelius/Gearboy"
+      },
+      "homepage": "https://github.com/drhelius/Gearboy",
+      "repository": "https://github.com/pkgforge-dev/Gearboy-AppImage",
+      "keywords": [
+        "gearboy",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gearboy.png",
+      "screenshots": [
+        {
+          "caption": "Gearboy interface screenshot 1",
+          "source": "https://www.geardome.com/files/gearboy/gearboy_debug_05.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gearboy-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

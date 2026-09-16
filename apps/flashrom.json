@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.flashrom.flashrom",
+      "name": "flashrom",
+      "summary": "flashrom is a universal utility designed to identify, read, write, verify, and erase flash memory chips",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "flashrom is a universal utility designed to identify, read, write, verify, and erase flash memory chips. It is widely used for flashing BIOS, UEFI, coreboot, firmware, and ROM chips on motherboards and hardware programmers."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Supports thousands of flash ROM chips across DIP, PLCC, SOIC, and BGA packages"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with mainboard chipsets, PCI cards, USB programmers, and SPI bridges"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Safe flashing with automatic chip verification before and after writing operations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform hardware probing and detailed chipset diagnostics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Essential tool for firmware recovery, flashing coreboot, and hardware engineering"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "flashrom Developers",
+        "url": "https://flashrom.org/index.html"
+      },
+      "homepage": "https://flashrom.org/index.html",
+      "repository": "https://github.com/pkgforge-dev/flashrom-appimage",
+      "keywords": [
+        "flashrom",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/flashrom.png",
+      "screenshots": [
+        {
+          "caption": "flashrom interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Flashrom-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

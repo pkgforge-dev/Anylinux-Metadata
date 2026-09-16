@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.itsmattkc.isle_isle_portable",
+      "name": "ISLE Portable",
+      "summary": "ISLE is an open-source modern source port of LEGO Island (1997), the beloved open-world adventure game",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ISLE is an open-source modern source port of LEGO Island (1997), the beloved open-world adventure game. It restores compatibility with modern 64-bit operating systems, high-resolution screens, and modern audio hardware."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern operating systems without legacy DirectX limitations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and arbitrary resolution rendering with scalable user interfaces"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Corrected physics timing and animation glitches caused by modern CPU clock speeds"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for modern gamepads and remappable keyboard controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original LEGO Island game files to run"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ISLE Portable Developers",
+        "url": "https://github.com/itsmattkc/isle"
+      },
+      "homepage": "https://github.com/itsmattkc/isle",
+      "repository": "https://github.com/pkgforge-dev/isle-portable-AppImage-Enhanced",
+      "keywords": [
+        "isle-portable",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/isle-portable.png",
+      "screenshots": [
+        {
+          "caption": "ISLE Portable interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/isle-portable-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rhy3756547.simitone",
+      "name": "Simitone",
+      "summary": "Simitone is an open-source 3D reimplementation of The Sims 1",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Simitone is an open-source 3D reimplementation of The Sims 1. Built on the FreeSO engine, it transforms the classic isometric life simulator into an interactive 3D environment with smooth camera controls."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "True 3D perspective camera allowing free rotation, panning, and first-person views"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution rendering with dynamic lighting and enhanced visual effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with original The Sims 1 base game and expansions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced user interface scaling and modern widescreen display support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original The Sims 1 installation files to play"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Simitone Developers",
+        "url": "https://github.com/RHY3756547/Simitone"
+      },
+      "homepage": "https://github.com/RHY3756547/Simitone",
+      "repository": "https://github.com/pkgforge-dev/Simitone-AppImage",
+      "keywords": [
+        "simitone",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/simitone.png",
+      "screenshots": [
+        {
+          "caption": "Simitone interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Simitone-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.claude.claude_desktop",
+      "name": "claude-desktop",
+      "summary": "Unofficial AppImages, Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Unofficial AppImages, Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This script lets you choose between two different implementations."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "claude-desktop Developers",
+        "url": "https://claude.com/"
+      },
+      "homepage": "https://claude.com/",
+      "repository": "https://github.com/aaddrick/claude-desktop-debian",
+      "keywords": [
+        "claude-desktop",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/claude-desktop.png",
+      "screenshots": [
+        {
+          "caption": "claude-desktop interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Claude-Desktop-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

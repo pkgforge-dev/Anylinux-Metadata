@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pixelguys.cubyz",
+      "name": "Cubyz",
+      "summary": "Cubyz is an open-source voxel sandbox role-playing game featuring a procedurally generated world with near-infinite height and depth",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Cubyz is an open-source voxel sandbox role-playing game featuring a procedurally generated world with near-infinite height and depth. Built with a custom Java and OpenGL engine, it emphasizes exploration, crafting, and adventure."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Vast procedurally generated terrain with diverse biomes, caves, and structures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dynamic weather, atmospheric lighting, and day-night environmental cycles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "In-depth crafting system with realistic material blending and tool durability"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensible modding support through an integrated addon architecture"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optimized multithreaded chunk generation delivering smooth world rendering"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Cubyz Developers",
+        "url": "https://github.com/PixelGuys/Cubyz"
+      },
+      "homepage": "https://github.com/PixelGuys/Cubyz",
+      "repository": "https://github.com/pkgforge-dev/cubyz-appimage",
+      "keywords": [
+        "cubyz",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cubyz.png",
+      "screenshots": [
+        {
+          "caption": "Cubyz interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Cubyz-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

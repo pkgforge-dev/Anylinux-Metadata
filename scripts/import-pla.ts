@@ -92,10 +92,12 @@ function parsePlaFile(content: string) {
       screenshots = urls.filter((u) => u.startsWith("https://") && !u.includes("/contribute_ss.webp"));
     }
     if (line.startsWith("# SITES:")) {
-      sites = line.replace("# SITES:", "").trim();
+      const parts = line.replace("# SITES:", "").trim().split(/\s+/);
+      sites = parts.find((p) => p.startsWith("https://")) || parts.find((p) => p.startsWith("http://")) || parts[0] || "";
     }
     if (line.startsWith("# SOURCES:")) {
-      sources = line.replace("# SOURCES:", "").trim();
+      const parts = line.replace("# SOURCES:", "").trim().split(/\s+/);
+      sources = parts.find((p) => p.startsWith("https://")) || parts.find((p) => p.startsWith("http://")) || parts[0] || "";
     }
   }
 
@@ -155,7 +157,8 @@ function inferAppId(slug: string, repo: string, homepage: string): string {
         if (parts.length >= 2) {
           const owner = parts[0].toLowerCase().replace(/[^a-z0-9]/g, "_");
           const name = parts[1].toLowerCase().replace(/[^a-z0-9]/g, "_");
-          return `io.github.${owner}.${name}`;
+          const appPart = name === normSlug || name.endsWith(`_${normSlug}`) ? name : `${name}_${normSlug}`;
+          return `io.github.${owner}.${appPart}`;
         }
       }
       const hostParts = hostname.split(".").reverse().filter((p) => p !== "www");
@@ -232,8 +235,25 @@ async function importApp(appEntry: { name: string; slug: string; repo: string; u
     ];
   }
 
-  const homepage = parsed.sites && parsed.sites.startsWith("https://") ? parsed.sites : `https://github.com/${appEntry.repo}`;
-  const repository = parsed.sources && parsed.sources.startsWith("https://") ? parsed.sources : `https://github.com/${appEntry.repo}`;
+  function cleanHttpsUrl(candidate: string, fallback: string): string {
+    if (!candidate) return fallback;
+    const first = candidate.trim().split(/\s+/)[0];
+    try {
+      const url = new URL(first);
+      if (url.protocol === "https:") {
+        return url.toString();
+      }
+      if (url.protocol === "http:") {
+        url.protocol = "https:";
+        return url.toString();
+      }
+    } catch {}
+    return fallback;
+  }
+
+  const fallbackRepoUrl = `https://github.com/${appEntry.repo}`;
+  const homepage = cleanHttpsUrl(parsed.sites, fallbackRepoUrl);
+  const repository = cleanHttpsUrl(parsed.sources, fallbackRepoUrl);
   const license = knownLicenses[slug] || "GPL-3.0-or-later";
   const categories = knownCategories[slug] || ["Utility"];
   const appId = inferAppId(slug, appEntry.repo, homepage);

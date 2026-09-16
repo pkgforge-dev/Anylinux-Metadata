@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.dscharrer.innoextract",
+      "name": "innoextract",
+      "summary": "innoextract is a tool designed to unpack installers created by Inno Setup under Linux without requiring Wine",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "innoextract is a tool designed to unpack installers created by Inno Setup under Linux without requiring Wine. It allows gamers and developers to unpack Windows game installers (such as GOG.com releases) directly to native folders."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Extracts data files from Inno Setup installers from version 1.2 through the latest releases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct native Linux extraction without requiring Wine or Windows compatibility layers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports password-protected and multi-part split installer archives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserves original file timestamps and directory hierarchies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Filter and extract specific files or component groups with command-line switches"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "innoextract Developers",
+        "url": "https://github.com/dscharrer/innoextract"
+      },
+      "homepage": "https://github.com/dscharrer/innoextract",
+      "repository": "https://github.com/pkgforge-dev/innoextract-AppImage",
+      "keywords": [
+        "innoextract",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/innoextract.png",
+      "screenshots": [
+        {
+          "caption": "innoextract interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/innoextract-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

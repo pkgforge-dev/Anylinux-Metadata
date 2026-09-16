@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.xoreos.xoreos",
+      "name": "xoreos",
+      "summary": "xoreos is an open-source reimplementation of BioWare's Aurora engine and its successors",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "xoreos is an open-source reimplementation of BioWare's Aurora engine and its successors. The goal is to provide a unified, native open-source engine to play classic Western RPGs on modern platforms."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Supports Star Wars: Knights of the Old Republic I and II"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with Neverwinter Nights, Jade Empire, and Dragon Age: Origins"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modernized OpenGL graphics rendering with high-resolution support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native cross-platform execution eliminating legacy DirectX and OS compatibility issues"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original game installation data files to play"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "xoreos Developers",
+        "url": "https://github.com/xoreos/xoreos"
+      },
+      "homepage": "https://github.com/xoreos/xoreos",
+      "repository": "https://github.com/pkgforge-dev/xoreos-AppImage",
+      "keywords": [
+        "xoreos",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xoreos.png",
+      "screenshots": [
+        {
+          "caption": "xoreos interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/xoreos-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

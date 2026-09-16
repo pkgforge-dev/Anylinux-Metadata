@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.analogdevicesinc.pixelpulse2",
+      "name": "Pixelpulse2",
+      "summary": "Pixelpulse2 is an open-source graphical user interface for hardware signal exploration and analysis",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Pixelpulse2 is an open-source graphical user interface for hardware signal exploration and analysis. Built to interface with devices such as Analog Devices' ADALM1000, it functions as a multi-instrument oscilloscope, signal generator, and power supply monitor."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Real-time multi-channel oscilloscope visualization and waveform capture"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated arbitrary signal and function generator controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Voltage and current measurement modes for circuit diagnostics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive zooming, panning, and cursor measurements across signal plots"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Data logging and CSV export for hardware engineering and academic experimentation"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Pixelpulse2 Developers",
+        "url": "https://github.com/analogdevicesinc/pixelpulse2"
+      },
+      "homepage": "https://github.com/analogdevicesinc/pixelpulse2",
+      "repository": "https://github.com/pkgforge-dev/pixelpulse2-appimage",
+      "keywords": [
+        "pixelpulse2",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/pixelpulse2.png",
+      "screenshots": [
+        {
+          "caption": "Pixelpulse2 interface screenshot 1",
+          "source": "https://analogdevicesinc.github.io/Pixelpulse2/pp2screenshot.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Pixelpulse2-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.ocrmypdf.ocrmypdf",
+      "name": "ocrmypdf",
+      "summary": "OCRmyPDF adds an optical character recognition (OCR) text layer to scanned PDF files",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OCRmyPDF adds an optical character recognition (OCR) text layer to scanned PDF files. It transforms image-only PDFs into searchable, selectable, and accessible documents that can be highlighted and indexed by desktop search engines."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Embeds high-accuracy text layers using the Tesseract OCR engine"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Keeps original scanned page images intact without losing image quality"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatically deskews, cleans up, and corrects orientation of scanned pages"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Validates PDF/A compliance for long-term document archiving"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Batch processes multi-page documents utilizing multiple CPU cores"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ocrmypdf Developers",
+        "url": "https://github.com/ocrmypdf/OCRmyPDF"
+      },
+      "homepage": "https://github.com/ocrmypdf/OCRmyPDF",
+      "repository": "https://github.com/pkgforge-dev/ocrmypdf-appimage",
+      "keywords": [
+        "ocrmypdf",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ocrmypdf.png",
+      "screenshots": [
+        {
+          "caption": "ocrmypdf interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OCRmyPDF-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

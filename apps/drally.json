@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.urxp.drally",
+      "name": "dRally",
+      "summary": "dRally is an open-source source port of Death Rally (1996), the classic top-down vehicular combat and racing game developed by Remedy Entertainment",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "dRally is an open-source source port of Death Rally (1996), the classic top-down vehicular combat and racing game developed by Remedy Entertainment. It allows fans to play the legendary action racer natively on modern operating systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern operating systems with high-resolution scaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserves all original tracks, weapons, underground black market, and rivalries"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports smooth keyboard, gamepad, and custom controller input"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity audio playback reproducing the energetic soundtrack and explosive sound effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Death Rally game data (including the free release)"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "dRally Developers",
+        "url": "https://github.com/urxp/dRally"
+      },
+      "homepage": "https://github.com/urxp/dRally",
+      "repository": "https://github.com/pkgforge-dev/dRally-AppImage",
+      "keywords": [
+        "drally",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/drally.png",
+      "screenshots": [
+        {
+          "caption": "dRally interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/dRally-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

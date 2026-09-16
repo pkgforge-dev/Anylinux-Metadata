@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.megaman64recomp.megaman64recompiled_megaman64recomp",
+      "name": "Mega Man 64 Recompiled",
+      "summary": "Mega Man 64 Recompiled is a native PC port of Mega Man 64 (the Nintendo 64 release of Mega Man Legends), created via static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Mega Man 64 Recompiled is a native PC port of Mega Man 64 (the Nintendo 64 release of Mega Man Legends), created via static recompilation. It brings the beloved 3D action-adventure into native 64-bit Linux."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native PC rendering with high-resolution scaling and smooth uncapped framerates"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen display support and modern camera angle controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern dual-analog gamepad and keyboard/mouse control configurations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Crisp audio reproduction with remastered sound capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full preservation of the original 3D dungeon crawling, town exploration, and boss battles"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Mega Man 64 Recompiled Developers",
+        "url": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled"
+      },
+      "homepage": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
+      "repository": "https://github.com/pkgforge-dev/megaman64recomp-appimage",
+      "keywords": [
+        "megaman64recomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/megaman64recomp.png",
+      "screenshots": [
+        {
+          "caption": "Mega Man 64 Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/MegaMan64Recomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

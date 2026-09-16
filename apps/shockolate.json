@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.interrupt.systemshock_shockolate",
+      "name": "Shockolate",
+      "summary": "Shockolate is a cross-platform, open-source source port of the revolutionary 1994 cyberpunk immersive sim System Shock",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Shockolate is a cross-platform, open-source source port of the revolutionary 1994 cyberpunk immersive sim System Shock. Based on the original source code, it brings Citadel Station natively to modern Linux PCs."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit Linux execution with OpenGL hardware-accelerated rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern mouselook controls and customizable WASD movement"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen support and high-resolution texture rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Corrected audio timing and support for digital sound effects and MIDI tracks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete compatibility with original System Shock CD-ROM game assets"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Shockolate Developers",
+        "url": "https://github.com/Interrupt/systemshock"
+      },
+      "homepage": "https://github.com/Interrupt/systemshock",
+      "repository": "https://github.com/pkgforge-dev/shockolate-appimage",
+      "keywords": [
+        "shockolate",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/shockolate.png",
+      "screenshots": [
+        {
+          "caption": "Shockolate interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Shockolate-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

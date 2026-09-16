@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.qemu.qemu",
+      "name": "QEMU",
+      "summary": "QEMU is a generic, open-source machine emulator and virtualizer",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "QEMU is a generic, open-source machine emulator and virtualizer. When used as a machine emulator, it runs operating systems and programs made for one processor on a different machine; when paired with KVM, it provides near-native virtualization performance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full system emulation for x86, ARM, RISC-V, MIPS, PowerPC, and s390x architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Near-native hardware virtualization when paired with Linux KVM kernel modules"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "User-mode emulation enabling direct execution of foreign-architecture Linux binaries"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Virtual device emulation for network cards, USB controllers, GPUs, and storage drives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Snapshot support, live migration, and integration with libvirt and virt-manager"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "QEMU Developers",
+        "url": "https://www.qemu.org/"
+      },
+      "homepage": "https://www.qemu.org/",
+      "repository": "https://github.com/pkgforge-dev/QEMU-AppImage",
+      "keywords": [
+        "qemu",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/qemu.png",
+      "screenshots": [
+        {
+          "caption": "QEMU interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/QEMU-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

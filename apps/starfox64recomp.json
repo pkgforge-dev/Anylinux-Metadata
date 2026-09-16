@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.gitlab.starfox64recomp",
+      "name": "Star Fox 64 Recompiled",
+      "summary": "Star Fox 64 Recompiled is a native PC port of the classic 1997 Nintendo 64 space rail-shooter Star Fox 64 (Lylat Wars)",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Star Fox 64 Recompiled is a native PC port of the classic 1997 Nintendo 64 space rail-shooter Star Fox 64 (Lylat Wars). Using static recompilation, Fox McCloud's Arwing battles run natively on modern PC hardware."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution delivering smooth 60 FPS space combat without emulation slowdown"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen and high-resolution rendering with dynamic visual clarity"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dual-analog gamepad and flight stick support with modern rumble feedback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserves complete branching mission routes, iconic voice acting, and soundtrack"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for community visual mods and audio enhancements"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Star Fox 64 Recompiled Developers",
+        "url": "https://gitlab.com/sonicdcer/Starfox64Recomp"
+      },
+      "homepage": "https://gitlab.com/sonicdcer/Starfox64Recomp",
+      "repository": "https://github.com/pkgforge-dev/Starfox64Recomp-AppImage",
+      "keywords": [
+        "starfox64recomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/starfox64recomp.png",
+      "screenshots": [
+        {
+          "caption": "Star Fox 64 Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Starfox64Recomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

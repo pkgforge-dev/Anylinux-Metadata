@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.dec05eba.git.phoenix_x_server",
+      "name": "Phoenix X Server",
+      "summary": "Phoenix is a modern X11 display server written from scratch in Zig",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Phoenix is a modern X11 display server written from scratch in Zig. Conceived as a memory-safe, lightweight alternative to the legacy Xorg server, Phoenix focuses on simplicity, security, and low resource overhead."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Written in Zig for enhanced memory safety and predictable execution performance"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Implements core X11 protocols for running traditional Linux graphical applications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Significantly reduced codebase complexity compared to the monolithic Xorg server"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low memory footprint and instant startup times"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Ideal for embedded systems, lightweight desktop setups, and X11 experimentation"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Phoenix X Server Developers",
+        "url": "https://git.dec05eba.com/phoenix"
+      },
+      "homepage": "https://git.dec05eba.com/phoenix",
+      "repository": "https://github.com/pkgforge-dev/phoenix-x-server-AppImage",
+      "keywords": [
+        "phoenix-x-server",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/phoenix-x-server.png",
+      "screenshots": [
+        {
+          "caption": "Phoenix X Server interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/phoenix-x-server-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

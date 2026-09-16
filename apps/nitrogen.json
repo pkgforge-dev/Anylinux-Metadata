@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.l3ib.nitrogen",
+      "name": "Nitrogen",
+      "summary": "Nitrogen is a fast and lightweight wallpaper browser and desktop background setter for X11",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Nitrogen is a fast and lightweight wallpaper browser and desktop background setter for X11. Widely favored in lightweight desktop environments and window managers, it provides quick background configuration without desktop bloat."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Fast thumbnail generation and image browsing across multiple wallpaper folders"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiple wallpaper layout modes including Zoom, Centered, Tiled, Scaled, and Fill"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multi-monitor support with independent wallpaper assignment per display"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic restoration of desktop backgrounds on window manager startup via command line"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lightweight GTK interface consuming minimal system memory"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Nitrogen Developers",
+        "url": "https://github.com/l3ib/nitrogen"
+      },
+      "homepage": "https://github.com/l3ib/nitrogen",
+      "repository": "https://github.com/pkgforge-dev/nitrogen-appimage",
+      "keywords": [
+        "nitrogen",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nitrogen.png",
+      "screenshots": [
+        {
+          "caption": "Nitrogen interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Nitrogen-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

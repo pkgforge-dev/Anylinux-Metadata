@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.github.streamlink",
+      "name": "streamlink",
+      "summary": "Streamlink is a command-line utility which pipes video streams from various services into a video player, such as VLC",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Streamlink is a command-line utility which pipes video streams from various services into a video player, such as VLC. The main purpose of Streamlink is to avoid resource-heavy and unoptimized websites, while still allowing the user to enjoy various streamed content. There is also an API available for developers who want access to the stream data.  This project was forked from Livestreamer, which is no longer maintained."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "streamlink Developers",
+        "url": "https://github.com/streamlink"
+      },
+      "homepage": "https://github.com/streamlink",
+      "repository": "https://github.com/pkgforge-dev/Streamlink-AppImage",
+      "keywords": [
+        "streamlink",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/streamlink.png",
+      "screenshots": [
+        {
+          "caption": "streamlink interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Streamlink-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

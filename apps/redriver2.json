@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.opendriver2.redriver2",
+      "name": "REDRIVER2",
+      "summary": "REDRIVER2 is an open-source reverse-engineering effort and native PC port of Driver 2, the classic 2000 PlayStation action driving game by Reflecti",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "REDRIVER2 is an open-source reverse-engineering effort and native PC port of Driver 2, the classic 2000 PlayStation action driving game by Reflections Interactive. It brings John Tanner's undercover crime saga natively to PC."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native PC execution delivering smooth 60 FPS gameplay without console stutter"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution rendering with true widescreen aspect ratios and draw distance tweaks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Reconstructed physics engine matching original vehicle handling and car damage"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full modern gamepad support with analog steering, acceleration, and rumble"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Play across all four iconic cities: Chicago, Havana, Las Vegas, and Rio de Janeiro"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "REDRIVER2 Developers",
+        "url": "https://github.com/OpenDriver2/REDRIVER2"
+      },
+      "homepage": "https://github.com/OpenDriver2/REDRIVER2",
+      "repository": "https://github.com/pkgforge-dev/REDRIVER2-AppImage",
+      "keywords": [
+        "redriver2",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/redriver2.png",
+      "screenshots": [
+        {
+          "caption": "REDRIVER2 interface screenshot 1",
+          "source": "https://i.ibb.co/2q1pp06/red2.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/REDRIVER2-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

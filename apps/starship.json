@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "rs.starship.starship",
+      "name": "starship",
+      "summary": "The minimal, blazing-fast, and infinitely customizable prompt for any shell",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The minimal, blazing-fast, and infinitely customizable prompt for any shell."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Fast: it's fast – _really really_ fast! 🚀 - Customizable: configure every aspect of your prompt. - Universal: works on any shell, on any operating system. - Intelligent: shows relevant information at a glance. - Feature rich: support for all your favorite tools. - Easy: quick to install – start using it in minutes."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "starship Developers",
+        "url": "https://starship.rs/"
+      },
+      "homepage": "https://starship.rs/",
+      "repository": "https://github.com/pkgforge-dev/Starship-AppImage-Enhanced",
+      "keywords": [
+        "starship",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/starship.png",
+      "screenshots": [
+        {
+          "caption": "starship interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/starship/starship/main/media/demo.gif"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Starship-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

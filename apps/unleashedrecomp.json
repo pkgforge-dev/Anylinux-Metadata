@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.hedge_dev.unleashedrecomp",
+      "name": "Unleashed Recompiled",
+      "summary": "UnleashedRecomp is an enhanced native PC port of the high-speed platformer Sonic Unleashed, created using static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "UnleashedRecomp is an enhanced native PC port of the high-speed platformer Sonic Unleashed, created using static recompilation. It brings Sonic's daytime daytime boost stages and nighttime brawling natively to PC."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution delivering smooth 60+ FPS high-speed gameplay without emulation lag"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen and 4K display rendering with modern aspect ratio scaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full gamepad controller support with responsive analog stick and trigger inputs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity audio playback reproducing the orchestral soundtrack and sound effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for community performance patches, visual enhancements, and mods"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Unleashed Recompiled Developers",
+        "url": "https://github.com/hedge-dev/UnleashedRecomp"
+      },
+      "homepage": "https://github.com/hedge-dev/UnleashedRecomp",
+      "repository": "https://github.com/pkgforge-dev/UnleashedRecomp-AppImage",
+      "keywords": [
+        "unleashedrecomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/unleashedrecomp.png",
+      "screenshots": [
+        {
+          "caption": "Unleashed Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/UnleashedRecomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

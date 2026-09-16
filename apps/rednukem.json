@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.nukeykt.rednukem",
+      "name": "Rednukem",
+      "summary": "Rednukem is an open-source BUILD engine source port based on EDuke32, providing native 64-bit support for the classic redneck shooters: Redneck Ram",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Rednukem is an open-source BUILD engine source port based on EDuke32, providing native 64-bit support for the classic redneck shooters: Redneck Rampage, Redneck Rampage Rides Again, and Redneck Deer Huntin'."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native Linux execution with high-resolution widescreen rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern mouselook controls, customizable key bindings, and gamepad support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate physics, sound effects, and level triggers matching original DOS behavior"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity audio playback supporting CD audio soundtrack tracks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Uncapped framerates and performance optimizations eliminating engine slowdowns"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Rednukem Developers",
+        "url": "https://github.com/nukeykt/Rednukem"
+      },
+      "homepage": "https://github.com/nukeykt/Rednukem",
+      "repository": "https://github.com/pkgforge-dev/Rednukem-AppImage",
+      "keywords": [
+        "rednukem",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/rednukem.png",
+      "screenshots": [
+        {
+          "caption": "Rednukem interface screenshot 1",
+          "source": "https://github.com/user-attachments/assets/e7650c88-3907-47c3-81eb-2fb012435ca2"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Rednukem-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

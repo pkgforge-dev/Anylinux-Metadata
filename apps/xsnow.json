@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.sourceforge.xsnow",
+      "name": "Xsnow",
+      "summary": "Xsnow is a festive, animated desktop holiday toy for X11",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Xsnow is a festive, animated desktop holiday toy for X11. It brings gently falling snowflakes, blowing snowdrifts, festive trees, and Santa flying in his reindeer-pulled sleigh to your desktop workspace."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Gently falling snowflakes that accumulate as snowdrifts on top of open desktop windows"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Flying Santa Claus in a sleigh pulled by reindeer across the screen"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Festive evergreen trees, playful penguins, and customizable winter scenery"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable snow speed, snowflake count, wind velocity, and Santa flight frequency"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with modern compositing managers and multiple monitor setups"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Xsnow Developers",
+        "url": "https://sourceforge.net/projects/xsnow"
+      },
+      "homepage": "https://sourceforge.net/projects/xsnow",
+      "repository": "https://github.com/pkgforge-dev/Xsnow-AppImage",
+      "keywords": [
+        "xsnow",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xsnow.png",
+      "screenshots": [
+        {
+          "caption": "Xsnow interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Xsnow-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

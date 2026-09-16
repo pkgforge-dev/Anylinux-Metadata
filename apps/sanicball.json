@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.bk_tn.sanicball",
+      "name": "Sanicball",
+      "summary": "Sanicball is a fast, physics-defying multiplayer arcade racing game satirizing the Sonic the Hedgehog franchise",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Sanicball is a fast, physics-defying multiplayer arcade racing game satirizing the Sonic the Hedgehog franchise. Players take control of spherical characters navigating wildly twisting tracks at breakneck velocities."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-velocity racing mechanics with dramatic ramps, loop-the-loops, and air control"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiple playable parody characters each with distinct speed and handling attributes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Online multiplayer racing lobbies and local split-screen multiplayer support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Energetic soundtrack featuring meme-inspired audio tracks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in track selection with varying difficulty levels and terrain traps"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Sanicball Developers",
+        "url": "https://github.com/BK-TN/Sanicball"
+      },
+      "homepage": "https://github.com/BK-TN/Sanicball",
+      "repository": "https://github.com/pkgforge-dev/Sanicball-AppImage",
+      "keywords": [
+        "sanicball",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sanicball.png",
+      "screenshots": [
+        {
+          "caption": "Sanicball interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Sanicball-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

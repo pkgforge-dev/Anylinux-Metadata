@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.gnome_text_editor_appimage_gnome_text_editor",
+      "name": "gnome-text-editor",
+      "summary": "GNOME Text Editor is a simple text editor focused on a pleasing default experience",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "GNOME Text Editor is a simple text editor focused on a pleasing default experience."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "gnome-text-editor Developers",
+        "url": "https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage",
+      "keywords": [
+        "gnome-text-editor",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gnome-text-editor.png",
+      "screenshots": [
+        {
+          "caption": "gnome-text-editor interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gnome-Text-Editor-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

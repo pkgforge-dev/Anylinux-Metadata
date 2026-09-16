@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pickrecalled.sacdextractgui",
+      "name": "SACDExtractGUI",
+      "summary": "SACDExtractGUI is a user-friendly graphical interface for sacd_extract",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "SACDExtractGUI is a user-friendly graphical interface for sacd_extract. It simplifies extracting high-resolution DSD audio files (DFF, DSF) and audio tracks from Super Audio CD (SACD) ISO images and network players."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Extracts high-resolution stereo and multi-channel DSD audio streams"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports converting SACD ISO disc images directly to DSF and DFF track files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserves album art, track numbers, performers, and title metadata"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Batch processing queue for ripping entire collections of SACD images"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean graphical interface with real-time extraction progress meters"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "SACDExtractGUI Developers",
+        "url": "https://github.com/PickRecalled/SACDExtractGUI"
+      },
+      "homepage": "https://github.com/PickRecalled/SACDExtractGUI",
+      "repository": "https://github.com/pkgforge-dev/sacdextractgui-appimage",
+      "keywords": [
+        "sacdextractgui",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sacdextractgui.png",
+      "screenshots": [
+        {
+          "caption": "SACDExtractGUI interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/SACDExtractGUI-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

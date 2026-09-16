@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.bitbucket.ecwolf",
+      "name": "ECWolf",
+      "summary": "ECWolf is an advanced open-source source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ECWolf is an advanced open-source source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark. Based on the Wolf4SDL engine, it modernizes the gameplay while maintaining full compatibility with classic mods and extensions."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-resolution rendering supporting widescreen and arbitrary aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modernized controls including unrestricted mouse-look and strafing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extended modding capabilities with support for DECORATE scripting and ZIP archives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full automap system with navigation tracking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-quality digital sound effects and OPL2/OPL3 music synthesis emulation"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ECWolf Developers",
+        "url": "https://bitbucket.org/ecwolf/ecwolf"
+      },
+      "homepage": "https://bitbucket.org/ecwolf/ecwolf",
+      "repository": "https://github.com/pkgforge-dev/ECWolf-AppImage",
+      "keywords": [
+        "ecwolf",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ecwolf.png",
+      "screenshots": [
+        {
+          "caption": "ECWolf interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ECWolf-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

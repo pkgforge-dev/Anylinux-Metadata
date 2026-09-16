@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.sm64pc.sm64ex_ghostship",
+      "name": "Ghostship",
+      "summary": "Ghostship is an enhanced native PC port of Super Mario 64, forked from the sm64ex project",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Ghostship is an enhanced native PC port of Super Mario 64, forked from the sm64ex project. Statically compiling the decompiled N64 source code into a native executable, it provides modern graphics and unlocked performance on PC."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 60 FPS and uncapped framerate rendering without emulation lag"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen and ultrawide support with customizable camera controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern analog controller, keyboard, and mouse control schemes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for community texture packs, model replacements, and custom patches"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires an authentic Super Mario 64 ROM for asset extraction"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Ghostship Developers",
+        "url": "https://github.com/sm64pc/sm64ex"
+      },
+      "homepage": "https://github.com/sm64pc/sm64ex",
+      "repository": "https://github.com/pkgforge-dev/Ghostship-AppImage-Enhanced",
+      "keywords": [
+        "ghostship",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostship.png",
+      "screenshots": [
+        {
+          "caption": "Ghostship interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Ghostship-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.gapless_appimage_gapless",
+      "name": "gapless",
+      "summary": "Gapless (AKA: G4Music) is a light weight music player written in GTK4, focuses on large music collection",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gapless (AKA: G4Music) is a light weight music player written in GTK4, focuses on large music collection."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Features"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports most music file types, Samba and any other remote protocols (depends on GIO and GStreamer)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Fast loading and parsing thousands of music files in very few seconds, monitor local changes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Low memory usage for large music collection with album covers (embedded and external), no thumbnail caches to store."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Group and sorts by album/artist/title, shuffle list, full-text searching."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Fluent adaptive user interface for different screen (Desktop, Tablet, Mobile)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Gaussian blurred cover as background, follows GNOME light/dark mode."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports creating and editing playlists, drag cover to change order or add to another playlist."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports drag and drop with other apps."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports audio peaks visualizer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports gapless playback."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports normalizing volume with ReplayGain."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports specified audio sink."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "- Supports MPRIS control."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "gapless Developers",
+        "url": "https://github.com/pkgforge-dev/Gapless-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/Gapless-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Gapless-AppImage",
+      "keywords": [
+        "gapless",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gapless.png",
+      "screenshots": [
+        {
+          "caption": "gapless interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gapless-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.freedesktop.gitlab.xclock",
+      "name": "xclock",
+      "summary": "xclock is the classic analog and digital clock display utility for the X Window System",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "xclock is the classic analog and digital clock display utility for the X Window System. As one of the earliest graphical utilities created for X11, it remains a reliable, lightweight desktop timekeeper."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Classic analog clock face with hour, minute, and second hands"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optional digital time display mode with customizable date formatting"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable update intervals, chime tones, and display colors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extremely lightweight with near-zero memory and CPU utilization"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with all X11 window managers and desktop environments"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "xclock Developers",
+        "url": "https://gitlab.freedesktop.org/xorg/app/xclock"
+      },
+      "homepage": "https://gitlab.freedesktop.org/xorg/app/xclock",
+      "repository": "https://github.com/pkgforge-dev/xclock-appimage",
+      "keywords": [
+        "xclock",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xclock.png",
+      "screenshots": [
+        {
+          "caption": "xclock interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/xclock-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

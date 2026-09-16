@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.bay12games.dwarf_fortress_legacy",
+      "name": "Dwarf Fortress (Legacy)",
+      "summary": "Dwarf Fortress (Legacy) is the classic, acclaimed ASCII-based fantasy world simulation and fortress management game by Bay 12 Games",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Dwarf Fortress (Legacy) is the classic, acclaimed ASCII-based fantasy world simulation and fortress management game by Bay 12 Games. It procedurally generates an intricate world complete with geology, mythology, history, and civilizations."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Complete fortress management simulation with complex economics, engineering, and sociology"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Adventure mode allowing exploration of the procedurally generated historical world"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Authentic classic ASCII interface with support for community tilesets"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Unmatched procedural depth with detailed body anatomy, combat, and fluids physics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Deep, living sandbox universe where every creature and civilization leaves historical records"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Dwarf Fortress (Legacy) Developers",
+        "url": "https://bay12games.com/dwarves"
+      },
+      "homepage": "https://bay12games.com/dwarves",
+      "repository": "https://github.com/pkgforge-dev/dwarf-fortress-legacy-appimage",
+      "keywords": [
+        "dwarf-fortress-legacy",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dwarf-fortress-legacy.png",
+      "screenshots": [
+        {
+          "caption": "Dwarf Fortress (Legacy) interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Dwarf-Fortress-Legacy-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

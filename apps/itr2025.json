@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "br.gov.itr2025",
+      "name": "ITR 2025",
+      "summary": "ITR 2025 (Programa Gerador da Declaração do ITR 2025) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil destinado à elabor",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ITR 2025 (Programa Gerador da Declaração do ITR 2025) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil destinado à elaboração e transmissão da Declaração do Imposto sobre a Propriedade Territorial Rural relativa ao exercício de 2025."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Recursos: - Preenchimento completo do Documento de Informação e Atualização Cadastral do ITR (DIAC) - Apuração do Documento de Informação e Apuração do ITR (DIAT) e cálculo do imposto devido - Verificação automática de inconsistências cadastrais e validação de pendências - Gravação de cópias de segurança e restauração de declarações de anos anteriores - Impressão de recibos de entrega, DARF para recolhimento e demonstrativos fiscais"
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ITR 2025 Developers",
+        "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/ditr"
+      },
+      "homepage": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/ditr",
+      "repository": "https://github.com/pkgforge-dev/ITR2025-AppImage",
+      "keywords": [
+        "itr2025",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/itr2025.png",
+      "screenshots": [
+        {
+          "caption": "ITR 2025 interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ITR2025-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.gitlab.diffpdf",
+      "name": "DiffPDF",
+      "summary": "DiffPDF is a specialized graphical utility used to compare two PDF files side by side",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DiffPDF is a specialized graphical utility used to compare two PDF files side by side. It highlights visual differences in page layout, graphics, and text, making it an essential tool for proofreaders, editors, and technical authors."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Side-by-side visual comparison with clear highlighting of changes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Text mode to identify inserted, deleted, or altered words across pages"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Appearance mode to detect font differences, spacing shifts, and graphic modifications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Synchronized page scrolling and zooming for fast visual navigation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Ability to generate and export comparison reports"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "DiffPDF Developers",
+        "url": "https://gitlab.com/eang/diffpdf"
+      },
+      "homepage": "https://gitlab.com/eang/diffpdf",
+      "repository": "https://github.com/pkgforge-dev/diffpdf-appimage",
+      "keywords": [
+        "diffpdf",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/diffpdf.png",
+      "screenshots": [
+        {
+          "caption": "DiffPDF interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DiffPDF-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

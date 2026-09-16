@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.drhelius.gearlynx",
+      "name": "Gearlynx",
+      "summary": "Gearlynx is an open-source Atari Lynx handheld console emulator written in C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gearlynx is an open-source Atari Lynx handheld console emulator written in C++. It provides accurate emulation of the first color handheld video game console developed by Atari."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Accurate emulation of the Mikey and Suzy custom processing chips"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware sprite scaling, distortion, and hardware collision simulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Realistic 4-channel audio output reproducing Lynx sound synthesis"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Save state management and configurable display orientation for vertical games"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gamepad and keyboard configuration with responsive input handling"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Gearlynx Developers",
+        "url": "https://github.com/drhelius/Gearlynx"
+      },
+      "homepage": "https://github.com/drhelius/Gearlynx",
+      "repository": "https://github.com/pkgforge-dev/Gearlynx-AppImage",
+      "keywords": [
+        "gearlynx",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gearlynx.png",
+      "screenshots": [
+        {
+          "caption": "Gearlynx interface screenshot 1",
+          "source": "https://www.geardome.com/files/gearlynx/gearlynx_debug_07.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gearlynx-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

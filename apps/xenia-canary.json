@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.xenia_canary.xenia_canary",
+      "name": "Xenia Canary",
+      "summary": "Xenia Canary is an experimental, open-source research emulator for the Microsoft Xbox 360 video game console",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Xenia Canary is an experimental, open-source research emulator for the Microsoft Xbox 360 video game console. It focuses on pushing the boundaries of Xbox 360 emulation compatibility and performance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Modern graphics emulation utilizing high-performance Vulkan rendering backends"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Resolution scaling up to 4K and support for high-framerate patches"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Emulation of Xbox 360 PowerPC CPU and custom ATI Xenos graphics architecture"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for modern gamepads with analog triggers and rumble vibration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Active development branch featuring cutting-edge bug fixes and game compatibility updates"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Xenia Canary Developers",
+        "url": "https://github.com/xenia-canary/xenia-canary"
+      },
+      "homepage": "https://github.com/xenia-canary/xenia-canary",
+      "repository": "https://github.com/pkgforge-dev/xenia-canary-AppImage",
+      "keywords": [
+        "xenia-canary",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xenia-canary.png",
+      "screenshots": [
+        {
+          "caption": "Xenia Canary interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/xenia-canary-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

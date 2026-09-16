@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.friskthefallenhuman.prey2006",
+      "name": "Prey (2006)",
+      "summary": "Prey 2006 (Linux Port) is a native open-source source port of the acclaimed 2006 sci-fi first-person shooter Prey",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Prey 2006 (Linux Port) is a native open-source source port of the acclaimed 2006 sci-fi first-person shooter Prey. Powered by the id Tech 4 engine (Doom 3 GPL), it allows playing Tommy's mind-bending alien abduction adventure natively on Linux."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit Linux execution eliminating vintage wine and driver workarounds"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Smooth performance with high-resolution widescreen and modern FOV support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Unique gravity-defying pathways, wall-walking mechanics, and seamless portal physics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity positional audio with environmental reverb effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Prey (2006) game assets to play"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Prey (2006) Developers",
+        "url": "https://github.com/FriskTheFallenHuman/Prey2006"
+      },
+      "homepage": "https://github.com/FriskTheFallenHuman/Prey2006",
+      "repository": "https://github.com/pkgforge-dev/Prey2006-AppImage",
+      "keywords": [
+        "prey2006",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/prey2006.png",
+      "screenshots": [
+        {
+          "caption": "Prey (2006) interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Prey2006-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

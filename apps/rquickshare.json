@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.martichou.rquickshare",
+      "name": "rquickshare",
+      "summary": "Rust implementation of NearbyShare/QuickShare from Android for Linux",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Rust implementation of NearbyShare/QuickShare from Android for Linux."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "rquickshare Developers",
+        "url": "https://github.com/Martichou/rquickshare"
+      },
+      "homepage": "https://github.com/Martichou/rquickshare",
+      "repository": "https://github.com/pkgforge-dev/rquickshare-AppImage-Enhanced",
+      "keywords": [
+        "rquickshare",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/rquickshare.png",
+      "screenshots": [
+        {
+          "caption": "rquickshare interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/Martichou/rquickshare/master/.github/demo.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/rquickshare-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

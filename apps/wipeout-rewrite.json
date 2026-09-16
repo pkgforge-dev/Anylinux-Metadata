@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.phoboslab.wipeout_rewrite",
+      "name": "WipEout Rewrite",
+      "summary": "wipEout Rewrite is an open-source reverse-engineered C port of the iconic 1995 futuristic anti-gravity racing game wipEout for the Sony PlayStation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "wipEout Rewrite is an open-source reverse-engineered C port of the iconic 1995 futuristic anti-gravity racing game wipEout for the Sony PlayStation. It brings the high-octane techno racer natively to modern PCs."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit execution delivering silky-smooth 60+ FPS anti-gravity racing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution widescreen rendering with increased draw distance and enhanced textures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate anti-gravity vehicle physics and airbrake handling mechanics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full modern gamepad and racing controller support with customizable button mapping"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Includes all original championship tracks, weapon pickups, and iconic techno soundtrack"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "WipEout Rewrite Developers",
+        "url": "https://github.com/phoboslab/wipeout-rewrite"
+      },
+      "homepage": "https://github.com/phoboslab/wipeout-rewrite",
+      "repository": "https://github.com/pkgforge-dev/wipEout-Rewrite-AppImage",
+      "keywords": [
+        "wipeout-rewrite",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/wipeout-rewrite.png",
+      "screenshots": [
+        {
+          "caption": "WipEout Rewrite interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/wipEout-Rewrite-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

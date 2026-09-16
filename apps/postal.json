@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rws_studios.postal_sourcecode_postal",
+      "name": "POSTAL",
+      "summary": "POSTAL (1997) is the open-source release of the classic isometric shooter developed by Running With Scissors",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "POSTAL (1997) is the open-source release of the classic isometric shooter developed by Running With Scissors. Plunging players into dark, intense combat, this native port modernizes the classic title for Linux."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit Linux with high framerates and resolution scaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete classic campaign, Special Delivery expansion, and gauntlet challenge modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dual-stick gamepad and keyboard/mouse control configurations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Atmospheric sound effects, voice acting, and explosive weapon arsenal"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserves the gritty vintage aesthetic with improved engine stability"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "POSTAL Developers",
+        "url": "https://github.com/RWS-Studios/POSTAL-SourceCode"
+      },
+      "homepage": "https://github.com/RWS-Studios/POSTAL-SourceCode",
+      "repository": "https://github.com/pkgforge-dev/POSTAL-AppImage",
+      "keywords": [
+        "postal",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/postal.png",
+      "screenshots": [
+        {
+          "caption": "POSTAL interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/POSTAL-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

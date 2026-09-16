@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.fabiangreffrath.taradino",
+      "name": "Taradino",
+      "summary": "Taradino is an open-source modern source port of Rise of the Triad: Dark War (1994), Apogee Software's classic over-the-top first-person shooter",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Taradino is an open-source modern source port of Rise of the Triad: Dark War (1994), Apogee Software's classic over-the-top first-person shooter. Built with SDL2, it brings high-flying missile combat natively to Linux."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit systems with high-resolution display rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Smooth mouselook controls, customizable key bindings, and gamepad support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "All original playable characters with distinct speed and health characteristics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Ludicrous gibs, trampolines, dog mode, god mode, and explosive rocket weaponry"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Restored digital audio and Roland Sound Canvas MIDI music playback"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Taradino Developers",
+        "url": "https://github.com/fabiangreffrath/taradino"
+      },
+      "homepage": "https://github.com/fabiangreffrath/taradino",
+      "repository": "https://github.com/pkgforge-dev/Taradino-AppImage",
+      "keywords": [
+        "taradino",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/taradino.png",
+      "screenshots": [
+        {
+          "caption": "Taradino interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Taradino-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

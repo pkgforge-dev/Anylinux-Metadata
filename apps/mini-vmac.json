@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.gryphel.mini_vmac",
+      "name": "Mini vMac",
+      "summary": "Mini vMac is a miniature emulator for early Apple Macintosh computers based on the Motorola 68000 microcomputer architecture",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Mini vMac is a miniature emulator for early Apple Macintosh computers based on the Motorola 68000 microcomputer architecture. It emulates classic black-and-white Mac models including the Mac Plus, Mac 128K, 512K, and SE."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Accurate 68000 CPU emulation running original System 6 and System 7 operating systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Faithful recreation of the vintage 512x342 monochrome Macintosh display"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for classic Mac floppy disk images (.dsk, .image) with drag-and-drop loading"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Emulation of classic Mac sound hardware, mouse, and keyboard"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lightweight, fast, and portable design with minimal system requirements"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Mini vMac Developers",
+        "url": "https://www.gryphel.com/c/minivmac/"
+      },
+      "homepage": "https://www.gryphel.com/c/minivmac/",
+      "repository": "https://github.com/pkgforge-dev/Mini-vMac-AppImage",
+      "keywords": [
+        "mini-vmac",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/mini-vmac.png",
+      "screenshots": [
+        {
+          "caption": "Mini vMac interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Mini-vMac-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

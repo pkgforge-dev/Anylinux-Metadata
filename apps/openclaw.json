@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pjasicek.openclaw",
+      "name": "OpenClaw",
+      "summary": "OpenClaw is a modern, open-source reimplementation of Captain Claw (1997), the beloved 2D pirate side-scrolling platformer created by Monolith Prod",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenClaw is a modern, open-source reimplementation of Captain Claw (1997), the beloved 2D pirate side-scrolling platformer created by Monolith Productions. It reconstructs the game engine in C++ and SDL2."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit operating systems with high framerates"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and high-resolution display rendering with scalable HUD elements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for modern gamepads, joysticks, and configurable keyboard controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Faithfully reproduces all original levels, animated cutscenes, and swordplay"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Captain Claw game data files to run"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenClaw Developers",
+        "url": "https://github.com/pjasicek/OpenClaw"
+      },
+      "homepage": "https://github.com/pjasicek/OpenClaw",
+      "repository": "https://github.com/pkgforge-dev/OpenClaw-AppImage",
+      "keywords": [
+        "openclaw",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openclaw.png",
+      "screenshots": [
+        {
+          "caption": "OpenClaw interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenClaw-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

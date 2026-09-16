@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rmcrackan.libation",
+      "name": "Libation",
+      "summary": "Libation is a free, open-source application designed to liberate your Audible audiobook library",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Libation is a free, open-source application designed to liberate your Audible audiobook library. It connects to your personal Audible account to back up, decrypt, and convert audiobooks to DRM-free formats."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Automatically scans and imports your purchased Audible audiobook catalog"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Decrypts and converts audiobooks to standard M4B or MP3 files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Retains chapters, high-resolution cover artwork, and rich ID3 metadata"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lossless audio conversion preserving original audio bitrate and sound quality"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in multi-account support across international Audible marketplaces"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Libation Developers",
+        "url": "https://github.com/rmcrackan/Libation"
+      },
+      "homepage": "https://github.com/rmcrackan/Libation",
+      "repository": "https://github.com/pkgforge-dev/Libation-AppImage",
+      "keywords": [
+        "libation",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/libation.png",
+      "screenshots": [
+        {
+          "caption": "Libation interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Libation-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

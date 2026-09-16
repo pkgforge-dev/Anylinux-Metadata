@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.psygreg.linuxtoys",
+      "name": "LinuxToys",
+      "summary": "LinuxToys is a collection of user-friendly performance tweaks, system configuration tools, and optimization scripts for Linux desktops",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "LinuxToys is a collection of user-friendly performance tweaks, system configuration tools, and optimization scripts for Linux desktops. It simplifies common administration and gaming optimization tasks through an intuitive graphical menu."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "One-click performance tweaks for Linux gaming (gamemode, wine-staging, proton)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Kernel and scheduler tuning for reduced desktop latency and better responsiveness"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automated installation of popular gaming utilities, runtimes, and dependencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean graphical interface with modular scripts for safe application and rollback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Helpful diagnostics and system hardware information readouts"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "LinuxToys Developers",
+        "url": "https://github.com/psygreg/linuxtoys"
+      },
+      "homepage": "https://github.com/psygreg/linuxtoys",
+      "repository": "https://github.com/pkgforge-dev/linuxtoys-appimage",
+      "keywords": [
+        "linuxtoys",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/linuxtoys.png",
+      "screenshots": [
+        {
+          "caption": "LinuxToys interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/psygreg/linuxtoys/master/src/screenshot-light.webp"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/LinuxToys-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.gitlab.dnzhrecomp",
+      "name": "DNZHRecomp",
+      "summary": "Duke Nukem: Zero Hour Recompiled is a native PC port of the 1999 Nintendo 64 third-person shooter Duke Nukem: Zero Hour",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Duke Nukem: Zero Hour Recompiled is a native PC port of the 1999 Nintendo 64 third-person shooter Duke Nukem: Zero Hour. Statically recompiled from original machine instructions, it runs natively on modern PC platforms without emulation latency."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native PC rendering delivering fluid high framerates and zero emulation stutter"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen and high-resolution monitor support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dual analog gamepad and mouse-look control configurations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserved time-traveling campaign, authentic weapon arsenal, and voice lines"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low-latency sound rendering with modern multi-channel audio support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "DNZHRecomp Developers",
+        "url": "https://gitlab.com/sonicdcer/DNZHRecomp"
+      },
+      "homepage": "https://gitlab.com/sonicdcer/DNZHRecomp",
+      "repository": "https://github.com/pkgforge-dev/DNZHRecomp-AppImage",
+      "keywords": [
+        "dnzhrecomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dnzhrecomp.png",
+      "screenshots": [
+        {
+          "caption": "DNZHRecomp interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DNZHRecomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

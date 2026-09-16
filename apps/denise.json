@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.sourceforge.denise",
+      "name": "Denise",
+      "summary": "Denise is a cycle-accurate, open-source Commodore 64 and Amiga 500/1000/2000 emulator",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Denise is a cycle-accurate, open-source Commodore 64 and Amiga 500/1000/2000 emulator. Written in C++, it prioritizes emulation precision and clean audio-visual output to faithfully preserve vintage home computer experiences."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Highly accurate MOS 6510 CPU, VIC-II, and SID chip emulation for Commodore 64"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Motorola 68000 and OCS/ECS custom chipset emulation for classic Commodore Amiga"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for D64, G64, T64, TAP, PRG, and ADF disk and tape image formats"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable CRT shaders simulating scanlines, phosphors, and RF/composite signals"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low audio and input latency with game controller and joystick remapping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Denise Developers",
+        "url": "https://sourceforge.net/projects/deniseemu/"
+      },
+      "homepage": "https://sourceforge.net/projects/deniseemu/",
+      "repository": "https://github.com/pkgforge-dev/denise-appimage",
+      "keywords": [
+        "denise",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/denise.png",
+      "screenshots": [
+        {
+          "caption": "Denise interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Denise-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

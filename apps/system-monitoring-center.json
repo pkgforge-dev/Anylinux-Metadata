@@ -1,0 +1,178 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.system_monitoring_center_appimage_system_monitoring_center",
+      "name": "system-monitoring-center",
+      "summary": "A multi-featured, low-resource system monitor that lets you easily track and manage CPU, RAM, disk, network, and GPU usage",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "A multi-featured, low-resource system monitor that lets you easily track and manage CPU, RAM, disk, network, and GPU usage"
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Detailed system performance and usage usage monitoring/managing features"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Monitoring CPU, RAM, Disk, Network, GPU hardware/usage information"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Monitoring and managing processes and services (systemd)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Monitoring users, sensors and general system information"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports PolicyKit. No need to run the application with \"sudo\""
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware selection options (selecting CPU cores, disks, network cards, GPUs)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Plotting performance data of multiple devices at the same time"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive charts for querying performance data on any point"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Option for showing processes as tree or list"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optimized for low CPU usage"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customization menus for almost all tabs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports ARM architecture"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Free and open source"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Notes for Limitations:"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "GPU usage information availability depends on vendor/driver."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "GPU load is not tracked if GPU tab is switched off (for lower CPU usage)."
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Virtual machines may not provide CPU min-max frequencies, sensors and RAM hardware information."
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "system-monitoring-center Developers",
+        "url": "https://github.com/pkgforge-dev/system-monitoring-center-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/system-monitoring-center-AppImage",
+      "repository": "https://github.com/pkgforge-dev/system-monitoring-center-AppImage",
+      "keywords": [
+        "system-monitoring-center",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/system-monitoring-center.png",
+      "screenshots": [
+        {
+          "caption": "system-monitoring-center interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/system-monitoring-center-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

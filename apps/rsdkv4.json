@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rubberduckycooly.sonic_1_2_2013_decompilation_rsdkv4",
+      "name": "RSDKv4",
+      "summary": "RSDKv4 is a complete, open-source standalone decompilation of the 2013 mobile remasters of Sonic the Hedgehog 1 and Sonic the Hedgehog 2 running on",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "RSDKv4 is a complete, open-source standalone decompilation of the 2013 mobile remasters of Sonic the Hedgehog 1 and Sonic the Hedgehog 2 running on the Retro Engine v4."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit operating systems without mobile emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True 16:9 widescreen rendering with smooth 60 FPS side-scrolling action"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Restored cut content, hidden zones (such as Hidden Palace Zone), and debug modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Playable characters include Sonic, Tails, and Knuckles with unique movesets"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full modern USB gamepad support and customizable keybindings"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "RSDKv4 Developers",
+        "url": "https://github.com/Rubberduckycooly/Sonic-1-2-2013-Decompilation"
+      },
+      "homepage": "https://github.com/Rubberduckycooly/Sonic-1-2-2013-Decompilation",
+      "repository": "https://github.com/pkgforge-dev/RSDKv4-AppImage",
+      "keywords": [
+        "rsdkv4",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/rsdkv4.png",
+      "screenshots": [
+        {
+          "caption": "RSDKv4 interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/RSDKv4-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.cuberite.cuberite",
+      "name": "Cuberite",
+      "summary": "Cuberite is a custom, high-performance Minecraft game server written in C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Cuberite is a custom, high-performance Minecraft game server written in C++. Designed for speed and minimal resource usage, it handles hundreds of concurrent players on modest hardware while supporting extensible Lua plugins."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Extremely lightweight and fast execution written in modern C++"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low memory footprint compared to traditional Java-based Minecraft servers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Powerful Lua scripting API for developing custom server plugins and mechanics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in web administration interface for server monitoring and player management"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform architecture compatible with multiple Minecraft client versions"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Cuberite Developers",
+        "url": "https://github.com/cuberite/cuberite"
+      },
+      "homepage": "https://github.com/cuberite/cuberite",
+      "repository": "https://github.com/pkgforge-dev/Cuberite-AppImage",
+      "keywords": [
+        "cuberite",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cuberite.png",
+      "screenshots": [
+        {
+          "caption": "Cuberite interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Cuberite-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

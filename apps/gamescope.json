@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.valvesoftware.gamescope",
+      "name": "Gamescope",
+      "summary": "gamescope is Valve's micro-compositor designed to isolate games from the host desktop environment",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "gamescope is Valve's micro-compositor designed to isolate games from the host desktop environment. Used extensively on SteamOS and the Steam Deck, it provides integer scaling, FidelityFX Super Resolution (FSR), and low-latency frame pacing."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Sandboxes games into an isolated XWayland compositor instance"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced upscaling technologies including AMD FSR and integer scaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low-latency frame pacing, variable refresh rate (VRR), and frame rate capping"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless resolution handling preventing games from altering your desktop resolution"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Wayland-native architecture with HDR color management support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Gamescope Developers",
+        "url": "https://github.com/ValveSoftware/gamescope"
+      },
+      "homepage": "https://github.com/ValveSoftware/gamescope",
+      "repository": "https://github.com/pkgforge-dev/gamescope-appimage",
+      "keywords": [
+        "gamescope",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gamescope.png",
+      "screenshots": [
+        {
+          "caption": "Gamescope interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/gamescope-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

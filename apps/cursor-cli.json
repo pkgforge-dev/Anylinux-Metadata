@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.cursor.cursor_cli",
+      "name": "cursor-cli",
+      "summary": "Cursor CLI is the official command-line interface for the Cursor AI code editor ecosystem",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Cursor CLI is the official command-line interface for the Cursor AI code editor ecosystem. It provides terminal-based developer tools to interact with Cursor's AI models, search codebases, and manage background coding sessions."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Direct command-line interaction with advanced AI programming models"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fast repository indexing and codebase-wide semantic search capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless terminal workflows for asking questions and generating code diffs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integration with local developer environments and CI/CD pipelines"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Rapid access to project context and documentation summaries"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "cursor-cli Developers",
+        "url": "https://cursor.com/cli"
+      },
+      "homepage": "https://cursor.com/cli",
+      "repository": "https://github.com/pkgforge-dev/cursor-cli-AppImage",
+      "keywords": [
+        "cursor-cli",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cursor-cli.png",
+      "screenshots": [
+        {
+          "caption": "cursor-cli interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/cursor-cli-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

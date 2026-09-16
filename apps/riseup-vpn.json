@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.riseup.riseup_vpn",
+      "name": "RiseupVPN",
+      "summary": "RiseupVPN is an easy-to-use, personal virtual private network (VPN) service operated by the Riseup collective",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "RiseupVPN is an easy-to-use, personal virtual private network (VPN) service operated by the Riseup collective. It routes your Internet traffic through encrypted tunnels to protect your privacy and circumvent censorship."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "One-click connection to secure, encrypted VPN gateways"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Zero user activity logging or traffic tracking maintained by the non-profit Riseup collective"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic configuration without needing to manage OpenVPN configuration files manually"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "DNS leak prevention and automatic kill-switch safeguarding connection drops"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean, unobtrusive desktop indicator interface"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "RiseupVPN Developers",
+        "url": "https://riseup.net/vpn"
+      },
+      "homepage": "https://riseup.net/vpn",
+      "repository": "https://github.com/pkgforge-dev/Riseup-VPN-AppImage",
+      "keywords": [
+        "riseup-vpn",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/riseup-vpn.png",
+      "screenshots": [
+        {
+          "caption": "RiseupVPN interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Riseup-VPN-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

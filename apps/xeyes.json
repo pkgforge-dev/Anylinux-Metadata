@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.freedesktop.gitlab.xeyes",
+      "name": "xeyes",
+      "summary": "xeyes is the legendary X Window System demo program that renders a pair of animated eyes following the mouse cursor as it moves across the screen",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "xeyes is the legendary X Window System demo program that renders a pair of animated eyes following the mouse cursor as it moves across the screen. First created in 1988, it remains a beloved Unix desktop classic."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Animated eyes that track cursor position in real time across the entire desktop"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Uses the X SHAPE extension to display transparent, non-rectangular window geometry"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable eye outline colors, pupil colors, and update intervals"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Minimal system resource consumption"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Nostalgic desktop companion and visual cursor locator for multi-monitor setups"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "xeyes Developers",
+        "url": "https://gitlab.freedesktop.org/xorg/app/xeyes"
+      },
+      "homepage": "https://gitlab.freedesktop.org/xorg/app/xeyes",
+      "repository": "https://github.com/pkgforge-dev/xeyes-AppImage",
+      "keywords": [
+        "xeyes",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xeyes.png",
+      "screenshots": [
+        {
+          "caption": "xeyes interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/xeyes-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

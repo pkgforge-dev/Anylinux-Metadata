@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.crenedecotret.vibeprint_vibeprint_studio",
+      "name": "Vibeprint Studio",
+      "summary": "Vibeprint Studio is an open-source 3D printing slicing and printer management application",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Vibeprint Studio is an open-source 3D printing slicing and printer management application. It streamlines preparing 3D models (STL, OBJ, 3MF) for fabrication with intuitive slicing controls and G-code generation."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-performance slicing engine generating optimized toolpaths and supports"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Visual 3D layer preview inspecting nozzle trajectories and travel speeds"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct network printing integration for Moonraker, Klipper, and OctoPrint"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multi-material printing support and customizable filament profiles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean, modern desktop interface designed for makers and 3D printing professionals"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Vibeprint Studio Developers",
+        "url": "https://github.com/crenedecotret/vibeprint"
+      },
+      "homepage": "https://github.com/crenedecotret/vibeprint",
+      "repository": "https://github.com/pkgforge-dev/vibeprint-studio-appimage",
+      "keywords": [
+        "vibeprint-studio",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/vibeprint-studio.png",
+      "screenshots": [
+        {
+          "caption": "Vibeprint Studio interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Vibeprint-Studio-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

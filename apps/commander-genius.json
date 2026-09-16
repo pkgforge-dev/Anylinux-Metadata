@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.commander_genius_appimage_commander_genius",
+      "name": "commander-genius",
+      "summary": "Commander-Genius aka CloneKeenPlus is an engine which interprets Commander Keen 1-6, Dreams and Cosmos the Cosmic Adventure",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Commander-Genius aka CloneKeenPlus is an engine which interprets Commander Keen 1-6, Dreams and Cosmos the Cosmic Adventure."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "But there is more: How about four player coop, VGA graphics, remastered music and many great mods to apply. There even exists the unoffical trilogy that was planned back then (Keen 7-9). Eventhough that trilogy was never released, it got picked up by fans. With an integrated CG game store you can download every free game with one click and start playing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "For registered Keen games you need the game data of the games in order to play them. Check the Readme file for more information on that. Episode 2, 3, 5 and 6 are registered versions which can be purchased by 3D Realms, Apogee, GOG or bought by someone else. If you still have the old games of the registered version, then copy those into a reachable directory and give it a try."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "commander-genius Developers",
+        "url": "https://github.com/pkgforge-dev/Commander-Genius-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/Commander-Genius-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Commander-Genius-AppImage",
+      "keywords": [
+        "commander-genius",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/commander-genius.png",
+      "screenshots": [
+        {
+          "caption": "commander-genius interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Commander-Genius-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

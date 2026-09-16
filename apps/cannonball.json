@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.djyt.cannonball",
+      "name": "Cannonball",
+      "summary": "Cannonball is an enhanced, open-source C++ engine rewrite of Yu Suzuki's classic 1986 arcade driving game OutRun",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Cannonball is an enhanced, open-source C++ engine rewrite of Yu Suzuki's classic 1986 arcade driving game OutRun. It loads the original arcade ROM data to deliver a faithful recreation with extensive modern enhancements."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Smooth 60 frames per second gameplay doubling the original arcade framerate"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen 16:9 rendering with seamless scenery expansion"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Force feedback support for modern racing wheels and vibration gamepads"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Custom track layouts, time trial modes, and multiple difficulty levels"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-quality stereo music and sound effect playback"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Cannonball Developers",
+        "url": "https://github.com/djyt/cannonball"
+      },
+      "homepage": "https://github.com/djyt/cannonball",
+      "repository": "https://github.com/pkgforge-dev/Cannonball-AppImage",
+      "keywords": [
+        "cannonball",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cannonball.png",
+      "screenshots": [
+        {
+          "caption": "Cannonball interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Cannonball-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

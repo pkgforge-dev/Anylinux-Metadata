@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.linuxmint.bulky",
+      "name": "Bulky",
+      "summary": "Bulky is a simple and powerful bulk file and folder renaming utility developed for the XApps project by the Linux Mint team",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Bulky is a simple and powerful bulk file and folder renaming utility developed for the XApps project by the Linux Mint team. It allows users to rename multiple files simultaneously using a variety of pattern matching and substitution rules."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Find and replace text within filenames with regular expression support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Add prefixes, suffixes, or insert text at specific character positions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modify text case including uppercase, lowercase, title case, and camel case"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Sequential numbering with customizable starting points and step increments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Instant live preview of proposed name changes before applying them to disk"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Bulky Developers",
+        "url": "https://github.com/linuxmint/bulky"
+      },
+      "homepage": "https://github.com/linuxmint/bulky",
+      "repository": "https://github.com/pkgforge-dev/Bulky-AppImage",
+      "keywords": [
+        "bulky",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/bulky.png",
+      "screenshots": [
+        {
+          "caption": "Bulky interface screenshot 1",
+          "source": "https://github.com/user-attachments/assets/d8ba440b-5223-4387-904d-62beffec6711"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Bulky-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

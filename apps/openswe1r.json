@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.openswe1r.openswe1r",
+      "name": "OpenSWE1R",
+      "summary": "OpenSWE1R is an open-source modern port and reimplementation of Star Wars Episode I: Racer (1999)",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenSWE1R is an open-source modern port and reimplementation of Star Wars Episode I: Racer (1999). It allows players to pilot high-speed podracers natively on modern Linux PCs with modern display and controller support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native Linux execution with support for high resolutions and modern widescreen aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Smooth, uncapped framerate rendering eliminating vintage frame rate drops"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern gamepad and flight stick support with analog steering and throttle"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity audio playback reproducing original sound effects and John Williams score"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Star Wars Episode I: Racer game data files to play"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenSWE1R Developers",
+        "url": "https://github.com/OpenSWE1R/openswe1r"
+      },
+      "homepage": "https://github.com/OpenSWE1R/openswe1r",
+      "repository": "https://github.com/pkgforge-dev/OpenSWE1R-AppImage",
+      "keywords": [
+        "openswe1r",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openswe1r.png",
+      "screenshots": [
+        {
+          "caption": "OpenSWE1R interface screenshot 1",
+          "source": "https://i.imgur.com/LAqHPgh.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenSWE1R-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

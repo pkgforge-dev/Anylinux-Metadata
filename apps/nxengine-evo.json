@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.nxengine.nxengine_evo",
+      "name": "NXEngine-evo",
+      "summary": "A somewhat upgraded/refactored version of NXEngine",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "A somewhat upgraded/refactored version of NXEngine."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "NXEngine-evo Developers",
+        "url": "https://github.com/nxengine/nxengine-evo"
+      },
+      "homepage": "https://github.com/nxengine/nxengine-evo",
+      "repository": "https://github.com/pkgforge-dev/NXEngine-evo-AppImage-Enhanced",
+      "keywords": [
+        "nxengine-evo",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nxengine-evo.png",
+      "screenshots": [
+        {
+          "caption": "NXEngine-evo interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/nxengine/nxengine-evo/master/screenshot.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/NXEngine-evo-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

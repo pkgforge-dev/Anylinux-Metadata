@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.xproger.openlara",
+      "name": "OpenLara",
+      "summary": "OpenLara is an open-source, modern engine reimplementation of classic Tomb Raider games (Tomb Raider 1 through 5)",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenLara is an open-source, modern engine reimplementation of classic Tomb Raider games (Tomb Raider 1 through 5). Built with modern rendering techniques, it brings Lara Croft's original adventures to modern PCs."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Real-time dynamic lighting, water reflections, and ambient occlusion"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Smooth 60 FPS and uncapped framerate gameplay with true widescreen rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "First-person and third-person camera perspective toggles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full controller support with modern analog stick and mouse controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports original level files and audio tracks from Tomb Raider 1 to 5"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenLara Developers",
+        "url": "https://github.com/XProger/OpenLara"
+      },
+      "homepage": "https://github.com/XProger/OpenLara",
+      "repository": "https://github.com/pkgforge-dev/OpenLara-AppImage",
+      "keywords": [
+        "openlara",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openlara.png",
+      "screenshots": [
+        {
+          "caption": "OpenLara interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenLara-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

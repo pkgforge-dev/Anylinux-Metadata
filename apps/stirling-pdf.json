@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.stirling_tools.stirling_pdf",
+      "name": "Stirling PDF",
+      "summary": "Stirling-PDF is a powerful, locally hosted multi-tool web application for performing all operations on PDF files",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Stirling-PDF is a powerful, locally hosted multi-tool web application for performing all operations on PDF files. It provides a complete, privacy-focused alternative to proprietary online PDF editing suites."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Merge, split, rotate, reorder, and extract pages across multiple PDF documents"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Convert PDFs to and from Word, PowerPoint, images, HTML, and Markdown"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "OCR text recognition to make scanned documents searchable and editable"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Redact sensitive information, add digital watermarks, and compress file sizes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Add, sign, and remove passwords and digital security certificates"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Stirling PDF Developers",
+        "url": "https://github.com/Stirling-Tools/Stirling-PDF"
+      },
+      "homepage": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "repository": "https://github.com/pkgforge-dev/Stirling-PDF-AppImage",
+      "keywords": [
+        "stirling-pdf",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/stirling-pdf.png",
+      "screenshots": [
+        {
+          "caption": "Stirling PDF interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/images/home-light.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Stirling-PDF-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

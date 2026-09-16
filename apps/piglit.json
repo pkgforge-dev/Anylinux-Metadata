@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.freedesktop.gitlab.piglit",
+      "name": "piglit",
+      "summary": "Piglit is an automated test suite designed for verifying OpenGL, OpenCL, and Vulkan driver implementations",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Piglit is an automated test suite designed for verifying OpenGL, OpenCL, and Vulkan driver implementations. Widely utilized in the development and quality assurance of Mesa graphics drivers, Piglit runs thousands of compliance and regression tests."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive automated testing for OpenGL core profiles, extensions, and shaders"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Vulkan conformance and regression test integration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Generates detailed HTML, JSON, and text test reports with visual pass/fail summaries"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Concurrent multi-process test runner for rapid GPU hardware evaluation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Indispensable tool for graphics driver developers and Linux hardware testers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "piglit Developers",
+        "url": "https://gitlab.freedesktop.org/mesa/piglit"
+      },
+      "homepage": "https://gitlab.freedesktop.org/mesa/piglit",
+      "repository": "https://github.com/pkgforge-dev/Piglit-AppImage",
+      "keywords": [
+        "piglit",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/piglit.png",
+      "screenshots": [
+        {
+          "caption": "piglit interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Piglit-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

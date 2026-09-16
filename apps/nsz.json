@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.nicoboss.nsz",
+      "name": "nsz",
+      "summary": "NSZ is a Homebrew-compatible compressor and decompressor for Nintendo Switch game packages",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "NSZ is a Homebrew-compatible compressor and decompressor for Nintendo Switch game packages. Written in Python, it losslessly compresses NSP and XCI dumps into smaller NSZ and XCZ formats, saving up to 80% storage space."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-ratio lossless block compression for Nintendo Switch NSP and XCI files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fast multithreaded compression and decompression powered by zstandard"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Preserves all file headers, signatures, and game metadata for homebrew loaders"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Batch processing mode for entire folders of game dumps"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Command-line utility easily integrated into backup and management pipelines"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "nsz Developers",
+        "url": "https://github.com/nicoboss/nsz"
+      },
+      "homepage": "https://github.com/nicoboss/nsz",
+      "repository": "https://github.com/pkgforge-dev/NSZ-AppImage",
+      "keywords": [
+        "nsz",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nsz.png",
+      "screenshots": [
+        {
+          "caption": "nsz interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/NSZ-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

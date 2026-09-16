@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.fcare.kronos",
+      "name": "Kronos",
+      "summary": "Kronos is a modern, high-compatibility Sega Saturn and Sega ST-V arcade emulator forked from Yabause",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Kronos is a modern, high-compatibility Sega Saturn and Sega ST-V arcade emulator forked from Yabause. It leverages modern OpenGL to offer enhanced 3D resolution scaling and smooth polygon rendering."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Emulates the complex dual-CPU SH-2 architecture, VDP1, and VDP2 graphics processors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Internal resolution upscaling for Sega Saturn 3D graphics up to 4K"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Tessellation and polygonal perspective correction reducing 3D sprite distortion"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High compatibility with commercial Sega Saturn CD games and ST-V arcade ROMs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gamepad controller support with analog flight stick and gun peripheral mapping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Kronos Developers",
+        "url": "https://github.com/FCare/Kronos"
+      },
+      "homepage": "https://github.com/FCare/Kronos",
+      "repository": "https://github.com/pkgforge-dev/Kronos-AppImage",
+      "keywords": [
+        "kronos",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/kronos.png",
+      "screenshots": [
+        {
+          "caption": "Kronos interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Kronos-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

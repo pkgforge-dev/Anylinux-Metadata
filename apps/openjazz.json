@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.alistert.openjazz",
+      "name": "OpenJazz",
+      "summary": "OpenJazz is a free, open-source game engine reimplementation of Jazz Jackrabbit, the fast-paced 1994 platformer by Epic MegaGames",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenJazz is a free, open-source game engine reimplementation of Jazz Jackrabbit, the fast-paced 1994 platformer by Epic MegaGames. It allows players to enjoy the high-speed adventures of the green hare on modern Linux."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native cross-platform execution with smooth 60 FPS side-scrolling action"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Scalable high-resolution graphics and widescreen presentation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for modern controllers, gamepads, and customizable keyboard layouts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Local split-screen multiplayer racing and battle modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with shareware, floppy, and CD-ROM releases of Jazz Jackrabbit"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenJazz Developers",
+        "url": "https://github.com/AlisterT/openjazz"
+      },
+      "homepage": "https://github.com/AlisterT/openjazz",
+      "repository": "https://github.com/pkgforge-dev/OpenJazz-AppImage",
+      "keywords": [
+        "openjazz",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openjazz.png",
+      "screenshots": [
+        {
+          "caption": "OpenJazz interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenJazz-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

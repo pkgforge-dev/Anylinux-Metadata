@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.drhelius.geargrafx",
+      "name": "Geargrafx",
+      "summary": "Geargrafx is an open-source PC Engine and TurboGrafx-16 console emulator and debugger written in C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Geargrafx is an open-source PC Engine and TurboGrafx-16 console emulator and debugger written in C++. It delivers accurate hardware emulation of the classic NEC 16-bit video game console."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Precise HuC6280 CPU and HuC6270 video display controller emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity HuC6260 PSG sound generator emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports HuCard ROM image files with automatic region detection"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in debugger, memory viewer, and disassembly tools for development"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable video filters, aspect ratio correction, and gamepad mapping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Geargrafx Developers",
+        "url": "https://github.com/drhelius/Geargrafx"
+      },
+      "homepage": "https://github.com/drhelius/Geargrafx",
+      "repository": "https://github.com/pkgforge-dev/Geargrafx-AppImage",
+      "keywords": [
+        "geargrafx",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/geargrafx.png",
+      "screenshots": [
+        {
+          "caption": "Geargrafx interface screenshot 1",
+          "source": "https://www.geardome.com/files/geargrafx/geargrafx_debug_02.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Geargrafx-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rubberduckycooly.sonic_cd_11_decompilation_rsdkv3",
+      "name": "RSDKv3",
+      "summary": "RSDKv3 is a full, open-source standalone decompilation of Sonic CD (2011) and the Retro Engine v3",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "RSDKv3 is a full, open-source standalone decompilation of Sonic CD (2011) and the Retro Engine v3. It brings the definitive remaster of Sonic CD natively to Linux with silky-smooth performance and native widescreen rendering."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 60 FPS gameplay eliminating mobile and console emulation overhead"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen display rendering with scalable menus and HUD elements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Play as Sonic, Tails, and Knuckles with their respective abilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Includes both Original Japanese and US soundtrack arrangements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern gamepad support with remappable controls and rumble feedback"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "RSDKv3 Developers",
+        "url": "https://github.com/Rubberduckycooly/Sonic-CD-11-Decompilation"
+      },
+      "homepage": "https://github.com/Rubberduckycooly/Sonic-CD-11-Decompilation",
+      "repository": "https://github.com/pkgforge-dev/RSDKv3-AppImage",
+      "keywords": [
+        "rsdkv3",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/rsdkv3.png",
+      "screenshots": [
+        {
+          "caption": "RSDKv3 interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/RSDKv3-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

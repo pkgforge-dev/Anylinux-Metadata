@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.epsxe.epsxe",
+      "name": "ePSXe",
+      "summary": "ePSXe is a classic PlayStation 1 (PSX/PS1) video game console emulator",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ePSXe is a classic PlayStation 1 (PSX/PS1) video game console emulator. Utilizing a modular plugin architecture, it provides compatibility with a vast library of Sony PlayStation titles."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High compatibility rate with commercial PlayStation 1 game discs and image files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modular plugin system for video, audio, and CD-ROM configuration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated 3D graphics enhancements and resolution upscaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for digital and analog gamepads with force feedback vibration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Save state support and memory card management"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ePSXe Developers",
+        "url": "https://www.epsxe.com/"
+      },
+      "homepage": "https://www.epsxe.com/",
+      "repository": "https://github.com/pkgforge-dev/ePSXe-AppImage",
+      "keywords": [
+        "epsxe",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/epsxe.png",
+      "screenshots": [
+        {
+          "caption": "ePSXe interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ePSXe-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

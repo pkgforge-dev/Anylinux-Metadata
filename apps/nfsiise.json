@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.zaps166.nfsiise",
+      "name": "Need For Speed II SE",
+      "summary": "Need for Speed II SE (Cross-Platform) is a modern open-source wrapper and port for the 1997 racing classic Need for Speed II: Special Edition",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Need for Speed II SE (Cross-Platform) is a modern open-source wrapper and port for the 1997 racing classic Need for Speed II: Special Edition. It restores 3D hardware acceleration and modern networking to the vintage racer."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated 3D graphics utilizing modern OpenGL rendering backends"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and high-resolution support with correct aspect ratio preservation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern TCP/IP and UDP multiplayer support for LAN and online races"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Controller configuration supporting modern analog gamepads and racing wheels"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Need for Speed II: Special Edition game data files to play"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Need For Speed II SE Developers",
+        "url": "https://github.com/zaps166/NFSIISE"
+      },
+      "homepage": "https://github.com/zaps166/NFSIISE",
+      "repository": "https://github.com/pkgforge-dev/NFSIISE-AppImage",
+      "keywords": [
+        "nfsiise",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nfsiise.png",
+      "screenshots": [
+        {
+          "caption": "Need For Speed II SE interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/zaps166/GitHubCommonContents/master/Screenshots/NFSIISE.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/NFSIISE-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

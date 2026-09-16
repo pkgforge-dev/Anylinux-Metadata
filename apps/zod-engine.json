@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.sourceforge.zod_engine",
+      "name": "Zod Engine",
+      "summary": "The Zod Engine is an open-source multiplayer remake of Z (1996), the classic real-time tactical strategy game developed by The Bitmap Brothers",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The Zod Engine is an open-source multiplayer remake of Z (1996), the classic real-time tactical strategy game developed by The Bitmap Brothers. It modernizes the territory-conquering robotic war for modern systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native cross-platform execution with support for high resolutions and modern displays"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Tactical real-time strategy gameplay focused on territory control, factories, and flags"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Robust multiplayer support for online and LAN battles against human opponents"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Challenging AI opponents for intense single-player skirmish matches"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Faithful recreation of original robot units, tanks, gun emplacements, and humorous cutscenes"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Zod Engine Developers",
+        "url": "https://sourceforge.net/projects/zod/"
+      },
+      "homepage": "https://sourceforge.net/projects/zod/",
+      "repository": "https://github.com/pkgforge-dev/Zod-Engine-AppImage",
+      "keywords": [
+        "zod-engine",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/zod-engine.png",
+      "screenshots": [
+        {
+          "caption": "Zod Engine interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Zod-Engine-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

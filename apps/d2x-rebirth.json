@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.dxx_rebirth.dxx_rebirth_d2x_rebirth",
+      "name": "D2X-Rebirth",
+      "summary": "D2X-Rebirth is an open-source source port of Descent II, the acclaimed six-degrees-of-freedom sci-fi shooter",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "D2X-Rebirth is an open-source source port of Descent II, the acclaimed six-degrees-of-freedom sci-fi shooter. Continuing the work of the DXX-Rebirth project, it brings Descent II natively to modern Linux desktops with enhanced visual clarity."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "True six-degrees-of-freedom space combat with improved physics precision"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution widescreen rendering with dynamic lighting and colored effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for modern joysticks, throttle controllers, gamepads, and mice"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity digital music and sound effects playback using modern audio backends"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete compatibility with official missions, custom levels, and multiplayer modes"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "D2X-Rebirth Developers",
+        "url": "https://github.com/dxx-rebirth/dxx-rebirth"
+      },
+      "homepage": "https://github.com/dxx-rebirth/dxx-rebirth",
+      "repository": "https://github.com/pkgforge-dev/d2x-rebirth-AppImage",
+      "keywords": [
+        "d2x-rebirth",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/d2x-rebirth.png",
+      "screenshots": [
+        {
+          "caption": "D2X-Rebirth interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/D2X-Rebirth-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.anthropics.claude_code",
+      "name": "claude-code",
+      "summary": "Claude Code is an agentic command-line coding tool developed by Anthropic",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Claude Code is an agentic command-line coding tool developed by Anthropic. Powered by Claude 3.7 Sonnet, it operates directly inside your terminal to understand codebases, edit files, run bash commands, execute tests, and manage git workflows."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Context-aware exploration and semantic navigation of large codebases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automated multi-file refactoring, bug fixing, and feature implementation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct execution of build commands, linters, test suites, and git operations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive terminal chat interface with real-time feedback and diff approval"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in project indexing and architecture pattern recognition"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "claude-code Developers",
+        "url": "https://github.com/anthropics/claude-code"
+      },
+      "homepage": "https://github.com/anthropics/claude-code",
+      "repository": "https://github.com/pkgforge-dev/claude-code-appimage",
+      "keywords": [
+        "claude-code",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/claude-code.png",
+      "screenshots": [
+        {
+          "caption": "claude-code interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/claude-code-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

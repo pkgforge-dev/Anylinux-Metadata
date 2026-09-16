@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.atsb.doom64ex_plus_doom64exultra",
+      "name": "Doom64EX-Ultra",
+      "summary": "DOOM64 EX+ Ultra is an enhanced fork of the DOOM 64 source port, recreating the dark atmospheric Nintendo 64 installment of DOOM for modern PCs wit",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DOOM64 EX+ Ultra is an enhanced fork of the DOOM 64 source port, recreating the dark atmospheric Nintendo 64 installment of DOOM for modern PCs with enhanced features, rendering improvements, and bug fixes."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Faithfully recreates the unique atmosphere, textures, sprites, and ambient soundtrack of DOOM 64"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated OpenGL and Vulkan rendering with widescreen support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full mouse-look, customizable crosshairs, and configurable keybindings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Restored cut levels, extended modding capabilities, and custom map support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced audio backend supporting atmospheric ambient reverb effects"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Doom64EX-Ultra Developers",
+        "url": "https://github.com/atsb/Doom64EX-Plus"
+      },
+      "homepage": "https://github.com/atsb/Doom64EX-Plus",
+      "repository": "https://github.com/pkgforge-dev/DOOM64EXUltra-AppImage",
+      "keywords": [
+        "doom64exultra",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/doom64exultra.png",
+      "screenshots": [
+        {
+          "caption": "Doom64EX-Ultra interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DOOM64EXUltra-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

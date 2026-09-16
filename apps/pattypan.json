@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.yarl.pattypan",
+      "name": "Pattypan",
+      "summary": "Pattypan is an open-source desktop utility designed for uploading media files in bulk to Wikimedia Commons",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Pattypan is an open-source desktop utility designed for uploading media files in bulk to Wikimedia Commons. Powered by spreadsheet templates, it streamlines the process of uploading hundreds of images, audio files, and documents with standardized wikitext metadata."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Generates spreadsheet templates (Excel, CSV) automatically from local image directories"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Bulk metadata generation including descriptions, categories, dates, and author credits"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fast batch uploading to Wikimedia Commons with automatic error handling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for complex wikitext templates and structured Commons data"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Intuitive step-by-step wizard interface suitable for cultural institutions and photographers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Pattypan Developers",
+        "url": "https://github.com/yarl/pattypan"
+      },
+      "homepage": "https://github.com/yarl/pattypan",
+      "repository": "https://github.com/pkgforge-dev/pattypan-appimage",
+      "keywords": [
+        "pattypan",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/pattypan.png",
+      "screenshots": [
+        {
+          "caption": "Pattypan interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Pattypan-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

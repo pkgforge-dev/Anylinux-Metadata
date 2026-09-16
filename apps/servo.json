@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.servo.servo",
+      "name": "Servo",
+      "summary": "Servo is an open-source, independent web browser engine written in Rust",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Servo is an open-source, independent web browser engine written in Rust. Designed for high concurrency, memory safety, and performance, Servo pioneers a parallel architecture for layout, styling, and rendering."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Parallelized layout and CSS style computation utilizing multi-core processors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Memory-safe architecture written in Rust to minimize memory vulnerability exploits"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Embeddable web view engine designed for desktop applications and embedded systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "WebGL and WebGPU hardware-accelerated graphics rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Active community development driving independent web engine standards"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Servo Developers",
+        "url": "https://github.com/servo/servo"
+      },
+      "homepage": "https://github.com/servo/servo",
+      "repository": "https://github.com/pkgforge-dev/servo-AppImage",
+      "keywords": [
+        "servo",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/servo.png",
+      "screenshots": [
+        {
+          "caption": "Servo interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/servo-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.mednafen.mednafen",
+      "name": "Mednafen",
+      "summary": "Mednafen is a portable, multi-system command-line emulator utilizing OpenGL and SDL",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Mednafen is a portable, multi-system command-line emulator utilizing OpenGL and SDL. Known for exceptional emulation accuracy, it supports a wide variety of retro console and handheld systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Emulates PlayStation 1, Sega Saturn, PC Engine / TurboGrafx-16, and Neo Geo Pocket"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate Nintendo emulation for NES, SNES, Game Boy, Game Boy Color, and GBA"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Sega Genesis, Master System, Game Gear, and WonderSwan support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Robust netplay architecture with rewind capabilities and save state management"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced video filters, custom shader support, and multi-controller mapping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Mednafen Developers",
+        "url": "https://mednafen.github.io/"
+      },
+      "homepage": "https://mednafen.github.io/",
+      "repository": "https://github.com/pkgforge-dev/mednafen-appimage",
+      "keywords": [
+        "mednafen",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/mednafen.png",
+      "screenshots": [
+        {
+          "caption": "Mednafen interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/mednafen-appimage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

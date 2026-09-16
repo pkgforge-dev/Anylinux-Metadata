@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.dcfuksurmom.phantom_satellite",
+      "name": "Phantom Satellite",
+      "summary": "Phantom Satellite is a web browser forked from Pale Moon that focuses on supporting legacy, specialized, and niche Linux operating systems while ma",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Phantom Satellite is a web browser forked from Pale Moon that focuses on supporting legacy, specialized, and niche Linux operating systems while maintaining modern web compatibility."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Optimized Goanna layout engine with minimal runtime library dependencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built to run seamlessly on older Linux distributions and non-standard architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for classic XUL and UXP extensions and browser themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in privacy controls blocking third-party tracking and telemetry"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Familiar traditional browser interface with customizable toolbars and menus"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Phantom Satellite Developers",
+        "url": "https://github.com/DCFUKSURMOM/Phantom-Satellite"
+      },
+      "homepage": "https://github.com/DCFUKSURMOM/Phantom-Satellite",
+      "repository": "https://github.com/pkgforge-dev/Phantom-Satellite-AppImage",
+      "keywords": [
+        "phantom-satellite",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/phantom-satellite.png",
+      "screenshots": [
+        {
+          "caption": "Phantom Satellite interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Phantom-Satellite-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

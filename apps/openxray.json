@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.openxray.xray_16_openxray",
+      "name": "OpenXRay",
+      "summary": "OpenXRay is an improved, open-source game engine port of GSC Game World's X-Ray Engine",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenXRay is an improved, open-source game engine port of GSC Game World's X-Ray Engine. It modernizes the engine powering the S.T.A.L.K.E.R. trilogy (Shadow of Chernobyl, Clear Sky, and Call of Pripyat)."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit Linux port supporting modern hardware architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced visual renderer supporting DirectX 11 / OpenGL shaders and dynamic lighting"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Substantial performance optimizations and fixes for engine crashes and memory leaks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with official S.T.A.L.K.E.R. game assets and community modifications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced audio backend with 3D positional audio and environmental effects"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenXRay Developers",
+        "url": "https://github.com/OpenXRay/xray-16"
+      },
+      "homepage": "https://github.com/OpenXRay/xray-16",
+      "repository": "https://github.com/pkgforge-dev/openxray-appimage",
+      "keywords": [
+        "openxray",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openxray.png",
+      "screenshots": [
+        {
+          "caption": "OpenXRay interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenXRay-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

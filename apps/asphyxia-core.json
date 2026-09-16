@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.asphyxia_core.core_asphyxia_core",
+      "name": "Asphyxia CORE",
+      "summary": "Asphyxia CORE is a modular, high-performance server emulator and network backend designed for arcade rhythm games",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Asphyxia CORE is a modular, high-performance server emulator and network backend designed for arcade rhythm games. Built with TypeScript and Node.js, it emulates online network services, score tracking, card authentication, and game configuration for Bemani arcade titles."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Modular plugin architecture supporting multiple arcade rhythm game titles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Card and profile management with persistent save data and score tracking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Web-based management dashboard for user configuration and game settings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Local and network play support with low latency packet processing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform server backend easily deployable on desktop and server environments"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Asphyxia CORE Developers",
+        "url": "https://github.com/asphyxia-core/core"
+      },
+      "homepage": "https://github.com/asphyxia-core/core",
+      "repository": "https://github.com/pkgforge-dev/asphyxia-core-appimage",
+      "keywords": [
+        "asphyxia-core",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/asphyxia-core.png",
+      "screenshots": [
+        {
+          "caption": "Asphyxia CORE interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Asphyxia-CORE-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

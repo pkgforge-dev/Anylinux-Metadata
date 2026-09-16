@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.rvgl.rvgl",
+      "name": "RVGL",
+      "summary": "RVGL is a cross-platform, enhanced rewrite of the classic 1999 radio-controlled car racing game Re-Volt",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "RVGL is a cross-platform, enhanced rewrite of the classic 1999 radio-controlled car racing game Re-Volt. Built with modern OpenGL and SDL2, it brings the miniature racing classic natively to modern Linux desktops."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit Linux port with high-resolution widescreen and 4K support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Online multiplayer racing with peer-to-peer networking and online lobby browser"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Uncapped framerates, enhanced particle effects, and dynamic lighting"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for community cars, custom tracks, and legacy Re-Volt mods"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern gamepad support with analog steering, force feedback, and split-screen mode"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "RVGL Developers",
+        "url": "https://rvgl.org/"
+      },
+      "homepage": "https://rvgl.org/",
+      "repository": "https://github.com/pkgforge-dev/RVGL-AppImage",
+      "keywords": [
+        "rvgl",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/rvgl.png",
+      "screenshots": [
+        {
+          "caption": "RVGL interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/RVGL-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

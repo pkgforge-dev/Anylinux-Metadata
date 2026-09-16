@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.skynettx.raptor",
+      "name": "Raptor: Call of the Shadows",
+      "summary": "Raptor: Call of the Shadows (Source Port) is a reverse-engineered native PC port of the classic 1994 vertical-scrolling shoot-em-up by Cygnus Studi",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Raptor: Call of the Shadows (Source Port) is a reverse-engineered native PC port of the classic 1994 vertical-scrolling shoot-em-up by Cygnus Studios and Apogee Software. It lets players pilot the futuristic mercenary fighter natively on Linux."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit operating systems with fluid high framerates"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution graphics scaling with support for modern widescreen displays"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for modern gamepads, flight sticks, mice, and keyboards"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Faithful reproduction of all original sectors (Bravo, Tango, Outer Regions)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-quality audio output restoring the original digital sound effects and MIDI tracks"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Raptor: Call of the Shadows Developers",
+        "url": "https://github.com/skynettx/raptor"
+      },
+      "homepage": "https://github.com/skynettx/raptor",
+      "repository": "https://github.com/pkgforge-dev/Raptor-AppImage",
+      "keywords": [
+        "raptor",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/raptor.png",
+      "screenshots": [
+        {
+          "caption": "Raptor: Call of the Shadows interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Raptor-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

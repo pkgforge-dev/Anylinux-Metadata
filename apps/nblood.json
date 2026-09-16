@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.nukeykt.nblood",
+      "name": "NBlood",
+      "summary": "NBlood is an accurate source port of Blood (1997), the legendary horror first-person shooter developed by Monolith Productions",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "NBlood is an accurate source port of Blood (1997), the legendary horror first-person shooter developed by Monolith Productions. Based on the EDuke32 BUILD engine, it brings Blood natively to modern Linux desktops."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native execution on modern 64-bit systems with high-resolution widescreen support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern mouse-look, uncapped framerates, and customizable keybindings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for original Blood campaigns, Cryptic Passage, and community maps"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate weapon physics, voxel models, dynamic lighting, and gore mechanics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity audio playback supporting original CD audio and MIDI soundtracks"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "NBlood Developers",
+        "url": "https://github.com/nukeykt/NBlood"
+      },
+      "homepage": "https://github.com/nukeykt/NBlood",
+      "repository": "https://github.com/pkgforge-dev/NBlood-AppImage",
+      "keywords": [
+        "nblood",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nblood.png",
+      "screenshots": [
+        {
+          "caption": "NBlood interface screenshot 1",
+          "source": "https://github.com/user-attachments/assets/f517d412-ac7f-4002-ab47-35e41bab9f26"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/NBlood-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.mesa3d.mesa",
+      "name": "Mesa",
+      "summary": "Mesa is the open-source 3D graphics library providing OpenGL, Vulkan, and OpenCL implementations for Linux GPUs",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Mesa is the open-source 3D graphics library providing OpenGL, Vulkan, and OpenCL implementations for Linux GPUs. This portable package bundles cutting-edge Mesa drivers to test the latest graphics driver features on any distribution."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Up-to-date Vulkan drivers including RADV (AMD), ANV (Intel), and NVK (NVIDIA)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full OpenGL 4.6 and OpenGL ES 3.2 support for hardware-accelerated rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cutting-edge shader compiler improvements (ACO) delivering faster game loading"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Diagnostic tools and environment configuration for testing graphics hardware"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Can be used seamlessly to run games and binaries with the latest graphics stack"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Mesa Developers",
+        "url": "https://www.mesa3d.org/"
+      },
+      "homepage": "https://www.mesa3d.org/",
+      "repository": "https://github.com/pkgforge-dev/mesa-appimage",
+      "keywords": [
+        "mesa",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/mesa.png",
+      "screenshots": [
+        {
+          "caption": "Mesa interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/MESA-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.aarongiles.dreamm.dreamm",
+      "name": "DREAMM",
+      "summary": "DREAMM is an emulator and preservation engine created by Aaron Giles dedicated to LucasArts graphic adventure and arcade games",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DREAMM is an emulator and preservation engine created by Aaron Giles dedicated to LucasArts graphic adventure and arcade games. It provides an authentic, plug-and-play experience for classic titles using the SCUMM engine, GrimE, and FM-Towns hardware."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "One-click launching of classic LucasArts adventures with zero configuration needed"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports SCUMM engine titles, GrimE 3D adventures, and FM-Towns releases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Pixel-accurate graphics scaling with authentic CRT emulation options"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate sound synthesis and digital audio playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated game manager that organizes and preserves your classic collection"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "DREAMM Developers",
+        "url": "https://dreamm.aarongiles.com/"
+      },
+      "homepage": "https://dreamm.aarongiles.com/",
+      "repository": "https://github.com/pkgforge-dev/dreamm-appimage",
+      "keywords": [
+        "dreamm",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dreamm.png",
+      "screenshots": [
+        {
+          "caption": "DREAMM interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DREAMM-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

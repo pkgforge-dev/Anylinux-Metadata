@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.launchpad.maniadrive",
+      "name": "ManiaDrive",
+      "summary": "ManiaDrive is an arcade car driving and acrobatic stunt game in the spirit of TrackMania",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ManiaDrive is an arcade car driving and acrobatic stunt game in the spirit of TrackMania. Built with realistic car physics, loop-the-loops, and death-defying jumps, it challenges players to beat track time records."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Acrobatic stunt tracks with extreme loops, ramps, wall-rides, and chicanes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Realistic vehicle dynamics and suspension physics powered by ODE"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in 3D track editor enabling players to build and share custom stunt courses"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Energetic soundtrack featuring diverse licensed rock and electronic music"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Ghost car visualization to race against your personal best times"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ManiaDrive Developers",
+        "url": "https://launchpad.net/~aapo-rantalainen/+archive/ubuntu/games"
+      },
+      "homepage": "https://launchpad.net/~aapo-rantalainen/+archive/ubuntu/games",
+      "repository": "https://github.com/pkgforge-dev/ManiaDrive-AppImage",
+      "keywords": [
+        "maniadrive",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/maniadrive.png",
+      "screenshots": [
+        {
+          "caption": "ManiaDrive interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ManiaDrive-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

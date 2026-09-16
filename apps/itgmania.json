@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.itgmania.itgmania",
+      "name": "ITGmania",
+      "summary": "ITGmania is an open-source rhythm game engine forked from StepMania 5.1, tailored specifically for modern arcade and home dance gaming",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ITGmania is an open-source rhythm game engine forked from StepMania 5.1, tailored specifically for modern arcade and home dance gaming. It focuses on precision timing, low input latency, and custom theme support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Highly optimized input polling system delivering low latency on modern dance pads"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for In The Groove and Dance Dance Revolution simfiles, charts, and music"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modernized Linux audio backends including PipeWire, ALSA, and PulseAudio"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad theme support with real-time score tracking, timing statistics, and modifiers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Robust USB dance pad profile saving and online leaderboard integrations"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ITGmania Developers",
+        "url": "https://github.com/itgmania/itgmania"
+      },
+      "homepage": "https://github.com/itgmania/itgmania",
+      "repository": "https://github.com/pkgforge-dev/ITGmania-AppImage",
+      "keywords": [
+        "itgmania",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/itgmania.png",
+      "screenshots": [
+        {
+          "caption": "ITGmania interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ITGmania-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

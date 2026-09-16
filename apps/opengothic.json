@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.try.opengothic",
+      "name": "OpenGothic",
+      "summary": "OpenGothic is an open-source reimplementation of the classic 2001 action-RPG Gothic 1 engine",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenGothic is an open-source reimplementation of the classic 2001 action-RPG Gothic 1 engine. Written in modern C++ with Vulkan rendering, it modernizes the living, breathing dark fantasy world of the Colony."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated Vulkan rendering pipeline with dynamic lighting and shadows"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern high-resolution and widescreen display support with adjustable FOV"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modernized combat controls, camera handling, and gamepad integration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Improved simulation stability and pathfinding for NPC routines"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Requires original Gothic 1 game assets to play"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenGothic Developers",
+        "url": "https://github.com/Try/OpenGothic"
+      },
+      "homepage": "https://github.com/Try/OpenGothic",
+      "repository": "https://github.com/pkgforge-dev/opengothic-appimage",
+      "keywords": [
+        "opengothic",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opengothic.png",
+      "screenshots": [
+        {
+          "caption": "OpenGothic interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/Try/OpenGothic/master/scr0.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenGothic-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

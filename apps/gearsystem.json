@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.drhelius.gearsystem",
+      "name": "Gearsystem",
+      "summary": "Gearsystem is a cross-platform Sega Master System, Game Gear, and SG-1000 console emulator written in C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gearsystem is a cross-platform Sega Master System, Game Gear, and SG-1000 console emulator written in C++. It provides cycle-accurate emulation of Sega's classic 8-bit home and handheld hardware."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Precise Z80 processor and Yamaha VDP graphics processor emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full sound emulation including SN76489 PSG and Yamaha YM2413 FM sound chips"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic cartridge mapper detection and battery-backed SRAM save support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate Game Gear LCD screen color palettes and aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gamepad controller support, save states, and rewind capabilities"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Gearsystem Developers",
+        "url": "https://github.com/drhelius/Gearsystem"
+      },
+      "homepage": "https://github.com/drhelius/Gearsystem",
+      "repository": "https://github.com/pkgforge-dev/Gearsystem-AppImage",
+      "keywords": [
+        "gearsystem",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gearsystem.png",
+      "screenshots": [
+        {
+          "caption": "Gearsystem interface screenshot 1",
+          "source": "https://www.geardome.com/files/gearsystem/gearsystem_debug_03.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gearsystem-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

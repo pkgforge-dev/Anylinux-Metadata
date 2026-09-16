@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.luebking.qarma",
+      "name": "Qarma",
+      "summary": "Qarma is a Qt-based clone of the Zenity dialog tool",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Qarma is a Qt-based clone of the Zenity dialog tool. It enables shell scripts and terminal commands to easily display graphical dialog boxes (file selectors, text entries, progress bars, and alerts) that match your Qt desktop theme."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Drop-in command-line compatibility with Zenity syntax and arguments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native Qt widgets that seamlessly match KDE Plasma and LXQt desktop themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Generates file selection, calendar, password entry, message, and list dialogs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive progress bar and notification tray dialogs for background tasks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lightweight and fast execution without GNOME or GTK runtime dependencies"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Qarma Developers",
+        "url": "https://github.com/luebking/qarma"
+      },
+      "homepage": "https://github.com/luebking/qarma",
+      "repository": "https://github.com/pkgforge-dev/qarma-AppImage",
+      "keywords": [
+        "qarma",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/qarma.png",
+      "screenshots": [
+        {
+          "caption": "Qarma interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/qarma-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

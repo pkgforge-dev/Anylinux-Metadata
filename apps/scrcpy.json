@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.genymobile.scrcpy",
+      "name": "scrcpy",
+      "summary": "scrcpy is an open-source utility that displays and controls Android devices connected via USB or over Wi-Fi",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "scrcpy is an open-source utility that displays and controls Android devices connected via USB or over Wi-Fi. It requires no root access on the device and delivers ultra-low latency mirroring."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High performance mirroring at 30 to 120 FPS with minimal latency (35-70 ms)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full mouse, touchpad, and physical keyboard control forwarding"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Audio forwarding from Android 11+ devices directly to your PC speakers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Bidirectional clipboard synchronization, file drag-and-drop, and APK installation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High visual quality with configurable bitrates, resolutions, and video recording"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "Apache-2.0",
+      "developer": {
+        "name": "scrcpy Developers",
+        "url": "https://github.com/Genymobile/scrcpy"
+      },
+      "homepage": "https://github.com/Genymobile/scrcpy",
+      "repository": "https://github.com/pkgforge-dev/scrcpy-AppImage",
+      "keywords": [
+        "scrcpy",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility",
+        "RemoteAccess"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/scrcpy.png",
+      "screenshots": [
+        {
+          "caption": "scrcpy interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/Genymobile/scrcpy/master/assets/screenshot-debian-600.jpg"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/scrcpy-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.drhelius.gearcoleco",
+      "name": "Gearcoleco",
+      "summary": "Gearcoleco is a cross-platform ColecoVision console emulator written in modern C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gearcoleco is a cross-platform ColecoVision console emulator written in modern C++. It accurately simulates the Z80 microprocessor, Texas Instruments VDP graphics, and sound hardware of the 1982 ColecoVision."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Accurate Z80 CPU and TMS9928A video display processor emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Faithful SN76489 sound generator synthesis with clean audio playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for ColecoVision cartridge ROM images and BIOS files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable video scaling, scanline filters, and fullscreen display"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full gamepad and controller mapping for standard and keypad inputs"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Gearcoleco Developers",
+        "url": "https://github.com/drhelius/Gearcoleco"
+      },
+      "homepage": "https://github.com/drhelius/Gearcoleco",
+      "repository": "https://github.com/pkgforge-dev/Gearcoleco-AppImage",
+      "keywords": [
+        "gearcoleco",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gearcoleco.png",
+      "screenshots": [
+        {
+          "caption": "Gearcoleco interface screenshot 1",
+          "source": "https://www.geardome.com/files/gearcoleco/gearcoleco_debug_02.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gearcoleco-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

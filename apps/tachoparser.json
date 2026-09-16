@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.traconiq.tachoparser",
+      "name": "tachoparser",
+      "summary": "tachoparser is an open-source application designed to read, inspect, and analyze digital tachograph driver cards and vehicle unit (.DDD / .TGD / .V",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "tachoparser is an open-source application designed to read, inspect, and analyze digital tachograph driver cards and vehicle unit (.DDD / .TGD / .V1B) data files for transport compliance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Parses digital driver card files (.DDD) and vehicle unit data according to EU regulations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Visualizes driving hours, rest breaks, daily work shifts, and weekly driving activity"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Identifies potential driving time infringements and regulation compliance issues"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Generates clear visual timelines and activity reports for transport managers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Works completely locally ensuring confidential driver data remains private"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "tachoparser Developers",
+        "url": "https://github.com/traconiq/tachoparser"
+      },
+      "homepage": "https://github.com/traconiq/tachoparser",
+      "repository": "https://github.com/pkgforge-dev/tachoparser-appimage",
+      "keywords": [
+        "tachoparser",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/tachoparser.png",
+      "screenshots": [
+        {
+          "caption": "tachoparser interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/tachoparser-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}
