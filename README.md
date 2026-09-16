@@ -6,7 +6,7 @@
 
 A community-maintained, Freedesktop AppStream-compliant metadata database for [AnyLinux AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) that are not distributed via Flathub.
 
-[Catalog Status](STATUS.md) | [Contributing Guide](CONTRIBUTING.md) | [JSON Schema](schema/app-manifest.json) | [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/)
+[Catalog Status](STATUS.md) | [Contributing Guide](CONTRIBUTING.md) | [Developer Handbook](DEVELOPMENT.md) | [Agent Specification](AGENTS.md) | [JSON Schema](schema/app-manifest.json) | [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/)
 
 ---
 
@@ -163,10 +163,13 @@ Every application manifest is stored in `apps/<slug>.json` and must validate aga
 | `icons/` | Curated 128x128 and 256x256 PNG and SVG icons |
 | `schema/` | TypeScript Zod schemas, sandbox specification, and compiled `app-manifest.json` |
 | `scripts/` | Maintenance tooling (`validate.ts`, `sync-upstream.ts`, `import-pla.ts`, `export-catalog.ts`) |
-| `tests/` | Automated unit test suite executed via `bun test` |
+| `tests/` | Automated unit test suite executed via `bun test` or `npm test` |
 | `web/` | Browser-based visual metadata editor SPA |
 | `.github/` | GitHub issue templates, PR preview bot, and scheduled synchronization workflows |
 | `STATUS.md` | Real-time catalog coverage metrics and pending backlog |
+| `DEVELOPMENT.md` | Comprehensive developer and contributor handbook |
+| `AGENTS.md` | Autonomous AI agent operation specification and invariants |
+| `Makefile` | Standard Unix build automation targets |
 | `package.json` | Project configuration and scripts |
 | `tsconfig.json` | TypeScript configuration |
 
@@ -176,47 +179,64 @@ Every application manifest is stored in `apps/<slug>.json` and must validate aga
 
 ### Prerequisites
 
-- [Bun](https://bun.sh) (v1.1 or later) or Node.js (v20 or later)
+- **Bun** (v1.1 or later) OR **Node.js** (v20 or later with npm)
+- Standard Unix utilities (`make`, `bash`)
 
 ### Common Commands
 
-Install dependencies:
+The project provides unified commands that auto-detect Bun or Node.js, as well as a standard `Makefile`.
+
+#### Using Make
+
+```bash
+# Run test suite and validate manifests
+make
+
+# Validate all manifests against schema and local icon assets
+make validate
+
+# Run unit tests
+make test
+
+# Export downstream JSON and XML distribution files
+make export
+
+# Synchronize backlog against upstream AnyLinux and Flathub
+make sync
+```
+
+#### Using Bun
+
 ```bash
 bun install
-```
-
-Execute unit test suite:
-```bash
 bun test
-```
-
-Validate all application manifests against the schema:
-```bash
 bun run validate
+bun run export
+bun run sync
 ```
 
-Synchronize tracking data against upstream AnyLinux AppImages and Flathub:
+#### Using Node.js / npm
+
 ```bash
-bun run sync
+npm install
+npm test
+npm run validate
+npm run export
+npm run sync
 ```
 
 Import application metadata from Portable-Linux-Apps:
 ```bash
 # Import default batch (18 applications)
-bun run import
+npm run import
 
 # Import all matchable applications
-bun run import --all
-```
-
-Export downstream distribution artifacts:
-```bash
-bun run export
+npm run import -- --all
 ```
 
 Regenerate IDE JSON Schema:
 ```bash
-bun run generate-schema
+npm run generate-schema
 ```
 
 ---

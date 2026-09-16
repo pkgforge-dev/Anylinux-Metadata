@@ -1,10 +1,12 @@
 import { readdir, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { resolve, basename } from "node:path";
+import { resolve, dirname, basename } from "node:path";
+import { fileURLToPath } from "node:url";
 import { appManifestSchema, applicationSlugSchema } from "../schema/schema.ts";
 
-const appsDir = resolve(import.meta.dir, "../apps");
-const iconsDir = resolve(import.meta.dir, "../icons");
+const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
+const appsDir = resolve(currentDir, "../apps");
+const iconsDir = resolve(currentDir, "../icons");
 
 async function validateAll() {
   if (!existsSync(appsDir)) {

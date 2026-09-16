@@ -1,4 +1,5 @@
-import { describe, test, expect } from "bun:test";
+import { describe, it as test } from "node:test";
+import assert from "node:assert/strict";
 import { appManifestSchema, applicationSlugSchema } from "../schema/schema.ts";
 
 describe("Schema Validation Tests", () => {
@@ -70,7 +71,7 @@ describe("Schema Validation Tests", () => {
     };
 
     const parsed = appManifestSchema.safeParse(validManifest);
-    expect(parsed.success).toBe(true);
+    assert.equal(parsed.success, true);
   });
 
   test("Rejects summary with trailing period", () => {
@@ -114,7 +115,7 @@ describe("Schema Validation Tests", () => {
     };
 
     const result = appManifestSchema.safeParse(invalidSummary);
-    expect(result.success).toBe(false);
+    assert.equal(result.success, false);
   });
 
   test("Rejects invalid SPDX license expression", () => {
@@ -158,14 +159,14 @@ describe("Schema Validation Tests", () => {
     };
 
     const result = appManifestSchema.safeParse(invalidLicense);
-    expect(result.success).toBe(false);
+    assert.equal(result.success, false);
   });
 
   test("Validates application slugs", () => {
-    expect(applicationSlugSchema.safeParse("htop").success).toBe(true);
-    expect(applicationSlugSchema.safeParse("ghostty-ide").success).toBe(true);
-    expect(applicationSlugSchema.safeParse("12to11").success).toBe(true);
-    expect(applicationSlugSchema.safeParse("App_Name").success).toBe(false);
-    expect(applicationSlugSchema.safeParse("invalid slug").success).toBe(false);
+    assert.equal(applicationSlugSchema.safeParse("htop").success, true);
+    assert.equal(applicationSlugSchema.safeParse("ghostty-ide").success, true);
+    assert.equal(applicationSlugSchema.safeParse("12to11").success, true);
+    assert.equal(applicationSlugSchema.safeParse("App_Name").success, false);
+    assert.equal(applicationSlugSchema.safeParse("invalid slug").success, false);
   });
 });

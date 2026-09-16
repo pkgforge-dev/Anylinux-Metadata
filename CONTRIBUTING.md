@@ -29,7 +29,7 @@ For contributors using Git:
    ```bash
    git clone https://github.com/pkgforge-dev/Anylinux-Metadata.git
    cd Anylinux-Metadata
-   bun install
+   bun install   # or npm install
    ```
 2. Check [STATUS.md](STATUS.md) to select an application from the pending backlog.
 3. Create the manifest file at `apps/<slug>.json`. Reference the schema at the top of the file:
@@ -94,12 +94,20 @@ Submissions must conform to the Freedesktop AppStream 1.0 standard and project g
 Run the test and validation commands prior to committing:
 
 ```bash
-# Execute schema unit tests
+# Using Make
+make test
+make validate
+make export
+
+# Or using Bun
 bun test
-
-# Validate all manifests against schema and local icon assets
 bun run validate
-
-# Verify catalog compilation
 bun run export
+
+# Or using npm
+npm test
+npm run validate
+npm run export
 ```
+
+For detailed architectural guidelines and development documentation, see [DEVELOPMENT.md](DEVELOPMENT.md). For automated agent specifications and invariant guarantees, see [AGENTS.md](AGENTS.md).

@@ -1,14 +1,20 @@
 import { readFile, writeFile, copyFile, mkdir, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { resolve, basename } from "node:path";
+import { resolve, dirname, basename } from "node:path";
+import { fileURLToPath } from "node:url";
 import { appManifestSchema, type AppManifest } from "../schema/schema.ts";
 
-const plaDir = resolve(process.env.HOME || "", "code/Portable-Linux-Apps.github.io");
+const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
+const plaDir = process.env.PLA_DIR || resolve(process.env.HOME || "", "code/Portable-Linux-Apps.github.io");
 const plaAppsDir = resolve(plaDir, "apps");
 const plaIconsDir = resolve(plaDir, "icons");
-const targetAppsDir = resolve(import.meta.dir, "../apps");
-const targetIconsDir = resolve(import.meta.dir, "../icons");
-const statusJsonPath = resolve(import.meta.dir, "../status.json");
+const targetAppsDir = resolve(currentDir, "../apps");
+const targetIconsDir = resolve(currentDir, "../icons");
+const statusJsonPath = resolve(currentDir, "../status.json");
+
+function stripEmojis(text: string): string {
+  return text.replace(/[\u{10000}-\u{10ffff}\u{2600}-\u{27bf}\u{2300}-\u{23ff}\u{2b50}-\u{2b55}\u{203c}\u{2049}\u{2139}\u{2194}-\u{2199}\u{21a9}-\u{21aa}\u{2934}-\u{2935}\u{25aa}-\u{25ab}\u{25b6}\u{25c0}\u{25fb}-\u{25fe}]/gu, "").trim();
+}
 
 // Known license overrides for popular non-Flathub apps
 const knownLicenses: Record<string, string> = {
@@ -111,7 +117,7 @@ function parsePlaFile(content: string) {
   if (mainText) {
     const rawParas = mainText.split(/\n\n+/);
     for (const p of rawParas) {
-      const clean = p.replace(/\n/g, " ").trim();
+      const clean = stripEmojis(p.replace(/\n/g, " ").trim());
       if (clean) paragraphs.push(clean);
     }
   }
@@ -119,13 +125,13 @@ function parsePlaFile(content: string) {
   if (sections[1]) {
     const featLines = sections[1].split("\n");
     for (const fl of featLines) {
-      const clean = fl.replace(/^-\s*/, "").trim();
+      const clean = stripEmojis(fl.replace(/^-\s*/, "").trim());
       if (clean) features.push(clean);
     }
   }
 
   return {
-    name,
+    name: stripEmojis(name),
     paragraphs,
     features,
     screenshots,
@@ -186,13 +192,29 @@ async function importApp(appEntry: { name: string; slug: string; repo: string; u
     resolve(plaAppsDir, slug.replace(/-/g, "")),
   ];
 
+  let rawPla = "";
   let plaPath = candidates.find((c) => existsSync(c));
-  if (!plaPath) {
-    console.warn(`WARN [${slug}]: No match in Portable-Linux-Apps apps/`);
+  if (plaPath) {
+    rawPla = await readFile(plaPath, "utf8");
+  } else {
+    // Remote fallback to official repository
+    const remoteNames = [slug, appEntry.name.toLowerCase(), slug.replace(/-/g, "")];
+    for (const rName of remoteNames) {
+      try {
+        const res = await fetch(`https://raw.githubusercontent.com/Portable-Linux-Apps/Portable-Linux-Apps.github.io/main/apps/${rName}`);
+        if (res.ok) {
+          rawPla = await res.text();
+          break;
+        }
+      } catch {}
+    }
+  }
+
+  if (!rawPla) {
+    console.warn(`WARN [${slug}]: No match in Portable-Linux-Apps (local or remote)`);
     return false;
   }
 
-  const rawPla = await readFile(plaPath, "utf8");
   const parsed = parsePlaFile(rawPla);
 
   const appName = parsed.name || appEntry.name;
@@ -214,7 +236,9 @@ async function importApp(appEntry: { name: string; slug: string; repo: string; u
     });
   }
 
-  // Find icon
+  // Find icon (local or remote)
+  await mkdir(targetIconsDir, { recursive: true });
+  const localTargetIcon = resolve(targetIconsDir, `${slug}.png`);
   const iconCandidates = [
     resolve(plaIconsDir, `${slug}.png`),
     resolve(plaIconsDir, `${appEntry.name.toLowerCase()}.png`),
@@ -222,8 +246,19 @@ async function importApp(appEntry: { name: string; slug: string; repo: string; u
   ];
   let plaIconPath = iconCandidates.find((c) => existsSync(c));
   if (plaIconPath) {
-    await mkdir(targetIconsDir, { recursive: true });
-    await copyFile(plaIconPath, resolve(targetIconsDir, `${slug}.png`));
+    await copyFile(plaIconPath, localTargetIcon);
+  } else if (!existsSync(localTargetIcon)) {
+    const remoteIconNames = [`${slug}.png`, `${appEntry.name.toLowerCase()}.png`];
+    for (const rIcon of remoteIconNames) {
+      try {
+        const res = await fetch(`https://raw.githubusercontent.com/Portable-Linux-Apps/Portable-Linux-Apps.github.io/main/icons/${rIcon}`);
+        if (res.ok) {
+          const buf = await res.arrayBuffer();
+          await writeFile(localTargetIcon, Buffer.from(buf));
+          break;
+        }
+      } catch {}
+    }
   }
 
   // Handle screenshots

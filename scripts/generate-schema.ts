@@ -1,9 +1,11 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { appManifestSchema } from "../schema/schema.ts";
 
-const targetPath = resolve(import.meta.dir, "../schema/app-manifest.json");
+const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
+const targetPath = resolve(currentDir, "../schema/app-manifest.json");
 
 mkdirSync(dirname(targetPath), { recursive: true });
 

@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { resolve } from "node:path";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 interface AppImageEntry {
   name: string;
@@ -9,12 +10,15 @@ interface AppImageEntry {
   slug: string;
 }
 
-const localAnylinuxPath = resolve(process.env.HOME || "", "code/Anylinux-AppImages/README.md");
+const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
+const localAnylinuxPath = process.env.ANYLINUX_DIR
+  ? resolve(process.env.ANYLINUX_DIR, "README.md")
+  : resolve(process.env.HOME || "", "code/Anylinux-AppImages/README.md");
 const remoteAnylinuxUrl = "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/README.md";
-const cacheDir = resolve(import.meta.dir, "../.cache");
-const appsDir = resolve(import.meta.dir, "../apps");
-const statusMdPath = resolve(import.meta.dir, "../STATUS.md");
-const statusJsonPath = resolve(import.meta.dir, "../status.json");
+const cacheDir = resolve(currentDir, "../.cache");
+const appsDir = resolve(currentDir, "../apps");
+const statusMdPath = resolve(currentDir, "../STATUS.md");
+const statusJsonPath = resolve(currentDir, "../status.json");
 
 function slugify(name: string): string {
   return name

@@ -1,10 +1,12 @@
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
-import { resolve, basename } from "node:path";
+import { resolve, dirname, basename } from "node:path";
+import { fileURLToPath } from "node:url";
 import { gzipSync } from "node:zlib";
 import { appManifestSchema, type AppManifest } from "../schema/schema.ts";
 
-const appsDir = resolve(import.meta.dir, "../apps");
-const distDir = resolve(import.meta.dir, "../dist");
+const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
+const appsDir = resolve(currentDir, "../apps");
+const distDir = resolve(currentDir, "../dist");
 
 function escapeXml(unsafe: string): string {
   return unsafe
