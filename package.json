@@ -17,9 +17,9 @@
     "export": "which bun >/dev/null 2>&1 && bun run scripts/export-catalog.ts || node --import tsx scripts/export-catalog.ts",
     "export:bun": "bun run scripts/export-catalog.ts",
     "export:node": "node --import tsx scripts/export-catalog.ts",
-    "test": "which bun >/dev/null 2>&1 && bun test || node --import tsx --test tests/schema.test.ts",
+    "test": "which bun >/dev/null 2>&1 && bun test || node --import tsx --test 'tests/**/*.test.ts'",
     "test:bun": "bun test",
-    "test:node": "node --import tsx --test tests/schema.test.ts"
+    "test:node": "node --import tsx --test 'tests/**/*.test.ts'"
   },
   "keywords": [
     "appimage",

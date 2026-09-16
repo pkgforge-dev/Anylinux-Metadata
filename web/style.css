@@ -42,6 +42,7 @@
   --warning: #b45309;
   --warning-bg: #fef3c7;
   --warning-border: #fcd34d;
+  --warning-text: #92400e;
 
   --danger: #b91c1c;
   --danger-bg: #fef2f2;
@@ -51,8 +52,8 @@
   --ink: #17191d;
   --text-main: #17191d;
   --text-secondary: #4f535b;
-  --text-muted: #72767e;
-  --text-dim: #92969f;
+  --text-muted: #5d626b;
+  --text-dim: #555962;
 
   /* Technical Contrast Container (XApp Dark Panel for Code / JSON) */
   --panel: #23262b;
@@ -123,6 +124,7 @@
   --warning: #fbbf24;
   --warning-bg: rgba(251, 191, 36, 0.12);
   --warning-border: rgba(251, 191, 36, 0.28);
+  --warning-text: #fde047;
 
   --danger: #f87171;
   --danger-bg: rgba(248, 113, 113, 0.12);
@@ -132,8 +134,8 @@
   --ink: #f1f5f9;
   --text-main: #e2e8f0;
   --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --text-dim: #475569;
+  --text-muted: #cbd5e1;
+  --text-dim: #94a3b8;
 
   /* Technical Contrast Container */
   --panel: #101215;
@@ -193,6 +195,7 @@
     --warning: #fbbf24;
     --warning-bg: rgba(251, 191, 36, 0.12);
     --warning-border: rgba(251, 191, 36, 0.28);
+    --warning-text: #fde047;
 
     --danger: #f87171;
     --danger-bg: rgba(248, 113, 113, 0.12);
@@ -202,8 +205,8 @@
     --ink: #f1f5f9;
     --text-main: #e2e8f0;
     --text-secondary: #94a3b8;
-    --text-muted: #64748b;
-    --text-dim: #475569;
+    --text-muted: #cbd5e1;
+    --text-dim: #94a3b8;
 
     /* Technical Contrast Container */
     --panel: #101215;
@@ -269,6 +272,25 @@ select,
 button {
   font-family: inherit;
   max-width: 100%;
+}
+
+/* Screen Reader Accessible Utility Class */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Global Accessible Focus Indicators */
+:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
 }
 
 a {
@@ -411,6 +433,12 @@ a:hover {
   box-shadow: var(--shadow-xs);
 }
 
+.nav-tab:focus-visible {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px var(--green-glow);
+}
+
 .tab-badge {
   background: var(--bg-subtle);
   color: var(--text-secondary);
@@ -429,8 +457,9 @@ a:hover {
 
 .tab-badge.warning {
   background: var(--warning-bg);
-  color: var(--warning);
+  color: var(--warning-text, var(--warning));
   border: 1px solid var(--warning-border);
+  font-weight: 700;
 }
 
 .header-actions {
@@ -574,13 +603,27 @@ a:hover {
   }
 
   .nav-tab {
-    padding: 0.42rem 0.75rem;
-    font-size: 0.8rem;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.825rem;
     gap: 0.35rem;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+
+  .btn-theme-toggle {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .header-actions .btn {
+    min-height: 44px;
+    min-width: 44px;
     padding: 0.4rem 0.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .header-actions .btn-text {
@@ -598,8 +641,10 @@ a:hover {
   }
 
   .btn-theme-toggle {
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
 }
 
@@ -981,6 +1026,12 @@ select:focus {
   color: var(--green-hover);
 }
 
+.link-btn:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
 .sep {
   color: var(--border);
 }
@@ -1009,8 +1060,9 @@ select:focus {
 
   .filter-controls select {
     width: 100%;
-    padding: 0.65rem 0.75rem;
-    font-size: 0.8rem;
+    min-height: 44px;
+    padding: 0.7rem 2.2rem 0.7rem 0.85rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -1059,6 +1111,13 @@ select:focus {
   box-shadow: var(--shadow-lg);
 }
 
+.app-card:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-lg), 0 0 0 4px var(--green-glow);
+}
+
 .app-card-head {
   display: flex;
   gap: 0.85rem;
@@ -1067,11 +1126,12 @@ select:focus {
 }
 
 .app-card-icon {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radius);
   background-color: var(--bg);
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
   border: 1px solid var(--border-light);
 }
@@ -1176,6 +1236,24 @@ select:focus {
     padding: 1.1rem;
     gap: 0.75rem;
   }
+
+  .card-actions-quick {
+    gap: 0.5rem;
+  }
+
+  .btn-card-inspect,
+  .btn-card-edit,
+  .btn-card-copy,
+  .card-actions-quick .btn,
+  .btn-xs {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 440px) {
@@ -1184,8 +1262,9 @@ select:focus {
   }
 
   .app-card-icon {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1 / 1;
   }
 
   .app-card-title {
@@ -2424,10 +2503,11 @@ textarea:focus {
 }
 
 .modal-header-icon {
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain;
   border: 1px solid var(--border);
   background: var(--surface-raised);
   flex-shrink: 0;
@@ -2498,13 +2578,17 @@ textarea:focus {
   flex-shrink: 0;
   text-align: center;
   max-width: 260px;
+  min-height: 140px;
+  aspect-ratio: 16 / 9;
 }
 
 .modal-screenshot-img {
+  width: 100%;
   height: 140px;
+  aspect-ratio: 16 / 9;
   border-radius: 6px;
   border: 1px solid var(--border);
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -2562,8 +2646,10 @@ textarea:focus {
   .modal-close-btn {
     top: 0.75rem;
     right: 0.75rem;
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .modal-header-block {
@@ -2577,7 +2663,9 @@ textarea:focus {
   .modal-header-icon {
     width: 56px;
     height: 56px;
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
+    object-fit: contain;
   }
 
   .modal-header-title {
@@ -2606,6 +2694,7 @@ textarea:focus {
   .modal-footer-links .btn,
   .modal-footer-buttons .btn {
     width: 100%;
+    min-height: 44px;
     justify-content: center;
     padding: 0.5rem 0.5rem;
     font-size: 0.8rem;
@@ -2642,6 +2731,12 @@ textarea:focus {
   transition: all 0.15s ease;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px var(--green-glow);
 }
 
 .btn svg {
@@ -2889,6 +2984,7 @@ textarea:focus {
 .app-hero-icon {
   width: 88px;
   height: 88px;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radius-lg);
   object-fit: contain;
   background: var(--surface-raised);
@@ -3093,8 +3189,10 @@ textarea:focus {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   background: rgba(15, 23, 42, 0.75);
   backdrop-filter: blur(8px);
@@ -3242,8 +3340,10 @@ textarea:focus {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3341,8 +3441,10 @@ textarea:focus {
 
 @media (max-width: 768px) {
   .lightbox-nav-btn {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
   .lightbox-nav-btn.lightbox-prev {
     left: 0.25rem;
@@ -3490,4 +3592,29 @@ textarea:focus {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   Reduced Motion Accessibility Preference
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .app-card:hover,
+  .btn:hover,
+  .btn:active,
+  .modal-window,
+  .toast,
+  .btn-theme-toggle svg {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 

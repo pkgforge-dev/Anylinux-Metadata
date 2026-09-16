@@ -291,8 +291,11 @@
     return url.includes('pkgforge-dev/Anylinux-AppImages/main/assets/banner.png');
   }
 
+  let lastFocusedElementBeforeLightbox = null;
+
   function openScreenshotLightbox(screenshots, initialIndex = 0) {
     if (!screenshots || screenshots.length === 0) return;
+    lastFocusedElementBeforeLightbox = document.activeElement;
     activeLightboxScreenshots = screenshots;
     currentLightboxIndex = Math.max(0, Math.min(initialIndex, screenshots.length - 1));
     updateLightboxView();
@@ -300,6 +303,7 @@
       screenshotLightboxModal.classList.add('active');
       screenshotLightboxModal.style.display = 'flex';
       document.body.style.overflow = 'hidden';
+      if (lightboxCloseBtn) lightboxCloseBtn.focus();
     }
   }
 
@@ -308,6 +312,10 @@
       screenshotLightboxModal.classList.remove('active');
       screenshotLightboxModal.style.display = 'none';
       document.body.style.overflow = '';
+      if (lastFocusedElementBeforeLightbox && typeof lastFocusedElementBeforeLightbox.focus === 'function') {
+        lastFocusedElementBeforeLightbox.focus();
+        lastFocusedElementBeforeLightbox = null;
+      }
     }
   }
 
@@ -373,6 +381,22 @@
       stepLightbox(-1);
     } else if (e.key === 'ArrowRight') {
       stepLightbox(1);
+    } else if (e.key === 'Tab') {
+      const focusable = Array.from(screenshotLightboxModal.querySelectorAll('button:not([disabled]):not([style*="display: none"]), [href]:not([style*="display: none"])')).filter((el) => el.offsetParent !== null);
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     }
   });
 
@@ -393,10 +417,24 @@
     }, 3200);
   }
 
+  function safeScrollToTop() {
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+  }
+
   // --- Tab & Application Page Navigation ---
   function switchTab(tabId, updateUrl = true) {
-    navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === tabId));
-    tabPanels.forEach((p) => p.classList.toggle('active', p.id === `panel-${tabId}`));
+    navTabs.forEach((t) => {
+      const isActive = t.dataset.tab === tabId;
+      t.classList.toggle('active', isActive);
+      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      t.setAttribute('tabindex', isActive ? '0' : '-1');
+    });
+    tabPanels.forEach((p) => {
+      const isActive = p.id === `panel-${tabId}`;
+      p.classList.toggle('active', isActive);
+      p.hidden = !isActive;
+    });
     if (updateUrl) {
       const url = new URL(window.location.href);
       url.searchParams.delete('app');
@@ -428,8 +466,17 @@
 
     renderAppDetailPage(slug);
 
-    tabPanels.forEach((p) => p.classList.toggle('active', p.id === 'panel-app-detail'));
-    navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === 'catalog'));
+    tabPanels.forEach((p) => {
+      const isActive = p.id === 'panel-app-detail';
+      p.classList.toggle('active', isActive);
+      p.hidden = !isActive;
+    });
+    navTabs.forEach((t) => {
+      const isActive = t.dataset.tab === 'catalog';
+      t.classList.toggle('active', isActive);
+      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      t.setAttribute('tabindex', isActive ? '0' : '-1');
+    });
 
     if (updateUrl) {
       const url = new URL(window.location.href);
@@ -443,12 +490,21 @@
 
     const appName = app.appstream?.metadata?.name || slug;
     document.title = `${appName} - AnyLinux Metadata Portal`;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    safeScrollToTop();
   }
 
   function navigateToCatalog(updateUrl = true) {
-    tabPanels.forEach((p) => p.classList.toggle('active', p.id === 'panel-catalog'));
-    navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === 'catalog'));
+    tabPanels.forEach((p) => {
+      const isActive = p.id === 'panel-catalog';
+      p.classList.toggle('active', isActive);
+      p.hidden = !isActive;
+    });
+    navTabs.forEach((t) => {
+      const isActive = t.dataset.tab === 'catalog';
+      t.classList.toggle('active', isActive);
+      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      t.setAttribute('tabindex', isActive ? '0' : '-1');
+    });
 
     if (updateUrl) {
       const url = new URL(window.location.href);
@@ -461,7 +517,7 @@
     }
 
     document.title = 'AnyLinux Metadata Portal';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    safeScrollToTop();
   }
 
   function renderAppDetailPage(slug) {
@@ -559,7 +615,7 @@
             <div class="screenshot-carousel">
               <div class="screenshot-stage">
                 <div class="screenshot-stage-img-wrapper" id="screenshotStageImgWrapper" role="button" tabindex="0" title="Click to expand full resolution">
-                  <img class="screenshot-stage-img" id="screenshotStageImg" src="${escapeHtml(current.source)}" alt="${escapeHtml(current.caption || '')}">
+                  <img class="screenshot-stage-img" id="screenshotStageImg" src="${escapeHtml(current.source)}" alt="${escapeHtml(current.caption || '')}" width="800" height="450">
                   <div class="screenshot-stage-zoom-badge">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                     <span>Click to expand</span>
@@ -582,7 +638,7 @@
                 <div class="screenshot-thumb-strip">
                   ${validScreenshots.map((ss, idx) => `
                     <button type="button" class="screenshot-thumb ${idx === activeIdx ? 'active' : ''}" data-index="${idx}" title="${escapeAttr(ss.caption || `Screenshot ${idx + 1}`)}">
-                      <img src="${escapeHtml(ss.source)}" alt="" loading="lazy">
+                      <img src="${escapeHtml(ss.source)}" alt="" width="80" height="45" loading="lazy">
                     </button>
                   `).join('')}
                 </div>
@@ -757,7 +813,7 @@
       btnAppPageEditStudio.onclick = () => {
         loadAppIntoStudio(slug);
         switchTab('studio');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        safeScrollToTop();
       };
     }
   }
@@ -801,6 +857,35 @@
   navTabs.forEach((tab) => {
     tab.addEventListener('click', () => switchTab(tab.dataset.tab, true));
   });
+
+  const navTabsContainer = document.querySelector('.nav-tabs');
+  if (navTabsContainer) {
+    navTabsContainer.addEventListener('keydown', (e) => {
+      const tabs = Array.from(navTabs);
+      const currentIndex = tabs.findIndex((t) => t === document.activeElement);
+      if (currentIndex === -1) return;
+
+      let nextIndex = -1;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        nextIndex = (currentIndex + 1) % tabs.length;
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        nextIndex = 0;
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        nextIndex = tabs.length - 1;
+      }
+
+      if (nextIndex !== -1) {
+        tabs[nextIndex].focus();
+        switchTab(tabs[nextIndex].dataset.tab, true);
+      }
+    });
+  }
 
   if (btnAppPageBack) {
     btnAppPageBack.addEventListener('click', () => {
@@ -978,8 +1063,9 @@
     catalogGridEl.innerHTML = '';
 
     if (filtered.length === 0) {
+      catalogResultsCountEl.innerText = 'No applications found matching your criteria';
       catalogGridEl.innerHTML = `
-        <div class="empty-state" style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-dim);">
+        <div class="empty-state" role="status" style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-dim);">
           <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-secondary);">No applications found matching your criteria</p>
           <p style="font-size: 0.85rem;">Try clearing the search query or selecting "All Categories"</p>
         </div>
@@ -995,16 +1081,19 @@
       const license = meta.projectLicense || 'Unknown';
       const iconSrc = getPrimaryIconUrl(item.slug);
 
-      const card = document.createElement('div');
+      const card = document.createElement('article');
       card.className = 'app-card';
+      card.setAttribute('role', 'article');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-labelledby', `card-title-${item.slug}`);
       card.dataset.slug = item.slug;
 
       card.innerHTML = `
         <div class="app-card-head">
-          <img class="app-card-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || item.slug)}" loading="lazy" onerror="handleIconError(this, '${escapeHtml(item.slug)}', '${escapeAttr(meta.name || item.slug)}', '${escapeAttr(mainCategory)}')">
+          <img class="app-card-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || item.slug)}" width="48" height="48" loading="lazy" onerror="handleIconError(this, '${escapeHtml(item.slug)}', '${escapeAttr(meta.name || item.slug)}', '${escapeAttr(mainCategory)}')">
           <div class="app-card-info">
             <a class="app-card-title-link" href="?app=${encodeURIComponent(item.slug)}" title="View ${escapeAttr(meta.name || item.slug)} details">
-              <div class="app-card-title">${escapeHtml(meta.name || item.slug)}</div>
+              <div class="app-card-title" id="card-title-${escapeAttr(item.slug)}">${escapeHtml(meta.name || item.slug)}</div>
             </a>
             <div class="app-card-id">${escapeHtml(meta.id || item.slug)}</div>
           </div>
@@ -1059,6 +1148,13 @@
         showToast(`Copied ${meta.name || item.slug} manifest to clipboard`, 'success');
       });
 
+      card.addEventListener('keydown', (e) => {
+        if ((e.key === 'Enter' || e.key === ' ') && e.target === card) {
+          e.preventDefault();
+          navigateToApp(item.slug, true);
+        }
+      });
+
       card.addEventListener('click', (e) => {
         if (e.target.closest('button') || e.target.closest('a')) return;
         navigateToApp(item.slug, true);
@@ -1085,10 +1181,24 @@
     }
   });
 
+  let lastFocusedElementBeforeModal = null;
+
+  function closeAppDetailModal() {
+    if (!appDetailModal) return;
+    appDetailModal.classList.remove('active');
+    document.body.style.overflow = '';
+    if (lastFocusedElementBeforeModal && typeof lastFocusedElementBeforeModal.focus === 'function') {
+      lastFocusedElementBeforeModal.focus();
+      lastFocusedElementBeforeModal = null;
+    }
+  }
+
   // --- Detail Modal ---
   function openAppDetailModal(slug) {
     const app = catalogData[slug];
     if (!app) return;
+
+    lastFocusedElementBeforeModal = document.activeElement;
 
     const meta = app.appstream?.metadata || {};
     const media = app.appstream?.media || {};
@@ -1126,7 +1236,7 @@
               .map(
                 (ss, idx) => `
               <div class="modal-screenshot-item" data-index="${idx}" role="button" tabindex="0" title="Click to expand screenshot full size" style="cursor: zoom-in;">
-                <img class="modal-screenshot-img" src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" onerror="this.parentElement.style.display='none'">
+                <img class="modal-screenshot-img" src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" width="260" height="140" loading="lazy" onerror="this.parentElement.style.display='none'">
                 <div class="modal-screenshot-caption">${escapeHtml(ss.caption || '')}</div>
               </div>
             `
@@ -1139,9 +1249,9 @@
 
     modalDetailContent.innerHTML = `
       <div class="modal-header-block">
-        <img class="modal-header-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || slug)}" onerror="handleIconError(this, '${escapeHtml(slug)}', '${escapeAttr(meta.name || slug)}', '${escapeAttr(mainCategory)}')">
+        <img class="modal-header-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || slug)}" width="64" height="64" onerror="handleIconError(this, '${escapeHtml(slug)}', '${escapeAttr(meta.name || slug)}', '${escapeAttr(mainCategory)}')">
         <div class="modal-header-info">
-          <h2 class="modal-header-title">${escapeHtml(meta.name || slug)}</h2>
+          <h2 class="modal-header-title" id="modalDetailTitle">${escapeHtml(meta.name || slug)}</h2>
           <div class="modal-header-id">${escapeHtml(meta.id || slug)}</div>
           <p class="modal-header-summary">${escapeHtml(meta.summary || '')}</p>
         </div>
@@ -1201,10 +1311,10 @@
     });
 
     document.getElementById('modalBtnEditStudio').addEventListener('click', () => {
-      appDetailModal.classList.remove('active');
+      closeAppDetailModal();
       loadAppIntoStudio(slug);
       switchTab('studio');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      safeScrollToTop();
     });
 
     const modalItems = modalDetailContent.querySelectorAll('.modal-screenshot-item');
@@ -1216,15 +1326,35 @@
     });
 
     appDetailModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (modalCloseBtn) modalCloseBtn.focus();
   }
 
-  modalCloseBtn.addEventListener('click', () => appDetailModal.classList.remove('active'));
+  modalCloseBtn.addEventListener('click', closeAppDetailModal);
   appDetailModal.addEventListener('click', (e) => {
-    if (e.target === appDetailModal) appDetailModal.classList.remove('active');
+    if (e.target === appDetailModal) closeAppDetailModal();
   });
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && appDetailModal.classList.contains('active')) {
-      appDetailModal.classList.remove('active');
+  appDetailModal.addEventListener('keydown', (e) => {
+    if (!appDetailModal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      e.stopPropagation();
+      closeAppDetailModal();
+    } else if (e.key === 'Tab') {
+      const focusable = Array.from(appDetailModal.querySelectorAll('button:not([disabled]):not([style*="display: none"]), [href]:not([style*="display: none"]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')).filter((el) => el.offsetParent !== null);
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
     }
   });
 
@@ -1242,11 +1372,18 @@
       );
     });
 
+    const backlogResultsCountEl = document.getElementById('backlogResultsCount');
+    if (backlogResultsCountEl) {
+      backlogResultsCountEl.innerText = filtered.length === 0
+        ? 'No pending applications match your search query'
+        : `Showing ${filtered.length} of ${pendingList.length} pending applications`;
+    }
+
     backlogTableBodyEl.innerHTML = '';
 
     if (filtered.length === 0) {
       backlogTableBodyEl.innerHTML = `
-        <tr>
+        <tr role="status">
           <td colspan="4" style="text-align: center; padding: 2.5rem; color: var(--text-dim);">
             No pending applications match your search query.
           </td>
@@ -1305,7 +1442,7 @@
     testIconDimension();
 
     switchTab('studio');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    safeScrollToTop();
     summaryEl.focus();
     showToast(`Loaded ${item.name} into Studio. Complete the details to submit.`, 'info');
   }
@@ -1949,15 +2086,51 @@
     return { manifest, isValid: failedCount === 0 };
   }
 
-  // Sub tabs
+  // Sub tabs (AppHub Preview vs Raw JSON)
+  const previewTabsContainer = document.querySelector('.preview-tabs');
   subTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
-      subTabs.forEach((t) => t.classList.toggle('active', t === tab));
+      subTabs.forEach((t) => {
+        const isActive = t === tab;
+        t.classList.toggle('active', isActive);
+        t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        t.setAttribute('tabindex', isActive ? '0' : '-1');
+      });
       document.querySelectorAll('.sub-panel').forEach((p) => {
-        p.classList.toggle('active', p.id === `subpanel-${tab.dataset.subtab}`);
+        const isActive = p.id === `subpanel-${tab.dataset.subtab}`;
+        p.classList.toggle('active', isActive);
+        p.hidden = !isActive;
       });
     });
   });
+
+  if (previewTabsContainer) {
+    previewTabsContainer.addEventListener('keydown', (e) => {
+      const tabs = Array.from(subTabs);
+      const currentIndex = tabs.findIndex((t) => t === document.activeElement);
+      if (currentIndex === -1) return;
+
+      let nextIndex = -1;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        nextIndex = (currentIndex + 1) % tabs.length;
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        nextIndex = 0;
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        nextIndex = tabs.length - 1;
+      }
+
+      if (nextIndex !== -1) {
+        tabs[nextIndex].focus();
+        tabs[nextIndex].click();
+      }
+    });
+  }
 
   // Action Buttons
   btnDownloadManifest.addEventListener('click', () => {
