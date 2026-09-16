@@ -45,6 +45,17 @@
     Settings: '#525b68'
   };
 
+  // Active repository detection (adapts between forks, upstream, and local)
+  function getCurrentRepo() {
+    if (window.location.hostname.endsWith('github.io')) {
+      const user = window.location.hostname.split('.')[0];
+      const pathParts = window.location.pathname.split('/').filter(Boolean);
+      const repo = pathParts[0] || 'Anylinux-Metadata';
+      return `${user}/${repo}`;
+    }
+    return 'ArqamQazi/Anylinux-Metadata';
+  }
+
   // --- Multi-Tier Icon Fallback Engine ---
   window.handleIconError = function (img, slug, name, category) {
     if (!slug) slug = 'app';
@@ -57,14 +68,22 @@
       return;
     }
 
-    // Tier 2: Try AnyLinux raw GitHub
+    // Tier 2: Try active repository raw GitHub CDN
+    if (!img.dataset.triedRepo) {
+      img.dataset.triedRepo = 'true';
+      const repo = getCurrentRepo();
+      img.src = `https://raw.githubusercontent.com/${repo}/main/icons/${cleanSlug}.png`;
+      return;
+    }
+
+    // Tier 3: Try upstream AnyLinux raw GitHub CDN
     if (!img.dataset.triedAnylinux) {
       img.dataset.triedAnylinux = 'true';
       img.src = `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${cleanSlug}.png`;
       return;
     }
 
-    // Tier 3: Try parent relative path if served from subfolder
+    // Tier 4: Try parent relative path if served from subfolder
     if (!img.dataset.triedParent) {
       img.dataset.triedParent = 'true';
       img.src = `../icons/${cleanSlug}.png`;
@@ -293,6 +312,10 @@
   }
 
   function refreshAllViews() {
+    const repoGithubLink = document.getElementById('repoGithubLink');
+    if (repoGithubLink) {
+      repoGithubLink.href = `https://github.com/${getCurrentRepo()}`;
+    }
     updateMetricsUI();
     populateCategoryFilter();
     renderCatalogGrid();
@@ -1294,7 +1317,8 @@
     const screenshots = encodeURIComponent(manifest.appstream.media.screenshots.map((s) => s.source).join('\n'));
     const title = encodeURIComponent(`feat(app): add metadata for ${meta.name}`);
 
-    const issueUrl = `https://github.com/pkgforge-dev/Anylinux-Metadata/issues/new?template=add-app.yml&title=${title}&name=${name}&slug=${slug}&app_id=${appId}&summary=${summary}&description=${desc}&license=${license}&main_category=${category}&developer_name=${dev}&homepage=${homepage}&release_repo=${repo}&icon_url=${icon}&screenshots=${screenshots}`;
+    const activeRepo = getCurrentRepo();
+    const issueUrl = `https://github.com/${activeRepo}/issues/new?template=add-app.yml&title=${title}&name=${name}&slug=${slug}&app_id=${appId}&summary=${summary}&description=${desc}&license=${license}&main_category=${category}&developer_name=${dev}&homepage=${homepage}&release_repo=${repo}&icon_url=${icon}&screenshots=${screenshots}`;
     window.open(issueUrl, '_blank');
   });
 
