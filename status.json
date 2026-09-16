@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-16T02:30:07.141Z",
-  "totalAnylinuxApps": 445,
-  "flathubCoveredCount": 264,
-  "targetCount": 181,
+  "updatedAt": "2026-09-16T05:57:58.383Z",
+  "totalAnylinuxApps": 463,
+  "flathubCoveredCount": 272,
+  "targetCount": 191,
   "completedCount": 147,
-  "pendingCount": 34,
-  "progressPercent": 81,
+  "pendingCount": 44,
+  "progressPercent": 77,
   "completed": [
     {
       "name": "12to11",
@@ -1094,6 +1094,66 @@
       "url": "https://github.com/pkgforge-dev/Zelda64Recomp-AppImage",
       "repo": "pkgforge-dev/Zelda64Recomp-AppImage",
       "slug": "zelda64recomp"
+    },
+    {
+      "name": "AM-GUI",
+      "url": "https://github.com/Shikakiben/AM-GUI",
+      "repo": "Shikakiben/AM-GUI",
+      "slug": "am-gui"
+    },
+    {
+      "name": "AppManager",
+      "url": "https://github.com/kem-a/AppManager",
+      "repo": "kem-a/AppManager",
+      "slug": "appmanager"
+    },
+    {
+      "name": "Citron Neo",
+      "url": "https://github.com/citron-neo",
+      "repo": "citron-neo",
+      "slug": "citron-neo"
+    },
+    {
+      "name": "cli-chess",
+      "url": "https://github.com/trevorbayless/cli-chess/",
+      "repo": "trevorbayless/cli-chess",
+      "slug": "cli-chess"
+    },
+    {
+      "name": "GPU-T",
+      "url": "https://github.com/lseurttyuu/GPU-T",
+      "repo": "lseurttyuu/GPU-T",
+      "slug": "gpu-t"
+    },
+    {
+      "name": "lba2-classic-community",
+      "url": "https://github.com/LBALab/lba2-classic-community",
+      "repo": "LBALab/lba2-classic-community",
+      "slug": "lba2-classic-community"
+    },
+    {
+      "name": "OpenTubeX",
+      "url": "https://github.com/OpenTubeX/OpenTubeX",
+      "repo": "OpenTubeX/OpenTubeX",
+      "slug": "opentubex"
+    },
+    {
+      "name": "QDash",
+      "url": "https://git.crueter.xyz/QFRC/QDash",
+      "repo": "https://git.crueter.xyz/QFRC/QDash",
+      "slug": "qdash"
+    },
+    {
+      "name": "Stoat",
+      "url": "https://github.com/stoatchat/for-desktop",
+      "repo": "stoatchat/for-desktop",
+      "slug": "stoat"
+    },
+    {
+      "name": "VSCodium",
+      "url": "https://github.com/VSCodium/vscodium",
+      "repo": "VSCodium/vscodium",
+      "slug": "vscodium"
     }
   ],
   "flathubCovered": [
@@ -1360,6 +1420,14 @@
     "Zed",
     "Zen Browser",
     "Zenity",
-    "ZSNES"
+    "ZSNES",
+    "Converseen",
+    "CPU-X",
+    "Eden",
+    "Goverlay",
+    "interstellar",
+    "PPSSPP",
+    "RSS Guard",
+    "ZapZap"
   ]
 }

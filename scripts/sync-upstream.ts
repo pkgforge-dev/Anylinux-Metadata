@@ -43,21 +43,14 @@ async function getAnylinuxApps(): Promise<AppImageEntry[]> {
   let inAppsList = false;
 
   for (const line of lines) {
-    if (line.includes("APPS_LIST_START")) {
-      inAppsList = true;
-      continue;
-    }
-    if (line.includes("APPS_LIST_END")) {
-      inAppsList = false;
-      break;
-    }
-
-    // Match lines like: | [12to11](https://github.com/pkgforge-dev/12to11-AppImage) |
-    const match = line.match(/^\|\s*\[([^\]]+)\]\((https:\/\/github\.com\/([^)]+))\)\s*\|/);
+    // Match any markdown table row link: | [App](url) |
+    const match = line.match(/^\|\s*\[([^\]]+)\]\((https?:\/\/[^)]+)\)\s*\|/);
     if (match) {
       const name = match[1].trim();
       const url = match[2].trim();
-      const repo = match[3].trim();
+      if (name === "..." || name.toLowerCase().includes("projects with") || name === "---") continue;
+
+      const repo = url.replace(/^https?:\/\/github\.com\//, "").replace(/\/$/, "");
       entries.push({
         name,
         url,

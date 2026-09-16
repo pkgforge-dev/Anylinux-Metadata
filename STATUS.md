@@ -4,11 +4,11 @@
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `445` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `264` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `181` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `147` (`81%`) | Fully validated and ready |
-| **Pending Backlog** | `34` | Pending manifest creation or verification |
+| **Total AnyLinux AppImages** | `463` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `272` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `191` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `147` (`77%`) | Fully validated and ready |
+| **Pending Backlog** | `44` | Pending manifest creation or verification |
 
 ## Completed Applications (147)
 
@@ -162,7 +162,7 @@
 | **yt-dlp** | [`apps/yt-dlp.json`](apps/yt-dlp.json) | [`pkgforge-dev/yt-dlp-AppImage`](https://github.com/pkgforge-dev/yt-dlp-AppImage) |
 | **Zod-Engine** | [`apps/zod-engine.json`](apps/zod-engine.json) | [`pkgforge-dev/Zod-Engine-AppImage`](https://github.com/pkgforge-dev/Zod-Engine-AppImage) |
 
-## Pending Backlog (34)
+## Pending Backlog (44)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -202,3 +202,13 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **VypressChat** | `vypresschat` | [`pkgforge-dev/VypressChat-AppImage`](https://github.com/pkgforge-dev/VypressChat-AppImage) |
 | **Webamp-Desktop** | `webamp-desktop` | [`pkgforge-dev/Webamp-Desktop-AppImage-Enhanced`](https://github.com/pkgforge-dev/Webamp-Desktop-AppImage-Enhanced) |
 | **Zelda64Recomp** | `zelda64recomp` | [`pkgforge-dev/Zelda64Recomp-AppImage`](https://github.com/pkgforge-dev/Zelda64Recomp-AppImage) |
+| **AM-GUI** | `am-gui` | [`Shikakiben/AM-GUI`](https://github.com/Shikakiben/AM-GUI) |
+| **AppManager** | `appmanager` | [`kem-a/AppManager`](https://github.com/kem-a/AppManager) |
+| **Citron Neo** | `citron-neo` | [`citron-neo`](https://github.com/citron-neo) |
+| **cli-chess** | `cli-chess` | [`trevorbayless/cli-chess`](https://github.com/trevorbayless/cli-chess/) |
+| **GPU-T** | `gpu-t` | [`lseurttyuu/GPU-T`](https://github.com/lseurttyuu/GPU-T) |
+| **lba2-classic-community** | `lba2-classic-community` | [`LBALab/lba2-classic-community`](https://github.com/LBALab/lba2-classic-community) |
+| **OpenTubeX** | `opentubex` | [`OpenTubeX/OpenTubeX`](https://github.com/OpenTubeX/OpenTubeX) |
+| **QDash** | `qdash` | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
+| **Stoat** | `stoat` | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
+| **VSCodium** | `vscodium` | [`VSCodium/vscodium`](https://github.com/VSCodium/vscodium) |
