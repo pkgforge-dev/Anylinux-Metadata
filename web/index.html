@@ -34,21 +34,21 @@
       <nav class="nav-tabs" role="tablist">
         <button class="nav-tab active" data-tab="catalog" role="tab">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-          Catalog Explorer
+          <span class="tab-label">Catalog Explorer</span>
           <span class="tab-badge" id="catalogCountBadge">0</span>
         </button>
         <button class="nav-tab" data-tab="backlog" role="tab">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-          Pending Backlog
+          <span class="tab-label">Pending Backlog</span>
           <span class="tab-badge warning" id="backlogCountBadge">0</span>
         </button>
         <button class="nav-tab" data-tab="studio" role="tab">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
-          Authoring Studio
+          <span class="tab-label">Authoring Studio</span>
         </button>
         <button class="nav-tab" data-tab="validator" role="tab">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-          Schema Validator
+          <span class="tab-label">Schema Validator</span>
         </button>
       </nav>
 
@@ -56,7 +56,7 @@
       <div class="header-actions">
         <a href="https://github.com/ArqamQazi/Anylinux-Metadata" id="repoGithubLink" target="_blank" class="btn btn-sm btn-outline" title="Open GitHub Repository">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          <span>GitHub</span>
+          <span class="btn-text">GitHub</span>
         </a>
       </div>
     </div>
@@ -275,42 +275,119 @@
               </button>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="licenseSelect">Project License (SPDX) <span class="required">*</span></label>
-                <select id="licenseSelect">
-                  <option value="MIT">MIT</option>
-                  <option value="Apache-2.0">Apache-2.0</option>
-                  <option value="GPL-3.0-or-later">GPL-3.0-or-later</option>
-                  <option value="GPL-2.0-or-later">GPL-2.0-or-later</option>
-                  <option value="BSD-3-Clause">BSD-3-Clause</option>
-                  <option value="BSD-2-Clause">BSD-2-Clause</option>
-                  <option value="AGPL-3.0-or-later">AGPL-3.0-or-later</option>
-                  <option value="LGPL-3.0-or-later">LGPL-3.0-or-later</option>
-                  <option value="MPL-2.0">MPL-2.0</option>
-                  <option value="CC0-1.0">CC0-1.0</option>
-                  <option value="Proprietary">Proprietary</option>
-                  <option value="custom">Custom SPDX Expression...</option>
-                </select>
-                <input type="text" id="customLicenseInput" placeholder="Enter valid SPDX expression (e.g. MIT OR Apache-2.0)" style="display: none; margin-top: 0.5rem;">
-              </div>
+            <div class="form-group">
+              <label for="licenseSelect">Project License (SPDX) <span class="required">*</span></label>
+              <select id="licenseSelect">
+                <option value="MIT">MIT</option>
+                <option value="Apache-2.0">Apache-2.0</option>
+                <option value="GPL-3.0-or-later">GPL-3.0-or-later</option>
+                <option value="GPL-2.0-or-later">GPL-2.0-or-later</option>
+                <option value="BSD-3-Clause">BSD-3-Clause</option>
+                <option value="BSD-2-Clause">BSD-2-Clause</option>
+                <option value="AGPL-3.0-or-later">AGPL-3.0-or-later</option>
+                <option value="LGPL-3.0-or-later">LGPL-3.0-or-later</option>
+                <option value="MPL-2.0">MPL-2.0</option>
+                <option value="CC0-1.0">CC0-1.0</option>
+                <option value="Proprietary">Proprietary</option>
+                <option value="custom">Custom SPDX Expression...</option>
+              </select>
+              <input type="text" id="customLicenseInput" placeholder="Enter valid SPDX expression (e.g. MIT OR Apache-2.0)" style="display: none; margin-top: 0.5rem;">
+            </div>
 
-              <div class="form-group">
-                <label for="categorySelect">Freedesktop Main Category <span class="required">*</span></label>
-                <select id="categorySelect">
-                  <option value="Utility">Utility</option>
-                  <option value="System">System</option>
-                  <option value="Development">Development</option>
-                  <option value="Game">Game</option>
-                  <option value="AudioVideo">AudioVideo</option>
-                  <option value="Graphics">Graphics</option>
-                  <option value="Network">Network</option>
-                  <option value="Office">Office</option>
-                  <option value="Science">Science</option>
-                  <option value="Settings">Settings</option>
-                  <option value="Education">Education</option>
-                </select>
+            <div class="form-group">
+              <label>Freedesktop Categories <span class="required">*</span></label>
+              <div class="category-manager-box">
+                <div class="category-chips-list" id="categoryChipsContainer">
+                  <!-- Rendered category badges -->
+                </div>
+
+                <div class="category-add-bar">
+                  <select id="categorySelectPicker">
+                    <option value="">Choose a Freedesktop category to add...</option>
+                    <optgroup label="Main Categories (At least one required)">
+                      <option value="AudioVideo">AudioVideo</option>
+                      <option value="Development">Development</option>
+                      <option value="Education">Education</option>
+                      <option value="Game">Game</option>
+                      <option value="Graphics">Graphics</option>
+                      <option value="Network">Network</option>
+                      <option value="Office">Office</option>
+                      <option value="Science">Science</option>
+                      <option value="Settings">Settings</option>
+                      <option value="System">System</option>
+                      <option value="Utility">Utility</option>
+                      <option value="Audio">Audio</option>
+                      <option value="Video">Video</option>
+                    </optgroup>
+                    <optgroup label="Popular Additional Categories">
+                      <option value="Monitor">Monitor</option>
+                      <option value="ConsoleOnly">ConsoleOnly</option>
+                      <option value="TerminalEmulator">TerminalEmulator</option>
+                      <option value="TextEditor">TextEditor</option>
+                      <option value="IDE">IDE</option>
+                      <option value="Debugger">Debugger</option>
+                      <option value="Emulator">Emulator</option>
+                      <option value="Archiving">Archiving</option>
+                      <option value="Compression">Compression</option>
+                      <option value="Security">Security</option>
+                      <option value="WebBrowser">WebBrowser</option>
+                      <option value="Chat">Chat</option>
+                      <option value="FileManager">FileManager</option>
+                      <option value="Calculator">Calculator</option>
+                      <option value="Player">Player</option>
+                      <option value="Recorder">Recorder</option>
+                      <option value="Database">Database</option>
+                      <option value="Viewer">Viewer</option>
+                      <option value="RemoteAccess">RemoteAccess</option>
+                      <option value="Documentation">Documentation</option>
+                    </optgroup>
+                    <optgroup label="Other Categories">
+                      <option value="2DGraphics">2DGraphics</option>
+                      <option value="3DGraphics">3DGraphics</option>
+                      <option value="VectorGraphics">VectorGraphics</option>
+                      <option value="RasterGraphics">RasterGraphics</option>
+                      <option value="ActionGame">ActionGame</option>
+                      <option value="AdventureGame">AdventureGame</option>
+                      <option value="ArcadeGame">ArcadeGame</option>
+                      <option value="BoardGame">BoardGame</option>
+                      <option value="StrategyGame">StrategyGame</option>
+                      <option value="ArtificialIntelligence">ArtificialIntelligence</option>
+                      <option value="Accessibility">Accessibility</option>
+                      <option value="Building">Building</option>
+                      <option value="Email">Email</option>
+                      <option value="FileTools">FileTools</option>
+                      <option value="Filesystem">Filesystem</option>
+                      <option value="News">News</option>
+                      <option value="P2P">P2P</option>
+                      <option value="Photography">Photography</option>
+                      <option value="Publishing">Publishing</option>
+                      <option value="RevisionControl">RevisionControl</option>
+                      <option value="Simulation">Simulation</option>
+                      <option value="TextTools">TextTools</option>
+                      <option value="Translation">Translation</option>
+                      <option value="WebDevelopment">WebDevelopment</option>
+                    </optgroup>
+                  </select>
+                  <button type="button" class="btn btn-sm btn-outline" id="btnAddCategoryBtn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    Add
+                  </button>
+                </div>
+
+                <div class="category-quick-suggestions">
+                  <span class="quick-label">Quick add:</span>
+                  <button type="button" class="btn-cat-suggest" data-cat="System">+ System</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="Utility">+ Utility</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="Monitor">+ Monitor</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="ConsoleOnly">+ ConsoleOnly</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="TerminalEmulator">+ TerminalEmulator</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="Development">+ Development</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="TextEditor">+ TextEditor</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="IDE">+ IDE</button>
+                  <button type="button" class="btn-cat-suggest" data-cat="Network">+ Network</button>
+                </div>
               </div>
+              <span class="hint">Assign one or more categories (e.g. System, Monitor, ConsoleOnly). At least one registered main category is required.</span>
             </div>
 
             <div class="form-row">
@@ -319,8 +396,21 @@
                 <input type="text" id="devName" placeholder="Ghostty Developers">
               </div>
               <div class="form-group">
+                <label for="devUrl">Developer Profile / Website URL</label>
+                <input type="url" id="devUrl" placeholder="https://github.com/ghostty-org">
+                <span class="hint">Optional link to developer profile or organization</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
                 <label for="homepage">Homepage / Project URL <span class="required">*</span></label>
                 <input type="url" id="homepage" placeholder="https://ghostty.org">
+              </div>
+              <div class="form-group">
+                <label for="sourceRepoUrl">Upstream Source Repository URL</label>
+                <input type="url" id="sourceRepoUrl" placeholder="https://github.com/ghostty-org/ghostty">
+                <span class="hint">Optional VCS repository link (AppStream repository / vcs-browser)</span>
               </div>
             </div>
 

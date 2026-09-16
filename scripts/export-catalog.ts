@@ -72,11 +72,30 @@ async function exportCatalog() {
     if (meta.repository) {
       xmlComponents += `    <url type="vcs-browser">${escapeXml(meta.repository)}</url>\n`;
     }
+    if (meta.links) {
+      for (const [linkType, linkUrl] of Object.entries(meta.links)) {
+        xmlComponents += `    <url type="${escapeXml(linkType)}">${escapeXml(linkUrl)}</url>\n`;
+      }
+    }
     xmlComponents += `    <categories>\n`;
     for (const cat of meta.categories) {
       xmlComponents += `      <category>${escapeXml(cat)}</category>\n`;
     }
     xmlComponents += `    </categories>\n`;
+    if (meta.keywords && meta.keywords.length > 0) {
+      xmlComponents += `    <keywords>\n`;
+      for (const kw of meta.keywords) {
+        xmlComponents += `      <keyword>${escapeXml(kw)}</keyword>\n`;
+      }
+      xmlComponents += `    </keywords>\n`;
+    }
+    if (meta.mimeTypes && meta.mimeTypes.length > 0) {
+      xmlComponents += `    <mimetypes>\n`;
+      for (const mime of meta.mimeTypes) {
+        xmlComponents += `      <mimetype>${escapeXml(mime)}</mimetype>\n`;
+      }
+      xmlComponents += `    </mimetypes>\n`;
+    }
     xmlComponents += `    <icon type="remote">${escapeXml(media.icon)}</icon>\n`;
     if (media.screenshots && media.screenshots.length > 0) {
       xmlComponents += `    <screenshots>\n`;

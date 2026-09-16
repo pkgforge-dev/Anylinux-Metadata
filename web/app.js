@@ -9,6 +9,22 @@
   let catalogList = [];
   let statusData = { completed: [], pending: [], targetCount: 181, completedCount: 147, pendingCount: 34 };
   let currentSlug = 'ghostty';
+  let categoryTags = ['System', 'TerminalEmulator'];
+  const MAIN_CATEGORIES = new Set([
+    'AudioVideo',
+    'Audio',
+    'Video',
+    'Development',
+    'Education',
+    'Game',
+    'Graphics',
+    'Network',
+    'Office',
+    'Science',
+    'Settings',
+    'System',
+    'Utility'
+  ]);
   let keywordTags = ['ghostty', 'terminal', 'emulator', 'cli'];
   let featureBullets = [
     'GPU-accelerated text rendering delivering instant keystroke response',
@@ -164,9 +180,13 @@
   const btnAddBulletEl = document.getElementById('btnAddBullet');
   const licenseSelectEl = document.getElementById('licenseSelect');
   const customLicenseInputEl = document.getElementById('customLicenseInput');
-  const categorySelectEl = document.getElementById('categorySelect');
+  const categoryChipsContainerEl = document.getElementById('categoryChipsContainer');
+  const categorySelectPickerEl = document.getElementById('categorySelectPicker');
+  const btnAddCategoryBtnEl = document.getElementById('btnAddCategoryBtn');
   const devNameEl = document.getElementById('devName');
+  const devUrlEl = document.getElementById('devUrl');
   const homepageEl = document.getElementById('homepage');
+  const sourceRepoUrlEl = document.getElementById('sourceRepoUrl');
   const keywordsTagContainerEl = document.getElementById('keywordsTagContainer');
   const keywordsInputEl = document.getElementById('keywordsInput');
   const iconUrlEl = document.getElementById('iconUrl');
@@ -256,9 +276,32 @@
   });
 
   function handleHashNavigation() {
-    const hash = window.location.hash.replace('#', '') || 'catalog';
-    if (['catalog', 'backlog', 'studio', 'validator'].includes(hash)) {
-      switchTab(hash);
+    const params = new URLSearchParams(window.location.search);
+    const queryApp = params.get('app');
+    const queryTab = params.get('tab');
+
+    if (queryApp && catalogData && catalogData[queryApp]) {
+      switchTab('catalog');
+      openAppDetailModal(queryApp);
+      return;
+    }
+
+    if (queryTab && ['catalog', 'backlog', 'studio', 'validator'].includes(queryTab)) {
+      switchTab(queryTab);
+      return;
+    }
+
+    const rawHash = window.location.hash.replace('#', '') || 'catalog';
+    if (rawHash.startsWith('app/')) {
+      const slug = rawHash.replace('app/', '');
+      switchTab('catalog');
+      if (catalogData && catalogData[slug]) {
+        openAppDetailModal(slug);
+      }
+      return;
+    }
+    if (['catalog', 'backlog', 'studio', 'validator'].includes(rawHash)) {
+      switchTab(rawHash);
     }
   }
 
@@ -327,6 +370,8 @@
     } else if (catalogList.length > 0) {
       loadAppIntoStudio(catalogList[0].slug);
     }
+
+    handleHashNavigation();
   }
 
   function updateMetricsUI() {
@@ -381,6 +426,7 @@
       const id = (meta.id || '').toLowerCase();
       const summary = (meta.summary || '').toLowerCase();
       const keywords = (meta.keywords || []).map((k) => k.toLowerCase()).join(' ');
+      const categories = (meta.categories || []).map((c) => c.toLowerCase()).join(' ');
 
       const matchesSearch =
         !query ||
@@ -388,7 +434,8 @@
         slug.includes(query) ||
         id.includes(query) ||
         summary.includes(query) ||
-        keywords.includes(query);
+        keywords.includes(query) ||
+        categories.includes(query);
 
       const matchesCategory =
         catFilter === 'all' ||
@@ -542,15 +589,15 @@
 
     if (validScreenshots.length > 0) {
       screenshotsHtml = `
-        <div style="margin: 1.5rem 0;">
-          <h4 style="font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-main);">Screenshots</h4>
-          <div style="display: flex; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.5rem;">
+        <div class="modal-gallery-section">
+          <h4 class="modal-section-heading">Screenshots</h4>
+          <div class="modal-gallery-scroll">
             ${validScreenshots
               .map(
                 (ss) => `
-              <div style="flex-shrink: 0; text-align: center;">
-                <img src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" style="height: 140px; border-radius: 6px; border: 1px solid var(--border); object-fit: cover;" onerror="this.parentElement.style.display='none'">
-                <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.25rem;">${escapeHtml(ss.caption || '')}</div>
+              <div class="modal-screenshot-item">
+                <img class="modal-screenshot-img" src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" onerror="this.parentElement.style.display='none'">
+                <div class="modal-screenshot-caption">${escapeHtml(ss.caption || '')}</div>
               </div>
             `
               )
@@ -561,47 +608,57 @@
     }
 
     modalDetailContent.innerHTML = `
-      <div style="display: flex; gap: 1.25rem; align-items: flex-start; margin-bottom: 1.5rem;">
-        <img src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || slug)}" style="width: 72px; height: 72px; border-radius: 12px; object-fit: cover; border: 1px solid var(--border); background: var(--surface-raised);" onerror="handleIconError(this, '${escapeHtml(slug)}', '${escapeAttr(meta.name || slug)}', '${escapeAttr(mainCategory)}')">
-        <div style="flex: 1;">
-          <h2 style="font-size: 1.4rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.2rem;">${escapeHtml(meta.name || slug)}</h2>
-          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary); margin-bottom: 0.5rem;">${escapeHtml(meta.id || slug)}</div>
-          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4;">${escapeHtml(meta.summary || '')}</p>
+      <div class="modal-header-block">
+        <img class="modal-header-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || slug)}" onerror="handleIconError(this, '${escapeHtml(slug)}', '${escapeAttr(meta.name || slug)}', '${escapeAttr(mainCategory)}')">
+        <div class="modal-header-info">
+          <h2 class="modal-header-title">${escapeHtml(meta.name || slug)}</h2>
+          <div class="modal-header-id">${escapeHtml(meta.id || slug)}</div>
+          <p class="modal-header-summary">${escapeHtml(meta.summary || '')}</p>
         </div>
       </div>
 
-      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
-        <span class="chip chip-category">${escapeHtml(mainCategory)}</span>
+      <div class="modal-chips-row">
+        ${(Array.isArray(meta.categories) && meta.categories.length > 0 ? meta.categories : [mainCategory])
+          .map((cat) => `<span class="chip chip-category">${escapeHtml(cat)}</span>`)
+          .join('')}
         <span class="chip chip-license">${escapeHtml(meta.projectLicense || 'Unknown')}</span>
-        ${meta.developer?.name ? `<span class="chip">Dev: ${escapeHtml(meta.developer.name)}</span>` : ''}
+        ${meta.developer?.name ? `<span class="chip">${meta.developer.url ? `<a href="${escapeHtml(meta.developer.url)}" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:underline;">Dev: ${escapeHtml(meta.developer.name)}</a>` : `Dev: ${escapeHtml(meta.developer.name)}`}</span>` : ''}
         ${app.addedAt ? `<span class="chip">Added: ${escapeHtml(app.addedAt)}</span>` : ''}
       </div>
 
-      <div style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.25rem 0; margin-bottom: 1.25rem;">
-        <h4 style="font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-main);">Description</h4>
+      ${Array.isArray(meta.keywords) && meta.keywords.length > 0 ? `
+        <div class="modal-keywords-row" style="display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin: 0.5rem 0 1rem 0;">
+          <span style="font-size: 0.72rem; font-weight: 600; color: var(--text-dim); text-transform: uppercase; margin-right: 0.2rem;">Keywords:</span>
+          ${meta.keywords.map((kw) => `<span class="chip" style="font-size: 0.72rem; padding: 0.15rem 0.45rem; background: var(--bg-hover);">${escapeHtml(kw)}</span>`).join('')}
+        </div>
+      ` : ''}
+
+      <div class="modal-desc-section">
+        <h4 class="modal-section-heading">Description</h4>
         ${descHtml || '<p style="color: var(--text-dim);">No detailed description available.</p>'}
       </div>
 
       ${screenshotsHtml}
 
-      <div style="background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
-        <h4 style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--text-main);">Sandbox Permissions</h4>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; font-size: 0.8rem;">
-          <div><span style="color: var(--text-dim);">Network:</span> <strong>${escapeHtml(sandbox.network || 'none')}</strong></div>
-          <div><span style="color: var(--text-dim);">Display:</span> <strong>${escapeHtml(sandbox.display || 'none')}</strong></div>
-          <div><span style="color: var(--text-dim);">Audio:</span> <strong>${escapeHtml(sandbox.audio || 'none')}</strong></div>
-          <div><span style="color: var(--text-dim);">Processes:</span> <strong>${escapeHtml(sandbox.processes || 'isolated')}</strong></div>
-          <div><span style="color: var(--text-dim);">IPC:</span> <strong>${sandbox.ipc ? 'enabled' : 'disabled'}</strong></div>
-          <div><span style="color: var(--text-dim);">GPU:</span> <strong>${sandbox.devices?.includes('gpu') ? 'enabled' : 'none'}</strong></div>
+      <div class="modal-sandbox-section">
+        <h4 class="modal-section-heading">Sandbox Permissions</h4>
+        <div class="modal-sandbox-grid">
+          <div class="modal-sandbox-item"><span class="sec-label">Network:</span> <strong>${escapeHtml(sandbox.network || 'none')}</strong></div>
+          <div class="modal-sandbox-item"><span class="sec-label">Display:</span> <strong>${escapeHtml(sandbox.display || 'none')}</strong></div>
+          <div class="modal-sandbox-item"><span class="sec-label">Audio:</span> <strong>${escapeHtml(sandbox.audio || 'none')}</strong></div>
+          <div class="modal-sandbox-item"><span class="sec-label">Processes:</span> <strong>${escapeHtml(sandbox.processes || 'isolated')}</strong></div>
+          <div class="modal-sandbox-item"><span class="sec-label">IPC:</span> <strong>${sandbox.ipc ? 'enabled' : 'disabled'}</strong></div>
+          <div class="modal-sandbox-item"><span class="sec-label">GPU:</span> <strong>${sandbox.devices?.includes('gpu') ? 'enabled' : 'none'}</strong></div>
         </div>
       </div>
 
-      <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;">
-        <div style="display: flex; gap: 0.5rem;">
-          ${meta.homepage ? `<a href="${escapeHtml(meta.homepage)}" target="_blank" class="btn btn-sm btn-outline">Homepage</a>` : ''}
-          ${release.repository ? `<a href="https://github.com/${escapeHtml(release.repository)}" target="_blank" class="btn btn-sm btn-outline">Release Repo</a>` : ''}
+      <div class="modal-footer-bar">
+        <div class="modal-footer-links">
+          ${meta.homepage ? `<a href="${escapeHtml(meta.homepage)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Homepage</a>` : ''}
+          ${meta.repository ? `<a href="${escapeHtml(meta.repository)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Source Code</a>` : ''}
+          ${release.repository ? `<a href="https://github.com/${escapeHtml(release.repository)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Release Repo</a>` : ''}
         </div>
-        <div style="display: flex; gap: 0.5rem;">
+        <div class="modal-footer-buttons">
           <button class="btn btn-sm btn-secondary" id="modalBtnCopyJson">${ICONS.copy} Copy JSON</button>
           <button class="btn btn-sm btn-primary" id="modalBtnEditStudio">${ICONS.edit} Edit in Studio</button>
         </div>
@@ -756,16 +813,19 @@
     featureBullets = [];
     keywordTags = [];
     devNameEl.value = '';
+    devUrlEl.value = '';
     homepageEl.value = '';
+    sourceRepoUrlEl.value = '';
     licenseSelectEl.value = 'MIT';
     customLicenseInputEl.style.display = 'none';
     customLicenseInputEl.value = '';
-    categorySelectEl.value = 'Utility';
+    categoryTags = ['Utility'];
     iconUrlEl.value = '';
     screenshotItems = [];
     releaseRepoEl.value = '';
 
     renderBulletInputs();
+    renderCategoryTags();
     renderKeywordTags();
     renderScreenshotInputs();
     updateStudioManifest();
@@ -816,12 +876,17 @@
       customLicenseInputEl.value = lic;
     }
 
-    // Category
-    categorySelectEl.value = meta.categories?.[0] || 'Utility';
+    // Categories
+    categoryTags = Array.isArray(meta.categories) && meta.categories.length > 0
+      ? [...meta.categories]
+      : ['Utility'];
+    renderCategoryTags();
 
-    // Dev & Homepage
+    // Dev, Homepage & VCS
     devNameEl.value = meta.developer?.name || '';
+    devUrlEl.value = meta.developer?.url || '';
     homepageEl.value = meta.homepage || '';
+    sourceRepoUrlEl.value = meta.repository || '';
 
     // Keywords
     keywordTags = Array.isArray(meta.keywords) ? [...meta.keywords] : [slug];
@@ -926,6 +991,71 @@
     renderBulletInputs();
     const inputs = bulletListContainerEl.querySelectorAll('input');
     if (inputs.length > 0) inputs[inputs.length - 1].focus();
+  });
+
+  // Category Tags Manager
+  function renderCategoryTags() {
+    if (!categoryChipsContainerEl) return;
+    categoryChipsContainerEl.innerHTML = '';
+    if (categoryTags.length === 0) {
+      categoryChipsContainerEl.innerHTML = '<span class="hint" style="color: var(--danger); font-size: 0.8rem;">No categories selected. At least one Main Category (e.g. Utility, System) is required.</span>';
+      return;
+    }
+
+    categoryTags.forEach((cat, idx) => {
+      const isMain = MAIN_CATEGORIES.has(cat);
+      const pill = document.createElement('span');
+      pill.className = `category-pill ${isMain ? 'is-main' : ''}`;
+      pill.innerHTML = `
+        <span>${escapeHtml(cat)}</span>
+        ${isMain ? '<span class="cat-badge">Main</span>' : ''}
+        <button type="button" class="tag-del" title="Remove ${escapeAttr(cat)}">&times;</button>
+      `;
+
+      pill.querySelector('.tag-del').addEventListener('click', (e) => {
+        e.stopPropagation();
+        categoryTags.splice(idx, 1);
+        renderCategoryTags();
+        updateStudioManifest();
+      });
+
+      categoryChipsContainerEl.appendChild(pill);
+    });
+  }
+
+  function addCategory(cat) {
+    const trimmed = (cat || '').trim();
+    if (!trimmed) return;
+    if (!categoryTags.includes(trimmed)) {
+      categoryTags.push(trimmed);
+      renderCategoryTags();
+      updateStudioManifest();
+    }
+  }
+
+  if (categorySelectPickerEl) {
+    categorySelectPickerEl.addEventListener('change', () => {
+      if (categorySelectPickerEl.value) {
+        addCategory(categorySelectPickerEl.value);
+        categorySelectPickerEl.value = '';
+      }
+    });
+  }
+
+  if (btnAddCategoryBtnEl) {
+    btnAddCategoryBtnEl.addEventListener('click', () => {
+      if (categorySelectPickerEl && categorySelectPickerEl.value) {
+        addCategory(categorySelectPickerEl.value);
+        categorySelectPickerEl.value = '';
+      }
+    });
+  }
+
+  document.querySelectorAll('.btn-cat-suggest').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat;
+      if (cat) addCategory(cat);
+    });
   });
 
   // Keyword Tags Input
@@ -1074,9 +1204,27 @@
   customLicenseInputEl.addEventListener('input', updateStudioManifest);
 
   // Form input listeners
-  [leadParagraphEl, categorySelectEl, devNameEl, homepageEl, releaseRepoEl, sbNetworkEl, sbDisplayEl, sbAudioEl, sbProcessesEl, devGpuEl, devInputEl, devKvmEl, devCameraEl, sbIpcEl].forEach((el) => {
-    el.addEventListener('input', updateStudioManifest);
-    el.addEventListener('change', updateStudioManifest);
+  [
+    leadParagraphEl,
+    devNameEl,
+    devUrlEl,
+    homepageEl,
+    sourceRepoUrlEl,
+    releaseRepoEl,
+    sbNetworkEl,
+    sbDisplayEl,
+    sbAudioEl,
+    sbProcessesEl,
+    devGpuEl,
+    devInputEl,
+    devKvmEl,
+    devCameraEl,
+    sbIpcEl
+  ].forEach((el) => {
+    if (el) {
+      el.addEventListener('input', updateStudioManifest);
+      el.addEventListener('change', updateStudioManifest);
+    }
   });
 
   // Construct Manifest Object and Update Diagnostics & Previews
@@ -1109,9 +1257,10 @@
     }
 
     const license = licenseSelectEl.value === 'custom' ? customLicenseInputEl.value.trim() || 'MIT' : licenseSelectEl.value;
-    const category = categorySelectEl.value;
     const devName = devNameEl.value.trim() || `${name} Developers`;
+    const devUrl = devUrlEl.value.trim();
     const homepage = homepageEl.value.trim() || 'https://example.org';
+    const sourceRepo = sourceRepoUrlEl.value.trim();
     const releaseRepo = releaseRepoEl.value.trim() || `pkgforge-dev/${slug}-AppImage`;
     const iconUrl = iconUrlEl.value.trim() || `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${slug}.png`;
 
@@ -1128,25 +1277,29 @@
     if (devKvmEl.checked) devices.push('kvm');
     if (devCameraEl.checked) devices.push('camera');
 
+    const devObj = { name: devName };
+    if (devUrl) devObj.url = devUrl;
+
+    const primaryCategory = categoryTags[0] || 'Utility';
+
+    const metadataObj = {
+      id: appId,
+      name,
+      summary,
+      description: descAst.length > 0 ? descAst : [{ type: 'paragraph', content: [{ type: 'text', value: summary }] }],
+      projectLicense: license,
+      developer: devObj,
+      homepage,
+      ...(sourceRepo ? { repository: sourceRepo } : {}),
+      keywords: keywordTags.length > 0 ? keywordTags : [slug, 'appimage', 'anylinux'],
+      categories: categoryTags.length > 0 ? categoryTags : ['Utility']
+    };
+
     const manifest = {
       $schema: 'https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json',
       appstream: {
         type: 'manual',
-        metadata: {
-          id: appId,
-          name,
-          summary,
-          description: descAst.length > 0 ? descAst : [{ type: 'paragraph', content: [{ type: 'text', value: summary }] }],
-          projectLicense: license,
-          developer: {
-            name: devName,
-            url: homepage
-          },
-          homepage,
-          repository: homepage,
-          keywords: keywordTags.length > 0 ? keywordTags : [slug, 'appimage', 'anylinux'],
-          categories: [category]
-        },
+        metadata: metadataObj,
         media: {
           icon: iconUrl,
           screenshots
@@ -1181,7 +1334,8 @@
     const isSummaryValid = summary.length > 0 && summary.length <= 200 && !endsWithPeriod;
     const isDescValid = descAst.length > 0;
     const isLicenseValid = !!license;
-    const isCategoryValid = !!category;
+    const hasMainCategory = categoryTags.some((cat) => MAIN_CATEGORIES.has(cat));
+    const isCategoryValid = categoryTags.length > 0 && hasMainCategory;
     const isIconValid = iconUrl.startsWith('https://');
 
     const checks = [
@@ -1190,7 +1344,7 @@
       { name: 'Summary length <= 200 chars and no trailing period', passed: isSummaryValid, err: 'Must not end with a period per AppStream spec' },
       { name: 'Description AST structured blocks', passed: isDescValid, err: 'Requires lead paragraph or feature list' },
       { name: `SPDX License: "${license}"`, passed: isLicenseValid, err: 'Valid SPDX license expression required' },
-      { name: `Main Category: "${category}"`, passed: isCategoryValid, err: 'Must select a registered Freedesktop category' },
+      { name: `Categories (${categoryTags.length}): ${categoryTags.join(', ')}`, passed: isCategoryValid, err: 'At least one registered Freedesktop main category is required' },
       { name: 'Canonical HTTPS Icon Asset URL', passed: isIconValid, err: 'Icon must use HTTPS canonical repository URL' }
     ];
 
@@ -1213,7 +1367,7 @@
     storeMockNameEl.innerText = name;
     storeMockIdEl.innerText = appId;
     storeMockSummaryEl.innerText = summary;
-    storeMockCategoryEl.innerText = category;
+    storeMockCategoryEl.innerText = primaryCategory;
     storeMockLicenseEl.innerText = license;
     storeMockRepoEl.innerText = releaseRepo;
 
