@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.android_translation_layer_appimage",
+      "name": "android-translation-layer",
+      "summary": "Unofficial, A translation layer that allows running Android apps on a Linux system",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Unofficial, A translation layer that allows running Android apps on a Linux system."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "android-translation-layer Developers",
+        "url": "https://github.com/pkgforge-dev/android_translation_layer-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/android_translation_layer-AppImage",
+      "repository": "https://github.com/pkgforge-dev/android_translation_layer-AppImage",
+      "keywords": [
+        "android-translation-layer",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/android-translation-layer.png",
+      "screenshots": [
+        {
+          "caption": "android-translation-layer interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/android_translation_layer-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

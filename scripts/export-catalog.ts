@@ -1,0 +1,124 @@
+import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
+import { resolve, basename } from "node:path";
+import { gzipSync } from "node:zlib";
+import { appManifestSchema, type AppManifest } from "../schema/schema.ts";
+
+const appsDir = resolve(import.meta.dir, "../apps");
+const distDir = resolve(import.meta.dir, "../dist");
+
+function escapeXml(unsafe: string): string {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+function astToXml(blocks: AppManifest["appstream"]["metadata"]["description"]): string {
+  let xml = "";
+  for (const block of blocks) {
+    if (block.type === "paragraph") {
+      const text = block.content.map((c) => escapeXml(c.value)).join("");
+      xml += `      <p>${text}</p>\n`;
+    } else if (block.type === "unordered-list" || block.type === "ordered-list") {
+      const tag = block.type === "unordered-list" ? "ul" : "ol";
+      xml += `      <${tag}>\n`;
+      for (const item of block.items) {
+        const text = item.map((c) => escapeXml(c.value)).join("");
+        xml += `        <li>${text}</li>\n`;
+      }
+      xml += `      </${tag}>\n`;
+    }
+  }
+  return xml;
+}
+
+async function exportCatalog() {
+  await mkdir(distDir, { recursive: true });
+
+  const files = (await readdir(appsDir)).filter((f) => f.endsWith(".json")).sort();
+  console.log(`📦 Compiling catalog from ${files.length} application manifests...\n`);
+
+  const apps: Record<string, AppManifest> = {};
+  let xmlComponents = "";
+
+  for (const file of files) {
+    const slug = basename(file, ".json");
+    const raw = await readFile(resolve(appsDir, file), "utf8");
+    const manifest: AppManifest = JSON.parse(raw);
+
+    const validation = appManifestSchema.safeParse(manifest);
+    if (!validation.success) {
+      throw new Error(`Invalid manifest ${file}: ${validation.error.message}`);
+    }
+
+    apps[slug] = manifest;
+
+    // Build AppStream XML component
+    const meta = manifest.appstream.metadata;
+    const media = manifest.appstream.media;
+
+    xmlComponents += `  <component type="desktop">\n`;
+    xmlComponents += `    <id>${escapeXml(meta.id)}</id>\n`;
+    xmlComponents += `    <name>${escapeXml(meta.name)}</name>\n`;
+    xmlComponents += `    <summary>${escapeXml(meta.summary)}</summary>\n`;
+    xmlComponents += `    <project_license>${escapeXml(meta.projectLicense)}</project_license>\n`;
+    xmlComponents += `    <developer_name>${escapeXml(meta.developer.name)}</developer_name>\n`;
+    xmlComponents += `    <description>\n${astToXml(meta.description)}    </description>\n`;
+    xmlComponents += `    <url type="homepage">${escapeXml(meta.homepage)}</url>\n`;
+    if (meta.repository) {
+      xmlComponents += `    <url type="vcs-browser">${escapeXml(meta.repository)}</url>\n`;
+    }
+    xmlComponents += `    <categories>\n`;
+    for (const cat of meta.categories) {
+      xmlComponents += `      <category>${escapeXml(cat)}</category>\n`;
+    }
+    xmlComponents += `    </categories>\n`;
+    xmlComponents += `    <icon type="remote">${escapeXml(media.icon)}</icon>\n`;
+    if (media.screenshots && media.screenshots.length > 0) {
+      xmlComponents += `    <screenshots>\n`;
+      media.screenshots.forEach((ss, idx) => {
+        const defaultAttr = idx === 0 ? ` type="default"` : "";
+        xmlComponents += `      <screenshot${defaultAttr}>\n`;
+        xmlComponents += `        <caption>${escapeXml(ss.caption)}</caption>\n`;
+        xmlComponents += `        <image>${escapeXml(ss.source)}</image>\n`;
+        xmlComponents += `      </screenshot>\n`;
+      });
+      xmlComponents += `    </screenshots>\n`;
+    }
+    xmlComponents += `    <metadata>\n`;
+    xmlComponents += `      <value key="anylinux:slug">${escapeXml(slug)}</value>\n`;
+    xmlComponents += `      <value key="anylinux:release_source_type">${escapeXml(manifest.releaseSource.type)}</value>\n`;
+    if ("repository" in manifest.releaseSource) {
+      xmlComponents += `      <value key="anylinux:release_source_repo">${escapeXml(manifest.releaseSource.repository)}</value>\n`;
+    }
+    xmlComponents += `    </metadata>\n`;
+    xmlComponents += `  </component>\n\n`;
+  }
+
+  // 1. Write dist/catalog.json
+  const catalogJson = {
+    version: "1.0.0",
+    generatedAt: new Date().toISOString(),
+    count: files.length,
+    apps,
+  };
+  await writeFile(resolve(distDir, "catalog.json"), JSON.stringify(catalogJson, null, 2) + "\n");
+  console.log(`✅ Generated dist/catalog.json (${(Buffer.byteLength(JSON.stringify(catalogJson)) / 1024).toFixed(1)} KB)`);
+
+  // 2. Write dist/appstream.xml & dist/appstream.xml.gz
+  const appstreamXml = `<?xml version="1.0" encoding="UTF-8"?>
+<components version="0.14" origin="anylinux-metadata">
+${xmlComponents}</components>
+`;
+  await writeFile(resolve(distDir, "appstream.xml"), appstreamXml);
+  const compressed = gzipSync(Buffer.from(appstreamXml, "utf8"));
+  await writeFile(resolve(distDir, "appstream.xml.gz"), compressed);
+  console.log(`✅ Generated dist/appstream.xml and dist/appstream.xml.gz (${(compressed.length / 1024).toFixed(1)} KB compressed)`);
+}
+
+exportCatalog().catch((err) => {
+  console.error("Export error:", err);
+  process.exit(1);
+});

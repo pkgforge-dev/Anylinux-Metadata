@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.elasota.aerofoil",
+      "name": "Aerofoil",
+      "summary": "Aerofoil is a modern, cross-platform port of Glider PRO, the classic Macintosh paper airplane flight game originally developed by John Calhoun",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Aerofoil is a modern, cross-platform port of Glider PRO, the classic Macintosh paper airplane flight game originally developed by John Calhoun. It recreates the nostalgic physics and level mechanics while running natively on modern PC operating systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Faithful recreation of original Glider PRO physics, flight dynamics, and obstacles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform support for modern display resolutions and widescreen monitors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with classic Mac Glider PRO houses and custom level files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable keyboard, mouse, and game controller input schemes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced audio playback and sound effect emulation"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-only",
+      "developer": {
+        "name": "Aerofoil Developers",
+        "url": "https://github.com/elasota/Aerofoil"
+      },
+      "homepage": "https://github.com/elasota/Aerofoil",
+      "repository": "https://github.com/pkgforge-dev/Aerofoil-AppImage",
+      "keywords": [
+        "aerofoil",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility",
+        "System"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/aerofoil.png",
+      "screenshots": [
+        {
+          "caption": "Aerofoil interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Aerofoil-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

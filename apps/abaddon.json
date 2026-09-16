@@ -1,0 +1,116 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.uowuo.abaddon",
+      "name": "Abaddon",
+      "summary": "Abaddon is an alternative Discord client written in C++ and GTK 3 designed for high performance and low memory consumption",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Abaddon is an alternative Discord client written in C++ and GTK 3 designed for high performance and low memory consumption. It provides a native, responsive chat experience without the heavy resource footprint associated with Electron-based applications."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Integrated voice chat support including listening and speaking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native GTK 3 interface with customizable themes and fonts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for direct messages, group chats, servers, and channels"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Rich message rendering including Markdown, embeds, custom emojis, and reactions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Minimal CPU and RAM usage compared to the official desktop client"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Abaddon Developers",
+        "url": "https://github.com/uowuo/abaddon"
+      },
+      "homepage": "https://github.com/uowuo/abaddon",
+      "repository": "https://github.com/pkgforge-dev/Abaddon-AppImage",
+      "keywords": [
+        "abaddon",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Network",
+        "InstantMessaging",
+        "Chat"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/abaddon.png",
+      "screenshots": [
+        {
+          "caption": "Abaddon interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s5.png"
+        },
+        {
+          "caption": "Abaddon interface screenshot 2",
+          "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s6.png"
+        },
+        {
+          "caption": "Abaddon interface screenshot 3",
+          "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s7.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Abaddon-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

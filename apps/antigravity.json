@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "google.antigravity.antigravity",
+      "name": "Antigravity",
+      "summary": "Google Antigravity is an advanced agentic AI coding assistant designed by Google DeepMind",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Google Antigravity is an advanced agentic AI coding assistant designed by Google DeepMind. Built for pair programming and autonomous software engineering, Antigravity plans, explores codebases, writes and refactors code, runs commands, and performs complex multi-step workflows."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Autonomous multi-agent coordination with specialized background subagents"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "In-depth codebase exploration, semantic search, and project comprehension"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automated test execution, debugging, and terminal command integration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Flexible extension system supporting custom skills, rules, hooks, and MCP servers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless integration across command-line interfaces and development environments"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Antigravity Developers",
+        "url": "https://antigravity.google/download https://antigravity.google"
+      },
+      "homepage": "https://antigravity.google/download https://antigravity.google",
+      "repository": "https://github.com/pkgforge-dev/Antigravity-AppImage",
+      "keywords": [
+        "antigravity",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/antigravity.png",
+      "screenshots": [
+        {
+          "caption": "Antigravity interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Antigravity-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

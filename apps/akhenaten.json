@@ -1,0 +1,108 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.dalerank.akhenaten",
+      "name": "Akhenaten",
+      "summary": "Akhenaten is an open-source reimplementation of the classic city-building simulation game Pharaoh and its expansion Cleopatra: Queen of the Nile",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Akhenaten is an open-source reimplementation of the classic city-building simulation game Pharaoh and its expansion Cleopatra: Queen of the Nile. It reconstructs the game engine in modern C++ to run natively on modern operating systems while utilizing the original game assets."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native cross-platform engine with high-resolution and widescreen support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate recreation of economic, agricultural, and monument construction mechanics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for original Pharaoh and Cleopatra campaign missions and custom scenarios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modernized user interface scaling and audio playback enhancements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Active open-source development improving pathfinding and simulation stability"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Akhenaten Developers",
+        "url": "https://github.com/dalerank/Akhenaten"
+      },
+      "homepage": "https://github.com/dalerank/Akhenaten",
+      "repository": "https://github.com/pkgforge-dev/Akhenaten-AppImage",
+      "keywords": [
+        "akhenaten",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "Simulation",
+        "StrategyGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/akhenaten.png",
+      "screenshots": [
+        {
+          "caption": "Akhenaten interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Akhenaten-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

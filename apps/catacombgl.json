@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.arnoansems.catacombgl",
+      "name": "CatacombGL",
+      "summary": "CatacombGL is an open-source source port for the classic first-person fantasy action series by id Software and Softdisk: Catacomb 3-D, The Catacomb",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "CatacombGL is an open-source source port for the classic first-person fantasy action series by id Software and Softdisk: Catacomb 3-D, The Catacomb Abyss, The Catacomb Armageddon, and The Catacomb Apocalypse."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated OpenGL rendering with high-resolution texture filtering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern mouse-look controls with customizable sensitivity and field of view"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and ultrawide display support with scalable interface elements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Restored and enhanced sound effects and music playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatibility with original game data files from both floppy and CD releases"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-only",
+      "developer": {
+        "name": "CatacombGL Developers",
+        "url": "https://github.com/ArnoAnsems/CatacombGL"
+      },
+      "homepage": "https://github.com/ArnoAnsems/CatacombGL",
+      "repository": "https://github.com/pkgforge-dev/CatacombGL-AppImage",
+      "keywords": [
+        "catacombgl",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/catacombgl.png",
+      "screenshots": [
+        {
+          "caption": "CatacombGL interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/CatacombGL-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,1365 @@
+{
+  "updatedAt": "2026-09-16T02:18:46.367Z",
+  "totalAnylinuxApps": 445,
+  "flathubCoveredCount": 264,
+  "targetCount": 181,
+  "completedCount": 17,
+  "pendingCount": 164,
+  "progressPercent": 9,
+  "completed": [
+    {
+      "name": "12to11",
+      "url": "https://github.com/pkgforge-dev/12to11-AppImage",
+      "repo": "pkgforge-dev/12to11-AppImage",
+      "slug": "12to11"
+    },
+    {
+      "name": "Abaddon",
+      "url": "https://github.com/pkgforge-dev/Abaddon-AppImage",
+      "repo": "pkgforge-dev/Abaddon-AppImage",
+      "slug": "abaddon"
+    },
+    {
+      "name": "Aerofoil",
+      "url": "https://github.com/pkgforge-dev/Aerofoil-AppImage",
+      "repo": "pkgforge-dev/Aerofoil-AppImage",
+      "slug": "aerofoil"
+    },
+    {
+      "name": "Akhenaten",
+      "url": "https://github.com/pkgforge-dev/Akhenaten-AppImage",
+      "repo": "pkgforge-dev/Akhenaten-AppImage",
+      "slug": "akhenaten"
+    },
+    {
+      "name": "Android Tools",
+      "url": "https://github.com/pkgforge-dev/android-tools-AppImage",
+      "repo": "pkgforge-dev/android-tools-AppImage",
+      "slug": "android-tools"
+    },
+    {
+      "name": "Android Translation Layer",
+      "url": "https://github.com/pkgforge-dev/android_translation_layer-AppImage",
+      "repo": "pkgforge-dev/android_translation_layer-AppImage",
+      "slug": "android-translation-layer"
+    },
+    {
+      "name": "Antigravity",
+      "url": "https://github.com/pkgforge-dev/Antigravity-AppImage",
+      "repo": "pkgforge-dev/Antigravity-AppImage",
+      "slug": "antigravity"
+    },
+    {
+      "name": "Antigravity IDE",
+      "url": "https://github.com/pkgforge-dev/Antigravity-IDE-AppImage",
+      "repo": "pkgforge-dev/Antigravity-IDE-AppImage",
+      "slug": "antigravity-ide"
+    },
+    {
+      "name": "CatacombGL",
+      "url": "https://github.com/pkgforge-dev/CatacombGL-AppImage",
+      "repo": "pkgforge-dev/CatacombGL-AppImage",
+      "slug": "catacombgl"
+    },
+    {
+      "name": "Ghostty",
+      "url": "https://github.com/pkgforge-dev/ghostty-appimage",
+      "repo": "pkgforge-dev/ghostty-appimage",
+      "slug": "ghostty"
+    },
+    {
+      "name": "Ladybird",
+      "url": "https://github.com/pkgforge-dev/ladybird-appimage",
+      "repo": "pkgforge-dev/ladybird-appimage",
+      "slug": "ladybird"
+    },
+    {
+      "name": "Qimgv",
+      "url": "https://github.com/pkgforge-dev/Qimgv-AppImage",
+      "repo": "pkgforge-dev/Qimgv-AppImage",
+      "slug": "qimgv"
+    },
+    {
+      "name": "Quickshell",
+      "url": "https://github.com/pkgforge-dev/Quickshell-AppImage",
+      "repo": "pkgforge-dev/Quickshell-AppImage",
+      "slug": "quickshell"
+    },
+    {
+      "name": "SkyEmu",
+      "url": "https://github.com/pkgforge-dev/SkyEmu-AppImage",
+      "repo": "pkgforge-dev/SkyEmu-AppImage",
+      "slug": "skyemu"
+    },
+    {
+      "name": "sound-space-plus",
+      "url": "https://github.com/pkgforge-dev/sound-space-plus-AppImage",
+      "repo": "pkgforge-dev/sound-space-plus-AppImage",
+      "slug": "sound-space-plus"
+    },
+    {
+      "name": "Torzu",
+      "url": "https://github.com/pkgforge-dev/Torzu-AppImage",
+      "repo": "pkgforge-dev/Torzu-AppImage",
+      "slug": "torzu"
+    },
+    {
+      "name": "Xash3D-FWGS",
+      "url": "https://github.com/pkgforge-dev/Xash3D-FWGS-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Xash3D-FWGS-AppImage-Enhanced",
+      "slug": "xash3d-fwgs"
+    }
+  ],
+  "pending": [
+    {
+      "name": "2ship2harkinian",
+      "url": "https://github.com/pkgforge-dev/2ship2harkinian-AppImage-Enhanced",
+      "repo": "pkgforge-dev/2ship2harkinian-AppImage-Enhanced",
+      "slug": "2ship2harkinian"
+    },
+    {
+      "name": "Asphyxia CORE",
+      "url": "https://github.com/pkgforge-dev/Asphyxia-CORE-AppImage",
+      "repo": "pkgforge-dev/Asphyxia-CORE-AppImage",
+      "slug": "asphyxia-core"
+    },
+    {
+      "name": "BanjoRecomp",
+      "url": "https://github.com/pkgforge-dev/BanjoRecomp-AppImage",
+      "repo": "pkgforge-dev/BanjoRecomp-AppImage",
+      "slug": "banjorecomp"
+    },
+    {
+      "name": "BM64Recomp",
+      "url": "https://github.com/pkgforge-dev/BM64Recomp-AppImage-Enhanced",
+      "repo": "pkgforge-dev/BM64Recomp-AppImage-Enhanced",
+      "slug": "bm64recomp"
+    },
+    {
+      "name": "BMHeroRecomp",
+      "url": "https://github.com/pkgforge-dev/BMHeroRecomp-AppImage-Enhanced",
+      "repo": "pkgforge-dev/BMHeroRecomp-AppImage-Enhanced",
+      "slug": "bmherorecomp"
+    },
+    {
+      "name": "Brave Origin",
+      "url": "https://github.com/pkgforge-dev/Brave-Origin-AppImage",
+      "repo": "pkgforge-dev/Brave-Origin-AppImage",
+      "slug": "brave-origin"
+    },
+    {
+      "name": "Bulky",
+      "url": "https://github.com/pkgforge-dev/Bulky-AppImage",
+      "repo": "pkgforge-dev/Bulky-AppImage",
+      "slug": "bulky"
+    },
+    {
+      "name": "Cannonball",
+      "url": "https://github.com/pkgforge-dev/Cannonball-AppImage",
+      "repo": "pkgforge-dev/Cannonball-AppImage",
+      "slug": "cannonball"
+    },
+    {
+      "name": "ChiPass",
+      "url": "https://github.com/pkgforge-dev/ChiPass-AppImage",
+      "repo": "pkgforge-dev/ChiPass-AppImage",
+      "slug": "chipass"
+    },
+    {
+      "name": "ClassicImageViewer",
+      "url": "https://github.com/pkgforge-dev/ClassicImageViewer-AppImage-Enhanced",
+      "repo": "pkgforge-dev/ClassicImageViewer-AppImage-Enhanced",
+      "slug": "classicimageviewer"
+    },
+    {
+      "name": "Claude Code",
+      "url": "https://github.com/pkgforge-dev/claude-code-AppImage",
+      "repo": "pkgforge-dev/claude-code-AppImage",
+      "slug": "claude-code"
+    },
+    {
+      "name": "Claude Desktop",
+      "url": "https://github.com/pkgforge-dev/Claude-Desktop-AppImage",
+      "repo": "pkgforge-dev/Claude-Desktop-AppImage",
+      "slug": "claude-desktop"
+    },
+    {
+      "name": "Clock Signal",
+      "url": "https://github.com/pkgforge-dev/CLK-AppImage",
+      "repo": "pkgforge-dev/CLK-AppImage",
+      "slug": "clock-signal"
+    },
+    {
+      "name": "ClownMDEmu",
+      "url": "https://github.com/pkgforge-dev/ClownMDEmu-AppImage-Enhanced",
+      "repo": "pkgforge-dev/ClownMDEmu-AppImage-Enhanced",
+      "slug": "clownmdemu"
+    },
+    {
+      "name": "Commander-Genius",
+      "url": "https://github.com/pkgforge-dev/Commander-Genius-AppImage",
+      "repo": "pkgforge-dev/Commander-Genius-AppImage",
+      "slug": "commander-genius"
+    },
+    {
+      "name": "Cromite",
+      "url": "https://github.com/pkgforge-dev/Cromite-AppImage",
+      "repo": "pkgforge-dev/Cromite-AppImage",
+      "slug": "cromite"
+    },
+    {
+      "name": "Cuberite",
+      "url": "https://github.com/pkgforge-dev/Cuberite-AppImage",
+      "repo": "pkgforge-dev/Cuberite-AppImage",
+      "slug": "cuberite"
+    },
+    {
+      "name": "Cubyz",
+      "url": "https://github.com/pkgforge-dev/Cubyz-AppImage",
+      "repo": "pkgforge-dev/Cubyz-AppImage",
+      "slug": "cubyz"
+    },
+    {
+      "name": "Cursor",
+      "url": "https://github.com/pkgforge-dev/Cursor-AppImage-enhanced",
+      "repo": "pkgforge-dev/Cursor-AppImage-enhanced",
+      "slug": "cursor"
+    },
+    {
+      "name": "cursor-cli",
+      "url": "https://github.com/pkgforge-dev/cursor-cli-AppImage",
+      "repo": "pkgforge-dev/cursor-cli-AppImage",
+      "slug": "cursor-cli"
+    },
+    {
+      "name": "D1X-Rebirth",
+      "url": "https://github.com/pkgforge-dev/D1X-Rebirth-AppImage",
+      "repo": "pkgforge-dev/D1X-Rebirth-AppImage",
+      "slug": "d1x-rebirth"
+    },
+    {
+      "name": "D2X-Rebirth",
+      "url": "https://github.com/pkgforge-dev/D2X-Rebirth-AppImage",
+      "repo": "pkgforge-dev/D2X-Rebirth-AppImage",
+      "slug": "d2x-rebirth"
+    },
+    {
+      "name": "Daggerfall-Unity",
+      "url": "https://github.com/pkgforge-dev/Daggerfall-Unity-AppImage",
+      "repo": "pkgforge-dev/Daggerfall-Unity-AppImage",
+      "slug": "daggerfall-unity"
+    },
+    {
+      "name": "DarkPlaces",
+      "url": "https://github.com/pkgforge-dev/DarkPlaces-AppImage",
+      "repo": "pkgforge-dev/DarkPlaces-AppImage",
+      "slug": "darkplaces"
+    },
+    {
+      "name": "Denise",
+      "url": "https://github.com/pkgforge-dev/Denise-AppImage",
+      "repo": "pkgforge-dev/Denise-AppImage",
+      "slug": "denise"
+    },
+    {
+      "name": "dethrace",
+      "url": "https://github.com/pkgforge-dev/dethrace-AppImage",
+      "repo": "pkgforge-dev/dethrace-AppImage",
+      "slug": "dethrace"
+    },
+    {
+      "name": "DiffPDF",
+      "url": "https://github.com/pkgforge-dev/DiffPDF-AppImage",
+      "repo": "pkgforge-dev/DiffPDF-AppImage",
+      "slug": "diffpdf"
+    },
+    {
+      "name": "Dillo",
+      "url": "https://github.com/pkgforge-dev/Dillo-AppImage",
+      "repo": "pkgforge-dev/Dillo-AppImage",
+      "slug": "dillo"
+    },
+    {
+      "name": "DingusPPC",
+      "url": "https://github.com/pkgforge-dev/DingusPPC-AppImage",
+      "repo": "pkgforge-dev/DingusPPC-AppImage",
+      "slug": "dingusppc"
+    },
+    {
+      "name": "DNZHRecomp",
+      "url": "https://github.com/pkgforge-dev/DNZHRecomp-AppImage",
+      "repo": "pkgforge-dev/DNZHRecomp-AppImage",
+      "slug": "dnzhrecomp"
+    },
+    {
+      "name": "DonkeyKong64Recomp",
+      "url": "https://github.com/pkgforge-dev/DonkeyKong64Recomp-AppImage",
+      "repo": "pkgforge-dev/DonkeyKong64Recomp-AppImage",
+      "slug": "donkeykong64recomp"
+    },
+    {
+      "name": "DOOM64EXUltra",
+      "url": "https://github.com/pkgforge-dev/DOOM64EXUltra-AppImage",
+      "repo": "pkgforge-dev/DOOM64EXUltra-AppImage",
+      "slug": "doom64exultra"
+    },
+    {
+      "name": "Dorion",
+      "url": "https://github.com/pkgforge-dev/Dorion-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Dorion-AppImage-Enhanced",
+      "slug": "dorion"
+    },
+    {
+      "name": "dRally",
+      "url": "https://github.com/pkgforge-dev/dRally-AppImage",
+      "repo": "pkgforge-dev/dRally-AppImage",
+      "slug": "drally"
+    },
+    {
+      "name": "DREAMM",
+      "url": "https://github.com/pkgforge-dev/DREAMM-AppImage",
+      "repo": "pkgforge-dev/DREAMM-AppImage",
+      "slug": "dreamm"
+    },
+    {
+      "name": "dunst",
+      "url": "https://github.com/pkgforge-dev/dunst-AppImage",
+      "repo": "pkgforge-dev/dunst-AppImage",
+      "slug": "dunst"
+    },
+    {
+      "name": "Dwarf Fortress",
+      "url": "https://github.com/pkgforge-dev/Dwarf-Fortress-AppImage",
+      "repo": "pkgforge-dev/Dwarf-Fortress-AppImage",
+      "slug": "dwarf-fortress"
+    },
+    {
+      "name": "Dwarf Fortress Legacy",
+      "url": "https://github.com/pkgforge-dev/Dwarf-Fortress-Legacy-AppImage",
+      "repo": "pkgforge-dev/Dwarf-Fortress-Legacy-AppImage",
+      "slug": "dwarf-fortress-legacy"
+    },
+    {
+      "name": "ECWolf",
+      "url": "https://github.com/pkgforge-dev/ECWolf-AppImage",
+      "repo": "pkgforge-dev/ECWolf-AppImage",
+      "slug": "ecwolf"
+    },
+    {
+      "name": "ePSXe",
+      "url": "https://github.com/pkgforge-dev/ePSXe-AppImage",
+      "repo": "pkgforge-dev/ePSXe-AppImage",
+      "slug": "epsxe"
+    },
+    {
+      "name": "ExtremeGRecomp",
+      "url": "https://github.com/pkgforge-dev/ExtremeGRecomp-AppImage",
+      "repo": "pkgforge-dev/ExtremeGRecomp-AppImage",
+      "slug": "extremegrecomp"
+    },
+    {
+      "name": "Fabother-World",
+      "url": "https://github.com/pkgforge-dev/Fabother-World-AppImage",
+      "repo": "pkgforge-dev/Fabother-World-AppImage",
+      "slug": "fabother-world"
+    },
+    {
+      "name": "FFmpeg",
+      "url": "https://github.com/pkgforge-dev/FFmpeg-AppImage",
+      "repo": "pkgforge-dev/FFmpeg-AppImage",
+      "slug": "ffmpeg"
+    },
+    {
+      "name": "Flashrom",
+      "url": "https://github.com/pkgforge-dev/Flashrom-AppImage",
+      "repo": "pkgforge-dev/Flashrom-AppImage",
+      "slug": "flashrom"
+    },
+    {
+      "name": "foobar2000",
+      "url": "https://github.com/pkgforge-dev/foobar2000-AppImage",
+      "repo": "pkgforge-dev/foobar2000-AppImage",
+      "slug": "foobar2000"
+    },
+    {
+      "name": "Foobillard++",
+      "url": "https://github.com/pkgforge-dev/Foobillardpp-AppImage",
+      "repo": "pkgforge-dev/Foobillardpp-AppImage",
+      "slug": "foobillard"
+    },
+    {
+      "name": "gamescope",
+      "url": "https://github.com/pkgforge-dev/gamescope-AppImage",
+      "repo": "pkgforge-dev/gamescope-AppImage",
+      "slug": "gamescope"
+    },
+    {
+      "name": "Gapless",
+      "url": "https://github.com/pkgforge-dev/Gapless-AppImage",
+      "repo": "pkgforge-dev/Gapless-AppImage",
+      "slug": "gapless"
+    },
+    {
+      "name": "Gearboy",
+      "url": "https://github.com/pkgforge-dev/Gearboy-AppImage",
+      "repo": "pkgforge-dev/Gearboy-AppImage",
+      "slug": "gearboy"
+    },
+    {
+      "name": "Gearcoleco",
+      "url": "https://github.com/pkgforge-dev/Gearcoleco-AppImage",
+      "repo": "pkgforge-dev/Gearcoleco-AppImage",
+      "slug": "gearcoleco"
+    },
+    {
+      "name": "Geargrafx",
+      "url": "https://github.com/pkgforge-dev/Geargrafx-AppImage",
+      "repo": "pkgforge-dev/Geargrafx-AppImage",
+      "slug": "geargrafx"
+    },
+    {
+      "name": "Gearlynx",
+      "url": "https://github.com/pkgforge-dev/Gearlynx-AppImage",
+      "repo": "pkgforge-dev/Gearlynx-AppImage",
+      "slug": "gearlynx"
+    },
+    {
+      "name": "Gearsystem",
+      "url": "https://github.com/pkgforge-dev/Gearsystem-AppImage",
+      "repo": "pkgforge-dev/Gearsystem-AppImage",
+      "slug": "gearsystem"
+    },
+    {
+      "name": "Ghostscript",
+      "url": "https://github.com/pkgforge-dev/Ghostscript-AppImage",
+      "repo": "pkgforge-dev/Ghostscript-AppImage",
+      "slug": "ghostscript"
+    },
+    {
+      "name": "Ghostship",
+      "url": "https://github.com/pkgforge-dev/Ghostship-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Ghostship-AppImage-Enhanced",
+      "slug": "ghostship"
+    },
+    {
+      "name": "GIMP-and-PhotoGIMP",
+      "url": "https://github.com/pkgforge-dev/GIMP-and-PhotoGIMP-AppImage",
+      "repo": "pkgforge-dev/GIMP-and-PhotoGIMP-AppImage",
+      "slug": "gimp-and-photogimp"
+    },
+    {
+      "name": "Gnome Text Editor",
+      "url": "https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage",
+      "repo": "pkgforge-dev/Gnome-Text-Editor-AppImage",
+      "slug": "gnome-text-editor"
+    },
+    {
+      "name": "gpu-screen-recorder",
+      "url": "https://github.com/pkgforge-dev/gpu-screen-recorder-AppImage",
+      "repo": "pkgforge-dev/gpu-screen-recorder-AppImage",
+      "slug": "gpu-screen-recorder"
+    },
+    {
+      "name": "Helium Browser",
+      "url": "https://github.com/pkgforge-dev/Helium-Browser-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Helium-Browser-AppImage-Enhanced",
+      "slug": "helium-browser"
+    },
+    {
+      "name": "HP-15C",
+      "url": "https://github.com/pkgforge-dev/HP-15C-Simulator-AppImage",
+      "repo": "pkgforge-dev/HP-15C-Simulator-AppImage",
+      "slug": "hp-15c"
+    },
+    {
+      "name": "htop",
+      "url": "https://github.com/pkgforge-dev/htop-AppImage",
+      "repo": "pkgforge-dev/htop-AppImage",
+      "slug": "htop"
+    },
+    {
+      "name": "iloader",
+      "url": "https://github.com/pkgforge-dev/iloader-AppImage-Enhanced",
+      "repo": "pkgforge-dev/iloader-AppImage-Enhanced",
+      "slug": "iloader"
+    },
+    {
+      "name": "ImageMagick",
+      "url": "https://github.com/pkgforge-dev/ImageMagick-AppImage",
+      "repo": "pkgforge-dev/ImageMagick-AppImage",
+      "slug": "imagemagick"
+    },
+    {
+      "name": "img2pdf",
+      "url": "https://github.com/pkgforge-dev/img2pdf-AppImage",
+      "repo": "pkgforge-dev/img2pdf-AppImage",
+      "slug": "img2pdf"
+    },
+    {
+      "name": "innoextract",
+      "url": "https://github.com/pkgforge-dev/innoextract-AppImage",
+      "repo": "pkgforge-dev/innoextract-AppImage",
+      "slug": "innoextract"
+    },
+    {
+      "name": "isle-portable",
+      "url": "https://github.com/pkgforge-dev/isle-portable-AppImage-Enhanced",
+      "repo": "pkgforge-dev/isle-portable-AppImage-Enhanced",
+      "slug": "isle-portable"
+    },
+    {
+      "name": "ITGmania",
+      "url": "https://github.com/pkgforge-dev/ITGmania-AppImage",
+      "repo": "pkgforge-dev/ITGmania-AppImage",
+      "slug": "itgmania"
+    },
+    {
+      "name": "ITR2025",
+      "url": "https://github.com/pkgforge-dev/ITR2025-AppImage",
+      "repo": "pkgforge-dev/ITR2025-AppImage",
+      "slug": "itr2025"
+    },
+    {
+      "name": "ITR2026",
+      "url": "https://github.com/pkgforge-dev/ITR2026-AppImage",
+      "repo": "pkgforge-dev/ITR2026-AppImage",
+      "slug": "itr2026"
+    },
+    {
+      "name": "Kronos",
+      "url": "https://github.com/pkgforge-dev/Kronos-AppImage",
+      "repo": "pkgforge-dev/Kronos-AppImage",
+      "slug": "kronos"
+    },
+    {
+      "name": "Libation",
+      "url": "https://github.com/pkgforge-dev/Libation-AppImage",
+      "repo": "pkgforge-dev/Libation-AppImage",
+      "slug": "libation"
+    },
+    {
+      "name": "Lighthouse",
+      "url": "https://github.com/pkgforge-dev/Lighthouse-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Lighthouse-AppImage-Enhanced",
+      "slug": "lighthouse"
+    },
+    {
+      "name": "LinuxToys",
+      "url": "https://github.com/pkgforge-dev/LinuxToys-AppImage",
+      "repo": "pkgforge-dev/LinuxToys-AppImage",
+      "slug": "linuxtoys"
+    },
+    {
+      "name": "LocalSend",
+      "url": "https://github.com/pkgforge-dev/localsend-AppImage",
+      "repo": "pkgforge-dev/localsend-AppImage",
+      "slug": "localsend"
+    },
+    {
+      "name": "ManiaDrive",
+      "url": "https://github.com/pkgforge-dev/ManiaDrive-AppImage",
+      "repo": "pkgforge-dev/ManiaDrive-AppImage",
+      "slug": "maniadrive"
+    },
+    {
+      "name": "MarioKart64Recomp",
+      "url": "https://github.com/pkgforge-dev/MarioKart64Recomp-AppImage",
+      "repo": "pkgforge-dev/MarioKart64Recomp-AppImage",
+      "slug": "mariokart64recomp"
+    },
+    {
+      "name": "Mednafen",
+      "url": "https://github.com/pkgforge-dev/mednafen-appimage",
+      "repo": "pkgforge-dev/mednafen-appimage",
+      "slug": "mednafen"
+    },
+    {
+      "name": "MegaMan64Recomp",
+      "url": "https://github.com/pkgforge-dev/MegaMan64Recomp-AppImage",
+      "repo": "pkgforge-dev/MegaMan64Recomp-AppImage",
+      "slug": "megaman64recomp"
+    },
+    {
+      "name": "MESA",
+      "url": "https://github.com/pkgforge-dev/MESA-AppImage",
+      "repo": "pkgforge-dev/MESA-AppImage",
+      "slug": "mesa"
+    },
+    {
+      "name": "Mini-vMac",
+      "url": "https://github.com/pkgforge-dev/Mini-vMac-AppImage",
+      "repo": "pkgforge-dev/Mini-vMac-AppImage",
+      "slug": "mini-vmac"
+    },
+    {
+      "name": "Myth II",
+      "url": "https://github.com/pkgforge-dev/Myth-II-AppImage",
+      "repo": "pkgforge-dev/Myth-II-AppImage",
+      "slug": "myth-ii"
+    },
+    {
+      "name": "NBlood",
+      "url": "https://github.com/pkgforge-dev/NBlood-AppImage",
+      "repo": "pkgforge-dev/NBlood-AppImage",
+      "slug": "nblood"
+    },
+    {
+      "name": "NFSIISE",
+      "url": "https://github.com/pkgforge-dev/NFSIISE-AppImage",
+      "repo": "pkgforge-dev/NFSIISE-AppImage",
+      "slug": "nfsiise"
+    },
+    {
+      "name": "Nitrogen",
+      "url": "https://github.com/pkgforge-dev/Nitrogen-AppImage",
+      "repo": "pkgforge-dev/Nitrogen-AppImage",
+      "slug": "nitrogen"
+    },
+    {
+      "name": "NP2kai",
+      "url": "https://github.com/pkgforge-dev/Neko-Project-II-Kai-AppImage",
+      "repo": "pkgforge-dev/Neko-Project-II-Kai-AppImage",
+      "slug": "np2kai"
+    },
+    {
+      "name": "NSZ",
+      "url": "https://github.com/pkgforge-dev/NSZ-AppImage",
+      "repo": "pkgforge-dev/NSZ-AppImage",
+      "slug": "nsz"
+    },
+    {
+      "name": "Nugget-Doom",
+      "url": "https://github.com/pkgforge-dev/Nugget-Doom-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Nugget-Doom-AppImage-Enhanced",
+      "slug": "nugget-doom"
+    },
+    {
+      "name": "NXEngine-evo",
+      "url": "https://github.com/pkgforge-dev/NXEngine-evo-AppImage-Enhanced",
+      "repo": "pkgforge-dev/NXEngine-evo-AppImage-Enhanced",
+      "slug": "nxengine-evo"
+    },
+    {
+      "name": "OCRmyPDF",
+      "url": "https://github.com/pkgforge-dev/OCRmyPDF-AppImage",
+      "repo": "pkgforge-dev/OCRmyPDF-AppImage",
+      "slug": "ocrmypdf"
+    },
+    {
+      "name": "OpenClaw",
+      "url": "https://github.com/pkgforge-dev/OpenClaw-AppImage",
+      "repo": "pkgforge-dev/OpenClaw-AppImage",
+      "slug": "openclaw"
+    },
+    {
+      "name": "OpenGothic",
+      "url": "https://github.com/pkgforge-dev/OpenGothic-AppImage",
+      "repo": "pkgforge-dev/OpenGothic-AppImage",
+      "slug": "opengothic"
+    },
+    {
+      "name": "OpenJazz",
+      "url": "https://github.com/pkgforge-dev/OpenJazz-AppImage",
+      "repo": "pkgforge-dev/OpenJazz-AppImage",
+      "slug": "openjazz"
+    },
+    {
+      "name": "OpenLara",
+      "url": "https://github.com/pkgforge-dev/OpenLara-AppImage",
+      "repo": "pkgforge-dev/OpenLara-AppImage",
+      "slug": "openlara"
+    },
+    {
+      "name": "OpenLoco",
+      "url": "https://github.com/pkgforge-dev/OpenLoco-AppImage",
+      "repo": "pkgforge-dev/OpenLoco-AppImage",
+      "slug": "openloco"
+    },
+    {
+      "name": "OpenMoHAA",
+      "url": "https://github.com/pkgforge-dev/OpenMoHAA-AppImage",
+      "repo": "pkgforge-dev/OpenMoHAA-AppImage",
+      "slug": "openmohaa"
+    },
+    {
+      "name": "OpenSnitch",
+      "url": "https://github.com/pkgforge-dev/OpenSnitch-AppImage",
+      "repo": "pkgforge-dev/OpenSnitch-AppImage",
+      "slug": "opensnitch"
+    },
+    {
+      "name": "OpenSWE1R",
+      "url": "https://github.com/pkgforge-dev/OpenSWE1R-AppImage",
+      "repo": "pkgforge-dev/OpenSWE1R-AppImage",
+      "slug": "openswe1r"
+    },
+    {
+      "name": "OpenTESArena",
+      "url": "https://github.com/pkgforge-dev/OpenTESArena-AppImage",
+      "repo": "pkgforge-dev/OpenTESArena-AppImage",
+      "slug": "opentesarena"
+    },
+    {
+      "name": "OpenXRay",
+      "url": "https://github.com/pkgforge-dev/OpenXRay-AppImage",
+      "repo": "pkgforge-dev/OpenXRay-AppImage",
+      "slug": "openxray"
+    },
+    {
+      "name": "Oxicord",
+      "url": "https://github.com/pkgforge-dev/Oxicord-AppImage",
+      "repo": "pkgforge-dev/Oxicord-AppImage",
+      "slug": "oxicord"
+    },
+    {
+      "name": "Pattypan",
+      "url": "https://github.com/pkgforge-dev/Pattypan-AppImage",
+      "repo": "pkgforge-dev/Pattypan-AppImage",
+      "slug": "pattypan"
+    },
+    {
+      "name": "PCExhumed",
+      "url": "https://github.com/pkgforge-dev/PCExhumed-AppImage",
+      "repo": "pkgforge-dev/PCExhumed-AppImage",
+      "slug": "pcexhumed"
+    },
+    {
+      "name": "PCSX-Redux",
+      "url": "https://github.com/pkgforge-dev/PCSX-Redux-AppImage-Enhanced",
+      "repo": "pkgforge-dev/PCSX-Redux-AppImage-Enhanced",
+      "slug": "pcsx-redux"
+    },
+    {
+      "name": "Perfect Dark",
+      "url": "https://github.com/pkgforge-dev/Perfect-Dark-AppImage",
+      "repo": "pkgforge-dev/Perfect-Dark-AppImage",
+      "slug": "perfect-dark"
+    },
+    {
+      "name": "Phantom-Satellite",
+      "url": "https://github.com/pkgforge-dev/Phantom-Satellite-AppImage",
+      "repo": "pkgforge-dev/Phantom-Satellite-AppImage",
+      "slug": "phantom-satellite"
+    },
+    {
+      "name": "phoenix-x-server",
+      "url": "https://github.com/pkgforge-dev/phoenix-x-server-AppImage",
+      "repo": "pkgforge-dev/phoenix-x-server-AppImage",
+      "slug": "phoenix-x-server"
+    },
+    {
+      "name": "Piglit",
+      "url": "https://github.com/pkgforge-dev/Piglit-AppImage",
+      "repo": "pkgforge-dev/Piglit-AppImage",
+      "slug": "piglit"
+    },
+    {
+      "name": "Pixelpulse2",
+      "url": "https://github.com/pkgforge-dev/Pixelpulse2-AppImage",
+      "repo": "pkgforge-dev/Pixelpulse2-AppImage",
+      "slug": "pixelpulse2"
+    },
+    {
+      "name": "playerctl",
+      "url": "https://github.com/pkgforge-dev/playerctl-AppImage",
+      "repo": "pkgforge-dev/playerctl-AppImage",
+      "slug": "playerctl"
+    },
+    {
+      "name": "Plus42",
+      "url": "https://github.com/pkgforge-dev/Plus42-AppImage",
+      "repo": "pkgforge-dev/Plus42-AppImage",
+      "slug": "plus42"
+    },
+    {
+      "name": "polybar",
+      "url": "https://github.com/pkgforge-dev/polybar-AppImage",
+      "repo": "pkgforge-dev/polybar-AppImage",
+      "slug": "polybar"
+    },
+    {
+      "name": "POSTAL",
+      "url": "https://github.com/pkgforge-dev/POSTAL-AppImage",
+      "repo": "pkgforge-dev/POSTAL-AppImage",
+      "slug": "postal"
+    },
+    {
+      "name": "Powermanga",
+      "url": "https://github.com/pkgforge-dev/Powermanga-AppImage",
+      "repo": "pkgforge-dev/Powermanga-AppImage",
+      "slug": "powermanga"
+    },
+    {
+      "name": "Prey2006",
+      "url": "https://github.com/pkgforge-dev/Prey2006-AppImage",
+      "repo": "pkgforge-dev/Prey2006-AppImage",
+      "slug": "prey2006"
+    },
+    {
+      "name": "qarma",
+      "url": "https://github.com/pkgforge-dev/qarma-AppImage",
+      "repo": "pkgforge-dev/qarma-AppImage",
+      "slug": "qarma"
+    },
+    {
+      "name": "QEMU",
+      "url": "https://github.com/pkgforge-dev/QEMU-AppImage",
+      "repo": "pkgforge-dev/QEMU-AppImage",
+      "slug": "qemu"
+    },
+    {
+      "name": "QuantumLauncher",
+      "url": "https://github.com/pkgforge-dev/QuantumLauncher-AppImage-Enhanced",
+      "repo": "pkgforge-dev/QuantumLauncher-AppImage-Enhanced",
+      "slug": "quantumlauncher"
+    },
+    {
+      "name": "Raptor",
+      "url": "https://github.com/pkgforge-dev/Raptor-AppImage",
+      "repo": "pkgforge-dev/Raptor-AppImage",
+      "slug": "raptor"
+    },
+    {
+      "name": "Rednukem",
+      "url": "https://github.com/pkgforge-dev/Rednukem-AppImage",
+      "repo": "pkgforge-dev/Rednukem-AppImage",
+      "slug": "rednukem"
+    },
+    {
+      "name": "REDRIVER2",
+      "url": "https://github.com/pkgforge-dev/REDRIVER2-AppImage",
+      "repo": "pkgforge-dev/REDRIVER2-AppImage",
+      "slug": "redriver2"
+    },
+    {
+      "name": "Rigs-of-Rods",
+      "url": "https://github.com/pkgforge-dev/Rigs-of-Rods-AppImage",
+      "repo": "pkgforge-dev/Rigs-of-Rods-AppImage",
+      "slug": "rigs-of-rods"
+    },
+    {
+      "name": "Riseup-VPN",
+      "url": "https://github.com/pkgforge-dev/Riseup-VPN-AppImage",
+      "repo": "pkgforge-dev/Riseup-VPN-AppImage",
+      "slug": "riseup-vpn"
+    },
+    {
+      "name": "rofi",
+      "url": "https://github.com/pkgforge-dev/rofi-AppImage",
+      "repo": "pkgforge-dev/rofi-AppImage",
+      "slug": "rofi"
+    },
+    {
+      "name": "rquickshare",
+      "url": "https://github.com/pkgforge-dev/rquickshare-AppImage-Enhanced",
+      "repo": "pkgforge-dev/rquickshare-AppImage-Enhanced",
+      "slug": "rquickshare"
+    },
+    {
+      "name": "RSDKv3",
+      "url": "https://github.com/pkgforge-dev/RSDKv3-AppImage",
+      "repo": "pkgforge-dev/RSDKv3-AppImage",
+      "slug": "rsdkv3"
+    },
+    {
+      "name": "RSDKv4",
+      "url": "https://github.com/pkgforge-dev/RSDKv4-AppImage",
+      "repo": "pkgforge-dev/RSDKv4-AppImage",
+      "slug": "rsdkv4"
+    },
+    {
+      "name": "RVGL",
+      "url": "https://github.com/pkgforge-dev/RVGL-AppImage",
+      "repo": "pkgforge-dev/RVGL-AppImage",
+      "slug": "rvgl"
+    },
+    {
+      "name": "SACDExtractGUI",
+      "url": "https://github.com/pkgforge-dev/SACDExtractGUI-AppImage",
+      "repo": "pkgforge-dev/SACDExtractGUI-AppImage",
+      "slug": "sacdextractgui"
+    },
+    {
+      "name": "Sanicball",
+      "url": "https://github.com/pkgforge-dev/Sanicball-AppImage",
+      "repo": "pkgforge-dev/Sanicball-AppImage",
+      "slug": "sanicball"
+    },
+    {
+      "name": "scrcpy",
+      "url": "https://github.com/pkgforge-dev/scrcpy-AppImage",
+      "repo": "pkgforge-dev/scrcpy-AppImage",
+      "slug": "scrcpy"
+    },
+    {
+      "name": "servo",
+      "url": "https://github.com/pkgforge-dev/servo-AppImage",
+      "repo": "pkgforge-dev/servo-AppImage",
+      "slug": "servo"
+    },
+    {
+      "name": "Shiru",
+      "url": "https://github.com/pkgforge-dev/Shiru-AppImage",
+      "repo": "pkgforge-dev/Shiru-AppImage",
+      "slug": "shiru"
+    },
+    {
+      "name": "Shockolate",
+      "url": "https://github.com/pkgforge-dev/Shockolate-AppImage",
+      "repo": "pkgforge-dev/Shockolate-AppImage",
+      "slug": "shockolate"
+    },
+    {
+      "name": "Simitone",
+      "url": "https://github.com/pkgforge-dev/Simitone-AppImage",
+      "repo": "pkgforge-dev/Simitone-AppImage",
+      "slug": "simitone"
+    },
+    {
+      "name": "SnowboardKids2Recomp",
+      "url": "https://github.com/pkgforge-dev/SnowboardKids2Recomp-AppImage",
+      "repo": "pkgforge-dev/SnowboardKids2Recomp-AppImage",
+      "slug": "snowboardkids2recomp"
+    },
+    {
+      "name": "soh",
+      "url": "https://github.com/pkgforge-dev/soh-AppImage-Enhanced",
+      "repo": "pkgforge-dev/soh-AppImage-Enhanced",
+      "slug": "soh"
+    },
+    {
+      "name": "Sonic-Mania-Decompilation",
+      "url": "https://github.com/pkgforge-dev/Sonic-Mania-Decompilation-AppImage",
+      "repo": "pkgforge-dev/Sonic-Mania-Decompilation-AppImage",
+      "slug": "sonic-mania-decompilation"
+    },
+    {
+      "name": "SpaghettiKart",
+      "url": "https://github.com/pkgforge-dev/SpaghettiKart-AppImage-Enhanced",
+      "repo": "pkgforge-dev/SpaghettiKart-AppImage-Enhanced",
+      "slug": "spaghettikart"
+    },
+    {
+      "name": "Starfox64Recomp",
+      "url": "https://github.com/pkgforge-dev/Starfox64Recomp-AppImage",
+      "repo": "pkgforge-dev/Starfox64Recomp-AppImage",
+      "slug": "starfox64recomp"
+    },
+    {
+      "name": "Starship",
+      "url": "https://github.com/pkgforge-dev/Starship-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Starship-AppImage-Enhanced",
+      "slug": "starship"
+    },
+    {
+      "name": "stirling-pdf",
+      "url": "https://github.com/pkgforge-dev/Stirling-PDF-AppImage",
+      "repo": "pkgforge-dev/Stirling-PDF-AppImage",
+      "slug": "stirling-pdf"
+    },
+    {
+      "name": "Streamlink",
+      "url": "https://github.com/pkgforge-dev/Streamlink-AppImage",
+      "repo": "pkgforge-dev/Streamlink-AppImage",
+      "slug": "streamlink"
+    },
+    {
+      "name": "system-monitoring-center",
+      "url": "https://github.com/pkgforge-dev/system-monitoring-center-AppImage",
+      "repo": "pkgforge-dev/system-monitoring-center-AppImage",
+      "slug": "system-monitoring-center"
+    },
+    {
+      "name": "tachoparser",
+      "url": "https://github.com/pkgforge-dev/tachoparser-AppImage",
+      "repo": "pkgforge-dev/tachoparser-AppImage",
+      "slug": "tachoparser"
+    },
+    {
+      "name": "Taradino",
+      "url": "https://github.com/pkgforge-dev/Taradino-AppImage",
+      "repo": "pkgforge-dev/Taradino-AppImage",
+      "slug": "taradino"
+    },
+    {
+      "name": "Themix",
+      "url": "https://github.com/pkgforge-dev/Themix-GUI-AppImage",
+      "repo": "pkgforge-dev/Themix-GUI-AppImage",
+      "slug": "themix"
+    },
+    {
+      "name": "TouchHLE",
+      "url": "https://github.com/pkgforge-dev/TouchHLE-AppImage",
+      "repo": "pkgforge-dev/TouchHLE-AppImage",
+      "slug": "touchhle"
+    },
+    {
+      "name": "uad-ng",
+      "url": "https://github.com/pkgforge-dev/uad-ng-AppImage",
+      "repo": "pkgforge-dev/uad-ng-AppImage",
+      "slug": "uad-ng"
+    },
+    {
+      "name": "Ungoogled-chromium",
+      "url": "https://github.com/pkgforge-dev/Ungoogled-Chromium-AppImage",
+      "repo": "pkgforge-dev/Ungoogled-Chromium-AppImage",
+      "slug": "ungoogled-chromium"
+    },
+    {
+      "name": "UnleashedRecomp",
+      "url": "https://github.com/pkgforge-dev/UnleashedRecomp-AppImage",
+      "repo": "pkgforge-dev/UnleashedRecomp-AppImage",
+      "slug": "unleashedrecomp"
+    },
+    {
+      "name": "VeraCrypt",
+      "url": "https://github.com/pkgforge-dev/VeraCrypt-AppImage",
+      "repo": "pkgforge-dev/VeraCrypt-AppImage",
+      "slug": "veracrypt"
+    },
+    {
+      "name": "Vibeprint Studio",
+      "url": "https://github.com/pkgforge-dev/Vibeprint-Studio-AppImage",
+      "repo": "pkgforge-dev/Vibeprint-Studio-AppImage",
+      "slug": "vibeprint-studio"
+    },
+    {
+      "name": "Vita3K",
+      "url": "https://github.com/pkgforge-dev/Vita3K-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Vita3K-AppImage-Enhanced",
+      "slug": "vita3k"
+    },
+    {
+      "name": "VypressChat",
+      "url": "https://github.com/pkgforge-dev/VypressChat-AppImage",
+      "repo": "pkgforge-dev/VypressChat-AppImage",
+      "slug": "vypresschat"
+    },
+    {
+      "name": "Webamp-Desktop",
+      "url": "https://github.com/pkgforge-dev/Webamp-Desktop-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Webamp-Desktop-AppImage-Enhanced",
+      "slug": "webamp-desktop"
+    },
+    {
+      "name": "wipEout-Rewrite",
+      "url": "https://github.com/pkgforge-dev/wipEout-Rewrite-AppImage",
+      "repo": "pkgforge-dev/wipEout-Rewrite-AppImage",
+      "slug": "wipeout-rewrite"
+    },
+    {
+      "name": "xclock",
+      "url": "https://github.com/pkgforge-dev/xclock-AppImage",
+      "repo": "pkgforge-dev/xclock-AppImage",
+      "slug": "xclock"
+    },
+    {
+      "name": "xenia-canary",
+      "url": "https://github.com/pkgforge-dev/xenia-canary-AppImage",
+      "repo": "pkgforge-dev/xenia-canary-AppImage",
+      "slug": "xenia-canary"
+    },
+    {
+      "name": "xeyes",
+      "url": "https://github.com/pkgforge-dev/xeyes-AppImage",
+      "repo": "pkgforge-dev/xeyes-AppImage",
+      "slug": "xeyes"
+    },
+    {
+      "name": "xoreos",
+      "url": "https://github.com/pkgforge-dev/xoreos-AppImage",
+      "repo": "pkgforge-dev/xoreos-AppImage",
+      "slug": "xoreos"
+    },
+    {
+      "name": "Xsnow",
+      "url": "https://github.com/pkgforge-dev/Xsnow-AppImage",
+      "repo": "pkgforge-dev/Xsnow-AppImage",
+      "slug": "xsnow"
+    },
+    {
+      "name": "yt-dlp",
+      "url": "https://github.com/pkgforge-dev/yt-dlp-AppImage",
+      "repo": "pkgforge-dev/yt-dlp-AppImage",
+      "slug": "yt-dlp"
+    },
+    {
+      "name": "Zelda64Recomp",
+      "url": "https://github.com/pkgforge-dev/Zelda64Recomp-AppImage",
+      "repo": "pkgforge-dev/Zelda64Recomp-AppImage",
+      "slug": "zelda64recomp"
+    },
+    {
+      "name": "Zod-Engine",
+      "url": "https://github.com/pkgforge-dev/Zod-Engine-AppImage",
+      "repo": "pkgforge-dev/Zod-Engine-AppImage",
+      "slug": "zod-engine"
+    }
+  ],
+  "flathubCovered": [
+    "86Box",
+    "AAAAXY",
+    "Adobe Flash Player",
+    "alacritty",
+    "Amarok",
+    "Amiberry",
+    "anki",
+    "ares-emu",
+    "Arx Libertatis",
+    "Asunder",
+    "Audacious",
+    "Audacity",
+    "Audio Sharing",
+    "Augustus",
+    "Authenticator",
+    "Awakened POE Trade",
+    "Azahar",
+    "BasiliskII",
+    "BetterMediaInfo",
+    "BibleTime",
+    "BigPEmu",
+    "Bitwarden",
+    "Blender",
+    "Cartridges",
+    "Catfish",
+    "C-Dogs_SDL",
+    "Cemu",
+    "Chrome",
+    "Cine",
+    "Clapper",
+    "ClassiCube",
+    "Claws Mail",
+    "Clementine",
+    "CloneHero",
+    "CollaboraOffice",
+    "Collision",
+    "Constrict",
+    "Contour",
+    "CopyQ",
+    "CorsixTH",
+    "Crispy Doom",
+    "CroMagRally",
+    "DeaDBeeF",
+    "Deepin Calculator",
+    "Defold",
+    "DeSmuME",
+    "DevilutionX",
+    "dhewm3",
+    "Discord",
+    "Dolphin-emu",
+    "DOSBox-X",
+    "DOSBox Pure Unleashed",
+    "Dr. Robotnik's Ring Racers",
+    "Drum Machine",
+    "DuckStation-GPL",
+    "EasyTAG",
+    "EDuke32",
+    "Elastic",
+    "Element Desktop",
+    "ET Legacy",
+    "Extension Manager",
+    "ExtremeTuxRacer",
+    "Exult",
+    "Eyedropper",
+    "FeatherPad",
+    "Filelight",
+    "Firefox",
+    "Flacon",
+    "Flycast",
+    "foot",
+    "fooyin",
+    "freac",
+    "FreeTube",
+    "Fretboard",
+    "Galculator",
+    "GCAP2025",
+    "GCAP2026",
+    "GCstar",
+    "Gear Lever",
+    "gImageReader",
+    "GitHub Desktop Plus",
+    "Gnome Calculator",
+    "Gnome Pomodoro",
+    "Gnome System Monitor",
+    "Gnome Web",
+    "GNU FreeDink",
+    "GNU Octave",
+    "Godot",
+    "GoldenDict-ng",
+    "Gopher64",
+    "gPodder",
+    "Gradia",
+    "Gram",
+    "Graphs",
+    "gThumb",
+    "Gwenview",
+    "Haruna",
+    "Hatari",
+    "Identity",
+    "Impression",
+    "ioquake3",
+    "Iris",
+    "IRPF2025",
+    "IRPF2026",
+    "Joplin Desktop",
+    "kaffeine",
+    "Kate",
+    "KBlocks",
+    "KCalc",
+    "kdeconnect",
+    "kdenlive",
+    "KeePassXC",
+    "Kega Fusion",
+    "Keypunch",
+    "KiCad",
+    "Kid3",
+    "KMahjongg",
+    "KMines",
+    "Knights",
+    "KolourPaint",
+    "KPatience",
+    "Krita",
+    "KStars",
+    "KTorrent",
+    "KTouch",
+    "LibreCAD",
+    "LibreWolf",
+    "LightZone",
+    "LMMS",
+    "Luanti",
+    "MAME",
+    "masterkey",
+    "MATE Calculator",
+    "Media Downloader",
+    "melonDS",
+    "mGBA",
+    "Mixxx",
+    "Mousai",
+    "mpv",
+    "NeoChat",
+    "Nestopia",
+    "Neverball",
+    "NewPipe",
+    "NewsFlash",
+    "Nomacs",
+    "OBS Studio",
+    "Odamex",
+    "Obsidian",
+    "okteta",
+    "OpenBoardView",
+    "opencode",
+    "opencode-cli",
+    "openMSX",
+    "OpenRA",
+    "OpenRCT2",
+    "OpenSCAD",
+    "OpenTTD",
+    "OpenTyrian2000",
+    "OptiImage",
+    "OrcaSlicer",
+    "Oversteer",
+    "Parabolic",
+    "pavucontrol-qt",
+    "PCSX2",
+    "PDF Arranger",
+    "PDF Tricks",
+    "Pinta",
+    "Pinta-GTK3",
+    "Planify",
+    "Play!",
+    "PokeMMO",
+    "PrimeHack",
+    "PrismLauncher",
+    "Protontricks",
+    "PrusaSlicer",
+    "Ptyxis",
+    "puddletag",
+    "Pyglossary",
+    "QElectroTech",
+    "Qmmp",
+    "QMPlay2",
+    "QOwnNotes",
+    "QtCreator",
+    "QTerminal",
+    "Readest",
+    "Reco",
+    "Rewaita",
+    "RigelEngine",
+    "Ristretto",
+    "RMG",
+    "Rnote",
+    "RocksnDiamonds",
+    "ROLLER",
+    "Ruffle",
+    "RustDesk",
+    "SameBoy",
+    "Satty",
+    "Sayonara-Player",
+    "ScummVM",
+    "SDLPoP",
+    "Secrets",
+    "SheepShaver",
+    "Shotwell",
+    "Signal",
+    "SimpleX Chat",
+    "Simutrans",
+    "SiriKali",
+    "Slack",
+    "Snes9x",
+    "Solaar",
+    "SongRec",
+    "Sonic 3 A.I.R.",
+    "Sonic Robo Blast 2",
+    "spacecadetpinball",
+    "SpeedCrunch",
+    "Spek",
+    "SRB2Kart",
+    "st",
+    "Stella",
+    "strawberry",
+    "Super Mario War",
+    "Supermodel",
+    "SuperTux",
+    "SuperTuxKart",
+    "SUPER ZSNES",
+    "sView",
+    "swiftynotes",
+    "Tagger",
+    "Taisei Project",
+    "Tokodon",
+    "Tauon",
+    "Telegram",
+    "transmission-qt",
+    "Trelby",
+    "Tutanota Desktop",
+    "Tux Football",
+    "Tuxpuck",
+    "UEFITool",
+    "Unity Hub",
+    "Unnamed SDVX clone",
+    "Varia",
+    "vcmi",
+    "Viber",
+    "VICE",
+    "Video Trimmer",
+    "Visual Studio Code",
+    "VisualBoyAdvance-M",
+    "vokoscreenNG",
+    "Warp",
+    "Webcamoid",
+    "WebCord",
+    "WhatsDesk",
+    "WhatSie",
+    "wine",
+    "WiVRn",
+    "xemu",
+    "Xiphos",
+    "xournalpp",
+    "Yamagi Quake II",
+    "Ymir",
+    "Zed",
+    "Zen Browser",
+    "Zenity",
+    "ZSNES"
+  ]
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnyLinux Metadata Visual Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-icon">🐧</span>
+        <div>
+          <h1>AnyLinux Metadata Editor</h1>
+          <p class="subtitle">Production-grade AppStream metadata authoring for non-Flathub AnyLinux AppImages</p>
+        </div>
+      </div>
+      <div class="header-links">
+        <a href="https://github.com/pkgforge-dev/Anylinux-Metadata" target="_blank" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub Repository
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="editor-grid">
+      <!-- Left Column: Form -->
+      <div class="form-pane card">
+        <h2>Application Information</h2>
+
+        <div class="form-group">
+          <label for="appName">Application Name *</label>
+          <input type="text" id="appName" placeholder="e.g. Ghostty" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appSlug">Slug (filename) *</label>
+            <input type="text" id="appSlug" placeholder="ghostty" required>
+            <span class="hint">Lowercase alphanumeric + hyphens</span>
+          </div>
+          <div class="form-group">
+            <label for="appId">Reverse-DNS AppStream ID *</label>
+            <input type="text" id="appId" placeholder="io.github.ghostty_org.ghostty" required>
+            <span class="hint">e.g. io.github.user.repo or org.name.app</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="summary">Summary *</label>
+          <input type="text" id="summary" maxlength="200" placeholder="Fast, feature-rich terminal emulator" required>
+          <div class="input-meta">
+            <span class="hint" id="summaryCounter">0 / 200 chars</span>
+            <span class="warning-text" id="summaryWarning" style="display: none;">⚠️ Summary must not end with a period</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description (Paragraphs and Features) *</label>
+          <textarea id="description" rows="7" placeholder="Detailed description of the application...&#10;&#10;Features:&#10;- Fast GPU-accelerated text rendering&#10;- Native window tabs and splits&#10;- Cross-platform configuration"></textarea>
+          <span class="hint">Use a lead paragraph followed by "Features:" and "- Bullet point" lists.</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="license">Project License (SPDX) *</label>
+            <select id="license">
+              <option value="MIT">MIT</option>
+              <option value="GPL-3.0-or-later">GPL-3.0-or-later</option>
+              <option value="GPL-2.0-or-later">GPL-2.0-or-later</option>
+              <option value="Apache-2.0">Apache-2.0</option>
+              <option value="BSD-3-Clause">BSD-3-Clause</option>
+              <option value="BSD-2-Clause">BSD-2-Clause</option>
+              <option value="LGPL-3.0-or-later">LGPL-3.0-or-later</option>
+              <option value="AGPL-3.0-or-later">AGPL-3.0-or-later</option>
+              <option value="CC0-1.0">CC0-1.0</option>
+              <option value="MPL-2.0">MPL-2.0</option>
+              <option value="custom">Custom SPDX Expression...</option>
+            </select>
+            <input type="text" id="customLicense" placeholder="Custom SPDX ID" style="display: none; margin-top: 6px;">
+          </div>
+          <div class="form-group">
+            <label for="category">Main Category *</label>
+            <select id="category">
+              <option value="Utility">Utility</option>
+              <option value="System">System</option>
+              <option value="Development">Development</option>
+              <option value="Game">Game</option>
+              <option value="AudioVideo">AudioVideo</option>
+              <option value="Graphics">Graphics</option>
+              <option value="Network">Network</option>
+              <option value="Office">Office</option>
+              <option value="Science">Science</option>
+              <option value="Education">Education</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="devName">Developer Name *</label>
+            <input type="text" id="devName" placeholder="Ghostty Authors">
+          </div>
+          <div class="form-group">
+            <label for="homepage">Homepage URL *</label>
+            <input type="url" id="homepage" placeholder="https://ghostty.org">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="releaseRepo">AnyLinux Release Repository *</label>
+          <input type="text" id="releaseRepo" placeholder="pkgforge-dev/ghostty-appimage">
+          <span class="hint">The repository under pkgforge-dev hosting the AppImage releases</span>
+        </div>
+
+        <h3>Media Assets</h3>
+        <div class="form-group">
+          <label for="iconUrl">Icon URL (128x128 PNG or SVG) *</label>
+          <input type="url" id="iconUrl" placeholder="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png">
+        </div>
+
+        <div class="form-group">
+          <label for="screenshotUrls">Screenshot URLs (1 to 5 HTTPS URLs, one per line) *</label>
+          <textarea id="screenshotUrls" rows="3" placeholder="https://example.org/screenshot1.png&#10;https://example.org/screenshot2.png"></textarea>
+        </div>
+
+        <h3>Sandbox Permissions</h3>
+        <div class="sandbox-grid">
+          <label class="checkbox-label">
+            <input type="checkbox" id="sbNetwork" checked>
+            <span>Network Access</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="sbAudio">
+            <span>Audio Playback</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="sbGpu" checked>
+            <span>GPU Acceleration (DRI)</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="sbIpc" checked>
+            <span>IPC Access</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Right Column: Live Visual Card & JSON Preview -->
+      <div class="preview-pane">
+        <div class="card">
+          <h2>Live App Store Card Preview</h2>
+          <div class="app-card-preview" id="cardPreview">
+            <div class="card-header">
+              <img id="previewIcon" src="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png" alt="App Icon" class="app-icon-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23334155\'/><text x=\'32\' y=\'38\' fill=\'white\' font-size=\'24\' text-anchor=\'middle\'>?</text></svg>'">
+              <div class="card-title-block">
+                <h3 id="previewName">Application Name</h3>
+                <span class="preview-slug" id="previewId">io.github.example.app</span>
+                <p class="preview-summary" id="previewSummary">One short sentence explaining what the app does</p>
+              </div>
+            </div>
+
+            <div class="card-badges">
+              <span class="badge" id="previewCategory">Utility</span>
+              <span class="badge badge-outline" id="previewLicense">MIT</span>
+              <span class="badge badge-source" id="previewRelease">pkgforge-dev/myapp</span>
+            </div>
+
+            <div class="card-desc" id="previewDesc">
+              <p>Description preview will appear here...</p>
+            </div>
+
+            <div class="screenshot-gallery" id="previewScreenshots">
+              <!-- Rendered screenshots -->
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="preview-header-bar">
+            <h2>Generated JSON Manifest</h2>
+            <div class="validation-status" id="validationBadge">
+              <span class="status-indicator pass"></span> Valid Schema
+            </div>
+          </div>
+          <pre class="json-code" id="jsonOutput"><code>{}</code></pre>
+
+          <div class="action-buttons">
+            <button class="btn btn-primary" id="btnCopyJson">📋 Copy JSON</button>
+            <button class="btn btn-secondary" id="btnDownloadJson">💾 Download .json</button>
+            <button class="btn btn-success" id="btnOpenIssue">🚀 Submit to GitHub Issue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

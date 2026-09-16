@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.outfoxxed.quickshell",
+      "name": "Quickshell",
+      "summary": "Quickshell is a flexible framework for building custom desktop shells, status bars, notification daemons, and system widgets using QML and QtQuick",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Quickshell is a flexible framework for building custom desktop shells, status bars, notification daemons, and system widgets using QML and QtQuick. It gives users complete control over their desktop interface design."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Declarative UI creation leveraging modern QML and JavaScript syntax"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Deep Linux desktop integration with Wayland (layer-shell) and X11 support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "System service bindings for battery, audio volume, network, and window management"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hot-reloading capabilities enabling real-time visual feedback during widget creation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Exceptionally fast rendering and low CPU utilization"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "LGPL-3.0-or-later",
+      "developer": {
+        "name": "Quickshell Developers",
+        "url": "https://github.com/outfoxxed/quickshell"
+      },
+      "homepage": "https://github.com/outfoxxed/quickshell",
+      "repository": "https://github.com/pkgforge-dev/quickshell-appimage",
+      "keywords": [
+        "quickshell",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Development",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/quickshell.png",
+      "screenshots": [
+        {
+          "caption": "Quickshell interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Quickshell-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

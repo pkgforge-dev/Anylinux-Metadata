@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.fwgs.xash3d_fwgs",
+      "name": "xash3d-fwgs",
+      "summary": "A game engine aimed to provide compatibility with Half-Life Engine and extend it",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "A game engine aimed to provide compatibility with Half-Life Engine and extend it."
+            }
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-only",
+      "developer": {
+        "name": "xash3d-fwgs Developers",
+        "url": "https://github.com/FWGS/xash3d-fwgs"
+      },
+      "homepage": "https://github.com/FWGS/xash3d-fwgs",
+      "repository": "https://github.com/pkgforge-dev/Xash3D-FWGS-AppImage-Enhanced",
+      "keywords": [
+        "xash3d-fwgs",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xash3d-fwgs.png",
+      "screenshots": [
+        {
+          "caption": "xash3d-fwgs interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Xash3D-FWGS-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

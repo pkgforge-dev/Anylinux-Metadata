@@ -1,0 +1,25 @@
+name: "✏️ Update Existing App Metadata"
+description: "Propose improvements or corrections for an existing application manifest"
+title: "fix(app): update metadata for <app-slug>"
+labels: ["app-update", "automated-pr"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose updates to an existing application manifest in `apps/<slug>.json`.
+  - type: input
+    id: slug
+    attributes:
+      label: "Application Slug"
+      description: "The slug of the app being updated (e.g. ghostty, 12to11)"
+      placeholder: "ghostty"
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: "Proposed JSON or Changes"
+      description: "Paste the updated manifest JSON or describe what fields should be updated"
+      placeholder: "Paste updated manifest or describe changes..."
+    validations:
+      required: true

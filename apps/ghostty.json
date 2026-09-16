@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.ghostty_org.ghostty",
+      "name": "Ghostty",
+      "summary": "Ghostty is a fast, feature-rich, cross-platform terminal emulator designed by Mitchell Hashimoto",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Ghostty is a fast, feature-rich, cross-platform terminal emulator designed by Mitchell Hashimoto. Built from the ground up in Zig, it leverages GPU hardware acceleration to deliver ultra-low latency and rich terminal capabilities."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "GPU-accelerated text rendering delivering instant keystroke response and high throughput"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True native desktop integration with support for tabs, splits, and custom fonts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced terminal standards support including Kitty graphics protocol and 24-bit RGB truecolor"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad font rendering support with ligatures, bold, italic, and emoji fallbacks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low memory usage and clean, minimalist configuration system"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "MIT",
+      "developer": {
+        "name": "Ghostty Developers",
+        "url": "https://github.com/ghostty-org/ghostty"
+      },
+      "homepage": "https://github.com/ghostty-org/ghostty",
+      "repository": "https://github.com/pkgforge-dev/ghostty-appimage",
+      "keywords": [
+        "ghostty",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "TerminalEmulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png",
+      "screenshots": [
+        {
+          "caption": "Ghostty interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ghostty-appimage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

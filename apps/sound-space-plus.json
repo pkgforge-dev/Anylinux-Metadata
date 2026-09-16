@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.david20122.sound_space_plus",
+      "name": "Sound Space Plus",
+      "summary": "Sound Space Plus is an open-source, rhythm-based aim precision game",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Sound Space Plus is an open-source, rhythm-based aim precision game. Challenging players to hit targets to the beat of diverse music tracks, it tests both auditory rhythm and mouse cursor aim speed."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Precision aim mechanics combining rhythm timing with 2D spatial targeting"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Access to an extensive library of community-created beatmaps and songs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable visual elements, cursor skins, particle effects, and note styles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Detailed performance analysis and timing accuracy breakdowns"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiple game modifiers to customize challenge and gameplay speed"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Sound Space Plus Developers",
+        "url": "https://github.com/David20122/sound-space-plus"
+      },
+      "homepage": "https://github.com/David20122/sound-space-plus",
+      "repository": "https://github.com/pkgforge-dev/sound-space-plus-AppImage",
+      "keywords": [
+        "sound-space-plus",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "AudioVideo",
+        "Player"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sound-space-plus.png",
+      "screenshots": [
+        {
+          "caption": "Sound Space Plus interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/sound-space-plus-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

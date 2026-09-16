@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "google.antigravity.antigravity_ide",
+      "name": "Antigravity IDE",
+      "summary": "Google Antigravity IDE is the dedicated integrated development environment designed around Google DeepMind's agentic AI coding assistant",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Google Antigravity IDE is the dedicated integrated development environment designed around Google DeepMind's agentic AI coding assistant. It delivers an AI-native pair programming workspace that combines powerful code editing with autonomous agent-driven development workflows."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Agent-first editor interface optimized for interactive collaboration with AI"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in multi-turn task planner, artifact review, and visual progress tracking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Deep workspace context awareness with real-time code indexing and diagnostics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated terminal, diff reviewer, and automated change applicator"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensible via custom skills, MCP tools, and personalized engineering rules"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Antigravity IDE Developers",
+        "url": "https://antigravity.google/download"
+      },
+      "homepage": "https://antigravity.google/download",
+      "repository": "https://github.com/pkgforge-dev/antigravity-ide-appimage",
+      "keywords": [
+        "antigravity-ide",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/antigravity-ide.png",
+      "screenshots": [
+        {
+          "caption": "Antigravity IDE interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Antigravity-IDE-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

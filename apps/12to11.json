@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "win.linuxping.git.12to11",
+      "name": "12to11",
+      "summary": "12to11 is a lightweight Wayland-to-X11 bridge that enables running Wayland applications on an X server",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "12to11 is a lightweight Wayland-to-X11 bridge that enables running Wayland applications on an X server. It acts as an in-process Wayland compositor translating Wayland client requests into standard X11 window operations, allowing modern Wayland-exclusive software to integrate seamlessly with traditional X11 window managers and desktop environments."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Seamless execution of Wayland applications as regular top-level X11 windows"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad Wayland protocol support including wl_compositor, wl_shm, and xdg_wm_base"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated rendering through EGL and OpenGL ES 2.0"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Pointer constraints, relative pointer motions, and multi-touch gestures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with lightweight window managers such as dwm, i3, and Openbox"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "12to11 Developers",
+        "url": "https://git.linuxping.win/12to11/12to11"
+      },
+      "homepage": "https://git.linuxping.win/12to11/12to11",
+      "repository": "https://github.com/pkgforge-dev/12to11-AppImage",
+      "keywords": [
+        "12to11",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/12to11.png",
+      "screenshots": [
+        {
+          "caption": "12to11 interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/12to11-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

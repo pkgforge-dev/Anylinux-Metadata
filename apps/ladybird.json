@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.ladybird.ladybird",
+      "name": "Ladybird",
+      "summary": "Ladybird is a truly independent, open-source web browser and rendering engine written from scratch in modern C++",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Ladybird is a truly independent, open-source web browser and rendering engine written from scratch in modern C++. Founded to break the browser engine duopoly, Ladybird implements web standards without relying on Chromium, WebKit, or Gecko."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Completely independent rendering and JavaScript engine (LibWeb and LibJS)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multi-process security model isolating tabs and web content into separate processes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in ad blocking and privacy protection without third-party tracking extensions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Adheres directly to modern W3C and WHATWG web specifications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Free and open-source software funded exclusively by non-profit community donations"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "BSD-2-Clause",
+      "developer": {
+        "name": "Ladybird Developers",
+        "url": "https://ladybird.org"
+      },
+      "homepage": "https://ladybird.org",
+      "repository": "https://github.com/pkgforge-dev/ladybird-appimage",
+      "keywords": [
+        "ladybird",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Network",
+        "WebBrowser"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ladybird.png",
+      "screenshots": [
+        {
+          "caption": "Ladybird interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ladybird-appimage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

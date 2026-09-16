@@ -1,0 +1,42 @@
+name: "Sync Upstream Anylinux AppImages & Flathub"
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # Run daily at 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Run Upstream Sync
+        run: bun run sync
+
+      - name: Check for status changes
+        id: git-check
+        run: |
+          git diff --exit-code STATUS.md status.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push status updates
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add STATUS.md status.json
+          git commit -m "chore(sync): update backlog and Flathub coverage status"
+          git push

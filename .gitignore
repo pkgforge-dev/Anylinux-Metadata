@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build artifacts and caches
+dist/
+.cache/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db

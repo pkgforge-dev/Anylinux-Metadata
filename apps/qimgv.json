@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.easymodo.qimgv",
+      "name": "qimgv",
+      "summary": "qimgv is a fast, configurable image viewer written in Qt5/Qt6 with optional video playback support",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "qimgv is a fast, configurable image viewer written in Qt5/Qt6 with optional video playback support. Designed for speed and minimal UI clutter, it allows effortless browsing through large photo libraries and comic archives."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Fast image caching and hardware-accelerated rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Video playback support (powered by mpv) for MP4, WebM, and animated GIFs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable thumbnail bar with directory navigation and folder jumping"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Image manipulation tools including lossless rotation, cropping, and resizing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated file management and custom shell command trigger scripts"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-only",
+      "developer": {
+        "name": "qimgv Developers",
+        "url": "https://github.com/easymodo/qimgv"
+      },
+      "homepage": "https://github.com/easymodo/qimgv",
+      "repository": "https://github.com/pkgforge-dev/Qimgv-AppImage",
+      "keywords": [
+        "qimgv",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Graphics",
+        "Viewer"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/qimgv.png",
+      "screenshots": [
+        {
+          "caption": "qimgv interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv0.9_1.jpg"
+        },
+        {
+          "caption": "qimgv interface screenshot 2",
+          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv0.9_2.jpg"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Qimgv-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

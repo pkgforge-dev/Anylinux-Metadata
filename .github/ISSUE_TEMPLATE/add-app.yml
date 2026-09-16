@@ -1,0 +1,115 @@
+name: "✨ Add New App Metadata"
+description: "Submit metadata for an AnyLinux AppImage that is not on Flathub"
+title: "feat(app): add metadata for <app-name>"
+labels: ["app-submission", "automated-pr"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to **Anylinux-Metadata**!
+        Fill out the form below. An automated GitHub Action will convert this issue into a Pull Request with full validation checks!
+  - type: input
+    id: name
+    attributes:
+      label: "Application Name"
+      description: "Human-readable name of the application (e.g. Ghostty, Ladybird)"
+      placeholder: "My Application"
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: "Application Slug"
+      description: "Lowercase alphanumeric with hyphens (e.g. ghostty, ladybird, 12to11)"
+      placeholder: "my-application"
+    validations:
+      required: true
+  - type: input
+    id: app_id
+    attributes:
+      label: "Reverse-DNS AppStream ID"
+      description: "Freedesktop reverse-DNS ID (e.g. io.github.user.app or org.example.app)"
+      placeholder: "io.github.owner.appname"
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "One short sentence explaining what the app does (max 200 chars, NO ending period)"
+      placeholder: "Fast GPU-accelerated terminal emulator"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Full description of the application. Paragraphs and bullet points are supported."
+      placeholder: "A detailed paragraph describing the application...\n\nFeatures:\n- First key feature\n- Second key feature"
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: "License (SPDX Identifier)"
+      description: "Valid SPDX 2.0+ license expression (e.g. MIT, GPL-3.0-or-later, Apache-2.0, BSD-3-Clause)"
+      placeholder: "GPL-3.0-or-later"
+    validations:
+      required: true
+  - type: dropdown
+    id: main_category
+    attributes:
+      label: "Main Category"
+      description: "Primary Freedesktop category for menu and software center classification"
+      options:
+        - "Utility"
+        - "System"
+        - "Development"
+        - "Game"
+        - "AudioVideo"
+        - "Graphics"
+        - "Network"
+        - "Office"
+        - "Science"
+        - "Education"
+    validations:
+      required: true
+  - type: input
+    id: developer_name
+    attributes:
+      label: "Developer Name"
+      placeholder: "Jane Doe / Team"
+    validations:
+      required: true
+  - type: input
+    id: homepage
+    attributes:
+      label: "Homepage URL"
+      description: "Official project website or repository (must start with https://)"
+      placeholder: "https://example.org"
+    validations:
+      required: true
+  - type: input
+    id: release_repo
+    attributes:
+      label: "AnyLinux Release Repository"
+      description: "The GitHub repo under pkgforge-dev where the AppImage is built (e.g. pkgforge-dev/ghostty-appimage)"
+      placeholder: "pkgforge-dev/myapp-AppImage"
+    validations:
+      required: true
+  - type: input
+    id: icon_url
+    attributes:
+      label: "Icon URL"
+      description: "Direct HTTPS link to PNG (128x128 or higher) or SVG"
+      placeholder: "https://example.org/icon.png"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshot URLs"
+      description: "1 to 5 direct HTTPS screenshot image URLs (one per line)"
+      placeholder: "https://example.org/screenshots/1.png\nhttps://example.org/screenshots/2.png"
+    validations:
+      required: true
