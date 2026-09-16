@@ -273,6 +273,109 @@
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalDetailContent = document.getElementById('modalDetailContent');
 
+  // Screenshot Lightbox Elements
+  const screenshotLightboxModal = document.getElementById('screenshotLightboxModal');
+  const lightboxCounter = document.getElementById('lightboxCounter');
+  const lightboxOpenNewTab = document.getElementById('lightboxOpenNewTab');
+  const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+  const lightboxPrevBtn = document.getElementById('lightboxPrevBtn');
+  const lightboxNextBtn = document.getElementById('lightboxNextBtn');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+
+  let activeLightboxScreenshots = [];
+  let currentLightboxIndex = 0;
+
+  function isPlaceholderScreenshot(url) {
+    if (!url) return true;
+    return url.includes('pkgforge-dev/Anylinux-AppImages/main/assets/banner.png');
+  }
+
+  function openScreenshotLightbox(screenshots, initialIndex = 0) {
+    if (!screenshots || screenshots.length === 0) return;
+    activeLightboxScreenshots = screenshots;
+    currentLightboxIndex = Math.max(0, Math.min(initialIndex, screenshots.length - 1));
+    updateLightboxView();
+    if (screenshotLightboxModal) {
+      screenshotLightboxModal.classList.add('active');
+      screenshotLightboxModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeScreenshotLightbox() {
+    if (screenshotLightboxModal) {
+      screenshotLightboxModal.classList.remove('active');
+      screenshotLightboxModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  }
+
+  function updateLightboxView() {
+    if (!activeLightboxScreenshots || activeLightboxScreenshots.length === 0) return;
+    const current = activeLightboxScreenshots[currentLightboxIndex];
+    if (!current) return;
+
+    if (lightboxImage) {
+      lightboxImage.src = current.source;
+      lightboxImage.alt = current.caption || 'Screenshot preview';
+    }
+    if (lightboxCaption) {
+      lightboxCaption.innerText = current.caption || '';
+    }
+    if (lightboxOpenNewTab) {
+      lightboxOpenNewTab.href = current.source;
+    }
+    if (lightboxCounter) {
+      lightboxCounter.innerText = `${currentLightboxIndex + 1} / ${activeLightboxScreenshots.length}`;
+      lightboxCounter.style.display = activeLightboxScreenshots.length > 1 ? 'block' : 'none';
+    }
+    if (lightboxPrevBtn && lightboxNextBtn) {
+      const showNav = activeLightboxScreenshots.length > 1;
+      lightboxPrevBtn.style.display = showNav ? 'flex' : 'none';
+      lightboxNextBtn.style.display = showNav ? 'flex' : 'none';
+    }
+  }
+
+  function stepLightbox(delta) {
+    if (!activeLightboxScreenshots || activeLightboxScreenshots.length <= 1) return;
+    currentLightboxIndex = (currentLightboxIndex + delta + activeLightboxScreenshots.length) % activeLightboxScreenshots.length;
+    updateLightboxView();
+  }
+
+  if (lightboxCloseBtn) {
+    lightboxCloseBtn.addEventListener('click', closeScreenshotLightbox);
+  }
+  if (lightboxPrevBtn) {
+    lightboxPrevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      stepLightbox(-1);
+    });
+  }
+  if (lightboxNextBtn) {
+    lightboxNextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      stepLightbox(1);
+    });
+  }
+  if (screenshotLightboxModal) {
+    screenshotLightboxModal.addEventListener('click', (e) => {
+      if (e.target === screenshotLightboxModal || e.target.classList.contains('lightbox-viewport') || e.target.classList.contains('lightbox-img-container')) {
+        closeScreenshotLightbox();
+      }
+    });
+  }
+  window.addEventListener('keydown', (e) => {
+    if (!screenshotLightboxModal || !screenshotLightboxModal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      closeScreenshotLightbox();
+    } else if (e.key === 'ArrowLeft') {
+      stepLightbox(-1);
+    } else if (e.key === 'ArrowRight') {
+      stepLightbox(1);
+    }
+  });
+
   // Toast Container
   const toastContainer = document.getElementById('toastContainer');
 
@@ -438,24 +541,100 @@
       appPageDescription.innerHTML = descHtml || '<p style="color: var(--text-dim);">No detailed description available.</p>';
     }
 
-    // 4. Screenshots Gallery
+    // 4. Screenshots Gallery & Interactive Carousel
     const validScreenshots = Array.isArray(media.screenshots)
-      ? media.screenshots.filter((s) => s && s.source && s.source.startsWith('http'))
+      ? media.screenshots.filter((s) => s && s.source && s.source.startsWith('http') && !isPlaceholderScreenshot(s.source))
       : [];
 
     if (appPageScreenshotsCard && appPageGallery) {
       if (validScreenshots.length > 0) {
         appPageScreenshotsCard.style.display = 'block';
-        appPageGallery.innerHTML = validScreenshots
-          .map(
-            (ss) => `
-          <div class="app-page-screenshot-item">
-            <img class="app-page-screenshot-img" src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" loading="lazy" onerror="this.parentElement.style.display='none'">
-            ${ss.caption ? `<div class="app-page-screenshot-caption">${escapeHtml(ss.caption)}</div>` : ''}
-          </div>
-        `
-          )
-          .join('');
+        let activeIdx = 0;
+
+        function renderCarousel() {
+          const current = validScreenshots[activeIdx] || validScreenshots[0];
+          const hasMultiple = validScreenshots.length > 1;
+
+          appPageGallery.innerHTML = `
+            <div class="screenshot-carousel">
+              <div class="screenshot-stage">
+                <div class="screenshot-stage-img-wrapper" id="screenshotStageImgWrapper" role="button" tabindex="0" title="Click to expand full resolution">
+                  <img class="screenshot-stage-img" id="screenshotStageImg" src="${escapeHtml(current.source)}" alt="${escapeHtml(current.caption || '')}">
+                  <div class="screenshot-stage-zoom-badge">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                    <span>Click to expand</span>
+                  </div>
+                </div>
+                ${hasMultiple ? `
+                  <button type="button" class="carousel-nav-btn carousel-prev" id="carouselPrevBtn" title="Previous screenshot">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  </button>
+                  <button type="button" class="carousel-nav-btn carousel-next" id="carouselNextBtn" title="Next screenshot">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                ` : ''}
+              </div>
+              <div class="screenshot-caption-bar">
+                <span class="screenshot-caption-text" id="screenshotCaptionText">${escapeHtml(current.caption || '')}</span>
+                ${hasMultiple ? `<span class="screenshot-stage-counter" id="screenshotStageCounter">${activeIdx + 1} / ${validScreenshots.length}</span>` : ''}
+              </div>
+              ${hasMultiple ? `
+                <div class="screenshot-thumb-strip">
+                  ${validScreenshots.map((ss, idx) => `
+                    <button type="button" class="screenshot-thumb ${idx === activeIdx ? 'active' : ''}" data-index="${idx}" title="${escapeAttr(ss.caption || `Screenshot ${idx + 1}`)}">
+                      <img src="${escapeHtml(ss.source)}" alt="" loading="lazy">
+                    </button>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </div>
+          `;
+
+          const stageWrapper = document.getElementById('screenshotStageImgWrapper');
+          if (stageWrapper) {
+            stageWrapper.addEventListener('click', () => {
+              openScreenshotLightbox(validScreenshots, activeIdx);
+            });
+            stageWrapper.addEventListener('keydown', (e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openScreenshotLightbox(validScreenshots, activeIdx);
+              }
+            });
+          }
+
+          const prevBtn = document.getElementById('carouselPrevBtn');
+          if (prevBtn) {
+            prevBtn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              activeIdx = (activeIdx - 1 + validScreenshots.length) % validScreenshots.length;
+              renderCarousel();
+            });
+          }
+
+          const nextBtn = document.getElementById('carouselNextBtn');
+          if (nextBtn) {
+            nextBtn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              activeIdx = (activeIdx + 1) % validScreenshots.length;
+              renderCarousel();
+            });
+          }
+
+          const thumbs = appPageGallery.querySelectorAll('.screenshot-thumb');
+          thumbs.forEach((th) => {
+            th.addEventListener('click', (e) => {
+              e.stopPropagation();
+              const idx = parseInt(th.dataset.index, 10);
+              if (!isNaN(idx) && idx !== activeIdx) {
+                activeIdx = idx;
+                renderCarousel();
+              }
+            });
+          });
+        }
+
+        renderCarousel();
       } else {
         appPageScreenshotsCard.style.display = 'none';
         appPageGallery.innerHTML = '';
@@ -935,7 +1114,7 @@
 
     let screenshotsHtml = '';
     const validScreenshots = Array.isArray(media.screenshots)
-      ? media.screenshots.filter((s) => s && s.source && s.source.startsWith('http'))
+      ? media.screenshots.filter((s) => s && s.source && s.source.startsWith('http') && !isPlaceholderScreenshot(s.source))
       : [];
 
     if (validScreenshots.length > 0) {
@@ -945,8 +1124,8 @@
           <div class="modal-gallery-scroll">
             ${validScreenshots
               .map(
-                (ss) => `
-              <div class="modal-screenshot-item">
+                (ss, idx) => `
+              <div class="modal-screenshot-item" data-index="${idx}" role="button" tabindex="0" title="Click to expand screenshot full size" style="cursor: zoom-in;">
                 <img class="modal-screenshot-img" src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" onerror="this.parentElement.style.display='none'">
                 <div class="modal-screenshot-caption">${escapeHtml(ss.caption || '')}</div>
               </div>
@@ -1026,6 +1205,14 @@
       loadAppIntoStudio(slug);
       switchTab('studio');
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const modalItems = modalDetailContent.querySelectorAll('.modal-screenshot-item');
+    modalItems.forEach((mi) => {
+      mi.addEventListener('click', () => {
+        const idx = parseInt(mi.dataset.index, 10) || 0;
+        openScreenshotLightbox(validScreenshots, idx);
+      });
     });
 
     appDetailModal.classList.add('active');
