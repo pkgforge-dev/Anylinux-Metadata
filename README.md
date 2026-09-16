@@ -27,37 +27,46 @@ This repository provides a dedicated, version-controlled metadata database for t
 
 ## Architecture
 
+```mermaid
+flowchart TD
+    subgraph Upstream["Upstream Sources"]
+        ALA["AnyLinux AppImages<br/>(pkgforge-dev)"]
+        FH["Flathub Catalog API<br/>(v2/appstream)"]
+    end
+
+    subgraph DiffEngine["Differential Tracker"]
+        Diff["sync-upstream.ts"]
+        ALA --> Diff
+        FH --> Diff
+        Diff -->|Covered on Flathub| Skip["Delegated to Flathub<br/>(Excluded)"]
+        Diff -->|Not on Flathub| Target["Target Database Set<br/>(181 Applications)"]
+    end
+
+    subgraph Authoring["Contribution and Ingestion"]
+        Target --> Import["Portable-Linux-Apps Importer<br/>(import-pla.ts)"]
+        Import --> Manifests["apps/{slug}.json<br/>icons/{slug}.png"]
+        Web["Web Editor (web/)"] --> Manifests
+        Forms["GitHub Issue Forms"] --> Manifests
+        PRs["Direct Pull Requests"] --> Manifests
+    end
+
+    subgraph Quality["Validation Gate"]
+        Manifests --> Validator["validate.ts<br/>- Zod Schema Check<br/>- SPDX License Check<br/>- Local Icon Asset Check"]
+    end
+
+    subgraph Distribution["Downstream Distribution"]
+        Validator --> Exporter["export-catalog.ts"]
+        Exporter --> JSON["dist/catalog.json<br/>(AppHub API)"]
+        Exporter --> XML["dist/appstream.xml.gz<br/>(Freedesktop Standard)"]
+    end
 ```
-                             Upstream Sources
-    pkgforge-dev/Anylinux-AppImages              Flathub Catalog API
-           (445+ Packages)                           (3,300+ Apps)
-                  │                                        │
-                  └──────────────────┬─────────────────────┘
-                                     │
-                                     ▼
-                      Differential Tracker (sync-upstream.ts)
-                                     │
-            ┌────────────────────────┴────────────────────────┐
-            ▼                                                 ▼
-   Present on Flathub                             Target Non-Flathub Set
-   (Skipped / Flathub Managed)                                │
-                                                              ▼
-   Contribution Channels                         Portable-Linux-Apps Ingestion
-   - Web Editor (web/)                                        │
-   - GitHub Issue Forms                                       ▼
-   - Git Pull Requests ──────────────────────────────► apps/<slug>.json
-                                                              │
-                                                              ▼
-                                                 Validation Suite (validate.ts)
-                                                 - Zod Schema Check
-                                                 - SPDX License Check
-                                                 - Media and Icon Check
-                                                              │
-                                                              ▼
-                                                 Distribution Export (export-catalog.ts)
-                                                 - dist/catalog.json
-                                                 - dist/appstream.xml.gz
-```
+
+### Pipeline Overview
+
+1. **Differential Tracking (`scripts/sync-upstream.ts`)**: Cross-references all applications in `pkgforge-dev/Anylinux-AppImages` with Flathub's catalog API. Applications present on Flathub are delegated to Flathub; non-Flathub applications form the target backlog.
+2. **Metadata Ingestion and Authoring**: Manifests and icons are sourced from `Portable-Linux-Apps.github.io`, the browser-based Web Editor, or community pull requests.
+3. **Automated Quality Gate (`scripts/validate.ts`)**: Enforces reverse-DNS naming, SPDX 2.0+ license syntax, description AST integrity, and local icon file existence.
+4. **Catalog Compilation (`scripts/export-catalog.ts`)**: Produces unified `dist/catalog.json` and gzipped Freedesktop `dist/appstream.xml.gz` artifacts.
 
 ---
 
@@ -148,39 +157,18 @@ Every application manifest is stored in `apps/<slug>.json` and must validate aga
 
 ## Project Structure
 
-```
-Anylinux-Metadata/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── add-app.yml            # Structured issue template for new submissions
-│   │   └── update-app.yml         # Structured issue template for manifest updates
-│   └── workflows/
-│       ├── deploy-pages.yml       # Deploys catalog and web editor to GitHub Pages
-│       ├── issue-to-pr.yml        # Automatically converts issue forms to pull requests
-│       ├── sync-upstream.yml      # Scheduled daily synchronization workflow
-│       └── validate-pr.yml        # Pull request schema validation and preview generator
-├── apps/                          # Canonical application manifests (apps/<slug>.json)
-├── icons/                         # Curated 128x128 / 256x256 PNG and SVG icons
-├── schema/
-│   ├── app-manifest.json          # Compiled JSON Schema for IDE validation
-│   ├── category-registry.ts       # Freedesktop main and additional category registry
-│   ├── sandbox-v1.ts              # Sandbox permissions specification
-│   └── schema.ts                  # Zod schema definitions
-├── scripts/
-│   ├── export-catalog.ts          # Compiles dist/catalog.json and dist/appstream.xml.gz
-│   ├── generate-schema.ts         # Generates schema/app-manifest.json from Zod definitions
-│   ├── import-pla.ts              # Batch importer for Portable-Linux-Apps data
-│   ├── sync-upstream.ts           # Evaluates coverage against Anylinux-AppImages and Flathub
-│   └── validate.ts                # Strict CLI validator for all manifests
-├── tests/
-│   └── schema.test.ts             # Test suite
-├── web/                           # Browser-based visual editor SPA
-├── CONTRIBUTING.md                # Contributor guidelines
-├── README.md                      # Project documentation
-├── STATUS.md                      # Live coverage status and pending backlog
-├── package.json                   # Project configuration
-└── tsconfig.json                  # TypeScript compiler configuration
-```
+| Path | Purpose |
+| :--- | :--- |
+| `apps/` | Canonical application manifests (`apps/<slug>.json`) |
+| `icons/` | Curated 128x128 and 256x256 PNG and SVG icons |
+| `schema/` | TypeScript Zod schemas, sandbox specification, and compiled `app-manifest.json` |
+| `scripts/` | Maintenance tooling (`validate.ts`, `sync-upstream.ts`, `import-pla.ts`, `export-catalog.ts`) |
+| `tests/` | Automated unit test suite executed via `bun test` |
+| `web/` | Browser-based visual metadata editor SPA |
+| `.github/` | GitHub issue templates, PR preview bot, and scheduled synchronization workflows |
+| `STATUS.md` | Real-time catalog coverage metrics and pending backlog |
+| `package.json` | Project configuration and scripts |
+| `tsconfig.json` | TypeScript configuration |
 
 ---
 
