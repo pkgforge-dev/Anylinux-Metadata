@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.revosucks.bm64recomp",
+      "name": "Bomberman 64 Recompiled",
+      "summary": "Native PC port of Bomberman 64 created using static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Bomberman 64 Recompiled is an enhanced native PC port of the classic Nintendo 64 game Bomberman 64, generated through static binary recompilation. The project compiles original game logic into native C code for seamless desktop execution."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Players can experience the single-player adventure and chaotic multiplayer battle modes with modern resolutions, responsive controls, and high-framerate performance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit execution eliminating emulation performance overhead"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and high-resolution rendering support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low-latency input processing with modern controller compatibility"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Authentic physics simulation and bomb bouncing mechanics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Classic multi-arena battle mode with configurable match rules"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Revo",
+        "url": "https://github.com/RevoSucks"
+      },
+      "homepage": "https://github.com/RevoSucks/BM64Recomp",
+      "repository": "https://github.com/RevoSucks/BM64Recomp",
+      "keywords": [
+        "bm64recomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/bm64recomp.png",
+      "screenshots": [
+        {
+          "caption": "Bomberman 64 Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/BM64Recomp-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

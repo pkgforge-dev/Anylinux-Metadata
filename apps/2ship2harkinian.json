@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.harbourmasters.2ship2harkinian",
+      "name": "2 Ship 2 Harkinian",
+      "summary": "PC port of The Legend of Zelda: Majora's Mask with modern controls and high framerate rendering",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "2 Ship 2 Harkinian is an enhanced native PC port of The Legend of Zelda: Majora's Mask developed by the Harbour Masters team. It provides modern graphics enhancements, high framerates, and customizable gameplay options while preserving authentic game mechanics."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The project delivers a responsive and immersive experience with modern camera control, widescreen display rendering, and comprehensive game controller support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native PC execution with uncapped framerates and ultra-smooth animations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen and ultra-widescreen high-resolution display rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern dual-analog camera controls with optional mouse aiming"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive quality-of-life enhancements and customization options"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full gamepad support with remappable button layouts and rumble feedback"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "CC0-1.0",
+      "developer": {
+        "name": "Harbour Masters",
+        "url": "https://www.harbourmasters.org"
+      },
+      "homepage": "https://www.harbourmasters.org",
+      "repository": "https://github.com/HarbourMasters/2ship2harkinian",
+      "keywords": [
+        "2ship2harkinian",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame",
+        "AdventureGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/2ship2harkinian.png",
+      "screenshots": [
+        {
+          "caption": "2 Ship 2 Harkinian interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/2ship2harkinian-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

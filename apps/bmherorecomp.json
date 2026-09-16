@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.revosucks.bmherorecomp",
+      "name": "Bomberman Hero Recompiled",
+      "summary": "Native PC port of Bomberman Hero created using static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Bomberman Hero Recompiled is a native PC port of the platforming action title Bomberman Hero, built using modern static recompilation technology. It translates N64 machine instructions into optimized native binaries."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port brings Bomberman's fast-paced platforming, jumping mechanics, jetpack stages, and iconic electronic soundtrack to modern operating systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native desktop execution with uncapped framerates and fluid gameplay"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for modern widescreen and arbitrary display resolutions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced audio subsystem reproducing the original soundtrack with fidelity"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct gamepad input with configurable bindings and analog stick control"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Instant loading times and stable cross-platform performance"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Revo",
+        "url": "https://github.com/RevoSucks"
+      },
+      "homepage": "https://github.com/RevoSucks/BMHeroRecomp",
+      "repository": "https://github.com/RevoSucks/BMHeroRecomp",
+      "keywords": [
+        "bmherorecomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/bmherorecomp.png",
+      "screenshots": [
+        {
+          "caption": "Bomberman Hero Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/BMHeroRecomp-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

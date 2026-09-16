@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.shikakiben.am_gui",
+      "name": "AM-GUI",
+      "summary": "Graphical frontend for managing AppImages and portable packages using the AM engine",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "AM-GUI is an open-source graphical frontend for the AM application manager. Developed by Shikakiben, it allows users to install, update, and manage thousands of standalone AppImages and portable Linux programs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application features categorized software catalogs, search tools, one-click installation, desktop launcher creation, and automatic background update checks."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Intuitive graphical store interface for browsing thousands of portable Linux apps"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "One-click installation, updating, and uninstallation powered by the AM engine"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic desktop entry creation, MIME type associations, and icon extraction"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Category-based browsing and fast search with real-time package filtering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Management of portable application updates and local rollback states"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Shikakiben",
+        "url": "https://github.com/Shikakiben"
+      },
+      "homepage": "https://github.com/Shikakiben/AM-GUI",
+      "repository": "https://github.com/Shikakiben/AM-GUI",
+      "keywords": [
+        "am-gui",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility",
+        "System",
+        "PackageManager"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/am-gui.png",
+      "screenshots": [
+        {
+          "caption": "AM-GUI interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "Shikakiben/AM-GUI"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

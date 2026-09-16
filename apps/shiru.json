@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rockinchaos.shiru",
+      "name": "Shiru",
+      "summary": "Modern desktop client for Crunchyroll built using Electron and Vue",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Shiru is an open-source desktop client for streaming anime on Crunchyroll. Developed with Electron and Vue, it provides a clean, tailored desktop viewing experience."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The client supports episode tracking, watchlist synchronization, smooth video playback with hardware acceleration, and integrated Discord Rich Presence."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Streamlined desktop viewing environment without browser tab clutter"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated video decoding supporting 1080p high-definition streams"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Watchlist synchronization and automatic playback progress tracking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Discord Rich Presence integration displaying current show and episode status"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable player shortcuts, subtitle styling, and audio track selection"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "RockinChaos",
+        "url": "https://github.com/RockinChaos"
+      },
+      "homepage": "https://github.com/RockinChaos/Shiru",
+      "repository": "https://github.com/RockinChaos/Shiru",
+      "keywords": [
+        "shiru",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "AudioVideo",
+        "Player"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/shiru.png",
+      "screenshots": [
+        {
+          "caption": "Shiru interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Shiru-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

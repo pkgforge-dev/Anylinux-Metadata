@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "br.gov.receitafederal.itr2026",
+      "name": "ITR 2026",
+      "summary": "Programa oficial da Receita Federal para elaboração e entrega da Declaração do ITR 2026",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "O ITR 2026 (Programa Gerador da Declaração do ITR 2026) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil para preenchimento e transmissão da Declaração do Imposto sobre a Propriedade Territorial Rural."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "O programa possibilita o registro cadastral de imóveis rurais, cálculo automático do imposto territorial devido, validação de inconsistências e emissão do comprovante de entrega e DARF."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Preenchimento completo dos formulários de informação cadastral e apuração do ITR"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cálculo automático do valor do imposto devido de acordo com a área tributável"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Validação automatizada de consistência cadastral e pendências fiscais"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Exportação, importação e restauração de declarações de exercícios anteriores"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Emissão direta do DARF para recolhimento e do recibo oficial de transmissão"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "LicenseRef-Proprietary",
+      "developer": {
+        "name": "Secretaria Especial da Receita Federal do Brasil",
+        "url": "https://www.gov.br/receitafederal"
+      },
+      "homepage": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/ditr",
+      "repository": "https://github.com/pkgforge-dev/ITR2026-AppImage",
+      "keywords": [
+        "itr2026",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Office",
+        "Finance",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/itr2026.png",
+      "screenshots": [
+        {
+          "caption": "ITR 2026 interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ITR2026-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

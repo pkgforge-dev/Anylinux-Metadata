@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.sourceforge.foobillardplus",
+      "name": "FooBillard++",
+      "summary": "Advanced 3D OpenGL billiard game featuring realistic ball physics and tournament play",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "FooBillard++ is an advanced 3D OpenGL billiard simulator, building upon the original FooBillard engine. It offers realistic rigid-body ball physics, table collisions, and ball spin simulation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The game supports several billiard disciplines including 8-ball, 9-ball, carom, and snooker, playable against computer opponents or with other players locally."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Accurate 3D ball physics simulation modeling english, spin, and table friction"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiple game variants including 8-ball pool, 9-ball pool, snooker, and carom"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable AI opponents with variable skill and decision-making levels"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable table cloth colors, wooden finishes, and ball set textures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Free-camera inspection and bird's-eye view positioning for precise cue shots"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-or-later",
+      "developer": {
+        "name": "FooBillard++ Team",
+        "url": "https://foobillardplus.sourceforge.net"
+      },
+      "homepage": "https://foobillardplus.sourceforge.net",
+      "repository": "https://sourceforge.net/projects/foobillardplus",
+      "keywords": [
+        "foobillard",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "SportsGame",
+        "Simulation"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/foobillard.png",
+      "screenshots": [
+        {
+          "caption": "FooBillard++ interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Foobillardpp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

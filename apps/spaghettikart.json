@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.harbourmasters.spaghettikart",
+      "name": "SpaghettiKart",
+      "summary": "Native PC port of Mario Kart 64 featuring widescreen support and high framerate rendering",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "SpaghettiKart is an open-source native PC port of Mario Kart 64 created by the Harbour Masters development team. It recompiles the classic kart racer to run on modern Linux systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The game delivers 60 FPS gameplay, widescreen support, high-resolution textures, and modern gamepad compatibility for both Grand Prix and multiplayer battle modes."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native PC execution with 60 FPS gameplay and fluid physics simulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern widescreen display rendering with correctly scaled UI elements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low-latency input handling supporting contemporary USB and Bluetooth gamepads"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete Grand Prix, Time Trials, VS, and Battle game modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity digital audio reproduction with zero emulation stutter"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "CC0-1.0",
+      "developer": {
+        "name": "Harbour Masters",
+        "url": "https://www.harbourmasters.org"
+      },
+      "homepage": "https://github.com/HarbourMasters/SpaghettiKart",
+      "repository": "https://github.com/HarbourMasters/SpaghettiKart",
+      "keywords": [
+        "spaghettikart",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "SportsGame",
+        "ArcadeGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/spaghettikart.png",
+      "screenshots": [
+        {
+          "caption": "SpaghettiKart interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/SpaghettiKart-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.zelda64recomp.zelda64recomp",
+      "name": "Zelda 64: Recompiled",
+      "summary": "Static recompilation project for Nintendo 64 Zelda titles running natively on PC",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Zelda 64: Recompiled is a static recompilation engine capable of translating Nintendo 64 Zelda titles into native C code. Developed by the Zelda64Recomp team, it provides a native PC porting foundation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The project delivers uncapped framerates, high-resolution rendering, ray-tracing support, modern camera controls, and extensive graphics enhancements."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Static recompilation architecture delivering high performance on modern CPUs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Uncapped framerate rendering with smooth motion interpolation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-resolution presentation supporting 4K and ultrawide aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern dual-analog camera control with optional mouse aiming"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full controller compatibility with vibration feedback and customizable mapping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Zelda64Recomp Team",
+        "url": "https://github.com/Zelda64Recomp"
+      },
+      "homepage": "https://github.com/Zelda64Recomp/Zelda64Recomp",
+      "repository": "https://github.com/Zelda64Recomp/Zelda64Recomp",
+      "keywords": [
+        "zelda64recomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame",
+        "AdventureGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/zelda64recomp.png",
+      "screenshots": [
+        {
+          "caption": "Zelda 64: Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Zelda64Recomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

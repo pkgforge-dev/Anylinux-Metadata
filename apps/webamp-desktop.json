@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.durasj.webamp_desktop",
+      "name": "Webamp Desktop",
+      "summary": "Winamp 2 reimplementation for modern desktop operating systems with classic skins",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Webamp Desktop brings the nostalgic Winamp 2 experience to modern desktops. Powered by Electron and Jordan Eldredge's Webamp HTML5 audio engine, it faithfully reproduces the look and feel of the 1990s media player."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The desktop application includes classic skins, an interactive graphic equalizer, visualizers, and seamless local audio file playback."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Pixel-perfect recreation of classic Winamp 2.9 interface windows and controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for custom vintage Winamp classic .wsz skins and themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive 10-band graphic equalizer with customizable presets"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated audio visualizer supporting Milkdrop and oscilloscope modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Local playlist management supporting MP3, WAV, OGG, and FLAC formats"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "MIT",
+      "developer": {
+        "name": "Jakub Duras",
+        "url": "https://github.com/durasj"
+      },
+      "homepage": "https://github.com/durasj/webamp-desktop",
+      "repository": "https://github.com/durasj/webamp-desktop",
+      "keywords": [
+        "webamp-desktop",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "AudioVideo",
+        "Audio",
+        "Player"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/webamp-desktop.png",
+      "screenshots": [
+        {
+          "caption": "Webamp Desktop interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Webamp-Desktop-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

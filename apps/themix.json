@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.github.themix_project.Oomox",
+      "name": "Themix",
+      "summary": "Graphical application for generating customized Numix, Materia, and Oomox desktop themes",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Themix (formerly known as Oomox) is a graphical theme designer for Linux desktops. It enables users to generate custom color palettes for GTK2, GTK3, GTK4, and window manager themes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application can export generated color schemes across popular desktop themes like Numix and Materia, icon sets like Papirus and Suru++, and terminal color profiles."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Visual theme customizer for Numix, Materia, and Arc desktop theme engines"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Color variation generator for popular icon packs including Papirus and Suru++"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Terminal emulator color scheme export (Xresources, Alacritty, Kitty)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for importing and exporting complete theme preset configurations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Live theme preview window reflecting color alterations in real time"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Themix Project",
+        "url": "https://github.com/themix-project"
+      },
+      "homepage": "https://github.com/themix-project/themix-gui",
+      "repository": "https://github.com/themix-project/themix-gui",
+      "keywords": [
+        "themix",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Settings",
+        "DesktopSettings",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/themix.png",
+      "screenshots": [
+        {
+          "caption": "Themix interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Themix-GUI-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

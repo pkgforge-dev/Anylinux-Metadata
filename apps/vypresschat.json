@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.vyapin.vypresschat",
+      "name": "Vypress Chat",
+      "summary": "User-friendly real-time messaging application designed for local area network (LAN) communication",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Vypress Chat is a dedicated peer-to-peer real-time communication software designed specifically for local area networks (LANs). It facilitates secure instant messaging without requiring an internet connection or external server."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application provides topic-based chat channels, direct private messaging, file sharing, and broadcast announcements across office, home, and enterprise local subnets."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Serverless peer-to-peer messaging operating across local network subnets"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Topic-based group channels and private encrypted direct messaging"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Instant LAN file transmission and document sharing capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable sound notifications, status indicators, and offline message queueing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Low network bandwidth overhead and minimal background system footprint"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "LicenseRef-Proprietary",
+      "developer": {
+        "name": "Vyapin Software Systems",
+        "url": "https://www.vyapinsoftware.com"
+      },
+      "homepage": "https://www.vyapinsoftware.com/products/vypress-chat",
+      "repository": "https://github.com/pkgforge-dev/VypressChat-AppImage",
+      "keywords": [
+        "vypresschat",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Network",
+        "InstantMessaging",
+        "Chat"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/vypresschat.png",
+      "screenshots": [
+        {
+          "caption": "Vypress Chat interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/VypressChat-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

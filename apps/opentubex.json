@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.opentubex.opentubex",
+      "name": "OpenTubeX",
+      "summary": "Privacy-focused desktop YouTube frontend client with enhanced customization",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenTubeX is an open-source privacy-centric desktop client for YouTube, created as an enhanced fork of FreeTube. It allows users to browse and watch video content without tracking, telemetry, or advertisements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application stores subscriptions, watch history, and playlists locally on your device without requiring a Google account."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Ad-free video viewing without third-party tracking or behavioral profiling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Local subscription management and playlist storage without account requirements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated SponsorBlock support to automatically skip sponsored segments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated playback with customizable video resolution and playback speed"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Import and export capabilities for subscription feeds and viewing history"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "AGPL-3.0-or-later",
+      "developer": {
+        "name": "OpenTubeX Team",
+        "url": "https://github.com/OpenTubeX"
+      },
+      "homepage": "https://github.com/OpenTubeX/OpenTubeX",
+      "repository": "https://github.com/OpenTubeX/OpenTubeX",
+      "keywords": [
+        "opentubex",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "AudioVideo",
+        "Player"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opentubex.png",
+      "screenshots": [
+        {
+          "caption": "OpenTubeX interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "OpenTubeX/OpenTubeX"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

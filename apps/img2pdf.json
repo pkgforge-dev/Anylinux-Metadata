@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "de.mister_muffin.img2pdf",
+      "name": "img2pdf",
+      "summary": "Lossless conversion of raster images into PDF format without re-encoding image streams",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "img2pdf is an open-source utility designed to convert raster images directly into PDF documents without recompressing pixel data. Unlike conventional PDF converters, img2pdf preserves original image bytes losslessly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The tool embeds JPEG, JPEG 2000, PNG, and TIFF streams directly into the PDF structure, ensuring identical visual fidelity, instantaneous conversion, and minimal file size."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Bit-for-bit lossless conversion embedding raw image streams directly into PDF"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Zero quality degradation and zero re-encoding overhead for JPEG and PNG inputs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Precise page layout controls including margins, paper formats, and aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multi-page PDF generation from sequential image inputs with minimal memory usage"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Standard command-line interface with optional graphical interface support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "LGPL-3.0-or-later",
+      "developer": {
+        "name": "Johannes Schauer Marin Rodrigues",
+        "url": "https://mister-muffin.de"
+      },
+      "homepage": "https://gitlab.mister-muffin.de/josch/img2pdf",
+      "repository": "https://gitlab.mister-muffin.de/josch/img2pdf",
+      "keywords": [
+        "img2pdf",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Office",
+        "Publishing",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/img2pdf.png",
+      "screenshots": [
+        {
+          "caption": "img2pdf interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/img2pdf-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

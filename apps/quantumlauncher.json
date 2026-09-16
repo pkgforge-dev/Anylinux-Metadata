@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.mrmaydie.quantumlauncher",
+      "name": "QuantumLauncher",
+      "summary": "Lightweight and powerful open-source Minecraft launcher designed for high performance",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "QuantumLauncher is a fast, lightweight open-source launcher for Minecraft. Built with a focus on efficiency, it eliminates the bloat and slow startup times common to traditional launchers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It offers complete instance management, automatic mod loader installation for Fabric and Forge, account switching, and optimized Java runtime selection."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Rapid application startup and minimal memory footprint"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive multi-instance management with isolated save directories"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automated one-click installation for Fabric, Quilt, NeoForge, and Forge loaders"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated modpack importing from major community mod repositories"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable JVM launch arguments and automatic memory allocation settings"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "mrmaydie",
+        "url": "https://github.com/mrmaydie"
+      },
+      "homepage": "https://github.com/mrmaydie/QuantumLauncher",
+      "repository": "https://github.com/mrmaydie/QuantumLauncher",
+      "keywords": [
+        "quantumlauncher",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/quantumlauncher.png",
+      "screenshots": [
+        {
+          "caption": "QuantumLauncher interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/QuantumLauncher-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

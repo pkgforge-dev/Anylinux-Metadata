@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.harbourmasters.lighthouse",
+      "name": "Lighthouse",
+      "summary": "Harbour Masters native PC port and launcher for Banjo-Kazooie",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Lighthouse is the official companion launcher and modern PC port of Banjo-Kazooie created by the Harbour Masters development group. It allows the classic 3D platformer to run with PC graphics and control features."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application bundles native asset management, configuration tools, widescreen presentation, and low-latency input handling."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native x86_64 execution with uncapped framerates and fluid camera movement"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Widescreen and ultra-wide display resolution support with corrected aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable input mapping for modern gamepads and keyboard/mouse setups"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in mod and texture pack management capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity digital sound reproduction with multichannel audio support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "CC0-1.0",
+      "developer": {
+        "name": "Harbour Masters",
+        "url": "https://www.harbourmasters.org"
+      },
+      "homepage": "https://www.harbourmasters.org",
+      "repository": "https://github.com/HarbourMasters/Lighthouse",
+      "keywords": [
+        "lighthouse",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/lighthouse.png",
+      "screenshots": [
+        {
+          "caption": "Lighthouse interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Lighthouse-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

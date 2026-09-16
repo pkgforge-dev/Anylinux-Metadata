@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.cdlewis.snowboardkids2recomp",
+      "name": "Snowboard Kids 2 Recompiled",
+      "summary": "Native PC port of Snowboard Kids 2 created using static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Snowboard Kids 2 Recompiled is an enhanced native PC port of Atlus and Racjin's classic Nintendo 64 snowboarding racing game Snowboard Kids 2. The project uses static binary recompilation to execute original game code natively on desktop computers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Players race through snowy peaks, sunny beaches, and fantasy courses with modern widescreen visuals, high framerates, and customizable controls."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full native binary execution delivering high framerates with zero emulation lag"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for true widescreen and modern ultra-wide monitor aspect ratios"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "All original single-player story tracks, battle modes, and trick game variants"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Responsive game controller support with rebindable button configurations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Crystal-clear audio playback powered by PipeWire and modern Linux sound stacks"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "cdlewis",
+        "url": "https://github.com/cdlewis"
+      },
+      "homepage": "https://github.com/cdlewis/snowboardkids2-recomp",
+      "repository": "https://github.com/cdlewis/snowboardkids2-recomp",
+      "keywords": [
+        "snowboardkids2recomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "SportsGame",
+        "ArcadeGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/snowboardkids2recomp.png",
+      "screenshots": [
+        {
+          "caption": "Snowboard Kids 2 Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/SnowboardKids2Recomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

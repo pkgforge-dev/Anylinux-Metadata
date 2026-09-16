@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.brunonymous.powermanga",
+      "name": "Powermanga",
+      "summary": "Arcade 2D vertical shoot-em-up game featuring 41 levels and massive enemy waves",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Powermanga is an arcade-style 2D vertical scrolling shoot-em-up developed by TLK Games. Players pilot a starship through 41 action-packed levels defending human colonies against hostile alien fleets."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The game features a strategic gem collection system that allows players to upgrade firepower, purchase protective shields, and unlock specialized weaponry."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "41 diverse levels of intense vertical arcade scrolling shoot-em-up gameplay"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "More than 60 distinct enemy spaceship models and challenging boss encounters"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Strategic weapon enhancement and shield acquisition upgrade mechanic"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dynamic soundtrack and retro arcade sound effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Smooth hardware-accelerated 60 FPS graphics with full controller compatibility"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "TLK Games",
+        "url": "https://github.com/brunonymous/Powermanga"
+      },
+      "homepage": "https://github.com/brunonymous/Powermanga",
+      "repository": "https://github.com/brunonymous/Powermanga",
+      "keywords": [
+        "powermanga",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ArcadeGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/powermanga.png",
+      "screenshots": [
+        {
+          "caption": "Powermanga interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Powermanga-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

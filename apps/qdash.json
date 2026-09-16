@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.qfrc.qdash",
+      "name": "QDash",
+      "summary": "Reliable, high-performance, and low-footprint dashboard application for FIRST Robotics Competition",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "QDash is a high-performance, lightweight dashboard application designed specifically for FIRST Robotics Competition (FRC) drive teams. Built using Qt Quick and QML with GPU acceleration, it minimizes CPU and memory consumption during high-stakes competitions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It provides real-time robot telemetry, interactive widgets, NetworkTables communication, and custom styling powered by the Carboxyl theme engine."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Low system footprint with GPU-accelerated QML rendering ensuring drive team responsiveness"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Efficient NetworkTables subscription avoiding unnecessary topic bandwidth overhead"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable layout widgets for camera feeds, sensor dials, and autonomous selectors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Carboxyl styling engine with high-contrast light and dark visual themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Reliable cross-platform performance optimized for driver station laptops"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "QFRC Team",
+        "url": "https://git.crueter.xyz/QFRC"
+      },
+      "homepage": "https://git.crueter.xyz/QFRC/QDash",
+      "repository": "https://git.crueter.xyz/QFRC/QDash",
+      "keywords": [
+        "qdash",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Education",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/qdash.png",
+      "screenshots": [
+        {
+          "caption": "QDash interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "feed",
+    "url": "https://git.crueter.xyz/api/v1/repos/QFRC/QDash/releases"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

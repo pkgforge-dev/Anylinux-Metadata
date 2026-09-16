@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.harbourmasters.shipofharkinian",
+      "name": "Ship of Harkinian",
+      "summary": "PC port of The Legend of Zelda: Ocarina of Time with modern controls and high framerate rendering",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Ship of Harkinian (soh) is a native PC port of The Legend of Zelda: Ocarina of Time developed by Harbour Masters. It executes original game assets through a modern C++ engine."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port provides high framerates, modern dual-analog camera control, gyro aiming, widescreen presentation, and a comprehensive suite of quality-of-life options."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit PC performance with uncapped framerates and interpolated animations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "True widescreen and ultra-widescreen rendering with dynamic UI placement"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Free camera control with dual-analog sticks and optional mouse look"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in randomizer, cosmetic customizer, and game enhancement toggles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad game controller support including motion controls and rumble effects"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "CC0-1.0",
+      "developer": {
+        "name": "Harbour Masters",
+        "url": "https://www.harbourmasters.org"
+      },
+      "homepage": "https://www.shipofharkinian.com",
+      "repository": "https://github.com/HarbourMasters/Shipwright",
+      "keywords": [
+        "soh",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame",
+        "AdventureGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/soh.png",
+      "screenshots": [
+        {
+          "caption": "Ship of Harkinian interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/soh-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

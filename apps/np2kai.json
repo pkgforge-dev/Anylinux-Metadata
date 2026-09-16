@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.azo234.np2kai",
+      "name": "Neko Project II Kai",
+      "summary": "NEC PC-9801 series computer emulator supporting extended architecture and sound hardware",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Neko Project II Kai (NP2kai) is a mature open-source emulator for the iconic Japanese NEC PC-9801 and PC-9821 personal computer systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It provides emulation for x86 CPUs, GDC display controllers, floppy and hard disk disk controllers, and various FM sound expansions including PC-9801-26K and 86 sound boards."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Accurate emulation of NEC PC-9801/9821 CPU instructions and timing cycles"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for PC-98 GDC graphics architecture, 16-color, and 256-color display modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-quality FM sound synthesis modeling YM2203 (OPN) and YM2608 (OPNA) sound chips"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive floppy disk (D88, FDI) and hard disk (HDI, NHD) image support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "SDL2-powered graphical frontend with responsive gamepad and mouse mapping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "BSD-3-Clause",
+      "developer": {
+        "name": "AZO234",
+        "url": "https://github.com/AZO234"
+      },
+      "homepage": "https://github.com/AZO234/NP2kai",
+      "repository": "https://github.com/AZO234/NP2kai",
+      "keywords": [
+        "np2kai",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/np2kai.png",
+      "screenshots": [
+        {
+          "caption": "Neko Project II Kai interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Neko-Project-II-Kai-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

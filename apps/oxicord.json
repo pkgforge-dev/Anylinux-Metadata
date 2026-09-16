@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.oxicord.oxicord",
+      "name": "Oxicord",
+      "summary": "Lightweight and fast terminal Discord client written in Rust",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Oxicord is a lightweight terminal user interface (TUI) Discord client written in Rust. It offers a distraction-free, resource-efficient way to interact with Discord channels directly from the command line."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for terminal power users, Oxicord features Vim-inspired navigation, low CPU and RAM consumption, and rich text chat formatting."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Vim-style keybindings for rapid channel navigation, messaging, and scrolling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Minimal system resource footprint using a fraction of typical desktop memory"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for direct messages, guild text channels, mentions, and reactions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean terminal interface rendering with configurable color themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Robust asynchronous networking built on Tokio and Ratatui"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Oxicord Developers",
+        "url": "https://github.com/oxicord"
+      },
+      "homepage": "https://github.com/oxicord/oxicord",
+      "repository": "https://github.com/oxicord/oxicord",
+      "keywords": [
+        "oxicord",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Network",
+        "InstantMessaging",
+        "Chat"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/oxicord.png",
+      "screenshots": [
+        {
+          "caption": "Oxicord interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Oxicord-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

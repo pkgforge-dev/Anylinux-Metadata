@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.imagemagick.ImageMagick",
+      "name": "ImageMagick",
+      "summary": "Comprehensive software suite for displaying, creating, converting, and editing bitmap images",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ImageMagick is a free and open-source software suite for reading, converting, and writing images in over 200 formats including PNG, JPEG, GIF, HEIC, TIFF, DPX, EXR, and PDF."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It supports high-throughput command-line batch processing, resizing, color grading, geometric transforms, drawing text and shapes, and image composition."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Conversion and processing support for more than 200 graphic formats"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced image manipulation including resize, crop, rotate, skew, and affine transform"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-dynamic-range imaging (HDRI) with deep color channel precision"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive color management, gamma correction, and thresholding algorithms"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive scripting capabilities for automated digital media production pipelines"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "ImageMagick",
+      "developer": {
+        "name": "ImageMagick Studio LLC",
+        "url": "https://imagemagick.org"
+      },
+      "homepage": "https://imagemagick.org",
+      "repository": "https://github.com/ImageMagick/ImageMagick",
+      "keywords": [
+        "imagemagick",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Graphics",
+        "RasterGraphics",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/imagemagick.png",
+      "screenshots": [
+        {
+          "caption": "ImageMagick interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ImageMagick-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

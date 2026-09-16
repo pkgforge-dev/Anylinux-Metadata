@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.projectmagma.myth2",
+      "name": "Myth II: Soulblighter",
+      "summary": "Modern 64-bit Linux native port of the classic real-time tactical game Myth II",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Myth II: Soulblighter is an updated 64-bit native Linux port of Bungie's legendary real-time tactical masterpiece, modernized and maintained by Project Magma."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Players control armies in strategic battlefield engagements without resource gathering or base construction, featuring physics-driven combat, 3D terrain topography, and multiplayer gameplay."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native 64-bit Linux binary with OpenGL hardware acceleration and widescreen rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Realistic unit physics, projectile ballistics, wind direction, and terrain elevation mechanics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full campaign mission support with cinematic cutscenes and atmospheric voice narration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern sound engine implementation using OpenAL and PipeWire audio backends"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Internet and LAN multiplayer capabilities through modern community match servers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "LicenseRef-Proprietary",
+      "developer": {
+        "name": "Project Magma",
+        "url": "https://projectmagma.net"
+      },
+      "homepage": "https://projectmagma.net",
+      "repository": "https://github.com/pkgforge-dev/Myth-II-AppImage",
+      "keywords": [
+        "myth-ii",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "StrategyGame",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/myth-ii.png",
+      "screenshots": [
+        {
+          "caption": "Myth II: Soulblighter interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Myth-II-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

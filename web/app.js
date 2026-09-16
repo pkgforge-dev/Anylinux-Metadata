@@ -242,7 +242,33 @@
   const btnLoadValidToStudio = document.getElementById('btnLoadValidToStudio');
   const validatorReportEl = document.getElementById('validatorReport');
 
-  // Detail Modal
+  // Dedicated App Page Elements
+  const panelAppDetail = document.getElementById('panel-app-detail');
+  const btnAppPageBack = document.getElementById('btnAppPageBack');
+  const appPageCategory = document.getElementById('appPageCategory');
+  const appPageBreadcrumbName = document.getElementById('appPageBreadcrumbName');
+  const btnAppPageShare = document.getElementById('btnAppPageShare');
+  const btnAppPageCopyJson = document.getElementById('btnAppPageCopyJson');
+  const btnAppPageEditStudio = document.getElementById('btnAppPageEditStudio');
+  const appPageIcon = document.getElementById('appPageIcon');
+  const appPageHeroCategory = document.getElementById('appPageHeroCategory');
+  const appPageHeroLicense = document.getElementById('appPageHeroLicense');
+  const appPageHeroRelease = document.getElementById('appPageHeroRelease');
+  const appPageHeroAdded = document.getElementById('appPageHeroAdded');
+  const appPageTitle = document.getElementById('appPageTitle');
+  const appPageId = document.getElementById('appPageId');
+  const appPageSummary = document.getElementById('appPageSummary');
+  const appPageExternalLinks = document.getElementById('appPageExternalLinks');
+  const appPageDescription = document.getElementById('appPageDescription');
+  const appPageScreenshotsCard = document.getElementById('appPageScreenshotsCard');
+  const appPageGallery = document.getElementById('appPageGallery');
+  const appPageDownloadJsonLink = document.getElementById('appPageDownloadJsonLink');
+  const btnAppPageCopyJsonSnippet = document.getElementById('btnAppPageCopyJsonSnippet');
+  const appPageJsonDisplay = document.getElementById('appPageJsonDisplay');
+  const appPageMetaList = document.getElementById('appPageMetaList');
+  const appPageSandboxList = document.getElementById('appPageSandboxList');
+
+  // Detail Modal (Legacy / Fallback)
   const appDetailModal = document.getElementById('appDetailModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
   const modalDetailContent = document.getElementById('modalDetailContent');
@@ -264,28 +290,318 @@
     }, 3200);
   }
 
-  // --- Tab Navigation ---
-  function switchTab(tabId, updateHash = true) {
+  // --- Tab & Application Page Navigation ---
+  function switchTab(tabId, updateUrl = true) {
     navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === tabId));
     tabPanels.forEach((p) => p.classList.toggle('active', p.id === `panel-${tabId}`));
-    if (updateHash) {
-      window.location.hash = tabId;
+    if (updateUrl) {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('app');
+      if (tabId === 'catalog') {
+        url.searchParams.delete('tab');
+        url.hash = '';
+      } else {
+        url.searchParams.set('tab', tabId);
+        url.hash = tabId;
+      }
+      window.history.pushState({ tab: tabId }, '', url.toString());
+    }
+    const titles = {
+      catalog: 'AnyLinux Metadata Portal',
+      backlog: 'Pending Backlog - AnyLinux Metadata Portal',
+      studio: 'Authoring Studio - AnyLinux Metadata Portal',
+      validator: 'Manifest Validator - AnyLinux Metadata Portal'
+    };
+    document.title = titles[tabId] || 'AnyLinux Metadata Portal';
+  }
+
+  function navigateToApp(slug, updateUrl = true) {
+    const app = catalogData[slug];
+    if (!app) {
+      showToast(`Application '${slug}' not found in catalog`, 'error');
+      navigateToCatalog(true);
+      return;
+    }
+
+    renderAppDetailPage(slug);
+
+    tabPanels.forEach((p) => p.classList.toggle('active', p.id === 'panel-app-detail'));
+    navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === 'catalog'));
+
+    if (updateUrl) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('app', slug);
+      url.searchParams.delete('tab');
+      if (url.hash && (url.hash.startsWith('#app/') || url.hash === '#catalog')) {
+        url.hash = '';
+      }
+      window.history.pushState({ app: slug }, '', url.toString());
+    }
+
+    const appName = app.appstream?.metadata?.name || slug;
+    document.title = `${appName} - AnyLinux Metadata Portal`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function navigateToCatalog(updateUrl = true) {
+    tabPanels.forEach((p) => p.classList.toggle('active', p.id === 'panel-catalog'));
+    navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === 'catalog'));
+
+    if (updateUrl) {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('app');
+      url.searchParams.delete('tab');
+      if (url.hash && (url.hash.startsWith('#app/') || url.hash === '#catalog')) {
+        url.hash = '';
+      }
+      window.history.pushState({ tab: 'catalog' }, '', url.toString());
+    }
+
+    document.title = 'AnyLinux Metadata Portal';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderAppDetailPage(slug) {
+    const app = catalogData[slug];
+    if (!app) return;
+
+    const meta = app.appstream?.metadata || {};
+    const media = app.appstream?.media || {};
+    const sandbox = app.sandbox || {};
+    const release = app.releaseSource || {};
+    const mainCategory = meta.categories?.[0] || 'Utility';
+    const iconSrc = getPrimaryIconUrl(slug);
+    const appName = meta.name || slug;
+
+    // 1. Breadcrumb
+    if (appPageCategory) {
+      appPageCategory.innerText = mainCategory;
+      appPageCategory.title = `Filter catalog by ${mainCategory}`;
+    }
+    if (appPageBreadcrumbName) {
+      appPageBreadcrumbName.innerText = appName;
+    }
+
+    // 2. Hero Card Info
+    if (appPageIcon) {
+      appPageIcon.src = iconSrc;
+      appPageIcon.alt = appName;
+      appPageIcon.onerror = function () {
+        handleIconError(this, slug, appName, mainCategory);
+      };
+    }
+    if (appPageHeroCategory) appPageHeroCategory.innerText = mainCategory;
+    if (appPageHeroLicense) appPageHeroLicense.innerText = meta.projectLicense || 'Unknown';
+    if (appPageHeroRelease) appPageHeroRelease.innerText = release.repository || 'pkgforge-dev';
+    if (appPageHeroAdded) appPageHeroAdded.innerText = app.addedAt ? `Added: ${app.addedAt}` : 'Added: 2026-09-16';
+    if (appPageTitle) appPageTitle.innerText = appName;
+    if (appPageId) appPageId.innerText = meta.id || slug;
+    if (appPageSummary) appPageSummary.innerText = meta.summary || 'No summary available.';
+
+    // External Links in Hero
+    if (appPageExternalLinks) {
+      let linksHtml = '';
+      if (meta.homepage) {
+        linksHtml += `<a href="${escapeHtml(meta.homepage)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Homepage</a>`;
+      }
+      if (meta.repository) {
+        linksHtml += `<a href="${escapeHtml(meta.repository)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> Source Code</a>`;
+      }
+      if (release.repository) {
+        linksHtml += `<a href="https://github.com/${escapeHtml(release.repository)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg> Release Package</a>`;
+      }
+      appPageExternalLinks.innerHTML = linksHtml;
+    }
+
+    // 3. Description AST
+    if (appPageDescription) {
+      let descHtml = '';
+      if (Array.isArray(meta.description)) {
+        for (const block of meta.description) {
+          if (block.type === 'paragraph' && Array.isArray(block.content)) {
+            descHtml += `<p>${block.content.map((c) => escapeHtml(c.value || '')).join('')}</p>`;
+          } else if (block.type === 'unordered-list' && Array.isArray(block.items)) {
+            descHtml += `<ul class="app-page-features">`;
+            for (const item of block.items) {
+              descHtml += `<li>${item.map((c) => escapeHtml(c.value || '')).join('')}</li>`;
+            }
+            descHtml += `</ul>`;
+          } else if (block.type === 'ordered-list' && Array.isArray(block.items)) {
+            descHtml += `<ol class="app-page-features">`;
+            for (const item of block.items) {
+              descHtml += `<li>${item.map((c) => escapeHtml(c.value || '')).join('')}</li>`;
+            }
+            descHtml += `</ol>`;
+          }
+        }
+      }
+      appPageDescription.innerHTML = descHtml || '<p style="color: var(--text-dim);">No detailed description available.</p>';
+    }
+
+    // 4. Screenshots Gallery
+    const validScreenshots = Array.isArray(media.screenshots)
+      ? media.screenshots.filter((s) => s && s.source && s.source.startsWith('http'))
+      : [];
+
+    if (appPageScreenshotsCard && appPageGallery) {
+      if (validScreenshots.length > 0) {
+        appPageScreenshotsCard.style.display = 'block';
+        appPageGallery.innerHTML = validScreenshots
+          .map(
+            (ss) => `
+          <div class="app-page-screenshot-item">
+            <img class="app-page-screenshot-img" src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" loading="lazy" onerror="this.parentElement.style.display='none'">
+            ${ss.caption ? `<div class="app-page-screenshot-caption">${escapeHtml(ss.caption)}</div>` : ''}
+          </div>
+        `
+          )
+          .join('');
+      } else {
+        appPageScreenshotsCard.style.display = 'none';
+        appPageGallery.innerHTML = '';
+      }
+    }
+
+    // 5. Raw Manifest JSON
+    const jsonStr = JSON.stringify(app, null, 2);
+    if (appPageJsonDisplay) {
+      appPageJsonDisplay.innerHTML = `<code>${escapeHtml(jsonStr)}</code>`;
+    }
+    if (appPageDownloadJsonLink) {
+      appPageDownloadJsonLink.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(jsonStr);
+      appPageDownloadJsonLink.download = `${slug}.json`;
+    }
+
+    // 6. Metadata Definition List
+    if (appPageMetaList) {
+      const allCategories = Array.isArray(meta.categories) && meta.categories.length > 0
+        ? meta.categories
+        : [mainCategory];
+
+      appPageMetaList.innerHTML = `
+        <div class="meta-row">
+          <dt class="meta-label">Developer</dt>
+          <dd class="meta-val">${meta.developer?.name ? (meta.developer.url ? `<a href="${escapeHtml(meta.developer.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--green-deep); text-decoration:underline;">${escapeHtml(meta.developer.name)}</a>` : escapeHtml(meta.developer.name)) : '<span style="color:var(--text-dim);">Community / Upstream</span>'}</dd>
+        </div>
+        <div class="meta-row">
+          <dt class="meta-label">Freedesktop ID</dt>
+          <dd class="meta-val"><span class="slug-code" style="font-size: 0.775rem;">${escapeHtml(meta.id || slug)}</span></dd>
+        </div>
+        <div class="meta-row">
+          <dt class="meta-label">Project License</dt>
+          <dd class="meta-val"><span class="chip chip-license">${escapeHtml(meta.projectLicense || 'Unknown')}</span></dd>
+        </div>
+        <div class="meta-row">
+          <dt class="meta-label">Categories</dt>
+          <dd class="meta-val" style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+            ${allCategories.map((c) => `<span class="chip chip-category">${escapeHtml(c)}</span>`).join('')}
+          </dd>
+        </div>
+        <div class="meta-row">
+          <dt class="meta-label">Release Repository</dt>
+          <dd class="meta-val">${release.repository ? `<a href="https://github.com/${escapeHtml(release.repository)}" target="_blank" rel="noopener noreferrer" style="color:var(--green-deep); font-weight:600;">${escapeHtml(release.repository)}</a>` : 'pkgforge-dev/Anylinux-AppImages'}</dd>
+        </div>
+        <div class="meta-row">
+          <dt class="meta-label">Added Date</dt>
+          <dd class="meta-val">${escapeHtml(app.addedAt || '2026-09-16')}</dd>
+        </div>
+        ${Array.isArray(meta.keywords) && meta.keywords.length > 0 ? `
+          <div class="meta-row">
+            <dt class="meta-label">Search Keywords</dt>
+            <dd class="meta-val" style="display: flex; flex-wrap: wrap; gap: 0.3rem;">
+              ${meta.keywords.map((kw) => `<span class="chip" style="font-size: 0.72rem; padding: 0.15rem 0.45rem; background: var(--surface-inset);">${escapeHtml(kw)}</span>`).join('')}
+            </dd>
+          </div>
+        ` : ''}
+      `;
+    }
+
+    // 7. Sandbox Security Profile
+    if (appPageSandboxList) {
+      const perms = [
+        { label: 'Network Access', value: sandbox.network || 'none', active: sandbox.network && sandbox.network !== 'none' },
+        { label: 'Display Server', value: sandbox.display || 'none', active: sandbox.display && sandbox.display !== 'none' },
+        { label: 'Audio System', value: sandbox.audio || 'none', active: sandbox.audio && sandbox.audio !== 'none' },
+        { label: 'Process Isolation', value: sandbox.processes || 'isolated', active: sandbox.processes === 'isolated' },
+        { label: 'Inter-Process Comm (IPC)', value: sandbox.ipc ? 'enabled' : 'disabled', active: !!sandbox.ipc },
+        { label: 'GPU Acceleration', value: sandbox.devices?.includes('gpu') ? 'enabled' : 'none', active: sandbox.devices?.includes('gpu') },
+        {
+          label: 'Filesystem Access',
+          value: sandbox.filesystem && sandbox.filesystem.length > 0
+            ? sandbox.filesystem.map((f) => `${f.path} (${f.access})`).join(', ')
+            : 'Strict Isolation (none)',
+          active: false
+        },
+        { label: 'Session D-Bus', value: sandbox.sessionBus?.access || 'none', active: sandbox.sessionBus?.access && sandbox.sessionBus.access !== 'none' },
+        { label: 'System D-Bus', value: sandbox.systemBus?.access || 'none', active: sandbox.systemBus?.access && sandbox.systemBus.access !== 'none' }
+      ];
+
+      appPageSandboxList.innerHTML = perms
+        .map(
+          (p) => `
+        <div class="sandbox-perm-row">
+          <span class="sandbox-perm-name">${escapeHtml(p.label)}</span>
+          <span class="sandbox-perm-value ${p.active ? 'active' : ''}">${escapeHtml(p.value)}</span>
+        </div>
+      `
+        )
+        .join('');
+    }
+
+    // 8. Wire action buttons for this app
+    if (btnAppPageShare) {
+      btnAppPageShare.onclick = () => {
+        const shareUrl = new URL(window.location.href);
+        shareUrl.searchParams.set('app', slug);
+        shareUrl.searchParams.delete('tab');
+        shareUrl.hash = '';
+        copyTextToClipboard(shareUrl.toString());
+        showToast(`Copied share link for ${appName} to clipboard`, 'success');
+      };
+    }
+
+    if (btnAppPageCopyJson) {
+      btnAppPageCopyJson.onclick = () => {
+        copyTextToClipboard(jsonStr);
+        showToast(`Copied ${appName} manifest JSON to clipboard`, 'success');
+      };
+    }
+
+    if (btnAppPageCopyJsonSnippet) {
+      btnAppPageCopyJsonSnippet.onclick = () => {
+        copyTextToClipboard(jsonStr);
+        showToast(`Copied ${appName} manifest JSON to clipboard`, 'success');
+      };
+    }
+
+    if (btnAppPageEditStudio) {
+      btnAppPageEditStudio.onclick = () => {
+        loadAppIntoStudio(slug);
+        switchTab('studio');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
     }
   }
 
-  navTabs.forEach((tab) => {
-    tab.addEventListener('click', () => switchTab(tab.dataset.tab, true));
-  });
-
-  function handleHashNavigation() {
+  function handleRouting(isInitial = false) {
     const params = new URLSearchParams(window.location.search);
     const queryApp = params.get('app');
     const queryTab = params.get('tab');
+    const rawHash = (window.location.hash || '').replace('#', '');
 
-    if (queryApp && catalogData && catalogData[queryApp]) {
-      switchTab('catalog', false);
-      openAppDetailModal(queryApp);
-      return;
+    if (queryApp) {
+      if (catalogData && catalogData[queryApp]) {
+        navigateToApp(queryApp, false);
+        return;
+      }
+    }
+
+    if (rawHash.startsWith('app/')) {
+      const slug = rawHash.replace('app/', '');
+      if (catalogData && catalogData[slug]) {
+        navigateToApp(slug, true);
+        return;
+      }
     }
 
     if (queryTab && ['catalog', 'backlog', 'studio', 'validator'].includes(queryTab)) {
@@ -293,18 +609,35 @@
       return;
     }
 
-    const rawHash = window.location.hash.replace('#', '') || 'catalog';
-    if (rawHash.startsWith('app/')) {
-      const slug = rawHash.replace('app/', '');
-      switchTab('catalog', false);
-      if (catalogData && catalogData[slug]) {
-        openAppDetailModal(slug);
-      }
+    if (rawHash && ['catalog', 'backlog', 'studio', 'validator'].includes(rawHash)) {
+      switchTab(rawHash, false);
       return;
     }
-    if (['catalog', 'backlog', 'studio', 'validator'].includes(rawHash)) {
-      switchTab(rawHash, false);
+
+    if (isInitial && !queryApp && !queryTab && !rawHash) {
+      switchTab('catalog', false);
     }
+  }
+
+  navTabs.forEach((tab) => {
+    tab.addEventListener('click', () => switchTab(tab.dataset.tab, true));
+  });
+
+  if (btnAppPageBack) {
+    btnAppPageBack.addEventListener('click', () => {
+      navigateToCatalog(true);
+    });
+  }
+
+  if (appPageCategory) {
+    appPageCategory.addEventListener('click', () => {
+      const cat = appPageCategory.innerText.trim();
+      if (cat && cat !== 'Utility') {
+        catalogCategoryFilterEl.value = cat;
+        renderCatalogGrid();
+      }
+      navigateToCatalog(true);
+    });
   }
 
   // --- Data Loading ---
@@ -373,7 +706,7 @@
       loadAppIntoStudio(catalogList[0].slug);
     }
 
-    handleHashNavigation();
+    handleRouting(true);
   }
 
   function updateMetricsUI() {
@@ -491,7 +824,9 @@
         <div class="app-card-head">
           <img class="app-card-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || item.slug)}" loading="lazy" onerror="handleIconError(this, '${escapeHtml(item.slug)}', '${escapeAttr(meta.name || item.slug)}', '${escapeAttr(mainCategory)}')">
           <div class="app-card-info">
-            <div class="app-card-title">${escapeHtml(meta.name || item.slug)}</div>
+            <a class="app-card-title-link" href="?app=${encodeURIComponent(item.slug)}" title="View ${escapeAttr(meta.name || item.slug)} details">
+              <div class="app-card-title">${escapeHtml(meta.name || item.slug)}</div>
+            </a>
             <div class="app-card-id">${escapeHtml(meta.id || item.slug)}</div>
           </div>
         </div>
@@ -508,17 +843,30 @@
         <div class="app-card-footer">
           <span>${escapeHtml(release.repository || 'pkgforge-dev')}</span>
           <div class="card-actions-quick">
-            <button class="btn btn-xs btn-outline btn-card-inspect" title="View details">${ICONS.eye} View</button>
+            <a href="?app=${encodeURIComponent(item.slug)}" class="btn btn-xs btn-outline btn-card-inspect" title="View details">${ICONS.eye} View</a>
             <button class="btn btn-xs btn-outline btn-card-edit" title="Edit in Studio">${ICONS.edit} Edit</button>
             <button class="btn btn-xs btn-outline btn-card-copy" title="Copy JSON">${ICONS.copy}</button>
           </div>
         </div>
       `;
 
-      card.querySelector('.btn-card-inspect').addEventListener('click', (e) => {
+      const inspectBtn = card.querySelector('.btn-card-inspect');
+      inspectBtn.addEventListener('click', (e) => {
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+        e.preventDefault();
         e.stopPropagation();
-        openAppDetailModal(item.slug);
+        navigateToApp(item.slug, true);
       });
+
+      const titleLink = card.querySelector('.app-card-title-link');
+      if (titleLink) {
+        titleLink.addEventListener('click', (e) => {
+          if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+          e.preventDefault();
+          e.stopPropagation();
+          navigateToApp(item.slug, true);
+        });
+      }
 
       card.querySelector('.btn-card-edit').addEventListener('click', (e) => {
         e.stopPropagation();
@@ -532,8 +880,9 @@
         showToast(`Copied ${meta.name || item.slug} manifest to clipboard`, 'success');
       });
 
-      card.addEventListener('click', () => {
-        openAppDetailModal(item.slug);
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('button') || e.target.closest('a')) return;
+        navigateToApp(item.slug, true);
       });
 
       catalogGridEl.appendChild(card);
@@ -1674,7 +2023,8 @@
   applyTheme(document.documentElement.getAttribute('data-theme') || getPreferredTheme(), false);
 
   // --- Initialize ---
-  window.addEventListener('hashchange', handleHashNavigation);
-  handleHashNavigation();
+  window.addEventListener('popstate', () => handleRouting(false));
+  window.addEventListener('hashchange', () => handleRouting(false));
+  handleRouting(true);
   loadData();
 })();

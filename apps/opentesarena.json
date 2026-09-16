@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.afritz1.opentesarena",
+      "name": "OpenTESArena",
+      "summary": "Modern open-source engine reimplementation of The Elder Scrolls: Arena",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenTESArena is an open-source engine reimplementation of Bethesda Softworks' classic 1994 RPG The Elder Scrolls: Arena. Created by Alexander Fritz, it modernizes the classic fantasy experience for contemporary systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine provides modern audio mixing, native resolution rendering, customizable controls including mouselook, and clean cross-platform performance."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native modern engine execution without requiring DOSBox emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full mouselook navigation and customizable keyboard/mouse control schemes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Software and hardware-accelerated 3D renderer supporting modern high resolutions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Authentic MIDI music synthesis and digital sound effect reproduction"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Faithful reproduction of Tamriel's vast procedural wilderness, cities, and dungeons"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "MIT",
+      "developer": {
+        "name": "Alexander Fritz",
+        "url": "https://github.com/afritz1"
+      },
+      "homepage": "https://github.com/afritz1/OpenTESArena",
+      "repository": "https://github.com/afritz1/OpenTESArena",
+      "keywords": [
+        "opentesarena",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "RolePlaying"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opentesarena.png",
+      "screenshots": [
+        {
+          "caption": "OpenTESArena interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenTESArena-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

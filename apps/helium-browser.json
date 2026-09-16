@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "net.imput.helium",
+      "name": "Helium Browser",
+      "summary": "Privacy-focused and de-Googled web browser built on top of Chromium",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Helium is an open-source web browser engineered with an emphasis on privacy, minimalism, and speed. Built upon the Chromium foundation, it removes background tracking and Google telemetry."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It delivers a fast web browsing experience with enhanced privacy defaults, ad-blocking compatibility, and support for modern web standards."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive removal of proprietary telemetry and Google integration services"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native Chromium rendering engine delivering modern HTML5 and CSS3 compatibility"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for standard Chrome Web Store extensions and add-ons"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in privacy enhancements including strict cookie isolation and tracking protection"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lightweight resource consumption with optimized tab management"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "imputnet",
+        "url": "https://imput.net"
+      },
+      "homepage": "https://github.com/imputnet/helium-linux",
+      "repository": "https://github.com/imputnet/helium-linux",
+      "keywords": [
+        "helium-browser",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Network",
+        "WebBrowser"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/helium-browser.png",
+      "screenshots": [
+        {
+          "caption": "Helium Browser interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Helium-Browser-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

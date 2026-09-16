@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.dingusdev.dingusppc",
+      "name": "DingusPPC",
+      "summary": "Experimental PowerPC Macintosh emulator supporting classic Mac hardware models",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DingusPPC is an experimental open-source emulator targeting PowerPC-based Macintosh computers. It focuses on emulating both Old World and New World Apple hardware platforms."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator accurately models core hardware components such as PowerPC 60x/750 CPUs, Open Firmware, custom Apple ASICs, and memory-mapped input/output subsystems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Emulation of PowerPC 603, 604, and G3 processors with architectural accuracy"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for classic Mac OS releases from System 7.5.3 up to Mac OS 9.2.2"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Detailed motherboard ASIC simulation including Heathrow, Paddington, and UniNorth"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Emulation of internal IDE, SCSI, ADB, and sound hardware controllers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform graphical interface with interactive debugging tools"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-or-later",
+      "developer": {
+        "name": "DingusPPC Developers",
+        "url": "https://github.com/dingusdev"
+      },
+      "homepage": "https://github.com/dingusdev/dingusppc",
+      "repository": "https://github.com/dingusdev/dingusppc",
+      "keywords": [
+        "dingusppc",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dingusppc.png",
+      "screenshots": [
+        {
+          "caption": "DingusPPC interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DingusPPC-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

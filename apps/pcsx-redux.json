@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.grumpycoders.pcsx_redux",
+      "name": "PCSX-Redux",
+      "summary": "Modern and modular PlayStation 1 (PSX) emulator for developers and players",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "PCSX-Redux is a modern rewrite and modular continuation of the PCSX PlayStation 1 emulator. It is engineered with a clean codebase for homebrew developers, reverse engineers, and retro gamers alike."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator incorporates an integrated disassembler, memory viewer, breakpoint engine, and modern graphics rendering options."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Modular core architecture with cycle-accurate MIPS R3000A CPU emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in interactive debugger, disassembler, memory hex editor, and symbol table"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern OpenGL and Vulkan hardware rendering with internal resolution scaling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate SPU audio synthesis and CD-ROM drive timing emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for standard PS1 controller peripherals, analogue joysticks, and memory cards"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "GrumpyCoders",
+        "url": "https://github.com/grumpycoders"
+      },
+      "homepage": "https://github.com/grumpycoders/pcsx-redux",
+      "repository": "https://github.com/grumpycoders/pcsx-redux",
+      "keywords": [
+        "pcsx-redux",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/pcsx-redux.png",
+      "screenshots": [
+        {
+          "caption": "PCSX-Redux interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/PCSX-Redux-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

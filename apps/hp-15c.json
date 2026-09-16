@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "de.hp_15c_simulator.hp15c",
+      "name": "HP-15C Simulator",
+      "summary": "Precise software simulation of the Hewlett-Packard HP-15C programmable scientific calculator",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "HP-15C Simulator is an authentic software reproduction of the classic Hewlett-Packard HP-15C programmable scientific pocket calculator from the 1980s. It emulates the authentic microprocessor behavior and microcode algorithms."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It accurately reproduces Reverse Polish Notation (RPN), matrix math operations, complex number arithmetic, numerical integration, and keystroke programming."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Authentic LCD display rendering with original segment layout and status flags"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Four-level Reverse Polish Notation (RPN) stack evaluation model"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full matrix algebra operations and complex number arithmetic functions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Keystroke macro programming with conditional branching and memory registers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Persistent state memory preserving registers and programs across application restarts"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Torsten Manz",
+        "url": "https://hp-15c.homepage.t-online.de"
+      },
+      "homepage": "https://hp-15c.homepage.t-online.de",
+      "repository": "https://github.com/pkgforge-dev/HP-15C-Simulator-AppImage",
+      "keywords": [
+        "hp-15c",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility",
+        "Calculator",
+        "Science"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/hp-15c.png",
+      "screenshots": [
+        {
+          "caption": "HP-15C Simulator interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/HP-15C-Simulator-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

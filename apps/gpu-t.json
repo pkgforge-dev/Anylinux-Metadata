@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.lseurttyuu.gpu_t",
+      "name": "GPU-T",
+      "summary": "Comprehensive graphics card information and telemetry utility for Linux",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "GPU-T is a hardware monitoring and telemetry utility for graphics processing units on Linux. Developed by lseurttyuu, it delivers real-time information regarding GPU performance metrics."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The tool inspects clock speeds, memory allocation, operating temperatures, power consumption, and fan speeds across NVIDIA, AMD, and Intel graphics hardware."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Real-time monitoring of GPU core clocks, memory frequencies, and utilization"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive telemetry tracking temperature sensors, power wattage, and fan RPM"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad hardware support across NVIDIA, AMD Radeon, and Intel Arc/Xe architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean user interface displaying hardware specifications and driver versions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Minimal system resource consumption during active background monitoring"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "lseurttyuu",
+        "url": "https://github.com/lseurttyuu"
+      },
+      "homepage": "https://github.com/lseurttyuu/GPU-T",
+      "repository": "https://github.com/lseurttyuu/GPU-T",
+      "keywords": [
+        "gpu-t",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "HardwareSettings",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gpu-t.png",
+      "screenshots": [
+        {
+          "caption": "GPU-T interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "lseurttyuu/GPU-T"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

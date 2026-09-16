@@ -1,0 +1,116 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.chipass.ChiPass",
+      "name": "ChiPass",
+      "summary": "Secure cross-platform password manager with desktop and browser integration built on Qt6",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ChiPass is a modern, lightweight password and personal credential manager built with Qt6. A modernized fork of KeePassXC, it delivers a secure environment for encrypted database storage."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It features strict local encryption, KeePass database compatibility, auto-type capabilities, and browser integration while maintaining low system resource usage."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with KeePass KDBX4 database encryption standards"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated AES-256 and ChaCha20 cryptographic primitives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern and clean Qt6 desktop user interface with light and dark themes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated secure password generator with customizable entropy rules"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Time-based one-time password (TOTP) generator and authenticator support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ChiPass Team",
+        "url": "https://codeberg.org/ChiPass/ChiPass"
+      },
+      "homepage": "https://codeberg.org/ChiPass/ChiPass",
+      "repository": "https://codeberg.org/ChiPass/ChiPass",
+      "keywords": [
+        "chipass",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility",
+        "Security"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/chipass.png",
+      "screenshots": [
+        {
+          "caption": "ChiPass interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ChiPass-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

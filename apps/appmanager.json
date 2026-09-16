@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.github.AppManager",
+      "name": "AppManager",
+      "summary": "Install and uninstall AppImage applications via drag and drop with desktop integration",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "AppManager is a desktop utility designed to make AppImage package management effortless. Developed by kem-a, it integrates AppImage files with system desktop environments through simple drag-and-drop operations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application handles sandbox permission management, desktop entry generation, icon registration, and clean uninstallation of AppImage packages."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Drag-and-drop installation and removal for all standard AppImage packages"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic desktop entry generation and high-resolution icon registration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Application metadata inspection including architecture and dependencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Clean uninstallation removing application data, caches, and system shortcuts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native GTK interface styled cleanly for modern Linux desktop environments"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "kem-a",
+        "url": "https://github.com/kem-a"
+      },
+      "homepage": "https://github.com/kem-a/AppManager",
+      "repository": "https://github.com/kem-a/AppManager",
+      "keywords": [
+        "appmanager",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Utility",
+        "System",
+        "PackageManager"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/appmanager.png",
+      "screenshots": [
+        {
+          "caption": "AppManager interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "kem-a/AppManager"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

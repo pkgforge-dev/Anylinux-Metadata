@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "chat.stoat.StoatDesktop",
+      "name": "Stoat",
+      "summary": "Open source, user-first chat platform for messaging, voice channels, and communities",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Stoat is an open-source, user-first desktop chat and collaboration application developed by Revolt Platforms. It provides a customizable communication hub for communities, friends, and teams."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The client supports rich text messaging, customizable server roles, direct messages, and group voice channels without tracking or selling user data."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "End-to-end user privacy without advertising, data harvesting, or tracking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Rich text chat with Markdown rendering, file sharing, and custom emoji reactions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity voice channels with low-latency audio transmission"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Community server structure with flexible permissions and granular role management"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native desktop client with system tray integration and configurable notifications"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "AGPL-3.0-or-later",
+      "developer": {
+        "name": "Revolt Platforms Ltd",
+        "url": "https://stoat.chat"
+      },
+      "homepage": "https://stoat.chat",
+      "repository": "https://github.com/stoatchat/for-desktop",
+      "keywords": [
+        "stoat",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Network",
+        "InstantMessaging",
+        "Chat"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/stoat.png",
+      "screenshots": [
+        {
+          "caption": "Stoat interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "stoatchat/for-desktop"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.tomharte.clk",
+      "name": "Clock Signal",
+      "summary": "Static and runtime analysis emulator of 8-bit and 16-bit classic computer platforms",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Clock Signal (CLK) is an accurate emulator for vintage 8-bit and 16-bit personal computer architectures. It prioritizes cycle-accurate timing and cycle-by-cycle bus synchronization."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "CLK emulates a wide range of platforms including the Commodore Amiga, Atari ST, Acorn Electron, Amstrad CPC, Sinclair ZX80/ZX81, Apple II, and Oric systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Cycle-accurate emulation for complex historical multi-chip computer systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for Commodore Amiga, Atari ST, Apple II, ZX Spectrum, and MSX architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Real-time audio synthesis modeling analog filtering and sound chip characteristics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-fidelity CRT shader simulation capturing scanlines, phosphor decay, and beam dynamics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic disk, cassette, and cartridge media identification and execution"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "MIT",
+      "developer": {
+        "name": "Tom Harte",
+        "url": "https://github.com/TomHarte"
+      },
+      "homepage": "https://github.com/TomHarte/CLK",
+      "repository": "https://github.com/TomHarte/CLK",
+      "keywords": [
+        "clock-signal",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/clock-signal.png",
+      "screenshots": [
+        {
+          "caption": "Clock Signal interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/CLK-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.citron_emu.citron",
+      "name": "Citron Neo",
+      "summary": "Experimental Nintendo Switch emulator focusing on performance and compatibility",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Citron Neo is an open-source experimental emulator for the Nintendo Switch console. Built by community contributors, it focuses on enhancing graphics pipeline performance, shader compilation speed, and game compatibility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator incorporates Vulkan and OpenGL renderers, multi-threaded CPU emulation, and customizable controller mappings."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-performance Vulkan graphics backend with asynchronous shader compilation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multi-core CPU scheduling supporting ARM64 dynamic binary translation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for modern gamepad controllers with motion sensor emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable resolution scaling, anisotropic filtering, and anti-aliasing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Save state management and profile handling for multiple game libraries"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Citron Team",
+        "url": "https://github.com/citron-neo"
+      },
+      "homepage": "https://github.com/citron-neo",
+      "repository": "https://github.com/citron-neo/citron",
+      "keywords": [
+        "citron-neo",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/citron-neo.png",
+      "screenshots": [
+        {
+          "caption": "Citron Neo interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "citron-neo/citron"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.evilsocket.opensnitch",
+      "name": "OpenSnitch",
+      "summary": "GNU/Linux application firewall providing real-time outbound connection alerts and rule management",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenSnitch is a port of the Little Snitch application firewall for GNU/Linux systems. Developed initially by Simone Margaritelli, it monitors system network activity and prompts the user whenever an application attempts to make an outbound connection."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It features a background daemon utilizing eBPF and NFQUEUE kernel primitives paired with a desktop GUI for managing persistent firewall filtering rules."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Interactive real-time desktop popups to allow or deny outbound network connections"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fine-grained filtering rules based on process path, destination domain, port, or protocol"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern graphical management console with live connection telemetry and statistics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "eBPF and NFQUEUE kernel integration for high-performance packet inspection"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Exportable rule sets and configurable default block or allow fallback policies"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Simone Margaritelli",
+        "url": "https://github.com/evilsocket"
+      },
+      "homepage": "https://github.com/evilsocket/opensnitch",
+      "repository": "https://github.com/evilsocket/opensnitch",
+      "keywords": [
+        "opensnitch",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "System",
+        "Security",
+        "Network"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opensnitch.png",
+      "screenshots": [
+        {
+          "caption": "OpenSnitch interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenSnitch-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.trevorbayless.cli_chess",
+      "name": "cli-chess",
+      "summary": "Highly customizable terminal chess client supporting online play via Lichess and offline AI",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "cli-chess is a terminal-based chess client written by Trevor Bayless. Designed for chess enthusiasts who prefer working in command-line environments, it provides board rendering and move validation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The client supports online multiplayer games through the official Lichess.org API, local matches, and single-player practice against the Fairy-Stockfish chess engine."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full integration with Lichess.org for online rated and casual chess games"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Offline play against the powerful Fairy-Stockfish engine with adjustable difficulty"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for all standard Lichess variants including Chess960, Crazyhouse, and King of the Hill"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable Unicode piece sets, board colors, and coordinate layouts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "PGN game notation export and move history inspection in terminal"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "MIT",
+      "developer": {
+        "name": "Trevor Bayless",
+        "url": "https://github.com/trevorbayless"
+      },
+      "homepage": "https://github.com/trevorbayless/cli-chess",
+      "repository": "https://github.com/trevorbayless/cli-chess",
+      "keywords": [
+        "cli-chess",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "BoardGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cli-chess.png",
+      "screenshots": [
+        {
+          "caption": "cli-chess interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "trevorbayless/cli-chess"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

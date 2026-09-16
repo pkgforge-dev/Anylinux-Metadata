@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.ghostscript.ghostscript",
+      "name": "Ghostscript",
+      "summary": "Interpreter for PostScript language and Portable Document Format (PDF) files",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Ghostscript is a high-performance interpreter for the PostScript page description language and PDF document format. Developed by Artifex Software, it powers document printing and conversion systems globally."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It provides rasterization, vector rendering, color management, format conversion, and print workflow processing for Unix and Linux environments."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive PostScript Level 1, 2, and 3 language interpretation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lossless and compressed PDF document rasterization and generation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-speed color space conversion and ICC profile management"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for diverse raster output formats including TIFF, JPEG, and PNG"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive command-line switches for automated enterprise document pipelines"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "AGPL-3.0-or-later",
+      "developer": {
+        "name": "Artifex Software",
+        "url": "https://artifex.com"
+      },
+      "homepage": "https://www.ghostscript.com",
+      "repository": "https://github.com/ArtifexSoftware/ghostpdl",
+      "keywords": [
+        "ghostscript",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Office",
+        "Publishing",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostscript.png",
+      "screenshots": [
+        {
+          "caption": "Ghostscript interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Ghostscript-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.rainchus.donkeykong64recomp",
+      "name": "Donkey Kong 64 Recompiled",
+      "summary": "Native PC port of Donkey Kong 64 created using static recompilation",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Donkey Kong 64 Recompiled is a native PC port of Rare's classic Nintendo 64 3D platformer Donkey Kong 64. Using static binary recompilation, it translates the N64 game code directly into native instructions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port provides fluid gameplay across all five playable Kongs with high framerates, widescreen support, modern camera controls, and instant world streaming."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native desktop binary execution delivering high framerates without emulation lag"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for true widescreen, ultra-widescreen, and high-DPI displays"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern dual-analog camera controls with customizable deadzones"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable quality-of-life options and seamless character swapping"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct gamepad input compatibility including rumble feedback support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Rainchus",
+        "url": "https://github.com/Rainchus"
+      },
+      "homepage": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled",
+      "repository": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled",
+      "keywords": [
+        "donkeykong64recomp",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame",
+        "AdventureGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/donkeykong64recomp.png",
+      "screenshots": [
+        {
+          "caption": "Donkey Kong 64 Recompiled interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DonkeyKong64Recomp-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

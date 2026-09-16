@@ -1,0 +1,117 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.vscodium.codium",
+      "name": "VSCodium",
+      "summary": "Community-driven, freely-licensed binary distribution of Microsoft Visual Studio Code",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "VSCodium is a community-driven, freely-licensed binary distribution of Microsoft's Visual Studio Code editor. The project provides clean binaries built directly from the vscode open-source repository without Microsoft telemetry, tracking, or proprietary licensing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It delivers full code editing capabilities including an integrated terminal, Git version control, syntax highlighting, and compatibility with the Open VSX extension marketplace."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Telemetry-free binary release of VS Code licensed under the MIT license"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full support for Open VSX extension registry providing thousands of developer tools"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "IntelliSense code completion, parameter hints, and smart refactoring tools"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated terminal, interactive debugger, and built-in Git version control"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive customization for keybindings, themes, snippets, and editor settings"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "MIT",
+      "developer": {
+        "name": "VSCodium Community",
+        "url": "https://vscodium.com"
+      },
+      "homepage": "https://vscodium.com",
+      "repository": "https://github.com/VSCodium/vscodium",
+      "keywords": [
+        "vscodium",
+        "appimage",
+        "anylinux"
+      ],
+      "categories": [
+        "Development",
+        "IDE",
+        "TextEditor"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/vscodium.png",
+      "screenshots": [
+        {
+          "caption": "VSCodium interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-16",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "VSCodium/vscodium"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}
