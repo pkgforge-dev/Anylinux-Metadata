@@ -30,19 +30,19 @@
 
   // Category Colors Palette for SVG Avatars
   const CATEGORY_COLORS = {
-    Utility: '#0284c7',
-    System: '#059669',
-    Development: '#7c3aed',
-    Game: '#d97706',
-    ActionGame: '#ea580c',
-    Emulator: '#6366f1',
-    AudioVideo: '#db2777',
-    Graphics: '#0891b2',
-    Network: '#2563eb',
-    Office: '#4f46e5',
-    Science: '#0d9488',
-    Education: '#ea580c',
-    Settings: '#64748b'
+    Utility: '#467d21',
+    System: '#2e6b30',
+    Development: '#3b6978',
+    Game: '#b45309',
+    ActionGame: '#b95000',
+    Emulator: '#5b5ea6',
+    AudioVideo: '#8e4a68',
+    Graphics: '#2a7e72',
+    Network: '#2563a6',
+    Office: '#4a5568',
+    Science: '#1e7b68',
+    Education: '#a16207',
+    Settings: '#525b68'
   };
 
   // --- Multi-Tier Icon Fallback Engine ---
@@ -74,7 +74,7 @@
     // Final Tier: Generate deterministic high-contrast SVG Avatar with app initial
     img.onerror = null;
     const initial = (name || slug || '?').trim().charAt(0).toUpperCase();
-    const bg = CATEGORY_COLORS[category] || '#2563eb';
+    const bg = CATEGORY_COLORS[category] || '#467d21';
     img.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" rx="12" fill="${encodeURIComponent(bg)}"/><text x="32" y="41" fill="white" font-family="system-ui,-apple-system,sans-serif" font-size="28" font-weight="bold" text-anchor="middle">${encodeURIComponent(initial)}</text></svg>`;
   };
 
