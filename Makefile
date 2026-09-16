@@ -57,8 +57,8 @@ schema:
 	fi
 
 clean:
-	@rm -rf dist .cache
-	@echo "Cleaned build and cache artifacts."
+	@rm -rf dist .cache web/catalog.json web/status.json web/catalog-data.js web/icons
+	@echo "Cleaned build, cache, and generated web artifacts."
 
 help:
 	@echo "AnyLinux Metadata Build Targets:"

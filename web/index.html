@@ -334,7 +334,7 @@
               <div class="icon-input-wrapper">
                 <input type="url" id="iconUrl" placeholder="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png">
                 <div class="icon-tester" id="iconTesterStatus">
-                  <img id="iconTestImg" src="" alt="Icon" style="display: none;">
+                  <img id="iconTestImg" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><rect width='32' height='32' fill='%231a253c'/></svg>" alt="Icon Preview" style="display: none;">
                   <span id="iconTestLabel">Checking...</span>
                 </div>
               </div>
@@ -469,7 +469,7 @@
             <div class="sub-panel active" id="subpanel-store-view">
               <div class="mock-store-card">
                 <div class="mock-header">
-                  <img id="storeMockIcon" src="" alt="App Icon" class="mock-icon" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' fill=\'%23334155\'><rect width=\'64\' height=\'64\' fill=\'%231e293b\'/><text x=\'32\' y=\'38\' fill=\'white\' font-family=\'sans-serif\' font-size=\'22\' text-anchor=\'middle\'>?</text></svg>'">
+                  <img id="storeMockIcon" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect width='64' height='64' rx='12' fill='%231a253c'/><text x='32' y='39' fill='%2338bdf8' font-family='sans-serif' font-size='24' font-weight='bold' text-anchor='middle'>A</text></svg>" alt="App Icon" class="mock-icon">
                   <div class="mock-identity">
                     <h4 id="storeMockName">Application Name</h4>
                     <span class="mock-id" id="storeMockId">io.github.owner.app</span>
@@ -592,6 +592,7 @@
   <!-- Toast Notification Container -->
   <div class="toast-container" id="toastContainer"></div>
 
+  <script src="catalog-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

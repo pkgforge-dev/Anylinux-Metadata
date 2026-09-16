@@ -1,4 +1,4 @@
-import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
+import { readdir, readFile, writeFile, mkdir, copyFile } from "node:fs/promises";
 import { resolve, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 import { gzipSync } from "node:zlib";
@@ -112,12 +112,21 @@ async function exportCatalog() {
   await writeFile(resolve(webDir, "catalog.json"), catalogStr);
   console.log(`Generated dist/catalog.json and web/catalog.json (${(Buffer.byteLength(catalogStr) / 1024).toFixed(1)} KB)`);
 
+  let statusContent = "{}";
   const statusPath = resolve(currentDir, "../status.json");
   try {
-    const statusContent = await readFile(statusPath, "utf8");
+    statusContent = await readFile(statusPath, "utf8");
     await writeFile(resolve(distDir, "status.json"), statusContent);
     await writeFile(resolve(webDir, "status.json"), statusContent);
   } catch {}
+
+  const catalogDataJs = `// Auto-generated offline data bundle for AnyLinux Metadata Portal
+window.__ANYLINUX_CATALOG__ = ${JSON.stringify(catalogJson)};
+window.__ANYLINUX_STATUS__ = ${statusContent};
+`;
+  await writeFile(resolve(distDir, "catalog-data.js"), catalogDataJs);
+  await writeFile(resolve(webDir, "catalog-data.js"), catalogDataJs);
+  console.log(`Generated dist/catalog-data.js and web/catalog-data.js`);
 
   // 2. Write dist/appstream.xml & dist/appstream.xml.gz
   const appstreamXml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -128,6 +137,23 @@ ${xmlComponents}</components>
   const compressed = gzipSync(Buffer.from(appstreamXml, "utf8"));
   await writeFile(resolve(distDir, "appstream.xml.gz"), compressed);
   console.log(`Generated dist/appstream.xml and dist/appstream.xml.gz (${(compressed.length / 1024).toFixed(1)} KB compressed)`);
+
+  // 3. Copy icon assets to dist/icons and web/icons
+  const iconsSrcDir = resolve(currentDir, "../icons");
+  const distIconsDir = resolve(distDir, "icons");
+  const webIconsDir = resolve(webDir, "icons");
+  await mkdir(distIconsDir, { recursive: true });
+  await mkdir(webIconsDir, { recursive: true });
+  const iconFiles = await readdir(iconsSrcDir);
+  let iconCount = 0;
+  for (const ic of iconFiles) {
+    if (ic.endsWith(".png") || ic.endsWith(".svg")) {
+      await copyFile(resolve(iconsSrcDir, ic), resolve(distIconsDir, ic));
+      await copyFile(resolve(iconsSrcDir, ic), resolve(webIconsDir, ic));
+      iconCount++;
+    }
+  }
+  console.log(`Copied ${iconCount} icons to dist/icons and web/icons`);
 }
 
 exportCatalog().catch((err) => {

@@ -1,5 +1,5 @@
 // AnyLinux Metadata Portal Application Logic
-// Dual-runtime and browser compatible, zero emojis, high-productivity engineering suite.
+// Production-grade, zero emojis, resilient across file://, localhost, and GitHub Pages.
 
 (function () {
   'use strict';
@@ -15,12 +15,7 @@
     'Native desktop integration with tabs, splits, and custom fonts',
     'Low memory footprint and clean cross-platform configuration'
   ];
-  let screenshotItems = [
-    {
-      source: 'https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png',
-      caption: 'Ghostty terminal window'
-    }
-  ];
+  let screenshotItems = [];
 
   // SVG Icons
   const ICONS = {
@@ -32,6 +27,80 @@
     copy: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>',
     eye: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>'
   };
+
+  // Category Colors Palette for SVG Avatars
+  const CATEGORY_COLORS = {
+    Utility: '#0284c7',
+    System: '#059669',
+    Development: '#7c3aed',
+    Game: '#d97706',
+    ActionGame: '#ea580c',
+    Emulator: '#6366f1',
+    AudioVideo: '#db2777',
+    Graphics: '#0891b2',
+    Network: '#2563eb',
+    Office: '#4f46e5',
+    Science: '#0d9488',
+    Education: '#ea580c',
+    Settings: '#64748b'
+  };
+
+  // --- Multi-Tier Icon Fallback Engine ---
+  window.handleIconError = function (img, slug, name, category) {
+    if (!slug) slug = 'app';
+    const cleanSlug = slug.toLowerCase().replace(/[^a-z0-9-]/g, '');
+
+    // Tier 1: Try Portable-Linux-Apps raw GitHub CDN (verified live HTTP 200)
+    if (!img.dataset.triedPla) {
+      img.dataset.triedPla = 'true';
+      img.src = `https://raw.githubusercontent.com/Portable-Linux-Apps/Portable-Linux-Apps.github.io/main/icons/${cleanSlug}.png`;
+      return;
+    }
+
+    // Tier 2: Try AnyLinux raw GitHub
+    if (!img.dataset.triedAnylinux) {
+      img.dataset.triedAnylinux = 'true';
+      img.src = `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${cleanSlug}.png`;
+      return;
+    }
+
+    // Tier 3: Try parent relative path if served from subfolder
+    if (!img.dataset.triedParent) {
+      img.dataset.triedParent = 'true';
+      img.src = `../icons/${cleanSlug}.png`;
+      return;
+    }
+
+    // Final Tier: Generate deterministic high-contrast SVG Avatar with app initial
+    img.onerror = null;
+    const initial = (name || slug || '?').trim().charAt(0).toUpperCase();
+    const bg = CATEGORY_COLORS[category] || '#2563eb';
+    img.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" rx="12" fill="${encodeURIComponent(bg)}"/><text x="32" y="41" fill="white" font-family="system-ui,-apple-system,sans-serif" font-size="28" font-weight="bold" text-anchor="middle">${encodeURIComponent(initial)}</text></svg>`;
+  };
+
+  function getPrimaryIconUrl(slug) {
+    const cleanSlug = (slug || 'app').toLowerCase().replace(/[^a-z0-9-]/g, '');
+    return `icons/${cleanSlug}.png`;
+  }
+
+  // --- Clipboard Helper with Insecure / File Fallback ---
+  function copyTextToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try {
+      document.execCommand('copy');
+    } catch (err) {}
+    document.body.removeChild(ta);
+    return Promise.resolve();
+  }
 
   // --- DOM Elements ---
   const navTabs = document.querySelectorAll('.nav-tab');
@@ -153,7 +222,7 @@
       toast.style.transform = 'translateY(10px)';
       toast.style.transition = 'all 0.3s ease';
       setTimeout(() => toast.remove(), 300);
-    }, 3000);
+    }, 3200);
   }
 
   // --- Tab Navigation ---
@@ -161,14 +230,12 @@
     navTabs.forEach((t) => t.classList.toggle('active', t.dataset.tab === tabId));
     tabPanels.forEach((p) => p.classList.toggle('active', p.id === `panel-${tabId}`));
     window.location.hash = tabId;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   navTabs.forEach((tab) => {
     tab.addEventListener('click', () => switchTab(tab.dataset.tab));
   });
 
-  // Handle hash change on load
   function handleHashNavigation() {
     const hash = window.location.hash.replace('#', '') || 'catalog';
     if (['catalog', 'backlog', 'studio', 'validator'].includes(hash)) {
@@ -178,57 +245,62 @@
 
   // --- Data Loading ---
   async function loadData() {
-    // 1. Fetch catalog.json
-    const catalogUrls = [
-      'catalog.json',
-      '../dist/catalog.json',
-      'https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/dist/catalog.json'
-    ];
-
-    for (const url of catalogUrls) {
-      try {
-        const res = await fetch(url);
-        if (res.ok) {
-          const json = await res.json();
-          catalogData = json.apps || {};
-          catalogList = Object.entries(catalogData).map(([slug, app]) => ({ slug, ...app }));
-          break;
-        }
-      } catch {}
+    // 1. Check synchronous offline bundle first (instant execution, zero network wait)
+    if (window.__ANYLINUX_CATALOG__ && window.__ANYLINUX_CATALOG__.apps) {
+      catalogData = window.__ANYLINUX_CATALOG__.apps;
+      catalogList = Object.entries(catalogData).map(([slug, app]) => ({ slug, ...app }));
     }
 
-    // 2. Fetch status.json
-    const statusUrls = [
-      'status.json',
-      '../status.json',
-      'https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/status.json'
-    ];
-
-    for (const url of statusUrls) {
-      try {
-        const res = await fetch(url);
-        if (res.ok) {
-          statusData = await res.json();
-          break;
-        }
-      } catch {}
+    if (window.__ANYLINUX_STATUS__ && Array.isArray(window.__ANYLINUX_STATUS__.pending)) {
+      statusData = window.__ANYLINUX_STATUS__;
     }
 
-    // Populate Metrics
+    // Refresh UI immediately from bundle
+    if (catalogList.length > 0) {
+      refreshAllViews();
+    }
+
+    // 2. Asynchronous fetch if running on HTTP / HTTPS to catch any live updates
+    if (window.location.protocol.startsWith('http')) {
+      const catalogUrls = ['catalog.json', '../dist/catalog.json'];
+      for (const url of catalogUrls) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            const json = await res.json();
+            if (json.apps && Object.keys(json.apps).length > 0) {
+              catalogData = json.apps;
+              catalogList = Object.entries(catalogData).map(([slug, app]) => ({ slug, ...app }));
+              break;
+            }
+          }
+        } catch {}
+      }
+
+      const statusUrls = ['status.json', '../status.json'];
+      for (const url of statusUrls) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            statusData = await res.json();
+            break;
+          }
+        } catch {}
+      }
+
+      refreshAllViews();
+    }
+  }
+
+  function refreshAllViews() {
     updateMetricsUI();
-
-    // Populate Catalog Explorer
+    populateCategoryFilter();
     renderCatalogGrid();
-
-    // Populate Backlog
     renderBacklogTable();
-
-    // Populate Studio Templates dropdown
     populateTemplateDropdown();
 
-    // Initialize Studio with default app (Ghostty) or first available
-    if (catalogData['ghostty']) {
-      loadAppIntoStudio('ghostty');
+    if (catalogData[currentSlug]) {
+      loadAppIntoStudio(currentSlug);
     } else if (catalogList.length > 0) {
       loadAppIntoStudio(catalogList[0].slug);
     }
@@ -250,6 +322,27 @@
 
     catalogCountBadge.innerText = completedCount;
     backlogCountBadge.innerText = pendingCount;
+  }
+
+  function populateCategoryFilter() {
+    const counts = {};
+    catalogList.forEach((item) => {
+      const cat = item.appstream?.metadata?.categories?.[0] || 'Utility';
+      counts[cat] = (counts[cat] || 0) + 1;
+    });
+
+    const currentVal = catalogCategoryFilterEl.value;
+    catalogCategoryFilterEl.innerHTML = '<option value="all">All Categories</option>';
+    const sortedCats = Object.keys(counts).sort();
+    sortedCats.forEach((cat) => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.innerText = `${cat} (${counts[cat]})`;
+      catalogCategoryFilterEl.appendChild(opt);
+    });
+    if (counts[currentVal]) {
+      catalogCategoryFilterEl.value = currentVal;
+    }
   }
 
   // --- Catalog Explorer Rendering ---
@@ -312,21 +405,19 @@
 
     filtered.forEach((item) => {
       const meta = item.appstream?.metadata || {};
-      const media = item.appstream?.media || {};
       const release = item.releaseSource || {};
       const sandbox = item.sandbox || {};
+      const mainCategory = meta.categories?.[0] || 'Utility';
+      const license = meta.projectLicense || 'Unknown';
+      const iconSrc = getPrimaryIconUrl(item.slug);
 
       const card = document.createElement('div');
       card.className = 'app-card';
       card.dataset.slug = item.slug;
 
-      const mainCategory = meta.categories?.[0] || 'Utility';
-      const license = meta.projectLicense || 'Unknown';
-      const iconUrl = media.icon || `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${item.slug}.png`;
-
       card.innerHTML = `
         <div class="app-card-head">
-          <img class="app-card-icon" src="${escapeHtml(iconUrl)}" alt="${escapeHtml(meta.name || item.slug)}" loading="lazy" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'52\\' height=\\'52\\'><rect width=\\'52\\' height=\\'52\\' fill=\\'%231a253c\\'/><text x=\\'26\\' y=\\'32\\' fill=\\'white\\' font-family=\\'sans-serif\\' font-size=\\'20\\' text-anchor=\\'middle\\'>?</text></svg>'">
+          <img class="app-card-icon" src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || item.slug)}" loading="lazy" onerror="handleIconError(this, '${escapeHtml(item.slug)}', '${escapeAttr(meta.name || item.slug)}', '${escapeAttr(mainCategory)}')">
           <div class="app-card-info">
             <div class="app-card-title">${escapeHtml(meta.name || item.slug)}</div>
             <div class="app-card-id">${escapeHtml(meta.id || item.slug)}</div>
@@ -352,7 +443,6 @@
         </div>
       `;
 
-      // Event handlers
       card.querySelector('.btn-card-inspect').addEventListener('click', (e) => {
         e.stopPropagation();
         openAppDetailModal(item.slug);
@@ -366,7 +456,7 @@
 
       card.querySelector('.btn-card-copy').addEventListener('click', (e) => {
         e.stopPropagation();
-        navigator.clipboard.writeText(JSON.stringify(item, null, 2));
+        copyTextToClipboard(JSON.stringify(item, null, 2));
         showToast(`Copied ${meta.name || item.slug} manifest to clipboard`, 'success');
       });
 
@@ -378,13 +468,21 @@
     });
   }
 
-  // Catalog Filter Listeners
   catalogSearchEl.addEventListener('input', renderCatalogGrid);
   catalogCategoryFilterEl.addEventListener('change', renderCatalogGrid);
   catalogSortFilterEl.addEventListener('change', renderCatalogGrid);
   catalogSearchClearEl.addEventListener('click', () => {
     catalogSearchEl.value = '';
     renderCatalogGrid();
+  });
+
+  // Global search shortcut (press "/" to search catalog)
+  window.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+      e.preventDefault();
+      switchTab('catalog');
+      catalogSearchEl.focus();
+    }
   });
 
   // --- Detail Modal ---
@@ -396,6 +494,8 @@
     const media = app.appstream?.media || {};
     const sandbox = app.sandbox || {};
     const release = app.releaseSource || {};
+    const mainCategory = meta.categories?.[0] || 'Utility';
+    const iconSrc = getPrimaryIconUrl(slug);
 
     let descHtml = '';
     if (Array.isArray(meta.description)) {
@@ -413,16 +513,20 @@
     }
 
     let screenshotsHtml = '';
-    if (media.screenshots && media.screenshots.length > 0) {
+    const validScreenshots = Array.isArray(media.screenshots)
+      ? media.screenshots.filter((s) => s && s.source && s.source.startsWith('http'))
+      : [];
+
+    if (validScreenshots.length > 0) {
       screenshotsHtml = `
         <div style="margin: 1.5rem 0;">
           <h4 style="font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-main);">Screenshots</h4>
           <div style="display: flex; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.5rem;">
-            ${media.screenshots
+            ${validScreenshots
               .map(
                 (ss) => `
               <div style="flex-shrink: 0; text-align: center;">
-                <img src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" style="height: 140px; border-radius: 6px; border: 1px solid var(--border); object-fit: cover;">
+                <img src="${escapeHtml(ss.source)}" alt="${escapeHtml(ss.caption || '')}" style="height: 140px; border-radius: 6px; border: 1px solid var(--border); object-fit: cover;" onerror="this.parentElement.style.display='none'">
                 <div style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.25rem;">${escapeHtml(ss.caption || '')}</div>
               </div>
             `
@@ -435,7 +539,7 @@
 
     modalDetailContent.innerHTML = `
       <div style="display: flex; gap: 1.25rem; align-items: flex-start; margin-bottom: 1.5rem;">
-        <img src="${escapeHtml(media.icon || '')}" alt="${escapeHtml(meta.name || slug)}" style="width: 72px; height: 72px; border-radius: 12px; object-fit: cover; border: 1px solid var(--border); background: var(--surface-raised);" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'72\\' height=\\'72\\'><rect width=\\'72\\' height=\\'72\\' fill=\\'%231a253c\\'/><text x=\\'36\\' y=\\'44\\' fill=\\'white\\' font-family=\\'sans-serif\\' font-size=\\'28\\' text-anchor=\\'middle\\'>?</text></svg>'">
+        <img src="${escapeHtml(iconSrc)}" alt="${escapeHtml(meta.name || slug)}" style="width: 72px; height: 72px; border-radius: 12px; object-fit: cover; border: 1px solid var(--border); background: var(--surface-raised);" onerror="handleIconError(this, '${escapeHtml(slug)}', '${escapeAttr(meta.name || slug)}', '${escapeAttr(mainCategory)}')">
         <div style="flex: 1;">
           <h2 style="font-size: 1.4rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.2rem;">${escapeHtml(meta.name || slug)}</h2>
           <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary); margin-bottom: 0.5rem;">${escapeHtml(meta.id || slug)}</div>
@@ -444,7 +548,7 @@
       </div>
 
       <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
-        <span class="chip chip-category">${escapeHtml(meta.categories?.[0] || 'Utility')}</span>
+        <span class="chip chip-category">${escapeHtml(mainCategory)}</span>
         <span class="chip chip-license">${escapeHtml(meta.projectLicense || 'Unknown')}</span>
         ${meta.developer?.name ? `<span class="chip">Dev: ${escapeHtml(meta.developer.name)}</span>` : ''}
         ${app.addedAt ? `<span class="chip">Added: ${escapeHtml(app.addedAt)}</span>` : ''}
@@ -482,7 +586,7 @@
     `;
 
     document.getElementById('modalBtnCopyJson').addEventListener('click', () => {
-      navigator.clipboard.writeText(JSON.stringify(app, null, 2));
+      copyTextToClipboard(JSON.stringify(app, null, 2));
       showToast('Copied JSON manifest to clipboard', 'success');
     });
 
@@ -490,6 +594,7 @@
       appDetailModal.classList.remove('active');
       loadAppIntoStudio(slug);
       switchTab('studio');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     appDetailModal.classList.add('active');
@@ -524,7 +629,7 @@
     if (filtered.length === 0) {
       backlogTableBodyEl.innerHTML = `
         <tr>
-          <td colspan="4" style="text-align: center; padding: 2rem; color: var(--text-dim);">
+          <td colspan="4" style="text-align: center; padding: 2.5rem; color: var(--text-dim);">
             No pending applications match your search query.
           </td>
         </tr>
@@ -539,7 +644,7 @@
         <td><span class="slug-code">${escapeHtml(item.slug)}</span></td>
         <td><a href="https://github.com/${escapeHtml(item.repo)}" target="_blank" class="link-btn">${escapeHtml(item.repo)}</a></td>
         <td style="text-align: right;">
-          <button class="btn btn-sm btn-primary btn-claim-app" data-slug="${escapeHtml(item.slug)}" data-name="${escapeHtml(item.name)}" data-repo="${escapeHtml(item.repo)}">
+          <button class="btn btn-sm btn-primary btn-claim-app">
             ${ICONS.edit} Author Metadata
           </button>
         </td>
@@ -556,34 +661,47 @@
   backlogSearchEl.addEventListener('input', renderBacklogTable);
 
   function claimPendingAppForStudio(item) {
-    // Clear and prefill studio for pending app
     appNameEl.value = item.name;
-    appSlugEl.value = item.slug;
-    const cleanSlug = item.slug.replace(/[^a-z0-9]/g, '_');
-    appIdEl.value = `io.github.pkgforge_dev.${cleanSlug}`;
+    const cleanSlug = item.slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    appSlugEl.value = cleanSlug;
+    appSlugEl.dataset.customized = 'true';
+
+    const normSlug = cleanSlug.replace(/-/g, '_');
+    appIdEl.value = `io.github.pkgforge_dev.${normSlug}`;
+    appIdEl.dataset.customized = 'true';
+
     summaryEl.value = `${item.name} application for AnyLinux`;
     leadParagraphEl.value = `${item.name} is packaged as a standalone portable AppImage for AnyLinux.`;
-    featureBullets = ['Standalone dependency-free execution', 'Native desktop integration'];
-    keywordTags = [item.slug, 'appimage', 'anylinux'];
+    featureBullets = ['Standalone dependency-free portable execution', 'Desktop environment integration'];
+    keywordTags = [cleanSlug, 'appimage', 'anylinux'];
     releaseRepoEl.value = item.repo;
     devNameEl.value = `${item.name} Developers`;
     homepageEl.value = `https://github.com/${item.repo}`;
-    iconUrlEl.value = `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${item.slug}.png`;
-    screenshotItems = [{ source: 'https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png', caption: `${item.name} window` }];
+    iconUrlEl.value = `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${cleanSlug}.png`;
+    screenshotItems = [];
 
     renderBulletInputs();
     renderKeywordTags();
     renderScreenshotInputs();
     updateStudioManifest();
+    testIconDimension();
 
     switchTab('studio');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    summaryEl.focus();
     showToast(`Loaded ${item.name} into Studio. Complete the details to submit.`, 'info');
   }
 
   // --- Authoring Studio Logic ---
   function populateTemplateDropdown() {
     templateSelectEl.innerHTML = '<option value="">Select Existing App to Fork / Edit...</option>';
-    catalogList.forEach((item) => {
+    const sortedList = [...catalogList].sort((a, b) => {
+      const nameA = (a.appstream?.metadata?.name || a.slug).toLowerCase();
+      const nameB = (b.appstream?.metadata?.name || b.slug).toLowerCase();
+      return nameA.localeCompare(nameB);
+    });
+
+    sortedList.forEach((item) => {
       const opt = document.createElement('option');
       opt.value = item.slug;
       opt.innerText = `${item.appstream?.metadata?.name || item.slug} (${item.slug})`;
@@ -607,7 +725,9 @@
   function resetStudioForm() {
     appNameEl.value = '';
     appSlugEl.value = '';
+    delete appSlugEl.dataset.customized;
     appIdEl.value = '';
+    delete appIdEl.dataset.customized;
     summaryEl.value = '';
     leadParagraphEl.value = '';
     featureBullets = [];
@@ -626,6 +746,7 @@
     renderKeywordTags();
     renderScreenshotInputs();
     updateStudioManifest();
+    testIconDimension();
   }
 
   function loadAppIntoStudio(slug) {
@@ -642,7 +763,9 @@
 
     appNameEl.value = meta.name || slug;
     appSlugEl.value = slug;
+    appSlugEl.dataset.customized = 'true';
     appIdEl.value = meta.id || `io.github.pkgforge_dev.${slug.replace(/-/g, '_')}`;
+    appIdEl.dataset.customized = 'true';
     summaryEl.value = meta.summary || '';
 
     // Description AST
@@ -684,7 +807,7 @@
     iconUrlEl.value = media.icon || `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${slug}.png`;
     screenshotItems = Array.isArray(media.screenshots) && media.screenshots.length > 0
       ? JSON.parse(JSON.stringify(media.screenshots))
-      : [{ source: iconUrlEl.value, caption: `${meta.name || slug} window` }];
+      : [];
 
     // Sandbox
     sbNetworkEl.value = sandbox.network || 'full';
@@ -707,7 +830,7 @@
     testIconDimension();
   }
 
-  // Auto-slugify on app name change if slug not manually modified
+  // Auto-slugify on app name change
   appNameEl.addEventListener('input', () => {
     const name = appNameEl.value.trim();
     if (name && !appSlugEl.dataset.customized) {
@@ -724,11 +847,15 @@
       }
     }
     updateStudioManifest();
+    testIconDimension();
   });
 
+  // Automatically normalize slug characters
   appSlugEl.addEventListener('input', () => {
     appSlugEl.dataset.customized = 'true';
+    appSlugEl.value = appSlugEl.value.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/--+/g, '-');
     updateStudioManifest();
+    testIconDimension();
   });
 
   appIdEl.addEventListener('input', () => {
@@ -846,13 +973,16 @@
   }
 
   btnAddScreenshotEl.addEventListener('click', () => {
-    screenshotItems.push({ source: '', caption: 'Application screenshot' });
+    screenshotItems.push({ source: '', caption: 'Application window' });
     renderScreenshotInputs();
   });
 
   // Icon dimension tester
   function testIconDimension() {
+    const slug = appSlugEl.value.trim() || 'app';
+    const cleanSlug = slug.toLowerCase().replace(/[^a-z0-9-]/g, '');
     const url = iconUrlEl.value.trim();
+
     if (!url) {
       iconTestImgEl.style.display = 'none';
       iconTestLabelEl.innerText = 'No URL';
@@ -862,12 +992,16 @@
 
     iconTestLabelEl.innerText = 'Testing...';
     iconTestLabelEl.style.color = 'var(--text-muted)';
-    const img = new Image();
-    img.onload = function () {
-      iconTestImgEl.src = url;
+
+    // Check primary local icon or live fallback
+    const testImg = new Image();
+    const localSrc = `icons/${cleanSlug}.png`;
+
+    testImg.onload = function () {
+      iconTestImgEl.src = localSrc;
       iconTestImgEl.style.display = 'block';
-      const w = img.naturalWidth;
-      const h = img.naturalHeight;
+      const w = testImg.naturalWidth;
+      const h = testImg.naturalHeight;
       if (w >= 128 && h >= 128) {
         iconTestLabelEl.innerText = `${w}x${h} OK`;
         iconTestLabelEl.style.color = 'var(--success)';
@@ -876,15 +1010,29 @@
         iconTestLabelEl.style.color = 'var(--warning)';
       }
     };
-    img.onerror = function () {
-      iconTestImgEl.style.display = 'none';
-      iconTestLabelEl.innerText = 'Failed to load';
-      iconTestLabelEl.style.color = 'var(--danger)';
+
+    testImg.onerror = function () {
+      // Try upstream PLA
+      const plaImg = new Image();
+      plaImg.onload = function () {
+        iconTestImgEl.src = plaImg.src;
+        iconTestImgEl.style.display = 'block';
+        iconTestLabelEl.innerText = `${plaImg.naturalWidth}x${plaImg.naturalHeight} OK (PLA)`;
+        iconTestLabelEl.style.color = 'var(--success)';
+      };
+      plaImg.onerror = function () {
+        iconTestImgEl.style.display = 'none';
+        iconTestLabelEl.innerText = 'Pending asset';
+        iconTestLabelEl.style.color = 'var(--warning)';
+      };
+      plaImg.src = `https://raw.githubusercontent.com/Portable-Linux-Apps/Portable-Linux-Apps.github.io/main/icons/${cleanSlug}.png`;
     };
-    img.src = url;
+
+    testImg.src = localSrc;
   }
 
   iconUrlEl.addEventListener('input', () => {
+    iconUrlEl.dataset.customized = 'true';
     testIconDimension();
     updateStudioManifest();
   });
@@ -902,16 +1050,16 @@
 
   customLicenseInputEl.addEventListener('input', updateStudioManifest);
 
-  // General Form Inputs listeners
+  // Form input listeners
   [leadParagraphEl, categorySelectEl, devNameEl, homepageEl, releaseRepoEl, sbNetworkEl, sbDisplayEl, sbAudioEl, sbProcessesEl, devGpuEl, devInputEl, devKvmEl, devCameraEl, sbIpcEl].forEach((el) => {
     el.addEventListener('input', updateStudioManifest);
     el.addEventListener('change', updateStudioManifest);
   });
 
-  // Construct Manifest Object and Update Previews & Diagnostics
+  // Construct Manifest Object and Update Diagnostics & Previews
   function updateStudioManifest() {
     const name = appNameEl.value.trim() || 'Application Name';
-    const slug = appSlugEl.value.trim() || 'app-slug';
+    const slug = (appSlugEl.value.trim() || 'app-slug').toLowerCase();
     const appId = appIdEl.value.trim() || 'io.github.owner.app';
     let summary = summaryEl.value.trim() || 'Application summary sentence';
     const endsWithPeriod = summary.endsWith('.');
@@ -945,7 +1093,7 @@
     const iconUrl = iconUrlEl.value.trim() || `https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/${slug}.png`;
 
     const screenshots = screenshotItems
-      .filter((s) => s.source.trim())
+      .filter((s) => s.source && s.source.trim())
       .map((s, idx) => ({
         caption: s.caption.trim() || `${name} screenshot ${idx + 1}`,
         source: s.source.trim()
@@ -978,7 +1126,7 @@
         },
         media: {
           icon: iconUrl,
-          screenshots: screenshots.length > 0 ? screenshots : [{ caption: `${name} preview`, source: iconUrl }]
+          screenshots
         }
       },
       addedAt: new Date().toISOString().split('T')[0],
@@ -1045,7 +1193,12 @@
     storeMockCategoryEl.innerText = category;
     storeMockLicenseEl.innerText = license;
     storeMockRepoEl.innerText = releaseRepo;
-    storeMockIconEl.src = iconUrl;
+
+    // Use multi-tier icon for mock preview
+    storeMockIconEl.src = getPrimaryIconUrl(slug);
+    storeMockIconEl.onerror = function () {
+      window.handleIconError(storeMockIconEl, slug, name, category);
+    };
 
     let previewDescHtml = '';
     for (const b of descAst) {
@@ -1057,9 +1210,15 @@
     }
     storeMockDescEl.innerHTML = previewDescHtml;
 
-    storeMockGalleryEl.innerHTML = screenshots
-      .map((s) => `<img class="mock-thumb" src="${escapeHtml(s.source)}" alt="${escapeHtml(s.caption)}" title="${escapeHtml(s.caption)}" onerror="this.style.display='none'">`)
-      .join('');
+    if (screenshots.length > 0) {
+      storeMockGalleryEl.style.display = 'flex';
+      storeMockGalleryEl.innerHTML = screenshots
+        .map((s) => `<img class="mock-thumb" src="${escapeHtml(s.source)}" alt="${escapeHtml(s.caption)}" title="${escapeHtml(s.caption)}" onerror="this.style.display='none'">`)
+        .join('');
+    } else {
+      storeMockGalleryEl.style.display = 'none';
+      storeMockGalleryEl.innerHTML = '';
+    }
 
     storeMockNetworkEl.innerText = `Network: ${sbNetworkEl.value}`;
     storeMockDisplayEl.innerText = `Display: ${sbDisplayEl.value}`;
@@ -1075,7 +1234,7 @@
     return { manifest, isValid: failedCount === 0 };
   }
 
-  // Sub tabs (Store preview vs JSON code)
+  // Sub tabs
   subTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       subTabs.forEach((t) => t.classList.toggle('active', t === tab));
@@ -1088,7 +1247,7 @@
   // Action Buttons
   btnDownloadManifest.addEventListener('click', () => {
     const { manifest } = updateStudioManifest();
-    const slug = appSlugEl.value.trim() || 'app-manifest';
+    const slug = (appSlugEl.value.trim() || 'app-manifest').toLowerCase();
     const blob = new Blob([JSON.stringify(manifest, null, 2) + '\n'], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -1101,18 +1260,18 @@
 
   btnCopyJsonFull.addEventListener('click', () => {
     const { manifest } = updateStudioManifest();
-    navigator.clipboard.writeText(JSON.stringify(manifest, null, 2));
+    copyTextToClipboard(JSON.stringify(manifest, null, 2));
     showToast('Manifest copied to clipboard', 'success');
   });
 
   btnCopyJsonSnippet.addEventListener('click', () => {
     const { manifest } = updateStudioManifest();
-    navigator.clipboard.writeText(JSON.stringify(manifest, null, 2));
+    copyTextToClipboard(JSON.stringify(manifest, null, 2));
     showToast('Code copied to clipboard', 'success');
   });
 
   btnSubmitGitHubIssue.addEventListener('click', () => {
-    const { manifest, isValid } = updateStudioManifest();
+    const { manifest } = updateStudioManifest();
     const meta = manifest.appstream.metadata;
 
     const name = encodeURIComponent(meta.name);
@@ -1133,8 +1292,9 @@
     const repo = encodeURIComponent(manifest.releaseSource.repository);
     const icon = encodeURIComponent(manifest.appstream.media.icon);
     const screenshots = encodeURIComponent(manifest.appstream.media.screenshots.map((s) => s.source).join('\n'));
+    const title = encodeURIComponent(`feat(app): add metadata for ${meta.name}`);
 
-    const issueUrl = `https://github.com/pkgforge-dev/Anylinux-Metadata/issues/new?template=add-app.yml&name=${name}&slug=${slug}&app_id=${appId}&summary=${summary}&description=${desc}&license=${license}&main_category=${category}&developer_name=${dev}&homepage=${homepage}&release_repo=${repo}&icon_url=${icon}&screenshots=${screenshots}`;
+    const issueUrl = `https://github.com/pkgforge-dev/Anylinux-Metadata/issues/new?template=add-app.yml&title=${title}&name=${name}&slug=${slug}&app_id=${appId}&summary=${summary}&description=${desc}&license=${license}&main_category=${category}&developer_name=${dev}&homepage=${homepage}&release_repo=${repo}&icon_url=${icon}&screenshots=${screenshots}`;
     window.open(issueUrl, '_blank');
   });
 
@@ -1147,7 +1307,7 @@
     reader.onload = (evt) => {
       try {
         const parsed = JSON.parse(evt.target.result);
-        const slug = file.name.replace(/\.json$/i, '');
+        const slug = file.name.replace(/\.json$/i, '').toLowerCase();
         catalogData[slug] = parsed;
         loadAppIntoStudio(slug);
         showToast(`Loaded ${file.name} successfully`, 'success');
@@ -1271,10 +1431,15 @@
     }
   }
 
-  // Helper: HTML escaping
+  // --- HTML Escaping Helpers ---
   function escapeHtml(str) {
     if (!str) return '';
     return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  function escapeAttr(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g, '&amp;').replace(/'/g, "\\'").replace(/"/g, '&quot;');
   }
 
   // --- Initialize ---

@@ -7,6 +7,8 @@ dist/
 *.log
 web/catalog.json
 web/status.json
+web/icons
+web/catalog-data.js
 
 # OS metadata
 .DS_Store
