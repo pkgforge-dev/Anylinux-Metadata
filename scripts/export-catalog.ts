@@ -99,15 +99,25 @@ async function exportCatalog() {
     xmlComponents += `  </component>\n\n`;
   }
 
-  // 1. Write dist/catalog.json
+  // 1. Write dist/catalog.json and web/catalog.json
   const catalogJson = {
     version: "1.0.0",
     generatedAt: new Date().toISOString(),
     count: files.length,
     apps,
   };
-  await writeFile(resolve(distDir, "catalog.json"), JSON.stringify(catalogJson, null, 2) + "\n");
-  console.log(`Generated dist/catalog.json (${(Buffer.byteLength(JSON.stringify(catalogJson)) / 1024).toFixed(1)} KB)`);
+  const catalogStr = JSON.stringify(catalogJson, null, 2) + "\n";
+  await writeFile(resolve(distDir, "catalog.json"), catalogStr);
+  const webDir = resolve(currentDir, "../web");
+  await writeFile(resolve(webDir, "catalog.json"), catalogStr);
+  console.log(`Generated dist/catalog.json and web/catalog.json (${(Buffer.byteLength(catalogStr) / 1024).toFixed(1)} KB)`);
+
+  const statusPath = resolve(currentDir, "../status.json");
+  try {
+    const statusContent = await readFile(statusPath, "utf8");
+    await writeFile(resolve(distDir, "status.json"), statusContent);
+    await writeFile(resolve(webDir, "status.json"), statusContent);
+  } catch {}
 
   // 2. Write dist/appstream.xml & dist/appstream.xml.gz
   const appstreamXml = `<?xml version="1.0" encoding="UTF-8"?>

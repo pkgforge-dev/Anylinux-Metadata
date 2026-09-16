@@ -3,90 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AnyLinux Metadata Visual Editor</title>
+  <title>AnyLinux Metadata Portal | Freedesktop AppStream Registry</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Bar -->
   <header class="app-header">
-    <div class="header-content">
-      <div class="logo">
-        <div>
-          <h1>AnyLinux Metadata Editor</h1>
-          <p class="subtitle">Freedesktop AppStream metadata authoring for AnyLinux AppImages</p>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">
+            <span>AnyLinux Metadata</span>
+            <span class="version-tag">AppStream 1.0</span>
+          </div>
+          <div class="brand-subtitle">Curated metadata registry for non-Flathub AnyLinux AppImages</div>
         </div>
       </div>
-      <div class="header-links">
-        <a href="https://github.com/pkgforge-dev/Anylinux-Metadata" target="_blank" class="btn btn-secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub Repository
+
+      <!-- Navigation Tabs -->
+      <nav class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="catalog" role="tab">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          Catalog Explorer
+          <span class="tab-badge" id="catalogCountBadge">0</span>
+        </button>
+        <button class="nav-tab" data-tab="backlog" role="tab">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          Pending Backlog
+          <span class="tab-badge warning" id="backlogCountBadge">0</span>
+        </button>
+        <button class="nav-tab" data-tab="studio" role="tab">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+          Authoring Studio
+        </button>
+        <button class="nav-tab" data-tab="validator" role="tab">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          Schema Validator
+        </button>
+      </nav>
+
+      <!-- External Links -->
+      <div class="header-actions">
+        <a href="https://github.com/pkgforge-dev/Anylinux-Metadata" target="_blank" class="btn btn-sm btn-outline" title="Open GitHub Repository">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
         </a>
       </div>
     </div>
   </header>
 
-  <main class="main-container">
-    <div class="editor-grid">
-      <!-- Left Column: Form -->
-      <div class="form-pane card">
-        <h2>Application Information</h2>
-
-        <div class="form-group">
-          <label for="appName">Application Name *</label>
-          <input type="text" id="appName" placeholder="e.g. Ghostty" required>
+  <!-- Metrics Ribbon -->
+  <section class="metrics-ribbon">
+    <div class="metrics-inner">
+      <div class="metric-item">
+        <span class="metric-label">Target Non-Flathub Apps</span>
+        <span class="metric-val" id="metricTarget">181</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-label">Completed Manifests</span>
+        <span class="metric-val success" id="metricCompleted">147</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-label">Pending Backlog</span>
+        <span class="metric-val warning" id="metricPending">34</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric-item">
+        <span class="metric-label">Flathub Delegated</span>
+        <span class="metric-val muted" id="metricFlathub">264</span>
+      </div>
+      <div class="metric-progress-wrapper">
+        <div class="metric-progress-header">
+          <span>Catalog Completion</span>
+          <span id="metricProgressText">81%</span>
         </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="appSlug">Slug (filename) *</label>
-            <input type="text" id="appSlug" placeholder="ghostty" required>
-            <span class="hint">Lowercase alphanumeric + hyphens</span>
-          </div>
-          <div class="form-group">
-            <label for="appId">Reverse-DNS AppStream ID *</label>
-            <input type="text" id="appId" placeholder="io.github.ghostty_org.ghostty" required>
-            <span class="hint">e.g. io.github.user.repo or org.name.app</span>
-          </div>
+        <div class="metric-progress-bar">
+          <div class="metric-progress-fill" id="metricProgressBar" style="width: 81%;"></div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="form-group">
-          <label for="summary">Summary *</label>
-          <input type="text" id="summary" maxlength="200" placeholder="Fast, feature-rich terminal emulator" required>
-          <div class="input-meta">
-            <span class="hint" id="summaryCounter">0 / 200 chars</span>
-            <span class="warning-text" id="summaryWarning" style="display: none;">Summary must not end with a period</span>
+  <!-- Main View Container -->
+  <main class="content-container">
+
+    <!-- VIEW 1: CATALOG EXPLORER -->
+    <section class="tab-panel active" id="panel-catalog">
+      <div class="panel-header">
+        <div class="search-filter-bar">
+          <div class="search-input-wrapper">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="catalogSearch" placeholder="Search by name, summary, App ID, or keyword...">
+            <button class="clear-btn" id="catalogSearchClear" style="display: none;" title="Clear search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
           </div>
-        </div>
-
-        <div class="form-group">
-          <label for="description">Description (Paragraphs and Features) *</label>
-          <textarea id="description" rows="7" placeholder="Detailed description of the application...&#10;&#10;Features:&#10;- Fast GPU-accelerated text rendering&#10;- Native window tabs and splits&#10;- Cross-platform configuration"></textarea>
-          <span class="hint">Use a lead paragraph followed by "Features:" and "- Bullet point" lists.</span>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="license">Project License (SPDX) *</label>
-            <select id="license">
-              <option value="MIT">MIT</option>
-              <option value="GPL-3.0-or-later">GPL-3.0-or-later</option>
-              <option value="GPL-2.0-or-later">GPL-2.0-or-later</option>
-              <option value="Apache-2.0">Apache-2.0</option>
-              <option value="BSD-3-Clause">BSD-3-Clause</option>
-              <option value="BSD-2-Clause">BSD-2-Clause</option>
-              <option value="LGPL-3.0-or-later">LGPL-3.0-or-later</option>
-              <option value="AGPL-3.0-or-later">AGPL-3.0-or-later</option>
-              <option value="CC0-1.0">CC0-1.0</option>
-              <option value="MPL-2.0">MPL-2.0</option>
-              <option value="custom">Custom SPDX Expression...</option>
-            </select>
-            <input type="text" id="customLicense" placeholder="Custom SPDX ID" style="display: none; margin-top: 6px;">
-          </div>
-          <div class="form-group">
-            <label for="category">Main Category *</label>
-            <select id="category">
+          <div class="filter-controls">
+            <select id="catalogCategoryFilter">
+              <option value="all">All Categories</option>
               <option value="Utility">Utility</option>
               <option value="System">System</option>
               <option value="Development">Development</option>
@@ -98,106 +124,473 @@
               <option value="Science">Science</option>
               <option value="Education">Education</option>
             </select>
+            <select id="catalogSortFilter">
+              <option value="name-asc">Sort: Name (A-Z)</option>
+              <option value="name-desc">Sort: Name (Z-A)</option>
+              <option value="category">Sort: Category</option>
+            </select>
           </div>
         </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="devName">Developer Name *</label>
-            <input type="text" id="devName" placeholder="Ghostty Authors">
+        <div class="catalog-status-bar">
+          <span id="catalogResultsCount">Loading applications...</span>
+          <div class="catalog-quick-links">
+            <a href="catalog.json" download="catalog.json" class="link-btn">Download catalog.json</a>
+            <span class="sep">•</span>
+            <a href="appstream.xml.gz" download="appstream.xml.gz" class="link-btn">Download appstream.xml.gz</a>
           </div>
-          <div class="form-group">
-            <label for="homepage">Homepage URL *</label>
-            <input type="url" id="homepage" placeholder="https://ghostty.org">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="releaseRepo">AnyLinux Release Repository *</label>
-          <input type="text" id="releaseRepo" placeholder="pkgforge-dev/ghostty-appimage">
-          <span class="hint">The repository under pkgforge-dev hosting the AppImage releases</span>
-        </div>
-
-        <h3>Media Assets</h3>
-        <div class="form-group">
-          <label for="iconUrl">Icon URL (128x128 PNG or SVG) *</label>
-          <input type="url" id="iconUrl" placeholder="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png">
-        </div>
-
-        <div class="form-group">
-          <label for="screenshotUrls">Screenshot URLs (1 to 5 HTTPS URLs, one per line) *</label>
-          <textarea id="screenshotUrls" rows="3" placeholder="https://example.org/screenshot1.png&#10;https://example.org/screenshot2.png"></textarea>
-        </div>
-
-        <h3>Sandbox Permissions</h3>
-        <div class="sandbox-grid">
-          <label class="checkbox-label">
-            <input type="checkbox" id="sbNetwork" checked>
-            <span>Network Access</span>
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" id="sbAudio">
-            <span>Audio Playback</span>
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" id="sbGpu" checked>
-            <span>GPU Acceleration (DRI)</span>
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" id="sbIpc" checked>
-            <span>IPC Access</span>
-          </label>
         </div>
       </div>
 
-      <!-- Right Column: Live Visual Card & JSON Preview -->
-      <div class="preview-pane">
-        <div class="card">
-          <h2>Live App Store Card Preview</h2>
-          <div class="app-card-preview" id="cardPreview">
-            <div class="card-header">
-              <img id="previewIcon" src="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png" alt="App Icon" class="app-icon-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\'><rect width=\'64\' height=\'64\' fill=\'%23334155\'/><text x=\'32\' y=\'38\' fill=\'white\' font-size=\'24\' text-anchor=\'middle\'>?</text></svg>'">
-              <div class="card-title-block">
-                <h3 id="previewName">Application Name</h3>
-                <span class="preview-slug" id="previewId">io.github.example.app</span>
-                <p class="preview-summary" id="previewSummary">One short sentence explaining what the app does</p>
+      <div class="app-cards-grid" id="catalogGrid">
+        <!-- Dynamically rendered application cards -->
+      </div>
+    </section>
+
+    <!-- VIEW 2: PENDING BACKLOG -->
+    <section class="tab-panel" id="panel-backlog">
+      <div class="panel-header">
+        <div class="backlog-intro">
+          <h2>Pending Backlog Queue</h2>
+          <p>These applications are packaged in <a href="https://github.com/pkgforge-dev/Anylinux-AppImages" target="_blank">pkgforge-dev/Anylinux-AppImages</a> and are not on Flathub. They are awaiting community-authored AppStream metadata.</p>
+        </div>
+        <div class="search-input-wrapper">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="backlogSearch" placeholder="Search pending applications...">
+        </div>
+      </div>
+
+      <div class="backlog-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Application</th>
+              <th>Slug</th>
+              <th>Release Source Repository</th>
+              <th style="text-align: right;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="backlogTableBody">
+            <!-- Dynamically populated pending applications -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- VIEW 3: METADATA AUTHORING STUDIO -->
+    <section class="tab-panel" id="panel-studio">
+      <div class="studio-header">
+        <div class="studio-title-block">
+          <h2>Application Metadata Authoring Studio</h2>
+          <p>Author and validate Freedesktop AppStream 1.0 manifests with real-time schema feedback.</p>
+        </div>
+        <div class="studio-actions-bar">
+          <div class="studio-loader">
+            <label for="templateSelect">Load Template:</label>
+            <select id="templateSelect">
+              <option value="">Select Existing App to Fork / Edit...</option>
+            </select>
+          </div>
+          <button class="btn btn-sm btn-outline" id="btnUploadJson">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            Import JSON
+          </button>
+          <input type="file" id="fileInput" accept=".json" style="display: none;">
+          <button class="btn btn-sm btn-outline" id="btnResetForm">Reset Form</button>
+        </div>
+      </div>
+
+      <div class="studio-grid">
+        <!-- Left: Guided Form -->
+        <div class="studio-form-pane">
+          <!-- Section: Identity -->
+          <div class="form-section card">
+            <div class="section-title">
+              <span class="step-num">1</span>
+              <h3>Application Identity</h3>
+            </div>
+
+            <div class="form-group">
+              <label for="appName">Application Name <span class="required">*</span></label>
+              <input type="text" id="appName" placeholder="e.g. Ghostty" required>
+              <span class="hint">The human-readable display name of the program</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appSlug">Application Slug <span class="required">*</span></label>
+                <input type="text" id="appSlug" placeholder="ghostty" required>
+                <span class="hint">Lowercase alphanumeric + single hyphens</span>
+              </div>
+              <div class="form-group">
+                <label for="appId">Freedesktop Reverse-DNS ID <span class="required">*</span></label>
+                <input type="text" id="appId" placeholder="io.github.ghostty_org.ghostty" required>
+                <span class="hint">e.g. io.github.owner.repo or org.domain.app</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: AppStream Metadata -->
+          <div class="form-section card">
+            <div class="section-title">
+              <span class="step-num">2</span>
+              <h3>AppStream Metadata</h3>
+            </div>
+
+            <div class="form-group">
+              <label for="summary">Summary <span class="required">*</span></label>
+              <input type="text" id="summary" maxlength="200" placeholder="Fast, feature-rich, GPU-accelerated terminal emulator" required>
+              <div class="field-meta">
+                <span class="hint" id="summaryCharCounter">0 / 200 characters</span>
+                <span class="validation-msg error" id="summaryPeriodWarning" style="display: none;">
+                  AppStream specification prohibits summaries ending with a period
+                </span>
               </div>
             </div>
 
-            <div class="card-badges">
-              <span class="badge" id="previewCategory">Utility</span>
-              <span class="badge badge-outline" id="previewLicense">MIT</span>
-              <span class="badge badge-source" id="previewRelease">pkgforge-dev/myapp</span>
+            <div class="form-group">
+              <label for="leadParagraph">Description: Lead Paragraph <span class="required">*</span></label>
+              <textarea id="leadParagraph" rows="3" placeholder="Ghostty is a fast, feature-rich, cross-platform terminal emulator designed by Mitchell Hashimoto..."></textarea>
+              <span class="hint">Introductory paragraph describing the primary purpose and architecture.</span>
             </div>
 
-            <div class="card-desc" id="previewDesc">
-              <p>Description preview will appear here...</p>
+            <div class="form-group">
+              <label>Feature Highlights (Bullet Points)</label>
+              <div class="bullet-list-builder" id="bulletListContainer">
+                <!-- Dynamic bullet point inputs -->
+              </div>
+              <button type="button" class="btn btn-sm btn-outline" id="btnAddBullet">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Add Feature Highlight
+              </button>
             </div>
 
-            <div class="screenshot-gallery" id="previewScreenshots">
-              <!-- Rendered screenshots -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="licenseSelect">Project License (SPDX) <span class="required">*</span></label>
+                <select id="licenseSelect">
+                  <option value="MIT">MIT</option>
+                  <option value="Apache-2.0">Apache-2.0</option>
+                  <option value="GPL-3.0-or-later">GPL-3.0-or-later</option>
+                  <option value="GPL-2.0-or-later">GPL-2.0-or-later</option>
+                  <option value="BSD-3-Clause">BSD-3-Clause</option>
+                  <option value="BSD-2-Clause">BSD-2-Clause</option>
+                  <option value="AGPL-3.0-or-later">AGPL-3.0-or-later</option>
+                  <option value="LGPL-3.0-or-later">LGPL-3.0-or-later</option>
+                  <option value="MPL-2.0">MPL-2.0</option>
+                  <option value="CC0-1.0">CC0-1.0</option>
+                  <option value="Proprietary">Proprietary</option>
+                  <option value="custom">Custom SPDX Expression...</option>
+                </select>
+                <input type="text" id="customLicenseInput" placeholder="Enter valid SPDX expression (e.g. MIT OR Apache-2.0)" style="display: none; margin-top: 0.5rem;">
+              </div>
+
+              <div class="form-group">
+                <label for="categorySelect">Freedesktop Main Category <span class="required">*</span></label>
+                <select id="categorySelect">
+                  <option value="Utility">Utility</option>
+                  <option value="System">System</option>
+                  <option value="Development">Development</option>
+                  <option value="Game">Game</option>
+                  <option value="AudioVideo">AudioVideo</option>
+                  <option value="Graphics">Graphics</option>
+                  <option value="Network">Network</option>
+                  <option value="Office">Office</option>
+                  <option value="Science">Science</option>
+                  <option value="Settings">Settings</option>
+                  <option value="Education">Education</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="devName">Developer / Organization Name <span class="required">*</span></label>
+                <input type="text" id="devName" placeholder="Ghostty Developers">
+              </div>
+              <div class="form-group">
+                <label for="homepage">Homepage / Project URL <span class="required">*</span></label>
+                <input type="url" id="homepage" placeholder="https://ghostty.org">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Keywords (Tag input)</label>
+              <div class="tag-input-container" id="keywordsTagContainer">
+                <input type="text" id="keywordsInput" placeholder="Type keyword and press Enter...">
+              </div>
+              <span class="hint">Press Enter or comma to create searchable keyword tags</span>
+            </div>
+          </div>
+
+          <!-- Section: Media -->
+          <div class="form-section card">
+            <div class="section-title">
+              <span class="step-num">3</span>
+              <h3>Media Assets</h3>
+            </div>
+
+            <div class="form-group">
+              <label for="iconUrl">Canonical Icon URL (128x128+ PNG) <span class="required">*</span></label>
+              <div class="icon-input-wrapper">
+                <input type="url" id="iconUrl" placeholder="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png">
+                <div class="icon-tester" id="iconTesterStatus">
+                  <img id="iconTestImg" src="" alt="Icon" style="display: none;">
+                  <span id="iconTestLabel">Checking...</span>
+                </div>
+              </div>
+              <span class="hint">Must reference raw canonical path under icons/&lt;slug&gt;.png</span>
+            </div>
+
+            <div class="form-group">
+              <label>Screenshots (1 to 5 HTTPS URLs with captions)</label>
+              <div id="screenshotsContainer">
+                <!-- Dynamic screenshot rows -->
+              </div>
+              <button type="button" class="btn btn-sm btn-outline" id="btnAddScreenshot">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                Add Screenshot
+              </button>
+            </div>
+          </div>
+
+          <!-- Section: Sandbox -->
+          <div class="form-section card">
+            <div class="section-title">
+              <span class="step-num">4</span>
+              <h3>Sandbox Permissions Profile</h3>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sbNetwork">Network Access</label>
+                <select id="sbNetwork">
+                  <option value="none">none (Full offline isolation)</option>
+                  <option value="loopback">loopback (Localhost only)</option>
+                  <option value="outbound">outbound (Client outbound only)</option>
+                  <option value="full" selected>full (Complete network access)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sbDisplay">Display Server</label>
+                <select id="sbDisplay">
+                  <option value="wayland-or-x11" selected>wayland-or-x11 (Universal GUI)</option>
+                  <option value="wayland-only">wayland-only (Pure Wayland)</option>
+                  <option value="x11-only">x11-only (X11 only)</option>
+                  <option value="none">none (Headless / CLI only)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="sbAudio">Audio Subsystem</label>
+                <select id="sbAudio">
+                  <option value="none" selected>none (No sound)</option>
+                  <option value="playback">playback (PulseAudio / PipeWire playback)</option>
+                  <option value="full">full (Playback & capture)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sbProcesses">Process Isolation</label>
+                <select id="sbProcesses">
+                  <option value="isolated" selected>isolated (Dedicated PID namespace)</option>
+                  <option value="host">host (Host process table visible)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Hardware Device Nodes</label>
+              <div class="checkbox-pill-grid">
+                <label class="check-pill">
+                  <input type="checkbox" id="devGpu" checked>
+                  <span>GPU Acceleration (/dev/dri)</span>
+                </label>
+                <label class="check-pill">
+                  <input type="checkbox" id="devInput">
+                  <span>Input Devices (/dev/input)</span>
+                </label>
+                <label class="check-pill">
+                  <input type="checkbox" id="devKvm">
+                  <span>KVM Virtualization (/dev/kvm)</span>
+                </label>
+                <label class="check-pill">
+                  <input type="checkbox" id="devCamera">
+                  <span>Camera (/dev/video)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="check-pill" style="display: inline-flex;">
+                <input type="checkbox" id="sbIpc" checked>
+                <span>IPC Namespace Sharing</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Section: Release -->
+          <div class="form-section card">
+            <div class="section-title">
+              <span class="step-num">5</span>
+              <h3>Upstream Release Provenance</h3>
+            </div>
+
+            <div class="form-group">
+              <label for="releaseRepo">AnyLinux AppImage Repository <span class="required">*</span></label>
+              <input type="text" id="releaseRepo" placeholder="pkgforge-dev/ghostty-appimage" required>
+              <span class="hint">The repository under pkgforge-dev hosting binary AppImage releases</span>
             </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="preview-header-bar">
-            <h2>Generated JSON Manifest</h2>
-            <div class="validation-status" id="validationBadge">
-              <span class="status-indicator pass"></span> Valid Schema
+        <!-- Right: Real-time Inspection, Previews & Export -->
+        <div class="studio-preview-pane">
+          <!-- Validation Card -->
+          <div class="card diagnostic-card">
+            <div class="diagnostic-header">
+              <h3>Schema Diagnostics</h3>
+              <span class="diag-status-pill pass" id="diagMasterStatus">Valid Manifest</span>
+            </div>
+            <ul class="diag-checklist" id="diagChecklist">
+              <!-- Rendered diagnostic checklist -->
+            </ul>
+          </div>
+
+          <!-- Live AppHub Card Preview -->
+          <div class="card store-preview-card">
+            <div class="preview-tabs">
+              <button class="sub-tab active" data-subtab="store-view">AppHub Store Preview</button>
+              <button class="sub-tab" data-subtab="json-view">Raw JSON Manifest</button>
+            </div>
+
+            <div class="sub-panel active" id="subpanel-store-view">
+              <div class="mock-store-card">
+                <div class="mock-header">
+                  <img id="storeMockIcon" src="" alt="App Icon" class="mock-icon" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' fill=\'%23334155\'><rect width=\'64\' height=\'64\' fill=\'%231e293b\'/><text x=\'32\' y=\'38\' fill=\'white\' font-family=\'sans-serif\' font-size=\'22\' text-anchor=\'middle\'>?</text></svg>'">
+                  <div class="mock-identity">
+                    <h4 id="storeMockName">Application Name</h4>
+                    <span class="mock-id" id="storeMockId">io.github.owner.app</span>
+                    <p class="mock-summary" id="storeMockSummary">Concise application summary sentence</p>
+                  </div>
+                </div>
+
+                <div class="mock-meta-row">
+                  <span class="chip chip-category" id="storeMockCategory">Utility</span>
+                  <span class="chip chip-license" id="storeMockLicense">MIT</span>
+                  <span class="chip chip-repo" id="storeMockRepo">pkgforge-dev/repo</span>
+                </div>
+
+                <div class="mock-body">
+                  <div class="mock-desc" id="storeMockDesc">
+                    <!-- Rendered description AST -->
+                  </div>
+
+                  <div class="mock-gallery" id="storeMockGallery">
+                    <!-- Thumbnails -->
+                  </div>
+                </div>
+
+                <div class="mock-footer">
+                  <div class="sandbox-security-row">
+                    <span class="sec-label">Sandbox Security:</span>
+                    <span class="sec-pill" id="storeMockNetwork">Network: full</span>
+                    <span class="sec-pill" id="storeMockDisplay">Display: wayland-or-x11</span>
+                    <span class="sec-pill" id="storeMockGpu">GPU: enabled</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sub-panel" id="subpanel-json-view">
+              <div class="json-code-header">
+                <span class="code-stats" id="jsonStats">0 lines · 0 bytes</span>
+                <button class="btn btn-xs btn-outline" id="btnCopyJsonSnippet">Copy Code</button>
+              </div>
+              <pre class="json-display" id="studioJsonDisplay"><code>{}</code></pre>
             </div>
           </div>
-          <pre class="json-code" id="jsonOutput"><code>{}</code></pre>
 
-          <div class="action-buttons">
-            <button class="btn btn-primary" id="btnCopyJson">Copy JSON</button>
-            <button class="btn btn-secondary" id="btnDownloadJson">Download Manifest (.json)</button>
-            <button class="btn btn-success" id="btnOpenIssue">Submit to GitHub Issue</button>
+          <!-- Action Buttons Bar -->
+          <div class="card actions-card">
+            <h3>Publishing & Export</h3>
+            <p class="hint">Export the manifest to include it in the database or submit via GitHub issue form.</p>
+            <div class="action-grid">
+              <button class="btn btn-primary" id="btnDownloadManifest">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download .json
+              </button>
+              <button class="btn btn-secondary" id="btnCopyJsonFull">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                Copy Manifest
+              </button>
+              <button class="btn btn-accent" id="btnSubmitGitHubIssue">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                Submit Issue Form
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- VIEW 4: SCHEMA VALIDATOR -->
+    <section class="tab-panel" id="panel-validator">
+      <div class="panel-header">
+        <div class="backlog-intro">
+          <h2>Schema Manifest Validator</h2>
+          <p>Paste any application manifest JSON to validate against strict AnyLinux AppStream 1.0 and SPDX rules.</p>
+        </div>
+      </div>
+
+      <div class="validator-container">
+        <div class="card validator-editor-card">
+          <div class="validator-toolbar">
+            <span>JSON Payload</span>
+            <div class="validator-tools">
+              <button class="btn btn-xs btn-outline" id="btnFormatValidatorJson">Prettify</button>
+              <button class="btn btn-xs btn-outline" id="btnClearValidatorJson">Clear</button>
+            </div>
+          </div>
+          <textarea id="validatorInput" rows="18" placeholder="Paste application manifest JSON here (e.g. apps/ghostty.json)..."></textarea>
+          <div class="validator-actions">
+            <button class="btn btn-primary" id="btnRunValidation">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Validate Manifest
+            </button>
+            <button class="btn btn-outline" id="btnLoadValidToStudio" style="display: none;">
+              Open in Authoring Studio
+            </button>
+          </div>
+        </div>
+
+        <div class="card validator-results-card">
+          <h3>Validation Diagnostics</h3>
+          <div class="val-report" id="validatorReport">
+            <p class="hint">Paste a JSON manifest and click "Validate Manifest" to inspect compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Application Detail Modal -->
+  <div class="modal-backdrop" id="appDetailModal">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" title="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-content" id="modalDetailContent">
+        <!-- Rendered app detail view -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
 
   <script src="app.js"></script>
 </body>
