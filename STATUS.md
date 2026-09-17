@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-09-16*
+*Last synchronized: 2026-09-17*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
 | **Total AnyLinux AppImages** | `463` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `272` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `191` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `191` (`100%`) | Fully validated and ready |
-| **Pending Backlog** | `0` | Pending manifest creation or verification |
+| **Flathub Covered** | `197` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `266` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `191` (`72%`) | Fully validated and ready |
+| **Pending Backlog** | `75` | Pending manifest creation or verification |
 
 ## Completed Applications (191)
 
@@ -206,9 +206,84 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **VSCodium** | [`apps/vscodium.json`](apps/vscodium.json) | [`VSCodium/vscodium`](https://github.com/VSCodium/vscodium) |
 
-## Pending Backlog (0)
+## Pending Backlog (75)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
 | Application | Slug | Release Source |
 | :--- | :--- | :--- |
+| **86Box** | `86box` | [`pkgforge-dev/86box-AppImage-Enhanced`](https://github.com/pkgforge-dev/86box-AppImage-Enhanced) |
+| **Adobe Flash Player** | `adobe-flash-player` | [`pkgforge-dev/Adobe-Flash-Player-AppImage`](https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage) |
+| **alacritty** | `alacritty` | [`pkgforge-dev/alacritty-AppImage`](https://github.com/pkgforge-dev/alacritty-AppImage) |
+| **ares-emu** | `ares-emu` | [`pkgforge-dev/ares-emu-appimage`](https://github.com/pkgforge-dev/ares-emu-appimage) |
+| **Arx Libertatis** | `arx-libertatis` | [`pkgforge-dev/Arx-Libertatis-AppImage`](https://github.com/pkgforge-dev/Arx-Libertatis-AppImage) |
+| **Awakened POE Trade** | `awakened-poe-trade` | [`pkgforge-dev/Awakened-POE-Trade-AppImage-Enhanced`](https://github.com/pkgforge-dev/Awakened-POE-Trade-AppImage-Enhanced) |
+| **BasiliskII** | `basiliskii` | [`pkgforge-dev/BasiliskII-AppImage-Enhanced`](https://github.com/pkgforge-dev/BasiliskII-AppImage-Enhanced) |
+| **BetterMediaInfo** | `bettermediainfo` | [`pkgforge-dev/BetterMediaInfo-AppImage-Enhanced`](https://github.com/pkgforge-dev/BetterMediaInfo-AppImage-Enhanced) |
+| **Bitwarden** | `bitwarden` | [`pkgforge-dev/Bitwarden-AppImage-Enhanced`](https://github.com/pkgforge-dev/Bitwarden-AppImage-Enhanced) |
+| **Cartridges** | `cartridges` | [`pkgforge-dev/Cartridges-AppImage`](https://github.com/pkgforge-dev/Cartridges-AppImage) |
+| **Catfish** | `catfish` | [`pkgforge-dev/Catfish-AppImage`](https://github.com/pkgforge-dev/Catfish-AppImage) |
+| **C-Dogs_SDL** | `c-dogs-sdl` | [`pkgforge-dev/C-Dogs_SDL-AppImage`](https://github.com/pkgforge-dev/C-Dogs_SDL-AppImage) |
+| **ClassiCube** | `classicube` | [`pkgforge-dev/ClassiCube-AppImage`](https://github.com/pkgforge-dev/ClassiCube-AppImage) |
+| **Claws Mail** | `claws-mail` | [`pkgforge-dev/Claws-Mail-AppImage`](https://github.com/pkgforge-dev/Claws-Mail-AppImage) |
+| **CollaboraOffice** | `collaboraoffice` | [`pkgforge-dev/CollaboraOffice-AppImage`](https://github.com/pkgforge-dev/CollaboraOffice-AppImage) |
+| **Crispy Doom** | `crispy-doom` | [`pkgforge-dev/Crispy-Doom-AppImage`](https://github.com/pkgforge-dev/Crispy-Doom-AppImage) |
+| **DeaDBeeF** | `deadbeef` | [`pkgforge-dev/DeaDBeeF-AppImage`](https://github.com/pkgforge-dev/DeaDBeeF-AppImage) |
+| **Deepin Calculator** | `deepin-calculator` | [`pkgforge-dev/Deepin-Calculator-AppImage`](https://github.com/pkgforge-dev/Deepin-Calculator-AppImage) |
+| **Defold** | `defold` | [`pkgforge-dev/Defold-AppImage`](https://github.com/pkgforge-dev/Defold-AppImage) |
+| **Dolphin-emu** | `dolphin-emu` | [`pkgforge-dev/Dolphin-emu-AppImage`](https://github.com/pkgforge-dev/Dolphin-emu-AppImage) |
+| **DOSBox-X** | `dosbox-x` | [`pkgforge-dev/DOSBox-X-AppImage`](https://github.com/pkgforge-dev/DOSBox-X-AppImage) |
+| **DOSBox Pure Unleashed** | `dosbox-pure-unleashed` | [`pkgforge-dev/DOSBox-Pure-Unleashed-AppImage`](https://github.com/pkgforge-dev/DOSBox-Pure-Unleashed-AppImage) |
+| **Dr. Robotnik's Ring Racers** | `dr-robotnik-s-ring-racers` | [`pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage`](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage) |
+| **Drum Machine** | `drum-machine` | [`pkgforge-dev/Drum-Machine-AppImage`](https://github.com/pkgforge-dev/Drum-Machine-AppImage) |
+| **DuckStation-GPL** | `duckstation-gpl` | [`pkgforge-dev/DuckStation-GPL-AppImage-Enhanced`](https://github.com/pkgforge-dev/DuckStation-GPL-AppImage-Enhanced) |
+| **Element Desktop** | `element-desktop` | [`pkgforge-dev/Element-Desktop-AppImage`](https://github.com/pkgforge-dev/Element-Desktop-AppImage) |
+| **FeatherPad** | `featherpad` | [`pkgforge-dev/FeatherPad-AppImage`](https://github.com/pkgforge-dev/FeatherPad-AppImage) |
+| **Galculator** | `galculator` | [`pkgforge-dev/Galculator-AppImage`](https://github.com/pkgforge-dev/Galculator-AppImage) |
+| **GitHub Desktop Plus** | `github-desktop-plus` | [`pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced`](https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced) |
+| **Gnome Calculator** | `gnome-calculator` | [`pkgforge-dev/Gnome-Calculator-AppImage`](https://github.com/pkgforge-dev/Gnome-Calculator-AppImage) |
+| **Gnome Pomodoro** | `gnome-pomodoro` | [`pkgforge-dev/gnome-pomodoro-appimage`](https://github.com/pkgforge-dev/gnome-pomodoro-appimage) |
+| **Gnome System Monitor** | `gnome-system-monitor` | [`pkgforge-dev/Gnome-System-Monitor-AppImage`](https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage) |
+| **Gnome Web** | `gnome-web` | [`pkgforge-dev/Gnome-Web-AppImage`](https://github.com/pkgforge-dev/Gnome-Web-AppImage) |
+| **GNU FreeDink** | `gnu-freedink` | [`pkgforge-dev/GNU-FreeDink-AppImage`](https://github.com/pkgforge-dev/GNU-FreeDink-AppImage) |
+| **GNU Octave** | `gnu-octave` | [`pkgforge-dev/GNU-Octave-AppImage`](https://github.com/pkgforge-dev/GNU-Octave-AppImage) |
+| **GoldenDict-ng** | `goldendict-ng` | [`pkgforge-dev/GoldenDict-ng-AppImage`](https://github.com/pkgforge-dev/GoldenDict-ng-AppImage) |
+| **Gram** | `gram` | [`pkgforge-dev/Gram-AppImage-Enhanced`](https://github.com/pkgforge-dev/Gram-AppImage-Enhanced) |
+| **Joplin Desktop** | `joplin-desktop` | [`pkgforge-dev/Joplin-Desktop-AppImage`](https://github.com/pkgforge-dev/Joplin-Desktop-AppImage) |
+| **kdeconnect** | `kdeconnect` | [`pkgforge-dev/kdeconnect-AppImage`](https://github.com/pkgforge-dev/kdeconnect-AppImage) |
+| **KPatience** | `kpatience` | [`pkgforge-dev/KPatience-AppImage`](https://github.com/pkgforge-dev/KPatience-AppImage) |
+| **LibreWolf** | `librewolf` | [`pkgforge-dev/LibreWolf-AppImage-Enhanced`](https://github.com/pkgforge-dev/LibreWolf-AppImage-Enhanced) |
+| **MATE Calculator** | `mate-calculator` | [`pkgforge-dev/MATE-Calculator-AppImage`](https://github.com/pkgforge-dev/MATE-Calculator-AppImage) |
+| **Media Downloader** | `media-downloader` | [`pkgforge-dev/Media-Downloader-AppImage`](https://github.com/pkgforge-dev/Media-Downloader-AppImage) |
+| **Nomacs** | `nomacs` | [`pkgforge-dev/Nomacs-AppImage`](https://github.com/pkgforge-dev/Nomacs-AppImage) |
+| **OBS Studio** | `obs-studio` | [`pkgforge-dev/OBS-Studio-AppImage`](https://github.com/pkgforge-dev/OBS-Studio-AppImage) |
+| **OpenBoardView** | `openboardview` | [`pkgforge-dev/OpenBoardView-AppImage`](https://github.com/pkgforge-dev/OpenBoardView-AppImage) |
+| **opencode-cli** | `opencode-cli` | [`pkgforge-dev/opencode-cli-AppImage`](https://github.com/pkgforge-dev/opencode-cli-AppImage) |
+| **OpenTyrian2000** | `opentyrian2000` | [`pkgforge-dev/OpenTyrian2000-AppImage`](https://github.com/pkgforge-dev/OpenTyrian2000-AppImage) |
+| **Parabolic** | `parabolic` | [`pkgforge-dev/Parabolic-AppImage`](https://github.com/pkgforge-dev/Parabolic-AppImage) |
+| **pavucontrol-qt** | `pavucontrol-qt` | [`pkgforge-dev/pavucontrol-qt-AppImage`](https://github.com/pkgforge-dev/pavucontrol-qt-AppImage) |
+| **Pinta-GTK3** | `pinta-gtk3` | [`pkgforge-dev/Pinta-GTK3-AppImage`](https://github.com/pkgforge-dev/Pinta-GTK3-AppImage) |
+| **QTerminal** | `qterminal` | [`pkgforge-dev/QTerminal-AppImage`](https://github.com/pkgforge-dev/QTerminal-AppImage) |
+| **ROLLER** | `roller` | [`pkgforge-dev/ROLLER-AppImage`](https://github.com/pkgforge-dev/ROLLER-AppImage) |
+| **Satty** | `satty` | [`pkgforge-dev/Satty-AppImage`](https://github.com/pkgforge-dev/Satty-AppImage) |
+| **Sayonara-Player** | `sayonara-player` | [`pkgforge-dev/Sayonara-Player-AppImage-Enhanced`](https://github.com/pkgforge-dev/Sayonara-Player-AppImage-Enhanced) |
+| **SDLPoP** | `sdlpop` | [`pkgforge-dev/SDLPoP-AppImage`](https://github.com/pkgforge-dev/SDLPoP-AppImage) |
+| **SheepShaver** | `sheepshaver` | [`pkgforge-dev/SheepShaver-AppImage`](https://github.com/pkgforge-dev/SheepShaver-AppImage) |
+| **SimpleX Chat** | `simplex-chat` | [`pkgforge-dev/SimpleX-Chat-AppImage-Enhanced`](https://github.com/pkgforge-dev/SimpleX-Chat-AppImage-Enhanced) |
+| **Sonic Robo Blast 2** | `sonic-robo-blast-2` | [`pkgforge-dev/SRB2-AppImage`](https://github.com/pkgforge-dev/SRB2-AppImage) |
+| **st** | `st` | [`pkgforge-dev/st-AppImage`](https://github.com/pkgforge-dev/st-AppImage) |
+| **Super Mario War** | `super-mario-war` | [`pkgforge-dev/Supermariowar-AppImage`](https://github.com/pkgforge-dev/Supermariowar-AppImage) |
+| **SUPER ZSNES** | `super-zsnes` | [`pkgforge-dev/SUPER-ZSNES-AppImage`](https://github.com/pkgforge-dev/SUPER-ZSNES-AppImage) |
+| **Taisei Project** | `taisei-project` | [`pkgforge-dev/Taisei-Project-AppImage`](https://github.com/pkgforge-dev/Taisei-Project-AppImage) |
+| **Tauon** | `tauon` | [`pkgforge-dev/Tauon-AppImage`](https://github.com/pkgforge-dev/Tauon-AppImage) |
+| **Telegram** | `telegram` | [`pkgforge-dev/Telegram-AppImage`](https://github.com/pkgforge-dev/Telegram-AppImage) |
+| **transmission-qt** | `transmission-qt` | [`pkgforge-dev/transmission-qt-AppImage`](https://github.com/pkgforge-dev/transmission-qt-AppImage) |
+| **Tutanota Desktop** | `tutanota-desktop` | [`pkgforge-dev/Tutanota-Desktop-AppImage-Enhanced`](https://github.com/pkgforge-dev/Tutanota-Desktop-AppImage-Enhanced) |
+| **Unnamed SDVX clone** | `unnamed-sdvx-clone` | [`pkgforge-dev/Unnamed-SDVX-clone-AppImage`](https://github.com/pkgforge-dev/Unnamed-SDVX-clone-AppImage) |
+| **Visual Studio Code** | `visual-studio-code` | [`pkgforge-dev/Visual-Studio-Code-AppImage`](https://github.com/pkgforge-dev/Visual-Studio-Code-AppImage) |
+| **VisualBoyAdvance-M** | `visualboyadvance-m` | [`pkgforge-dev/VisualBoyAdvance-M-AppImage`](https://github.com/pkgforge-dev/VisualBoyAdvance-M-AppImage) |
+| **WhatsDesk** | `whatsdesk` | [`pkgforge-dev/WhatsDesk-AppImage`](https://github.com/pkgforge-dev/WhatsDesk-AppImage) |
+| **Yamagi Quake II** | `yamagi-quake-ii` | [`pkgforge-dev/Yamagi-Quake-II-AppImage`](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage) |
+| **Zen Browser** | `zen-browser` | [`pkgforge-dev/Zen-Browser-AppImage-Enhanced`](https://github.com/pkgforge-dev/Zen-Browser-AppImage-Enhanced) |
+| **Zenity** | `zenity` | [`pkgforge-dev/Zenity-GTK3-AppImage`](https://github.com/pkgforge-dev/Zenity-GTK3-AppImage) |
+| **CPU-X** | `cpu-x` | [`TheTumultuousUnicornOfDarkness/CPU-X`](https://github.com/TheTumultuousUnicornOfDarkness/CPU-X) |
