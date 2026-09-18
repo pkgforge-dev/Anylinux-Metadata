@@ -1,12 +1,12 @@
 # AnyLinux Metadata Database
 
-[![CI Validation](https://github.com/ArqamQazi/Anylinux-Metadata/actions/workflows/validate-pr.yml/badge.svg)](https://github.com/ArqamQazi/Anylinux-Metadata/actions)
+[![CI Validation](https://github.com/pkgforge-dev/Anylinux-Metadata/actions/workflows/validate-pr.yml/badge.svg)](https://github.com/pkgforge-dev/Anylinux-Metadata/actions)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Catalog Status](https://img.shields.io/badge/Catalog-Status-blue.svg)](STATUS.md)
 
 A community-maintained, Freedesktop AppStream-compliant metadata database for [AnyLinux AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) that are not distributed via Flathub.
 
-[Catalog Status](STATUS.md) | [Contributing Guide](CONTRIBUTING.md) | [Developer Handbook](DEVELOPMENT.md) | [Agent Specification](AGENTS.md) | [JSON Schema](schema/app-manifest.json) | [Web Explorer & Studio](https://arqamqazi.github.io/Anylinux-Metadata/)
+[Catalog Status](STATUS.md) | [Contributing Guide](CONTRIBUTING.md) | [Developer Handbook](DEVELOPMENT.md) | [Agent Specification](AGENTS.md) | [JSON Schema](schema/app-manifest.json) | [Web Explorer & Studio](https://pkgforge-dev.github.io/Anylinux-Metadata/)
 
 ---
 
