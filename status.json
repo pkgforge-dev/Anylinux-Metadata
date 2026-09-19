@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-18T08:41:45.852Z",
-  "totalAnylinuxApps": 463,
-  "flathubCoveredCount": 197,
-  "targetCount": 266,
+  "updatedAt": "2026-09-19T08:28:30.813Z",
+  "totalAnylinuxApps": 465,
+  "flathubCoveredCount": 198,
+  "targetCount": 267,
   "completedCount": 191,
-  "pendingCount": 75,
+  "pendingCount": 76,
   "progressPercent": 72,
   "completed": [
     {
@@ -1216,6 +1216,12 @@
       "slug": "cartridges"
     },
     {
+      "name": "Cataclysm-TLG",
+      "url": "https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage",
+      "repo": "pkgforge-dev/Cataclysm-TLG-AppImage",
+      "slug": "cataclysm-tlg"
+    },
+    {
       "name": "Catfish",
       "url": "https://github.com/pkgforge-dev/Catfish-AppImage",
       "repo": "pkgforge-dev/Catfish-AppImage",
@@ -1637,6 +1643,7 @@
     "DevilutionX",
     "dhewm3",
     "Discord",
+    "EasyEffects",
     "EasyTAG",
     "EDuke32",
     "Elastic",

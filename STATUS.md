@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-09-18*
+*Last synchronized: 2026-09-19*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `463` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `197` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `266` | Exclusive non-Flathub apps requiring metadata |
+| **Total AnyLinux AppImages** | `465` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `198` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `267` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `191` (`72%`) | Fully validated and ready |
-| **Pending Backlog** | `75` | Pending manifest creation or verification |
+| **Pending Backlog** | `76` | Pending manifest creation or verification |
 
 ## Completed Applications (191)
 
@@ -206,7 +206,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **VSCodium** | [`apps/vscodium.json`](apps/vscodium.json) | [`VSCodium/vscodium`](https://github.com/VSCodium/vscodium) |
 
-## Pending Backlog (75)
+## Pending Backlog (76)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -222,6 +222,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **BetterMediaInfo** | `bettermediainfo` | [`pkgforge-dev/BetterMediaInfo-AppImage-Enhanced`](https://github.com/pkgforge-dev/BetterMediaInfo-AppImage-Enhanced) |
 | **Bitwarden** | `bitwarden` | [`pkgforge-dev/Bitwarden-AppImage-Enhanced`](https://github.com/pkgforge-dev/Bitwarden-AppImage-Enhanced) |
 | **Cartridges** | `cartridges` | [`pkgforge-dev/Cartridges-AppImage`](https://github.com/pkgforge-dev/Cartridges-AppImage) |
+| **Cataclysm-TLG** | `cataclysm-tlg` | [`pkgforge-dev/Cataclysm-TLG-AppImage`](https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage) |
 | **Catfish** | `catfish` | [`pkgforge-dev/Catfish-AppImage`](https://github.com/pkgforge-dev/Catfish-AppImage) |
 | **C-Dogs_SDL** | `c-dogs-sdl` | [`pkgforge-dev/C-Dogs_SDL-AppImage`](https://github.com/pkgforge-dev/C-Dogs_SDL-AppImage) |
 | **ClassiCube** | `classicube` | [`pkgforge-dev/ClassiCube-AppImage`](https://github.com/pkgforge-dev/ClassiCube-AppImage) |
