@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-19T08:28:30.813Z",
-  "totalAnylinuxApps": 465,
-  "flathubCoveredCount": 198,
-  "targetCount": 267,
-  "completedCount": 191,
-  "pendingCount": 76,
-  "progressPercent": 72,
+  "updatedAt": "2026-09-20T01:52:04.427Z",
+  "totalAnylinuxApps": 463,
+  "flathubCoveredCount": 241,
+  "targetCount": 222,
+  "completedCount": 185,
+  "pendingCount": 37,
+  "progressPercent": 83,
   "completed": [
     {
       "name": "12to11",
@@ -404,18 +404,6 @@
       "slug": "gimp-and-photogimp"
     },
     {
-      "name": "Gnome Text Editor",
-      "url": "https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage",
-      "repo": "pkgforge-dev/Gnome-Text-Editor-AppImage",
-      "slug": "gnome-text-editor"
-    },
-    {
-      "name": "gpu-screen-recorder",
-      "url": "https://github.com/pkgforge-dev/gpu-screen-recorder-AppImage",
-      "repo": "pkgforge-dev/gpu-screen-recorder-AppImage",
-      "slug": "gpu-screen-recorder"
-    },
-    {
       "name": "Helium Browser",
       "url": "https://github.com/pkgforge-dev/Helium-Browser-AppImage-Enhanced",
       "repo": "pkgforge-dev/Helium-Browser-AppImage-Enhanced",
@@ -510,12 +498,6 @@
       "url": "https://github.com/pkgforge-dev/LinuxToys-AppImage",
       "repo": "pkgforge-dev/LinuxToys-AppImage",
       "slug": "linuxtoys"
-    },
-    {
-      "name": "LocalSend",
-      "url": "https://github.com/pkgforge-dev/localsend-AppImage",
-      "repo": "pkgforge-dev/localsend-AppImage",
-      "slug": "localsend"
     },
     {
       "name": "ManiaDrive",
@@ -950,12 +932,6 @@
       "slug": "streamlink"
     },
     {
-      "name": "system-monitoring-center",
-      "url": "https://github.com/pkgforge-dev/system-monitoring-center-AppImage",
-      "repo": "pkgforge-dev/system-monitoring-center-AppImage",
-      "slug": "system-monitoring-center"
-    },
-    {
       "name": "tachoparser",
       "url": "https://github.com/pkgforge-dev/tachoparser-AppImage",
       "repo": "pkgforge-dev/tachoparser-AppImage",
@@ -990,12 +966,6 @@
       "url": "https://github.com/pkgforge-dev/uad-ng-AppImage",
       "repo": "pkgforge-dev/uad-ng-AppImage",
       "slug": "uad-ng"
-    },
-    {
-      "name": "Ungoogled-chromium",
-      "url": "https://github.com/pkgforge-dev/Ungoogled-Chromium-AppImage",
-      "repo": "pkgforge-dev/Ungoogled-Chromium-AppImage",
-      "slug": "ungoogled-chromium"
     },
     {
       "name": "UnleashedRecomp",
@@ -1146,21 +1116,9 @@
       "url": "https://github.com/stoatchat/for-desktop",
       "repo": "stoatchat/for-desktop",
       "slug": "stoat"
-    },
-    {
-      "name": "VSCodium",
-      "url": "https://github.com/VSCodium/vscodium",
-      "repo": "VSCodium/vscodium",
-      "slug": "vscodium"
     }
   ],
   "pending": [
-    {
-      "name": "86Box",
-      "url": "https://github.com/pkgforge-dev/86box-AppImage-Enhanced",
-      "repo": "pkgforge-dev/86box-AppImage-Enhanced",
-      "slug": "86box"
-    },
     {
       "name": "Adobe Flash Player",
       "url": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage",
@@ -1172,12 +1130,6 @@
       "url": "https://github.com/pkgforge-dev/alacritty-AppImage",
       "repo": "pkgforge-dev/alacritty-AppImage",
       "slug": "alacritty"
-    },
-    {
-      "name": "ares-emu",
-      "url": "https://github.com/pkgforge-dev/ares-emu-appimage",
-      "repo": "pkgforge-dev/ares-emu-appimage",
-      "slug": "ares-emu"
     },
     {
       "name": "Arx Libertatis",
@@ -1204,22 +1156,10 @@
       "slug": "bettermediainfo"
     },
     {
-      "name": "Bitwarden",
-      "url": "https://github.com/pkgforge-dev/Bitwarden-AppImage-Enhanced",
-      "repo": "pkgforge-dev/Bitwarden-AppImage-Enhanced",
-      "slug": "bitwarden"
-    },
-    {
       "name": "Cartridges",
       "url": "https://github.com/pkgforge-dev/Cartridges-AppImage",
       "repo": "pkgforge-dev/Cartridges-AppImage",
       "slug": "cartridges"
-    },
-    {
-      "name": "Cataclysm-TLG",
-      "url": "https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage",
-      "repo": "pkgforge-dev/Cataclysm-TLG-AppImage",
-      "slug": "cataclysm-tlg"
     },
     {
       "name": "Catfish",
@@ -1228,28 +1168,10 @@
       "slug": "catfish"
     },
     {
-      "name": "C-Dogs_SDL",
-      "url": "https://github.com/pkgforge-dev/C-Dogs_SDL-AppImage",
-      "repo": "pkgforge-dev/C-Dogs_SDL-AppImage",
-      "slug": "c-dogs-sdl"
-    },
-    {
       "name": "ClassiCube",
       "url": "https://github.com/pkgforge-dev/ClassiCube-AppImage",
       "repo": "pkgforge-dev/ClassiCube-AppImage",
       "slug": "classicube"
-    },
-    {
-      "name": "Claws Mail",
-      "url": "https://github.com/pkgforge-dev/Claws-Mail-AppImage",
-      "repo": "pkgforge-dev/Claws-Mail-AppImage",
-      "slug": "claws-mail"
-    },
-    {
-      "name": "CollaboraOffice",
-      "url": "https://github.com/pkgforge-dev/CollaboraOffice-AppImage",
-      "repo": "pkgforge-dev/CollaboraOffice-AppImage",
-      "slug": "collaboraoffice"
     },
     {
       "name": "Crispy Doom",
@@ -1276,46 +1198,16 @@
       "slug": "defold"
     },
     {
-      "name": "Dolphin-emu",
-      "url": "https://github.com/pkgforge-dev/Dolphin-emu-AppImage",
-      "repo": "pkgforge-dev/Dolphin-emu-AppImage",
-      "slug": "dolphin-emu"
-    },
-    {
-      "name": "DOSBox-X",
-      "url": "https://github.com/pkgforge-dev/DOSBox-X-AppImage",
-      "repo": "pkgforge-dev/DOSBox-X-AppImage",
-      "slug": "dosbox-x"
-    },
-    {
       "name": "DOSBox Pure Unleashed",
       "url": "https://github.com/pkgforge-dev/DOSBox-Pure-Unleashed-AppImage",
       "repo": "pkgforge-dev/DOSBox-Pure-Unleashed-AppImage",
       "slug": "dosbox-pure-unleashed"
     },
     {
-      "name": "Dr. Robotnik's Ring Racers",
-      "url": "https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage",
-      "repo": "pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage",
-      "slug": "dr-robotnik-s-ring-racers"
-    },
-    {
-      "name": "Drum Machine",
-      "url": "https://github.com/pkgforge-dev/Drum-Machine-AppImage",
-      "repo": "pkgforge-dev/Drum-Machine-AppImage",
-      "slug": "drum-machine"
-    },
-    {
       "name": "DuckStation-GPL",
       "url": "https://github.com/pkgforge-dev/DuckStation-GPL-AppImage-Enhanced",
       "repo": "pkgforge-dev/DuckStation-GPL-AppImage-Enhanced",
       "slug": "duckstation-gpl"
-    },
-    {
-      "name": "Element Desktop",
-      "url": "https://github.com/pkgforge-dev/Element-Desktop-AppImage",
-      "repo": "pkgforge-dev/Element-Desktop-AppImage",
-      "slug": "element-desktop"
     },
     {
       "name": "FeatherPad",
@@ -1336,12 +1228,6 @@
       "slug": "github-desktop-plus"
     },
     {
-      "name": "Gnome Calculator",
-      "url": "https://github.com/pkgforge-dev/Gnome-Calculator-AppImage",
-      "repo": "pkgforge-dev/Gnome-Calculator-AppImage",
-      "slug": "gnome-calculator"
-    },
-    {
       "name": "Gnome Pomodoro",
       "url": "https://github.com/pkgforge-dev/gnome-pomodoro-appimage",
       "repo": "pkgforge-dev/gnome-pomodoro-appimage",
@@ -1354,28 +1240,10 @@
       "slug": "gnome-system-monitor"
     },
     {
-      "name": "Gnome Web",
-      "url": "https://github.com/pkgforge-dev/Gnome-Web-AppImage",
-      "repo": "pkgforge-dev/Gnome-Web-AppImage",
-      "slug": "gnome-web"
-    },
-    {
       "name": "GNU FreeDink",
       "url": "https://github.com/pkgforge-dev/GNU-FreeDink-AppImage",
       "repo": "pkgforge-dev/GNU-FreeDink-AppImage",
       "slug": "gnu-freedink"
-    },
-    {
-      "name": "GNU Octave",
-      "url": "https://github.com/pkgforge-dev/GNU-Octave-AppImage",
-      "repo": "pkgforge-dev/GNU-Octave-AppImage",
-      "slug": "gnu-octave"
-    },
-    {
-      "name": "GoldenDict-ng",
-      "url": "https://github.com/pkgforge-dev/GoldenDict-ng-AppImage",
-      "repo": "pkgforge-dev/GoldenDict-ng-AppImage",
-      "slug": "goldendict-ng"
     },
     {
       "name": "Gram",
@@ -1384,28 +1252,10 @@
       "slug": "gram"
     },
     {
-      "name": "Joplin Desktop",
-      "url": "https://github.com/pkgforge-dev/Joplin-Desktop-AppImage",
-      "repo": "pkgforge-dev/Joplin-Desktop-AppImage",
-      "slug": "joplin-desktop"
-    },
-    {
       "name": "kdeconnect",
       "url": "https://github.com/pkgforge-dev/kdeconnect-AppImage",
       "repo": "pkgforge-dev/kdeconnect-AppImage",
       "slug": "kdeconnect"
-    },
-    {
-      "name": "KPatience",
-      "url": "https://github.com/pkgforge-dev/KPatience-AppImage",
-      "repo": "pkgforge-dev/KPatience-AppImage",
-      "slug": "kpatience"
-    },
-    {
-      "name": "LibreWolf",
-      "url": "https://github.com/pkgforge-dev/LibreWolf-AppImage-Enhanced",
-      "repo": "pkgforge-dev/LibreWolf-AppImage-Enhanced",
-      "slug": "librewolf"
     },
     {
       "name": "MATE Calculator",
@@ -1414,58 +1264,16 @@
       "slug": "mate-calculator"
     },
     {
-      "name": "Media Downloader",
-      "url": "https://github.com/pkgforge-dev/Media-Downloader-AppImage",
-      "repo": "pkgforge-dev/Media-Downloader-AppImage",
-      "slug": "media-downloader"
-    },
-    {
-      "name": "Nomacs",
-      "url": "https://github.com/pkgforge-dev/Nomacs-AppImage",
-      "repo": "pkgforge-dev/Nomacs-AppImage",
-      "slug": "nomacs"
-    },
-    {
-      "name": "OBS Studio",
-      "url": "https://github.com/pkgforge-dev/OBS-Studio-AppImage",
-      "repo": "pkgforge-dev/OBS-Studio-AppImage",
-      "slug": "obs-studio"
-    },
-    {
       "name": "OpenBoardView",
       "url": "https://github.com/pkgforge-dev/OpenBoardView-AppImage",
       "repo": "pkgforge-dev/OpenBoardView-AppImage",
       "slug": "openboardview"
     },
     {
-      "name": "opencode-cli",
-      "url": "https://github.com/pkgforge-dev/opencode-cli-AppImage",
-      "repo": "pkgforge-dev/opencode-cli-AppImage",
-      "slug": "opencode-cli"
-    },
-    {
       "name": "OpenTyrian2000",
       "url": "https://github.com/pkgforge-dev/OpenTyrian2000-AppImage",
       "repo": "pkgforge-dev/OpenTyrian2000-AppImage",
       "slug": "opentyrian2000"
-    },
-    {
-      "name": "Parabolic",
-      "url": "https://github.com/pkgforge-dev/Parabolic-AppImage",
-      "repo": "pkgforge-dev/Parabolic-AppImage",
-      "slug": "parabolic"
-    },
-    {
-      "name": "pavucontrol-qt",
-      "url": "https://github.com/pkgforge-dev/pavucontrol-qt-AppImage",
-      "repo": "pkgforge-dev/pavucontrol-qt-AppImage",
-      "slug": "pavucontrol-qt"
-    },
-    {
-      "name": "Pinta-GTK3",
-      "url": "https://github.com/pkgforge-dev/Pinta-GTK3-AppImage",
-      "repo": "pkgforge-dev/Pinta-GTK3-AppImage",
-      "slug": "pinta-gtk3"
     },
     {
       "name": "QTerminal",
@@ -1486,12 +1294,6 @@
       "slug": "satty"
     },
     {
-      "name": "Sayonara-Player",
-      "url": "https://github.com/pkgforge-dev/Sayonara-Player-AppImage-Enhanced",
-      "repo": "pkgforge-dev/Sayonara-Player-AppImage-Enhanced",
-      "slug": "sayonara-player"
-    },
-    {
       "name": "SDLPoP",
       "url": "https://github.com/pkgforge-dev/SDLPoP-AppImage",
       "repo": "pkgforge-dev/SDLPoP-AppImage",
@@ -1502,12 +1304,6 @@
       "url": "https://github.com/pkgforge-dev/SheepShaver-AppImage",
       "repo": "pkgforge-dev/SheepShaver-AppImage",
       "slug": "sheepshaver"
-    },
-    {
-      "name": "SimpleX Chat",
-      "url": "https://github.com/pkgforge-dev/SimpleX-Chat-AppImage-Enhanced",
-      "repo": "pkgforge-dev/SimpleX-Chat-AppImage-Enhanced",
-      "slug": "simplex-chat"
     },
     {
       "name": "Sonic Robo Blast 2",
@@ -1528,60 +1324,6 @@
       "slug": "super-mario-war"
     },
     {
-      "name": "SUPER ZSNES",
-      "url": "https://github.com/pkgforge-dev/SUPER-ZSNES-AppImage",
-      "repo": "pkgforge-dev/SUPER-ZSNES-AppImage",
-      "slug": "super-zsnes"
-    },
-    {
-      "name": "Taisei Project",
-      "url": "https://github.com/pkgforge-dev/Taisei-Project-AppImage",
-      "repo": "pkgforge-dev/Taisei-Project-AppImage",
-      "slug": "taisei-project"
-    },
-    {
-      "name": "Tauon",
-      "url": "https://github.com/pkgforge-dev/Tauon-AppImage",
-      "repo": "pkgforge-dev/Tauon-AppImage",
-      "slug": "tauon"
-    },
-    {
-      "name": "Telegram",
-      "url": "https://github.com/pkgforge-dev/Telegram-AppImage",
-      "repo": "pkgforge-dev/Telegram-AppImage",
-      "slug": "telegram"
-    },
-    {
-      "name": "transmission-qt",
-      "url": "https://github.com/pkgforge-dev/transmission-qt-AppImage",
-      "repo": "pkgforge-dev/transmission-qt-AppImage",
-      "slug": "transmission-qt"
-    },
-    {
-      "name": "Tutanota Desktop",
-      "url": "https://github.com/pkgforge-dev/Tutanota-Desktop-AppImage-Enhanced",
-      "repo": "pkgforge-dev/Tutanota-Desktop-AppImage-Enhanced",
-      "slug": "tutanota-desktop"
-    },
-    {
-      "name": "Unnamed SDVX clone",
-      "url": "https://github.com/pkgforge-dev/Unnamed-SDVX-clone-AppImage",
-      "repo": "pkgforge-dev/Unnamed-SDVX-clone-AppImage",
-      "slug": "unnamed-sdvx-clone"
-    },
-    {
-      "name": "Visual Studio Code",
-      "url": "https://github.com/pkgforge-dev/Visual-Studio-Code-AppImage",
-      "repo": "pkgforge-dev/Visual-Studio-Code-AppImage",
-      "slug": "visual-studio-code"
-    },
-    {
-      "name": "VisualBoyAdvance-M",
-      "url": "https://github.com/pkgforge-dev/VisualBoyAdvance-M-AppImage",
-      "repo": "pkgforge-dev/VisualBoyAdvance-M-AppImage",
-      "slug": "visualboyadvance-m"
-    },
-    {
       "name": "WhatsDesk",
       "url": "https://github.com/pkgforge-dev/WhatsDesk-AppImage",
       "repo": "pkgforge-dev/WhatsDesk-AppImage",
@@ -1594,29 +1336,19 @@
       "slug": "yamagi-quake-ii"
     },
     {
-      "name": "Zen Browser",
-      "url": "https://github.com/pkgforge-dev/Zen-Browser-AppImage-Enhanced",
-      "repo": "pkgforge-dev/Zen-Browser-AppImage-Enhanced",
-      "slug": "zen-browser"
-    },
-    {
       "name": "Zenity",
       "url": "https://github.com/pkgforge-dev/Zenity-GTK3-AppImage",
       "repo": "pkgforge-dev/Zenity-GTK3-AppImage",
       "slug": "zenity"
-    },
-    {
-      "name": "CPU-X",
-      "url": "https://github.com/TheTumultuousUnicornOfDarkness/CPU-X",
-      "repo": "TheTumultuousUnicornOfDarkness/CPU-X",
-      "slug": "cpu-x"
     }
   ],
   "flathubCovered": [
+    "86Box",
     "AAAAXY",
     "Amarok",
     "Amiberry",
     "anki",
+    "ares-emu",
     "Asunder",
     "Audacious",
     "Audacity",
@@ -1626,13 +1358,17 @@
     "Azahar",
     "BibleTime",
     "BigPEmu",
+    "Bitwarden",
     "Blender",
+    "C-Dogs_SDL",
     "Cemu",
     "Chrome",
     "Cine",
     "Clapper",
+    "Claws Mail",
     "Clementine",
     "CloneHero",
+    "CollaboraOffice",
     "Collision",
     "Constrict",
     "Contour",
@@ -1643,10 +1379,14 @@
     "DevilutionX",
     "dhewm3",
     "Discord",
-    "EasyEffects",
+    "Dolphin-emu",
+    "DOSBox-X",
+    "Dr. Robotnik's Ring Racers",
+    "Drum Machine",
     "EasyTAG",
     "EDuke32",
     "Elastic",
+    "Element Desktop",
     "ET Legacy",
     "Extension Manager",
     "ExtremeTuxRacer",
@@ -1666,9 +1406,15 @@
     "GCstar",
     "Gear Lever",
     "gImageReader",
+    "Gnome Calculator",
+    "Gnome Text Editor",
+    "Gnome Web",
+    "GNU Octave",
     "Godot",
+    "GoldenDict-ng",
     "Gopher64",
     "gPodder",
+    "gpu-screen-recorder",
     "Gradia",
     "Graphs",
     "gThumb",
@@ -1681,6 +1427,7 @@
     "Iris",
     "IRPF2025",
     "IRPF2026",
+    "Joplin Desktop",
     "kaffeine",
     "Kate",
     "KBlocks",
@@ -1695,16 +1442,20 @@
     "KMines",
     "Knights",
     "KolourPaint",
+    "KPatience",
     "Krita",
     "KStars",
     "KTorrent",
     "KTouch",
     "LibreCAD",
+    "LibreWolf",
     "LightZone",
     "LMMS",
+    "LocalSend",
     "Luanti",
     "MAME",
     "masterkey",
+    "Media Downloader",
     "melonDS",
     "mGBA",
     "Mixxx",
@@ -1715,10 +1466,13 @@
     "Neverball",
     "NewPipe",
     "NewsFlash",
+    "Nomacs",
+    "OBS Studio",
     "Odamex",
     "Obsidian",
     "okteta",
     "opencode",
+    "opencode-cli",
     "openMSX",
     "OpenRA",
     "OpenRCT2",
@@ -1727,10 +1481,13 @@
     "OptiImage",
     "OrcaSlicer",
     "Oversteer",
+    "Parabolic",
+    "pavucontrol-qt",
     "PCSX2",
     "PDF Arranger",
     "PDF Tricks",
     "Pinta",
+    "Pinta-GTK3",
     "Planify",
     "Play!",
     "PokeMMO",
@@ -1757,10 +1514,12 @@
     "Ruffle",
     "RustDesk",
     "SameBoy",
+    "Sayonara-Player",
     "ScummVM",
     "Secrets",
     "Shotwell",
     "Signal",
+    "SimpleX Chat",
     "Simutrans",
     "SiriKali",
     "Slack",
@@ -1777,20 +1536,31 @@
     "Supermodel",
     "SuperTux",
     "SuperTuxKart",
+    "SUPER ZSNES",
     "sView",
     "swiftynotes",
+    "system-monitoring-center",
     "Tagger",
+    "Taisei Project",
     "Tokodon",
+    "Tauon",
+    "Telegram",
+    "transmission-qt",
     "Trelby",
+    "Tutanota Desktop",
     "Tux Football",
     "Tuxpuck",
     "UEFITool",
+    "Ungoogled-chromium",
     "Unity Hub",
+    "Unnamed SDVX clone",
     "Varia",
     "vcmi",
     "Viber",
     "VICE",
     "Video Trimmer",
+    "Visual Studio Code",
+    "VisualBoyAdvance-M",
     "vokoscreenNG",
     "Warp",
     "Webcamoid",
@@ -1803,13 +1573,16 @@
     "xournalpp",
     "Ymir",
     "Zed",
+    "Zen Browser",
     "ZSNES",
     "Converseen",
+    "CPU-X",
     "Eden",
     "Goverlay",
     "interstellar",
     "PPSSPP",
     "RSS Guard",
+    "VSCodium",
     "ZapZap"
   ]
 }
