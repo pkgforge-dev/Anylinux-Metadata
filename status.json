@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-20T01:52:04.427Z",
-  "totalAnylinuxApps": 463,
-  "flathubCoveredCount": 241,
-  "targetCount": 222,
+  "updatedAt": "2026-09-20T08:59:50.131Z",
+  "totalAnylinuxApps": 466,
+  "flathubCoveredCount": 242,
+  "targetCount": 224,
   "completedCount": 185,
-  "pendingCount": 37,
+  "pendingCount": 39,
   "progressPercent": 83,
   "completed": [
     {
@@ -1162,6 +1162,12 @@
       "slug": "cartridges"
     },
     {
+      "name": "Cataclysm-TLG",
+      "url": "https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage",
+      "repo": "pkgforge-dev/Cataclysm-TLG-AppImage",
+      "slug": "cataclysm-tlg"
+    },
+    {
       "name": "Catfish",
       "url": "https://github.com/pkgforge-dev/Catfish-AppImage",
       "repo": "pkgforge-dev/Catfish-AppImage",
@@ -1330,6 +1336,12 @@
       "slug": "whatsdesk"
     },
     {
+      "name": "Xreader",
+      "url": "https://github.com/pkgforge-dev/Xreader-AppImage",
+      "repo": "pkgforge-dev/Xreader-AppImage",
+      "slug": "xreader"
+    },
+    {
       "name": "Yamagi Quake II",
       "url": "https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage",
       "repo": "pkgforge-dev/Yamagi-Quake-II-AppImage",
@@ -1383,6 +1395,7 @@
     "DOSBox-X",
     "Dr. Robotnik's Ring Racers",
     "Drum Machine",
+    "EasyEffects",
     "EasyTAG",
     "EDuke32",
     "Elastic",

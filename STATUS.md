@@ -4,11 +4,11 @@
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `463` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `241` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `222` | Exclusive non-Flathub apps requiring metadata |
+| **Total AnyLinux AppImages** | `466` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `242` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `224` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `185` (`83%`) | Fully validated and ready |
-| **Pending Backlog** | `37` | Pending manifest creation or verification |
+| **Pending Backlog** | `39` | Pending manifest creation or verification |
 
 ## Completed Applications (185)
 
@@ -200,7 +200,7 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (37)
+## Pending Backlog (39)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -213,6 +213,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **BasiliskII** | `basiliskii` | [`pkgforge-dev/BasiliskII-AppImage-Enhanced`](https://github.com/pkgforge-dev/BasiliskII-AppImage-Enhanced) |
 | **BetterMediaInfo** | `bettermediainfo` | [`pkgforge-dev/BetterMediaInfo-AppImage-Enhanced`](https://github.com/pkgforge-dev/BetterMediaInfo-AppImage-Enhanced) |
 | **Cartridges** | `cartridges` | [`pkgforge-dev/Cartridges-AppImage`](https://github.com/pkgforge-dev/Cartridges-AppImage) |
+| **Cataclysm-TLG** | `cataclysm-tlg` | [`pkgforge-dev/Cataclysm-TLG-AppImage`](https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage) |
 | **Catfish** | `catfish` | [`pkgforge-dev/Catfish-AppImage`](https://github.com/pkgforge-dev/Catfish-AppImage) |
 | **ClassiCube** | `classicube` | [`pkgforge-dev/ClassiCube-AppImage`](https://github.com/pkgforge-dev/ClassiCube-AppImage) |
 | **Crispy Doom** | `crispy-doom` | [`pkgforge-dev/Crispy-Doom-AppImage`](https://github.com/pkgforge-dev/Crispy-Doom-AppImage) |
@@ -241,5 +242,6 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **st** | `st` | [`pkgforge-dev/st-AppImage`](https://github.com/pkgforge-dev/st-AppImage) |
 | **Super Mario War** | `super-mario-war` | [`pkgforge-dev/Supermariowar-AppImage`](https://github.com/pkgforge-dev/Supermariowar-AppImage) |
 | **WhatsDesk** | `whatsdesk` | [`pkgforge-dev/WhatsDesk-AppImage`](https://github.com/pkgforge-dev/WhatsDesk-AppImage) |
+| **Xreader** | `xreader` | [`pkgforge-dev/Xreader-AppImage`](https://github.com/pkgforge-dev/Xreader-AppImage) |
 | **Yamagi Quake II** | `yamagi-quake-ii` | [`pkgforge-dev/Yamagi-Quake-II-AppImage`](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage) |
 | **Zenity** | `zenity` | [`pkgforge-dev/Zenity-GTK3-AppImage`](https://github.com/pkgforge-dev/Zenity-GTK3-AppImage) |
