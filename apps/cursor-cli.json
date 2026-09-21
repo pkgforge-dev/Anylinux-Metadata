@@ -65,7 +65,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Development",
+        "TextEditor",
+        "ConsoleOnly"
       ]
     },
     "media": {

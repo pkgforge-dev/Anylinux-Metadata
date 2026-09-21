@@ -65,7 +65,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "AudioVideo",
+        "AudioVideoEditing",
+        "Recorder",
+        "ConsoleOnly"
       ]
     },
     "media": {

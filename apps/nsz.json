@@ -65,7 +65,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Utility",
+        "Archiving",
+        "Compression",
+        "ConsoleOnly"
       ]
     },
     "media": {

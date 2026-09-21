@@ -39,7 +39,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "AudioVideo",
+        "Audio",
+        "Player"
       ]
     },
     "media": {

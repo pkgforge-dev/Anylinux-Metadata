@@ -65,7 +65,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Utility",
+        "Calculator",
+        "Science",
+        "Math"
       ]
     },
     "media": {

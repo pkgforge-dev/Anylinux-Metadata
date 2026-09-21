@@ -30,7 +30,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "AudioVideo",
+        "Player",
+        "ConsoleOnly"
       ]
     },
     "media": {

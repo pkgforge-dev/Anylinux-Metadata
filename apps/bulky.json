@@ -65,7 +65,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Utility",
+        "FileManager",
+        "FileTools"
       ]
     },
     "media": {

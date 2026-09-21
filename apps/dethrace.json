@@ -65,7 +65,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Game",
+        "ActionGame",
+        "ArcadeGame",
+        "SportsGame"
       ]
     },
     "media": {

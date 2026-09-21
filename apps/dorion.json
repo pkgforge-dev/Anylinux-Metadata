@@ -30,7 +30,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Network",
+        "InstantMessaging",
+        "Chat"
       ]
     },
     "media": {

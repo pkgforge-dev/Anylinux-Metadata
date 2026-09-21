@@ -30,7 +30,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Graphics",
+        "Viewer",
+        "2DGraphics",
+        "RasterGraphics"
       ]
     },
     "media": {

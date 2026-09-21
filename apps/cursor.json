@@ -30,7 +30,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Development",
+        "IDE",
+        "TextEditor"
       ]
     },
     "media": {
