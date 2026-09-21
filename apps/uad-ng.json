@@ -65,7 +65,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "System",
+        "Utility",
+        "HardwareSettings"
       ]
     },
     "media": {

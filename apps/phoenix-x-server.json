@@ -65,7 +65,8 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "System",
+        "Core"
       ]
     },
     "media": {

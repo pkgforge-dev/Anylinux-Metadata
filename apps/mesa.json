@@ -65,7 +65,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "System",
+        "Development",
+        "3DGraphics"
       ]
     },
     "media": {

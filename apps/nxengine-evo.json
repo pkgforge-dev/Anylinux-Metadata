@@ -30,7 +30,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Game",
+        "ActionGame",
+        "AdventureGame"
       ]
     },
     "media": {

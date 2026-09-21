@@ -30,7 +30,8 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Utility",
+        "PackageManager"
       ]
     },
     "media": {

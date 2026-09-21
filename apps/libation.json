@@ -65,7 +65,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "AudioVideo",
+        "Audio",
+        "Player",
+        "FileTransfer"
       ]
     },
     "media": {

@@ -65,7 +65,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Game",
+        "Emulator",
+        "AdventureGame"
       ]
     },
     "media": {

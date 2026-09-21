@@ -65,6 +65,8 @@
         "anylinux"
       ],
       "categories": [
+        "System",
+        "GameTool",
         "Utility"
       ]
     },

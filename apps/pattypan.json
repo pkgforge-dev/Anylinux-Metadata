@@ -65,7 +65,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Network",
+        "FileTransfer",
+        "Publishing"
       ]
     },
     "media": {

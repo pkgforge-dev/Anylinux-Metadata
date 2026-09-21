@@ -39,7 +39,9 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "System",
+        "TerminalEmulator",
+        "ConsoleOnly"
       ]
     },
     "media": {

@@ -30,7 +30,8 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "System",
+        "DesktopSettings"
       ]
     },
     "media": {

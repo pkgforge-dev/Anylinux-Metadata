@@ -65,7 +65,10 @@
         "anylinux"
       ],
       "categories": [
-        "Utility"
+        "Graphics",
+        "3DGraphics",
+        "Engineering",
+        "Printing"
       ]
     },
     "media": {
