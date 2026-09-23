@@ -3,7 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AnyLinux Metadata Portal | Freedesktop AppStream Registry</title>
+  <title>AnyLinux Metadata - Curated Freedesktop AppStream Registry</title>
+  <meta name="description" content="Official AnyLinux Metadata Portal and Freedesktop AppStream 1.0 registry. Browse, search, and validate curated metadata, sandbox profiles, and icons for portable Linux AppImages not on Flathub.">
+  <meta name="keywords" content="AnyLinux Metadata, AnyLinux, AppStream, AppImage, Linux apps, Freedesktop, Linux desktop metadata, portable Linux applications, AppHub">
+  <meta name="author" content="AnyLinux Community">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="fGpvmDVZSXYwgUwGJxoYb_frAi7Awh5oBtcZjf9lyDw">
+  <link rel="canonical" href="https://pkgforge-dev.github.io/Anylinux-Metadata/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AnyLinux Metadata">
+  <meta property="og:url" content="https://pkgforge-dev.github.io/Anylinux-Metadata/">
+  <meta property="og:title" content="AnyLinux Metadata - Curated Freedesktop AppStream Registry">
+  <meta property="og:description" content="Official AnyLinux Metadata registry for portable Linux AppImages not on Flathub. Explore curated AppStream metadata, verified sandbox profiles, and desktop integration specs.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AnyLinux Metadata - Curated Freedesktop AppStream Registry">
+  <meta name="twitter:description" content="Official AnyLinux Metadata registry for portable Linux AppImages not on Flathub. Explore curated AppStream metadata and verified sandbox profiles.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://pkgforge-dev.github.io/Anylinux-Metadata/#website",
+        "url": "https://pkgforge-dev.github.io/Anylinux-Metadata/",
+        "name": "AnyLinux Metadata",
+        "description": "Curated Freedesktop AppStream metadata database for portable Linux AppImages not on Flathub",
+        "publisher": {
+          "@type": "Organization",
+          "name": "pkgforge",
+          "url": "https://github.com/pkgforge-dev"
+        }
+      },
+      {
+        "@type": "DataCatalog",
+        "@id": "https://pkgforge-dev.github.io/Anylinux-Metadata/#catalog",
+        "name": "AnyLinux Metadata Catalog",
+        "description": "AppStream metadata catalog and sandbox definitions for non-Flathub AnyLinux portable applications",
+        "url": "https://pkgforge-dev.github.io/Anylinux-Metadata/",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,7 +191,7 @@
           <span class="status-dot"></span>
           <span>Freedesktop AppStream 1.0 Registry</span>
         </div>
-        <h1 class="hero-title">Curated applications for AnyLinux</h1>
+        <h1 class="hero-title">AnyLinux Metadata &amp; AppStream Catalog</h1>
         <p class="hero-description">
           Explore AppStream metadata, verified sandbox profiles, and release provenance for Linux desktop applications packaged without Flathub.
         </p>
@@ -189,6 +239,24 @@
           </div>
         </div>
       </div>
+
+      <noscript>
+        <div class="card" style="margin-bottom: 2rem; padding: 1.5rem;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-main);">AnyLinux Metadata Application Directory</h2>
+          <p style="font-size: 0.95rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 1rem;">
+            AnyLinux Metadata is an open registry providing Freedesktop AppStream 1.0 metadata, verified sandbox profiles, and desktop integration specifications for portable Linux AppImages not available on Flathub.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+            Direct Downloads and Distribution Feeds:
+          </p>
+          <ul style="list-style: disc; margin-left: 1.5rem; font-size: 0.9rem; color: var(--text-dim); line-height: 1.8;">
+            <li><a href="catalog.json" style="color: var(--primary); text-decoration: underline;">catalog.json (Full JSON catalog feed)</a></li>
+            <li><a href="appstream.xml.gz" style="color: var(--primary); text-decoration: underline;">appstream.xml.gz (Freedesktop AppStream XML collection)</a></li>
+            <li><a href="status.json" style="color: var(--primary); text-decoration: underline;">status.json (Sync status and package coverage metrics)</a></li>
+            <li><a href="sitemap.xml" style="color: var(--primary); text-decoration: underline;">sitemap.xml (Complete index of registered applications)</a></li>
+          </ul>
+        </div>
+      </noscript>
 
       <div class="app-cards-grid" id="catalogGrid">
         <!-- Dynamically rendered application cards -->

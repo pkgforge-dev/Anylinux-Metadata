@@ -173,6 +173,34 @@ ${xmlComponents}</components>
     }
   }
   console.log(`Copied ${iconCount} icons to dist/icons and web/icons`);
+
+  // 4. Generate sitemap.xml and robots.txt for search engine discovery (Google, Bing, DuckDuckGo)
+  const baseUrl = "https://pkgforge-dev.github.io/Anylinux-Metadata";
+  let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  sitemapXml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+  sitemapXml += `  <url>\n`;
+  sitemapXml += `    <loc>${baseUrl}/</loc>\n`;
+  sitemapXml += `    <changefreq>daily</changefreq>\n`;
+  sitemapXml += `    <priority>1.0</priority>\n`;
+  sitemapXml += `  </url>\n`;
+
+  for (const slug of Object.keys(apps)) {
+    sitemapXml += `  <url>\n`;
+    sitemapXml += `    <loc>${baseUrl}/?app=${escapeXml(slug)}</loc>\n`;
+    sitemapXml += `    <changefreq>weekly</changefreq>\n`;
+    sitemapXml += `    <priority>0.8</priority>\n`;
+    sitemapXml += `  </url>\n`;
+  }
+  sitemapXml += `</urlset>\n`;
+
+  await writeFile(resolve(distDir, "sitemap.xml"), sitemapXml);
+  await writeFile(resolve(webDir, "sitemap.xml"), sitemapXml);
+  console.log(`Generated dist/sitemap.xml and web/sitemap.xml (${Object.keys(apps).length + 1} URLs)`);
+
+  const robotsTxt = `User-agent: *\nAllow: /\n\nSitemap: ${baseUrl}/sitemap.xml\n`;
+  await writeFile(resolve(distDir, "robots.txt"), robotsTxt);
+  await writeFile(resolve(webDir, "robots.txt"), robotsTxt);
+  console.log(`Generated dist/robots.txt and web/robots.txt`);
 }
 
 exportCatalog().catch((err) => {

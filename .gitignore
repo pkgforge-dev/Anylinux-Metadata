@@ -9,6 +9,8 @@ web/catalog.json
 web/status.json
 web/icons
 web/catalog-data.js
+web/sitemap.xml
+web/robots.txt
 
 # OS metadata
 .DS_Store
