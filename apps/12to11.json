@@ -5,7 +5,7 @@
     "metadata": {
       "id": "win.linuxping.git.12to11",
       "name": "12to11",
-      "summary": "12to11 is a lightweight Wayland-to-X11 bridge that enables running Wayland applications on an X server",
+      "summary": "Wayland-to-X11 bridge for running Wayland applications on an X server",
       "description": [
         {
           "type": "paragraph",
