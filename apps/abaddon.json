@@ -5,7 +5,7 @@
     "metadata": {
       "id": "io.github.uowuo.abaddon",
       "name": "Abaddon",
-      "summary": "Abaddon is an alternative Discord client written in C++ and GTK 3 designed for high performance and low memory consumption",
+      "summary": "An alternative fast and efficient Discord client",
       "description": [
         {
           "type": "paragraph",
