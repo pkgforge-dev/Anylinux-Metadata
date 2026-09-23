@@ -19,7 +19,13 @@
     "export:node": "node --import tsx scripts/export-catalog.ts",
     "test": "which bun >/dev/null 2>&1 && bun test || node --import tsx --test 'tests/**/*.test.ts'",
     "test:bun": "bun test",
-    "test:node": "node --import tsx --test 'tests/**/*.test.ts'"
+    "test:node": "node --import tsx --test 'tests/**/*.test.ts'",
+    "dev": "which bun >/dev/null 2>&1 && bun run scripts/serve.ts || node --import tsx scripts/serve.ts",
+    "dev:bun": "bun run scripts/serve.ts",
+    "dev:node": "node --import tsx scripts/serve.ts",
+    "serve": "which bun >/dev/null 2>&1 && bun run scripts/serve.ts || node --import tsx scripts/serve.ts",
+    "serve:bun": "bun run scripts/serve.ts",
+    "serve:node": "node --import tsx scripts/serve.ts"
   },
   "keywords": [
     "appimage",

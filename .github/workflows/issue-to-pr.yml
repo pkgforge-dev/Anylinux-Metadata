@@ -11,7 +11,13 @@ permissions:
 
 jobs:
   convert-issue:
-    if: contains(github.event.issue.labels.*.name, 'automated-pr')
+    if: |
+      contains(github.event.issue.labels.*.name, 'automated-pr') ||
+      contains(github.event.issue.labels.*.name, 'app-update') ||
+      contains(github.event.issue.labels.*.name, 'app-submission') ||
+      startsWith(github.event.issue.title, 'fix(app):') ||
+      startsWith(github.event.issue.title, 'feat(app):') ||
+      contains(github.event.issue.body, '### Application Slug')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -41,82 +47,99 @@ jobs:
             return match ? match[1].trim() : "";
           }
 
-          const name = extractField("Application Name");
+          const proposedChanges = extractField("Proposed JSON or Changes");
           const slug = extractField("Application Slug");
-          const appId = extractField("Reverse-DNS AppStream ID");
-          const summary = extractField("Summary").replace(/\\.+$/, "");
-          const descRaw = extractField("Description");
-          const license = extractField("License \\(SPDX Identifier\\)");
-          const category = extractField("Main Category") || "Utility";
-          const devName = extractField("Developer Name");
-          const homepage = extractField("Homepage URL");
-          const releaseRepo = extractField("AnyLinux Release Repository");
-          const iconUrl = extractField("Icon URL");
-          const screenshotsRaw = extractField("Screenshot URLs");
 
-          if (!slug || !name) {
-            console.error("Missing critical fields in issue form");
-            process.exit(1);
-          }
-
-          const screenshots = screenshotsRaw
-            .split("\n")
-            .map(s => s.trim())
-            .filter(s => s.startsWith("https://"))
-            .slice(0, 5)
-            .map((s, idx) => ({ caption: `${name} screenshot ${idx + 1}`, source: s }));
-
-          const descParagraphs = descRaw.split("\n\n").filter(p => !p.startsWith("- "));
-          const descBullets = descRaw.split("\n").filter(l => l.startsWith("- ")).map(l => l.replace(/^- /, "").trim());
-
-          const descriptionAst = descParagraphs.map(p => ({
-            type: "paragraph",
-            content: [{ type: "text", value: p.replace(/\n/g, " ") }]
-          }));
-
-          if (descBullets.length > 0) {
-            descriptionAst.push({
-              type: "unordered-list",
-              items: descBullets.map(b => [{ type: "text", value: b }])
-            });
-          }
-
-          const manifest = {
-            $schema: "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
-            appstream: {
-              type: "manual",
-              metadata: {
-                id: appId,
-                name,
-                summary,
-                description: descriptionAst.length > 0 ? descriptionAst : [{ type: "paragraph", content: [{ type: "text", value: summary }] }],
-                projectLicense: license,
-                developer: { name: devName, url: homepage },
-                homepage,
-                repository: homepage,
-                keywords: [slug, "appimage", "anylinux"],
-                categories: [category],
-              },
-              media: {
-                icon: iconUrl,
-                screenshots: screenshots.length > 0 ? screenshots : [{ caption: `${name} screenshot`, source: iconUrl }]
-              }
-            },
-            addedAt: new Date().toISOString().split("T")[0],
-            origin: { type: "third-party" },
-            releaseSource: { type: "github", repository: releaseRepo },
-            sandbox: {
-              network: "full",
-              display: "wayland-or-x11",
-              audio: "none",
-              processes: "isolated",
-              ipc: true,
-              filesystem: [],
-              devices: [],
-              sessionBus: { access: "none", rules: [] },
-              systemBus: { access: "none", rules: [] }
+          let manifest;
+          if (proposedChanges) {
+            if (!slug) {
+              console.error("Missing critical field 'Application Slug' in update issue form");
+              process.exit(1);
             }
-          };
+            const cleanJson = proposedChanges.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
+            try {
+              manifest = JSON.parse(cleanJson);
+            } catch (err) {
+              console.error("Failed to parse JSON in Proposed JSON or Changes:", err.message);
+              process.exit(1);
+            }
+          } else {
+            const name = extractField("Application Name");
+            const appId = extractField("Reverse-DNS AppStream ID");
+            const summary = extractField("Summary").replace(/\\.+$/, "");
+            const descRaw = extractField("Description");
+            const license = extractField("License \\(SPDX Identifier\\)");
+            const category = extractField("Main Category") || "Utility";
+            const devName = extractField("Developer Name");
+            const homepage = extractField("Homepage URL");
+            const releaseRepo = extractField("AnyLinux Release Repository");
+            const iconUrl = extractField("Icon URL");
+            const screenshotsRaw = extractField("Screenshot URLs");
+
+            if (!slug || !name) {
+              console.error("Missing critical fields in issue form");
+              process.exit(1);
+            }
+
+            const screenshots = screenshotsRaw
+              .split("\n")
+              .map(s => s.trim())
+              .filter(s => s.startsWith("https://"))
+              .slice(0, 5)
+              .map((s, idx) => ({ caption: `${name} screenshot ${idx + 1}`, source: s }));
+
+            const descParagraphs = descRaw.split("\n\n").filter(p => !p.startsWith("- "));
+            const descBullets = descRaw.split("\n").filter(l => l.startsWith("- ")).map(l => l.replace(/^- /, "").trim());
+
+            const descriptionAst = descParagraphs.map(p => ({
+              type: "paragraph",
+              content: [{ type: "text", value: p.replace(/\n/g, " ") }]
+            }));
+
+            if (descBullets.length > 0) {
+              descriptionAst.push({
+                type: "unordered-list",
+                items: descBullets.map(b => [{ type: "text", value: b }])
+              });
+            }
+
+            manifest = {
+              $schema: "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+              appstream: {
+                type: "manual",
+                metadata: {
+                  id: appId,
+                  name,
+                  summary,
+                  description: descriptionAst.length > 0 ? descriptionAst : [{ type: "paragraph", content: [{ type: "text", value: summary }] }],
+                  projectLicense: license,
+                  developer: { name: devName, url: homepage },
+                  homepage,
+                  repository: homepage,
+                  keywords: [slug, "appimage", "anylinux"],
+                  categories: [category],
+                },
+                media: {
+                  icon: iconUrl,
+                  screenshots: screenshots.length > 0 ? screenshots : [{ caption: `${name} screenshot`, source: iconUrl }]
+                }
+              },
+              addedAt: new Date().toISOString().split("T")[0],
+              origin: { type: "third-party" },
+              releaseSource: { type: "github", repository: releaseRepo },
+              sandbox: {
+                network: "full",
+                display: "wayland-or-x11",
+                audio: "none",
+                processes: "isolated",
+                ipc: true,
+                filesystem: [],
+                devices: [],
+                sessionBus: { access: "none", rules: [] },
+                systemBus: { access: "none", rules: [] }
+              }
+            };
+          }
 
           const check = appManifestSchema.safeParse(manifest);
           if (!check.success) {
@@ -136,7 +159,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "feat(app): add ${{ github.event.issue.title }}"
+          commit-message: "${{ github.event.issue.title }}"
           title: "${{ github.event.issue.title }}"
           body: |
             Closes #${{ github.event.issue.number }}

@@ -80,6 +80,8 @@ function populateTemplateDropdown() {
 
 function resetStudioForm() {
   if (!appNameEl) return;
+  currentSlug = '';
+  if (templateSelectEl) templateSelectEl.value = '';
   appNameEl.value = '';
   appSlugEl.value = '';
   delete appSlugEl.dataset.customized;
@@ -806,30 +808,44 @@ function initStudio() {
   if (btnSubmitGitHubIssue) {
     btnSubmitGitHubIssue.addEventListener('click', () => {
       const { manifest } = updateStudioManifest();
-      const meta = manifest.appstream.metadata;
-
-      const name = encodeURIComponent(meta.name);
-      const slug = encodeURIComponent(appSlugEl.value.trim());
-      const appId = encodeURIComponent(meta.id);
-      const summary = encodeURIComponent(meta.summary);
-
-      let descText = leadParagraphEl.value.trim();
-      if (featureBullets.length > 0) {
-        descText += '\n\nFeatures:\n' + featureBullets.map((b) => `- ${b}`).join('\n');
-      }
-      const desc = encodeURIComponent(descText);
-
-      const license = encodeURIComponent(meta.projectLicense);
-      const category = encodeURIComponent(meta.categories[0]);
-      const dev = encodeURIComponent(meta.developer.name);
-      const homepage = encodeURIComponent(meta.homepage);
-      const repo = encodeURIComponent(manifest.releaseSource.repository);
-      const icon = encodeURIComponent(manifest.appstream.media.icon);
-      const screenshots = encodeURIComponent(manifest.appstream.media.screenshots.map((s) => s.source).join('\n'));
-      const title = encodeURIComponent(`feat(app): add metadata for ${meta.name}`);
-
+      const meta = manifest.appstream?.metadata || {};
+      const rawSlug = (appSlugEl.value.trim() || currentSlug || '').toLowerCase();
       const activeRepo = getCurrentRepo();
-      const issueUrl = `https://github.com/${activeRepo}/issues/new?template=add-app.yml&title=${title}&name=${name}&slug=${slug}&app_id=${appId}&summary=${summary}&description=${desc}&license=${license}&main_category=${category}&developer_name=${dev}&homepage=${homepage}&release_repo=${repo}&icon_url=${icon}&screenshots=${screenshots}`;
+
+      const isExistingApp = Boolean(catalogData && catalogData[rawSlug]) || catalogList.some((item) => item.slug === rawSlug);
+
+      let issueUrl = '';
+      if (isExistingApp) {
+        const title = encodeURIComponent(`fix(app): update metadata for ${rawSlug}`);
+        const slug = encodeURIComponent(rawSlug);
+        const changes = encodeURIComponent(JSON.stringify(manifest, null, 2));
+        issueUrl = `https://github.com/${activeRepo}/issues/new?template=update-app.yml&title=${title}&slug=${slug}&changes=${changes}`;
+      } else {
+        const name = encodeURIComponent(meta.name || rawSlug);
+        const slug = encodeURIComponent(rawSlug);
+        const appId = encodeURIComponent(meta.id || '');
+        const summary = encodeURIComponent(meta.summary || '');
+
+        let descText = leadParagraphEl.value.trim();
+        if (featureBullets.length > 0) {
+          descText += '\n\nFeatures:\n' + featureBullets.map((b) => `- ${b}`).join('\n');
+        }
+        const desc = encodeURIComponent(descText);
+
+        const license = encodeURIComponent(meta.projectLicense || 'MIT');
+        const category = encodeURIComponent(meta.categories?.[0] || 'Utility');
+        const dev = encodeURIComponent(meta.developer?.name || '');
+        const homepage = encodeURIComponent(meta.homepage || '');
+        const repo = encodeURIComponent(manifest.releaseSource?.repository || '');
+        const icon = encodeURIComponent(manifest.appstream?.media?.icon || '');
+        const screenshots = encodeURIComponent(
+          (manifest.appstream?.media?.screenshots || []).map((s) => s.source).join('\n')
+        );
+        const title = encodeURIComponent(`feat(app): add metadata for ${meta.name || rawSlug}`);
+
+        issueUrl = `https://github.com/${activeRepo}/issues/new?template=add-app.yml&title=${title}&name=${name}&slug=${slug}&app_id=${appId}&summary=${summary}&description=${desc}&license=${license}&main_category=${category}&developer_name=${dev}&homepage=${homepage}&release_repo=${repo}&icon_url=${icon}&screenshots=${screenshots}`;
+      }
+
       window.open(issueUrl, '_blank');
     });
   }

@@ -1,4 +1,4 @@
-.PHONY: all install test validate export sync import schema clean help
+.PHONY: all install test validate export sync import schema clean help serve
 
 SHELL := /bin/bash
 RUNNER := $(shell which bun >/dev/null 2>&1 && echo "bun" || echo "npm")
@@ -59,6 +59,13 @@ schema:
 clean:
 	@rm -rf dist .cache web/catalog.json web/status.json web/catalog-data.js web/icons
 	@echo "Cleaned build, cache, and generated web artifacts."
+
+serve:
+	@if [ "$(RUNNER)" = "bun" ]; then \
+		bun run scripts/serve.ts; \
+	else \
+		npm run serve:node; \
+	fi
 
 help:
 	@echo "AnyLinux Metadata Build Targets:"
