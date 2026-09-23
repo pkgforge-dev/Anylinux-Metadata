@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { appManifestSchema } from "../schema/schema.ts";
+import { parseIssueBody, extractField } from "../scripts/parse-issue.ts";
 
 const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
 const rootDir = join(currentDir, "..");
@@ -194,6 +195,7 @@ linuxtoys
 
 ### Proposed JSON or Changes
 
+\`\`\`json
 {
   "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
   "appstream": {
@@ -264,26 +266,87 @@ linuxtoys
       "rules": []
     }
   }
-}`;
+}
+\`\`\``;
 
-    function extractField(label: string, body: string) {
-      const regex = new RegExp(`### ${label}\\s*\\n\\n([^#]+)`);
-      const match = body.match(regex);
-      return match ? match[1].trim() : "";
-    }
-
-    const proposedChanges = extractField("Proposed JSON or Changes", issueBody);
-    const slug = extractField("Application Slug", issueBody);
+    const { slug, manifest } = parseIssueBody(issueBody);
 
     assert.equal(slug, "linuxtoys");
-    assert.ok(proposedChanges.length > 0, "Proposed changes must be extracted");
-
-    const cleanJson = proposedChanges.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
-    const manifest = JSON.parse(cleanJson);
-    const check = appManifestSchema.safeParse(manifest);
-
-    assert.ok(check.success, "Parsed manifest from issue body must pass schema validation");
-    assert.equal(manifest.appstream.metadata.summary, "A collection of performance tweaks, system configuration tools, and optimization scripts for Linux desktops");
+    assert.ok(manifest, "Manifest must be returned");
+    assert.equal(
+      manifest.appstream.metadata.summary,
+      "A collection of performance tweaks, system configuration tools, and optimization scripts for Linux desktops"
+    );
     assert.equal(manifest.sandbox.network, "full");
   });
+
+  test("5. Issue-to-PR workflow parses add-app submissions and builds valid manifest", () => {
+    const addIssueBody = `### Application Name
+
+SuperTerminal
+
+### Application Slug
+
+super-terminal
+
+### Reverse-DNS AppStream ID
+
+org.example.super_terminal
+
+### Summary
+
+Blazingly fast hardware-accelerated terminal for developers
+
+### Description
+
+SuperTerminal is a modern terminal emulator built for speed and flexibility.
+
+Features:
+- Hardware acceleration
+- Split panes
+
+### License (SPDX Identifier)
+
+MIT
+
+### Main Category
+
+System
+
+### Developer Name
+
+Terminal Team
+
+### Homepage URL
+
+https://example.org/superterminal
+
+### AnyLinux Release Repository
+
+pkgforge-dev/superterminal-AppImage
+
+### Icon URL
+
+https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/super-terminal.png
+
+### Screenshot URLs
+
+https://example.org/shot1.png
+https://example.org/shot2.png
+`;
+
+    const { slug, manifest } = parseIssueBody(addIssueBody);
+
+    assert.equal(slug, "super-terminal");
+    assert.equal(manifest.appstream.metadata.name, "SuperTerminal");
+    assert.equal(manifest.appstream.metadata.id, "org.example.super_terminal");
+    assert.equal(manifest.appstream.metadata.summary, "Blazingly fast hardware-accelerated terminal for developers");
+    assert.equal(manifest.appstream.metadata.projectLicense, "MIT");
+    assert.deepEqual(manifest.appstream.metadata.categories, ["System"]);
+    assert.equal(manifest.appstream.media.screenshots.length, 2);
+    assert.equal(manifest.appstream.metadata.description.length, 2);
+    assert.equal(manifest.appstream.metadata.description[0].type, "paragraph");
+    assert.equal(manifest.appstream.metadata.description[1].type, "unordered-list");
+  });
 });
+
