@@ -278,12 +278,21 @@
       window.history.pushState({ tab: tabId }, '', url.toString());
     }
     const titles = {
-      catalog: 'AnyLinux Metadata Portal',
+      catalog: 'AnyLinux Metadata - Curated Freedesktop AppStream Registry',
       backlog: 'Pending Backlog - AnyLinux Metadata Portal',
       studio: 'Authoring Studio - AnyLinux Metadata Portal',
       validator: 'Manifest Validator - AnyLinux Metadata Portal'
     };
     document.title = titles[tabId] || 'AnyLinux Metadata Portal';
+    if (typeof updateCanonicalUrl === 'function') {
+      if (tabId === 'catalog') {
+        updateCanonicalUrl('https://pkgforge-dev.github.io/Anylinux-Metadata/');
+        restoreRootSeoMetadata();
+      } else {
+        updateCanonicalUrl(`https://pkgforge-dev.github.io/Anylinux-Metadata/?tab=${encodeURIComponent(tabId)}`);
+        updateAppStructuredData(null, null);
+      }
+    }
   }
   
   function initTabs() {
@@ -322,6 +331,118 @@
   }
   
 
+  // --- seo.js ---
+  // Dynamic SEO Metadata and Structured Data Management
+
+  function updateCanonicalUrl(url) {
+    let link = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
+    }
+    link.setAttribute('href', url);
+  }
+
+  function updateMetaTag(selector, attrName, value) {
+    let el = document.querySelector(selector);
+    if (!el) {
+      el = document.createElement('meta');
+      const inner = selector.replace('meta[', '').replace(']', '');
+      const eqIdx = inner.indexOf('=');
+      if (eqIdx !== -1) {
+        const key = inner.slice(0, eqIdx);
+        const val = inner.slice(eqIdx + 1).replace(/["']/g, '');
+        el.setAttribute(key, val);
+        document.head.appendChild(el);
+      }
+    }
+    if (el) {
+      el.setAttribute(attrName, value);
+    }
+  }
+
+  function restoreRootSeoMetadata() {
+    const rootTitle = 'AnyLinux Metadata - Curated Freedesktop AppStream Registry';
+    const rootDesc = 'Official AnyLinux Metadata Portal and Freedesktop AppStream 1.0 registry. Browse, search, and validate curated metadata, sandbox profiles, and icons for portable Linux AppImages not on Flathub.';
+    const rootUrl = 'https://pkgforge-dev.github.io/Anylinux-Metadata/';
+    const defaultIcon = 'https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ghostty.png';
+
+    updateCanonicalUrl(rootUrl);
+    updateMetaTag('meta[name="description"]', 'content', rootDesc);
+    updateMetaTag('meta[property="og:title"]', 'content', rootTitle);
+    updateMetaTag('meta[property="og:description"]', 'content', rootDesc);
+    updateMetaTag('meta[property="og:url"]', 'content', rootUrl);
+    updateMetaTag('meta[property="og:image"]', 'content', defaultIcon);
+    updateMetaTag('meta[name="twitter:title"]', 'content', rootTitle);
+    updateMetaTag('meta[name="twitter:description"]', 'content', rootDesc);
+    updateMetaTag('meta[name="twitter:image"]', 'content', defaultIcon);
+    updateAppStructuredData(null, null);
+  }
+
+  function updateAppStructuredData(app, slug) {
+    const existing = document.getElementById('app-structured-data');
+    if (existing) {
+      existing.remove();
+    }
+    if (!app || !slug) return;
+
+    const meta = app.appstream?.metadata || {};
+    const release = app.releaseSource || {};
+    const categories = Array.isArray(meta.categories) && meta.categories.length > 0 ? meta.categories : ['Utility'];
+    const mainCat = categories[0] || 'Utility';
+
+    const schemaCategoryMap = {
+      AudioVideo: 'MultimediaApplication',
+      Audio: 'AudioApplication',
+      Video: 'VideoApplication',
+      Development: 'DeveloperApplication',
+      Game: 'GameApplication',
+      Graphics: 'DesignApplication',
+      Network: 'NetworkApplication',
+      WebBrowser: 'BrowserApplication',
+      Office: 'BusinessApplication',
+      Science: 'EducationalApplication',
+      Education: 'EducationalApplication',
+      System: 'UtilitiesApplication',
+      Utility: 'UtilitiesApplication'
+    };
+
+    const appName = meta.name || slug;
+    const summary = meta.summary || '';
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      'name': `${appName} AppImage`,
+      'operatingSystem': 'Linux',
+      'applicationCategory': schemaCategoryMap[mainCat] || 'UtilitiesApplication',
+      'description': summary,
+      'softwareVersion': 'Portable AppImage',
+      'offers': {
+        '@type': 'Offer',
+        'price': '0',
+        'priceCurrency': 'USD'
+      }
+    };
+
+    if (meta.homepage) {
+      schema.url = meta.homepage;
+    }
+    if (release.repository) {
+      schema.downloadUrl = `https://github.com/${release.repository}`;
+    }
+    if (meta.projectLicense) {
+      schema.license = `https://spdx.org/licenses/${encodeURIComponent(meta.projectLicense)}.html`;
+    }
+
+    const script = document.createElement('script');
+    script.id = 'app-structured-data';
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema, null, 2);
+    document.head.appendChild(script);
+  }
+
+
   // --- router.js ---
   // URL Routing and History State Synchronization
   
@@ -358,7 +479,23 @@
     }
   
     const appName = app.appstream?.metadata?.name || slug;
-    document.title = `${appName} - AnyLinux Metadata Portal`;
+    const summary = app.appstream?.metadata?.summary || 'Curated portable Linux application.';
+    const appTitle = `${appName} AppImage - Portable Linux Application | AnyLinux Metadata`;
+    const appDesc = `${appName} AppImage: ${summary} Verified AppStream 1.0 metadata, sandbox permissions, and release details.`;
+    const appUrl = `https://pkgforge-dev.github.io/Anylinux-Metadata/?app=${encodeURIComponent(slug)}`;
+    const appIcon = getPrimaryIconUrl(slug);
+
+    document.title = appTitle;
+    updateCanonicalUrl(appUrl);
+    updateMetaTag('meta[name="description"]', 'content', appDesc);
+    updateMetaTag('meta[property="og:title"]', 'content', appTitle);
+    updateMetaTag('meta[property="og:description"]', 'content', appDesc);
+    updateMetaTag('meta[property="og:url"]', 'content', appUrl);
+    updateMetaTag('meta[property="og:image"]', 'content', appIcon);
+    updateMetaTag('meta[name="twitter:title"]', 'content', appTitle);
+    updateMetaTag('meta[name="twitter:description"]', 'content', appDesc);
+    updateMetaTag('meta[name="twitter:image"]', 'content', appIcon);
+    updateAppStructuredData(app, slug);
     safeScrollToTop();
   }
   
@@ -385,7 +522,8 @@
       window.history.pushState({ tab: 'catalog' }, '', url.toString());
     }
   
-    document.title = 'AnyLinux Metadata Portal';
+    document.title = 'AnyLinux Metadata - Curated Freedesktop AppStream Registry';
+    restoreRootSeoMetadata();
     safeScrollToTop();
   }
   

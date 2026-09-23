@@ -66,13 +66,26 @@
         if (urlTheme === 'dark' || urlTheme === 'light') {
           document.documentElement.setAttribute('data-theme', urlTheme);
           try { localStorage.setItem('anylinux-theme', urlTheme); } catch (e) {}
-          return;
-        }
-        var theme = localStorage.getItem('anylinux-theme');
-        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
         } else {
-          document.documentElement.setAttribute('data-theme', 'light');
+          var theme = localStorage.getItem('anylinux-theme');
+          if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        }
+
+        var queryApp = params.get('app');
+        if (queryApp) {
+          var cleanApp = queryApp.replace(/[^a-zA-Z0-9_-]/g, '');
+          var canonicalLink = document.querySelector('link[rel="canonical"]');
+          if (canonicalLink) {
+            canonicalLink.setAttribute('href', 'https://pkgforge-dev.github.io/Anylinux-Metadata/?app=' + encodeURIComponent(cleanApp));
+          }
+          var formattedTitle = cleanApp.split('-').map(function (w) {
+            return w.charAt(0).toUpperCase() + w.slice(1);
+          }).join(' ');
+          document.title = formattedTitle + ' AppImage - Portable Linux Application | AnyLinux Metadata';
         }
       } catch (e) {}
     })();
