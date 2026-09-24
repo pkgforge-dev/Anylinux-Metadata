@@ -237,8 +237,8 @@ describe("Accessibility and UI Contract Tests", () => {
       assert.ok(cssContent.includes(".card-footer-badge {"));
     });
 
-    test("Mobile styles hide secondary card buttons and compact hero/ribbon layout", () => {
-      assert.ok(cssContent.includes(".btn-card-edit,\n  .btn-card-copy {\n    display: none;"));
+    test("Mobile styles hide card footer buttons and compact hero/ribbon layout", () => {
+      assert.ok(cssContent.includes(".app-card-footer {\n    display: none;"));
       assert.ok(cssContent.includes(".catalog-hero {"));
       assert.ok(htmlContent.includes('placeholder="Search applications..."'));
     });
