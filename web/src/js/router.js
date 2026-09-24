@@ -65,6 +65,9 @@ function navigateToCatalog(updateUrl = true) {
 }
 
 function handleRouting(isInitial = false) {
+  if (typeof closeScreenshotLightbox === 'function') closeScreenshotLightbox();
+  if (typeof closeAppDetailModal === 'function') closeAppDetailModal();
+
   const params = new URLSearchParams(window.location.search);
   const queryApp = params.get('app');
   const queryTab = params.get('tab');
@@ -75,12 +78,18 @@ function handleRouting(isInitial = false) {
       navigateToApp(queryApp, false);
       return;
     }
+    if (!catalogData || Object.keys(catalogData).length === 0) {
+      return;
+    }
   }
 
   if (rawHash.startsWith('app/')) {
     const slug = rawHash.replace('app/', '');
     if (catalogData && catalogData[slug]) {
-      navigateToApp(slug, true);
+      navigateToApp(slug, false);
+      return;
+    }
+    if (!catalogData || Object.keys(catalogData).length === 0) {
       return;
     }
   }
@@ -95,9 +104,8 @@ function handleRouting(isInitial = false) {
     return;
   }
 
-  if (isInitial && !queryApp && !queryTab && !rawHash) {
-    switchTab('catalog', false);
-  }
+  // Fallback when returning to root URL (e.g. browser back button from app view):
+  switchTab('catalog', false);
 }
 
 function initRouter() {
