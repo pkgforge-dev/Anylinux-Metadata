@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-09-23*
+*Last synchronized: 2026-09-24*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `466` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `468` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `242` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `224` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `185` (`83%`) | Fully validated and ready |
-| **Pending Backlog** | `39` | Pending manifest creation or verification |
+| **Target Database Apps** | `226` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `185` (`82%`) | Fully validated and ready |
+| **Pending Backlog** | `41` | Pending manifest creation or verification |
 
 ## Completed Applications (185)
 
@@ -200,7 +200,7 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (39)
+## Pending Backlog (41)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -233,6 +233,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **MATE Calculator** | `mate-calculator` | [`pkgforge-dev/MATE-Calculator-AppImage`](https://github.com/pkgforge-dev/MATE-Calculator-AppImage) |
 | **OpenBoardView** | `openboardview` | [`pkgforge-dev/OpenBoardView-AppImage`](https://github.com/pkgforge-dev/OpenBoardView-AppImage) |
 | **OpenTyrian2000** | `opentyrian2000` | [`pkgforge-dev/OpenTyrian2000-AppImage`](https://github.com/pkgforge-dev/OpenTyrian2000-AppImage) |
+| **Paperboat** | `paperboat` | [`pkgforge-dev/Paperboat-AppImage-Enhanced`](https://github.com/pkgforge-dev/Paperboat-AppImage-Enhanced) |
 | **QTerminal** | `qterminal` | [`pkgforge-dev/QTerminal-AppImage`](https://github.com/pkgforge-dev/QTerminal-AppImage) |
 | **ROLLER** | `roller` | [`pkgforge-dev/ROLLER-AppImage`](https://github.com/pkgforge-dev/ROLLER-AppImage) |
 | **Satty** | `satty` | [`pkgforge-dev/Satty-AppImage`](https://github.com/pkgforge-dev/Satty-AppImage) |
@@ -241,6 +242,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **Sonic Robo Blast 2** | `sonic-robo-blast-2` | [`pkgforge-dev/SRB2-AppImage`](https://github.com/pkgforge-dev/SRB2-AppImage) |
 | **st** | `st` | [`pkgforge-dev/st-AppImage`](https://github.com/pkgforge-dev/st-AppImage) |
 | **Super Mario War** | `super-mario-war` | [`pkgforge-dev/Supermariowar-AppImage`](https://github.com/pkgforge-dev/Supermariowar-AppImage) |
+| **Tweaks for COSMIC** | `tweaks-for-cosmic` | [`pkgforge-dev/Tweaks-For-COSMIC-AppImage`](https://github.com/pkgforge-dev/Tweaks-For-COSMIC-AppImage) |
 | **WhatsDesk** | `whatsdesk` | [`pkgforge-dev/WhatsDesk-AppImage`](https://github.com/pkgforge-dev/WhatsDesk-AppImage) |
 | **Xreader** | `xreader` | [`pkgforge-dev/Xreader-AppImage`](https://github.com/pkgforge-dev/Xreader-AppImage) |
 | **Yamagi Quake II** | `yamagi-quake-ii` | [`pkgforge-dev/Yamagi-Quake-II-AppImage`](https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage) |

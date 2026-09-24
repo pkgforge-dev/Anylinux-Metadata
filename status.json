@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-23T09:01:09.603Z",
-  "totalAnylinuxApps": 466,
+  "updatedAt": "2026-09-24T08:57:14.133Z",
+  "totalAnylinuxApps": 468,
   "flathubCoveredCount": 242,
-  "targetCount": 224,
+  "targetCount": 226,
   "completedCount": 185,
-  "pendingCount": 39,
-  "progressPercent": 83,
+  "pendingCount": 41,
+  "progressPercent": 82,
   "completed": [
     {
       "name": "12to11",
@@ -1282,6 +1282,12 @@
       "slug": "opentyrian2000"
     },
     {
+      "name": "Paperboat",
+      "url": "https://github.com/pkgforge-dev/Paperboat-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Paperboat-AppImage-Enhanced",
+      "slug": "paperboat"
+    },
+    {
       "name": "QTerminal",
       "url": "https://github.com/pkgforge-dev/QTerminal-AppImage",
       "repo": "pkgforge-dev/QTerminal-AppImage",
@@ -1328,6 +1334,12 @@
       "url": "https://github.com/pkgforge-dev/Supermariowar-AppImage",
       "repo": "pkgforge-dev/Supermariowar-AppImage",
       "slug": "super-mario-war"
+    },
+    {
+      "name": "Tweaks for COSMIC",
+      "url": "https://github.com/pkgforge-dev/Tweaks-For-COSMIC-AppImage",
+      "repo": "pkgforge-dev/Tweaks-For-COSMIC-AppImage",
+      "slug": "tweaks-for-cosmic"
     },
     {
       "name": "WhatsDesk",
