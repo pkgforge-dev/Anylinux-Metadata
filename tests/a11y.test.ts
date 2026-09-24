@@ -223,4 +223,24 @@ describe("Accessibility and UI Contract Tests", () => {
       assert.ok(cssContent.includes(".filter-controls select {"));
     });
   });
+
+  describe("10. Mobile UX and App Detail View Layout Contracts", () => {
+    test("Metrics ribbon is hidden when viewing an individual app detail page", () => {
+      assert.ok(cssContent.includes("body.viewing-app .metrics-ribbon,"));
+      assert.ok(cssContent.includes("body:has(#panel-app-detail.active) .metrics-ribbon"));
+      assert.ok(cssContent.includes("display: none !important;"));
+    });
+
+    test("Catalog card footer displays clean format badge and avoids raw repo slug overflow", () => {
+      assert.ok(jsContent.includes('class="card-footer-badge"'));
+      assert.ok(!jsContent.includes('<span>${escapeHtml(release.repository'), "Card footer must not contain raw release.repository");
+      assert.ok(cssContent.includes(".card-footer-badge {"));
+    });
+
+    test("Mobile styles hide secondary card buttons and compact hero/ribbon layout", () => {
+      assert.ok(cssContent.includes(".btn-card-edit,\n  .btn-card-copy {\n    display: none;"));
+      assert.ok(cssContent.includes(".catalog-hero {"));
+      assert.ok(htmlContent.includes('placeholder="Search applications..."'));
+    });
+  });
 });

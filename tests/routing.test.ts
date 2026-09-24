@@ -56,7 +56,15 @@ function setupRoutingSandbox(initialUrl: string) {
         return [];
       },
       getElementById: (id: string) => panels[id] || null,
-      createElement: () => ({ setAttribute() {}, remove() {} })
+      createElement: () => ({ setAttribute() {}, remove() {} }),
+      body: {
+        classList: {
+          _classes: new Set<string>(),
+          add(cls: string) { this._classes.add(cls); },
+          remove(cls: string) { this._classes.delete(cls); },
+          contains(cls: string) { return this._classes.has(cls); }
+        }
+      }
     },
     URLSearchParams,
     URL,
@@ -111,6 +119,7 @@ describe("Browser History and Routing Navigation Tests", () => {
     assert.equal(panels["panel-app-detail"].active, true, "panel-app-detail must be active");
     assert.equal(panels["panel-app-detail"].hidden, false, "panel-app-detail must not be hidden");
     assert.equal(panels["panel-catalog"].active, false, "panel-catalog must be inactive");
+    assert.equal(sandbox.document.body.classList.contains("viewing-app"), true, "body must have viewing-app class");
   });
 
   test("2. Browser back button (popstate returning to /) restores catalog view and hides app detail", () => {
@@ -125,6 +134,7 @@ describe("Browser History and Routing Navigation Tests", () => {
     assert.equal(panels["panel-catalog"].hidden, false, "panel-catalog must be visible");
     assert.equal(panels["panel-app-detail"].active, false, "panel-app-detail must become inactive");
     assert.equal(panels["panel-app-detail"].hidden, true, "panel-app-detail must be hidden");
+    assert.equal(sandbox.document.body.classList.contains("viewing-app"), false, "body must not have viewing-app class after returning to catalog");
   });
 
   test("3. Browser forward button (popstate to ?app=slug) restores application detail view", () => {

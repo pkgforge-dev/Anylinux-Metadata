@@ -660,6 +660,12 @@ a:hover {
   width: 100%;
 }
 
+/* Hide registry metrics ribbon on app detail page across all viewports */
+body.viewing-app .metrics-ribbon,
+body:has(#panel-app-detail.active) .metrics-ribbon {
+  display: none !important;
+}
+
 .metrics-inner {
   max-width: 1500px;
   margin: 0 auto;
@@ -774,17 +780,28 @@ a:hover {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 640px) {
   .metrics-ribbon {
-    padding: 0.6rem 0.75rem;
+    padding: 0.45rem 0.75rem;
   }
 
   .metrics-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     gap: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .metrics-inner::-webkit-scrollbar {
+    display: none;
   }
 
   .metric-item {
-    padding: 0.55rem 0.7rem;
+    flex: 0 0 auto;
+    padding: 0.35rem 0.65rem;
+    border-radius: var(--radius-sm);
   }
 
   .metric-label {
@@ -792,7 +809,11 @@ a:hover {
   }
 
   .metric-val {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+  }
+
+  .metric-progress-wrapper {
+    display: none;
   }
 }
 
@@ -895,6 +916,28 @@ a:hover {
   color: var(--text-secondary);
   max-width: 840px;
   line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .catalog-hero {
+    padding: 1rem 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-description {
+    font-size: 0.825rem;
+    line-height: 1.45;
+  }
 }
 
 /* ==========================================================================
@@ -1219,6 +1262,19 @@ select:focus {
   gap: 0.5rem;
 }
 
+.card-footer-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 .card-actions-quick {
   display: flex;
   gap: 0.4rem;
@@ -1237,8 +1293,31 @@ select:focus {
     gap: 0.75rem;
   }
 
-  .card-actions-quick {
+  .app-card-footer {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
     gap: 0.5rem;
+    padding-top: 0.75rem;
+  }
+
+  .card-footer-badge {
+    display: none;
+  }
+
+  .card-actions-quick {
+    width: 100%;
+    display: flex;
+  }
+
+  .btn-card-inspect {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-card-edit,
+  .btn-card-copy {
+    display: none;
   }
 
   .btn-card-inspect,
@@ -1273,6 +1352,10 @@ select:focus {
 
   .app-card-id {
     font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
   }
 
   .app-card-summary {
@@ -1280,24 +1363,8 @@ select:focus {
     min-height: 2.4rem;
   }
 
-  .app-card-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-
-  .card-actions-quick {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.35rem;
-  }
-
-  .card-actions-quick .btn {
-    width: 100%;
-    padding: 0.38rem 0.2rem;
-    font-size: 0.72rem;
-    justify-content: center;
+  .app-card-chips .chip:not(.chip-category):not(.chip-license) {
+    display: none;
   }
 }
 
@@ -3585,11 +3652,28 @@ textarea:focus {
 
   .app-page-nav-actions {
     width: 100%;
+    display: flex;
+    gap: 0.5rem;
   }
 
-  .app-page-nav-actions button {
+  .app-page-nav-actions button,
+  .app-page-nav-actions a {
     flex: 1;
     justify-content: center;
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-page-nav-actions .btn-text {
+    display: none;
+  }
+
+  .breadcrumb-item.current {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px;
   }
 }
 

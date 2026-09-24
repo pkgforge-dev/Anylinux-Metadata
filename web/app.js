@@ -265,6 +265,9 @@
       p.classList.toggle('active', isActive);
       p.hidden = !isActive;
     });
+    if (typeof document !== 'undefined' && document.body?.classList) {
+      document.body.classList.remove('viewing-app');
+    }
     if (updateUrl) {
       const url = new URL(window.location.href);
       url.searchParams.delete('app');
@@ -477,6 +480,10 @@
       }
       window.history.pushState({ app: slug }, '', url.toString());
     }
+
+    if (typeof document !== 'undefined' && document.body?.classList) {
+      document.body.classList.add('viewing-app');
+    }
   
     const appName = app.appstream?.metadata?.name || slug;
     const summary = app.appstream?.metadata?.summary || 'Curated portable Linux application.';
@@ -500,6 +507,9 @@
   }
   
   function navigateToCatalog(updateUrl = true) {
+    if (typeof document !== 'undefined' && document.body?.classList) {
+      document.body.classList.remove('viewing-app');
+    }
     tabPanels.forEach((p) => {
       const isActive = p.id === 'panel-catalog';
       p.classList.toggle('active', isActive);
@@ -1370,7 +1380,7 @@
         </div>
   
         <div class="app-card-footer">
-          <span>${escapeHtml(release.repository || 'pkgforge-dev')}</span>
+          <span class="card-footer-badge">AppImage</span>
           <div class="card-actions-quick">
             <a href="?app=${encodeURIComponent(item.slug)}" class="btn btn-xs btn-outline btn-card-inspect" title="View details">${ICONS.eye} View</a>
             <button class="btn btn-xs btn-outline btn-card-edit" title="Edit in Studio">${ICONS.edit} Edit</button>

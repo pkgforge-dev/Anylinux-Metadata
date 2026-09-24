@@ -32,12 +32,19 @@ function navigateToApp(slug, updateUrl = true) {
     window.history.pushState({ app: slug }, '', url.toString());
   }
 
+  if (typeof document !== 'undefined' && document.body?.classList) {
+    document.body.classList.add('viewing-app');
+  }
+
   const appName = app.appstream?.metadata?.name || slug;
   document.title = `${appName} - AnyLinux Metadata Portal`;
   safeScrollToTop();
 }
 
 function navigateToCatalog(updateUrl = true) {
+  if (typeof document !== 'undefined' && document.body?.classList) {
+    document.body.classList.remove('viewing-app');
+  }
   tabPanels.forEach((p) => {
     const isActive = p.id === 'panel-catalog';
     p.classList.toggle('active', isActive);

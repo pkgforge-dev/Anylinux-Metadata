@@ -15,6 +15,9 @@ function switchTab(tabId, updateUrl = true) {
     p.classList.toggle('active', isActive);
     p.hidden = !isActive;
   });
+  if (typeof document !== 'undefined' && document.body?.classList) {
+    document.body.classList.remove('viewing-app');
+  }
   if (updateUrl) {
     const url = new URL(window.location.href);
     url.searchParams.delete('app');
