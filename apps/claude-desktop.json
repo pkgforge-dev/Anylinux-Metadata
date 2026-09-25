@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.claude.claude_desktop",
       "name": "claude-desktop",
-      "summary": "Unofficial AppImages, Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your",
+      "summary": "AI assistant desktop application with Model Context Protocol integration and Linux system enhancements",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Unofficial AppImages, Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+              "value": "Claude Desktop is an AI assistant application repackaged for broader Linux ecosystem compatibility. Based on Anthropic's official client, it provides an intelligent conversational workspace optimized with Linux-tailored launcher capabilities and hardware integrations."
             }
           ]
         },
@@ -21,8 +21,43 @@
           "content": [
             {
               "type": "text",
-              "value": "This script lets you choose between two different implementations."
+              "value": "Designed to accommodate diverse desktop environments and display servers, the client incorporates environment diagnosis tools and automated recovery features to ensure dependable execution."
             }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full Model Context Protocol (MCP) integration configured via JSON"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Opt-in native Wayland support and display server compatibility flags"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in diagnostic tooling to verify permissions, display settings, and sandbox state"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic GPU crash recovery and autostart configuration healing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hardware virtualization support for Cowork environments on Linux"
+              }
+            ]
           ]
         }
       ],
@@ -34,22 +69,32 @@
       "homepage": "https://claude.com/",
       "repository": "https://github.com/aaddrick/claude-desktop-debian",
       "keywords": [
-        "claude-desktop",
-        "appimage",
-        "anylinux"
+        "anthropic",
+        "assistant",
+        "chatbot",
+        "mcp",
+        "llm",
+        "artificial intelligence",
+        "wayland",
+        "productivity"
       ],
       "categories": [
         "Utility",
         "Office",
-        "ArtificialIntelligence"
+        "Chat",
+        "TextTools"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/claude-desktop.png",
       "screenshots": [
         {
-          "caption": "claude-desktop interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Claude Desktop chat workspace interface",
+          "source": "https://raw.githubusercontent.com/aaddrick/claude-desktop-debian/main/docs/images/claude-desktop-screenshot1.png"
+        },
+        {
+          "caption": "Claude Desktop conversation and settings view",
+          "source": "https://raw.githubusercontent.com/aaddrick/claude-desktop-debian/main/docs/images/claude-desktop-screenshot2.png"
         }
       ]
     }

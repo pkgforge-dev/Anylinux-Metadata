@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.nblood.nblood_pcexhumed",
       "name": "PCExhumed",
-      "summary": "PCExhumed is an accurate source port of the PC release of Exhumed (known in North America as PowerSlave), the 1996 Egyptian-themed first-person sho",
+      "summary": "Reverse-engineered source port of the classic first-person shooter Exhumed and PowerSlave",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "PCExhumed is an accurate source port of the PC release of Exhumed (known in North America as PowerSlave), the 1996 Egyptian-themed first-person shooter. Based on the EDuke32 BUILD engine, it provides native 64-bit performance on Linux."
+              "value": "PCExhumed is an accurate source port of the PC release of Exhumed (released as PowerSlave in North America), built upon EDuke32 engine technology and reverse-engineering principles. It brings the 1996 Egyptian-themed Build engine first-person shooter to modern Linux operating systems with enhanced stability and compatibility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port natively loads original game assets from retail releases, classic shareware/demo versions, and modern digital re-releases from Steam and GOG."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern operating systems with high-resolution widescreen rendering"
+                "value": "Automatic detection and compatibility with Steam and GOG installations of PowerSlave (DOS Classic Edition)"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Smooth mouselook controls with customizable keybindings and crosshairs"
+                "value": "Support for retail PC CD-ROM data files as well as the original demo release"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for original game data, CD audio soundtracks, and voiceovers"
+                "value": "External OGG audio track playback for full CD soundtrack music and King Ramses storyline narration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced dynamic lighting, particle effects, and uncapped framerate options"
+                "value": "Full cinematic video playback support for original cutscene movies"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Restores cut features and fixes engine glitches present in the original DOS release"
+                "value": "Configurable field of view (FOV) settings ranging from 60 to 140 degrees"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Mouse look customization options including optional vertical axis inversion"
               }
             ]
           ]
@@ -60,21 +75,25 @@
       "homepage": "https://github.com/NBlood/NBlood",
       "repository": "https://github.com/pkgforge-dev/PCExhumed-AppImage",
       "keywords": [
-        "pcexhumed",
-        "appimage",
-        "anylinux"
+        "powerslave",
+        "exhumed",
+        "eduke32",
+        "build engine",
+        "source port",
+        "fps",
+        "shooter",
+        "retro"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/pcexhumed.png",
       "screenshots": [
         {
-          "caption": "PCExhumed interface screenshot 1",
+          "caption": "In-game gameplay in PCExhumed",
           "source": "https://github.com/user-attachments/assets/43ec8959-a6e6-4d8c-a4a9-3d3f9f08d65a"
         }
       ]

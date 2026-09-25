@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.suckless.st.st",
+      "name": "st",
+      "summary": "Minimalist and lightweight terminal emulator for the X Window System",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "st is a simple terminal implementation for the X Window System engineered by the suckless.org community. It is designed as a lightweight and highly efficient alternative to traditional terminal emulators, adhering strictly to simplicity and clarity in codebase design."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for maximum portability, this build ensures reliable operation across a broad range of Linux distributions without requiring container setups or elevated privileges."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Extremely lightweight architecture optimized for fast startup and minimal memory footprint"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native X11 integration delivering responsive terminal emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Self-contained portable execution requiring no external FUSE dependencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad compatibility across modern, legacy, and musl-based Linux distributions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated opt-in update notifications with automatic suppression when package managers are detected"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "st Developers",
+        "url": "https://st.suckless.org/"
+      },
+      "homepage": "https://st.suckless.org/",
+      "repository": "https://github.com/pkgforge-dev/st-appimage",
+      "keywords": [
+        "terminal",
+        "emulator",
+        "suckless",
+        "x11",
+        "cli",
+        "shell",
+        "console",
+        "minimalist"
+      ],
+      "categories": [
+        "System",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/st.png",
+      "screenshots": [
+        {
+          "caption": "st interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/st-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

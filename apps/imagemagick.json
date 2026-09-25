@@ -5,14 +5,14 @@
     "metadata": {
       "id": "org.imagemagick.ImageMagick",
       "name": "ImageMagick",
-      "summary": "Comprehensive software suite for displaying, creating, converting, and editing bitmap images",
+      "summary": "Edit, compose, convert, and manipulate digital images and bitmap graphics across numerous formats",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ImageMagick is a free and open-source software suite for reading, converting, and writing images in over 200 formats including PNG, JPEG, GIF, HEIC, TIFF, DPX, EXR, and PDF."
+              "value": "ImageMagick is a free and open-source software suite written in C, designed to create, edit, compose, and convert digital bitmap images. It provides robust image processing capabilities through an expressive command-line interface as well as programmable APIs for seamless integration into external applications."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It supports high-throughput command-line batch processing, resizing, color grading, geometric transforms, drawing text and shapes, and image composition."
+              "value": "Built for high versatility and automation, it allows users to establish complex automated pipelines for batch image manipulation across industries such as web development, graphic design, astronomy, and medical imaging."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Conversion and processing support for more than 200 graphic formats"
+                "value": "Broad format support covering JPEG, PNG, GIF, TIFF, PDF, and hundreds of other file types"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Advanced image manipulation including resize, crop, rotate, skew, and affine transform"
+                "value": "Powerful command-line tools for scripting and automated batch processing pipelines"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-dynamic-range imaging (HDRI) with deep color channel precision"
+                "value": "Extensive image manipulation tools including cropping, resizing, color management, and image rendering"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Comprehensive color management, gamma correction, and thresholding algorithms"
+                "value": "Advanced visual filtering such as non-linear, edge-preserving bilateral blur smoothing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extensive scripting capabilities for automated digital media production pipelines"
+                "value": "Full support for animation sequencing, composition, and multi-frame processing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable security policies to manage execution limits and resource allocation safely"
               }
             ]
           ]
@@ -69,14 +75,20 @@
       "homepage": "https://imagemagick.org",
       "repository": "https://github.com/ImageMagick/ImageMagick",
       "keywords": [
-        "imagemagick",
-        "appimage",
-        "anylinux"
+        "convert",
+        "bitmap",
+        "raster",
+        "transcode",
+        "batch",
+        "rendering",
+        "animation",
+        "cli"
       ],
       "categories": [
         "Graphics",
         "RasterGraphics",
-        "Utility"
+        "2DGraphics",
+        "Photography"
       ]
     },
     "media": {

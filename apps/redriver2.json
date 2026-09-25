@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.opendriver2.redriver2",
       "name": "REDRIVER2",
-      "summary": "REDRIVER2 is an open-source reverse-engineering effort and native PC port of Driver 2, the classic 2000 PlayStation action driving game by Reflecti",
+      "summary": "Reverse-engineered native PC port of the classic PlayStation driving game Driver 2",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "REDRIVER2 is an open-source reverse-engineering effort and native PC port of Driver 2, the classic 2000 PlayStation action driving game by Reflections Interactive. It brings John Tanner's undercover crime saga natively to PC."
+              "value": "REDRIVER2 is an open-source, reverse-engineered native port of Driver 2, the classic 2000 PlayStation action driving game by Reflections Interactive. Rather than relying on emulation, the original MIPS binary was completely disassembled and translated into clean C, running natively on modern platforms via the Psy-Cross compatibility layer."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This rebuild enhances the classic console experience with bug fixes, restored gameplay elements, and modern system compatibility while preserving original physics and vehicle handling."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native PC execution delivering smooth 60 FPS gameplay without console stutter"
+                "value": "Fully native reimplementation translated from MIPS machine code back to C without PlayStation emulation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution rendering with true widescreen aspect ratios and draw distance tweaks"
+                "value": "Fixes numerous glitches and bugs present in the original PlayStation release"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Reconstructed physics engine matching original vehicle handling and car damage"
+                "value": "Restores and completes unfinished gameplay aspects from the original game"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full modern gamepad support with analog steering, acceleration, and rumble"
+                "value": "Utilizes the Psy-Cross hardware abstraction layer for cross-platform rendering and input"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Play across all four iconic cities: Chicago, Havana, Las Vegas, and Rio de Janeiro"
+                "value": "Includes modding support with custom texture and 3D model replacement via OpenDriver2Tools"
               }
             ]
           ]
@@ -60,21 +69,34 @@
       "homepage": "https://github.com/OpenDriver2/REDRIVER2",
       "repository": "https://github.com/pkgforge-dev/REDRIVER2-AppImage",
       "keywords": [
-        "redriver2",
-        "appimage",
-        "anylinux"
+        "driver",
+        "driving",
+        "racing",
+        "decompilation",
+        "reverse engineering",
+        "playstation",
+        "psx",
+        "action"
       ],
       "categories": [
         "Game",
-        "ActionGame"
+        "3DGraphics"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/redriver2.png",
       "screenshots": [
         {
-          "caption": "REDRIVER2 interface screenshot 1",
+          "caption": "REDRIVER2 running in-game action on desktop",
           "source": "https://i.ibb.co/2q1pp06/red2.png"
+        },
+        {
+          "caption": "REDRIVER2 vehicle gameplay showcase",
+          "source": "https://i.ibb.co/JxfC5xX/aaa.png"
+        },
+        {
+          "caption": "REDRIVER2 in-game driving perspective",
+          "source": "https://i.ibb.co/ydLsK9z/aaa.png"
         }
       ]
     }

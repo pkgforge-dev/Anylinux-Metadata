@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.qemu.qemu",
       "name": "QEMU",
-      "summary": "QEMU is a generic, open-source machine emulator and virtualizer",
+      "summary": "Generic and open-source machine emulator and virtualizer",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "QEMU is a generic, open-source machine emulator and virtualizer. When used as a machine emulator, it runs operating systems and programs made for one processor on a different machine; when paired with KVM, it provides near-native virtualization performance."
+              "value": "QEMU is a generic, open-source machine emulator and virtualizer that enables users to run operating systems and programs made for one machine on an entirely different architecture, or achieve near-native performance through hardware-assisted virtualization."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles complete system and user-mode emulation targets alongside key auxiliary utilities, requiring no FUSE runtime dependencies across diverse Linux environments."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Full system emulation for x86, ARM, RISC-V, MIPS, PowerPC, and s390x architectures"
+                "value": "Hardware-assisted virtualization support with KVM acceleration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Near-native hardware virtualization when paired with Linux KVM kernel modules"
+                "value": "Support for UEFI, TPM, virtiofsd, audio, and GPU passthrough"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "User-mode emulation enabling direct execution of foreign-architecture Linux binaries"
+                "value": "Comprehensive multi-architecture emulation including x86, ARM, MIPS, PPC, and m68k"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Virtual device emulation for network cards, USB controllers, GPUs, and storage drives"
+                "value": "Built-in disk management and diagnostic utilities like qemu-img and qemu-io"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Snapshot support, live migration, and integration with libvirt and virt-manager"
+                "value": "Network and specialized block storage drivers including SSH, NFS, iSCSI, and Gluster"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "User-mode emulation capability for running foreign architecture Linux binaries"
               }
             ]
           ]
@@ -60,9 +75,13 @@
       "homepage": "https://www.qemu.org/",
       "repository": "https://github.com/pkgforge-dev/QEMU-AppImage",
       "keywords": [
-        "qemu",
-        "appimage",
-        "anylinux"
+        "virtualization",
+        "emulator",
+        "kvm",
+        "hypervisor",
+        "virtual machine",
+        "architecture",
+        "uefi"
       ],
       "categories": [
         "System",

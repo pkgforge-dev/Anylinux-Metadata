@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.rmcrackan.libation",
       "name": "Libation",
-      "summary": "Libation is a free, open-source application designed to liberate your Audible audiobook library",
+      "summary": "Download, decrypt, and manage your Audible audiobook library",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Libation is a free, open-source application designed to liberate your Audible audiobook library. It connects to your personal Audible account to back up, decrypt, and convert audiobooks to DRM-free formats."
+              "value": "Libation is an open-source application designed to download, decrypt, and organize your personal Audible audiobook library. Powered by AAXClean for fast decryption without heavy external dependencies, it allows users to manage and preserve their audiobooks across platforms."
             }
           ]
         },
@@ -22,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Automatically scans and imports your purchased Audible audiobook catalog"
+                "value": "Download and decrypt Audible audiobooks to retain offline ownership"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Decrypts and converts audiobooks to standard M4B or MP3 files"
+                "value": "Remove DRM efficiently using AAXClean without requiring ffmpeg"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Retains chapters, high-resolution cover artwork, and rich ID3 metadata"
+                "value": "Multi-region support covering US, UK, Canada, Germany, France, Australia, Japan, India, and Spain"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Lossless audio conversion preserving original audio bitrate and sound quality"
+                "value": "Organize your collection with powerful search, filtering, and tagging tools"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in multi-account support across international Audible marketplaces"
+                "value": "Import existing audiobooks along with high-quality cover art"
               }
             ]
           ]
@@ -60,14 +60,18 @@
       "homepage": "https://github.com/rmcrackan/Libation",
       "repository": "https://github.com/pkgforge-dev/Libation-AppImage",
       "keywords": [
-        "libation",
-        "appimage",
-        "anylinux"
+        "audible",
+        "audiobook",
+        "downloader",
+        "decryption",
+        "drm-removal",
+        "aax",
+        "library",
+        "media"
       ],
       "categories": [
         "AudioVideo",
         "Audio",
-        "Player",
         "FileTransfer"
       ]
     },

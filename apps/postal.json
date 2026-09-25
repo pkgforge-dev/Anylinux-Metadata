@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.rws_studios.postal_sourcecode_postal",
       "name": "POSTAL",
-      "summary": "POSTAL (1997) is the open-source release of the classic isometric shooter developed by Running With Scissors",
+      "summary": "Classic fast-paced isometric shooter inspired by Robotron",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "POSTAL (1997) is the open-source release of the classic isometric shooter developed by Running With Scissors. Plunging players into dark, intense combat, this native port modernizes the classic title for Linux."
+              "value": "POSTAL is the open-source release of the classic 1997 isometric shooter developed by Running With Scissors. Built originally as a fast-paced, top-down combat title influenced by arcade games like Robotron, the game puts players into intense survival scenarios across varied environments."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Now maintained as open-source software, the codebase allows modern systems to experience the original gameplay, mechanics, and retro aesthetic faithfully preserved by the community."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern 64-bit Linux with high framerates and resolution scaling"
+                "value": "Classic isometric 2.5D perspective and top-down shooter action"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete classic campaign, Special Delivery expansion, and gauntlet challenge modes"
+                "value": "Fast-paced combat mechanics inspired by arcade twin-stick classics"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Dual-stick gamepad and keyboard/mouse control configurations"
+                "value": "Fully open-source engine enabling cross-platform compatibility"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Atmospheric sound effects, voice acting, and explosive weapon arsenal"
+                "value": "Hand-painted atmospheric level backgrounds and vintage late-90s art style"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserves the gritty vintage aesthetic with improved engine stability"
+                "value": "Complete preservation of original audio, dialogue, and sound design"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/RWS-Studios/POSTAL-SourceCode",
       "repository": "https://github.com/pkgforge-dev/POSTAL-AppImage",
       "keywords": [
-        "postal",
-        "appimage",
-        "anylinux"
+        "shooter",
+        "isometric",
+        "arcade",
+        "retro",
+        "classic",
+        "action",
+        "robotron",
+        "open-source"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

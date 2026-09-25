@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.link4electronics.dethrace",
       "name": "Dethrace",
-      "summary": "dethrace is a reverse-engineered, open-source source port of Carmageddon (1997), the iconic vehicular combat and racing game",
+      "summary": "Reverse-engineered open-source port of the classic vehicular combat game Carmageddon",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "dethrace is a reverse-engineered, open-source source port of Carmageddon (1997), the iconic vehicular combat and racing game. It reconstructs the original game logic to execute natively on modern operating systems without DOS emulation."
+              "value": "Dethrace is an open-source, reverse-engineered source port of the iconic 1997 vehicular combat and racing game Carmageddon. Built using CMake and modern SDL libraries, the project aims to reconstruct the original game engine to run natively on modern operating systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine requires the original game assets to run, supporting files from retail copies as well as official playable demos."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern 64-bit systems with high framerates"
+                "value": "Native modern system support via SDL2 and SDL3 runtimes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution rendering with support for widescreen and modern display scaling"
+                "value": "Modern rendering with SDL3 GPU and 3dfx emulation using GLSL and SPIR-V shaders"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full physics-driven vehicular collisions and destructible car geometry"
+                "value": "Compatibility with original CD data from Carmageddon and the Splat Pack demo"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern controller and steering wheel configuration alongside keyboard controls"
+                "value": "Emulation of original CD audio tracks using digital OGG Vorbis files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original Carmageddon game data files to run"
+                "value": "Customizable game settings and asset directories through INI configuration"
               }
             ]
           ]
@@ -60,15 +69,17 @@
       "homepage": "https://github.com/Link4Electronics/dethrace",
       "repository": "https://github.com/pkgforge-dev/dethrace-AppImage",
       "keywords": [
-        "dethrace",
-        "appimage",
-        "anylinux"
+        "carmageddon",
+        "racing",
+        "vehicular combat",
+        "source port",
+        "reverse engineering",
+        "sdl",
+        "retro gaming"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame",
-        "SportsGame"
+        "Simulation"
       ]
     },
     "media": {

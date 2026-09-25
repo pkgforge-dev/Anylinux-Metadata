@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.rvgl.rvgl",
       "name": "RVGL",
-      "summary": "RVGL is a cross-platform, enhanced rewrite of the classic 1999 radio-controlled car racing game Re-Volt",
+      "summary": "Cross-platform, enhanced rewrite of the classic radio-controlled car racing game Re-Volt",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "RVGL is a cross-platform, enhanced rewrite of the classic 1999 radio-controlled car racing game Re-Volt. Built with modern OpenGL and SDL2, it brings the miniature racing classic natively to modern Linux desktops."
+              "value": "RVGL is a modern, cross-platform port and enhanced rewrite of the classic 1999 radio-controlled car racing game Re-Volt. Built upon modern graphics and audio APIs, it brings the fast-paced arcade racing experience to modern operating systems with wide display support and performance improvements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with portable runtime dependencies, this release delivers a frictionless standalone experience that retains full compatibility across diverse Linux environments."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit Linux port with high-resolution widescreen and 4K support"
+                "value": "Faithful recreation of the original Re-Volt physics, tracks, and vehicles"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Online multiplayer racing with peer-to-peer networking and online lobby browser"
+                "value": "Modernized graphics engine with widescreen, high-resolution, and 60+ FPS support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Uncapped framerates, enhanced particle effects, and dynamic lighting"
+                "value": "Self-contained portable packaging running without requiring FUSE"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for community cars, custom tracks, and legacy Re-Volt mods"
+                "value": "Integrated update notification system with automatic checks"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern gamepad support with analog steering, force feedback, and split-screen mode"
+                "value": "Extensive compatibility across modern and legacy Linux distributions"
               }
             ]
           ]
@@ -60,14 +69,17 @@
       "homepage": "https://rvgl.org/",
       "repository": "https://github.com/pkgforge-dev/RVGL-AppImage",
       "keywords": [
-        "rvgl",
-        "appimage",
-        "anylinux"
+        "revolt",
+        "racing",
+        "arcade",
+        "rc cars",
+        "cars",
+        "motorsport",
+        "classic"
       ],
       "categories": [
         "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "3DGraphics"
       ]
     },
     "media": {

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.xfce.gitlab.catfish",
+      "name": "Catfish",
+      "summary": "Versatile and lightweight desktop file search utility for Linux",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Catfish is a versatile, fast, and lightweight file search GUI designed for desktop environments. Powered by underlying system search engines such as find and locate, it provides an intuitive interface to quickly query filenames and file contents across local directories."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles all required dependencies and integrates a modern runtime to run reliably across different distributions without external container overhead."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Fast full-text and filename search across chosen paths and indexing databases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced filtering options by file type, modification time, and hidden file visibility"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct file management integration with file managers, viewers, and terminal utilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Zero-dependency portable deployment capable of running on varied glibc and musl environments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Non-intrusive built-in update notification system compatible with external package managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Catfish Developers",
+        "url": "https://gitlab.xfce.org/apps/catfish/"
+      },
+      "homepage": "https://gitlab.xfce.org/apps/catfish/",
+      "repository": "https://github.com/pkgforge-dev/catfish-appimage",
+      "keywords": [
+        "search",
+        "find",
+        "locate",
+        "files",
+        "xfce",
+        "desktop",
+        "indexing",
+        "utility"
+      ],
+      "categories": [
+        "Utility",
+        "System"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/catfish.png",
+      "screenshots": [
+        {
+          "caption": "Catfish interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Catfish-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

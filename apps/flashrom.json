@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.flashrom.flashrom",
       "name": "flashrom",
-      "summary": "flashrom is a universal utility designed to identify, read, write, verify, and erase flash memory chips",
+      "summary": "Identify, read, write, verify, and erase flash memory chips and BIOS/ROM firmware",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "flashrom is a universal utility designed to identify, read, write, verify, and erase flash memory chips. It is widely used for flashing BIOS, UEFI, coreboot, firmware, and ROM chips on motherboards and hardware programmers."
+              "value": "flashrom is a universal utility designed to identify, read, write, verify, and erase flash memory chips. It is widely used for flashing BIOS, coreboot, EFI, and other firmware images across a wide array of motherboards, PCI/PCIe cards, and dedicated external programmer hardware."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged as a standalone portable package that does not require FUSE, it operates reliably across diverse Linux distributions and environments."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Supports thousands of flash ROM chips across DIP, PLCC, SOIC, and BGA packages"
+                "value": "Supports hundreds of flash memory chips across parallel, LPC, FWH, and SPI interfaces"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Compatible with mainboard chipsets, PCI cards, USB programmers, and SPI bridges"
+                "value": "Works with numerous internal motherboards, chipsets, and external USB or serial programming devices"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Safe flashing with automatic chip verification before and after writing operations"
+                "value": "Performs fast, safe chip verification and partial write operations to prevent firmware corruption"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cross-platform hardware probing and detailed chipset diagnostics"
+                "value": "Includes standalone runtime execution requiring no external FUSE dependencies"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Essential tool for firmware recovery, flashing coreboot, and hardware engineering"
+                "value": "Built-in update notification system with automatic detection of package managers"
               }
             ]
           ]
@@ -60,14 +69,19 @@
       "homepage": "https://flashrom.org/index.html",
       "repository": "https://github.com/pkgforge-dev/flashrom-appimage",
       "keywords": [
-        "flashrom",
-        "appimage",
-        "anylinux"
+        "firmware",
+        "bios",
+        "coreboot",
+        "rom",
+        "programmer",
+        "spi",
+        "flasher",
+        "hardware",
+        "eeprom"
       ],
       "categories": [
         "System",
-        "HardwareSettings",
-        "ConsoleOnly"
+        "HardwareSettings"
       ]
     },
     "media": {

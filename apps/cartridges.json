@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.codeberg.cartridges",
+      "name": "Cartridges",
+      "summary": "Unified game launcher bringing together titles from multiple gaming platforms into an elegant library",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Cartridges is a game launcher for Linux designed to import, organize, and launch titles across multiple gaming sources from a single, unified interface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Built to integrate seamlessly with modern desktop environments like GNOME, it offers clean desktop shell integration and quick access to your entire game collection."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Consolidated game library aggregating titles across multiple platforms"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "GNOME Shell search-provider integration for finding and launching games directly from the desktop overview"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic discovery and directory scanning for local game installations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Streamlined, elegant user interface built for modern Linux desktops"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Cartridges Developers",
+        "url": "https://codeberg.org/kramo/cartridges"
+      },
+      "homepage": "https://codeberg.org/kramo/cartridges",
+      "repository": "https://github.com/pkgforge-dev/Cartridges-AppImage",
+      "keywords": [
+        "game",
+        "launcher",
+        "library",
+        "gaming",
+        "gnome",
+        "search-provider"
+      ],
+      "categories": [
+        "Game",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cartridges.png",
+      "screenshots": [
+        {
+          "caption": "Cartridges interface screenshot 1",
+          "source": "https://codeberg.org/kramo/cartridges/raw/branch/main/data/screenshots/1.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Cartridges-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

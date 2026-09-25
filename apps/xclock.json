@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.freedesktop.gitlab.xclock",
       "name": "xclock",
-      "summary": "xclock is the classic analog and digital clock display utility for the X Window System",
+      "summary": "Classic analog and digital clock display utility for the X Window System",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "xclock is the classic analog and digital clock display utility for the X Window System. As one of the earliest graphical utilities created for X11, it remains a reliable, lightweight desktop timekeeper."
+              "value": "xclock is the quintessential time display utility for the X Window System, offering both classic analog dial and straightforward digital clock presentations. Built natively on core X11 libraries, it provides a lightweight, highly responsive desktop clock with minimal resource overhead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with portable runtime dependencies, this build ensures effortless execution across a broad range of Linux distributions without requiring system-level installation."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Classic analog clock face with hour, minute, and second hands"
+                "value": "Displays time in customizable analog or digital presentation modes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Optional digital time display mode with customizable date formatting"
+                "value": "Lightweight X11 footprint with minimal system resource consumption"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable update intervals, chime tones, and display colors"
+                "value": "FUSE-independent standalone portable execution using modern runtime components"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extremely lightweight with near-zero memory and CPU utilization"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Compatible with all X11 window managers and desktop environments"
+                "value": "Integrated opt-in update notifications with support for external package managers"
               }
             ]
           ]
@@ -60,13 +63,18 @@
       "homepage": "https://gitlab.freedesktop.org/xorg/app/xclock",
       "repository": "https://github.com/pkgforge-dev/xclock-appimage",
       "keywords": [
-        "xclock",
-        "appimage",
-        "anylinux"
+        "clock",
+        "time",
+        "analog",
+        "digital",
+        "x11",
+        "xorg",
+        "desktop",
+        "utility"
       ],
       "categories": [
         "Utility",
-        "Clock"
+        "DesktopSettings"
       ]
     },
     "media": {

@@ -5,15 +5,65 @@
     "metadata": {
       "id": "io.github.classicimageviewer.classicimageviewer",
       "name": "classicimageviewer",
-      "summary": "A simple image viewer for Linux with some editing features",
+      "summary": "View, edit, and batch process images with a lightweight Qt interface",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "A simple image viewer for Linux with some editing features."
+              "value": "ClassicImageViewer is a fast and lightweight image viewer and graphic editor built using the Qt framework. Designed for rapid navigation and basic photo manipulation, it offers a traditional, responsive interface capable of handling multiple common raster formats."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Beyond straightforward image viewing, the application provides built-in tools for fine-grained image adjustments, batch workflow automation, and custom annotation."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Standard transformation operations including resize, rotate, flip, and color adjustments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced visual filters and effects such as blur, unsharp mask, median, and denoise"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Paint mode featuring annotation shapes, text insertion, and clone stamp tools"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Batch image conversion and batch file renaming capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Thumbnail overview browser and automated slideshow display"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Macro recording and execution for repetitive editing workflows"
+              }
+            ]
           ]
         }
       ],
@@ -25,15 +75,19 @@
       "homepage": "https://github.com/classicimageviewer/ClassicImageViewer",
       "repository": "https://github.com/pkgforge-dev/ClassicImageViewer-AppImage-Enhanced",
       "keywords": [
-        "classicimageviewer",
-        "appimage",
-        "anylinux"
+        "image viewer",
+        "photo editor",
+        "slideshow",
+        "batch conversion",
+        "thumbnails",
+        "qt",
+        "raster graphics"
       ],
       "categories": [
         "Graphics",
-        "Viewer",
         "2DGraphics",
-        "RasterGraphics"
+        "RasterGraphics",
+        "Viewer"
       ]
     },
     "media": {

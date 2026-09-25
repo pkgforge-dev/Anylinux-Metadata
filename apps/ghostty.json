@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.ghostty_org.ghostty",
       "name": "Ghostty",
-      "summary": "Ghostty is a fast, feature-rich, cross-platform terminal emulator designed by Mitchell Hashimoto",
+      "summary": "Fast, feature-rich, and native terminal emulator pushing modern standards",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Ghostty is a fast, feature-rich, cross-platform terminal emulator designed by Mitchell Hashimoto. Built from the ground up in Zig, it leverages GPU hardware acceleration to deliver ultra-low latency and rich terminal capabilities."
+              "value": "Ghostty is a cross-platform, standards-compliant terminal emulator engineered in Zig and C with a strong focus on native platform integration, high rendering performance, and rich windowing capabilities."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed to provide speed without sacrificing features or native UI aesthetics, it can be run as a standalone terminal application or embedded into other software via libghostty."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "GPU-accelerated text rendering delivering instant keystroke response and high throughput"
+                "value": "Comprehensive xterm-compliant terminal emulation supporting standard legacy control sequences"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True native desktop integration with support for tabs, splits, and custom fonts"
+                "value": "Support for modern terminal graphics protocols including the Kitty image and graphics protocols"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Advanced terminal standards support including Kitty graphics protocol and 24-bit RGB truecolor"
+                "value": "Advanced window management with multi-window, tabbed interface, and split pane layouts"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Broad font rendering support with ligatures, bold, italic, and emoji fallbacks"
+                "value": "Native platform experience and rendering without web-view overhead"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low memory usage and clean, minimalist configuration system"
+                "value": "Embeddable terminal functionality provided by the zero-dependency libghostty library"
               }
             ]
           ]
@@ -61,8 +70,14 @@
       "repository": "https://github.com/pkgforge-dev/ghostty-appimage",
       "keywords": [
         "ghostty",
-        "appimage",
-        "anylinux"
+        "terminal",
+        "emulator",
+        "tty",
+        "shell",
+        "console",
+        "command-line",
+        "kitty-graphics",
+        "xterm"
       ],
       "categories": [
         "System",

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.alacritty.alacritty",
+      "name": "alacritty",
+      "summary": "GPU-accelerated terminal emulator focused on simplicity and performance",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Alacritty is a modern, GPU-accelerated terminal emulator designed with high performance and simplicity in mind. Built in Rust and leveraging OpenGL rendering, it delivers an ultra-fast, lightweight command-line interface with sensible defaults."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for broad compatibility across Linux distributions, this build provides a fully self-contained portable package with built-in runtime and update management support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "GPU-accelerated rendering using OpenGL for low-latency terminal interactions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive configuration options paired with well-tuned default settings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Portable runtime packaging that operates reliably without requiring FUSE"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater that coordinates with system package and binary managers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad Linux distribution compatibility across glibc and musl environments"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "Apache-2.0",
+      "developer": {
+        "name": "alacritty Developers",
+        "url": "https://alacritty.org/"
+      },
+      "homepage": "https://alacritty.org/",
+      "repository": "https://github.com/pkgforge-dev/alacritty-AppImage",
+      "keywords": [
+        "terminal",
+        "emulator",
+        "cli",
+        "shell",
+        "console",
+        "gpu",
+        "opengl",
+        "rust"
+      ],
+      "categories": [
+        "System",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/alacritty.png",
+      "screenshots": [
+        {
+          "caption": "alacritty interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/alacritty-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

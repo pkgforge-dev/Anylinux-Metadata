@@ -5,14 +5,23 @@
     "metadata": {
       "id": "com.gitlab.dnzhrecomp",
       "name": "DNZHRecomp",
-      "summary": "Duke Nukem: Zero Hour Recompiled is a native PC port of the 1999 Nintendo 64 third-person shooter Duke Nukem: Zero Hour",
+      "summary": "Native PC port of the classic Nintendo 64 third-person shooter Duke Nukem: Zero Hour",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Duke Nukem: Zero Hour Recompiled is a native PC port of the 1999 Nintendo 64 third-person shooter Duke Nukem: Zero Hour. Statically recompiled from original machine instructions, it runs natively on modern PC platforms without emulation latency."
+              "value": "DNZHRecomp is a native PC port and static recompilation of the 1999 Nintendo 64 third-person shooter Duke Nukem: Zero Hour. It executes original game logic natively on modern hardware without traditional emulation overhead, delivering improved performance and modern system compatibility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with portable runtime dependencies, this release delivers the time-traveling shooter experience across modern Linux environments with zero external setup requirements."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Native PC rendering delivering fluid high framerates and zero emulation stutter"
+                "value": "Native executable execution avoiding high CPU emulation overhead"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen and high-resolution monitor support"
+                "value": "High compatibility across diverse Linux distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Dual analog gamepad and mouse-look control configurations"
+                "value": "Integrated runtime eliminating external FUSE dependencies"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserved time-traveling campaign, authentic weapon arsenal, and voice lines"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Low-latency sound rendering with modern multi-channel audio support"
+                "value": "Built-in optional self-updater for seamless game client updates"
               }
             ]
           ]
@@ -60,14 +63,18 @@
       "homepage": "https://gitlab.com/sonicdcer/DNZHRecomp",
       "repository": "https://github.com/pkgforge-dev/DNZHRecomp-AppImage",
       "keywords": [
-        "dnzhrecomp",
-        "appimage",
-        "anylinux"
+        "duke nukem",
+        "zero hour",
+        "recompilation",
+        "port",
+        "n64",
+        "shooter",
+        "action",
+        "retro"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

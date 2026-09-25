@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.harbourmasters.spaghettikart",
       "name": "SpaghettiKart",
-      "summary": "Native PC port of Mario Kart 64 featuring widescreen support and high framerate rendering",
+      "summary": "Native PC port of Mario Kart 64 featuring modern graphics enhancements and modding support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "SpaghettiKart is an open-source native PC port of Mario Kart 64 created by the Harbour Masters development team. It recompiles the classic kart racer to run on modern Linux systems."
+              "value": "SpaghettiKart is a native PC port of Mario Kart 64 created by the Harbour Masters team. Designed to run on modern systems without traditional emulation overhead, it allows players to experience the classic kart racing title with modern rendering enhancements, customizable controls, and native system integration."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The game delivers 60 FPS gameplay, widescreen support, high-resolution textures, and modern gamepad compatibility for both Grand Prix and multiplayer battle modes."
+              "value": "The port requires a legally dumped original US ROM to generate modern asset archives, ensuring clean separation of proprietary game assets while providing extensive flexibility for user-created content and customization."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native PC execution with 60 FPS gameplay and fluid physics simulation"
+                "value": "Native cross-platform rendering backends including OpenGL and DirectX 11"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern widescreen display rendering with correctly scaled UI elements"
+                "value": "Widescreen resolution and high framerate rendering capabilities"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low-latency input handling supporting contemporary USB and Bluetooth gamepads"
+                "value": "Comprehensive gamepad and keyboard input mapping via SDL"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete Grand Prix, Time Trials, VS, and Battle game modes"
+                "value": "Modding support through custom .o2r and zipped asset packages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity digital audio reproduction with zero emulation stutter"
+                "value": "Automated asset extraction directly from original N64 ROM dumps"
               }
             ]
           ]
@@ -69,14 +69,17 @@
       "homepage": "https://github.com/HarbourMasters/SpaghettiKart",
       "repository": "https://github.com/HarbourMasters/SpaghettiKart",
       "keywords": [
-        "spaghettikart",
-        "appimage",
-        "anylinux"
+        "mariokart",
+        "n64",
+        "kart",
+        "racing",
+        "port",
+        "opengl",
+        "gamepad",
+        "decompilation"
       ],
       "categories": [
-        "Game",
-        "SportsGame",
-        "ArcadeGame"
+        "Game"
       ]
     },
     "media": {

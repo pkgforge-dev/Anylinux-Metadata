@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.anthropics.claude_code",
       "name": "claude-code",
-      "summary": "Claude Code is an agentic command-line coding tool developed by Anthropic",
+      "summary": "Agentic command-line coding tool that understands codebases and automates development workflows",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Claude Code is an agentic command-line coding tool developed by Anthropic. Powered by Claude 3.7 Sonnet, it operates directly inside your terminal to understand codebases, edit files, run bash commands, execute tests, and manage git workflows."
+              "value": "Claude Code is an agentic AI coding assistant developed by Anthropic that operates directly inside the terminal. Built on Node.js, it interfaces deeply with local codebases to accelerate software development, troubleshoot issues, and execute tasks using natural language prompts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The tool bridges command-line interaction with advanced language model reasoning, enabling direct project inspection, intelligent code synthesis, and command orchestration without leaving the development environment."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Context-aware exploration and semantic navigation of large codebases"
+                "value": "Executes routine developer tasks, code refactoring, and file edits through natural language"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automated multi-file refactoring, bug fixing, and feature implementation"
+                "value": "Analyzes project structures and explains complex code logic directly in the terminal"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Direct execution of build commands, linters, test suites, and git operations"
+                "value": "Automates Git operations and version control workflows directly from the CLI"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Interactive terminal chat interface with real-time feedback and diff approval"
+                "value": "Supports extensibility via custom plugins, tools, and specialized agents"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in project indexing and architecture pattern recognition"
+                "value": "Provides integrated feedback and error reporting via dedicated in-tool commands"
               }
             ]
           ]
@@ -60,22 +69,28 @@
       "homepage": "https://github.com/anthropics/claude-code",
       "repository": "https://github.com/pkgforge-dev/claude-code-appimage",
       "keywords": [
-        "claude-code",
-        "appimage",
-        "anylinux"
+        "anthropic",
+        "claude",
+        "ai",
+        "assistant",
+        "cli",
+        "coding",
+        "git",
+        "terminal"
       ],
       "categories": [
         "Development",
-        "ArtificialIntelligence",
-        "ConsoleOnly"
+        "IDE",
+        "RevisionControl",
+        "TextTools"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/claude-code.png",
       "screenshots": [
         {
-          "caption": "claude-code interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Claude Code agentic coding tool demonstration in the terminal",
+          "source": "https://raw.githubusercontent.com/anthropics/claude-code/main/demo.gif"
         }
       ]
     }

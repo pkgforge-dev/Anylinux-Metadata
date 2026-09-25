@@ -1,0 +1,134 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pol_rivero.github_desktop_plus",
+      "name": "github-desktop-plus",
+      "summary": "Enhanced Git client fork of GitHub Desktop with multi-platform and multi-account support",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "GH Desktop Plus is a community-maintained fork of GitHub Desktop that introduces advanced Git functionality, productivity enhancements, and broad hosting platform integrations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It expands upon the official client by enabling concurrent multi-account management across major Git hosting services and improving everyday branch and commit navigation."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Search commit history comprehensively by title, message, tag, or SHA hash"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Connect multiple accounts across GitHub, GitLab, Bitbucket, Gitea, Forgejo, and Codeberg"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Create and manage multiple stashes per branch with intuitive UI headers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Visualize branching and merge topology with an integrated commit graph"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Quickly identify unpushed local branches using visual indicators"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "github-desktop-plus Developers",
+        "url": "https://github.com/pol-rivero/github-desktop-plus"
+      },
+      "homepage": "https://github.com/pol-rivero/github-desktop-plus",
+      "repository": "https://github.com/pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced",
+      "keywords": [
+        "git",
+        "github",
+        "gitlab",
+        "bitbucket",
+        "forgejo",
+        "gitea",
+        "vcs",
+        "commit",
+        "stash"
+      ],
+      "categories": [
+        "Development",
+        "RevisionControl"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/github-desktop-plus.png",
+      "screenshots": [
+        {
+          "caption": "Searching commit history by title, message, tag, or hash",
+          "source": "https://raw.githubusercontent.com/pol-rivero/github-desktop-plus/main/docs/assets/desktop-plus-demo-search.webp"
+        },
+        {
+          "caption": "Managing multiple accounts across Git platforms",
+          "source": "https://raw.githubusercontent.com/pol-rivero/github-desktop-plus/main/docs/assets/desktop-plus-demo-multiaccount.webp"
+        },
+        {
+          "caption": "Managing multiple stashes on a branch",
+          "source": "https://raw.githubusercontent.com/pol-rivero/github-desktop-plus/main/docs/assets/desktop-plus-demo-stashes.webp"
+        },
+        {
+          "caption": "Visual commit graph displaying branch topology",
+          "source": "https://raw.githubusercontent.com/pol-rivero/github-desktop-plus/main/docs/assets/desktop-plus-demo-commit-graph.webp"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/GitHub-Desktop-Plus-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

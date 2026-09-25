@@ -5,14 +5,14 @@
     "metadata": {
       "id": "net.sourceforge.foobillardplus",
       "name": "FooBillard++",
-      "summary": "Advanced 3D OpenGL billiard game featuring realistic ball physics and tournament play",
+      "summary": "Play 3D billiards, pool, and snooker with realistic physics and tournament modes",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "FooBillard++ is an advanced 3D OpenGL billiard simulator, building upon the original FooBillard engine. It offers realistic rigid-body ball physics, table collisions, and ball spin simulation."
+              "value": "FooBillard++ is an advanced 3D OpenGL cue sports game that delivers realistic ball physics, reflections, and immersive table gameplay. Building upon the classic FooBillard codebase, it provides players with an authentic simulation of various pool, carom, and snooker disciplines."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The game supports several billiard disciplines including 8-ball, 9-ball, carom, and snooker, playable against computer opponents or with other players locally."
+              "value": "Featuring both single-player challenges against AI opponents and local competition, the game offers configurable table dimensions, customizable cue perspectives, and detailed trajectory controls."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Accurate 3D ball physics simulation modeling english, spin, and table friction"
+                "value": "Multiple cue sport game modes including 8-ball, 9-ball, carom, and snooker"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multiple game variants including 8-ball pool, 9-ball pool, snooker, and carom"
+                "value": "Realistic rigid-body collision physics, ball spin, and table friction models"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable AI opponents with variable skill and decision-making levels"
+                "value": "Hardware-accelerated OpenGL 3D graphics with detailed shading and reflections"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable table cloth colors, wooden finishes, and ball set textures"
+                "value": "Adjustable AI difficulty levels for tournament and exhibition matches"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Free-camera inspection and bird's-eye view positioning for precise cue shots"
+                "value": "Flexible camera angles including bird's-eye overhead and free-look cue views"
               }
             ]
           ]
@@ -69,14 +69,18 @@
       "homepage": "https://foobillardplus.sourceforge.net",
       "repository": "https://sourceforge.net/projects/foobillardplus",
       "keywords": [
-        "foobillard",
-        "appimage",
-        "anylinux"
+        "billiards",
+        "pool",
+        "snooker",
+        "carom",
+        "physics",
+        "simulation",
+        "opengl",
+        "tournament"
       ],
       "categories": [
         "Game",
-        "SportsGame",
-        "Simulation"
+        "3DGraphics"
       ]
     },
     "media": {

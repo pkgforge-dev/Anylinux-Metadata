@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.nicoboss.nsz",
       "name": "nsz",
-      "summary": "NSZ is a Homebrew-compatible compressor and decompressor for Nintendo Switch game packages",
+      "summary": "Compress and decompress Nintendo Switch packages losslessly using zstd",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "NSZ is a Homebrew-compatible compressor and decompressor for Nintendo Switch game packages. Written in Python, it losslessly compresses NSP and XCI dumps into smaller NSZ and XCZ formats, saving up to 80% storage space."
+              "value": "NSZ is an open-source compression and decompression tool designed for Nintendo Switch game dumps. Utilizing the zstandard (zstd) compression algorithm, it significantly reduces file sizes while ensuring completely lossless compression suitable for installation with supported homebrew title installers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The tool preserves all built-in encryption and protection schemes without circumventing technological protection measures, requiring user-provided keys to process packages."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "High-ratio lossless block compression for Nintendo Switch NSP and XCI files"
+                "value": "Lossless compression and decompression of Switch game packages using zstd"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Fast multithreaded compression and decompression powered by zstandard"
+                "value": "Generates compressed formats fully compatible with NSW homebrew title installers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserves all file headers, signatures, and game metadata for homebrew loaders"
+                "value": "Provides both a graphical user interface and a flexible command-line interface"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Batch processing mode for entire folders of game dumps"
+                "value": "Automatic detection of standard hactool key locations across Linux configurations"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Command-line utility easily integrated into backup and management pipelines"
+                "value": "Customizable runtime key loading options for flexible file management"
               }
             ]
           ]
@@ -60,15 +69,18 @@
       "homepage": "https://github.com/nicoboss/nsz",
       "repository": "https://github.com/pkgforge-dev/NSZ-AppImage",
       "keywords": [
-        "nsz",
-        "appimage",
-        "anylinux"
+        "compression",
+        "decompression",
+        "zstd",
+        "switch",
+        "nintendo",
+        "homebrew",
+        "rom",
+        "archiver"
       ],
       "categories": [
         "Utility",
-        "Archiving",
-        "Compression",
-        "ConsoleOnly"
+        "Game"
       ]
     },
     "media": {

@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.martichou.rquickshare",
       "name": "rquickshare",
-      "summary": "Rust implementation of NearbyShare/QuickShare from Android for Linux",
+      "summary": "Transfer files seamlessly between Android and Linux using Quick Share",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Rust implementation of NearbyShare/QuickShare from Android for Linux."
+              "value": "rquickshare is an open-source Rust implementation of Android's Nearby Share and Quick Share protocols designed for Linux desktops. It enables fast and wireless file transfers across devices on your local network without relying on cloud services or external servers."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application runs smoothly in the desktop environment, utilizing local network protocols and optional Bluetooth advertising to ensure discovery and reliable transfers between your phone and PC."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Wirelessly transfer photos, documents, and other files between Android devices and Linux"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with standard Nearby Share and Quick Share protocols on Android"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Local Wi-Fi LAN transfer ensuring private, high-speed, direct device-to-device communication"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Bluetooth beacon advertising support to trigger Android device visibility and discovery"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Desktop integration with system tray status indicators"
+              }
+            ]
           ]
         }
       ],
@@ -25,20 +69,27 @@
       "homepage": "https://github.com/Martichou/rquickshare",
       "repository": "https://github.com/pkgforge-dev/rquickshare-AppImage-Enhanced",
       "keywords": [
-        "rquickshare",
-        "appimage",
-        "anylinux"
+        "quickshare",
+        "nearbyshare",
+        "filetransfer",
+        "android",
+        "sharing",
+        "wifi",
+        "bluetooth",
+        "mdns"
       ],
       "categories": [
         "Network",
-        "FileTransfer"
+        "Utility",
+        "FileTransfer",
+        "P2P"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/rquickshare.png",
       "screenshots": [
         {
-          "caption": "rquickshare interface screenshot 1",
+          "caption": "Main transfer window showing device discovery and file sharing progress",
           "source": "https://raw.githubusercontent.com/Martichou/rquickshare/master/.github/demo.png"
         }
       ]

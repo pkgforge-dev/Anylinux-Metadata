@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.samueru_sama.dunst_appimage_dunst",
       "name": "dunst",
-      "summary": "Unofficial AppImage of dunst, lightweight and customizable notification daemon",
+      "summary": "Lightweight and highly customizable notification daemon for Linux desktops",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Unofficial AppImage of dunst, lightweight and customizable notification daemon."
+              "value": "dunst is a lightweight, resource-efficient notification daemon designed for Linux desktop environments and window managers. Acting as a drop-in replacement for default notification systems, it provides full control over how notifications are displayed and interacted with on the desktop."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It adheres strictly to the Desktop Notifications Specification, enabling seamless integration across window managers and terminal workflows while remaining completely independent of heavy desktop environment toolkits."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Supports the Desktop Notifications Specification via standard D-Bus interfaces"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Highly customizable visual styling, including colors, geometry, borders, and fonts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive rule-based filtering and action routing based on application name or urgency"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Notification history review and pause/resume controls via dunstctl"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for embedded icons, clickable actions, and URL handling"
+              }
+            ]
           ]
         }
       ],
@@ -25,12 +69,17 @@
       "homepage": "https://github.com/Samueru-sama/dunst-AppImage",
       "repository": "https://github.com/pkgforge-dev/dunst-AppImage",
       "keywords": [
-        "dunst",
-        "appimage",
-        "anylinux"
+        "notification",
+        "daemon",
+        "desktop",
+        "dbus",
+        "notifications",
+        "popup",
+        "dunstctl"
       ],
       "categories": [
         "System",
+        "Utility",
         "DesktopSettings"
       ]
     },

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.servo.servo",
       "name": "Servo",
-      "summary": "Servo is an open-source, independent web browser engine written in Rust",
+      "summary": "Independent parallel web browser engine written in Rust",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Servo is an open-source, independent web browser engine written in Rust. Designed for high concurrency, memory safety, and performance, Servo pioneers a parallel architecture for layout, styling, and rendering."
+              "value": "Servo is an open-source, independent prototype web browser engine written in the Rust programming language. Designed for parallel execution and memory safety, Servo explores modern architecture patterns for rendering web content efficiently."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It provides a cross-platform engine along with the servoshell application harness to experiment with web standards and cutting-edge browser technologies."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Parallelized layout and CSS style computation utilizing multi-core processors"
+                "value": "Written in Rust to ensure thread safety, concurrency, and memory safety"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Memory-safe architecture written in Rust to minimize memory vulnerability exploits"
+                "value": "Parallel layout, styling, and rendering architecture"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Embeddable web view engine designed for desktop applications and embedded systems"
+                "value": "Includes the servoshell browser shell for standalone browsing and testing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "WebGL and WebGPU hardware-accelerated graphics rendering"
+                "value": "Cross-platform support across Linux, macOS, Windows, Android, and OpenHarmony"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Active community development driving independent web engine standards"
+                "value": "Modular toolchain integration using the mach build workflow"
               }
             ]
           ]
@@ -60,14 +69,20 @@
       "homepage": "https://github.com/servo/servo",
       "repository": "https://github.com/pkgforge-dev/servo-AppImage",
       "keywords": [
-        "servo",
-        "appimage",
-        "anylinux"
+        "browser",
+        "engine",
+        "rust",
+        "html",
+        "rendering",
+        "web",
+        "css",
+        "servoshell"
       ],
       "categories": [
         "Network",
+        "Development",
         "WebBrowser",
-        "Development"
+        "WebDevelopment"
       ]
     },
     "media": {

@@ -5,14 +5,14 @@
     "metadata": {
       "id": "org.chipass.ChiPass",
       "name": "ChiPass",
-      "summary": "Secure cross-platform password manager with desktop and browser integration built on Qt6",
+      "summary": "Secure cross-platform password manager with desktop and browser integration",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ChiPass is a modern, lightweight password and personal credential manager built with Qt6. A modernized fork of KeePassXC, it delivers a secure environment for encrypted database storage."
+              "value": "ChiPass is a secure, cross-platform password manager built on Qt6 designed to keep your credentials safe and accessible. It delivers robust vault encryption and seamless desktop workflow integration."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It features strict local encryption, KeePass database compatibility, auto-type capabilities, and browser integration while maintaining low system resource usage."
+              "value": "With integrated browser interoperability and an intuitive Qt-based interface, ChiPass provides a frictionless experience for managing passwords, secure notes, and personal data."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Full compatibility with KeePass KDBX4 database encryption standards"
+                "value": "Cross-platform graphical interface built with modern Qt6"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated AES-256 and ChaCha20 cryptographic primitives"
+                "value": "Encrypted credential vaults for passwords and sensitive information"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern and clean Qt6 desktop user interface with light and dark themes"
+                "value": "Seamless desktop integration and native system tray presence"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated secure password generator with customizable entropy rules"
+                "value": "Browser integration support for quick credential autofill"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Time-based one-time password (TOTP) generator and authenticator support"
+                "value": "Built-in update notification system to ensure prompt security fixes"
               }
             ]
           ]
@@ -69,9 +69,13 @@
       "homepage": "https://codeberg.org/ChiPass/ChiPass",
       "repository": "https://codeberg.org/ChiPass/ChiPass",
       "keywords": [
-        "chipass",
-        "appimage",
-        "anylinux"
+        "password manager",
+        "passwords",
+        "vault",
+        "encryption",
+        "credentials",
+        "security",
+        "qt6"
       ],
       "categories": [
         "Utility",

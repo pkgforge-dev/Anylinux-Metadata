@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.adobe_flash_player_appimage_adobe_flash_player",
+      "name": "adobe-flash-player",
+      "summary": "Play offline Shockwave Flash content and SWF files",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Adobe Flash Player Projector is a standalone offline player designed to open and execute legacy Shockwave Flash (SWF) files, interactive animations, and multimedia applications without requiring a web browser."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for maximum portability, this build incorporates runtime compatibility layers ensuring it operates reliably across virtually any modern or legacy Linux distribution."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Standalone offline playback for SWF interactive media and animations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fully self-contained package bundling all necessary runtime dependencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Execution without FUSE requirements via an embedded user-space runtime"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad compatibility across modern, legacy, and musl-based distributions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated prompt-driven self-updater with package manager integration"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "adobe-flash-player Developers",
+        "url": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage",
+      "keywords": [
+        "flash",
+        "swf",
+        "shockwave",
+        "projector",
+        "player",
+        "multimedia",
+        "animation",
+        "legacy"
+      ],
+      "categories": [
+        "AudioVideo",
+        "Graphics",
+        "Viewer"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/adobe-flash-player.png",
+      "screenshots": [
+        {
+          "caption": "adobe-flash-player interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Adobe-Flash-Player-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

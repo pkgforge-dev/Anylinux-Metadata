@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.mumu_lhl.gram",
+      "name": "Gram",
+      "summary": "High-performance and lightweight code editor and IDE without telemetry or AI bloat",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Gram is a high-performance, GPU-accelerated code editor and integrated development environment built with Rust. Forked from Zed, it delivers blazing-fast text editing and responsiveness while prioritizing a lean, distraction-free environment free of telemetry, proprietary cloud services, and forced AI features."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed with a batteries-included philosophy, Gram offers rich development tooling out of the box so developers can work efficiently without spending time searching for and managing third-party extensions."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "GPU-accelerated text rendering for smooth scrolling and responsive typing"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in debugger support via the Debug Adapter Protocol (DAP)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated Git version control tooling for tracking changes and commits"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated documentation lookup and comprehensive language support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Zero telemetry, AI integrations, or external proprietary server requirements"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Gram Developers",
+        "url": "https://github.com/mumu-lhl/Gram"
+      },
+      "homepage": "https://github.com/mumu-lhl/Gram",
+      "repository": "https://github.com/pkgforge-dev/Gram-AppImage-Enhanced",
+      "keywords": [
+        "editor",
+        "ide",
+        "coding",
+        "development",
+        "zed",
+        "rust",
+        "debugger",
+        "git"
+      ],
+      "categories": [
+        "Development",
+        "IDE",
+        "TextTools"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gram.png",
+      "screenshots": [
+        {
+          "caption": "Gram screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gram-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

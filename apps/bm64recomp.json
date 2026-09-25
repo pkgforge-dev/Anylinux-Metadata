@@ -5,23 +5,14 @@
     "metadata": {
       "id": "io.github.revosucks.bm64recomp",
       "name": "Bomberman 64 Recompiled",
-      "summary": "Native PC port of Bomberman 64 created using static recompilation",
+      "summary": "Native PC port of Bomberman 64 created via static recompilation",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Bomberman 64 Recompiled is an enhanced native PC port of the classic Nintendo 64 game Bomberman 64, generated through static binary recompilation. The project compiles original game logic into native C code for seamless desktop execution."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "Players can experience the single-player adventure and chaotic multiplayer battle modes with modern resolutions, responsive controls, and high-framerate performance."
+              "value": "Bomberman 64 Recompiled is an enhanced native PC port of the classic Nintendo 64 title Bomberman 64, powered by the N64Recomp static recompilation engine and the RT64 rendering engine. It delivers modernized performance, full graphical fidelity, and extensive modding support while requiring an original game ROM to provide game assets."
             }
           ]
         },
@@ -31,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit execution eliminating emulation performance overhead"
+                "value": "Plug-and-play ROM asset loading without requiring manual extraction or separate asset builds"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and high-resolution rendering support"
+                "value": "High and uncapped refresh rate support without altering core game mechanics or physics"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low-latency input processing with modern controller compatibility"
+                "value": "Widescreen and ultrawide display rendering with original visual effects fully intact"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Authentic physics simulation and bomb bouncing mechanics"
+                "value": "In-game configuration menus with full navigation support for mouse, keyboard, and gamepads"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Classic multi-arena battle mode with configurable match rules"
+                "value": "Reduced input latency and near-instant load times compared to original hardware"
               }
             ]
           ]
@@ -69,13 +60,17 @@
       "homepage": "https://github.com/RevoSucks/BM64Recomp",
       "repository": "https://github.com/RevoSucks/BM64Recomp",
       "keywords": [
-        "bm64recomp",
-        "appimage",
-        "anylinux"
+        "bomberman",
+        "recompiled",
+        "n64recomp",
+        "rt64",
+        "recompilation",
+        "port",
+        "retrogaming"
       ],
       "categories": [
         "Game",
-        "ActionGame"
+        "3DGraphics"
       ]
     },
     "media": {

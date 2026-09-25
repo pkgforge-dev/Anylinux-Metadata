@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.durasj.webamp_desktop",
       "name": "Webamp Desktop",
-      "summary": "Winamp 2 reimplementation for modern desktop operating systems with classic skins",
+      "summary": "Reimplementation of Winamp 2 for modern desktop operating systems",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Webamp Desktop brings the nostalgic Winamp 2 experience to modern desktops. Powered by Electron and Jordan Eldredge's Webamp HTML5 audio engine, it faithfully reproduces the look and feel of the 1990s media player."
+              "value": "Webamp Desktop is a cross-platform desktop wrapper bringing the iconic Winamp 2 experience to modern operating systems. Powered by Webamp—the faithful HTML5 and JavaScript reimplementation of Winamp 2.91—it delivers the authentic retro audio player interface directly to your desktop environment."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The desktop application includes classic skins, an interactive graphic equalizer, visualizers, and seamless local audio file playback."
+              "value": "The player combines classic media playback with modern web technologies, preserving original user interface behaviors and modular component windows."
             }
           ]
         },
@@ -31,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Pixel-perfect recreation of classic Winamp 2.9 interface windows and controls"
+                "value": "Faithful recreation of the classic Winamp 2.91 interface and window layout"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for custom vintage Winamp classic .wsz skins and themes"
+                "value": "Modular player, equalizer, and playlist editor components"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Interactive 10-band graphic equalizer with customizable presets"
+                "value": "Support for classic Winamp skins and customizable visual themes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated audio visualizer supporting Milkdrop and oscilloscope modes"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Local playlist management supporting MP3, WAV, OGG, and FLAC formats"
+                "value": "Audio playback powered by modern HTML5 and JavaScript audio APIs"
               }
             ]
           ]
@@ -69,22 +63,30 @@
       "homepage": "https://github.com/durasj/webamp-desktop",
       "repository": "https://github.com/durasj/webamp-desktop",
       "keywords": [
-        "webamp-desktop",
-        "appimage",
-        "anylinux"
+        "winamp",
+        "player",
+        "audio",
+        "music",
+        "equalizer",
+        "skins",
+        "retro",
+        "media"
       ],
       "categories": [
         "AudioVideo",
-        "Audio",
-        "Player"
+        "Audio"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/webamp-desktop.png",
       "screenshots": [
         {
-          "caption": "Webamp Desktop interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Webamp Desktop running on Linux with classic Winamp skin",
+          "source": "https://raw.githubusercontent.com/durasj/webamp-desktop/master/res/screen-linux.png"
+        },
+        {
+          "caption": "Webamp Desktop interface with player, equalizer, and playlist windows",
+          "source": "https://raw.githubusercontent.com/durasj/webamp-desktop/master/res/screen-mac.png"
         }
       ]
     }

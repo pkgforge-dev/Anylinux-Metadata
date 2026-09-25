@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.openboardview.openboardview",
+      "name": "OpenBoardView",
+      "summary": "View electronics schematic and printed circuit board files",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenBoardView is an open-source printed circuit board (.brd) and electronics schematic viewer built with SDL and Dear ImGui. Designed as a modern drop-in replacement for legacy software such as Test_Link and Landrex, it provides hardware repair technicians and engineers with a fast, lightweight interface to inspect board layouts and track circuit nets."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The viewer offers flexible navigation controls and visual customization tailored to component identification and diagnostic work on high-resolution displays."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Board annotations supported per board database file"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Accurate part and pin sizing with outlining of irregular components"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Quick part and net list search capabilities with pin display toggling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Adjustable DPI support optimized for 2K and 4K monitors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Board flipping, rotation, and Y-axis mirroring"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Drag-and-drop file opening with recent file history"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenBoardView Developers",
+        "url": "https://github.com/OpenBoardView/OpenBoardView"
+      },
+      "homepage": "https://github.com/OpenBoardView/OpenBoardView",
+      "repository": "https://github.com/pkgforge-dev/openboardview-appimage",
+      "keywords": [
+        "boardview",
+        "pcb",
+        "schematic",
+        "electronics",
+        "hardware",
+        "circuit",
+        "repair"
+      ],
+      "categories": [
+        "Development",
+        "Viewer",
+        "2DGraphics"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openboardview.png",
+      "screenshots": [
+        {
+          "caption": "OpenBoardView interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/OpenBoardView/OpenBoardView/master/asset/screenshot.png"
+        },
+        {
+          "caption": "OpenBoardView interface screenshot 2",
+          "source": "https://raw.githubusercontent.com/OpenBoardView/OpenBoardView/master/asset/screenshot-halo.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenBoardView-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

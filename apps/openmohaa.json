@@ -5,14 +5,14 @@
     "metadata": {
       "id": "org.openmoh.openmohaa",
       "name": "OpenMoHAA",
-      "summary": "Modern open-source reimplementation of Medal of Honor: Allied Assault",
+      "summary": "Play Medal of Honor: Allied Assault on modern systems with an enhanced open-source engine",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OpenMoHAA is an open-source game engine reimplementation of the landmark first-person shooter Medal of Honor: Allied Assault. It enables the classic game to run natively on modern operating systems."
+              "value": "OpenMoHAA is an open-source game engine reimplementation dedicated to preserving and enhancing Medal of Honor: Allied Assault, along with its Spearhead and Breakthrough expansion packs. Powered by ioquake3 and the F.A.K.K. SDK, it delivers native cross-platform support, enhanced stability, and compatibility across modern computer architectures."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The engine provides updated OpenGL rendering, modern audio backend support, high-resolution widescreen displays, and cross-platform multiplayer networking."
+              "value": "The engine retains full compatibility with original game assets, scripts, and network protocols while providing critical engine bug fixes, upgraded system backends, and modern gameplay improvements."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native Linux execution compatible with original Allied Assault retail assets"
+                "value": "Full compatibility with original assets, single-player campaigns, and custom scripting"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modernized OpenGL graphics pipeline supporting 4K resolutions and arbitrary aspect ratios"
+                "value": "Complete support for all official multiplayer modes including Free-For-All, Objective, Tug-of-War, and Liberation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Spatial 3D positional audio powered by OpenAL and modern sound subsystems"
+                "value": "Includes all official bug fixes and updates from Spearhead 2.15 and Breakthrough 2.40b"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full compatibility with single-player missions and expansion pack campaigns"
+                "value": "Integrated multiplayer bots and an administrative ban system"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multiplayer protocol improvements for robust LAN and internet match play"
+                "value": "Support for popular community game modifications such as Freeze-Tag"
               }
             ]
           ]
@@ -69,21 +69,37 @@
       "homepage": "https://github.com/openmoh/openmohaa",
       "repository": "https://github.com/openmoh/openmohaa",
       "keywords": [
-        "openmohaa",
-        "appimage",
-        "anylinux"
+        "fps",
+        "shooter",
+        "medal of honor",
+        "allied assault",
+        "ioquake3",
+        "idtech3",
+        "multiplayer",
+        "game engine"
       ],
       "categories": [
-        "Game",
-        "ActionGame"
+        "Game"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openmohaa.png",
       "screenshots": [
         {
-          "caption": "OpenMoHAA interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "In-game action on the mohdm1 multiplayer map",
+          "source": "https://raw.githubusercontent.com/openmoh/openmohaa/main/docs/assets/images/v0.60.0-x86_64/mohdm1_1.png"
+        },
+        {
+          "caption": "Player navigation during the single-player training mission",
+          "source": "https://raw.githubusercontent.com/openmoh/openmohaa/main/docs/assets/images/v0.60.0-x86_64/training_1.png"
+        },
+        {
+          "caption": "Exploring the airfield environment on the flughafen map",
+          "source": "https://raw.githubusercontent.com/openmoh/openmohaa/main/docs/assets/images/v0.60.0-x86_64/flughafen_1.png"
+        },
+        {
+          "caption": "Hangar and runway structures on the flughafen map",
+          "source": "https://raw.githubusercontent.com/openmoh/openmohaa/main/docs/assets/images/v0.60.0-x86_64/flughafen_2.png"
         }
       ]
     }

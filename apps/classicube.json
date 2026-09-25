@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.classicube.classicube",
+      "name": "ClassiCube",
+      "summary": "Lightweight Minecraft Classic and ClassiCube client written in pure C from scratch",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "ClassiCube is a custom, lightweight sandbox voxel game client written from scratch in pure C. It delivers a fast, nostalgic Minecraft Classic and ClassiCube experience with minimal system resource requirements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for maximum portability, this build provides a seamless standalone experience across virtually all Linux environments without external runtime requirements."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Custom, high-performance voxel engine built from scratch in pure C"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with Minecraft Classic protocols and ClassiCube servers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Runs on almost any Linux distribution without requiring FUSE"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with standard desktop Linux environments including musl-based systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater with support for external package managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "ClassiCube Developers",
+        "url": "https://github.com/ClassiCube/ClassiCube"
+      },
+      "homepage": "https://github.com/ClassiCube/ClassiCube",
+      "repository": "https://github.com/pkgforge-dev/ClassiCube-AppImage",
+      "keywords": [
+        "minecraft",
+        "voxel",
+        "sandbox",
+        "c",
+        "classic",
+        "cube",
+        "multiplayer",
+        "client"
+      ],
+      "categories": [
+        "Game",
+        "Building"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/classicube.png",
+      "screenshots": [
+        {
+          "caption": "ClassiCube interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ClassiCube-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

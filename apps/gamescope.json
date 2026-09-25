@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.valvesoftware.gamescope",
       "name": "Gamescope",
-      "summary": "gamescope is Valve's micro-compositor designed to isolate games from the host desktop environment",
+      "summary": "SteamOS micro-compositor designed to isolate, upscale, and manage game sessions",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "gamescope is Valve's micro-compositor designed to isolate games from the host desktop environment. Used extensively on SteamOS and the Steam Deck, it provides integer scaling, FidelityFX Super Resolution (FSR), and low-latency frame pacing."
+              "value": "Gamescope is a micro-compositor developed by Valve that isolates games inside a dedicated Xwayland sandbox desktop. Leveraging DRM/KMS direct frame flips and asynchronous Vulkan compute composition, it minimizes latency and eliminates unnecessary memory copies both in nested desktop sessions and embedded gaming environments."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By spoofing virtual display resolutions and refresh rates, Gamescope allows fine-grained control over rendering and presentation across conventional displays, rotated screens, and ultrawide setups."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Sandboxes games into an isolated XWayland compositor instance"
+                "value": "Low-latency frame presentation via direct DRM/KMS page flipping"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Advanced upscaling technologies including AMD FSR and integer scaling"
+                "value": "Asynchronous Vulkan compute composition for non-blocking frame pacing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low-latency frame pacing, variable refresh rate (VRR), and frame rate capping"
+                "value": "Dedicated Xwayland sandboxing to prevent game and desktop conflicts"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Seamless resolution handling preventing games from altering your desktop resolution"
+                "value": "Built-in spatial upscaling including AMD FSR, NVIDIA NIS, and integer scaling"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Wayland-native architecture with HDR color management support"
+                "value": "Virtual display spoofing for custom resolutions, aspect ratios, and refresh rates"
               }
             ]
           ]
@@ -60,14 +69,20 @@
       "homepage": "https://github.com/ValveSoftware/gamescope",
       "repository": "https://github.com/pkgforge-dev/gamescope-appimage",
       "keywords": [
-        "gamescope",
-        "appimage",
-        "anylinux"
+        "compositor",
+        "wayland",
+        "xwayland",
+        "vulkan",
+        "fsr",
+        "upscaling",
+        "steam",
+        "gaming",
+        "drm"
       ],
       "categories": [
         "System",
-        "GameTool",
-        "Utility"
+        "Game",
+        "DesktopSettings"
       ]
     },
     "media": {

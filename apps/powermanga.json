@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.brunonymous.powermanga",
       "name": "Powermanga",
-      "summary": "Arcade 2D vertical shoot-em-up game featuring 41 levels and massive enemy waves",
+      "summary": "Classic arcade-style 2D vertical shoot-em-up featuring intense waves and retro visuals",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Powermanga is an arcade-style 2D vertical scrolling shoot-em-up developed by TLK Games. Players pilot a starship through 41 action-packed levels defending human colonies against hostile alien fleets."
+              "value": "Powermanga is an arcade-style 2D vertical scrolling shoot-em-up space game inspired by retro classics. Players pilot a starfighter through dozens of challenging sectors packed with aggressive enemy formations, heavy firepower, and formidable bosses."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The game features a strategic gem collection system that allows players to upgrade firepower, purchase protective shields, and unlock specialized weaponry."
+              "value": "Packaged for broad Linux compatibility, this release ensures a self-contained gaming experience across modern and legacy distributions without requiring external system runtimes."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "41 diverse levels of intense vertical arcade scrolling shoot-em-up gameplay"
+                "value": "41 intensive levels with progressive difficulty and varied hostile environments"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "More than 60 distinct enemy spaceship models and challenging boss encounters"
+                "value": "Over a dozen distinct spacecraft and weapon upgrade tiers to unlock"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Strategic weapon enhancement and shield acquisition upgrade mechanic"
+                "value": "Dozens of unique enemy ship classes and specialized boss encounters"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Dynamic soundtrack and retro arcade sound effects"
+                "value": "Integrated self-updater to seamlessly check for and notify of new game versions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Smooth hardware-accelerated 60 FPS graphics with full controller compatibility"
+                "value": "Self-contained portable execution with no FUSE dependency required"
               }
             ]
           ]
@@ -69,13 +69,17 @@
       "homepage": "https://github.com/brunonymous/Powermanga",
       "repository": "https://github.com/brunonymous/Powermanga",
       "keywords": [
-        "powermanga",
-        "appimage",
-        "anylinux"
+        "shmup",
+        "arcade",
+        "shooter",
+        "vertical shooter",
+        "space",
+        "retro",
+        "2d game"
       ],
       "categories": [
         "Game",
-        "ArcadeGame"
+        "2DGraphics"
       ]
     },
     "media": {

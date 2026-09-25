@@ -5,14 +5,23 @@
     "metadata": {
       "id": "com.epsxe.epsxe",
       "name": "ePSXe",
-      "summary": "ePSXe is a classic PlayStation 1 (PSX/PS1) video game console emulator",
+      "summary": "Play classic PlayStation 1 video games with high compatibility and plugin support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ePSXe is a classic PlayStation 1 (PSX/PS1) video game console emulator. Utilizing a modular plugin architecture, it provides compatibility with a vast library of Sony PlayStation titles."
+              "value": "ePSXe is a renowned PlayStation 1 (PSX/PS1) video game console emulator designed to deliver accurate emulation and high compatibility with original game discs and CD-ROM images on modern operating systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles all essential runtime libraries, audio and video subsystems, and an integrated updater to ensure seamless execution across diverse Linux distributions without requiring external setup."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "High compatibility rate with commercial PlayStation 1 game discs and image files"
+                "value": "High compatibility with the expansive PlayStation 1 game library"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modular plugin system for video, audio, and CD-ROM configuration"
+                "value": "Support for optical discs as well as CD image formats like ISO, BIN/CUE, and IMG"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated 3D graphics enhancements and resolution upscaling"
+                "value": "Fully self-contained runtime environment compatible with modern and legacy Linux distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for digital and analog gamepads with force feedback vibration"
+                "value": "Integrated update checker with automated notifications for newer releases"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Save state support and memory card management"
+                "value": "Seamless execution without requiring root permissions or FUSE kernel modules"
               }
             ]
           ]
@@ -60,9 +69,14 @@
       "homepage": "https://www.epsxe.com/",
       "repository": "https://github.com/pkgforge-dev/ePSXe-AppImage",
       "keywords": [
-        "epsxe",
-        "appimage",
-        "anylinux"
+        "playstation",
+        "psx",
+        "ps1",
+        "emulator",
+        "gaming",
+        "retro",
+        "classic",
+        "console"
       ],
       "categories": [
         "Game",

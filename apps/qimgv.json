@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.easymodo.qimgv",
       "name": "qimgv",
-      "summary": "qimgv is a fast, configurable image viewer written in Qt5/Qt6 with optional video playback support",
+      "summary": "Fast and configurable image viewer with video playback support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "qimgv is a fast, configurable image viewer written in Qt5/Qt6 with optional video playback support. Designed for speed and minimal UI clutter, it allows effortless browsing through large photo libraries and comic archives."
+              "value": "qimgv is a lightweight, fast, and highly customizable image viewer built with Qt. Designed with a clean, uncluttered interface that stays out of your way, it provides quick navigation, smooth scaling, and efficient file management tools."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "In addition to static images, qimgv includes optional video playback powered by libmpv and allows users to trigger custom shell scripts directly from the viewer."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Fast image caching and hardware-accelerated rendering"
+                "value": "High-quality image scaling with customizable fit modes and zooming"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Video playback support (powered by mpv) for MP4, WebM, and animated GIFs"
+                "value": "Basic image editing capabilities including crop, rotate, and resize"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable thumbnail bar with directory navigation and folder jumping"
+                "value": "Quick copy and move panels with configurable target folders"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Image manipulation tools including lossless rotation, cropping, and resizing"
+                "value": "Folder view mode and pull-down thumbnail panel for intuitive navigation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated file management and custom shell command trigger scripts"
+                "value": "Experimental video playback via libmpv integration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensible workflow with custom shell script and command execution"
               }
             ]
           ]
@@ -60,25 +75,36 @@
       "homepage": "https://github.com/easymodo/qimgv",
       "repository": "https://github.com/pkgforge-dev/Qimgv-AppImage",
       "keywords": [
-        "qimgv",
-        "appimage",
-        "anylinux"
+        "image viewer",
+        "photo viewer",
+        "gallery",
+        "qt",
+        "libmpv",
+        "slideshow",
+        "crop",
+        "resize"
       ],
       "categories": [
         "Graphics",
-        "Viewer"
+        "Viewer",
+        "2DGraphics",
+        "Photography"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/qimgv.png",
       "screenshots": [
         {
-          "caption": "qimgv interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv0.9_1.jpg"
+          "caption": "Main viewer window with thumbnail panel",
+          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv0.9_1_thumb.jpg"
         },
         {
-          "caption": "qimgv interface screenshot 2",
-          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv0.9_2.jpg"
+          "caption": "Folder browsing view mode",
+          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv0.9_2_thumb.jpg"
+        },
+        {
+          "caption": "Application preferences and settings window",
+          "source": "https://raw.githubusercontent.com/easymodo/qimgv/master/qimgv/distrib/screenshots/qimgv_3_thumb.jpg"
         }
       ]
     }

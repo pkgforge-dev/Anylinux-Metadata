@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.mesa3d.mesa",
       "name": "Mesa",
-      "summary": "Mesa is the open-source 3D graphics library providing OpenGL, Vulkan, and OpenCL implementations for Linux GPUs",
+      "summary": "Run Linux applications using the latest bundled Mesa OpenGL and Vulkan graphics drivers",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Mesa is the open-source 3D graphics library providing OpenGL, Vulkan, and OpenCL implementations for Linux GPUs. This portable package bundles cutting-edge Mesa drivers to test the latest graphics driver features on any distribution."
+              "value": "Mesa AppImage bundles the latest Mesa graphics drivers, including Vulkan and OpenGL implementations, sourced directly from Arch Linux. It allows users to execute any existing system binary using these modern drivers without altering the host distribution's underlying driver installation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with sharun and uruntime, this portable package operates seamlessly across diverse Linux environments, providing upgraded graphics support on glibc and musl systems alike."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Up-to-date Vulkan drivers including RADV (AMD), ANV (Intel), and NVK (NVIDIA)"
+                "value": "Bundles up-to-date Mesa release with Vulkan and OpenGL driver libraries"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full OpenGL 4.6 and OpenGL ES 3.2 support for hardware-accelerated rendering"
+                "value": "Wraps and executes any local system application binary with updated graphics drivers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cutting-edge shader compiler improvements (ACO) delivering faster game loading"
+                "value": "Runs portably without requiring FUSE kernel modules via uruntime"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Diagnostic tools and environment configuration for testing graphics hardware"
+                "value": "Compatible across virtually all Linux distributions, including musl-based systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Can be used seamlessly to run games and binaries with the latest graphics stack"
+                "value": "Self-contained driver deployment built without traditional container overhead"
               }
             ]
           ]
@@ -60,13 +69,18 @@
       "homepage": "https://www.mesa3d.org/",
       "repository": "https://github.com/pkgforge-dev/mesa-appimage",
       "keywords": [
-        "mesa",
-        "appimage",
-        "anylinux"
+        "opengl",
+        "vulkan",
+        "graphics",
+        "drivers",
+        "gpu",
+        "3d",
+        "hardware acceleration"
       ],
       "categories": [
         "System",
-        "Development",
+        "Utility",
+        "HardwareSettings",
         "3DGraphics"
       ]
     },
@@ -74,8 +88,8 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/mesa.png",
       "screenshots": [
         {
-          "caption": "Mesa interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Mesa driver wrapper executing a system application with updated graphics support",
+          "source": "https://github.com/user-attachments/assets/da4cbf27-747a-4b60-9572-c18ff4f87f2f"
         }
       ]
     }

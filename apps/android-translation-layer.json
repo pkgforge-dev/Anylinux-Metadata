@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.pkgforge_dev.android_translation_layer_appimage",
       "name": "android-translation-layer",
-      "summary": "Unofficial, A translation layer that allows running Android apps on a Linux system",
+      "summary": "Run Android applications directly on Linux through an execution translation layer",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Unofficial, A translation layer that allows running Android apps on a Linux system."
+              "value": "android-translation-layer is an execution environment and compatibility translation layer designed to run Android applications natively on GNU/Linux distributions without relying on full emulation or containerized virtual machines."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By translating Android runtime and OS calls directly into standard Linux equivalents, it provides efficient execution and native desktop integration for mobile applications."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Executes Android binaries directly on standard Linux systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Eliminates the overhead of heavy virtual machine hypervisors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Translates Android platform API calls into native system interfaces"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless integration with existing desktop environments and window managers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Portable deployment compatible across glibc and musl-based distributions"
+              }
+            ]
           ]
         }
       ],
@@ -25,13 +69,18 @@
       "homepage": "https://github.com/pkgforge-dev/android_translation_layer-AppImage",
       "repository": "https://github.com/pkgforge-dev/android_translation_layer-AppImage",
       "keywords": [
-        "android-translation-layer",
-        "appimage",
-        "anylinux"
+        "android",
+        "compatibility",
+        "translation",
+        "runtime",
+        "apk",
+        "execution",
+        "bridge"
       ],
       "categories": [
         "System",
-        "Emulator"
+        "Utility",
+        "Translation"
       ]
     },
     "media": {

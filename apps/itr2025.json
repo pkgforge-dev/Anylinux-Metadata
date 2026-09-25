@@ -5,14 +5,14 @@
     "metadata": {
       "id": "br.gov.itr2025",
       "name": "ITR 2025",
-      "summary": "ITR 2025 (Programa Gerador da Declaração do ITR 2025) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil destinado à elabor",
+      "summary": "Programa Gerador da Declaração do Imposto sobre a Propriedade Territorial Rural 2025 da Receita Federal",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ITR 2025 (Programa Gerador da Declaração do ITR 2025) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil destinado à elaboração e transmissão da Declaração do Imposto sobre a Propriedade Territorial Rural relativa ao exercício de 2025."
+              "value": "O ITR 2025 (Programa Gerador da Declaração do ITR 2025) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil destinado à elaboração e transmissão da Declaração do Imposto sobre a Propriedade Territorial Rural para o exercício de 2025."
             }
           ]
         },
@@ -21,8 +21,49 @@
           "content": [
             {
               "type": "text",
-              "value": "Recursos: - Preenchimento completo do Documento de Informação e Atualização Cadastral do ITR (DIAC) - Apuração do Documento de Informação e Apuração do ITR (DIAT) e cálculo do imposto devido - Verificação automática de inconsistências cadastrais e validação de pendências - Gravação de cópias de segurança e restauração de declarações de anos anteriores - Impressão de recibos de entrega, DARF para recolhimento e demonstrativos fiscais"
+              "value": "Esta edição empacotada de forma portátil foi construída para funcionar de maneira transparente em diversas distribuições Linux modernas e legadas, sem exigir dependências complexas de sistema."
             }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Elaboração completa da Declaração do Imposto sobre a Propriedade Territorial Rural (DITR)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Validação de dados fiscais e cálculo automático do imposto devido"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Geração e impressão de comprovantes, recibos e DARF para pagamento"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gravação e transmissão eletrônica da declaração diretamente à base da Receita Federal"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Execução portátil sem necessidade do FUSE via uruntime integrado"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Sistema de notificação de atualização integrado com suporte a gerenciadores de pacotes"
+              }
+            ]
           ]
         }
       ],
@@ -34,14 +75,17 @@
       "homepage": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/ditr",
       "repository": "https://github.com/pkgforge-dev/ITR2025-AppImage",
       "keywords": [
-        "itr2025",
-        "appimage",
-        "anylinux"
+        "receita federal",
+        "ditr",
+        "imposto territorial rural",
+        "tributos",
+        "declaracao",
+        "fiscal",
+        "fazenda"
       ],
       "categories": [
         "Office",
-        "Finance",
-        "Utility"
+        "Finance"
       ]
     },
     "media": {

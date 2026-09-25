@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.duckstation.duckstation",
+      "name": "DuckStation-GPL",
+      "summary": "Fast and feature-complete Sony PlayStation 1 console emulator",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DuckStation-GPL is an enhanced, portable packaging of the open-source Sony PlayStation 1 (PSX / PS1) console emulator designed to deliver high performance, accuracy, and broad compatibility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This build is packaged to run independently across diverse Linux distributions without external runtime or FUSE dependencies, providing an integrated and reliable emulation setup."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-accuracy PlayStation 1 console emulation focused on playability and performance"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Standalone packaging bundled with all necessary dependencies for broad Linux distribution support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Runs seamlessly without requiring FUSE via uruntime"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater offering prompt-based update notifications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with standard external package and AppImage managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "DuckStation-GPL Developers",
+        "url": "https://github.com/duckstation/duckstation"
+      },
+      "homepage": "https://github.com/duckstation/duckstation",
+      "repository": "https://github.com/pkgforge-dev/DuckStation-GPL-AppImage-Enhanced",
+      "keywords": [
+        "playstation",
+        "ps1",
+        "psx",
+        "emulator",
+        "gaming",
+        "console",
+        "retroarch",
+        "sony"
+      ],
+      "categories": [
+        "Game",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/duckstation-gpl.png",
+      "screenshots": [
+        {
+          "caption": "DuckStation-GPL screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DuckStation-GPL-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.kscl.opentyrian2000",
+      "name": "OpenTyrian2000",
+      "summary": "Play the classic 1999 vertical scrolling shoot-em-up game Tyrian 2000",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "OpenTyrian2000 is an open-source port of Tyrian 2000, the classic 1999 arcade vertical-scrolling shoot-em-up game. Designed to bring the complete nostalgic experience to modern Linux platforms, it features fast-paced arcade action, customizable spaceships, and authentic retro gameplay."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles all runtime requirements, providing an out-of-the-box retro gaming experience without external dependencies."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Faithful recreation of the original 1999 Tyrian 2000 arcade gameplay"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Complete standalone package bundled to run across modern and legacy Linux distributions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Runs without requiring FUSE using modern runtime execution"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater to seamlessly check and notify about incoming releases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Compatible with standard package and application managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "OpenTyrian2000 Developers",
+        "url": "https://github.com/KScl/opentyrian2000"
+      },
+      "homepage": "https://github.com/KScl/opentyrian2000",
+      "repository": "https://github.com/pkgforge-dev/OpenTyrian2000-AppImage",
+      "keywords": [
+        "tyrian",
+        "shmup",
+        "arcade",
+        "shooter",
+        "scroller",
+        "retro",
+        "classic",
+        "port"
+      ],
+      "categories": [
+        "Game",
+        "2DGraphics"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opentyrian2000.png",
+      "screenshots": [
+        {
+          "caption": "OpenTyrian2000 interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/OpenTyrian2000-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

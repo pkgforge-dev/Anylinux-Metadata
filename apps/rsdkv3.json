@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.rubberduckycooly.sonic_cd_11_decompilation_rsdkv3",
       "name": "RSDKv3",
-      "summary": "RSDKv3 is a full, open-source standalone decompilation of Sonic CD (2011) and the Retro Engine v3",
+      "summary": "Standalone open-source decompilation of Sonic CD (2011) and Retro Engine v3",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "RSDKv3 is a full, open-source standalone decompilation of Sonic CD (2011) and the Retro Engine v3. It brings the definitive remaster of Sonic CD natively to Linux with silky-smooth performance and native widescreen rendering."
+              "value": "RSDKv3 is a full open-source standalone decompilation of the Retro Engine v3 and the 2011 release of Sonic CD. Built using modern C and CMake, it provides a native cross-platform engine recreation that accurately delivers the classic platformer with enhanced modern capabilities, requiring assets from a legally acquired copy of the game to run."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine improves significantly upon the original PC and mobile ports by integrating extended gameplay tweaks, developer tools, and an extensible modding infrastructure."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native 60 FPS gameplay eliminating mobile and console emulation overhead"
+                "value": "Crisp, pixel-perfect rendering with full palette support and custom display resolution options"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen display rendering with scalable menus and HUD elements"
+                "value": "Built-in mod loader and API supporting save file redirection and XML GameConfig data"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Play as Sonic, Tails, and Knuckles with their respective abilities"
+                "value": "Full support for mobile and updated scripts to access exclusive features and revisions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Includes both Original Japanese and US soundtrack arrangements"
+                "value": "Comprehensive developer menu with scene jumping, scene reloading, and hitbox visualization"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern gamepad support with remappable controls and rumble feedback"
+                "value": "Fully customizable controls and engine behavior via a centralized configuration file"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced debugging features ported from Sonic Mania, including frame step-over and fast forward"
               }
             ]
           ]
@@ -60,14 +75,18 @@
       "homepage": "https://github.com/Rubberduckycooly/Sonic-CD-11-Decompilation",
       "repository": "https://github.com/pkgforge-dev/RSDKv3-AppImage",
       "keywords": [
-        "rsdkv3",
-        "appimage",
-        "anylinux"
+        "sonic",
+        "decompilation",
+        "retroengine",
+        "platformer",
+        "engine",
+        "modding",
+        "soniccd"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "Development",
+        "Debugger"
       ]
     },
     "media": {

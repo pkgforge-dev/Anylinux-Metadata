@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.korkman.macemu_appimage_builder_sheepshaver",
+      "name": "sheepshaver",
+      "summary": "Classic PowerPC Macintosh emulator running Mac OS 7.5.2 through 9.0.4",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "SheepShaver is an open-source PowerPC Macintosh emulator that allows modern systems to run classic Mac OS software designed for PowerPC-based Macs, supporting System 7.5.2 through Mac OS 9.0.4."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with an integrated installer and desktop integration scripts, it provides easy access to classic computing environments, productivity suites, and vintage Mac games directly on modern Linux desktops."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Emulates PowerPC-based Mac hardware to run Mac OS 7.5.2 up to 9.0.4"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated installer option to set up desktop menu items and icons"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dedicated configuration graphical interface for adjusting hardware and disk settings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Context menu shortcuts to quickly launch with or without the configuration GUI"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built for modern 32-bit and 64-bit x86 as well as 64-bit ARM Linux systems"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "sheepshaver Developers",
+        "url": "https://github.com/Korkman/macemu-appimage-builder"
+      },
+      "homepage": "https://github.com/Korkman/macemu-appimage-builder",
+      "repository": "https://github.com/pkgforge-dev/SheepShaver-AppImage",
+      "keywords": [
+        "macintosh",
+        "emulator",
+        "powerpc",
+        "macos",
+        "classic",
+        "macemu",
+        "retrocomputing",
+        "virtualization"
+      ],
+      "categories": [
+        "System",
+        "Utility",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sheepshaver.png",
+      "screenshots": [
+        {
+          "caption": "sheepshaver interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/SheepShaver-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "google.antigravity.antigravity",
       "name": "Antigravity",
-      "summary": "Google Antigravity is an advanced agentic AI coding assistant designed by Google DeepMind",
+      "summary": "Agentic AI coding assistant designed to accelerate software development and pair programming workflows",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Google Antigravity is an advanced agentic AI coding assistant designed by Google DeepMind. Built for pair programming and autonomous software engineering, Antigravity plans, explores codebases, writes and refactors code, runs commands, and performs complex multi-step workflows."
+              "value": "Antigravity is an advanced agentic AI coding assistant created by Google DeepMind to augment software engineering. It provides an intelligent pair-programming environment capable of code generation, multi-file refactoring, debugging, and task automation directly on your system."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with portable runtime dependencies, this release delivers a frictionless standalone developer experience across Linux distributions without external system setup."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Autonomous multi-agent coordination with specialized background subagents"
+                "value": "Agentic pair-programming workflows for deep codebase understanding and code generation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "In-depth codebase exploration, semantic search, and project comprehension"
+                "value": "Integrated terminal and autonomous tool usage for automated debugging and testing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automated test execution, debugging, and terminal command integration"
+                "value": "Self-contained portable packaging that runs without requiring FUSE or root privileges"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Flexible extension system supporting custom skills, rules, hooks, and MCP servers"
+                "value": "Seamless background update notifications with automatic package manager detection"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Seamless integration across command-line interfaces and development environments"
+                "value": "Broad compatibility across glibc and musl-based Linux distributions"
               }
             ]
           ]
@@ -60,14 +69,20 @@
       "homepage": "https://antigravity.google/download https://antigravity.google",
       "repository": "https://github.com/pkgforge-dev/Antigravity-AppImage",
       "keywords": [
-        "antigravity",
-        "appimage",
-        "anylinux"
+        "ai",
+        "assistant",
+        "coding",
+        "developer",
+        "deepmind",
+        "programming",
+        "automation",
+        "debugger"
       ],
       "categories": [
         "Development",
-        "ArtificialIntelligence",
-        "TextEditor"
+        "IDE",
+        "Debugger",
+        "Building"
       ]
     },
     "media": {

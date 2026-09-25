@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.l3ib.nitrogen",
       "name": "Nitrogen",
-      "summary": "Nitrogen is a fast and lightweight wallpaper browser and desktop background setter for X11",
+      "summary": "Fast and lightweight wallpaper browser and desktop background setter for X11",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Nitrogen is a fast and lightweight wallpaper browser and desktop background setter for X11. Widely favored in lightweight desktop environments and window managers, it provides quick background configuration without desktop bloat."
+              "value": "Nitrogen is a fast and lightweight wallpaper browser and desktop background setter designed for the X11 Window System. Built with gtkmm, it provides an intuitive graphical interface for previewing images and quickly applying them across multi-head desktop setups."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "In addition to interactive wallpaper management, Nitrogen offers a command-line mode capable of restoring saved wallpaper configurations during window manager or desktop session startup."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Fast thumbnail generation and image browsing across multiple wallpaper folders"
+                "value": "Fast thumbnail generation and browsing for image directories"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multiple wallpaper layout modes including Zoom, Centered, Tiled, Scaled, and Fill"
+                "value": "Multiple image placement modes including scaled, centered, tiled, and zoomed"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multi-monitor support with independent wallpaper assignment per display"
+                "value": "Full multi-monitor and multi-head display support with independent background configuration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automatic restoration of desktop backgrounds on window manager startup via command line"
+                "value": "In-memory caching of thumbnails for rapid browsing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Lightweight GTK interface consuming minimal system memory"
+                "value": "Command-line restoration mode for automated session startup integration"
               }
             ]
           ]
@@ -60,14 +69,20 @@
       "homepage": "https://github.com/l3ib/nitrogen",
       "repository": "https://github.com/pkgforge-dev/nitrogen-appimage",
       "keywords": [
-        "nitrogen",
-        "appimage",
-        "anylinux"
+        "wallpaper",
+        "background",
+        "x11",
+        "desktop",
+        "image viewer",
+        "gtkmm",
+        "multihead"
       ],
       "categories": [
         "Graphics",
-        "Viewer",
-        "DesktopSettings"
+        "Settings",
+        "DesktopSettings",
+        "2DGraphics",
+        "Viewer"
       ]
     },
     "media": {

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.arnoansems.catacombgl",
       "name": "CatacombGL",
-      "summary": "CatacombGL is an open-source source port for the classic first-person fantasy action series by id Software and Softdisk: Catacomb 3-D, The Catacomb",
+      "summary": "Source port of the classic Catacomb 3D and Catacomb Adventure games featuring hardware-accelerated OpenGL graphics",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "CatacombGL is an open-source source port for the classic first-person fantasy action series by id Software and Softdisk: Catacomb 3-D, The Catacomb Abyss, The Catacomb Armageddon, and The Catacomb Apocalypse."
+              "value": "CatacombGL is an open-source port of the early first-person fantasy games Catacomb 3-D and the Catacomb Adventure series, originally developed by id Software and Softdisk. Built using SDL and OpenGL, it upgrades the classic 16-color, 320x200 MS-DOS titles with modern hardware acceleration and visual enhancements while preserving authentic gameplay."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine requires original game assets from either the shareware release of The Catacomb Abyss or the commercial Catacombs Pack, providing an integrated launcher to select and manage compatible titles."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated OpenGL rendering with high-resolution texture filtering"
+                "value": "Hardware-accelerated 3D rendering with OpenGL, widescreen resolutions, and an uncapped frame rate"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern mouse-look controls with customizable sensitivity and field of view"
+                "value": "Customizable field of view and configurable mouse and keyboard controls"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and ultrawide display support with scalable interface elements"
+                "value": "Smooth player, monster, and projectile movement with floating-point precision"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Restored and enhanced sound effects and music playback"
+                "value": "Built-in game selection menu with auto-detection for installed game data"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Compatibility with original game data files from both floppy and CD releases"
+                "value": "Full compatibility with Catacomb 3-D, The Catacomb Abyss, The Catacomb Armageddon, and The Catacomb Apocalypse"
               }
             ]
           ]
@@ -60,13 +69,18 @@
       "homepage": "https://github.com/ArnoAnsems/CatacombGL",
       "repository": "https://github.com/pkgforge-dev/CatacombGL-AppImage",
       "keywords": [
-        "catacombgl",
-        "appimage",
-        "anylinux"
+        "source port",
+        "opengl",
+        "dos",
+        "fps",
+        "retro",
+        "catacomb",
+        "fantasy",
+        "sdl"
       ],
       "categories": [
         "Game",
-        "ActionGame"
+        "3DGraphics"
       ]
     },
     "media": {

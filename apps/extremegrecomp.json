@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.gitlab.sonicdcer.extremegrecomp",
       "name": "Extreme-G Recompiled",
-      "summary": "Native PC port of Extreme-G created using static recompilation",
+      "summary": "Play the statically recompiled native PC port of the classic Extreme-G racing game",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Extreme-G Recompiled is a native PC port of the futuristic racing game Extreme-G, created through static recompilation of the original Nintendo 64 binary."
+              "value": "Extreme-G Recompiled is an enhanced native PC port of the high-speed futuristic racing game Extreme-G, achieved through static recompilation of the original binary code to provide optimal modern performance and native compatibility."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "Players race futuristic superbikes along roller-coaster-style tracks at breakneck speeds with native rendering, ultra-wide display compatibility, and modern gamepads."
+              "value": "This portable package delivers seamless execution on modern Linux distributions without requiring system modifications, external emulators, or elevated runtime dependencies."
             }
           ]
         },
@@ -31,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Full native PC compilation delivering smooth high framerates and fluid action"
+                "value": "Native executable execution via static binary recompilation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Ultra-wide display rendering and customizable graphical fidelity settings"
+                "value": "High-speed futuristic motorcycle racing with weapon combat"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-octane futuristic racing across looping and spiraling tracks"
+                "value": "FUSE-independent standalone portability across glibc and musl distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for modern game controllers with fine-tuned steering calibration"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Full digital audio and soundtrack playback with zero emulation stutter"
+                "value": "Built-in automated update detection and notification system"
               }
             ]
           ]
@@ -69,14 +63,17 @@
       "homepage": "https://gitlab.com/sonicdcer/ExtremeGRecomp",
       "repository": "https://gitlab.com/sonicdcer/ExtremeGRecomp",
       "keywords": [
-        "extremegrecomp",
-        "appimage",
-        "anylinux"
+        "racing",
+        "recompiled",
+        "port",
+        "combat",
+        "futuristic",
+        "n64",
+        "motorcycle"
       ],
       "categories": [
         "Game",
-        "SportsGame",
-        "ArcadeGame"
+        "3DGraphics"
       ]
     },
     "media": {

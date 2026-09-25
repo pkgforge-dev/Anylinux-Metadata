@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.alistert.openjazz",
       "name": "OpenJazz",
-      "summary": "OpenJazz is a free, open-source game engine reimplementation of Jazz Jackrabbit, the fast-paced 1994 platformer by Epic MegaGames",
+      "summary": "Free and open-source game engine reimplementation of Jazz Jackrabbit",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OpenJazz is a free, open-source game engine reimplementation of Jazz Jackrabbit, the fast-paced 1994 platformer by Epic MegaGames. It allows players to enjoy the high-speed adventures of the green hare on modern Linux."
+              "value": "OpenJazz is an open-source game engine reimplementation of the classic 1994 platformer Jazz Jackrabbit. Built to run natively across modern operating systems, it provides a faithful way to enjoy the fast-paced, colorful DOS classic without relying on traditional DOS emulators."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "To play the game, original data files from registered or shareware versions of Jazz Jackrabbit are required. OpenJazz seamlessly loads original game levels, graphics, and audio while introducing enhancements for modern gaming environments."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native cross-platform execution with smooth 60 FPS side-scrolling action"
+                "value": "Faithful reimplementation of classic Jazz Jackrabbit platforming mechanics"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Scalable high-resolution graphics and widescreen presentation"
+                "value": "Native modern platform support replacing the need for DOS emulation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for modern controllers, gamepads, and customizable keyboard layouts"
+                "value": "Multiplayer gameplay mode for cooperative and competitive play"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Local split-screen multiplayer racing and battle modes"
+                "value": "Full support for original cutscene movie playback and 3D bonus stages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Compatible with shareware, floppy, and CD-ROM releases of Jazz Jackrabbit"
+                "value": "Recreated visual touches including authentic main menu plasma effects"
               }
             ]
           ]
@@ -60,14 +69,17 @@
       "homepage": "https://github.com/AlisterT/openjazz",
       "repository": "https://github.com/pkgforge-dev/OpenJazz-AppImage",
       "keywords": [
-        "openjazz",
-        "appimage",
-        "anylinux"
+        "jazz jackrabbit",
+        "platformer",
+        "game engine",
+        "epic games",
+        "dos",
+        "retro",
+        "multiplayer",
+        "shareware"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "Game"
       ]
     },
     "media": {

@@ -5,15 +5,59 @@
     "metadata": {
       "id": "com.github.streamlink",
       "name": "streamlink",
-      "summary": "Streamlink is a command-line utility which pipes video streams from various services into a video player, such as VLC",
+      "summary": "Pipe video streams from various online streaming services into your favorite media player",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Streamlink is a command-line utility which pipes video streams from various services into a video player, such as VLC. The main purpose of Streamlink is to avoid resource-heavy and unoptimized websites, while still allowing the user to enjoy various streamed content. There is also an API available for developers who want access to the stream data.  This project was forked from Livestreamer, which is no longer maintained."
+              "value": "Streamlink is a command-line utility designed to extract video streams from various online platforms and pipe them directly into a local media player such as VLC or MPV. It enables users to bypass resource-heavy web players and enjoy high-performance video playback with lower CPU and memory usage."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles all necessary runtime dependencies and libraries, providing a fully self-contained media streaming client ready to run across various Linux environments."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Pipes live video streams and video-on-demand content into external players"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Reduces CPU and memory overhead compared to browser-based video playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fully portable runtime without requiring FUSE to execute"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Includes an integrated self-updater with permission prompts for new version notifications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrates seamlessly with existing package managers to manage updates automatically"
+              }
+            ]
           ]
         }
       ],
@@ -25,14 +69,19 @@
       "homepage": "https://github.com/streamlink",
       "repository": "https://github.com/pkgforge-dev/Streamlink-AppImage",
       "keywords": [
-        "streamlink",
-        "appimage",
-        "anylinux"
+        "stream",
+        "video",
+        "player",
+        "livestream",
+        "playback",
+        "cli",
+        "vlc",
+        "hls"
       ],
       "categories": [
         "AudioVideo",
-        "Network",
-        "Player"
+        "Video",
+        "Viewer"
       ]
     },
     "media": {

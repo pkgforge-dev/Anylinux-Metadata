@@ -5,14 +5,23 @@
     "metadata": {
       "id": "net.sourceforge.xsnow",
       "name": "Xsnow",
-      "summary": "Xsnow is a festive, animated desktop holiday toy for X11",
+      "summary": "Bring falling snow, Santa, reindeer, and seasonal holiday cheer to your desktop",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Xsnow is a festive, animated desktop holiday toy for X11. It brings gently falling snowflakes, blowing snowdrifts, festive trees, and Santa flying in his reindeer-pulled sleigh to your desktop workspace."
+              "value": "Xsnow is a classic desktop animation toy for the X Window System that decorates your workspace with falling snowflakes, accumulating snowdrifts, and seasonal characters. Originally conceived for vintage Unix workstations, it enlivens standard desktop environments with festive graphics and peaceful holiday scenery."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The software renders continuous seasonal animations over the desktop background while dynamically accumulating snow along the bottom of the screen and atop open application windows."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Gently falling snowflakes that accumulate as snowdrifts on top of open desktop windows"
+                "value": "Animated snowflakes drifting down the desktop with variable speed and wind direction"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Flying Santa Claus in a sleigh pulled by reindeer across the screen"
+                "value": "Snow buildup that realistically gathers on open windows and the desktop panel"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Festive evergreen trees, playful penguins, and customizable winter scenery"
+                "value": "Santa Claus in his sleigh flying across the screen pulled by reindeer"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable snow speed, snowflake count, wind velocity, and Santa flight frequency"
+                "value": "Scattered Christmas trees and scenery elements decorating the desktop surface"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Compatible with modern compositing managers and multiple monitor setups"
+                "value": "Customizable animation parameters including flake quantity, size, and falling speed"
               }
             ]
           ]
@@ -60,13 +69,18 @@
       "homepage": "https://sourceforge.net/projects/xsnow",
       "repository": "https://github.com/pkgforge-dev/Xsnow-AppImage",
       "keywords": [
-        "xsnow",
-        "appimage",
-        "anylinux"
+        "snow",
+        "desktop toy",
+        "holiday",
+        "christmas",
+        "santa",
+        "x11",
+        "animation",
+        "seasonal"
       ],
       "categories": [
-        "Utility",
-        "Amusement"
+        "Game",
+        "Utility"
       ]
     },
     "media": {

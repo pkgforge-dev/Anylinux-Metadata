@@ -5,15 +5,56 @@
     "metadata": {
       "id": "io.github.yt_dlp.yt_dlp",
       "name": "yt-dlp",
-      "summary": "A feature-rich command-line audio/video downloader",
+      "summary": "Download audio and video streams from thousands of websites via the command line",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "A feature-rich command-line audio/video downloader"
+              "value": "yt-dlp is an advanced, feature-rich command-line audio and video downloader written in Python. Originating as an enhanced fork of youtube-dl and youtube-dlc, it aims to deliver active development, bug fixes, and extensive extraction support across thousands of multimedia platforms."
             }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Support for extracting media and metadata from thousands of audio and video websites"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive format selection, filtering, and sorting to choose optimal resolutions and codecs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Subtitle download, embedding, and automatic conversion capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Flexible post-processing, thumbnail embedding, and metadata modification"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native integration with SponsorBlock to mark or remove sponsored sections"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensible architecture supporting third-party plugins and custom extractor configurations"
+              }
+            ]
           ]
         }
       ],
@@ -25,14 +66,19 @@
       "homepage": "https://github.com/yt-dlp/yt-dlp",
       "repository": "https://github.com/pkgforge-dev/yt-dlp-AppImage",
       "keywords": [
-        "yt-dlp",
-        "appimage",
-        "anylinux"
+        "download",
+        "video",
+        "audio",
+        "streaming",
+        "media",
+        "cli",
+        "extractor",
+        "subtitles"
       ],
       "categories": [
         "AudioVideo",
         "Network",
-        "ConsoleOnly"
+        "FileTransfer"
       ]
     },
     "media": {

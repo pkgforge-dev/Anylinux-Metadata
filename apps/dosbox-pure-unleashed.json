@@ -1,0 +1,134 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.schellingb.dosbox_pure_dosbox_pure_unleashed",
+      "name": "DOSBox Pure Unleashed",
+      "summary": "Play classic DOS games with automatic mounting, gamepad support, and ZIP loading",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DOSBox Pure Unleashed is a standalone packaging of DOSBox Pure, an emulator fork designed to make running classic DOS games seamless and accessible. Built with simplicity and ease of use in mind, it streamlines DOS gaming without requiring manual drive mounting or complex configuration files."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By wrapping games into modern convenient workflows, players can jump straight into retro titles with full gamepad navigation and automatic image management."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Load games directly from ZIP archives without prior extraction"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Store modifications and save data in separate save files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Mount CD images and floppy disk images directly from inside archives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gamepad-controllable start menu listing all executable files"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in on-screen keyboard accessible via controller shortcuts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic startup option to skip menus or loading sequences"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "DOSBox Pure Unleashed Developers",
+        "url": "https://github.com/schellingb/dosbox-pure"
+      },
+      "homepage": "https://github.com/schellingb/dosbox-pure",
+      "repository": "https://github.com/pkgforge-dev/dosbox-pure-unleashed-appimage",
+      "keywords": [
+        "dosbox",
+        "emulator",
+        "retrogaming",
+        "dos",
+        "gamepad",
+        "libretro",
+        "classic"
+      ],
+      "categories": [
+        "Game",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dosbox-pure-unleashed.png",
+      "screenshots": [
+        {
+          "caption": "Interactive start menu displaying executable game files and mounting options",
+          "source": "https://raw.githubusercontent.com/schellingb/dosbox-pure/main/images/startmenu.png"
+        },
+        {
+          "caption": "Integrated on-screen keyboard for text input with a gamepad",
+          "source": "https://raw.githubusercontent.com/schellingb/dosbox-pure/main/images/onscreenkeyboard.png"
+        },
+        {
+          "caption": "Gamepad button and axis mapper interface",
+          "source": "https://raw.githubusercontent.com/schellingb/dosbox-pure/main/images/padmapper.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DOSBox-Pure-Unleashed-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

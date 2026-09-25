@@ -12,7 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "OpenTESArena is an open-source engine reimplementation of Bethesda Softworks' classic 1994 RPG The Elder Scrolls: Arena. Created by Alexander Fritz, it modernizes the classic fantasy experience for contemporary systems."
+              "value": "OpenTESArena is an open-source engine written from scratch to reimplement the classic 1994 DOS role-playing game The Elder Scrolls: Arena. Developing a clean-room approach, it aims to faithfully replicate original game systems while introducing modern quality-of-life improvements and multiplatform compatibility."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The engine provides modern audio mixing, native resolution rendering, customizable controls including mouselook, and clean cross-platform performance."
+              "value": "The engine operates using original game data assets and provides both authentic classic controls and modernized navigation options."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native modern engine execution without requiring DOSBox emulation"
+                "value": "Combat mechanics featuring attacking enemies, loot dropping, and character experience progression"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full mouselook navigation and customizable keyboard/mouse control schemes"
+                "value": "Town and shopkeeper services including buying, selling, tavern room rentals, and disease curing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Software and hardware-accelerated 3D renderer supporting modern high resolutions"
+                "value": "Interactive wandering citizens capable of offering directions and sharing rumors"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Authentic MIDI music synthesis and digital sound effect reproduction"
+                "value": "Fast travel functionality accessible across any world map location"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Faithful reproduction of Tamriel's vast procedural wilderness, cities, and dungeons"
+                "value": "Character creation and full inventory management for picking up, equipping, and dropping gear"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable input supporting modern WASD mouselook controls alongside traditional classic controls"
               }
             ]
           ]
@@ -69,21 +75,25 @@
       "homepage": "https://github.com/afritz1/OpenTESArena",
       "repository": "https://github.com/afritz1/OpenTESArena",
       "keywords": [
-        "opentesarena",
-        "appimage",
-        "anylinux"
+        "elder scrolls",
+        "arena",
+        "rpg",
+        "game engine",
+        "reimplementation",
+        "dos",
+        "bethesda",
+        "dungeon crawler"
       ],
       "categories": [
-        "Game",
-        "RolePlaying"
+        "Game"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opentesarena.png",
       "screenshots": [
         {
-          "caption": "OpenTESArena interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "In-game exploration view in OpenTESArena",
+          "source": "https://raw.githubusercontent.com/afritz1/OpenTESArena/main/Preview.PNG"
         }
       ]
     }

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.nukeykt.rednukem",
       "name": "Rednukem",
-      "summary": "Rednukem is an open-source BUILD engine source port based on EDuke32, providing native 64-bit support for the classic redneck shooters: Redneck Ram",
+      "summary": "Port of the BUILD engine games Redneck Rampage, Suckin' Portal, and Rides Again",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Rednukem is an open-source BUILD engine source port based on EDuke32, providing native 64-bit support for the classic redneck shooters: Redneck Rampage, Redneck Rampage Rides Again, and Redneck Deer Huntin'."
+              "value": "Rednukem is an open-source reverse-engineered port of the classic BUILD engine games Redneck Rampage, Redneck Rampage Rides Again, and Redneck Deer Huntin'. Based on EDuke32 technology, it brings authentic gameplay mechanics to modern operating systems with native 64-bit performance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine focuses on faithful DOS-era behavior while providing contemporary conveniences such as high-resolution video modes, enhanced audio playback, and customizable input controls."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native Linux execution with high-resolution widescreen rendering"
+                "value": "Native 64-bit compatibility for modern Linux systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern mouselook controls, customizable key bindings, and gamepad support"
+                "value": "Accurate game logic reverse-engineered directly from original DOS executables"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Accurate physics, sound effects, and level triggers matching original DOS behavior"
+                "value": "Support for Redneck Rampage, Rides Again, Suckin' Portal, and Deer Huntin'"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity audio playback supporting CD audio soundtrack tracks"
+                "value": "High-resolution widescreen video modes and modern display scaling"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Uncapped framerates and performance optimizations eliminating engine slowdowns"
+                "value": "Enhanced digital audio playback alongside classic MIDI sound support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable modern keyboard, mouse, and game controller bindings"
               }
             ]
           ]
@@ -60,14 +75,18 @@
       "homepage": "https://github.com/nukeykt/Rednukem",
       "repository": "https://github.com/pkgforge-dev/Rednukem-AppImage",
       "keywords": [
-        "rednukem",
-        "appimage",
-        "anylinux"
+        "build engine",
+        "eduke32",
+        "redneck rampage",
+        "source port",
+        "retro",
+        "fps",
+        "classic shooter",
+        "dos"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

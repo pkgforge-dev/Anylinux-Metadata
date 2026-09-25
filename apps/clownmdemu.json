@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.clownacy.clownmdemu_frontend_clownmdemu",
       "name": "ClownMDEmu",
-      "summary": "Reference standalone frontend for clownmdemu",
+      "summary": "Sega Mega Drive and Genesis emulator with a standalone frontend",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Reference standalone frontend for clownmdemu."
+              "value": "ClownMDEmu is a Sega Mega Drive (also known as Sega Genesis) emulator designed for accuracy and portability. Its standalone frontend is built in C++20 and powered by the SDL3 and Dear ImGui libraries, providing a lightweight, customizable interface for running 16-bit Sega titles."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator features flexible input support and debugging capabilities tailored for retro gaming enthusiasts and homebrew developers."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "State management with quick save and load state support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Real-time gameplay rewinding and fast-forward functionality"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Frame-advance mode while paused for precise frame-by-frame analysis"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable input options supporting both keyboard and game controllers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in debugging and visualization tools powered by Dear ImGui"
+              }
+            ]
           ]
         }
       ],
@@ -25,24 +69,29 @@
       "homepage": "https://github.com/Clownacy/clownmdemu-frontend",
       "repository": "https://github.com/pkgforge-dev/ClownMDEmu-AppImage-Enhanced",
       "keywords": [
-        "clownmdemu",
-        "appimage",
-        "anylinux"
+        "sega",
+        "megadrive",
+        "genesis",
+        "emulator",
+        "emulation",
+        "retrogaming",
+        "sdl3",
+        "imgui"
       ],
       "categories": [
         "Game",
-        "Emulator"
+        "Debugger"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/clownmdemu.png",
       "screenshots": [
         {
-          "caption": "ClownMDEmu interface screenshot 1",
+          "caption": "Minimal gameplay display in ClownMDEmu",
           "source": "https://raw.githubusercontent.com/Clownacy/clownmdemu-frontend/master/assets/screenshot-minimal.png"
         },
         {
-          "caption": "ClownMDEmu interface screenshot 2",
+          "caption": "ClownMDEmu running with ImGui debug windows and memory view",
           "source": "https://raw.githubusercontent.com/Clownacy/clownmdemu-frontend/master/assets/screenshot-debug.png"
         }
       ]

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.crenedecotret.vibeprint_vibeprint_studio",
       "name": "Vibeprint Studio",
-      "summary": "Vibeprint Studio is an open-source 3D printing slicing and printer management application",
+      "summary": "ICC-aware print layout engine and graphical printing studio",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Vibeprint Studio is an open-source 3D printing slicing and printer management application. It streamlines preparing 3D models (STL, OBJ, 3MF) for fabrication with intuitive slicing controls and G-code generation."
+              "value": "Vibeprint Studio is an open-source, color-managed print layout engine and graphical user interface built in Rust. It enables photographers, artists, and printmakers to prepare, preview, and output raster graphics with accurate ICC color profiling and high-resolution layout controls."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The software interfaces directly with CUPS print queues and standard Linux printing libraries, facilitating seamless print preparation workflows alongside removable device support for local file management."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "High-performance slicing engine generating optimized toolpaths and supports"
+                "value": "ICC-aware color management engine leveraging LittleCMS for precision profiling"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Visual 3D layer preview inspecting nozzle trajectories and travel speeds"
+                "value": "Full integration with CUPS to discover and manage local and networked printers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Direct network printing integration for Moonraker, Klipper, and OctoPrint"
+                "value": "High-resolution image processing and TIFF export with customizable DPI targets"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multi-material printing support and customizable filament profiles"
+                "value": "Built-in crop, border, and image metadata inspection tools"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Clean, modern desktop interface designed for makers and 3D printing professionals"
+                "value": "Removable device mount and file access integration via udisks2"
               }
             ]
           ]
@@ -60,15 +69,21 @@
       "homepage": "https://github.com/crenedecotret/vibeprint",
       "repository": "https://github.com/pkgforge-dev/vibeprint-studio-appimage",
       "keywords": [
-        "vibeprint-studio",
-        "appimage",
-        "anylinux"
+        "icc",
+        "color-management",
+        "cups",
+        "printing",
+        "layout",
+        "raster",
+        "tiff",
+        "photography",
+        "lcms2"
       ],
       "categories": [
         "Graphics",
-        "3DGraphics",
-        "Engineering",
-        "Printing"
+        "Printing",
+        "Photography",
+        "Publishing"
       ]
     },
     "media": {

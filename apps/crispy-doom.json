@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.crispy_doom_appimage_crispy_doom",
+      "name": "crispy-doom",
+      "summary": "Conservative, historically-accurate Doom source port with enhanced resolution and fidelity",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Crispy Doom is a conservative, historically-accurate Doom source port based on Chocolate Doom, designed to maintain full compatibility with the original DOS releases while providing essential visual and gameplay enhancements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It improves overall fidelity while retaining the feel and mechanics of classic Doom, Doom II, Final Doom, and compatible community-created modifications and levels."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Enhanced visual fidelity with higher resolution rendering and uncapped framerate options"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Conservative design philosophy preserving original game physics, timings, and demo compatibility"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with thousands of classic custom levels, WADs, and community modifications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optional crosshairs, mouse-look improvements, and widescreen display support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Authentic sound reproduction with support for multiple MIDI synthesis engines and digital sound effects"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "crispy-doom Developers",
+        "url": "https://github.com/pkgforge-dev/Crispy-Doom-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/Crispy-Doom-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Crispy-Doom-AppImage",
+      "keywords": [
+        "doom",
+        "sourceport",
+        "fps",
+        "shooter",
+        "retro",
+        "classic",
+        "wad",
+        "idtech1"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/crispy-doom.png",
+      "screenshots": [
+        {
+          "caption": "crispy-doom interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Crispy-Doom-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

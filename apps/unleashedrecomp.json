@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.hedge_dev.unleashedrecomp",
       "name": "Unleashed Recompiled",
-      "summary": "UnleashedRecomp is an enhanced native PC port of the high-speed platformer Sonic Unleashed, created using static recompilation",
+      "summary": "Enhanced native PC port of Sonic Unleashed created using static recompilation",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "UnleashedRecomp is an enhanced native PC port of the high-speed platformer Sonic Unleashed, created using static recompilation. It brings Sonic's daytime daytime boost stages and nighttime brawling natively to PC."
+              "value": "Unleashed Recompiled is an unofficial native PC port of the Xbox 360 version of Sonic Unleashed, created via static recompilation using XenonRecomp and XenosRecomp. It converts the game's original PowerPC code and Xenos shaders into native C++ and graphics APIs without runtime emulation overhead, requiring user-provided original game assets to play."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port significantly enhances the original title with modern display standards, optimized performance, and platform upgrades for Linux and Windows systems."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution delivering smooth 60+ FPS high-speed gameplay without emulation lag"
+                "value": "Native execution with support for high resolutions and ultrawide aspect ratios"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen and 4K display rendering with modern aspect ratio scaling"
+                "value": "High frame rate display options and improved rendering performance"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full gamepad controller support with responsive analog stick and trigger inputs"
+                "value": "Modern graphics pipeline support targeting Vulkan 1.2 and Direct3D 12"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity audio playback reproducing the orchestral soundtrack and sound effects"
+                "value": "Built-in modding capabilities and custom content loading"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for community performance patches, visual enhancements, and mods"
+                "value": "Support for optional Xbox 360 downloadable content and high-quality DLC lighting"
               }
             ]
           ]
@@ -60,14 +69,17 @@
       "homepage": "https://github.com/hedge-dev/UnleashedRecomp",
       "repository": "https://github.com/pkgforge-dev/UnleashedRecomp-AppImage",
       "keywords": [
-        "unleashedrecomp",
-        "appimage",
-        "anylinux"
+        "sonic",
+        "unleashed",
+        "recompilation",
+        "platformer",
+        "port",
+        "vulkan",
+        "hedgehog",
+        "xenon"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "Game"
       ]
     },
     "media": {

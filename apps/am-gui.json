@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.shikakiben.am_gui",
       "name": "AM-GUI",
-      "summary": "Graphical frontend for managing AppImages and portable packages using the AM engine",
+      "summary": "Manage, install, and update AppImages and portable packages with an intuitive interface",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "AM-GUI is an open-source graphical frontend for the AM application manager. Developed by Shikakiben, it allows users to install, update, and manage thousands of standalone AppImages and portable Linux programs."
+              "value": "AM-GUI is a graphical frontend designed to simplify managing AppImages and other portable application formats on Linux. Built with modern web technologies using Electron and powered by the AM package manager engine, it provides an accessible desktop application store experience for standalone software."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The application features categorized software catalogs, search tools, one-click installation, desktop launcher creation, and automatic background update checks."
+              "value": "By wrapping the AM and appman command-line utilities, AM-GUI offers an intuitive way to discover software, maintain software libraries, and handle updates across a wide range of Linux distributions."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Intuitive graphical store interface for browsing thousands of portable Linux apps"
+                "value": "Search and discover portable Linux software catalogs directly from a visual store"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "One-click installation, updating, and uninstallation powered by the AM engine"
+                "value": "Install, reinstall, and remove applications with one-click package operations"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automatic desktop entry creation, MIME type associations, and icon extraction"
+                "value": "Seamless system desktop integration for standalone packages and AppImages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Category-based browsing and fast search with real-time package filtering"
+                "value": "Check for updates and manage versions of installed portable software"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Management of portable application updates and local rollback states"
+                "value": "Support for both light and dark visual themes to match desktop preferences"
               }
             ]
           ]
@@ -69,12 +69,15 @@
       "homepage": "https://github.com/Shikakiben/AM-GUI",
       "repository": "https://github.com/Shikakiben/AM-GUI",
       "keywords": [
-        "am-gui",
-        "appimage",
-        "anylinux"
+        "package-manager",
+        "software-store",
+        "appman",
+        "software-center",
+        "installer",
+        "updater",
+        "portable-apps"
       ],
       "categories": [
-        "Utility",
         "System",
         "PackageManager"
       ]
@@ -83,8 +86,8 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/am-gui.png",
       "screenshots": [
         {
-          "caption": "AM-GUI interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "AM-GUI software manager showing the light theme interface",
+          "source": "https://raw.githubusercontent.com/Shikakiben/AM-GUI/main/screenshots/light.png"
         }
       ]
     }

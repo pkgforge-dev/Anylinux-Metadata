@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.lseurttyuu.gpu_t",
       "name": "GPU-T",
-      "summary": "Comprehensive graphics card information and telemetry utility for Linux",
+      "summary": "View detailed graphics card hardware specifications, capabilities, and real-time telemetry",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "GPU-T is a hardware monitoring and telemetry utility for graphics processing units on Linux. Developed by lseurttyuu, it delivers real-time information regarding GPU performance metrics."
+              "value": "GPU-T is a modern graphics card diagnostic and information utility for Linux built with .NET and Avalonia UI. Inspired by GPU-Z, it interacts directly with the Linux kernel (sysfs), graphics APIs, and hardware databases to deliver an information-dense overview of your video card and GPU."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The tool inspects clock speeds, memory allocation, operating temperatures, power consumption, and fan speeds across NVIDIA, AMD, and Intel graphics hardware."
+              "value": "Designed as a single source of truth for graphics hardware, the utility reports low-level silicon specifications, tracks real-time sensor readings, and inspects graphics capabilities across both AMD and NVIDIA hardware."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Real-time monitoring of GPU core clocks, memory frequencies, and utilization"
+                "value": "Identify GPU model, silicon revision, die size, transistor count, BIOS version, and release date"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Comprehensive telemetry tracking temperature sensors, power wattage, and fan RPM"
+                "value": "Monitor live clock speeds, hotspot and edge temperatures, fan speeds, and board power draw with file logging support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Broad hardware support across NVIDIA, AMD Radeon, and Intel Arc/Xe architectures"
+                "value": "Verify PCIe Resizable BAR status, memory type, bus width, and driver versions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Clean user interface displaying hardware specifications and driver versions"
+                "value": "Inspect Vulkan extensions, OpenCL capabilities, and ray tracing support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Minimal system resource consumption during active background monitoring"
+                "value": "Examine VA-API video decode and encode profiles on AMD GPUs, as well as CUDA and NVENC/NVDEC on NVIDIA hardware"
               }
             ]
           ]
@@ -69,22 +69,32 @@
       "homepage": "https://github.com/lseurttyuu/GPU-T",
       "repository": "https://github.com/lseurttyuu/GPU-T",
       "keywords": [
-        "gpu-t",
-        "appimage",
-        "anylinux"
+        "gpu",
+        "graphics",
+        "telemetry",
+        "hardware",
+        "sensors",
+        "vulkan",
+        "nvidia",
+        "amd",
+        "vram"
       ],
       "categories": [
         "System",
         "HardwareSettings",
-        "Utility"
+        "Profiling"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gpu-t.png",
       "screenshots": [
         {
-          "caption": "GPU-T interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "GPU-T main window displaying GPU specifications and telemetry in dark mode",
+          "source": "https://raw.githubusercontent.com/lseurttyuu/GPU-T/main/docs/readme/gpu_t_main_screenshot_dark.png#gh-dark-mode-only"
+        },
+        {
+          "caption": "GPU-T main window displaying GPU specifications and telemetry in light mode",
+          "source": "https://raw.githubusercontent.com/lseurttyuu/GPU-T/main/docs/readme/gpu_t_main_screenshot_light_v2.png#gh-light-mode-only"
         }
       ]
     }

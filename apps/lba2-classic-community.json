@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.lbalab.lba2_classic_community",
       "name": "Little Big Adventure 2 Classic Community",
-      "summary": "Community modernization and source port for Little Big Adventure 2 (Twinsun's Odyssey)",
+      "summary": "Modern community source port of Little Big Adventure 2 (Twinsen's Odyssey)",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Little Big Adventure 2 Classic Community is an open-source modernization project for the classic adventure title Little Big Adventure 2 (Twinsun's Odyssey). Maintained by LBALab, it preserves the 1997 classic for modern operating systems."
+              "value": "Little Big Adventure 2 Classic Community is an open-source modernization and source port of the classic 1997 adventure game Little Big Adventure 2 (Twinsen's Odyssey). Rebuilt using C++ and SDL3, it preserves original game behavior while bringing native 64-bit support, modernized graphics, and improved compatibility to contemporary operating systems."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The source port delivers high-resolution rendering, updated audio mixing, widescreen presentation, and modern gamepad support while retaining original gameplay and narrative."
+              "value": "This engine reimplementation requires a legitimate copy of original game assets to run and supports loading retail CD rips or digital editions directly without manual file extraction."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native modern execution preserving authentic narrative and character dialogue"
+                "value": "Widescreen and high-definition rendering support up to 1080p alongside the classic 640x480 video mode"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen display rendering with support for modern desktop resolutions"
+                "value": "Direct asset playback from raw disc images including ISO, BIN, and CUE pairs"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Updated audio engine supporting high-quality music playback and voice tracks"
+                "value": "Full controller support featuring customizable mapping, radial deadzones, and D-pad rebinds"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern game controller and mouse navigation compatibility"
+                "value": "Optional orbitable third-person exterior follow camera controllable with mouse or analog stick"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cross-platform reliability with numerous stability improvements over the original release"
+                "value": "Fixed 60 Hz simulation step ensuring consistent movement physics and jump distances"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with original 1997 retail game save files"
               }
             ]
           ]
@@ -69,13 +75,17 @@
       "homepage": "https://github.com/LBALab/lba2-classic-community",
       "repository": "https://github.com/LBALab/lba2-classic-community",
       "keywords": [
-        "lba2-classic-community",
-        "appimage",
-        "anylinux"
+        "twinsen",
+        "odyssey",
+        "adventure",
+        "sourceport",
+        "emulator",
+        "classic",
+        "sdl3",
+        "retro"
       ],
       "categories": [
-        "Game",
-        "AdventureGame"
+        "Game"
       ]
     },
     "media": {

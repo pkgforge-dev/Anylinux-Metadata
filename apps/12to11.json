@@ -5,14 +5,14 @@
     "metadata": {
       "id": "win.linuxping.git.12to11",
       "name": "12to11",
-      "summary": "Wayland-to-X11 bridge for running Wayland applications on an X server",
+      "summary": "Run Wayland applications seamlessly on an X11 display server",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "12to11 is a lightweight Wayland-to-X11 bridge that enables running Wayland applications on an X server. It acts as an in-process Wayland compositor translating Wayland client requests into standard X11 window operations, allowing modern Wayland-exclusive software to integrate seamlessly with traditional X11 window managers and desktop environments."
+              "value": "12to11 is a display server bridge designed to run Wayland client applications directly on an X11 desktop environment. It translates Wayland protocols to X11 calls, enabling modern Wayland-exclusive software to integrate smoothly within existing X11 sessions."
             }
           ]
         },
@@ -22,31 +22,25 @@
             [
               {
                 "type": "text",
-                "value": "Seamless execution of Wayland applications as regular top-level X11 windows"
+                "value": "Bridges Wayland-only client applications to X11 display servers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Broad Wayland protocol support including wl_compositor, wl_shm, and xdg_wm_base"
+                "value": "Enables seamless window management and desktop integration under X11"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated rendering through EGL and OpenGL ES 2.0"
+                "value": "Translates Wayland surface rendering and input events directly to X11"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Pointer constraints, relative pointer motions, and multi-touch gestures"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Compatible with lightweight window managers such as dwm, i3, and Openbox"
+                "value": "Operates without requiring full Wayland compositor sessions"
               }
             ]
           ]
@@ -60,14 +54,17 @@
       "homepage": "https://git.linuxping.win/12to11/12to11",
       "repository": "https://github.com/pkgforge-dev/12to11-AppImage",
       "keywords": [
-        "12to11",
-        "appimage",
-        "anylinux"
+        "wayland",
+        "x11",
+        "xorg",
+        "display server",
+        "bridge",
+        "compatibility",
+        "window management"
       ],
       "categories": [
         "System",
-        "Utility",
-        "Core"
+        "Utility"
       ]
     },
     "media": {

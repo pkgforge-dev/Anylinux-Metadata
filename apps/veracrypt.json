@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.veracrypt.veracrypt",
       "name": "veracrypt",
-      "summary": "VeraCrypt is a free open source disk encryption software",
+      "summary": "Free open-source disk encryption software for creating encrypted volumes and securing partitions",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "VeraCrypt is a free open source disk encryption software."
+              "value": "VeraCrypt is a free, open-source disk encryption tool designed to secure sensitive data through on-the-fly encryption. It allows users to create virtual encrypted disks within standalone files, encrypt entire storage partitions, or secure whole storage devices using industry-standard cryptographic algorithms."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles all necessary dependencies to run seamlessly across Linux distributions without requiring FUSE or container runtimes, ensuring reliable performance and isolation."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Creates virtual encrypted disks within files and mounts them as real drives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Encrypts complete partitions or entire storage drives including USB flash drives"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Provides automatic, real-time, transparent on-the-fly encryption and decryption"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Supports plausible deniability via hidden volumes and hidden operating system protections"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Includes an integrated prompt-driven self-updater with support for external package managers"
+              }
+            ]
           ]
         }
       ],
@@ -25,13 +69,19 @@
       "homepage": "https://veracrypt.io/",
       "repository": "https://github.com/pkgforge-dev/VeraCrypt-AppImage",
       "keywords": [
-        "veracrypt",
-        "appimage",
-        "anylinux"
+        "encryption",
+        "security",
+        "crypto",
+        "privacy",
+        "disk",
+        "volume",
+        "partition",
+        "storage"
       ],
       "categories": [
         "System",
-        "Security"
+        "Utility",
+        "HardwareSettings"
       ]
     },
     "media": {

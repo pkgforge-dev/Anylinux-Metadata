@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.defold.defold",
+      "name": "Defold",
+      "summary": "Create cross-platform 2D and 3D games with a developer-friendly engine and editor",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Defold is a lightweight, turn-key game engine and editor tailored for high-performance 2D and 3D game development. It offers an all-in-one workflow combining visual scene editing, scriptable project logic, and dedicated command-line build tools to streamline production across desktop, mobile, and web targets."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Integrated visual editor for structuring scenes, tilemaps, GUI layouts, and particle effects"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Turn-key cross-platform publishing supporting iOS, Android, HTML5/Emscripten, and desktop platforms"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Standalone command-line build tool ('Bob') to automate continuous integration and asset compilation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modular engine architecture allowing custom native extensions and third-party library integrations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optimized runtime engine engineered for minimal binary footprint and low memory overhead"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Defold Developers",
+        "url": "https://github.com/defold/defold"
+      },
+      "homepage": "https://github.com/defold/defold",
+      "repository": "https://github.com/pkgforge-dev/Defold-AppImage",
+      "keywords": [
+        "game engine",
+        "gamedev",
+        "game development",
+        "2d",
+        "3d",
+        "editor",
+        "lua",
+        "cross-platform"
+      ],
+      "categories": [
+        "Development",
+        "IDE",
+        "GUIDesigner"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/defold.png",
+      "screenshots": [
+        {
+          "caption": "Defold interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Defold-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

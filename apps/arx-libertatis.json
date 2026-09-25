@@ -1,0 +1,123 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.arx.arxlibertatis_arx_libertatis",
+      "name": "Arx Libertatis",
+      "summary": "Cross-platform, open-source game engine port of Arx Fatalis",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Arx Libertatis is a modern, cross-platform port of the classic first-person action role-playing game Arx Fatalis. Built upon the original released source code, it brings enhanced stability, modern operating system support, and wide hardware compatibility to the underground world of Arx."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine modernizes rendering and audio subsystems while faithfully preserving the original atmospheric RPG mechanics, immersive physics, rune-based spellcasting, and intricate dungeon exploration."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Modern rendering pipeline powered by OpenGL and SDL with flexible backend support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Positional 3D audio powered by OpenAL and OpenAL Soft"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform compatibility across modern Linux distributions and architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optional graphical crash reporting utility with detailed backtrace generation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native widescreen, high-resolution display, and modern input support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Arx Libertatis Developers",
+        "url": "https://github.com/arx/ArxLibertatis"
+      },
+      "homepage": "https://github.com/arx/ArxLibertatis",
+      "repository": "https://github.com/pkgforge-dev/arx-libertatis-appimage",
+      "keywords": [
+        "arx fatalis",
+        "rpg",
+        "role playing",
+        "first person",
+        "game engine",
+        "arkane",
+        "opengl",
+        "openal",
+        "dungeon crawler"
+      ],
+      "categories": [
+        "Game",
+        "ActionGame",
+        "RolePlaying"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/arx-libertatis.png",
+      "screenshots": [
+        {
+          "caption": "Arx Libertatis interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Arx-Libertatis-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

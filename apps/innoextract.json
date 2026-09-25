@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.dscharrer.innoextract",
       "name": "innoextract",
-      "summary": "innoextract is a tool designed to unpack installers created by Inno Setup under Linux without requiring Wine",
+      "summary": "Extract files from Inno Setup installers without Wine",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "innoextract is a tool designed to unpack installers created by Inno Setup under Linux without requiring Wine. It allows gamers and developers to unpack Windows game installers (such as GOG.com releases) directly to native folders."
+              "value": "innoextract is a tool designed to unpack installers created by Inno Setup under non-Windows systems without running Wine. It provides a clean, native way to inspect and extract application data, games, and patches directly from Windows installer executables."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Beyond standard Inno Setup setups, it handles custom installer variants and provides full extraction support across a broad range of versions."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Extracts data files from Inno Setup installers from version 1.2 through the latest releases"
+                "value": "Supports installers created by Inno Setup versions 1.2.10 through 6.3.3"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Direct native Linux extraction without requiring Wine or Windows compatibility layers"
+                "value": "Extracts GOG.com game installers and Wadjet Eye Games packages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Supports password-protected and multi-part split installer archives"
+                "value": "Supports Martijn Laan's My Inno Setup Extensions versions 1.3.10 to 3.0.6.1"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserves original file timestamps and directory hierarchies"
+                "value": "Handles multi-part installers, encrypted archives, and LZMA compression"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Filter and extract specific files or component groups with command-line switches"
+                "value": "Unpacks patch executables such as Arx Fatalis patches for native Linux engines"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/dscharrer/innoextract",
       "repository": "https://github.com/pkgforge-dev/innoextract-AppImage",
       "keywords": [
-        "innoextract",
-        "appimage",
-        "anylinux"
+        "inno",
+        "setup",
+        "installer",
+        "extractor",
+        "unpack",
+        "decompress",
+        "archive",
+        "gog"
       ],
       "categories": [
         "Utility",
-        "Archiving",
-        "Compression"
+        "PackageManager"
       ]
     },
     "media": {

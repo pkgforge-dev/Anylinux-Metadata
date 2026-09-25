@@ -12,7 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "OpenTubeX is an open-source privacy-centric desktop client for YouTube, created as an enhanced fork of FreeTube. It allows users to browse and watch video content without tracking, telemetry, or advertisements."
+              "value": "OpenTubeX is an open-source, privacy-respecting desktop client for YouTube, originally developed as a fork of FreeTube. It allows you to watch videos without advertisements or tracking, storing subscriptions, playlists, and watch history locally on your device without requiring a Google account."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The application stores subscriptions, watch history, and playlists locally on your device without requiring a Google account."
+              "value": "Designed for maximum control, OpenTubeX enables tailored feed management, flexible multi-tab browsing, and granular playback configurations."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Ad-free video viewing without third-party tracking or behavioral profiling"
+                "value": "Group channel subscriptions into customizable profiles with filters for videos, Shorts, live streams, or posts"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Local subscription management and playlist storage without account requirements"
+                "value": "Integrated SponsorBlock support to skip sponsored segments or exempt specific channels"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated SponsorBlock support to automatically skip sponsored segments"
+                "value": "Per-channel playback preferences including playback speed, video resolution, and silence skipping"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated playback with customizable video resolution and playback speed"
+                "value": "Tabbed browsing interface with persistent queues, mini-player mode, and desktop session restore"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Import and export capabilities for subscription feeds and viewing history"
+                "value": "Optional local recommendation engine ranking unwatched videos based on on-device viewing activity"
               }
             ]
           ]
@@ -69,21 +69,36 @@
       "homepage": "https://github.com/OpenTubeX/OpenTubeX",
       "repository": "https://github.com/OpenTubeX/OpenTubeX",
       "keywords": [
-        "opentubex",
-        "appimage",
-        "anylinux"
+        "youtube",
+        "video",
+        "player",
+        "privacy",
+        "freetube",
+        "sponsorblock",
+        "streaming",
+        "adblock"
       ],
       "categories": [
         "AudioVideo",
-        "Player"
+        "Video",
+        "Viewer",
+        "Feed"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opentubex.png",
       "screenshots": [
         {
-          "caption": "OpenTubeX interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "OpenTubeX main video browsing interface in dark theme",
+          "source": "https://raw.githubusercontent.com/OpenTubeX/OpenTubeX/master/docs/screenshots/OpenTubeX1-dark.png"
+        },
+        {
+          "caption": "OpenTubeX channel subscriptions and feed management view",
+          "source": "https://raw.githubusercontent.com/OpenTubeX/OpenTubeX/master/docs/screenshots/OpenTubeX2-dark.png"
+        },
+        {
+          "caption": "OpenTubeX video player view with playback and privacy controls",
+          "source": "https://raw.githubusercontent.com/OpenTubeX/OpenTubeX/master/docs/screenshots/OpenTubeX3-dark.png"
         }
       ]
     }

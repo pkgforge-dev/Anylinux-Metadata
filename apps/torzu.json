@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.pkgforge_dev.torzu_appimage",
       "name": "Torzu",
-      "summary": "Torzu is an open-source Nintendo Switch emulator with targeted optimizations for modern x86_64 CPUs",
+      "summary": "Emulate Nintendo Switch games with targeted CPU optimizations and high portable performance",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Torzu is an open-source Nintendo Switch emulator with targeted optimizations for modern x86_64 CPUs. Built to deliver fluid framerates, it enables playing Switch titles with high fidelity on PC hardware."
+              "value": "Torzu is an open-source Nintendo Switch emulator designed to run modern console titles on Linux systems. Built using Qt and highly optimized execution pipelines, it focuses on high-performance game playback across both 64-bit ARM and x86 architectures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Torzu provides targeted builds optimized for modern processor features, delivering improved execution speed, frame rates, and broad compatibility."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated Vulkan and OpenGL graphics rendering pipelines"
+                "value": "Optimized execution pipelines with dedicated support for modern x86_64_v3 instruction sets"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Resolution scaling up to 4K and 8K with anisotropic texture filtering"
+                "value": "Cross-architecture support targeting both x86_64 and 64-bit ARM (aarch64) systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Broad support for modern game controllers with motion gyro aiming and rumble"
+                "value": "Flexible display protocol support for both Wayland and X11/XCB display environments"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Local wireless multiplayer and network session emulation"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Optimized CPU instruction set builds (x86_64_v3) for modern processor architectures"
+                "value": "High-fidelity Nintendo Switch game emulation and custom configuration profiles"
               }
             ]
           ]
@@ -60,13 +63,18 @@
       "homepage": "https://github.com/pkgforge-dev/Torzu-AppImage",
       "repository": "https://github.com/pkgforge-dev/Torzu-AppImage",
       "keywords": [
-        "torzu",
-        "appimage",
-        "anylinux"
+        "switch",
+        "emulator",
+        "nintendo",
+        "gaming",
+        "qt6",
+        "console",
+        "x86_64_v3",
+        "aarch64"
       ],
       "categories": [
         "Game",
-        "Emulator"
+        "Utility"
       ]
     },
     "media": {

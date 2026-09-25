@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.brave.brave_browser_brave_origin",
       "name": "Brave Origin",
-      "summary": "Brave Origin is a stripped-down, debloated variant of the Brave web browser",
+      "summary": "Fast, stripped-down variant of the Brave web browser focused on privacy and performance",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Brave Origin is a stripped-down, debloated variant of the Brave web browser. It removes cryptocurrency wallets, sponsored rewards, VPN promotions, and other non-essential additions while preserving Brave's core privacy shields and performance."
+              "value": "Brave Origin is a streamlined, debloated variant of the Brave web browser designed to deliver a lightweight and privacy-centric browsing experience. Built on Chromium and the open-source brave-core engine, it focuses on fast page load times and reduced resource consumption while stripping out unnecessary bundled components."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The browser retains essential web compatibility and robust security safeguards, offering an uncluttered environment ideal for daily web navigation and development work."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Streamlined browsing experience free of cryptocurrency and Web3 features"
+                "value": "Stripped-down Chromium-based architecture for minimized memory footprint"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in ad-blocking and privacy tracking protection enabled by default"
+                "value": "Built on the open-source brave-core browser foundation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Fast Chromium-based rendering engine with low memory footprint"
+                "value": "Comprehensive protection following Brave security and release policies"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete support for Chrome Web Store extensions and themes"
+                "value": "Extensive internationalization support with community translations"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Private browsing mode with built-in fingerprinting protections"
+                "value": "Seamless compatibility with modern web standards and devtools"
               }
             ]
           ]
@@ -60,9 +69,14 @@
       "homepage": "https://github.com/brave/brave-browser",
       "repository": "https://github.com/pkgforge-dev/Brave-Origin-AppImage",
       "keywords": [
-        "brave-origin",
-        "appimage",
-        "anylinux"
+        "browser",
+        "web",
+        "chromium",
+        "privacy",
+        "debloated",
+        "lightweight",
+        "internet",
+        "navigator"
       ],
       "categories": [
         "Network",

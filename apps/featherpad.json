@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.tsujan.featherpad",
+      "name": "FeatherPad",
+      "summary": "Lightweight and feature-rich Qt plain text editor",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "FeatherPad is a lightweight, desktop-independent plain-text editor built with Qt and C++. Designed for efficiency and ease of use, it provides a responsive editing environment with extensive document and session management capabilities."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Drag-and-drop support with detachable and attachable tabs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Syntax highlighting for common programming languages"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Instant search match highlighting with per-tab search entries and replacement dock"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Session management and flexible side-pane view modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Spell checking integration powered by Hunspell"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Automatic saving, text zooming, and line jumping"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "FeatherPad Developers",
+        "url": "https://github.com/tsujan/FeatherPad"
+      },
+      "homepage": "https://github.com/tsujan/FeatherPad",
+      "repository": "https://github.com/pkgforge-dev/FeatherPad-AppImage",
+      "keywords": [
+        "editor",
+        "text",
+        "plaintext",
+        "qt",
+        "code",
+        "syntax",
+        "notes",
+        "hunspell"
+      ],
+      "categories": [
+        "Utility",
+        "TextTools"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/featherpad.png",
+      "screenshots": [
+        {
+          "caption": "FeatherPad interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/tsujan/FeatherPad/master/screenshots/Tabs.png"
+        },
+        {
+          "caption": "FeatherPad interface screenshot 2",
+          "source": "https://raw.githubusercontent.com/tsujan/FeatherPad/master/screenshots/Side-Pane.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/FeatherPad-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

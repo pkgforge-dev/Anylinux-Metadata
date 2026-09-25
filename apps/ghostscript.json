@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.ghostscript.ghostscript",
       "name": "Ghostscript",
-      "summary": "Interpreter for PostScript language and Portable Document Format (PDF) files",
+      "summary": "Interpret, convert, and render PostScript language and PDF files",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Ghostscript is a high-performance interpreter for the PostScript page description language and PDF document format. Developed by Artifex Software, it powers document printing and conversion systems globally."
+              "value": "Ghostscript is an interpreter for the PostScript language and Portable Document Format (PDF) files. It serves as a foundational tool for document processing, enabling high-performance rasterization, rendering, and format conversion."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It provides rasterization, vector rendering, color management, format conversion, and print workflow processing for Unix and Linux environments."
+              "value": "Packaged as a standalone and portable distribution, it provides a comprehensive execution environment compatible across diverse Linux distributions."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Comprehensive PostScript Level 1, 2, and 3 language interpretation"
+                "value": "Fully interprets and processes PostScript and PDF documents"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Lossless and compressed PDF document rasterization and generation"
+                "value": "Renders vector files into raster image formats and printer-ready data"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-speed color space conversion and ICC profile management"
+                "value": "Self-contained portable package with broad distribution compatibility"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for diverse raster output formats including TIFF, JPEG, and PNG"
+                "value": "Integrated self-updater to seamlessly check and notify for new versions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extensive command-line switches for automated enterprise document pipelines"
+                "value": "Compatible with external package managers without requiring FUSE to run"
               }
             ]
           ]
@@ -69,14 +69,19 @@
       "homepage": "https://www.ghostscript.com",
       "repository": "https://github.com/ArtifexSoftware/ghostpdl",
       "keywords": [
-        "ghostscript",
-        "appimage",
-        "anylinux"
+        "postscript",
+        "pdf",
+        "interpreter",
+        "rasterizer",
+        "printing",
+        "vector",
+        "conversion"
       ],
       "categories": [
-        "Office",
+        "Graphics",
         "Publishing",
-        "Utility"
+        "Printing",
+        "VectorGraphics"
       ]
     },
     "media": {

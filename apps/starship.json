@@ -5,14 +5,14 @@
     "metadata": {
       "id": "rs.starship.starship",
       "name": "starship",
-      "summary": "The minimal, blazing-fast, and infinitely customizable prompt for any shell",
+      "summary": "Minimal, blazing-fast, and infinitely customizable prompt for any shell",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "The minimal, blazing-fast, and infinitely customizable prompt for any shell."
+              "value": "Starship is a fast, highly customizable cross-shell prompt designed to provide essential contextual information concisely while staying out of your way. Built with modern shell workflows in mind, it seamlessly integrates with virtually every shell to display git branch status, runtime environments, package versions, and system details on demand."
             }
           ]
         },
@@ -21,8 +21,43 @@
           "content": [
             {
               "type": "text",
-              "value": "- Fast: it's fast – _really really_ fast! - Customizable: configure every aspect of your prompt. - Universal: works on any shell, on any operating system. - Intelligent: shows relevant information at a glance. - Feature rich: support for all your favorite tools. - Easy: quick to install – start using it in minutes."
+              "value": "This portable package bundles all dependencies to run cleanly across different Linux distributions without requiring system FUSE or complex setup."
             }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Universal compatibility across major shells including Bash, Zsh, Fish, and PowerShell"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Intelligent context awareness displaying Git repository status and programming language environments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive customizability through simple configuration files to adjust colors, icons, and modules"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-performance architecture optimized for instantaneous prompt rendering without latency"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated update notification support with seamless portable packaging"
+              }
+            ]
           ]
         }
       ],
@@ -34,14 +69,18 @@
       "homepage": "https://starship.rs/",
       "repository": "https://github.com/pkgforge-dev/Starship-AppImage-Enhanced",
       "keywords": [
-        "starship",
-        "appimage",
-        "anylinux"
+        "prompt",
+        "shell",
+        "terminal",
+        "bash",
+        "zsh",
+        "fish",
+        "cli"
       ],
       "categories": [
+        "Development",
         "System",
-        "TerminalEmulator",
-        "ConsoleOnly"
+        "TextTools"
       ]
     },
     "media": {

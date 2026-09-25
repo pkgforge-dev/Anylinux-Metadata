@@ -5,14 +5,23 @@
     "metadata": {
       "id": "com.gryphel.mini_vmac",
       "name": "Mini vMac",
-      "summary": "Mini vMac is a miniature emulator for early Apple Macintosh computers based on the Motorola 68000 microcomputer architecture",
+      "summary": "Emulate early Macintosh computers based on the Motorola 68000 microcomputer architecture",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Mini vMac is a miniature emulator for early Apple Macintosh computers based on the Motorola 68000 microcomputer architecture. It emulates classic black-and-white Mac models including the Mac Plus, Mac 128K, 512K, and SE."
+              "value": "Mini vMac is a lightweight, dedicated emulator engineered to reproduce the hardware of early Apple Macintosh computers powered by the Motorola 68000 microprocessor family. It provides an accurate environment to run classic System software, legacy applications, and vintage Mac games seamlessly on modern Linux systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Built for portability and efficiency, this packaging bundles all essential runtime libraries using SDL display integration without requiring external container runtimes or elevated system privileges."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Accurate 68000 CPU emulation running original System 6 and System 7 operating systems"
+                "value": "Emulates vintage Macintosh hardware models based on Motorola 68000 architecture"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Faithful recreation of the vintage 512x342 monochrome Macintosh display"
+                "value": "Runs classic Macintosh System software, legacy productivity tools, and retro games"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for classic Mac floppy disk images (.dsk, .image) with drag-and-drop loading"
+                "value": "SDL-based graphical display backend configured for stable X11 desktop sessions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Emulation of classic Mac sound hardware, mouse, and keyboard"
+                "value": "Standalone portable architecture requiring no FUSE installation to execute"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Lightweight, fast, and portable design with minimal system requirements"
+                "value": "Integrated self-updater that detects new releases and integrates with existing package managers"
               }
             ]
           ]
@@ -60,13 +69,18 @@
       "homepage": "https://www.gryphel.com/c/minivmac/",
       "repository": "https://github.com/pkgforge-dev/Mini-vMac-AppImage",
       "keywords": [
-        "mini-vmac",
-        "appimage",
-        "anylinux"
+        "macintosh",
+        "emulator",
+        "m68k",
+        "motorola",
+        "retrocomputing",
+        "apple",
+        "vintage",
+        "sdl"
       ],
       "categories": [
         "System",
-        "Emulator"
+        "Utility"
       ]
     },
     "media": {

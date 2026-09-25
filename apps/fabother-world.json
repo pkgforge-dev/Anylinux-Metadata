@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.fabiensanglard.another_world_bytecode_interpreter_fabother_world",
       "name": "Fabother World",
-      "summary": "Fabother World is an open-source bytecode interpreter for Another World (Out of This World), the revolutionary 1991 cinematic action-adventure game",
+      "summary": "Bytecode interpreter and engine re-implementation for Another World",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Fabother World is an open-source bytecode interpreter for Another World (Out of This World), the revolutionary 1991 cinematic action-adventure game designed by Éric Chahi. It executes the original game bytecode on modern hardware."
+              "value": "Fabother World is an open-source virtual machine re-implementation of the classic cinematic adventure game Another World (released as Out of This World in North America). Based on Gregory Montoir's original RAW interpreter, the codebase is rewritten and structured with readability, legibility, and architectural clarity in mind."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine runs the original English PC DOS release data files (such as BANK* and MEMLIST.BIN) and introduces quality-of-life enhancements suited for modern operating systems."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Faithful recreation of cinematic vector animations and gameplay scenes"
+                "value": "Support for English PC DOS game data files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native cross-platform execution with smooth performance"
+                "value": "Save and load game states across multiple dedicated slots"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Scalable high-resolution display rendering while preserving artistic integrity"
+                "value": "Adjustable window scale factors with dynamic resizing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Accurate digital sound and atmospheric musical score playback"
+                "value": "Built-in level jump codes for rapid scene navigation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Uses original game data files from DOS or Amiga editions"
+                "value": "Fast-forward gameplay toggle and pause controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable data paths via command-line arguments"
               }
             ]
           ]
@@ -60,14 +75,18 @@
       "homepage": "https://github.com/fabiensanglard/Another-World-Bytecode-Interpreter",
       "repository": "https://github.com/pkgforge-dev/Fabother-World-AppImage",
       "keywords": [
-        "fabother-world",
-        "appimage",
-        "anylinux"
+        "another world",
+        "out of this world",
+        "interpreter",
+        "virtual machine",
+        "retro",
+        "dos",
+        "cinematic",
+        "eric chahi"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "AdventureGame"
+        "Emulator"
       ]
     },
     "media": {

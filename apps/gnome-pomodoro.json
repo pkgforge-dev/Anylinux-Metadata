@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.gnomepomodoro.gnome_pomodoro",
+      "name": "GNOME Pomodoro",
+      "summary": "Manage your time effectively and boost productivity using the Pomodoro Technique",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "GNOME Pomodoro is a dedicated time management and productivity application designed around the Pomodoro Technique. Built for desktop environments, it assists users in balancing focused work sessions with structured breaks to maintain sustained mental stamina and prevent burnout."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By establishing a steady workflow rhythm of timed work intervals followed by short and long rests, the application helps reduce distractions and track daily routines seamlessly."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Structured timer cycles for Pomodoro work sessions, short breaks, and long breaks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Desktop notifications and audio reminders signaling interval transitions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable interval durations to accommodate diverse work styles and rhythms"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Unobtrusive interface designed for minimal distraction during focused work"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Session tracking to help monitor and optimize daily productivity goals"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "GNOME Pomodoro Developers",
+        "url": "https://gnomepomodoro.org/"
+      },
+      "homepage": "https://gnomepomodoro.org/",
+      "repository": "https://github.com/pkgforge-dev/gnome-pomodoro-appimage",
+      "keywords": [
+        "pomodoro",
+        "timer",
+        "productivity",
+        "time management",
+        "stopwatch",
+        "break timer",
+        "focus",
+        "workflow"
+      ],
+      "categories": [
+        "Utility",
+        "ProjectManagement"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gnome-pomodoro.png",
+      "screenshots": [
+        {
+          "caption": "GNOME Pomodoro interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/gnome-pomodoro-appimage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

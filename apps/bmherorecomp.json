@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.revosucks.bmherorecomp",
       "name": "Bomberman Hero Recompiled",
-      "summary": "Native PC port of Bomberman Hero created using static recompilation",
+      "summary": "Play a native PC port of Bomberman Hero created through static recompilation",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Bomberman Hero Recompiled is a native PC port of the platforming action title Bomberman Hero, built using modern static recompilation technology. It translates N64 machine instructions into optimized native binaries."
+              "value": "Bomberman Hero Recompiled is an enhanced native PC port of the classic Nintendo 64 platformer, produced via static recompilation using N64: Recompiled and rendered with the RT64 engine. It delivers modernized performance, high-fidelity graphics, and extensive configurability while preserving original game mechanics."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The port brings Bomberman's fast-paced platforming, jumping mechanics, jetpack stages, and iconic electronic soundtrack to modern operating systems."
+              "value": "Assets are loaded directly from a user-provided original game ROM with no manual asset extraction or compilation required."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native desktop execution with uncapped framerates and fluid gameplay"
+                "value": "Plug-and-play ROM loading without requiring asset extraction"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for modern widescreen and arbitrary display resolutions"
+                "value": "High framerate gameplay matched to high-refresh monitor rates"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced audio subsystem reproducing the original soundtrack with fidelity"
+                "value": "Widescreen and ultrawide display resolution support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Direct gamepad input with configurable bindings and analog stick control"
+                "value": "Faithfully preserved Nintendo 64 visual effects using RT64"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Instant loading times and stable cross-platform performance"
+                "value": "In-game configuration menus supporting mouse, keyboard, and gamepad input"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Instant load times and reduced input latency"
               }
             ]
           ]
@@ -69,9 +75,14 @@
       "homepage": "https://github.com/RevoSucks/BMHeroRecomp",
       "repository": "https://github.com/RevoSucks/BMHeroRecomp",
       "keywords": [
-        "bmherorecomp",
-        "appimage",
-        "anylinux"
+        "bomberman",
+        "recompiled",
+        "port",
+        "n64",
+        "rt64",
+        "vulkan",
+        "platformer",
+        "recompilation"
       ],
       "categories": [
         "Game",

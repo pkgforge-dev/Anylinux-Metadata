@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.dalerank.akhenaten",
       "name": "Akhenaten",
-      "summary": "Akhenaten is an open-source reimplementation of the classic city-building simulation game Pharaoh and its expansion Cleopatra: Queen of the Nile",
+      "summary": "Open-source reimplementation of the classic city-building simulation game Pharaoh",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Akhenaten is an open-source reimplementation of the classic city-building simulation game Pharaoh and its expansion Cleopatra: Queen of the Nile. It reconstructs the game engine in modern C++ to run natively on modern operating systems while utilizing the original game assets."
+              "value": "Akhenaten is an open-source reimplementation of the classic city-building simulation game Pharaoh and its expansion Cleopatra: Queen of the Nile. Based on the Julius and Augustus engine projects originally created for Caesar 3, Akhenaten provides a modern community-driven game engine that brings authentic ancient Egyptian city management to modern operating systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The project enhances compatibility on modern hardware while maintaining fidelity with the original gameplay mechanics, audiovisual assets, and simulation logic."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native cross-platform engine with high-resolution and widescreen support"
+                "value": "Support for loading and playing original Pharaoh save games"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Accurate recreation of economic, agricultural, and monument construction mechanics"
+                "value": "Playable initial campaign missions from the original release"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for original Pharaoh and Cleopatra campaign missions and custom scenarios"
+                "value": "Redesigned game engine architecture derived from the Julius and Augustus projects"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modernized user interface scaling and audio playback enhancements"
+                "value": "Native cross-platform execution on modern Linux operating systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Active open-source development improving pathfinding and simulation stability"
+                "value": "Compatibility with original game resource files from retail, GOG, or Steam releases"
               }
             ]
           ]
@@ -60,22 +69,39 @@
       "homepage": "https://github.com/dalerank/Akhenaten",
       "repository": "https://github.com/pkgforge-dev/Akhenaten-AppImage",
       "keywords": [
-        "akhenaten",
-        "appimage",
-        "anylinux"
+        "pharaoh",
+        "cleopatra",
+        "citybuilder",
+        "simulation",
+        "strategy",
+        "julius",
+        "augustus",
+        "egypt",
+        "retro"
       ],
       "categories": [
         "Game",
-        "Simulation",
-        "StrategyGame"
+        "Building"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/akhenaten.png",
       "screenshots": [
         {
-          "caption": "Akhenaten interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "In-game rendering showing town buildings and terrain",
+          "source": "https://raw.githubusercontent.com/dalerank/Akhenaten/master/docs/images/caesar3-rendering-1.png"
+        },
+        {
+          "caption": "Map view showing city layout and settlement infrastructure",
+          "source": "https://raw.githubusercontent.com/dalerank/Akhenaten/master/docs/images/caesar3-rendering-10.jpg"
+        },
+        {
+          "caption": "Visual simulation of city structures and road layout",
+          "source": "https://raw.githubusercontent.com/dalerank/Akhenaten/master/docs/images/caesar3-rendering-12.png"
+        },
+        {
+          "caption": "Settlement overview illustrating city planning and simulation",
+          "source": "https://raw.githubusercontent.com/dalerank/Akhenaten/master/docs/images/caesar3-rendering-13.jpg"
         }
       ]
     }

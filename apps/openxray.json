@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.openxray.xray_16_openxray",
       "name": "OpenXRay",
-      "summary": "OpenXRay is an improved, open-source game engine port of GSC Game World's X-Ray Engine",
+      "summary": "Improved, open-source game engine port of GSC Game World's X-Ray Engine for S.T.A.L.K.E.R",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OpenXRay is an improved, open-source game engine port of GSC Game World's X-Ray Engine. It modernizes the engine powering the S.T.A.L.K.E.R. trilogy (Shadow of Chernobyl, Clear Sky, and Call of Pripyat)."
+              "value": "OpenXRay is an improved, open-source port of the X-Ray Engine, originally developed by GSC Game World for the S.T.A.L.K.E.R. series. Designed as a modernized drop-in replacement, it delivers cross-platform support on Linux with a native OpenGL renderer and extensive bug fixes while preserving vanilla gameplay and compatibility."
             }
           ]
         },
@@ -22,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit Linux port supporting modern hardware architectures"
+                "value": "Modernized OpenGL renderer with multi-platform Linux and 64-bit architecture support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Advanced visual renderer supporting DirectX 11 / OpenGL shaders and dynamic lighting"
+                "value": "Comprehensive bug fixes addressing long-standing issues from the original X-Ray Engine"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Substantial performance optimizations and fixes for engine crashes and memory leaks"
+                "value": "Improved framerates and engine performance via multithreading and code parallelization"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full compatibility with official S.T.A.L.K.E.R. game assets and community modifications"
+                "value": "Enhanced modding capabilities featuring frame and render graph pipelines and updated scripting"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced audio backend with 3D positional audio and environmental effects"
+                "value": "Built-in support for gamepads and multi-architecture ports including ARM64 and PPC64LE"
               }
             ]
           ]
@@ -60,14 +60,18 @@
       "homepage": "https://github.com/OpenXRay/xray-16",
       "repository": "https://github.com/pkgforge-dev/openxray-appimage",
       "keywords": [
-        "openxray",
-        "appimage",
-        "anylinux"
+        "stalker",
+        "engine",
+        "xray",
+        "cop",
+        "pripyat",
+        "opengl",
+        "fps",
+        "gamedev"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "Development"
       ]
     },
     "media": {

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.friskthefallenhuman.prey2006",
       "name": "Prey (2006)",
-      "summary": "Prey 2006 (Linux Port) is a native open-source source port of the acclaimed 2006 sci-fi first-person shooter Prey",
+      "summary": "Native source port of the classic 2006 sci-fi first-person shooter Prey",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Prey 2006 (Linux Port) is a native open-source source port of the acclaimed 2006 sci-fi first-person shooter Prey. Powered by the id Tech 4 engine (Doom 3 GPL), it allows playing Tommy's mind-bending alien abduction adventure natively on Linux."
+              "value": "Prey (2006) is a native Linux source port of the acclaimed sci-fi first-person shooter built on the id Tech 4 engine. It brings Tommy's mind-bending journey aboard the alien mothership Sphere to modern Linux desktop environments with improved portability and compatibility."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for cross-distribution compatibility, this build bundles necessary runtime dependencies and incorporates portable execution improvements to run reliably across a wide range of Linux setups."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit Linux execution eliminating vintage wine and driver workarounds"
+                "value": "Native modern Linux execution for the classic 2006 sci-fi title"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Smooth performance with high-resolution widescreen and modern FOV support"
+                "value": "Fully self-contained package compatible with both glibc and musl-based distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Unique gravity-defying pathways, wall-walking mechanics, and seamless portal physics"
+                "value": "FUSE-independent portable execution via uruntime"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity positional audio with environmental reverb effects"
+                "value": "Built-in self-updater prompting when new releases and engine updates are available"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original Prey (2006) game assets to play"
+                "value": "Automatic integration and compatibility with package managers like soar, am, and dbin"
               }
             ]
           ]
@@ -60,14 +69,17 @@
       "homepage": "https://github.com/FriskTheFallenHuman/Prey2006",
       "repository": "https://github.com/pkgforge-dev/Prey2006-AppImage",
       "keywords": [
-        "prey2006",
-        "appimage",
-        "anylinux"
+        "fps",
+        "shooter",
+        "idtech4",
+        "scifi",
+        "sourceport",
+        "action",
+        "classic"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

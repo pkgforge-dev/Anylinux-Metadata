@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.gitlab.starfox64recomp",
       "name": "Star Fox 64 Recompiled",
-      "summary": "Star Fox 64 Recompiled is a native PC port of the classic 1997 Nintendo 64 space rail-shooter Star Fox 64 (Lylat Wars)",
+      "summary": "Native PC port of the classic Nintendo 64 space rail-shooter Star Fox 64",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Star Fox 64 Recompiled is a native PC port of the classic 1997 Nintendo 64 space rail-shooter Star Fox 64 (Lylat Wars). Using static recompilation, Fox McCloud's Arwing battles run natively on modern PC hardware."
+              "value": "Star Fox 64 Recompiled is an enhanced native PC port of the classic Nintendo 64 space rail-shooter Star Fox 64 (Lylat Wars). Built using static recompilation techniques, it brings the iconic space combat experience directly to modern desktop systems without traditional emulation overhead."
             }
           ]
         },
@@ -22,31 +22,25 @@
             [
               {
                 "type": "text",
-                "value": "Native execution delivering smooth 60 FPS space combat without emulation slowdown"
+                "value": "Native executable execution delivering optimal performance and responsiveness"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen and high-resolution rendering with dynamic visual clarity"
+                "value": "Faithful recreation of the original Nintendo 64 space rail-shooter gameplay"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Dual-analog gamepad and flight stick support with modern rumble feedback"
+                "value": "Fully standalone portable runtime requiring no external system emulators"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserves complete branching mission routes, iconic voice acting, and soundtrack"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Support for community visual mods and audio enhancements"
+                "value": "Wide distribution compatibility across modern Linux environments"
               }
             ]
           ]
@@ -60,14 +54,17 @@
       "homepage": "https://gitlab.com/sonicdcer/Starfox64Recomp",
       "repository": "https://github.com/pkgforge-dev/Starfox64Recomp-AppImage",
       "keywords": [
-        "starfox64recomp",
-        "appimage",
-        "anylinux"
+        "star fox",
+        "lylat wars",
+        "recompiled",
+        "nintendo 64",
+        "space shooter",
+        "rail shooter",
+        "port"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "ActionGame"
       ]
     },
     "media": {

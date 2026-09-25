@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.try.opengothic",
       "name": "OpenGothic",
-      "summary": "OpenGothic is an open-source reimplementation of the classic 2001 action-RPG Gothic 1 engine",
+      "summary": "Open-source game engine reimplementation of Gothic 2: Night of the Raven",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OpenGothic is an open-source reimplementation of the classic 2001 action-RPG Gothic 1 engine. Written in modern C++ with Vulkan rendering, it modernizes the living, breathing dark fantasy world of the Colony."
+              "value": "OpenGothic is an open-source reimplementation of Gothic 2: Night of the Raven designed to run smoothly on modern systems. Utilizing contemporary graphics hardware and APIs like Vulkan, the project provides a feature-complete, faithful game client compatible with original game assets, scripts, and community modifications."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The original game has been thoroughly replicated, allowing players to complete both the main questline and the Night of the Raven expansion. Please note that original Gothic 2: Night of the Raven game data files are required to play."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated Vulkan rendering pipeline with dynamic lighting and shadows"
+                "value": "Complete replication of the original game, including the main quest and expansion addon"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern high-resolution and widescreen display support with adjustable FOV"
+                "value": "Built for modern graphics pipelines with Vulkan support, mesh shaders, and ray tracing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modernized combat controls, camera handling, and gamepad integration"
+                "value": "Compatible with original game data, scripts, and third-party modifications"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Improved simulation stability and pathfinding for NPC routines"
+                "value": "Automatic detection of common Gothic II installation directories"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original Gothic 1 game assets to play"
+                "value": "Cross-platform support across modern Linux, Windows, and macOS operating systems"
               }
             ]
           ]
@@ -60,21 +69,24 @@
       "homepage": "https://github.com/Try/OpenGothic",
       "repository": "https://github.com/pkgforge-dev/opengothic-appimage",
       "keywords": [
-        "opengothic",
-        "appimage",
-        "anylinux"
+        "gothic",
+        "rpg",
+        "engine",
+        "reimplementation",
+        "vulkan",
+        "raytracing",
+        "zenengine"
       ],
       "categories": [
         "Game",
-        "RolePlaying",
-        "ActionGame"
+        "3DGraphics"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opengothic.png",
       "screenshots": [
         {
-          "caption": "OpenGothic interface screenshot 1",
+          "caption": "In-game rendering in OpenGothic showing modern lighting and scenery",
           "source": "https://raw.githubusercontent.com/Try/OpenGothic/master/scr0.png"
         }
       ]

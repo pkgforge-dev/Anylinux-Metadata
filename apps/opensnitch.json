@@ -12,16 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "OpenSnitch is a port of the Little Snitch application firewall for GNU/Linux systems. Developed initially by Simone Margaritelli, it monitors system network activity and prompts the user whenever an application attempts to make an outbound connection."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "It features a background daemon utilizing eBPF and NFQUEUE kernel primitives paired with a desktop GUI for managing persistent firewall filtering rules."
+              "value": "OpenSnitch is a GNU/Linux application firewall designed to monitor, prompt, and control outbound network connections initiated by running applications. It provides real-time visibility into process network activity, giving users complete oversight and control over system traffic."
             }
           ]
         },
@@ -31,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Interactive real-time desktop popups to allow or deny outbound network connections"
+                "value": "Interactive filtering and prompt alerts for outgoing application network connections"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Fine-grained filtering rules based on process path, destination domain, port, or protocol"
+                "value": "System-wide domain block lists to stop ads, trackers, and malware"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern graphical management console with live connection telemetry and statistics"
+                "value": "System firewall configuration powered by nftables directly from the graphical interface"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "eBPF and NFQUEUE kernel integration for high-performance packet inspection"
+                "value": "Centralized GUI support for monitoring and managing multiple remote nodes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Exportable rule sets and configurable default block or allow fallback policies"
+                "value": "Integration capabilities with SIEM systems for enterprise network auditing"
               }
             ]
           ]
@@ -69,22 +60,25 @@
       "homepage": "https://github.com/evilsocket/opensnitch",
       "repository": "https://github.com/evilsocket/opensnitch",
       "keywords": [
-        "opensnitch",
-        "appimage",
-        "anylinux"
+        "firewall",
+        "network",
+        "security",
+        "nftables",
+        "monitoring",
+        "traffic",
+        "connections"
       ],
       "categories": [
-        "System",
-        "Security",
-        "Network"
+        "Network",
+        "System"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/opensnitch.png",
       "screenshots": [
         {
-          "caption": "OpenSnitch interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "OpenSnitch network connection monitor and active rules management interface",
+          "source": "https://user-images.githubusercontent.com/2742953/85205382-6ba9cb00-b31b-11ea-8e9a-bd4b8b05a236.png"
         }
       ]
     }

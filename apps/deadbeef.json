@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.deadbeef_player.deadbeef",
+      "name": "DeaDBeeF",
+      "summary": "Modular, lightweight desktop audio player with extensive format support",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "DeaDBeeF is a lightweight, modular audio player designed for desktop operating systems, built using GTK on Linux and Unix-like platforms. It emphasizes fast startup, minimal memory consumption, and bit-perfect audio reproduction without heavy desktop environment dependencies."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Featuring an expandable plugin architecture, DeaDBeeF allows users to tailor playback, tag reading, and user interface elements to their exact audio workflow."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native playback for a wide array of formats including MP3, FLAC, and Ogg Vorbis"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensible modular architecture supporting third-party plugins and decoders"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native GTK user interface optimized for performance and low resource usage"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced playlist management and metadata tag editing capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable sound processing, equalizer controls, and output routing"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "DeaDBeeF Developers",
+        "url": "https://github.com/DeaDBeeF-Player/deadbeef"
+      },
+      "homepage": "https://github.com/DeaDBeeF-Player/deadbeef",
+      "repository": "https://github.com/pkgforge-dev/DeaDBeeF-AppImage",
+      "keywords": [
+        "music",
+        "player",
+        "audio",
+        "flac",
+        "mp3",
+        "playlist",
+        "sound",
+        "gtk"
+      ],
+      "categories": [
+        "AudioVideo",
+        "Audio",
+        "Midi"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/deadbeef.png",
+      "screenshots": [
+        {
+          "caption": "DeaDBeeF interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/DeaDBeeF-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

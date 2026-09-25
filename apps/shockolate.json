@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.interrupt.systemshock_shockolate",
       "name": "Shockolate",
-      "summary": "Shockolate is a cross-platform, open-source source port of the revolutionary 1994 cyberpunk immersive sim System Shock",
+      "summary": "Cross-platform source port of the classic cyberpunk immersive sim System Shock",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Shockolate is a cross-platform, open-source source port of the revolutionary 1994 cyberpunk immersive sim System Shock. Based on the original source code, it brings Citadel Station natively to modern Linux PCs."
+              "value": "Shockolate is a cross-platform, open-source source port of the 1994 cyberpunk immersive sim System Shock, built using SDL2 and based on the PowerPC source code. It aims to preserve the classic feel while modernizing the engine for portability, stability, and modern hardware."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "In addition to authentic retro gameplay, Shockolate introduces quality-of-life enhancements and expanded engine capabilities for players and creators alike."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit Linux execution with OpenGL hardware-accelerated rendering"
+                "value": "Modernized movement scheme featuring standard WASD controls and a dedicated mouselook toggle"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern mouselook controls and customizable WASD movement"
+                "value": "Hardware-accelerated OpenGL renderer with hotkeys to cycle rendering modes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen support and high-resolution texture rendering"
+                "value": "FluidSynth MIDI and SDL2_mixer audio support for authentic music reproduction"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Corrected audio timing and support for digital sound effects and MIDI tracks"
+                "value": "Mod and fan mission support with loading from custom resource and mission files or directories"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete compatibility with original System Shock CD-ROM game assets"
+                "value": "Asset compatibility with original CD-ROM and System Shock: Enhanced Edition data files"
               }
             ]
           ]
@@ -60,14 +69,17 @@
       "homepage": "https://github.com/Interrupt/systemshock",
       "repository": "https://github.com/pkgforge-dev/shockolate-appimage",
       "keywords": [
-        "shockolate",
-        "appimage",
-        "anylinux"
+        "system shock",
+        "source port",
+        "immersive sim",
+        "cyberpunk",
+        "sdl2",
+        "retrogaming",
+        "opengl"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "RolePlaying"
+        "Midi"
       ]
     },
     "media": {

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.mate.calc",
+      "name": "MATE Calculator",
+      "summary": "Solve scientific, financial, and logical equations in a desktop calculator",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "MATE Calculator is a versatile desktop calculator developed with GTK+ for the MATE desktop environment. Built upon the venerable Calctool lineage, it is designed to solve everything from basic arithmetic to advanced mathematical calculations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Powered by multi-precision mathematical engines including GNU MPFR and GNU MPC, the application delivers high-accuracy computations across multiple specialized calculation modes."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Scientific calculation mode for handling complex mathematical functions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Financial mode tailored for business and economic calculations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Logical mode for binary operations and programming mathematics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Arithmetic precedence evaluation for accurate formula solving"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High-precision calculations backed by GNU MPFR and GNU MPC libraries"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-or-later",
+      "developer": {
+        "name": "MATE Calculator Developers",
+        "url": "https://github.com/mate-desktop/mate-calc"
+      },
+      "homepage": "https://github.com/mate-desktop/mate-calc",
+      "repository": "https://github.com/pkgforge-dev/MATE-Calculator-AppImage",
+      "keywords": [
+        "calculator",
+        "math",
+        "scientific",
+        "financial",
+        "arithmetic",
+        "mpfr",
+        "calctool"
+      ],
+      "categories": [
+        "Utility",
+        "Science",
+        "Finance"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/mate-calculator.png",
+      "screenshots": [
+        {
+          "caption": "MATE Calculator screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/MATE-Calculator-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

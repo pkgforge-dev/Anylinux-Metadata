@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.dxx_rebirth.dxx_rebirth_d1x_rebirth",
       "name": "D1X-Rebirth",
-      "summary": "D1X-Rebirth is an open-source source port of the classic six-degrees-of-freedom first-person shooter Descent",
+      "summary": "Source port of the classic six-degrees-of-freedom first-person shooter Descent",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "D1X-Rebirth is an open-source source port of the classic six-degrees-of-freedom first-person shooter Descent. It upgrades the original 1995 Parallax Software title to run natively on modern operating systems with high-definition rendering."
+              "value": "D1X-Rebirth is an open-source source port of the classic 1995 six-degrees-of-freedom first-person shooter Descent. Powered by SDL and OpenGL, it updates the original game engine for modern operating systems while preserving the authentic gameplay, feel, and mechanics of the original release."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It provides full backwards compatibility with original DOS player files, savegames, custom missions, and demos, alongside modern graphical, input, and networking enhancements."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Full 6DoF (six degrees of freedom) zero-gravity movement and flight combat"
+                "value": "OpenGL-accelerated rendering offering high resolutions, arbitrary aspect ratios, VSync, and optional visual effects like colored lighting and texture filtering"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "OpenGL hardware-accelerated rendering with arbitrary screen resolutions"
+                "value": "Extensive input handling via SDL with simultaneous keyboard, mouse, and multi-axis joystick support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern gamepad, flight stick, and mouse-look control configuration"
+                "value": "Multiplayer action over LAN and Internet using UDP/IP with optional Online Tracker integration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced multiplayer networking supporting TCP/IP and UDP matches"
+                "value": "Custom digital audio playback from hard drive alongside traditional MIDI and CD-Audio support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full compatibility with the original Descent mission data and custom add-ons"
+                "value": "High framerate glitch fixes and improved backwards-compatible demo recording"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for original expansion content, third-party levels, and custom AddOn packs"
               }
             ]
           ]
@@ -60,14 +75,18 @@
       "homepage": "https://github.com/dxx-rebirth/dxx-rebirth",
       "repository": "https://github.com/pkgforge-dev/d1x-rebirth-AppImage",
       "keywords": [
-        "d1x-rebirth",
-        "appimage",
-        "anylinux"
+        "descent",
+        "shooter",
+        "fps",
+        "6dof",
+        "opengl",
+        "sdl",
+        "multiplayer",
+        "source port"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

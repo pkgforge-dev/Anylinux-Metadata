@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.yarl.pattypan",
       "name": "Pattypan",
-      "summary": "Pattypan is an open-source desktop utility designed for uploading media files in bulk to Wikimedia Commons",
+      "summary": "Upload media files in bulk to Wikimedia Commons for GLAM projects",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Pattypan is an open-source desktop utility designed for uploading media files in bulk to Wikimedia Commons. Powered by spreadsheet templates, it streamlines the process of uploading hundreds of images, audio files, and documents with standardized wikitext metadata."
+              "value": "Pattypan is an open-source desktop utility built with Java and JavaFX designed to simplify bulk media uploading to Wikimedia Commons. Developed with support from a Wikimedia Foundation grant, it is tailored for GLAM (galleries, libraries, archives, and museums) institutions and volunteers working with large file collections."
             }
           ]
         },
@@ -22,31 +22,25 @@
             [
               {
                 "type": "text",
-                "value": "Generates spreadsheet templates (Excel, CSV) automatically from local image directories"
+                "value": "Batch upload images and media files directly to Wikimedia Commons"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Bulk metadata generation including descriptions, categories, dates, and author credits"
+                "value": "Structured metadata generation and spreadsheet-driven workflow"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Fast batch uploading to Wikimedia Commons with automatic error handling"
+                "value": "Support for custom target wikis, protocols, and test server instances"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for complex wikitext templates and structured Commons data"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Intuitive step-by-step wizard interface suitable for cultural institutions and photographers"
+                "value": "Streamlined interface optimized for GLAM cultural heritage collections"
               }
             ]
           ]
@@ -60,9 +54,14 @@
       "homepage": "https://github.com/yarl/pattypan",
       "repository": "https://github.com/pkgforge-dev/pattypan-appimage",
       "keywords": [
-        "pattypan",
-        "appimage",
-        "anylinux"
+        "wikimedia",
+        "commons",
+        "glam",
+        "uploader",
+        "batch",
+        "media",
+        "upload",
+        "metadata"
       ],
       "categories": [
         "Network",

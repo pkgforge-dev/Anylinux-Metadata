@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.dingusdev.dingusppc",
       "name": "DingusPPC",
-      "summary": "Experimental PowerPC Macintosh emulator supporting classic Mac hardware models",
+      "summary": "Experimental PowerPC Macintosh emulator focused on hardware accuracy and debugging",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "DingusPPC is an experimental open-source emulator targeting PowerPC-based Macintosh computers. It focuses on emulating both Old World and New World Apple hardware platforms."
+              "value": "DingusPPC is an experimental, open-source PowerPC emulator designed to deliver accurate emulation of classic Macintosh hardware. Unlike conventional high-level emulators, DingusPPC focuses on low-level hardware fidelity and offers a robust environment tailored for running and testing PowerPC NuBus and Old World ROMs alongside early New World systems."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The emulator accurately models core hardware components such as PowerPC 60x/750 CPUs, Open Firmware, custom Apple ASICs, and memory-mapped input/output subsystems."
+              "value": "Built for developers and retrocomputing enthusiasts, the emulator features an integrated interactive debugging suite and disassembler to aid reverse engineering and system diagnosis."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Emulation of PowerPC 603, 604, and G3 processors with architectural accuracy"
+                "value": "Accurate emulation of classic Old World and early New World PowerPC Macintosh architectures"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for classic Mac OS releases from System 7.5.3 up to Mac OS 9.2.2"
+                "value": "Targeted support for models including Power Macintosh 6100, 7500, G3 Beige, and Apple Pippin"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Detailed motherboard ASIC simulation including Heathrow, Paddington, and UniNorth"
+                "value": "Integrated interactive debugger with CPU disassembler support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Emulation of internal IDE, SCSI, ADB, and sound hardware controllers"
+                "value": "Flexible command-line interface supporting custom boot ROM loading and machine identification"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cross-platform graphical interface with interactive debugging tools"
+                "value": "Dedicated CPU test suite to ensure correctness in PowerPC instruction emulation"
               }
             ]
           ]
@@ -69,13 +69,19 @@
       "homepage": "https://github.com/dingusdev/dingusppc",
       "repository": "https://github.com/dingusdev/dingusppc",
       "keywords": [
-        "dingusppc",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "powerpc",
+        "macintosh",
+        "debugger",
+        "disassembler",
+        "retrocomputing",
+        "mac",
+        "pippin"
       ],
       "categories": [
         "System",
-        "Emulator"
+        "Development",
+        "Debugger"
       ]
     },
     "media": {

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.kde.invent.kdeconnect",
+      "name": "KDE Connect",
+      "summary": "Seamlessly integrate your Linux desktop with smartphones and other devices",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "KDE Connect is a multi-platform tool built on the KDE framework that seamlessly bridges your Linux desktop with mobile phones and other computing devices over local networks. It enables unified device interaction by syncing notifications, managing communications, and sharing resources without relying on cloud services."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged as a standalone portable package using uruntime, this version functions across Linux distributions without external dependencies such as FUSE while preserving seamless network integration."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Wirelessly share files, folders, and links between your desktop and connected devices"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Synchronize clipboard contents across paired systems in real time"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "View incoming phone calls, SMS messages, and app notifications directly on desktop"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Use mobile touchscreen devices as a virtual trackpad and keyboard for remote desktop input"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Control desktop media playback and adjust system volume remotely from a mobile device"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated automatic update notifications when operating independently of external package managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "KDE Connect Developers",
+        "url": "https://invent.kde.org/network/kdeconnect-kde"
+      },
+      "homepage": "https://invent.kde.org/network/kdeconnect-kde",
+      "repository": "https://github.com/pkgforge-dev/kdeconnect-AppImage",
+      "keywords": [
+        "phone",
+        "integration",
+        "sync",
+        "notification",
+        "clipboard",
+        "file sharing",
+        "remote control",
+        "sms",
+        "pairing"
+      ],
+      "categories": [
+        "Utility",
+        "Network",
+        "FileTransfer",
+        "RemoteAccess",
+        "TelephonyTools"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/kdeconnect.png",
+      "screenshots": [
+        {
+          "caption": "KDE Connect interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/kdeconnect-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

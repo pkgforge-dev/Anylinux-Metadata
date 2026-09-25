@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.galculator.galculator",
+      "name": "Galculator",
+      "summary": "GTK-based scientific calculator that balances simplicity with advanced computational features",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Galculator is a GTK-based scientific calculator designed to provide both basic arithmetic and advanced computational capabilities in an intuitive desktop interface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It supports multiple calculation modes and algebraic notations, catering to daily math tasks as well as complex scientific and engineering formulas."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Basic and scientific calculation modes for straightforward or advanced math"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for algebraic, Reverse Polish Notation (RPN), and formula entry modes"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Trigonometric, logarithmic, and hyperbolic functions with degree and radian support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multi-base number system calculations supporting decimal, hexadecimal, octal, and binary"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lightweight GTK graphical interface designed for responsive desktop integration"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Galculator Developers",
+        "url": "https://github.com/galculator/galculator"
+      },
+      "homepage": "https://github.com/galculator/galculator",
+      "repository": "https://github.com/pkgforge-dev/Galculator-AppImage",
+      "keywords": [
+        "calculator",
+        "scientific",
+        "math",
+        "rpn",
+        "trigonometry",
+        "hexadecimal",
+        "arithmetic",
+        "gtk"
+      ],
+      "categories": [
+        "Utility",
+        "Science"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/galculator.png",
+      "screenshots": [
+        {
+          "caption": "Galculator scientific and algebraic calculator interface",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Galculator-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

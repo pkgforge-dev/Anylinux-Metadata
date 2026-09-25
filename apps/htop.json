@@ -5,15 +5,65 @@
     "metadata": {
       "id": "io.github.htop_dev.htop",
       "name": "htop",
-      "summary": "Interactive process viewer",
+      "summary": "View and manage system processes interactively in the terminal",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "htop is an interactive process viewer for Unix systems. It shows system resource use and lets users inspect, filter, sort, and manage running processes from a terminal."
+              "value": "htop is a cross-platform, ncurses-based interactive process viewer written in C. It provides a real-time, dynamic overview of active system processes alongside core system metrics such as CPU consumption, memory usage, load averages, and swap space."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Unlike traditional system monitors, htop offers a user-friendly text interface with vertical and horizontal scrolling to inspect complete command lines, accompanied by an interactive setup menu to customize displayed meters and columns."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Vertical and horizontal list scrolling to inspect complete command lines"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "System-wide resource tracking for CPU cores, memory, load average, and swap usage"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Hierarchical tree view toggle to visualize parent-child process relationships"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive process search and real-time filtering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Convenient process management such as killing and renicing tasks directly without manual PID entry"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable display meters and sortable columns through a graphical setup screen"
+              }
+            ]
           ]
         }
       ],
@@ -25,23 +75,28 @@
       "homepage": "https://htop.dev/",
       "repository": "https://github.com/htop-dev/htop",
       "keywords": [
-        "processes",
+        "process",
         "monitor",
         "terminal",
-        "system"
+        "ncurses",
+        "taskmanager",
+        "system",
+        "cpu",
+        "memory",
+        "treeview"
       ],
       "categories": [
         "System",
-        "Monitor",
-        "ConsoleOnly"
+        "Utility",
+        "Viewer"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/htop.png",
       "screenshots": [
         {
-          "caption": "htop interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/htop-dev/htop/main/docs/images/screenshot.png"
+          "caption": "htop interactive process viewer showing CPU meters, memory metrics, and running tasks",
+          "source": "https://raw.githubusercontent.com/htop-dev/htop/main/docs/images/screenshot.png?raw=true"
         }
       ]
     }

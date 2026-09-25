@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.analogdevicesinc.pixelpulse2",
       "name": "Pixelpulse2",
-      "summary": "Pixelpulse2 is an open-source graphical user interface for hardware signal exploration and analysis",
+      "summary": "Explore, visualize, and manipulate hardware signals using compatible analog interface devices",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Pixelpulse2 is an open-source graphical user interface for hardware signal exploration and analysis. Built to interface with devices such as Analog Devices' ADALM1000, it functions as a multi-instrument oscilloscope, signal generator, and power supply monitor."
+              "value": "Pixelpulse2 is an open-source graphical user interface designed for visualizing and manipulating signals while exploring hardware systems attached to analog interface devices such as Analog Devices' ADALM1000. Built with the Qt5 graphics framework and OpenGL-accelerated density-gradiated rendering, it provides an interactive and responsive environment for hardware signal experimentation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "With an intuitive click-and-drag interface, users can quickly source constant signals or generate dynamic waveforms to analyze system behavior across varied amplitudes, frequencies, and phases."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Real-time multi-channel oscilloscope visualization and waveform capture"
+                "value": "Stream data to and from USB-connected devices via libsmu integration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated arbitrary signal and function generator controls"
+                "value": "Source constant voltage or current with single-click controls"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Voltage and current measurement modes for circuit diagnostics"
+                "value": "Generate standard waveforms including sinusoidal, square, triangle, and sawtooth"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Interactive zooming, panning, and cursor measurements across signal plots"
+                "value": "Accelerate density-gradiated waveform rendering via OpenGL"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Data logging and CSV export for hardware engineering and academic experimentation"
+                "value": "Pan along the time axis and zoom into signal details using scroll wheel and multitouch gestures"
               }
             ]
           ]
@@ -60,14 +69,20 @@
       "homepage": "https://github.com/analogdevicesinc/pixelpulse2",
       "repository": "https://github.com/pkgforge-dev/pixelpulse2-appimage",
       "keywords": [
-        "pixelpulse2",
-        "appimage",
-        "anylinux"
+        "signal",
+        "oscilloscope",
+        "adalm1000",
+        "libsmu",
+        "waveform",
+        "analog",
+        "hardware",
+        "visualization"
       ],
       "categories": [
+        "Development",
         "Science",
-        "Electronics",
-        "DataVisualization"
+        "Debugger",
+        "Chart"
       ]
     },
     "media": {

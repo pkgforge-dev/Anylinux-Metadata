@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.zelda64recomp.zelda64recomp",
       "name": "Zelda 64: Recompiled",
-      "summary": "Static recompilation project for Nintendo 64 Zelda titles running natively on PC",
+      "summary": "Statically recompiled native PC port of Nintendo 64 Zelda titles with RT64 enhancements",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Zelda 64: Recompiled is a static recompilation engine capable of translating Nintendo 64 Zelda titles into native C code. Developed by the Zelda64Recomp team, it provides a native PC porting foundation."
+              "value": "Zelda 64: Recompiled is a native PC port of classic Nintendo 64 Zelda titles powered by N64: Recompiled static recompilation and the RT64 rendering engine. It delivers native performance, visual enhancements, and modern control options while preserving original rendering effects."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The project delivers uncapped framerates, high-resolution rendering, ray-tracing support, modern camera controls, and extensive graphics enhancements."
+              "value": "The project operates on a plug-and-play model, loading game assets directly from an original game copy without requiring manual asset extraction or compilation."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Static recompilation architecture delivering high performance on modern CPUs"
+                "value": "Plug-and-play asset loading directly from an original game copy via the main menu"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Uncapped framerate rendering with smooth motion interpolation"
+                "value": "High framerate, widescreen, and ultrawide display support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution presentation supporting 4K and ultrawide aspect ratios"
+                "value": "RT64 rendering engine maintaining authentic N64 visual effects with modern graphical features"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern dual-analog camera control with optional mouse aiming"
+                "value": "Dual analog camera control, gyroscope aiming, and modern gamepad configuration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full controller compatibility with vibration feedback and customizable mapping"
+                "value": "Extensive modding support, autosaving, near-instant load times, and reduced input lag"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native Linux and Steam Deck compatibility with Vulkan rendering"
               }
             ]
           ]
@@ -69,14 +75,17 @@
       "homepage": "https://github.com/Zelda64Recomp/Zelda64Recomp",
       "repository": "https://github.com/Zelda64Recomp/Zelda64Recomp",
       "keywords": [
-        "zelda64recomp",
-        "appimage",
-        "anylinux"
+        "zelda",
+        "n64",
+        "recompilation",
+        "recompiled",
+        "rt64",
+        "port",
+        "vulkan",
+        "modding"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "AdventureGame"
+        "Game"
       ]
     },
     "media": {

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.ladybird.ladybird",
       "name": "Ladybird",
-      "summary": "Ladybird is a truly independent, open-source web browser and rendering engine written from scratch in modern C++",
+      "summary": "Independent, open-source web browser and engine written from scratch in modern C++",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Ladybird is a truly independent, open-source web browser and rendering engine written from scratch in modern C++. Founded to break the browser engine duopoly, Ladybird implements web standards without relying on Chromium, WebKit, or Gecko."
+              "value": "Ladybird is a truly independent, open-source web browser and rendering engine developed from scratch in modern C++. Built without relying on legacy browser engines, Ladybird aims to provide a fresh, standards-compliant alternative for exploring the modern web."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This package delivers a universal, self-contained executable build designed for high portability and compatibility across Linux distributions."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Completely independent rendering and JavaScript engine (LibWeb and LibJS)"
+                "value": "Independent rendering and JavaScript engine implemented entirely from scratch"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multi-process security model isolating tabs and web content into separate processes"
+                "value": "Built using modern C++ for performance, modularity, and memory safety"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in ad blocking and privacy protection without third-party tracking extensions"
+                "value": "Universal Linux distribution compatibility, including musl-based systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Adheres directly to modern W3C and WHATWG web specifications"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Free and open-source software funded exclusively by non-profit community donations"
+                "value": "Portable, standalone packaging requiring no system-wide modification"
               }
             ]
           ]
@@ -60,9 +63,14 @@
       "homepage": "https://ladybird.org",
       "repository": "https://github.com/pkgforge-dev/ladybird-appimage",
       "keywords": [
-        "ladybird",
-        "appimage",
-        "anylinux"
+        "browser",
+        "web",
+        "rendering engine",
+        "html",
+        "css",
+        "javascript",
+        "c++",
+        "internet"
       ],
       "categories": [
         "Network",

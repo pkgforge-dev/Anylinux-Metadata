@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.grumpycoders.pcsx_redux",
       "name": "PCSX-Redux",
-      "summary": "Modern and modular PlayStation 1 (PSX) emulator for developers and players",
+      "summary": "Modern, modular PlayStation 1 emulator designed for reverse engineering and development",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "PCSX-Redux is a modern rewrite and modular continuation of the PCSX PlayStation 1 emulator. It is engineered with a clean codebase for homebrew developers, reverse engineers, and retro gamers alike."
+              "value": "PCSX-Redux is a modernized fork of the PCSX PlayStation 1 emulator, reimagined as a monolithic and modular platform tailored for homebrew development, reverse engineering, and gaming. Built on OpenGL 3+ and Dear ImGui, it offers a portable, modern interface alongside deep inspection capabilities."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The emulator incorporates an integrated disassembler, memory viewer, breakpoint engine, and modern graphics rendering options."
+              "value": "By replacing legacy plugin architectures with a cohesive codebase, PCSX-Redux delivers advanced debugging, memory inspection, and high-fidelity rendering tools for PlayStation enthusiasts and programmers alike."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Modular core architecture with cycle-accurate MIPS R3000A CPU emulation"
+                "value": "Monolithic core design replacing outdated plugin systems for all emulation subsystems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in interactive debugger, disassembler, memory hex editor, and symbol table"
+                "value": "Modernized user interface written on top of OpenGL 3+ and ImGui for enhanced portability"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern OpenGL and Vulkan hardware rendering with internal resolution scaling"
+                "value": "Comprehensive integrated debugging and reverse-engineering toolset"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Accurate SPU audio synthesis and CD-ROM drive timing emulation"
+                "value": "Enhanced graphics rendering and visual output options"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for standard PS1 controller peripherals, analogue joysticks, and memory cards"
+                "value": "Built-in OpenBIOS support allowing games to boot without requiring a retail BIOS"
               }
             ]
           ]
@@ -69,21 +69,29 @@
       "homepage": "https://github.com/grumpycoders/pcsx-redux",
       "repository": "https://github.com/grumpycoders/pcsx-redux",
       "keywords": [
-        "pcsx-redux",
-        "appimage",
-        "anylinux"
+        "playstation",
+        "psx",
+        "ps1",
+        "emulator",
+        "debugger",
+        "reverse-engineering",
+        "openbios",
+        "imgui",
+        "mips"
       ],
       "categories": [
-        "System",
-        "Emulator"
+        "Development",
+        "Game",
+        "Debugger",
+        "IDE"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/pcsx-redux.png",
       "screenshots": [
         {
-          "caption": "PCSX-Redux interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "PCSX-Redux interactive debugger and memory inspection interface",
+          "source": "https://pcsx-redux.consoledev.net/images/debugger1.png"
         }
       ]
     }

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.rhy3756547.simitone",
       "name": "Simitone",
-      "summary": "Simitone is an open-source 3D reimplementation of The Sims 1",
+      "summary": "Open-source 3D reimplementation and modern frontend for The Sims 1",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Simitone is an open-source 3D reimplementation of The Sims 1. Built on the FreeSO engine, it transforms the classic isometric life simulator into an interactive 3D environment with smooth camera controls."
+              "value": "Simitone is an open-source C# frontend and reimplementation engine for The Sims 1, built upon the FreeSO architecture. Designed to enhance the playability of original game installations on modern operating systems, it brings updated rendering, high-resolution visual enhancements, and contemporary interface scaling to the classic simulation title."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Please note that running the game requires a legitimate existing installation of The Sims: Complete Collection."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "True 3D perspective camera allowing free rotation, panning, and first-person views"
+                "value": "Modernized user interface designed to scale seamlessly at high display resolutions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution rendering with dynamic lighting and enhanced visual effects"
+                "value": "Enhanced graphical performance featuring support for high refresh rates and arbitrary resolutions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full compatibility with original The Sims 1 base game and expansions"
+                "value": "Integrated advanced lighting effects to elevate original scene rendering"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced user interface scaling and modern widescreen display support"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Requires original The Sims 1 installation files to play"
+                "value": "Bundled Volcanic tool for inspecting, modifying, and creating custom game objects"
               }
             ]
           ]
@@ -60,21 +63,25 @@
       "homepage": "https://github.com/RHY3756547/Simitone",
       "repository": "https://github.com/pkgforge-dev/Simitone-AppImage",
       "keywords": [
-        "simitone",
-        "appimage",
-        "anylinux"
+        "simulation",
+        "sims",
+        "freeso",
+        "game engine",
+        "reimplementation",
+        "3d engine",
+        "modding"
       ],
       "categories": [
         "Game",
-        "Simulation"
+        "3DGraphics"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/simitone.png",
       "screenshots": [
         {
-          "caption": "Simitone interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Simitone in-game 3D rendering and neighborhood gameplay interface",
+          "source": "https://user-images.githubusercontent.com/6294155/29047328-2bb60b54-7bc3-11e7-8d88-cee5309495ed.png"
         }
       ]
     }

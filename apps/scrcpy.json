@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.genymobile.scrcpy",
       "name": "scrcpy",
-      "summary": "scrcpy is an open-source utility that displays and controls Android devices connected via USB or over Wi-Fi",
+      "summary": "Display and control Android devices connected via USB or TCP/IP",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "scrcpy is an open-source utility that displays and controls Android devices connected via USB or over Wi-Fi. It requires no root access on the device and delivers ultra-low latency mirroring."
+              "value": "scrcpy is a lightweight, high-performance utility designed to mirror Android device screens and forward audio over USB or wireless TCP/IP connections. It enables seamless interaction with Android devices using your computer keyboard and mouse without requiring root access or installing client applications on the target device."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Engineered for low latency and high visual fidelity, scrcpy provides native performance with configurable resolutions, frame rates between 30 and 120 frames per second, and bidirectional clipboard synchronization."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "High performance mirroring at 30 to 120 FPS with minimal latency (35-70 ms)"
+                "value": "Audio and video screen mirroring over USB or TCP/IP connections"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full mouse, touchpad, and physical keyboard control forwarding"
+                "value": "Control using physical keyboard and mouse simulation via HID and OTG modes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Audio forwarding from Android 11+ devices directly to your PC speakers"
+                "value": "High performance with 30 to 120 fps and ultra-low latency between 35 and 70 ms"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Bidirectional clipboard synchronization, file drag-and-drop, and APK installation"
+                "value": "Screen recording and camera mirroring as a Linux V4L2 webcam"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High visual quality with configurable bitrates, resolutions, and video recording"
+                "value": "Mirroring with the Android device screen turned off"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless bidirectional copy-paste clipboard sharing"
               }
             ]
           ]
@@ -60,20 +75,27 @@
       "homepage": "https://github.com/Genymobile/scrcpy",
       "repository": "https://github.com/pkgforge-dev/scrcpy-AppImage",
       "keywords": [
-        "scrcpy",
-        "appimage",
-        "anylinux"
+        "android",
+        "mirroring",
+        "remote",
+        "screen",
+        "adb",
+        "usb",
+        "webcam",
+        "screencast"
       ],
       "categories": [
         "Utility",
-        "RemoteAccess"
+        "Development",
+        "RemoteAccess",
+        "Debugger"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/scrcpy.png",
       "screenshots": [
         {
-          "caption": "scrcpy interface screenshot 1",
+          "caption": "scrcpy mirroring an Android device screen on Debian",
           "source": "https://raw.githubusercontent.com/Genymobile/scrcpy/master/assets/screenshot-debian-600.jpg"
         }
       ]

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.psygreg.linuxtoys",
       "name": "LinuxToys",
-      "summary": "A collection of performance tweaks, system configuration tools, and optimization scripts for Linux desktops",
+      "summary": "Software distribution and system configuration platform for multiple Linux distributions",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "LinuxToys is a collection of user-friendly performance tweaks, system configuration tools, and optimization scripts for Linux desktops. It simplifies common administration and gaming optimization tasks through an intuitive graphical menu."
+              "value": "LinuxToys is a software distribution platform and system configuration utility designed to make powerful Linux functionality simple and accessible through an intuitive graphical interface. It provides users and developers with a unified solution to manage, tweak, and reliably deploy software across dozens of Linux environments."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By standardizing application installation workflows and environment setups, LinuxToys bridges differences across packaging ecosystems, from traditional desktop distributions to immutable atomic systems."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "One-click performance tweaks for Linux gaming (gamemode, wine-staging, proton)"
+                "value": "Unified software installation and management across diverse Linux distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Kernel and scheduler tuning for reduced desktop latency and better responsiveness"
+                "value": "Broad compatibility covering Debian, Ubuntu, Fedora, Arch Linux, openSUSE, and derivatives"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automated installation of popular gaming utilities, runtimes, and dependencies"
+                "value": "Support for immutable atomic distributions including Atomic Fedora and Universal Blue images"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Clean graphical interface with modular scripts for safe application and rollback"
+                "value": "Handheld and gaming system compatibility including SteamOS and AppImage deployment"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Helpful diagnostics and system hardware information readouts"
+                "value": "Intuitive desktop interface offering performance tweaks and system optimization tools"
               }
             ]
           ]
@@ -60,21 +69,26 @@
       "homepage": "https://github.com/psygreg/linuxtoys",
       "repository": "https://github.com/pkgforge-dev/linuxtoys-appimage",
       "keywords": [
-        "linuxtoys",
-        "appimage",
-        "anylinux"
+        "package",
+        "installer",
+        "software",
+        "distribution",
+        "configuration",
+        "optimization",
+        "tweak",
+        "desktop"
       ],
       "categories": [
         "System",
-        "DesktopSettings",
-        "HardwareSettings"
+        "PackageManager",
+        "DesktopSettings"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/linuxtoys.png",
       "screenshots": [
         {
-          "caption": "LinuxToys interface screenshot 1",
+          "caption": "LinuxToys main application overview and software management interface",
           "source": "https://raw.githubusercontent.com/psygreg/linuxtoys/master/src/screenshot-light.webp"
         }
       ]

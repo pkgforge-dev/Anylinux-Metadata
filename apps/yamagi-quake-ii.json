@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.pkgforge_dev.yamagi_quake_ii_appimage_yamagi_quake_ii",
+      "name": "yamagi-quake-ii",
+      "summary": "Enhanced alternative client and modern source port for Quake II",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Yamagi Quake II is an enhanced source port and alternative client for id Software's classic first-person shooter Quake II. Focused on providing a stable, faithful single-player and multiplayer experience on modern operating systems, it preserves the authentic gameplay mechanics while adding compatibility improvements and quality-of-life enhancements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Running original Quake II data files seamlessly, Yamagi Quake II brings essential engine modernizations for current displays and audio systems."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Faithful gameplay preservation for both single-player campaigns and multiplayer deathmatches"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern high-resolution rendering with widescreen, ultrawide, and custom display aspect ratio support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced audio subsystem offering support for modern OpenAL output and background music formats"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform compatibility across modern Linux distributions, including glibc and musl systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless loading of original Quake II base game pak files and official mission packs"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "yamagi-quake-ii Developers",
+        "url": "https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage"
+      },
+      "homepage": "https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Yamagi-Quake-II-AppImage",
+      "keywords": [
+        "quake",
+        "quake2",
+        "fps",
+        "shooter",
+        "source port",
+        "opengl",
+        "yquake2",
+        "deathmatch"
+      ],
+      "categories": [
+        "Game",
+        "3DGraphics"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/yamagi-quake-ii.png",
+      "screenshots": [
+        {
+          "caption": "yamagi-quake-ii interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Yamagi-Quake-II-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

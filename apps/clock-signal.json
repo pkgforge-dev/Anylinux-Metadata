@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.tomharte.clk",
       "name": "Clock Signal",
-      "summary": "Static and runtime analysis emulator of 8-bit and 16-bit classic computer platforms",
+      "summary": "Emulate classic 8-bit and 16-bit computers with automated loading and authentic signal processing",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Clock Signal (CLK) is an accurate emulator for vintage 8-bit and 16-bit personal computer architectures. It prioritizes cycle-accurate timing and cycle-by-cycle bus synchronization."
+              "value": "Clock Signal is an emulator designed to eliminate the learning curves associated with vintage hardware and traditional emulator configurations. Built on modern OpenGL with Qt or SDL backends on Linux, it seeks to be invisible by letting users launch classic games and software directly without manual machine setup."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "CLK emulates a wide range of platforms including the Commodore Amiga, Atari ST, Acorn Electron, Amstrad CPC, Sinclair ZX80/ZX81, Apple II, and Oric systems."
+              "value": "Through static and runtime analysis of media images, Clock Signal automatically configures the appropriate platform and executes the necessary startup commands while preserving authentic visual and audio fidelity."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Cycle-accurate emulation for complex historical multi-chip computer systems"
+                "value": "Single-step loading that selects and boots software from disk, tape, or ROM automatically"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for Commodore Amiga, Atari ST, Apple II, ZX Spectrum, and MSX architectures"
+                "value": "Authentic signal processing replicating raw composite video decoding and real-time audio filtering"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Real-time audio synthesis modeling analog filtering and sound chip characteristics"
+                "value": "Extensive platform emulation including Acorn Electron, BBC Micro, Apple II, Atari ST, and early Macintosh models"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity CRT shader simulation capturing scanlines, phosphor decay, and beam dynamics"
+                "value": "Support for home computer and console systems such as Commodore Vic-20, MSX, Sega Master System, and ZX Spectrum"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automatic disk, cassette, and cartridge media identification and execution"
+                "value": "Fast accelerated loading and minimal latency response during emulation"
               }
             ]
           ]
@@ -69,12 +69,18 @@
       "homepage": "https://github.com/TomHarte/CLK",
       "repository": "https://github.com/TomHarte/CLK",
       "keywords": [
-        "clock-signal",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "emulation",
+        "retrogaming",
+        "vintage",
+        "arcade",
+        "apple",
+        "atari",
+        "commodore",
+        "sinclair"
       ],
       "categories": [
-        "System",
+        "Game",
         "Emulator"
       ]
     },
@@ -82,8 +88,16 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/clock-signal.png",
       "screenshots": [
         {
-          "caption": "Clock Signal interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Multiple emulated retro systems running simultaneously on Ubuntu",
+          "source": "https://raw.githubusercontent.com/TomHarte/CLK/master/READMEImages/MultipleSystems-Ubuntu.png"
+        },
+        {
+          "caption": "Comparison of naive pixel output versus decoded composite video processing",
+          "source": "https://raw.githubusercontent.com/TomHarte/CLK/master/READMEImages/CompositeElectron.png"
+        },
+        {
+          "caption": "Decoded composite video display rendering in Repton 3",
+          "source": "https://raw.githubusercontent.com/TomHarte/CLK/master/READMEImages/CompositeRepton3.png"
         }
       ]
     }

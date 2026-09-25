@@ -12,7 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "QuantumLauncher is a fast, lightweight open-source launcher for Minecraft. Built with a focus on efficiency, it eliminates the bloat and slow startup times common to traditional launchers."
+              "value": "QuantumLauncher is a fast, lightweight, and open-source launcher for Minecraft focused on delivering high performance and seamless instance management across various Linux environments."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It offers complete instance management, automatic mod loader installation for Fabric and Forge, account switching, and optimized Java runtime selection."
+              "value": "This enhanced portable packaging is designed to run reliably across distributions without host libc dependencies, ensuring full compatibility even on older systems and musl-based distributions such as Alpine Linux."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Rapid application startup and minimal memory footprint"
+                "value": "Optimized runtime execution that ensures downloaded Java runtimes execute reliably across diverse environments"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Comprehensive multi-instance management with isolated save directories"
+                "value": "Broad compatibility across modern, legacy, and musl-libc Linux distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automated one-click installation for Fabric, Quilt, NeoForge, and Forge loaders"
+                "value": "Standalone operation without requiring FUSE to launch or run"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated modpack importing from major community mod repositories"
+                "value": "Built-in update notification system with intelligent detection of system package managers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable JVM launch arguments and automatic memory allocation settings"
+                "value": "Lightweight footprint engineered for responsive game launching and instance configuration"
               }
             ]
           ]
@@ -69,13 +69,16 @@
       "homepage": "https://github.com/mrmaydie/QuantumLauncher",
       "repository": "https://github.com/mrmaydie/QuantumLauncher",
       "keywords": [
-        "quantumlauncher",
-        "appimage",
-        "anylinux"
+        "minecraft",
+        "launcher",
+        "gaming",
+        "instances",
+        "modpacks",
+        "java"
       ],
       "categories": [
         "Game",
-        "ActionGame"
+        "Utility"
       ]
     },
     "media": {

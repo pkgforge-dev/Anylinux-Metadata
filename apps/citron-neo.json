@@ -5,14 +5,14 @@
     "metadata": {
       "id": "org.citron_emu.citron",
       "name": "Citron Neo",
-      "summary": "Experimental Nintendo Switch emulator focusing on performance and compatibility",
+      "summary": "Emulate Nintendo Switch games with enhanced graphics performance and compatibility",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Citron Neo is an open-source experimental emulator for the Nintendo Switch console. Built by community contributors, it focuses on enhancing graphics pipeline performance, shader compilation speed, and game compatibility."
+              "value": "Citron Neo is an open-source experimental emulator for the Nintendo Switch console, built by community contributors to enhance graphics pipeline performance, shader compilation speed, and game compatibility. Powered by multi-threaded CPU emulation and modern graphics APIs, it delivers a smooth and responsive gaming experience on Linux."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The emulator incorporates Vulkan and OpenGL renderers, multi-threaded CPU emulation, and customizable controller mappings."
+              "value": "The emulator supports extensive visual enhancements and hardware integration, allowing players to customize resolution scaling and input devices tailored to their setup."
             }
           ]
         },
@@ -31,7 +31,7 @@
             [
               {
                 "type": "text",
-                "value": "High-performance Vulkan graphics backend with asynchronous shader compilation"
+                "value": "High-performance Vulkan and OpenGL graphics backends with asynchronous shader compilation"
               }
             ],
             [
@@ -69,12 +69,17 @@
       "homepage": "https://github.com/citron-neo",
       "repository": "https://github.com/citron-neo/citron",
       "keywords": [
-        "citron-neo",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "switch",
+        "nintendo",
+        "vulkan",
+        "opengl",
+        "gaming",
+        "gamepad",
+        "arm64"
       ],
       "categories": [
-        "System",
+        "Game",
         "Emulator"
       ]
     },

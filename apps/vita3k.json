@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.vita3k.vita3k",
       "name": "vita3k",
-      "summary": "Experimental PlayStation Vita emulator",
+      "summary": "Experimental PlayStation Vita emulator capable of running homebrew programs and commercial games",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Experimental PlayStation Vita emulator"
+              "value": "Vita3K is an open-source, experimental PlayStation Vita emulator written in C++ that enables playing PlayStation Vita commercial games and running homebrew software on modern desktop and mobile platforms."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator utilizes modern graphics backends and low-level emulation techniques to accurately reproduce the PlayStation Vita system architecture and runtime environment."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Extensive compatibility with commercial PlayStation Vita titles and homebrew applications"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Vulkan and OpenGL hardware graphics rendering backends"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform support across Linux, Windows, macOS, and Android"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "ARM CPU emulation powered by the Unicorn engine"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integration with Linux desktop environments via xdg-desktop-portal"
+              }
+            ]
           ]
         }
       ],
@@ -25,9 +69,15 @@
       "homepage": "https://github.com/Vita3K/Vita3K",
       "repository": "https://github.com/pkgforge-dev/Vita3K-AppImage-Enhanced",
       "keywords": [
-        "vita3k",
-        "appimage",
-        "anylinux"
+        "playstation",
+        "vita",
+        "psvita",
+        "emulator",
+        "emulation",
+        "gaming",
+        "homebrew",
+        "vulkan",
+        "opengl"
       ],
       "categories": [
         "Game",
@@ -38,8 +88,20 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/vita3k.png",
       "screenshots": [
         {
-          "caption": "vita3k interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Persona 4 Golden running on Vita3K",
+          "source": "https://raw.githubusercontent.com/Vita3K/Vita3K/master/_readme/screenshots/P4G.png"
+        },
+        {
+          "caption": "A Rose in the Twilight running on Vita3K",
+          "source": "https://raw.githubusercontent.com/Vita3K/Vita3K/master/_readme/screenshots/A%20Rose%20in%20the%20Twilight.png"
+        },
+        {
+          "caption": "VA-11 HALL-A running on Vita3K",
+          "source": "https://raw.githubusercontent.com/Vita3K/Vita3K/master/_readme/screenshots/VA-11%20HALL-A.png"
+        },
+        {
+          "caption": "Alone with You running on Vita3K",
+          "source": "https://raw.githubusercontent.com/Vita3K/Vita3K/master/_readme/screenshots/Alone%20With%20You.png"
         }
       ]
     }

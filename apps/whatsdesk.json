@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.gitlab.zerkc.whatsdesk",
+      "name": "WhatsDesk",
+      "summary": "Unofficial desktop client for WhatsApp Web tailored for Linux",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "WhatsDesk is an unofficial desktop application that brings the WhatsApp Web client directly to the Linux desktop environment. It provides a dedicated desktop window for managing chats, sending media, and staying connected without keeping a standard web browser tab open."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for seamless integration across distributions, it offers built-in update notifications and standalone portability."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Dedicated desktop wrapper for WhatsApp Web messaging"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native desktop notifications for incoming messages and alerts"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater to check and notify when new versions are available"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad compatibility across modern and legacy Linux distributions"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "WhatsDesk Developers",
+        "url": "https://zerkc.gitlab.io/whatsdesk/"
+      },
+      "homepage": "https://zerkc.gitlab.io/whatsdesk/",
+      "repository": "https://github.com/pkgforge-dev/WhatsDesk-AppImage",
+      "keywords": [
+        "whatsapp",
+        "chat",
+        "messaging",
+        "instant messaging",
+        "web client",
+        "communication"
+      ],
+      "categories": [
+        "Network",
+        "InstantMessaging",
+        "Chat"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/whatsdesk.png",
+      "screenshots": [
+        {
+          "caption": "WhatsDesk interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/WhatsDesk-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

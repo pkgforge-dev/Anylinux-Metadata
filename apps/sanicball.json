@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.bk_tn.sanicball",
       "name": "Sanicball",
-      "summary": "Sanicball is a fast, physics-defying multiplayer arcade racing game satirizing the Sonic the Hedgehog franchise",
+      "summary": "Race at ludicrous speeds in a physics-defying multiplayer arcade parody",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Sanicball is a fast, physics-defying multiplayer arcade racing game satirizing the Sonic the Hedgehog franchise. Players take control of spherical characters navigating wildly twisting tracks at breakneck velocities."
+              "value": "Sanicball is a fast-paced, physics-defying multiplayer arcade racing game built on the Unity engine that parodies popular speed-centric platformers. Players roll around wacky tracks at uncontrollable speeds, negotiating steep ramps, loop-de-loops, and exaggerated physics."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for chaotic competition, the game emphasizes absurd velocity and momentum-based racing mechanics across custom obstacles."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "High-velocity racing mechanics with dramatic ramps, loop-the-loops, and air control"
+                "value": "High-velocity momentum and physics-driven racing mechanics"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multiple playable parody characters each with distinct speed and handling attributes"
+                "value": "Online multiplayer support with dedicated server list connectivity"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Online multiplayer racing lobbies and local split-screen multiplayer support"
+                "value": "Variety of meme-inspired parody characters rolling as spherical racers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Energetic soundtrack featuring meme-inspired audio tracks"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Built-in track selection with varying difficulty levels and terrain traps"
+                "value": "Challenging stunt circuits featuring giant ramps and loops"
               }
             ]
           ]
@@ -60,14 +63,17 @@
       "homepage": "https://github.com/BK-TN/Sanicball",
       "repository": "https://github.com/pkgforge-dev/Sanicball-AppImage",
       "keywords": [
-        "sanicball",
-        "appimage",
-        "anylinux"
+        "racing",
+        "arcade",
+        "multiplayer",
+        "physics",
+        "unity",
+        "parody",
+        "speed",
+        "kart"
       ],
       "categories": [
-        "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "Game"
       ]
     },
     "media": {

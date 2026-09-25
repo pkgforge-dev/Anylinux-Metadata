@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.lxqt.qterminal",
+      "name": "QTerminal",
+      "summary": "Lightweight and versatile Qt terminal emulator based on QTermWidget",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "QTerminal is a lightweight terminal emulator built on the Qt toolkit and powered by the QTermWidget library. Developed as part of the LXQt desktop environment project, it is engineered for high performance and minimal resource overhead while functioning completely independently of any specific desktop."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator provides a responsive command-line workflow with a modern Qt interface, offering flexible window management and convenient productivity features suited for daily shell tasks."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Multi-tab terminal sessions for managing concurrent shells"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated bookmarks sidebar for quick access to frequently used directories"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built on the robust and efficient QTermWidget emulation engine"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Desktop-agnostic design with full independence from the LXQt environment"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optional audio bell notifications powered by libcanberra"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "QTerminal Developers",
+        "url": "https://github.com/lxqt/qterminal"
+      },
+      "homepage": "https://github.com/lxqt/qterminal",
+      "repository": "https://github.com/pkgforge-dev/QTerminal-AppImage",
+      "keywords": [
+        "terminal",
+        "emulator",
+        "shell",
+        "console",
+        "commandline",
+        "qt",
+        "lxqt",
+        "qtermwidget"
+      ],
+      "categories": [
+        "System",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/qterminal.png",
+      "screenshots": [
+        {
+          "caption": "QTerminal main window displaying open tabs and the bookmarks pane",
+          "source": "https://raw.githubusercontent.com/lxqt/qterminal/master/qterminal.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/QTerminal-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.vyapin.vypresschat",
       "name": "Vypress Chat",
-      "summary": "User-friendly real-time messaging application designed for local area network (LAN) communication",
+      "summary": "Real-time messaging application designed for local area network communication",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Vypress Chat is a dedicated peer-to-peer real-time communication software designed specifically for local area networks (LANs). It facilitates secure instant messaging without requiring an internet connection or external server."
+              "value": "Vypress Chat is a dedicated real-time messaging application built for instant communication across local area networks (LANs). It facilitates seamless peer-to-peer and channel-based text chat without requiring an external internet connection or centralized server infrastructure."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The application provides topic-based chat channels, direct private messaging, file sharing, and broadcast announcements across office, home, and enterprise local subnets."
+              "value": "Packaged for seamless execution on Linux environments via Wine compatibility, it provides robust local messaging capabilities tailored for home networks, offices, and isolated workgroups."
             }
           ]
         },
@@ -31,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Serverless peer-to-peer messaging operating across local network subnets"
+                "value": "Real-time instant text messaging and chat channels across local area networks"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Topic-based group channels and private encrypted direct messaging"
+                "value": "Serverless peer-to-peer architecture operating independently of internet access"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Instant LAN file transmission and document sharing capabilities"
+                "value": "Self-contained portable deployment compatible across diverse Linux distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable sound notifications, status indicators, and offline message queueing"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Low network bandwidth overhead and minimal background system footprint"
+                "value": "Integrated automatic update detection and notifications"
               }
             ]
           ]
@@ -69,9 +63,13 @@
       "homepage": "https://www.vyapinsoftware.com/products/vypress-chat",
       "repository": "https://github.com/pkgforge-dev/VypressChat-AppImage",
       "keywords": [
-        "vypresschat",
-        "appimage",
-        "anylinux"
+        "chat",
+        "lan",
+        "messaging",
+        "instant messaging",
+        "peer-to-peer",
+        "local network",
+        "communication"
       ],
       "categories": [
         "Network",

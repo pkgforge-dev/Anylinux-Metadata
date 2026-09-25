@@ -5,15 +5,56 @@
     "metadata": {
       "id": "io.github.fwgs.xash3d_fwgs",
       "name": "xash3d-fwgs",
-      "summary": "A game engine aimed to provide compatibility with Half-Life Engine and extend it",
+      "summary": "Custom game engine compatible with Half-Life and GoldSrc modifications",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "A game engine aimed to provide compatibility with Half-Life Engine and extend it."
+              "value": "Xash3D FWGS is an open-source, cross-platform game engine designed to provide extended compatibility with the GoldSrc engine and Valve's Half-Life SDK. As a heavily updated fork of the original Xash3D engine, it modernizes classic gameplay workflows across modern operating systems and CPU architectures."
             }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with Steam Half-Life (HLSDK 2.5) and GoldSrc protocol standards"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiple graphical renderers including OpenGL, GLESv1, GLESv2, and Software rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced multiplayer with multiple master servers, headless dedicated server, voice chat, and IPv6"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced virtual filesystem supporting .pk3 and .pk3dir packages alongside fast case-insensitivity emulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern asset format support including PNG, KTX2, Ogg Vorbis, and Opus audio"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Versatile input support covering keyboard, mouse, touch controls, and gamepads"
+              }
+            ]
           ]
         }
       ],
@@ -25,13 +66,18 @@
       "homepage": "https://github.com/FWGS/xash3d-fwgs",
       "repository": "https://github.com/pkgforge-dev/Xash3D-FWGS-AppImage-Enhanced",
       "keywords": [
-        "xash3d-fwgs",
-        "appimage",
-        "anylinux"
+        "game",
+        "engine",
+        "halflife",
+        "goldsrc",
+        "opengl",
+        "fps",
+        "multiplayer",
+        "hlsdk"
       ],
       "categories": [
         "Game",
-        "ActionGame"
+        "Development"
       ]
     },
     "media": {

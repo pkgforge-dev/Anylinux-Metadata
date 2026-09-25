@@ -5,15 +5,65 @@
     "metadata": {
       "id": "io.github.mcarcady.lnp_forge_dwarf_fortress",
       "name": "dwarf-fortress",
-      "summary": "The AppImage of lnp-forge built LinuxDwarfPack",
+      "summary": "Colony simulation and fantasy generator bundled with popular utilities, graphics, and community tools",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "The AppImage of lnp-forge built LinuxDwarfPack."
+              "value": "LinuxDwarfPack provides a complete setup for Dwarf Fortress on Linux, compiling and packaging the game alongside essential community tools, utility managers, and graphical enhancements directly from source repositories."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The distribution delivers a rich fantasy world generator and fortress management experience enhanced with labor administration tools, extended soundscapes, and comprehensive history visualizers."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Integrated DFHack engine extension and Text Will Be Text (TWBT) renderer plugin"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full suite of DFGraphics tilesets with configurable embark profiles and keybindings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dwarf Therapist labor management utility for monitoring and assigning dwarf tasks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "SoundSense-RS audio companion for contextual music and event audio"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Legends Browser 1 and 2 integration for exploring generated historical logs and lore"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Dedicated Announcement Window for tracking fortress events and combat alerts in real time"
+              }
+            ]
           ]
         }
       ],
@@ -25,14 +75,18 @@
       "homepage": "https://github.com/McArcady/lnp-forge",
       "repository": "https://github.com/pkgforge-dev/Dwarf-Fortress-AppImage",
       "keywords": [
-        "dwarf-fortress",
-        "appimage",
-        "anylinux"
+        "simulation",
+        "roguelike",
+        "strategy",
+        "dfhack",
+        "therapist",
+        "soundsense",
+        "tilesets",
+        "colony"
       ],
       "categories": [
         "Game",
-        "Simulation",
-        "StrategyGame"
+        "Building"
       ]
     },
     "media": {

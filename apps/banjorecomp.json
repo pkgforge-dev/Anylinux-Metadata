@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.banjorecomp.banjorecomp",
       "name": "BanjoRecomp",
-      "summary": "Banjo-Kazooie Recompiled is an enhanced native PC port of the classic Nintendo 64 platformer Banjo-Kazooie, created using static recompilation",
+      "summary": "Enhanced native PC port of the classic Nintendo 64 platformer Banjo-Kazooie using static recompilation",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Banjo-Kazooie Recompiled is an enhanced native PC port of the classic Nintendo 64 platformer Banjo-Kazooie, created using static recompilation. It translates the original N64 binary into native C/C++ code, allowing the game to run with modern PC graphics and uncapped performance."
+              "value": "Banjo: Recompiled is an enhanced native port of the classic platformer Banjo-Kazooie, created via static recompilation using N64: Recompiled and the RT64 rendering engine. It delivers performance improvements, visual enhancements, and modern convenience while preserving the authenticity of the original game."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Game assets are not included and must be supplied from an original North American 1.0 ROM. The port automatically extracts and loads required assets upon launch without demanding manual extraction or rebuilding."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution without emulation overhead, providing smooth high framerates"
+                "value": "High framerate support alongside widescreen and ultrawide aspect ratio options"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen, ultrawide, and arbitrary resolution rendering"
+                "value": "Dual analog camera controls and modernized input handling with low latency"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern camera controls with full analog stick and mouse support"
+                "value": "Fully intact graphical effects, transitions, and original mipmapping accuracy"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity audio playback with support for enhanced sound output"
+                "value": "Faithful audio emulation preserving precise synchronization without stutter"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native game controller support with remappable button layouts"
+                "value": "Integrated quality-of-life enhancements such as note saving and extensive mod support"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/BanjoRecomp/BanjoRecomp",
       "repository": "https://github.com/pkgforge-dev/banjorecomp-appimage",
       "keywords": [
-        "banjorecomp",
-        "appimage",
-        "anylinux"
+        "banjo",
+        "kazooie",
+        "n64",
+        "recompilation",
+        "recompiled",
+        "platformer",
+        "rt64",
+        "emulator",
+        "port"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "AdventureGame"
+        "Game"
       ]
     },
     "media": {

@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.github.AppManager",
       "name": "AppManager",
-      "summary": "Install and uninstall AppImage applications via drag and drop with desktop integration",
+      "summary": "Install, manage, and update AppImage applications with desktop integration",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "AppManager is a desktop utility designed to make AppImage package management effortless. Developed by kem-a, it integrates AppImage files with system desktop environments through simple drag-and-drop operations."
+              "value": "AppManager is a desktop utility built with GTK 4 and Libadwaita designed to make installing, managing, and uninstalling AppImage packages seamless on Linux. It supports both SquashFS and DwarFS formats, providing a macOS-style drag-and-drop installation interface, automatic desktop integration, and bandwidth-efficient delta updates."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The application handles sandbox permission management, desktop entry generation, icon registration, and clean uninstallation of AppImage packages."
+              "value": "The application offers flexible installation workflows, allowing users to choose between self-contained portable execution and fully extracted installations without requiring FUSE."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Drag-and-drop installation and removal for all standard AppImage packages"
+                "value": "Familiar macOS-style drag-and-drop installer window for newly opened packages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automatic desktop entry generation and high-resolution icon registration"
+                "value": "Automatic desktop integration extracting icons and application desktop entries"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Application metadata inspection including architecture and dependencies"
+                "value": "Isolated portable mode generating local configuration and home data folders"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Clean uninstallation removing application data, caches, and system shortcuts"
+                "value": "Background update checks and delta updates powered by zsync"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native GTK interface styled cleanly for modern Linux desktop environments"
+                "value": "Web link integration via custom URI schemes for verified one-click installations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for side-by-side installations of multiple application versions"
               }
             ]
           ]
@@ -69,13 +75,18 @@
       "homepage": "https://github.com/kem-a/AppManager",
       "repository": "https://github.com/kem-a/AppManager",
       "keywords": [
-        "appmanager",
-        "appimage",
-        "anylinux"
+        "package",
+        "installer",
+        "squashfs",
+        "dwarfs",
+        "zsync",
+        "updates",
+        "portable",
+        "libadwaita"
       ],
       "categories": [
-        "Utility",
         "System",
+        "Utility",
         "PackageManager"
       ]
     },
@@ -83,8 +94,8 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/appmanager.png",
       "screenshots": [
         {
-          "caption": "AppManager interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "AppManager main window displaying installed applications and management options",
+          "source": "https://github.com/user-attachments/assets/acc7d1b8-6e07-4540-af6c-cf3167345252"
         }
       ]
     }

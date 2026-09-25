@@ -12,7 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "HP-15C Simulator is an authentic software reproduction of the classic Hewlett-Packard HP-15C programmable scientific pocket calculator from the 1980s. It emulates the authentic microprocessor behavior and microcode algorithms."
+              "value": "HP-15C Simulator provides a faithful recreation of the classic Hewlett-Packard HP-15C high-end scientific programmable pocket calculator. It accurately simulates the calculator's computational algorithms, Reverse Polish Notation (RPN) logic, matrix operations, complex number support, numerical integration, and programming capabilities."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It accurately reproduces Reverse Polish Notation (RPN), matrix math operations, complex number arithmetic, numerical integration, and keystroke programming."
+              "value": "Packaged for maximum portability on Linux, the simulator runs out-of-the-box across a wide variety of distributions with integrated self-updating functionality."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Authentic LCD display rendering with original segment layout and status flags"
+                "value": "Authentic emulation of the HP-15C scientific calculator interface and keypad layout"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Four-level Reverse Polish Notation (RPN) stack evaluation model"
+                "value": "Reverse Polish Notation (RPN) stack-based calculation engine"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full matrix algebra operations and complex number arithmetic functions"
+                "value": "Full support for complex numbers, matrix mathematics, and numerical integration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Keystroke macro programming with conditional branching and memory registers"
+                "value": "Built-in program memory and keystroke sequence execution"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Persistent state memory preserving registers and programs across application restarts"
+                "value": "Standalone, dependency-free execution compatible with modern and legacy Linux distributions"
               }
             ]
           ]
@@ -69,14 +69,18 @@
       "homepage": "https://hp-15c.homepage.t-online.de",
       "repository": "https://github.com/pkgforge-dev/HP-15C-Simulator-AppImage",
       "keywords": [
-        "hp-15c",
-        "appimage",
-        "anylinux"
+        "calculator",
+        "scientific",
+        "rpn",
+        "hewlett-packard",
+        "simulation",
+        "emulator",
+        "math",
+        "matrix"
       ],
       "categories": [
-        "Utility",
-        "Calculator",
-        "Science"
+        "Science",
+        "Utility"
       ]
     },
     "media": {

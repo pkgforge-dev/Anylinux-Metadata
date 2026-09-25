@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.linuxmint.bulky",
       "name": "Bulky",
-      "summary": "Bulky is a simple and powerful bulk file and folder renaming utility developed for the XApps project by the Linux Mint team",
+      "summary": "Rename multiple files and directories in bulk with preview support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Bulky is a simple and powerful bulk file and folder renaming utility developed for the XApps project by the Linux Mint team. It allows users to rename multiple files simultaneously using a variety of pattern matching and substitution rules."
+              "value": "Bulky is a dedicated bulk file and folder renaming utility created by the Linux Mint team under the XApps project. It allows users to rename multiple files and directories at once across desktop environments like Cinnamon, MATE, and GNOME."
             }
           ]
         },
@@ -22,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Find and replace text within filenames with regular expression support"
+                "value": "Batch renaming for both files and directories"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Add prefixes, suffixes, or insert text at specific character positions"
+                "value": "Cross-desktop compatibility across Cinnamon, MATE, GNOME, and other Linux desktop environments"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modify text case including uppercase, lowercase, title case, and camel case"
+                "value": "Side-by-side preview of original names and modified names before applying changes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Sequential numbering with customizable starting points and step increments"
+                "value": "Support for finding, replacing, and reformatting character patterns"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Instant live preview of proposed name changes before applying them to disk"
+                "value": "Seamless integration with file managers as part of the XApps ecosystem"
               }
             ]
           ]
@@ -60,21 +60,27 @@
       "homepage": "https://github.com/linuxmint/bulky",
       "repository": "https://github.com/pkgforge-dev/Bulky-AppImage",
       "keywords": [
-        "bulky",
-        "appimage",
-        "anylinux"
+        "rename",
+        "batch",
+        "xapps",
+        "cinnamon",
+        "mate",
+        "gnome",
+        "files",
+        "directories",
+        "reorganize"
       ],
       "categories": [
         "Utility",
-        "FileManager",
-        "FileTools"
+        "System",
+        "FileTransfer"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/bulky.png",
       "screenshots": [
         {
-          "caption": "Bulky interface screenshot 1",
+          "caption": "Main Bulky interface displaying files queued for bulk renaming with side-by-side preview",
           "source": "https://github.com/user-attachments/assets/d8ba440b-5223-4387-904d-62beffec6711"
         }
       ]

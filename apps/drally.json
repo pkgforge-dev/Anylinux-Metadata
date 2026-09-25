@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.urxp.drally",
       "name": "dRally",
-      "summary": "dRally is an open-source source port of Death Rally (1996), the classic top-down vehicular combat and racing game developed by Remedy Entertainment",
+      "summary": "Play the classic 1996 top-down vehicular combat and racing game natively",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "dRally is an open-source source port of Death Rally (1996), the classic top-down vehicular combat and racing game developed by Remedy Entertainment. It allows fans to play the legendary action racer natively on modern operating systems."
+              "value": "dRally is an open-source native port of Death Rally (1996), the classic top-down vehicular combat racing game originally developed by Remedy Entertainment. Built using SDL2 and C, the project modernizes the game engine to run natively on Linux and BSD operating systems while preserving authentic gameplay."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port requires the original Death Rally game data assets to operate, providing faithful recreation of original mechanics, full audio playback, cinematic sequences, and single-player tournament progression."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern operating systems with high-resolution scaling"
+                "value": "Native SDL2-powered rendering and input for modern Linux and BSD platforms"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserves all original tracks, weapons, underground black market, and rivalries"
+                "value": "Support for original cinematics, animations, and CD-ROM cutscenes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Supports smooth keyboard, gamepad, and custom controller input"
+                "value": "Classic top-down vehicular racing, vehicle upgrades, and weapon combat"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity audio playback reproducing the energetic soundtrack and explosive sound effects"
+                "value": "Playback of original in-game music tracks and sound effects"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original Death Rally game data (including the free release)"
+                "value": "Compatibility with original freeware and registered Death Rally asset archives"
               }
             ]
           ]
@@ -60,15 +69,18 @@
       "homepage": "https://github.com/urxp/dRally",
       "repository": "https://github.com/pkgforge-dev/dRally-AppImage",
       "keywords": [
-        "drally",
-        "appimage",
-        "anylinux"
+        "death rally",
+        "racing",
+        "vehicular combat",
+        "remedy",
+        "source port",
+        "sdl2",
+        "retro gaming",
+        "arcade"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame",
-        "SportsGame"
+        "2DGraphics"
       ]
     },
     "media": {

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.xoreos.xoreos",
       "name": "xoreos",
-      "summary": "xoreos is an open-source reimplementation of BioWare's Aurora engine and its successors",
+      "summary": "Reimplementation of BioWare's Aurora engine and its successors",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "xoreos is an open-source reimplementation of BioWare's Aurora engine and its successors. The goal is to provide a unified, native open-source engine to play classic Western RPGs on modern platforms."
+              "value": "xoreos is an open-source reimplementation of BioWare's Aurora engine and its derivatives, developed to run games built with these engines in a portable manner across modern platforms. It focuses on reverse-engineering the foundational formats, graphics rendering, audio subsystems, and resource management pipelines."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "While full gameplay mechanics remain in development, xoreos enables exploration and verification of original game assets through internal spectator viewing modes and developmental interfaces."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Supports Star Wars: Knights of the Old Republic I and II"
+                "value": "Targeted support for Neverwinter Nights, Neverwinter Nights 2, and Jade Empire"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Compatible with Neverwinter Nights, Jade Empire, and Dragon Age: Origins"
+                "value": "Support for Star Wars: Knights of the Old Republic and its sequel The Sith Lords"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modernized OpenGL graphics rendering with high-resolution support"
+                "value": "Compatibility targets for The Witcher, Sonic Chronicles, and Dragon Age I and II"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native cross-platform execution eliminating legacy DirectX and OS compatibility issues"
+                "value": "Spectator mode to fly around and examine area geometry and scene objects"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original game installation data files to play"
+                "value": "Built-in subsystems for sound playback, basic resource handling, and archive reading"
               }
             ]
           ]
@@ -60,14 +69,19 @@
       "homepage": "https://github.com/xoreos/xoreos",
       "repository": "https://github.com/pkgforge-dev/xoreos-AppImage",
       "keywords": [
-        "xoreos",
-        "appimage",
-        "anylinux"
+        "bioware",
+        "aurora",
+        "engine",
+        "reimplementation",
+        "rpg",
+        "odyssey",
+        "electron",
+        "emulator"
       ],
       "categories": [
         "Game",
-        "Emulator",
-        "RolePlaying"
+        "Development",
+        "3DGraphics"
       ]
     },
     "media": {

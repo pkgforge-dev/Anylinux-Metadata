@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.openswe1r.openswe1r",
       "name": "OpenSWE1R",
-      "summary": "OpenSWE1R is an open-source modern port and reimplementation of Star Wars Episode I: Racer (1999)",
+      "summary": "Open-source port and reimplementation of Star Wars Episode I: Racer",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OpenSWE1R is an open-source modern port and reimplementation of Star Wars Episode I: Racer (1999). It allows players to pilot high-speed podracers natively on modern Linux PCs with modern display and controller support."
+              "value": "OpenSWE1R is an open-source reimplementation and modern port of the classic 1999 racing game Star Wars: Episode I Racer. It combines API translation with x86 CPU emulation, dynamically patching in native open-source code while executing original binaries to achieve cross-platform portability."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "While the project aims to eventually replace all proprietary game logic with clean, portable C11 code, original game data files and assets are required to play."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native Linux execution with support for high resolutions and modern widescreen aspect ratios"
+                "value": "Cross-platform runtime abstraction using SDL2, GLEW, and OpenAL"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Smooth, uncapped framerate rendering eliminating vintage frame rate drops"
+                "value": "Built-in x86 CPU emulation powered by the Unicorn-Engine backend"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern gamepad and flight stick support with analog steering and throttle"
+                "value": "Modern rendering pipeline built on OpenGL 3.3 Core"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity audio playback reproducing original sound effects and John Williams score"
+                "value": "Dynamic runtime binary patching for incremental reimplementation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original Star Wars Episode I: Racer game data files to play"
+                "value": "Native support for original Windows game data and assets"
               }
             ]
           ]
@@ -60,21 +69,25 @@
       "homepage": "https://github.com/OpenSWE1R/openswe1r",
       "repository": "https://github.com/pkgforge-dev/OpenSWE1R-AppImage",
       "keywords": [
-        "openswe1r",
-        "appimage",
-        "anylinux"
+        "starwars",
+        "racer",
+        "podracing",
+        "racing",
+        "reimplementation",
+        "emulator",
+        "opengl",
+        "sdl2"
       ],
       "categories": [
         "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "3DGraphics"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/openswe1r.png",
       "screenshots": [
         {
-          "caption": "OpenSWE1R interface screenshot 1",
+          "caption": "OpenSWE1R running Star Wars Episode I: Racer on Linux",
           "source": "https://i.imgur.com/LAqHPgh.png"
         }
       ]

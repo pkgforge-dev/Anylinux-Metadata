@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.itsmattkc.isle_isle_portable",
       "name": "ISLE Portable",
-      "summary": "ISLE is an open-source modern source port of LEGO Island (1997), the beloved open-world adventure game",
+      "summary": "Open-source decompilation and modern source port of LEGO Island",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ISLE is an open-source modern source port of LEGO Island (1997), the beloved open-world adventure game. It restores compatibility with modern 64-bit operating systems, high-resolution screens, and modern audio hardware."
+              "value": "ISLE is an open-source recreation and instruction-matching decompilation of the classic 1997 PC game LEGO Island. Written in C++ and managed with CMake, the project aims to recreate the original game logic and engine with machine-code precision, providing an accurate, modifiable, and portable codebase for modern platforms."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By reconstructing the original architecture, ISLE enables preservation, modernization, and porting of the original open-world island adventure while supporting integration with original game assets."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern operating systems without legacy DirectX limitations"
+                "value": "Instruction-matching decompilation for high accuracy against original binaries"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and arbitrary resolution rendering with scalable user interfaces"
+                "value": "Fully decompiled executable behaving identically to the retail release"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Corrected physics timing and animation glitches caused by modern CPU clock speeds"
+                "value": "CMake build system providing cross-platform configuration flexibility"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for modern gamepads and remappable keyboard controls"
+                "value": "Compatibility for pairing recompiled executables with original game data files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original LEGO Island game files to run"
+                "value": "Extensible codebase designed for future improvements, modding, and platform ports"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/itsmattkc/isle",
       "repository": "https://github.com/pkgforge-dev/isle-portable-AppImage-Enhanced",
       "keywords": [
-        "isle-portable",
-        "appimage",
-        "anylinux"
+        "decompilation",
+        "reverse-engineering",
+        "source port",
+        "adventure",
+        "retro",
+        "open-world",
+        "game engine"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "AdventureGame"
+        "Development",
+        "Building"
       ]
     },
     "media": {

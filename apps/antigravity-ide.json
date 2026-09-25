@@ -5,14 +5,23 @@
     "metadata": {
       "id": "google.antigravity.antigravity_ide",
       "name": "Antigravity IDE",
-      "summary": "Google Antigravity IDE is the dedicated integrated development environment designed around Google DeepMind's agentic AI coding assistant",
+      "summary": "Agentic AI-powered integrated development environment designed around Google DeepMind coding assistance",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Google Antigravity IDE is the dedicated integrated development environment designed around Google DeepMind's agentic AI coding assistant. It delivers an AI-native pair programming workspace that combines powerful code editing with autonomous agent-driven development workflows."
+              "value": "Antigravity IDE is a dedicated integrated development environment designed to provide deep integration with Google DeepMind agentic AI coding assistants. It combines modern code editing, automated project reasoning, and interactive pair-programming capabilities to streamline software engineering workflows."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for maximum portability across Linux distributions, the environment delivers full runtime dependencies without external container requirements or mandatory FUSE filesystem support."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Agent-first editor interface optimized for interactive collaboration with AI"
+                "value": "Native integration with DeepMind agentic coding workflows and pair programming"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in multi-turn task planner, artifact review, and visual progress tracking"
+                "value": "Fully self-contained runtime environment compatible across glibc and musl distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Deep workspace context awareness with real-time code indexing and diagnostics"
+                "value": "Standalone execution without requiring FUSE setup or container layers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated terminal, diff reviewer, and automated change applicator"
+                "value": "Integrated self-updating mechanism with automated new release notifications"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extensible via custom skills, MCP tools, and personalized engineering rules"
+                "value": "Seamless interoperability with external package managers and package update managers"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://antigravity.google/download",
       "repository": "https://github.com/pkgforge-dev/antigravity-ide-appimage",
       "keywords": [
-        "antigravity-ide",
-        "appimage",
-        "anylinux"
+        "editor",
+        "development",
+        "coding",
+        "assistant",
+        "deepmind",
+        "programming",
+        "developer"
       ],
       "categories": [
         "Development",
         "IDE",
-        "TextEditor"
+        "Building"
       ]
     },
     "media": {

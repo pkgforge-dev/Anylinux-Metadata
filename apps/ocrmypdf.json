@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.ocrmypdf.ocrmypdf",
       "name": "ocrmypdf",
-      "summary": "OCRmyPDF adds an optical character recognition (OCR) text layer to scanned PDF files",
+      "summary": "Add an optical character recognition (OCR) text layer to scanned PDF files",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OCRmyPDF adds an optical character recognition (OCR) text layer to scanned PDF files. It transforms image-only PDFs into searchable, selectable, and accessible documents that can be highlighted and indexed by desktop search engines."
+              "value": "OCRmyPDF adds a searchable optical character recognition (OCR) text layer to scanned PDF files and images, making them easy to search or copy and paste from. Utilizing the powerful Tesseract OCR engine, it processes documents across multiple CPU cores to ensure rapid, dependable, and privacy-preserving conversions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for archival stability, it generates validated PDF/A documents and can perform lossless insertions without disrupting existing document content or degrading image resolution."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Embeds high-accuracy text layers using the Tesseract OCR engine"
+                "value": "Generates searchable, standard-compliant PDF/A files from standard PDFs or images"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Keeps original scanned page images intact without losing image quality"
+                "value": "Leverages Tesseract OCR engine to recognize more than 100 languages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automatically deskews, cleans up, and corrects orientation of scanned pages"
+                "value": "Deskews, cleans, and corrects page rotation prior to optical character recognition"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Validates PDF/A compliance for long-term document archiving"
+                "value": "Accurately places OCR text underneath original images to enable clean copying and pasting"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Batch processes multi-page documents utilizing multiple CPU cores"
+                "value": "Optimizes embedded images while preserving original resolution to reduce output file size"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Distributes processing across all available CPU cores to handle documents with thousands of pages"
               }
             ]
           ]
@@ -60,23 +75,29 @@
       "homepage": "https://github.com/ocrmypdf/OCRmyPDF",
       "repository": "https://github.com/pkgforge-dev/ocrmypdf-appimage",
       "keywords": [
-        "ocrmypdf",
-        "appimage",
-        "anylinux"
+        "ocr",
+        "pdf",
+        "pdfa",
+        "tesseract",
+        "scanner",
+        "searchable",
+        "deskew",
+        "document"
       ],
       "categories": [
         "Office",
+        "Utility",
         "OCR",
-        "Publishing",
-        "ConsoleOnly"
+        "Scanning",
+        "Publishing"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/ocrmypdf.png",
       "screenshots": [
         {
-          "caption": "ocrmypdf interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "OCRmyPDF terminal execution and processing demonstration",
+          "source": "https://raw.githubusercontent.com/ocrmypdf/OCRmyPDF/main/misc/screencast/demo.svg"
         }
       ]
     }

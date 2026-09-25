@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.azo234.np2kai",
       "name": "Neko Project II Kai",
-      "summary": "NEC PC-9801 series computer emulator supporting extended architecture and sound hardware",
+      "summary": "Emulate NEC PC-9801 and PC-9821 series computers with extended architecture support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Neko Project II Kai (NP2kai) is a mature open-source emulator for the iconic Japanese NEC PC-9801 and PC-9821 personal computer systems."
+              "value": "Neko Project II Kai is an open-source emulator for the NEC PC-9801 and PC-9821 series of Japanese personal computers. Built on SDL and modern C++, it accurately reproduces legacy x86 architecture alongside sound, display, and peripheral hardware for retrocomputing software and game preservation."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It provides emulation for x86 CPUs, GDC display controllers, floppy and hard disk disk controllers, and various FM sound expansions including PC-9801-26K and 86 sound boards."
+              "value": "The emulator features flexible architecture configurations, extensive media emulation, and support for running as a standalone SDL application or a Libretro core across diverse operating systems."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Accurate emulation of NEC PC-9801/9821 CPU instructions and timing cycles"
+                "value": "Configurable processor cores with support for Intel 80286 and IA-32 instruction sets"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for PC-98 GDC graphics architecture, 16-color, and 256-color display modes"
+                "value": "Flexible disk emulation handling floppy disk images (FDD) and hard disk images (HDD)"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-quality FM sound synthesis modeling YM2203 (OPN) and YM2608 (OPNA) sound chips"
+                "value": "In-emulator configuration menu for on-the-fly disk swapping via keyboard, mouse, or gamepad"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Comprehensive floppy disk (D88, FDI) and hard disk (HDI, NHD) image support"
+                "value": "Multi-platform audio and visual rendering using SDL2 and SDL2_mixer"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "SDL2-powered graphical frontend with responsive gamepad and mouse mapping"
+                "value": "Libretro core integration for compatibility with frontend managers like RetroArch"
               }
             ]
           ]
@@ -69,13 +69,20 @@
       "homepage": "https://github.com/AZO234/NP2kai",
       "repository": "https://github.com/AZO234/NP2kai",
       "keywords": [
-        "np2kai",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "emulation",
+        "pc98",
+        "pc9801",
+        "pc9821",
+        "nec",
+        "retrocomputing",
+        "libretro",
+        "sdl2"
       ],
       "categories": [
         "System",
-        "Emulator"
+        "Game",
+        "HardwareSettings"
       ]
     },
     "media": {

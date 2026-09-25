@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.samueru_sama.playerctl_appimage_playerctl",
       "name": "playerctl",
-      "summary": "MPRIS media player command-line controller, unofficial AppImage",
+      "summary": "Command-line controller and library for media players implementing the MPRIS D-Bus interface",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "MPRIS media player command-line controller, unofficial AppImage."
+              "value": "Playerctl is a comprehensive command-line utility and library designed to control media players that implement the MPRIS D-Bus interface specification. It provides a flexible interface to send playback commands, inspect player statuses, and track media events across a wide range of desktop audio and video players."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged as a fully portable, dependency-bundled binary that requires no external runtime configuration, it operates seamlessly across various Linux distributions and desktop environments."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Standard playback controls including play, pause, toggle playback, stop, next, and previous"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Query and track metadata such as artist, album, title, track length, and playback status"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Position seeking and volume adjustment across active media players"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for selecting specific player instances or automatically managing all running MPRIS players"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Event-driven command execution to monitor status changes and track changes in real time"
+              }
+            ]
           ]
         }
       ],
@@ -25,14 +69,17 @@
       "homepage": "https://github.com/Samueru-sama/playerctl-AppImage",
       "repository": "https://github.com/pkgforge-dev/playerctl-AppImage",
       "keywords": [
-        "playerctl",
-        "appimage",
-        "anylinux"
+        "mpris",
+        "dbus",
+        "media",
+        "playback",
+        "controller",
+        "audio",
+        "cli"
       ],
       "categories": [
         "AudioVideo",
-        "Player",
-        "ConsoleOnly"
+        "Audio"
       ]
     },
     "media": {

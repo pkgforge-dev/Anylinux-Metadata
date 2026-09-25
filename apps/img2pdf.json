@@ -5,14 +5,14 @@
     "metadata": {
       "id": "de.mister_muffin.img2pdf",
       "name": "img2pdf",
-      "summary": "Lossless conversion of raster images into PDF format without re-encoding image streams",
+      "summary": "Losslessly convert raster images into PDF format without re-encoding image streams",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "img2pdf is an open-source utility designed to convert raster images directly into PDF documents without recompressing pixel data. Unlike conventional PDF converters, img2pdf preserves original image bytes losslessly."
+              "value": "img2pdf is a specialized command-line utility designed to convert raster image formats into PDF documents directly without re-encoding existing image data. By embedding existing JPEG, JPEG2000, PNG, and TIFF streams directly into PDF wrappers, the software preserves original image quality and file size without introducing generation loss."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The tool embeds JPEG, JPEG 2000, PNG, and TIFF streams directly into the PDF structure, ensuring identical visual fidelity, instantaneous conversion, and minimal file size."
+              "value": "Distributed as a standalone portable package, this application bundles all runtime dependencies to ensure reliable operation across various Linux distributions without requiring system-level installation or FUSE filesystem layers."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Bit-for-bit lossless conversion embedding raw image streams directly into PDF"
+                "value": "Performs true lossless image conversion without recompressing original image streams"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Zero quality degradation and zero re-encoding overhead for JPEG and PNG inputs"
+                "value": "Significantly faster processing speeds and lower memory overhead than conventional raster-to-PDF tools"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Precise page layout controls including margins, paper formats, and aspect ratios"
+                "value": "Direct preservation of original image color spaces, palettes, and metadata"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multi-page PDF generation from sequential image inputs with minimal memory usage"
+                "value": "Bundled runtime architecture running independently without requiring FUSE support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Standard command-line interface with optional graphical interface support"
+                "value": "Integrated self-updater capable of detecting new package releases"
               }
             ]
           ]
@@ -69,14 +69,20 @@
       "homepage": "https://gitlab.mister-muffin.de/josch/img2pdf",
       "repository": "https://gitlab.mister-muffin.de/josch/img2pdf",
       "keywords": [
-        "img2pdf",
-        "appimage",
-        "anylinux"
+        "pdf",
+        "converter",
+        "raster",
+        "lossless",
+        "jpeg",
+        "tiff",
+        "png",
+        "document"
       ],
       "categories": [
-        "Office",
+        "Graphics",
         "Publishing",
-        "Utility"
+        "RasterGraphics",
+        "2DGraphics"
       ]
     },
     "media": {

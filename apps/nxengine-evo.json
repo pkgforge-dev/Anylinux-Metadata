@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.nxengine.nxengine_evo",
       "name": "NXEngine-evo",
-      "summary": "A somewhat upgraded/refactored version of NXEngine",
+      "summary": "Upgraded open-source game engine recreation of Cave Story with modern enhancements",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "A somewhat upgraded/refactored version of NXEngine."
+              "value": "NXEngine-evo is an enhanced, refactored open-source rewrite of NXEngine built with SDL2. It delivers a modern, high-fidelity recreation of the classic platform-adventure game Cave Story with cleaner code and extensive gameplay improvements."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine brings modern display capabilities, broader controller support, and expanded audiovisual customization options to the original experience."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full HD and proper widescreen resolution support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Upgraded modern main menu and animated character portraits"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Force feedback rumble support and localization capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Custom soundtrack integration and initial modding support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Numerous gameplay bug fixes and SDL2 engine overhaul"
+              }
+            ]
           ]
         }
       ],
@@ -25,21 +69,24 @@
       "homepage": "https://github.com/nxengine/nxengine-evo",
       "repository": "https://github.com/pkgforge-dev/NXEngine-evo-AppImage-Enhanced",
       "keywords": [
-        "nxengine-evo",
-        "appimage",
-        "anylinux"
+        "cavestory",
+        "doukutsu",
+        "platformer",
+        "engine",
+        "sdl2",
+        "retro",
+        "metroidvania",
+        "remake"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "AdventureGame"
+        "Game"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nxengine-evo.png",
       "screenshots": [
         {
-          "caption": "NXEngine-evo interface screenshot 1",
+          "caption": "NXEngine-evo in-game gameplay showing character interaction and widescreen rendering",
           "source": "https://raw.githubusercontent.com/nxengine/nxengine-evo/master/screenshot.png"
         }
       ]

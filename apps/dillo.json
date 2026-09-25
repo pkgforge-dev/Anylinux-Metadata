@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.dillo_browser.dillo",
       "name": "Dillo",
-      "summary": "Dillo is an ultra-fast, minimalist graphical web browser engineered for efficiency and low resource consumption",
+      "summary": "Lightweight and fast graphical web browser focused on privacy and security",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Dillo is an ultra-fast, minimalist graphical web browser engineered for efficiency and low resource consumption. Built on FLTK, it loads web pages almost instantaneously and functions smoothly on low-end or vintage hardware."
+              "value": "Dillo is a multi-platform graphical web browser built using the FLTK 1.3 GUI toolkit, engineered for exceptional speed, minimal resource usage, and a small memory footprint."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It is developed with a strict focus on personal security and user privacy, offering an efficient web navigation experience suitable for both modern systems and resource-constrained hardware."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Extremely lightweight footprint consuming only a few megabytes of memory"
+                "value": "Built using the lightweight FLTK 1.3 toolkit for responsive user interface rendering"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Fast HTML rendering engine supporting CSS styling and web images"
+                "value": "Ultra-low memory footprint and efficient CPU utilization"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integrated privacy features blocking third-party tracking cookies by default"
+                "value": "Engineered with a focus on personal privacy and browsing security"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Tabbed browsing interface with simple navigation and bookmark management"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Written in clean C and C++ with virtually zero external library bloat"
+                "value": "Cross-platform graphical rendering engine"
               }
             ]
           ]
@@ -60,9 +63,14 @@
       "homepage": "https://github.com/dillo-browser/dillo",
       "repository": "https://github.com/pkgforge-dev/dillo-appimage",
       "keywords": [
-        "dillo",
-        "appimage",
-        "anylinux"
+        "browser",
+        "web",
+        "fltk",
+        "lightweight",
+        "privacy",
+        "fast",
+        "minimalist",
+        "html"
       ],
       "categories": [
         "Network",
@@ -73,8 +81,8 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dillo.png",
       "screenshots": [
         {
-          "caption": "Dillo interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Dillo web browser displaying the official website",
+          "source": "https://raw.githubusercontent.com/dillo-browser/dillo/master/doc/dillo.png"
         }
       ]
     }

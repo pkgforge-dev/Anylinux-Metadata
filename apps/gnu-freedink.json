@@ -1,0 +1,112 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.gnu.gnu_freedink",
+      "name": "GNU FreeDink",
+      "summary": "Free, portable open-source reimplementation of the humorous action-RPG Dink Smallwood",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "GNU FreeDink is a free, portable open-source engine reimplementation of Dink Smallwood, the classic comedic action role-playing game originally developed by Robinson Technologies. It faithfully executes the original game and thousands of community-made adventures while providing full cross-platform compatibility."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Faithful recreation of the original Dink Smallwood action-RPG game engine"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for user-created D-Mods and community expansion modules"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Completely self-contained runtime with bundled dependencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced compatibility across modern and legacy Linux distributions without FUSE requirements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in update notification system with automatic detection of package managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "GNU FreeDink Developers",
+        "url": "https://www.gnu.org/software/freedink/"
+      },
+      "homepage": "https://www.gnu.org/software/freedink/",
+      "repository": "https://github.com/pkgforge-dev/GNU-FreeDink-AppImage",
+      "keywords": [
+        "freedink",
+        "dink smallwood",
+        "rpg",
+        "action",
+        "adventure",
+        "engine",
+        "dmod",
+        "game"
+      ],
+      "categories": [
+        "Game",
+        "2DGraphics"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gnu-freedink.png",
+      "screenshots": [
+        {
+          "caption": "GNU FreeDink interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/GNU-FreeDink-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

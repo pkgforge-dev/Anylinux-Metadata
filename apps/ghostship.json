@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.sm64pc.sm64ex_ghostship",
       "name": "Ghostship",
-      "summary": "Ghostship is an enhanced native PC port of Super Mario 64, forked from the sm64ex project",
+      "summary": "Enhanced native PC port of Super Mario 64 with modern features and enhancements",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Ghostship is an enhanced native PC port of Super Mario 64, forked from the sm64ex project. Statically compiling the decompiled N64 source code into a native executable, it provides modern graphics and unlocked performance on PC."
+              "value": "Ghostship is an enhanced native PC port of Super Mario 64 based on the sm64ex project. It provides an optimized, native platforming experience on modern systems without requiring emulation, featuring improved performance and extensive configurability."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port introduces modern convenience and graphics upgrades while preserving authentic game mechanics and compatibility with original assets and save files."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native 60 FPS and uncapped framerate rendering without emulation lag"
+                "value": "In-game options menu with customizable key and controller button remapping"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen and ultrawide support with customizable camera controls"
+                "value": "Analog camera and mouse look control support powered by Puppycam"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern analog controller, keyboard, and mouse control schemes"
+                "value": "Support for external texture packs and custom assembled soundbanks"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for community texture packs, model replacements, and custom patches"
+                "value": "Multiple rendering backends including OpenGL and configurable drawing distances"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires an authentic Super Mario 64 ROM for asset extraction"
+                "value": "Cross-compatibility with emulator and port save files, alongside text-based save support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in cheats menu and option to skip introductory cutscenes"
               }
             ]
           ]
@@ -60,14 +75,18 @@
       "homepage": "https://github.com/sm64pc/sm64ex",
       "repository": "https://github.com/pkgforge-dev/Ghostship-AppImage-Enhanced",
       "keywords": [
-        "ghostship",
-        "appimage",
-        "anylinux"
+        "sm64",
+        "sm64ex",
+        "mario",
+        "platformer",
+        "port",
+        "puppycam",
+        "opengl",
+        "retro"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "AdventureGame"
+        "3DGraphics"
       ]
     },
     "media": {

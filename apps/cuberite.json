@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.cuberite.cuberite",
       "name": "Cuberite",
-      "summary": "Cuberite is a custom, high-performance Minecraft game server written in C++",
+      "summary": "Lightweight and high-performance Minecraft-compatible multiplayer game server written in C++",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Cuberite is a custom, high-performance Minecraft game server written in C++. Designed for speed and minimal resource usage, it handles hundreds of concurrent players on modest hardware while supporting extensible Lua plugins."
+              "value": "Cuberite is a fast, custom Minecraft-compatible multiplayer server written in C++. Designed from the ground up to be efficient with memory and CPU usage, it provides a lightweight alternative to the official server software while maintaining compatibility with the Minecraft Java Edition client."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "With support extending from standard desktop systems to low-power devices like Raspberry Pis and Android hardware, Cuberite offers exceptional efficiency alongside an extensible Lua scripting environment."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Extremely lightweight and fast execution written in modern C++"
+                "value": "Compatible with Minecraft Java Edition clients across release versions 1.8 through 1.12.2"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low memory footprint compared to traditional Java-based Minecraft servers"
+                "value": "Highly optimized C++ architecture minimizing CPU utilization and memory footprint"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Powerful Lua scripting API for developing custom server plugins and mechanics"
+                "value": "Extensible Lua plugin API for developing custom game mechanics and administrative features"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in web administration interface for server monitoring and player management"
+                "value": "Cross-platform support suitable for standard servers, single-board computers, and embedded devices"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cross-platform architecture compatible with multiple Minecraft client versions"
+                "value": "Automated build and compilation support with comprehensive dependency verification"
               }
             ]
           ]
@@ -60,13 +69,16 @@
       "homepage": "https://github.com/cuberite/cuberite",
       "repository": "https://github.com/pkgforge-dev/Cuberite-AppImage",
       "keywords": [
-        "cuberite",
-        "appimage",
-        "anylinux"
+        "minecraft",
+        "server",
+        "multiplayer",
+        "voxel",
+        "sandbox",
+        "lua",
+        "game server"
       ],
       "categories": [
         "Game",
-        "GameTool",
         "Network"
       ]
     },

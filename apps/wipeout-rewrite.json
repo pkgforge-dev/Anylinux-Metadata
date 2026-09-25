@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.phoboslab.wipeout_rewrite",
       "name": "WipEout Rewrite",
-      "summary": "wipEout Rewrite is an open-source reverse-engineered C port of the iconic 1995 futuristic anti-gravity racing game wipEout for the Sony PlayStation",
+      "summary": "Re-implementation of the classic 1995 futuristic anti-gravity racing game",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "wipEout Rewrite is an open-source reverse-engineered C port of the iconic 1995 futuristic anti-gravity racing game wipEout for the Sony PlayStation. It brings the high-octane techno racer natively to modern PCs."
+              "value": "wipEout Rewrite is an open-source C re-implementation of the iconic 1995 anti-gravity combat racing game originally released for the Sony PlayStation. It brings the high-speed futuristic racing experience to modern platforms with native performance and updated rendering pipelines."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine is architected with multiple backend options, allowing it to adapt to diverse graphical APIs, legacy drivers, and input configurations across modern operating systems."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit execution delivering silky-smooth 60+ FPS anti-gravity racing"
+                "value": "Native SDL2 platform backend offering full support for gamepads and joysticks"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution widescreen rendering with increased draw distance and enhanced textures"
+                "value": "Modern rendering through OpenGL 3.3 via the lightweight Sokol backend"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Accurate anti-gravity vehicle physics and airbrake handling mechanics"
+                "value": "Legacy OpenGL 2.x and GLX backend support for compatibility with older hardware"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full modern gamepad and racing controller support with customizable button mapping"
+                "value": "Cross-platform anti-gravity racing physics and track simulation accurate to the original PSX title"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Includes all original championship tracks, weapon pickups, and iconic techno soundtrack"
+                "value": "CMake and Makefile build systems designed for straightforward compilation on Linux and Unix-like systems"
               }
             ]
           ]
@@ -60,15 +69,18 @@
       "homepage": "https://github.com/phoboslab/wipeout-rewrite",
       "repository": "https://github.com/pkgforge-dev/wipEout-Rewrite-AppImage",
       "keywords": [
-        "wipeout-rewrite",
-        "appimage",
-        "anylinux"
+        "wipeout",
+        "racing",
+        "playstation",
+        "psx",
+        "sdl2",
+        "sokol",
+        "opengl",
+        "retro"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame",
-        "SportsGame"
+        "3DGraphics"
       ]
     },
     "media": {

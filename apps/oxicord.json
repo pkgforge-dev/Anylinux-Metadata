@@ -12,7 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "Oxicord is a lightweight terminal user interface (TUI) Discord client written in Rust. It offers a distraction-free, resource-efficient way to interact with Discord channels directly from the command line."
+              "value": "Oxicord is a lightweight and performant terminal-based Discord client developed in Rust. Built with modern terminal user interface principles, it offers an efficient, keyboard-centric way to connect to Discord without the heavy resource usage of standard web or Electron applications."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "Designed for terminal power users, Oxicord features Vim-inspired navigation, low CPU and RAM consumption, and rich text chat formatting."
+              "value": "Designed for minimalism and speed, Oxicord provides essential communication tools straight from the command line while integrating cleanly into power-user workflows."
             }
           ]
         },
@@ -31,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Vim-style keybindings for rapid channel navigation, messaging, and scrolling"
+                "value": "High-performance, resource-efficient backend written in pure Rust"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Minimal system resource footprint using a fraction of typical desktop memory"
+                "value": "Responsive terminal user interface for seamless message reading and sending"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for direct messages, guild text channels, mentions, and reactions"
+                "value": "Keyboard-driven navigation optimized for CLI environments and window managers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Clean terminal interface rendering with configurable color themes"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Robust asynchronous networking built on Tokio and Ratatui"
+                "value": "Low memory and CPU consumption compared to Electron-based clients"
               }
             ]
           ]
@@ -69,14 +63,19 @@
       "homepage": "https://github.com/oxicord/oxicord",
       "repository": "https://github.com/oxicord/oxicord",
       "keywords": [
-        "oxicord",
-        "appimage",
-        "anylinux"
+        "discord",
+        "client",
+        "terminal",
+        "tui",
+        "cli",
+        "rust",
+        "chat",
+        "messaging"
       ],
       "categories": [
         "Network",
-        "InstantMessaging",
-        "Chat"
+        "Chat",
+        "InstantMessaging"
       ]
     },
     "media": {

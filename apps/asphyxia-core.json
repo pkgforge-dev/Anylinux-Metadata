@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.asphyxia_core.core_asphyxia_core",
       "name": "Asphyxia CORE",
-      "summary": "Asphyxia CORE is a modular, high-performance server emulator and network backend designed for arcade rhythm games",
+      "summary": "Modular, high-performance server emulator and network backend designed for arcade rhythm games",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Asphyxia CORE is a modular, high-performance server emulator and network backend designed for arcade rhythm games. Built with TypeScript and Node.js, it emulates online network services, score tracking, card authentication, and game configuration for Bemani arcade titles."
+              "value": "Asphyxia CORE is a modular, high-performance custom network server and backend emulator engineered for arcade rhythm games. Built for speed and extensibility, it recreates essential network services and game profiles to power modern rhythm game setups."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "It provides a robust plugin architecture allowing community developers to implement custom network protocols, title support, and event tracking seamlessly across different titles."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Modular plugin architecture supporting multiple arcade rhythm game titles"
+                "value": "Extensible modular plugin system for supporting diverse game titles and custom game handlers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Card and profile management with persistent save data and score tracking"
+                "value": "High-performance network backend designed for low latency profile saving and score synchronization"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Web-based management dashboard for user configuration and game settings"
+                "value": "Built-in web management interface for profile administration, score tracking, and server configuration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Local and network play support with low latency packet processing"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Cross-platform server backend easily deployable on desktop and server environments"
+                "value": "Lightweight runtime footprint engineered for seamless deployment across varied Linux environments"
               }
             ]
           ]
@@ -60,14 +63,17 @@
       "homepage": "https://github.com/asphyxia-core/core",
       "repository": "https://github.com/pkgforge-dev/asphyxia-core-appimage",
       "keywords": [
-        "asphyxia-core",
-        "appimage",
-        "anylinux"
+        "arcade",
+        "rhythm",
+        "emulator",
+        "server",
+        "backend",
+        "bemani",
+        "network"
       ],
       "categories": [
-        "Network",
-        "GameTool",
-        "Emulator"
+        "Game",
+        "Network"
       ]
     },
     "media": {

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.nagyd.sdlpop",
+      "name": "SDLPoP",
+      "summary": "Classic Prince of Persia (1989) engine port powered by SDL",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "SDLPoP is an open-source port and conversion of the classic 1989 DOS platformer Prince of Persia. Rebuilt through meticulous disassembly and converted to C using SDL2, it brings the original mechanics, animation systems, and gameplay fidelity to modern Linux systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Beyond providing faithful preservation of original level layouts and physics, SDLPoP enhances the retro experience with contemporary quality-of-life enhancements and customization settings."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Quicksave and quickload functionality for seamless progression"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Gameplay recording and replay verification systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern gamepad, joystick, and controller support alongside keyboard controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Flexible video settings including resizable windows and aspect ratio controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated mod folder support for playing custom community levels and tilesets"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Authentic OPL3 sound emulation and native MIDI audio support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "SDLPoP Developers",
+        "url": "https://github.com/NagyD/SDLPoP"
+      },
+      "homepage": "https://github.com/NagyD/SDLPoP",
+      "repository": "https://github.com/pkgforge-dev/SDLPoP-AppImage",
+      "keywords": [
+        "prince of persia",
+        "platformer",
+        "retro",
+        "dos",
+        "sdl2",
+        "emulator",
+        "cinematic",
+        "classic"
+      ],
+      "categories": [
+        "Game",
+        "Midi"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sdlpop.png",
+      "screenshots": [
+        {
+          "caption": "SDLPoP interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/SDLPoP-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

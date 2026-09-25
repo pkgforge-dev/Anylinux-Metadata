@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.zaps166.nfsiise",
       "name": "Need For Speed II SE",
-      "summary": "Need for Speed II SE (Cross-Platform) is a modern open-source wrapper and port for the 1997 racing classic Need for Speed II: Special Edition",
+      "summary": "Modern open-source wrapper and port for Need for Speed II: Special Edition",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Need for Speed II SE (Cross-Platform) is a modern open-source wrapper and port for the 1997 racing classic Need for Speed II: Special Edition. It restores 3D hardware acceleration and modern networking to the vintage racer."
+              "value": "Need for Speed II SE is a modern cross-platform open-source port and wrapper for the classic 1997 racing game Need for Speed II: Special Edition. Powered by SDL2 and hardware-accelerated rendering, it enables the original title to run seamlessly on contemporary operating systems while preserving original gameplay physics and assets."
             }
           ]
         },
@@ -22,31 +22,25 @@
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated 3D graphics utilizing modern OpenGL rendering backends"
+                "value": "Hardware-accelerated 3D rendering with support for OpenGL 1, OpenGL 2, and OpenGL ES 2"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and high-resolution support with correct aspect ratio preservation"
+                "value": "Modernized cross-platform audio, input, and display handling via SDL2"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern TCP/IP and UDP multiplayer support for LAN and online races"
+                "value": "Support for TCP protocol networking alongside classic multiplayer modes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Controller configuration supporting modern analog gamepads and racing wheels"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Requires original Need for Speed II: Special Edition game data files to play"
+                "value": "Multi-architecture compatibility with support for x86 and 32-bit ARM platforms"
               }
             ]
           ]
@@ -60,21 +54,25 @@
       "homepage": "https://github.com/zaps166/NFSIISE",
       "repository": "https://github.com/pkgforge-dev/NFSIISE-AppImage",
       "keywords": [
-        "nfsiise",
-        "appimage",
-        "anylinux"
+        "racing",
+        "arcade",
+        "cars",
+        "opengl",
+        "sdl2",
+        "wrapper",
+        "port",
+        "tcp"
       ],
       "categories": [
         "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "3DGraphics"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/nfsiise.png",
       "screenshots": [
         {
-          "caption": "Need For Speed II SE interface screenshot 1",
+          "caption": "Need for Speed II SE gameplay showing McLaren F1 racing with 3D hardware acceleration",
           "source": "https://raw.githubusercontent.com/zaps166/GitHubCommonContents/master/Screenshots/NFSIISE.png"
         }
       ]

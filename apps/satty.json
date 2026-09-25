@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.satty_org.satty",
+      "name": "Satty",
+      "summary": "Modern, lightweight screenshot annotation tool with hardware acceleration",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Satty is a modern screenshot annotation tool written in Rust and GTK with Adwaita styling. Inspired by tools like Swappy and Flameshot, it provides an intuitive toolset designed for quick and focused image markup on Linux desktops."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Built for wlroots-based Wayland compositors such as Sway, Hyprland, and River, Satty delivers responsive and fluid editing capabilities with minimal interface clutter."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Hardware-accelerated rendering using OpenGL for smooth drawing operations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fullscreen annotation mode with post-shot cropping support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native integration on wlroots-based Wayland compositors"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Minimal and clean interface built with GTK and libadwaita"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct input from file paths or screenshots piped via standard input"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Flexible export options directly to clipboard or filesystem"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Satty Developers",
+        "url": "https://github.com/Satty-org/Satty"
+      },
+      "homepage": "https://github.com/Satty-org/Satty",
+      "repository": "https://github.com/pkgforge-dev/Satty-AppImage",
+      "keywords": [
+        "screenshot",
+        "annotation",
+        "markup",
+        "wayland",
+        "wlroots",
+        "hyprland",
+        "sway",
+        "cropping"
+      ],
+      "categories": [
+        "Graphics",
+        "2DGraphics",
+        "Viewer"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/satty.png",
+      "screenshots": [
+        {
+          "caption": "Satty interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Satty-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

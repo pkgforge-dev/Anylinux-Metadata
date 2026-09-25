@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.mmtrt.foobar2000_appimage_foobar2000",
       "name": "foobar2000",
-      "summary": "foobar2000 is an advanced freeware audio player for the Windows platform",
+      "summary": "Advanced audio player featuring seamless playback, high customization, and broad format support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "foobar2000 is an advanced freeware audio player for the Windows platform."
+              "value": "foobar2000 is an advanced freeware audio player designed for seamless playback, high customization, and extensive audio format support on the desktop. Packaged for portable deployment on Linux systems using Wine-based compatibility, it brings the classic high-performance audio experience to a wide range of distributions without requiring complex setup."
             }
           ]
         },
@@ -21,8 +21,43 @@
           "content": [
             {
               "type": "text",
-              "value": "This version has its own builtin WINE version to run on GNU/Linux."
+              "value": "The portable Linux build bundles all necessary runtime dependencies and incorporates an integrated updater mechanism to ensure seamless maintenance and compatibility across both standard and musl-based environments."
             }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive support for a wide variety of audio formats and seamless gapless playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fully self-contained runtime environment with no external FUSE or container requirements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater that alerts users to new releases and coordinates with system package managers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Broad compatibility across modern, legacy, and musl-based Linux distributions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive interface customization and advanced tagging capabilities"
+              }
+            ]
           ]
         }
       ],
@@ -34,14 +69,20 @@
       "homepage": "https://github.com/mmtrt/foobar2000_AppImage",
       "repository": "https://github.com/pkgforge-dev/foobar2000-AppImage",
       "keywords": [
-        "foobar2000",
-        "appimage",
-        "anylinux"
+        "audio",
+        "player",
+        "music",
+        "playback",
+        "sound",
+        "dsp",
+        "tagging",
+        "flac",
+        "mp3"
       ],
       "categories": [
         "AudioVideo",
         "Audio",
-        "Player"
+        "Midi"
       ]
     },
     "media": {

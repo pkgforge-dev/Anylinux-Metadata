@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.skylersaleh.skyemu",
       "name": "skyemu",
-      "summary": "Game Boy Advance, Game Boy, Game Boy Color, and DS Emulator",
+      "summary": "Game Boy, Game Boy Color, Game Boy Advance, and Nintendo DS emulator",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Game Boy Advance, Game Boy, Game Boy Color, and DS Emulator"
+              "value": "SkyEmu is a low-level Game Boy, Game Boy Color, Game Boy Advance, and Nintendo DS emulator. It is designed to preserve handheld gaming history while providing an accessible user experience that balances emulation accuracy, high performance, and modern usability."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The emulator features advanced visual presentation options such as high-quality upscaling shaders, color correction, and screen ghosting simulation alongside comprehensive developer and debugging tools."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Highly accurate Game Boy Advance emulation alongside Game Boy, Game Boy Color, and DS support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Game controller and rumble support with customizable keybindings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Save state slots with visual screenshot previews, fast-forward, and rewind support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Action Replay cheat code engine and emulation for real-time clock and solar sensor hardware"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in CPU, MMIO, and memory debuggers with support for custom BIOS and compressed archives"
+              }
+            ]
           ]
         }
       ],
@@ -25,21 +69,27 @@
       "homepage": "https://github.com/skylersaleh/SkyEmu",
       "repository": "https://github.com/pkgforge-dev/SkyEmu-AppImage",
       "keywords": [
-        "skyemu",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "gameboy",
+        "gba",
+        "nds",
+        "nintendo",
+        "retrogaming",
+        "gaming",
+        "debugger"
       ],
       "categories": [
         "Game",
-        "Emulator"
+        "Emulator",
+        "Debugger"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/skyemu.png",
       "screenshots": [
         {
-          "caption": "skyemu interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "SkyEmu running games with handheld system borders and shaders",
+          "source": "https://github.com/skylersaleh/SkyEmu/assets/7118296/03d74d15-070c-4353-8f37-263847bc0750"
         }
       ]
     }

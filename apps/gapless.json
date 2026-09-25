@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.pkgforge_dev.gapless_appimage_gapless",
       "name": "gapless",
-      "summary": "Gapless (AKA: G4Music) is a light weight music player written in GTK4, focuses on large music collection",
+      "summary": "Play music with seamless gapless playback designed for large audio collections",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Gapless (AKA: G4Music) is a light weight music player written in GTK4, focuses on large music collection."
+              "value": "Gapless (formerly G4Music) is a lightweight and responsive audio player written in GTK4 and Libadwaita. Built with a focus on speed and minimalism, it effortlessly handles large music collections containing tens of thousands of songs with rapid startup times and minimal system resource usage."
             }
           ]
         },
@@ -21,125 +21,49 @@
           "content": [
             {
               "type": "text",
-              "value": "Features"
+              "value": "The player features an adaptive user interface that harmonizes with modern desktop styling, highlighting embedded album art with smooth Gaussian blur backdrops and fluid playback controls."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports most music file types, Samba and any other remote protocols (depends on GIO and GStreamer)."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Fast loading and parsing thousands of music files in very few seconds, monitor local changes."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Low memory usage for large music collection with album covers (embedded and external), no thumbnail caches to store."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Group and sorts by album/artist/title, shuffle list, full-text searching."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Fluent adaptive user interface for different screen (Desktop, Tablet, Mobile)."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Gaussian blurred cover as background, follows GNOME light/dark mode."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports creating and editing playlists, drag cover to change order or add to another playlist."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports drag and drop with other apps."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports audio peaks visualizer."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports gapless playback."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports normalizing volume with ReplayGain."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports specified audio sink."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "- Supports MPRIS control."
-            }
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native gapless audio playback for continuous listening experiences"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "High performance indexing optimized for large music libraries"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for most popular audio formats and embedded album cover art"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Adaptive GTK4 user interface with blurred background album styling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Volume normalization using ReplayGain and audio peak visualizer"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integration with MPRIS for system-wide media playback controls"
+              }
+            ]
           ]
         }
       ],
@@ -151,14 +75,19 @@
       "homepage": "https://github.com/pkgforge-dev/Gapless-AppImage",
       "repository": "https://github.com/pkgforge-dev/Gapless-AppImage",
       "keywords": [
-        "gapless",
-        "appimage",
-        "anylinux"
+        "music",
+        "player",
+        "audio",
+        "gtk4",
+        "libadwaita",
+        "playback",
+        "mpris",
+        "replaygain",
+        "sound"
       ],
       "categories": [
         "AudioVideo",
-        "Audio",
-        "Player"
+        "Audio"
       ]
     },
     "media": {

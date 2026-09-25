@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.luebking.qarma",
       "name": "Qarma",
-      "summary": "Qarma is a Qt-based clone of the Zenity dialog tool",
+      "summary": "Create graphical dialog boxes from shell scripts using Qt",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Qarma is a Qt-based clone of the Zenity dialog tool. It enables shell scripts and terminal commands to easily display graphical dialog boxes (file selectors, text entries, progress bars, and alerts) that match your Qt desktop theme."
+              "value": "Qarma is a command-line utility built with Qt designed to display graphical dialog boxes from shell scripts and terminal programs. It serves as a drop-in Qt-based alternative to the GNOME Zenity tool, providing seamless integration for Qt-based desktop environments."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By relying on the native Qt styling and windowing integration rather than GTK, Qarma allows developers and system administrators to present dialogs that blend naturally into non-GNOME environments without changing existing script workflows."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Drop-in command-line compatibility with Zenity syntax and arguments"
+                "value": "Compatible command-line syntax modeled as a clone of Zenity"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native Qt widgets that seamlessly match KDE Plasma and LXQt desktop themes"
+                "value": "Qt toolkit foundation ensuring native desktop look and feel"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Generates file selection, calendar, password entry, message, and list dialogs"
+                "value": "Interactive GUI dialogs triggered directly from shell scripts"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Interactive progress bar and notification tray dialogs for background tasks"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Lightweight and fast execution without GNOME or GTK runtime dependencies"
+                "value": "Support for common dialog types such as messages, inputs, and selections"
               }
             ]
           ]
@@ -60,13 +63,18 @@
       "homepage": "https://github.com/luebking/qarma",
       "repository": "https://github.com/pkgforge-dev/qarma-AppImage",
       "keywords": [
-        "qarma",
-        "appimage",
-        "anylinux"
+        "zenity",
+        "dialog",
+        "qt",
+        "gui",
+        "shell",
+        "scripting",
+        "toolkit",
+        "prompt"
       ],
       "categories": [
-        "Utility",
         "Development",
+        "Utility",
         "GUIDesigner"
       ]
     },

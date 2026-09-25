@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.mednafen.mednafen",
       "name": "Mednafen",
-      "summary": "Mednafen is a portable, multi-system command-line emulator utilizing OpenGL and SDL",
+      "summary": "Multi-system command-line emulator utilizing OpenGL and SDL",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Mednafen is a portable, multi-system command-line emulator utilizing OpenGL and SDL. Known for exceptional emulation accuracy, it supports a wide variety of retro console and handheld systems."
+              "value": "Mednafen is a versatile, portable multi-system emulator driven by a robust command-line interface and accelerated with OpenGL and SDL. It delivers high-accuracy emulation for an extensive array of classic gaming consoles and handheld architectures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for broad cross-distribution compatibility, this build bundles all required runtime libraries and provides integrated update notifications without requiring elevated container privileges."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Emulates PlayStation 1, Sega Saturn, PC Engine / TurboGrafx-16, and Neo Geo Pocket"
+                "value": "High-performance video rendering backed by OpenGL and SDL"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Accurate Nintendo emulation for NES, SNES, Game Boy, Game Boy Color, and GBA"
+                "value": "Accurate emulation across multiple classic console and handheld platforms"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Sega Genesis, Master System, Game Gear, and WonderSwan support"
+                "value": "Lightweight command-line interface tailored for speed and scriptability"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Robust netplay architecture with rewind capabilities and save state management"
+                "value": "Fully bundled standalone execution compatible across glibc and musl distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Advanced video filters, custom shader support, and multi-controller mapping"
+                "value": "Optional integrated self-updater with automatic update detection"
               }
             ]
           ]
@@ -60,9 +69,13 @@
       "homepage": "https://mednafen.github.io/",
       "repository": "https://github.com/pkgforge-dev/mednafen-appimage",
       "keywords": [
-        "mednafen",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "emulation",
+        "retrogaming",
+        "opengl",
+        "sdl",
+        "console",
+        "multisystem"
       ],
       "categories": [
         "Game",

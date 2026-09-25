@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.dxx_rebirth.dxx_rebirth_d2x_rebirth",
       "name": "D2X-Rebirth",
-      "summary": "D2X-Rebirth is an open-source source port of Descent II, the acclaimed six-degrees-of-freedom sci-fi shooter",
+      "summary": "Source port of Descent II updating the classic six-degrees-of-freedom shooter for modern systems",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "D2X-Rebirth is an open-source source port of Descent II, the acclaimed six-degrees-of-freedom sci-fi shooter. Continuing the work of the DXX-Rebirth project, it brings Descent II natively to modern Linux desktops with enhanced visual clarity."
+              "value": "D2X-Rebirth is an open-source port of the classic six-degrees-of-freedom first-person shooter Descent II. Built using OpenGL and SDL, it modernizes the original game engine for contemporary operating systems while faithfully preserving original gameplay mechanics, physics, and mission compatibility."
             }
           ]
         },
@@ -22,31 +22,37 @@
             [
               {
                 "type": "text",
-                "value": "True six-degrees-of-freedom space combat with improved physics precision"
+                "value": "OpenGL rendering engine providing smooth graphics, arbitrary display resolutions, aspect ratios, and VSync"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution widescreen rendering with dynamic lighting and colored effects"
+                "value": "Enhanced visual effects including transparency, colored lighting, texture filtering, and full-scene anti-aliasing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for modern joysticks, throttle controllers, gamepads, and mice"
+                "value": "Robust input handling via SDL with simultaneous keyboard, mouse, and modern multi-axis joystick support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity digital music and sound effects playback using modern audio backends"
+                "value": "Multiplayer matches over UDP/IP for both local area network and online internet play"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete compatibility with official missions, custom levels, and multiplayer modes"
+                "value": "Extended audio playback supporting original MIDI, CD-Audio, and custom external music tracks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full backward compatibility with original DOS savegames, demo recordings, expansions, and custom levels"
               }
             ]
           ]
@@ -60,14 +66,19 @@
       "homepage": "https://github.com/dxx-rebirth/dxx-rebirth",
       "repository": "https://github.com/pkgforge-dev/d2x-rebirth-AppImage",
       "keywords": [
-        "d2x-rebirth",
-        "appimage",
-        "anylinux"
+        "descent",
+        "shooter",
+        "fps",
+        "opengl",
+        "sdl",
+        "multiplayer",
+        "udp",
+        "sourceport",
+        "retro"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "3DGraphics"
       ]
     },
     "media": {

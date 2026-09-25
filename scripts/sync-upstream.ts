@@ -52,6 +52,7 @@ export const FLATHUB_ALIASES: Record<string, string> = {
   "telegram": "org.telegram.desktop",
   "transmission-qt": "com.transmissionbt.Transmission",
   "tutanota-desktop": "com.tutanota.Tutanota",
+  "tweaks-for-cosmic": "dev.edfloreshz.CosmicTweaks",
   "ungoogled-chromium": "io.github.ungoogled_software.ungoogled_chromium",
   "unnamed-sdvx-clone": "me.drewol.Unnamed-SDVX-Clone",
   "visual-studio-code": "com.visualstudio.code",
@@ -65,7 +66,7 @@ export const FLATHUB_ALIASES: Record<string, string> = {
 const currentDir = import.meta.dirname ?? dirname(fileURLToPath(import.meta.url));
 const localAnylinuxPath = process.env.ANYLINUX_DIR
   ? resolve(process.env.ANYLINUX_DIR, "README.md")
-  : resolve(process.env.HOME || "", "code/Anylinux-AppImages/README.md");
+  : null;
 const remoteAnylinuxUrl = "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/README.md";
 const cacheDir = resolve(currentDir, "../.cache");
 const appsDir = resolve(currentDir, "../apps");
@@ -81,7 +82,7 @@ export function slugify(name: string): string {
 
 export async function getAnylinuxApps(): Promise<AppImageEntry[]> {
   let content = "";
-  if (existsSync(localAnylinuxPath)) {
+  if (localAnylinuxPath && existsSync(localAnylinuxPath)) {
     content = await readFile(localAnylinuxPath, "utf8");
   } else {
     console.log("Fetching Anylinux-AppImages README from GitHub...");

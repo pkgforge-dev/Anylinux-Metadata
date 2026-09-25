@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.samueru_sama.rofi_appimage_rofi",
       "name": "rofi",
-      "summary": "AppImage of rofi",
+      "summary": "Window switcher, application launcher, and dmenu replacement",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "AppImage of rofi."
+              "value": "Rofi is a versatile, lightweight window switcher, application launcher, and dmenu replacement designed to streamline window management and command execution on Linux desktops."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package bundles all required dependencies and operates without requiring FUSE or container runtimes, ensuring broad compatibility across glibc and musl-based distributions."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Functions as a drop-in replacement for dmenu with extended capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fast interactive window switcher and desktop application launcher"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Self-contained portable distribution with all dependencies bundled"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Runs seamlessly on diverse Linux distributions including musl-based systems"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Operates without requiring FUSE system privileges"
+              }
+            ]
           ]
         }
       ],
@@ -25,9 +69,13 @@
       "homepage": "https://github.com/Samueru-sama/rofi-AppImage",
       "repository": "https://github.com/pkgforge-dev/rofi-AppImage",
       "keywords": [
-        "rofi",
-        "appimage",
-        "anylinux"
+        "launcher",
+        "switcher",
+        "dmenu",
+        "window",
+        "desktop",
+        "fuzzy",
+        "menu"
       ],
       "categories": [
         "System",

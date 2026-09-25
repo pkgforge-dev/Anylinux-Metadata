@@ -1,0 +1,114 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.srb2.sonic_robo_blast_2",
+      "name": "Sonic Robo Blast 2",
+      "summary": "3D Sonic the Hedgehog fangame built using an enhanced Doom Legacy engine",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Sonic Robo Blast 2 is a free 3D platformer fangame inspired by the classic Genesis Sonic games, built on a heavily modified version of the Doom Legacy source port."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine combines classic retro Doom-style map architecture with full third-person 3D movement and physics designed to recreate the speed and momentum of original Sonic gameplay."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Enhanced Doom Legacy engine powering third-person 3D platforming"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform audio support utilizing SDL2-Mixer, libgme, and libopenmpt"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiplayer connectivity backed by SDL2 and libupnp networking"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive community modding and custom content capabilities"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-or-later",
+      "developer": {
+        "name": "Sonic Robo Blast 2 Developers",
+        "url": "https://github.com/STJr/SRB2"
+      },
+      "homepage": "https://github.com/STJr/SRB2",
+      "repository": "https://github.com/pkgforge-dev/SRB2-AppImage",
+      "keywords": [
+        "sonic",
+        "platformer",
+        "doom",
+        "fangame",
+        "retro",
+        "sdl2",
+        "hedgehog"
+      ],
+      "categories": [
+        "Game",
+        "3DGraphics"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/sonic-robo-blast-2.png",
+      "screenshots": [
+        {
+          "caption": "Sonic Robo Blast 2 screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/SRB2-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

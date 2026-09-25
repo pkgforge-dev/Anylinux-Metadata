@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.darkplacesengine.darkplaces",
       "name": "DarkPlaces",
-      "summary": "DarkPlaces is an advanced, open-source Quake engine source port developed by Forest \"LordHavoc\" Hale",
+      "summary": "Advanced Quake engine source port with modernized rendering and extended modding capabilities",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "DarkPlaces is an advanced, open-source Quake engine source port developed by Forest \"LordHavoc\" Hale. Renowned for its cutting-edge graphics technology, it introduces real-time dynamic per-pixel lighting, normal mapping, and advanced particle effects to classic Quake."
+              "value": "DarkPlaces is an advanced, open-source game engine based on id Software's classic Quake. It modernizes the original 1996 engine by implementing enhanced graphics pipelines, extending the native QuakeC scripting system, and supporting broader community content formats."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Built on top of modern SDL2 graphics and audio foundations, DarkPlaces serves as a flexible framework capable of executing original Quake campaigns, standalone total conversions, and custom community modifications."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Modern rendering pipeline featuring real-time dynamic shadows, bloom, and gloss maps"
+                "value": "Modernized real-time rendering features, dynamic lighting, and visual enhancements"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for high-resolution replacement textures and 3D character models"
+                "value": "Expanded QuakeC virtual machine with support for advanced game logic and scripting"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced networking and multiplayer protocol with improved client prediction"
+                "value": "Broadened support for contemporary 3D model formats and higher-resolution map files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extensive console configuration options and video settings"
+                "value": "Support for standalone games, official Quake mission packs, and third-party mods"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Compatible with classic Quake, Quake mission packs, and standalone total conversions"
+                "value": "Hierarchical Quake virtual file system supporting flexible search paths and mod directories"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/DarkPlacesEngine/DarkPlaces",
       "repository": "https://github.com/pkgforge-dev/DarkPlaces-AppImage",
       "keywords": [
-        "darkplaces",
-        "appimage",
-        "anylinux"
+        "quake",
+        "engine",
+        "sourceport",
+        "quakec",
+        "fps",
+        "shooter",
+        "retro",
+        "opengl"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

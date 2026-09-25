@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.skynettx.raptor",
       "name": "Raptor: Call of the Shadows",
-      "summary": "Raptor: Call of the Shadows (Source Port) is a reverse-engineered native PC port of the classic 1994 vertical-scrolling shoot-em-up by Cygnus Studi",
+      "summary": "Reverse-engineered native source port of the classic vertical-scrolling shoot-em-up",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Raptor: Call of the Shadows (Source Port) is a reverse-engineered native PC port of the classic 1994 vertical-scrolling shoot-em-up by Cygnus Studios and Apogee Software. It lets players pilot the futuristic mercenary fighter natively on Linux."
+              "value": "Raptor: Call of the Shadows is an open-source, reverse-engineered native source port of the classic 1994 vertical-scrolling shooter originally developed by Cygnus Studios. Built upon nukeykt's reverse-engineering work and utilizing SDL2, it brings authentic DOS-era gameplay and audio to modern Linux desktops without requiring DOS emulation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "To play, original game asset files (GLB format, version 1.2 or higher) from either the shareware or registered release are required and can be loaded seamlessly from standard user data directories."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern 64-bit operating systems with fluid high framerates"
+                "value": "Native modern platform execution powered by SDL2"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-resolution graphics scaling with support for modern widescreen displays"
+                "value": "Full compatibility with both shareware and registered full game data files (v1.2+)"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for modern gamepads, flight sticks, mice, and keyboards"
+                "value": "Automatic creation and handling of default SETUP.INI configuration files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Faithful reproduction of all original sectors (Bravo, Tango, Outer Regions)"
+                "value": "Standard XDG data directory support for game assets, configurations, and save states"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-quality audio output restoring the original digital sound effects and MIDI tracks"
+                "value": "Faithful recreation of original 1990s vertical-scrolling arcade gameplay mechanics"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/skynettx/raptor",
       "repository": "https://github.com/pkgforge-dev/Raptor-AppImage",
       "keywords": [
-        "raptor",
-        "appimage",
-        "anylinux"
+        "shmup",
+        "shooter",
+        "arcade",
+        "retro",
+        "dos",
+        "sdl2",
+        "sourceport",
+        "cygnus"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "2DGraphics"
       ]
     },
     "media": {

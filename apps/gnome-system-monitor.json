@@ -1,0 +1,118 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.gnome.gitlab.gnome_system_monitor",
+      "name": "GNOME System Monitor",
+      "summary": "View and manage processes and monitor system resource usage",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "GNOME System Monitor is a system diagnostics and process management utility built for the GNOME desktop environment. It provides an intuitive graphical interface to inspect running processes, analyze system resource consumption, and monitor storage devices."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Monitor active processes with detailed memory, CPU, and user ownership statistics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Track real-time processor, memory, swap, and network history graphs"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Manage running applications by changing process priorities or terminating tasks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Inspect mounted file systems, partition capacities, and available disk space"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Portable standalone deployment with self-updating capabilities and zero external dependencies"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "GNOME System Monitor Developers",
+        "url": "https://gitlab.gnome.org/GNOME/gnome-system-monitor"
+      },
+      "homepage": "https://gitlab.gnome.org/GNOME/gnome-system-monitor",
+      "repository": "https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage",
+      "keywords": [
+        "process",
+        "taskmanager",
+        "cpu",
+        "memory",
+        "resources",
+        "diagnostics",
+        "performance",
+        "disk"
+      ],
+      "categories": [
+        "System",
+        "Utility",
+        "HardwareSettings",
+        "Viewer"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gnome-system-monitor.png",
+      "screenshots": [
+        {
+          "caption": "GNOME System Monitor interface screenshot 1",
+          "source": "https://static.gnome.org/catalog/app-screenshot/org.gnome.SystemMonitor/Processes.png"
+        },
+        {
+          "caption": "GNOME System Monitor interface screenshot 2",
+          "source": "https://static.gnome.org/catalog/app-screenshot/org.gnome.SystemMonitor/Resources.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Gnome-System-Monitor-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

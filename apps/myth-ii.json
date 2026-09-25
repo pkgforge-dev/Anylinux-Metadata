@@ -5,14 +5,14 @@
     "metadata": {
       "id": "net.projectmagma.myth2",
       "name": "Myth II: Soulblighter",
-      "summary": "Modern 64-bit Linux native port of the classic real-time tactical game Myth II",
+      "summary": "Play the classic real-time tactical game with modern 64-bit Linux native support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Myth II: Soulblighter is an updated 64-bit native Linux port of Bungie's legendary real-time tactical masterpiece, modernized and maintained by Project Magma."
+              "value": "Myth II: Soulblighter is a modern 64-bit native Linux port of Bungie's acclaimed real-time tactical strategy game, maintained by Project Magma. Players command squads of warriors against undead legions, focusing on formation tactics, unit positioning, physics, and battlefield terrain rather than resource gathering."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "Players control armies in strategic battlefield engagements without resource gathering or base construction, featuring physics-driven combat, 3D terrain topography, and multiplayer gameplay."
+              "value": "This portable package delivers seamless compatibility across modern distributions while preserving the original tactical gameplay, high-resolution rendering, and custom modding capabilities."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native 64-bit Linux binary with OpenGL hardware acceleration and widescreen rendering"
+                "value": "Updated 64-bit native engine powered by Project Magma improvements"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Realistic unit physics, projectile ballistics, wind direction, and terrain elevation mechanics"
+                "value": "Support for custom tags, plugins, and cutscenes via user directory storage"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full campaign mission support with cinematic cutscenes and atmospheric voice narration"
+                "value": "Fully self-contained package running reliably across glibc and musl distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern sound engine implementation using OpenAL and PipeWire audio backends"
+                "value": "Integrated automatic update notifications with package manager detection"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Internet and LAN multiplayer capabilities through modern community match servers"
+                "value": "FUSE-independent runtime execution for universal compatibility"
               }
             ]
           ]
@@ -69,14 +69,17 @@
       "homepage": "https://projectmagma.net",
       "repository": "https://github.com/pkgforge-dev/Myth-II-AppImage",
       "keywords": [
-        "myth-ii",
-        "appimage",
-        "anylinux"
+        "tactics",
+        "strategy",
+        "rts",
+        "magma",
+        "bungie",
+        "classic",
+        "soulblighter",
+        "dark fantasy"
       ],
       "categories": [
-        "Game",
-        "StrategyGame",
-        "ActionGame"
+        "Game"
       ]
     },
     "media": {

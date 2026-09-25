@@ -1,0 +1,113 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.x.reader",
+      "name": "Xreader",
+      "summary": "View and navigate multiple and single-page document formats such as PDF, PostScript, and comic archives",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Xreader is a versatile and lightweight document viewer developed as part of the Linux Mint X-Apps initiative. Built on GTK and modern rendering backends, its primary goal is to provide a clean, consistent, and feature-complete reading experience across Linux desktop environments."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive PDF viewing powered by the Poppler backend library"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for PostScript documents through Ghostscript and libspectre"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive format compatibility including DjVu, XPS, DVI, and TIFF"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated comic book archive reader supporting CBR, CBZ, and CB7 formats"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Seamless support for both single-page layouts and multi-page documents"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-or-later",
+      "developer": {
+        "name": "Xreader Developers",
+        "url": "https://github.com/linuxmint/xreader"
+      },
+      "homepage": "https://github.com/linuxmint/xreader",
+      "repository": "https://github.com/pkgforge-dev/Xreader-AppImage",
+      "keywords": [
+        "pdf",
+        "document",
+        "viewer",
+        "postscript",
+        "djvu",
+        "comics",
+        "cbr",
+        "cbz",
+        "xps"
+      ],
+      "categories": [
+        "Office",
+        "Viewer"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/xreader.png",
+      "screenshots": [
+        {
+          "caption": "Xreader screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Xreader-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

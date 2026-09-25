@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.rubberduckycooly.sonic_mania_decompilation",
       "name": "Sonic Mania Decompilation",
-      "summary": "Sonic Mania Decompilation is a native PC port created from the byte-accurate decompilation of Sonic Mania (2017) and the Retro Engine v5",
+      "summary": "Byte-accurate native engine decompilation of Sonic Mania and the Retro Engine v5",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Sonic Mania Decompilation is a native PC port created from the byte-accurate decompilation of Sonic Mania (2017) and the Retro Engine v5. It runs natively on Linux with zero overhead and full mod support."
+              "value": "Sonic Mania Decompilation is a native port built upon a byte-accurate reverse engineering of Sonic Mania and Retro Engine v5 (RSDKv5). Designed for portability, performance, and preservation, it enables running the game natively on Linux systems while requiring original game assets from legitimate retail releases."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "In addition to authentic engine recreation, the project integrates modern quality-of-life enhancements and an extensive development framework for community modifications and version targeting."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native Linux execution delivering responsive 60 FPS platforming action"
+                "value": "Built-in mod loader and dedicated API calls for community mods"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and ultrawide display support with scalable UI elements"
+                "value": "Target support for both standalone RSDKv5 and RSDKv5U"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete support for the Sonic Mania Plus expansion and Encore Mode"
+                "value": "Configurable builds targeting release versions 1.00, 1.03, and the 1.06 Plus update"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Rich modding ecosystem with integrated mod manager support"
+                "value": "Seamless save data transfer from official PC releases"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern gamepad and arcade fight-stick compatibility with rumble feedback"
+                "value": "Cross-platform multimedia and graphics backend powered by SDL2 and OpenGL"
               }
             ]
           ]
@@ -60,14 +69,17 @@
       "homepage": "https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation",
       "repository": "https://github.com/pkgforge-dev/Sonic-Mania-Decompilation-AppImage",
       "keywords": [
-        "sonic-mania-decompilation",
-        "appimage",
-        "anylinux"
+        "sonic",
+        "mania",
+        "decompilation",
+        "retroengine",
+        "rsdkv5",
+        "platformer",
+        "engine",
+        "port"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "Game"
       ]
     },
     "media": {

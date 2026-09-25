@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.megaman64recomp.megaman64recompiled_megaman64recomp",
       "name": "Mega Man 64 Recompiled",
-      "summary": "Mega Man 64 Recompiled is a native PC port of Mega Man 64 (the Nintendo 64 release of Mega Man Legends), created via static recompilation",
+      "summary": "Native PC port of Mega Man 64 created through static recompilation",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Mega Man 64 Recompiled is a native PC port of Mega Man 64 (the Nintendo 64 release of Mega Man Legends), created via static recompilation. It brings the beloved 3D action-adventure into native 64-bit Linux."
+              "value": "Mega Man 64 Recompiled is an enhanced native PC port of the classic Nintendo 64 action-adventure title Mega Man 64 (Mega Man Legends), built using modern static recompilation technology. It translates original N64 binary code into native instructions to deliver optimized performance without conventional emulation overhead."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The project enhances the classic 3D exploration and combat gameplay with native desktop integration, higher fidelity rendering, and customizable controls suited for modern systems."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native PC rendering with high-resolution scaling and smooth uncapped framerates"
+                "value": "Native x86_64 execution via static binary recompilation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen display support and modern camera angle controls"
+                "value": "High-resolution rendering with modern display aspect ratio support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern dual-analog gamepad and keyboard/mouse control configurations"
+                "value": "Fluid frame rates without standard Nintendo 64 emulation latency"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Crisp audio reproduction with remastered sound capabilities"
+                "value": "Modern gamepad support and customizable keyboard controls"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full preservation of the original 3D dungeon crawling, town exploration, and boss battles"
+                "value": "Faithful recreation of the original Kattelox Island adventure"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/MegaMan64Recomp/MegaMan64Recompiled",
       "repository": "https://github.com/pkgforge-dev/megaman64recomp-appimage",
       "keywords": [
-        "megaman64recomp",
-        "appimage",
-        "anylinux"
+        "megaman",
+        "rockman",
+        "recompiled",
+        "n64",
+        "port",
+        "static recompilation",
+        "legends",
+        "action"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "AdventureGame"
+        "ActionGame"
       ]
     },
     "media": {

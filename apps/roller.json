@@ -1,0 +1,129 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.fataldecomp.roller",
+      "name": "Roller",
+      "summary": "Reverse-engineered modern source port of the classic 1995 stunt racing game Fatal Racing and Whiplash",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Roller is an open-source, reverse-engineered source port of Fatal Racing (also known as Whiplash), the high-speed 1995 3D stunt racing game originally developed by Gremlin Interactive. Built with modern systems in mind, the project substitutes DOS-specific internals with modern libraries such as SDL3, allowing the classic game to run smoothly on contemporary hardware."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine supports loading original assets directly from retail disc images or playable demo archives, delivering authentic gameplay with updated cross-platform support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full reimplementation of original Fatal Racing and Whiplash game mechanics and 3D physics"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform multimedia backend powered by SDL3 and SDL_image"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Authentic MIDI music synthesis and audio playback using WildMIDI"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct asset extraction from retail CD-ROM disc images including CUE/BIN and ISO formats"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "In-game settings overlay and UI menus integrated via Nuklear"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for loading both bundled freeware demo data and complete retail game assets"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Roller Developers",
+        "url": "https://github.com/FatalDecomp/ROLLER"
+      },
+      "homepage": "https://github.com/FatalDecomp/ROLLER",
+      "repository": "https://github.com/pkgforge-dev/ROLLER-AppImage",
+      "keywords": [
+        "fatal racing",
+        "whiplash",
+        "racing",
+        "source port",
+        "decompilation",
+        "retro",
+        "sdl3",
+        "dos",
+        "stunt"
+      ],
+      "categories": [
+        "Game",
+        "3DGraphics",
+        "Midi"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/roller.png",
+      "screenshots": [
+        {
+          "caption": "Roller stunt car racing gameplay in action",
+          "source": "https://img.youtube.com/vi/JvoiQTRjt88/maxresdefault.jpg"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/ROLLER-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

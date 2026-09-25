@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.david20122.sound_space_plus",
       "name": "Sound Space Plus",
-      "summary": "Sound Space Plus is an open-source, rhythm-based aim precision game",
+      "summary": "Rhythm-based aim precision game featuring cursor control and custom user levels",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Sound Space Plus is an open-source, rhythm-based aim precision game. Challenging players to hit targets to the beat of diverse music tracks, it tests both auditory rhythm and mouse cursor aim speed."
+              "value": "Sound Space Plus is an open-source, rhythm-based precision aim game inspired by classic precision cursor mechanics. Players test their hand-eye coordination and timing by navigating and clicking targets synced to music."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Built for high-performance and competitive play, the game supports extensive user customizations, local map storage, and dedicated player profile folders across multiple platforms."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Precision aim mechanics combining rhythm timing with 2D spatial targeting"
+                "value": "Fast-paced rhythm mechanics combining precise mouse aim with musical timing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Access to an extensive library of community-created beatmaps and songs"
+                "value": "Cross-platform support with native Linux x86_64 builds"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable visual elements, cursor skins, particle effects, and note styles"
+                "value": "Dedicated local user data folder for managing songs, replays, and configuration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Detailed performance analysis and timing accuracy breakdowns"
+                "value": "Quick in-game shortcut to directly access settings and custom files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Multiple game modifiers to customize challenge and gameplay speed"
+                "value": "Open-source client architecture allowing community modifications and themes"
               }
             ]
           ]
@@ -60,13 +69,16 @@
       "homepage": "https://github.com/David20122/sound-space-plus",
       "repository": "https://github.com/pkgforge-dev/sound-space-plus-AppImage",
       "keywords": [
-        "sound-space-plus",
-        "appimage",
-        "anylinux"
+        "rhythm",
+        "aim",
+        "precision",
+        "music",
+        "cursor",
+        "reaction",
+        "timing"
       ],
       "categories": [
-        "AudioVideo",
-        "Player"
+        "Game"
       ]
     },
     "media": {

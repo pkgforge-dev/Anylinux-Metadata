@@ -5,14 +5,14 @@
     "metadata": {
       "id": "net.imput.helium",
       "name": "Helium Browser",
-      "summary": "Privacy-focused and de-Googled web browser built on top of Chromium",
+      "summary": "Browse the web with a privacy-focused and de-Googled Chromium browser",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Helium is an open-source web browser engineered with an emphasis on privacy, minimalism, and speed. Built upon the Chromium foundation, it removes background tracking and Google telemetry."
+              "value": "Helium is a privacy-centric web browser built upon Chromium, tailored to remove background Google telemetry and integration while keeping modern web compatibility. Originating from ungoogled-chromium foundations, it delivers a clean, track-free browsing environment with the speed and reliability of the Chromium rendering engine."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "It delivers a fast web browsing experience with enhanced privacy defaults, ad-blocking compatibility, and support for modern web standards."
+              "value": "Optimized specifically for Linux environments, Helium is built with full native sandboxing security and robust multi-architecture support across modern systems."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Comprehensive removal of proprietary telemetry and Google integration services"
+                "value": "De-Googled Chromium codebase stripped of tracking, background services, and telemetry"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native Chromium rendering engine delivering modern HTML5 and CSS3 compatibility"
+                "value": "Maintains uncompromising, hardened native Chromium sandboxing without weakening isolation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for standard Chrome Web Store extensions and add-ons"
+                "value": "First-class Linux multi-architecture support across both x86_64 and arm64 systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in privacy enhancements including strict cookie isolation and tracking protection"
+                "value": "Compatible with standard web extensions and modern web application standards"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Lightweight resource consumption with optimized tab management"
+                "value": "High-performance rendering engine delivering low-latency web navigation"
               }
             ]
           ]
@@ -69,9 +69,13 @@
       "homepage": "https://github.com/imputnet/helium-linux",
       "repository": "https://github.com/imputnet/helium-linux",
       "keywords": [
-        "helium-browser",
-        "appimage",
-        "anylinux"
+        "browser",
+        "web",
+        "chromium",
+        "privacy",
+        "ungoogled",
+        "internet",
+        "navigator"
       ],
       "categories": [
         "Network",

@@ -12,7 +12,7 @@
           "content": [
             {
               "type": "text",
-              "value": "Snowboard Kids 2 Recompiled is an enhanced native PC port of Atlus and Racjin's classic Nintendo 64 snowboarding racing game Snowboard Kids 2. The project uses static binary recompilation to execute original game code natively on desktop computers."
+              "value": "Snowboard Kids 2 Recompiled is an enhanced native PC port of the classic Nintendo 64 snowboarding title, produced using N64: Recompiled static recompilation technology and the RT64 rendering engine."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "Players race through snowy peaks, sunny beaches, and fantasy courses with modern widescreen visuals, high framerates, and customizable controls."
+              "value": "The project runs the game natively on modern hardware without traditional emulation overhead while preserving original visual effects and adding modern display options. Note that original game assets are not included and a legitimate copy of the game ROM is required to run."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Full native binary execution delivering high framerates with zero emulation lag"
+                "value": "Plug-and-play ROM loading with automatic asset extraction at the main menu"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for true widescreen and modern ultra-wide monitor aspect ratios"
+                "value": "Fully intact N64 graphical effects powered by the RT64 rendering engine"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "All original single-player story tracks, battle modes, and trick game variants"
+                "value": "Modern graphics enhancements including widescreen display support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Responsive game controller support with rebindable button configurations"
+                "value": "In-game configuration menus navigable by controller, keyboard, or mouse"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Crystal-clear audio playback powered by PipeWire and modern Linux sound stacks"
+                "value": "Customizable gameplay, audio settings, and input mappings"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive modding capabilities built directly into the recompiled engine"
               }
             ]
           ]
@@ -69,14 +75,18 @@
       "homepage": "https://github.com/cdlewis/snowboardkids2-recomp",
       "repository": "https://github.com/cdlewis/snowboardkids2-recomp",
       "keywords": [
-        "snowboardkids2recomp",
-        "appimage",
-        "anylinux"
+        "snowboard",
+        "racing",
+        "n64",
+        "recompiled",
+        "port",
+        "rt64",
+        "vulkan",
+        "emulator"
       ],
       "categories": [
         "Game",
-        "SportsGame",
-        "ArcadeGame"
+        "3DGraphics"
       ]
     },
     "media": {

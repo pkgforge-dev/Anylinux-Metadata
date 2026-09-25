@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.rigsofrods.rigs_of_rods",
       "name": "Rigs of Rods",
-      "summary": "Rigs of Rods is an open-source vehicle simulator featuring an advanced soft-body physics engine",
+      "summary": "Open-source vehicle simulator featuring an advanced soft-body physics engine",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Rigs of Rods is an open-source vehicle simulator featuring an advanced soft-body physics engine. Unlike traditional rigid-body simulators, Rigs of Rods simulates the real-time deformation and stress of chassis, beams, and suspension components."
+              "value": "Rigs of Rods is an open-source physics sandbox simulation game that simulates the motion and deformation of vehicles in real time. It offers a flexible and powerful simulation environment supporting vehicles, physical objects, and terrain deformation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The simulation accommodates a wide variety of control setups and gameplay modes, from casual exploration to community-driven multiplayer sessions."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Realistic soft-body physics simulating structural flex, crashes, and metal deformation"
+                "value": "Diverse vehicle roster including cars, trucks, trains, boats, airplanes, helicopters, and heavy machinery"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Diverse vehicle simulation including land vehicles, trucks, construction machinery, aircraft, and boats"
+                "value": "Soft-body real-time physics simulating realistic structural damage and chassis flexing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Dynamic terrain interaction with mud, sand, water, and varying friction coefficients"
+                "value": "Flexible control options ranging from keyboard driving to gamepads, steering wheels, and pedal sets"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Massive community catalog of downloadable vehicles, terrains, and scenario mods"
+                "value": "Built-in mod repository browser for discovering and installing community-created vehicles and terrains"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for force-feedback steering wheels, joysticks, and modern game controllers"
+                "value": "AngelScript scripting integration for vehicle part customization and gameplay logic"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiplayer support with dedicated servers and an integrated server browser"
               }
             ]
           ]
@@ -60,14 +75,18 @@
       "homepage": "https://github.com/RigsOfRods/rigs-of-rods",
       "repository": "https://github.com/pkgforge-dev/Rigs-of-Rods-AppImage",
       "keywords": [
-        "rigs-of-rods",
-        "appimage",
-        "anylinux"
+        "simulator",
+        "simulation",
+        "physics",
+        "softbody",
+        "driving",
+        "vehicles",
+        "sandbox",
+        "multiplayer"
       ],
       "categories": [
         "Game",
-        "Simulation",
-        "Physics"
+        "Simulation"
       ]
     },
     "media": {

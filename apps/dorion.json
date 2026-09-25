@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.spikehd.dorion",
       "name": "dorion",
-      "summary": "Tiny alternative Discord client with a smaller footprint, snappier startup, themes, plugins and more!",
+      "summary": "Lightweight alternative Discord client optimized for low-spec PCs with theme and plugin support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Tiny alternative Discord client with a smaller footprint, snappier startup, themes, plugins and more!"
+              "value": "Dorion is an alternative Discord client built using Tauri, engineered specifically for low-specification or storage-sensitive computers. By replacing heavyweight Chromium runtimes with a native webview, it provides a snappier startup and a significantly reduced memory and storage footprint while retaining full voice, video, and text communication features."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The client focuses on performance and customizability, making Discord accessible on older machines without sacrificing modern messaging capabilities or user personalization."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Significantly reduced RAM and storage usage compared to the official client"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Snappier startup times powered by a native webview architecture"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in support for custom themes and visual styling"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensible plugin system for enhanced chat functionality"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with standard Discord messaging, voice, and servers"
+              }
+            ]
           ]
         }
       ],
@@ -25,22 +69,37 @@
       "homepage": "https://github.com/SpikeHD/Dorion",
       "repository": "https://github.com/pkgforge-dev/Dorion-AppImage-Enhanced",
       "keywords": [
-        "dorion",
-        "appimage",
-        "anylinux"
+        "discord",
+        "chat",
+        "messaging",
+        "voip",
+        "voice",
+        "tauri",
+        "lightweight",
+        "themes",
+        "plugins"
       ],
       "categories": [
         "Network",
         "InstantMessaging",
-        "Chat"
+        "Chat",
+        "VideoConference"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/dorion.png",
       "screenshots": [
         {
-          "caption": "dorion interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Dorion interface overview and theme customizer",
+          "source": "https://github.com/SpikeHD/Dorion/assets/25207995/eb603f1f-f633-4913-a25e-1316b495a08a"
+        },
+        {
+          "caption": "Dorion client settings and configuration menu",
+          "source": "https://github.com/user-attachments/assets/a3364e03-7de2-4293-8cd7-cf655e99546f"
+        },
+        {
+          "caption": "Dorion chat interface and plugin management",
+          "source": "https://github.com/SpikeHD/Dorion/assets/25207995/c73a2333-31fb-404a-9489-5e1b1f8cfa54"
         }
       ]
     }

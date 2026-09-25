@@ -5,33 +5,50 @@
     "metadata": {
       "id": "io.github.pkgforge_dev.commander_genius_appimage_commander_genius",
       "name": "commander-genius",
-      "summary": "Commander-Genius aka CloneKeenPlus is an engine which interprets Commander Keen 1-6, Dreams and Cosmos the Cosmic Adventure",
+      "summary": "Modern game engine interpreter for Commander Keen episodes 1 through 6, Dreams, and Cosmos",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Commander-Genius aka CloneKeenPlus is an engine which interprets Commander Keen 1-6, Dreams and Cosmos the Cosmic Adventure."
+              "value": "Commander Genius (also known as CloneKeenPlus) is an open-source game engine that interprets classic DOS platformers including Commander Keen 1 through 6, Keen Dreams, and Cosmo's Cosmic Adventure. It provides modern compatibility, enhanced audio and video options, and improved control handling while preserving original gameplay physics."
             }
           ]
         },
         {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "But there is more: How about four player coop, VGA graphics, remastered music and many great mods to apply. There even exists the unoffical trilogy that was planned back then (Keen 7-9). Eventhough that trilogy was never released, it got picked up by fans. With an integrated CG game store you can download every free game with one click and start playing."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "For registered Keen games you need the game data of the games in order to play them. Check the Readme file for more information on that. Episode 2, 3, 5 and 6 are registered versions which can be purchased by 3D Realms, Apogee, GOG or bought by someone else. If you still have the old games of the registered version, then copy those into a reachable directory and give it a try."
-            }
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with Commander Keen episodes 1 to 6 and Keen Dreams"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for interpreting Cosmo's Cosmic Adventure"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Modern graphics scaling, screen resolutions, and visual filters"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Enhanced sound support and updated soundtrack playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable input options with modern gamepad and joystick support"
+              }
+            ]
           ]
         }
       ],
@@ -43,14 +60,18 @@
       "homepage": "https://github.com/pkgforge-dev/Commander-Genius-AppImage",
       "repository": "https://github.com/pkgforge-dev/Commander-Genius-AppImage",
       "keywords": [
-        "commander-genius",
-        "appimage",
-        "anylinux"
+        "keen",
+        "platformer",
+        "dos",
+        "retro",
+        "emulator",
+        "interpreter",
+        "idsoftware",
+        "arcade"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "2DGraphics"
       ]
     },
     "media": {

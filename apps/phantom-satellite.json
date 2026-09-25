@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.dcfuksurmom.phantom_satellite",
       "name": "Phantom Satellite",
-      "summary": "Phantom Satellite is a web browser forked from Pale Moon that focuses on supporting legacy, specialized, and niche Linux operating systems while ma",
+      "summary": "Lightweight Pale Moon fork optimized for legacy architectures and niche platforms",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Phantom Satellite is a web browser forked from Pale Moon that focuses on supporting legacy, specialized, and niche Linux operating systems while maintaining modern web compatibility."
+              "value": "Phantom Satellite is a web browser forked from Pale Moon and built on the Unified XUL Platform (UXP). It is designed to extend web browsing capabilities to older, specialized, and niche platforms without sacrificing support for contemporary Linux distributions and modern hardware."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The browser incorporates tailored compiler configurations and community patches to enable usability across vintage processor architectures while retaining classic web browsing functionality."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Optimized Goanna layout engine with minimal runtime library dependencies"
+                "value": "Support for legacy 64-bit PowerPC (PPC64) chips dating prior to 2013 by decoupling hardcoded crypto instructions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built to run seamlessly on older Linux distributions and non-standard architectures"
+                "value": "Compatibility with x86 CPUs lacking SSE instruction sets, requiring only an Intel Pentium MMX or equivalent"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for classic XUL and UXP extensions and browser themes"
+                "value": "Compatibility configurations for x86 CPUs without SSE2 support, operable on systems with an Intel Pentium III"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in privacy controls blocking third-party tracking and telemetry"
+                "value": "Custom browser branding and integration with dedicated themes such as Cyan Moon"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Familiar traditional browser interface with customizable toolbars and menus"
+                "value": "Support for Linux systems using GTK2 toolkits alongside modern 64-bit ARM and x86_64 architectures"
               }
             ]
           ]
@@ -60,9 +69,15 @@
       "homepage": "https://github.com/DCFUKSURMOM/Phantom-Satellite",
       "repository": "https://github.com/pkgforge-dev/Phantom-Satellite-AppImage",
       "keywords": [
-        "phantom-satellite",
-        "appimage",
-        "anylinux"
+        "browser",
+        "web",
+        "palemoon",
+        "uxp",
+        "legacy",
+        "powerpc",
+        "ppc64",
+        "nosse",
+        "gtk2"
       ],
       "categories": [
         "Network",

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.fcare.kronos",
       "name": "Kronos",
-      "summary": "Kronos is a modern, high-compatibility Sega Saturn and Sega ST-V arcade emulator forked from Yabause",
+      "summary": "Play Sega Saturn and Sega ST-V arcade games with modern emulation features",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Kronos is a modern, high-compatibility Sega Saturn and Sega ST-V arcade emulator forked from Yabause. It leverages modern OpenGL to offer enhanced 3D resolution scaling and smooth polygon rendering."
+              "value": "Kronos is an advanced Sega Saturn and Sega Titan Video (ST-V) arcade emulator forked from the Yabause project. It focuses on achieving high hardware compatibility and modern graphical fidelity, offering both a standalone desktop interface and core integration for frontend environments."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Built on top of a refined modern CMake framework, Kronos provides comprehensive emulation of complex Saturn hardware components alongside flexible front-end options."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Emulates the complex dual-CPU SH-2 architecture, VDP1, and VDP2 graphics processors"
+                "value": "Accurate emulation of Sega Saturn console and ST-V arcade hardware architecture"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Internal resolution upscaling for Sega Saturn 3D graphics up to 4K"
+                "value": "Modern standalone desktop interface powered by Qt5"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Tessellation and polygonal perspective correction reducing 3D sprite distortion"
+                "value": "Libretro core support for integration with frontends such as RetroArch"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High compatibility with commercial Sega Saturn CD games and ST-V arcade ROMs"
+                "value": "Advanced shader-based graphical rendering pipeline for enhanced visual reproduction"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Gamepad controller support with analog flight stick and gun peripheral mapping"
+                "value": "Support for loading and running disc images and arcade ROM dumps"
               }
             ]
           ]
@@ -60,9 +69,15 @@
       "homepage": "https://github.com/FCare/Kronos",
       "repository": "https://github.com/pkgforge-dev/Kronos-AppImage",
       "keywords": [
-        "kronos",
-        "appimage",
-        "anylinux"
+        "emulator",
+        "emulation",
+        "sega",
+        "saturn",
+        "stv",
+        "arcade",
+        "libretro",
+        "retroarch",
+        "yabause"
       ],
       "categories": [
         "Game",

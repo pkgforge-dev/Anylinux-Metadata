@@ -1,0 +1,128 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "com.cataclysm_tlg.cataclysm_tlg",
+      "name": "Cataclysm-TLG",
+      "summary": "Turn-based post-apocalyptic survival game set in a procedurally generated world",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Cataclysm: The Last Generation is a single-player turn-based post-apocalyptic survival game based on Cataclysm: Dark Days Ahead. Set in a procedurally generated world devastated by alien incursions and the undead, it challenges players to endure amidst societal collapse while foregrounding rich character progression and deep life-simulation mechanics."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Refining core survival systems with an emphasis on plausibility, players must adapt to relentless environmental threats, manage resources, and uncover government conspiracies behind the Cataclysm."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Procedurally generated post-apocalyptic world featuring zombies, alien horrors, and anomalous threats"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive character progression with survival skill progression and immersive life simulation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Advanced adaptation systems including military-grade cybernetic bionics and genetic mutations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Survivor faction management to recruit companions and establish fortified communities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive arsenal customization and crafting across scavenging expeditions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in interactive tutorial and fully customizable keyboard controls"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "CC-BY-SA-3.0",
+      "developer": {
+        "name": "Cataclysm-TLG Developers",
+        "url": "https://github.com/Cataclysm-TLG/Cataclysm-TLG"
+      },
+      "homepage": "https://github.com/Cataclysm-TLG/Cataclysm-TLG",
+      "repository": "https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage",
+      "keywords": [
+        "roguelike",
+        "turn-based",
+        "survival",
+        "post-apocalyptic",
+        "zombie",
+        "simulation",
+        "cdda",
+        "crafting",
+        "bionics"
+      ],
+      "categories": [
+        "Game",
+        "Simulation"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cataclysm-tlg.png",
+      "screenshots": [
+        {
+          "caption": "Cataclysm-TLG screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Cataclysm-TLG-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

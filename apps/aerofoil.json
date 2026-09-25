@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.elasota.aerofoil",
       "name": "Aerofoil",
-      "summary": "Aerofoil is a modern, cross-platform port of Glider PRO, the classic Macintosh paper airplane flight game originally developed by John Calhoun",
+      "summary": "Fly a paper airplane through obstacles in a modern port of the classic Macintosh game Glider PRO",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Aerofoil is a modern, cross-platform port of Glider PRO, the classic Macintosh paper airplane flight game originally developed by John Calhoun. It recreates the nostalgic physics and level mechanics while running natively on modern PC operating systems."
+              "value": "Aerofoil is a modern, cross-platform port of John Calhoun's classic 1994 Macintosh flight game, Glider PRO. The project faithfully recreates the original paper airplane navigation experience while modernizing the engine for contemporary desktop systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Featuring authentic gameplay and retro styling, Aerofoil combines nostalgic audiovisual presentation with modern quality-of-life enhancements and content creation tools."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Faithful recreation of original Glider PRO physics, flight dynamics, and obstacles"
+                "value": "Faithful 1990s-style graphical user interface"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cross-platform support for modern display resolutions and widescreen monitors"
+                "value": "Modern gamepad and controller input support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full compatibility with classic Mac Glider PRO houses and custom level files"
+                "value": "High-quality graphic upscaling and color correction filters"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable keyboard, mouse, and game controller input schemes"
+                "value": "Integrated port of the original Glider PRO house and level editor"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced audio playback and sound effect emulation"
+                "value": "Import utilities for unpacking and playing legacy community house files"
               }
             ]
           ]
@@ -60,15 +69,17 @@
       "homepage": "https://github.com/elasota/Aerofoil",
       "repository": "https://github.com/pkgforge-dev/Aerofoil-AppImage",
       "keywords": [
-        "aerofoil",
-        "appimage",
-        "anylinux"
+        "glider",
+        "glider pro",
+        "paper airplane",
+        "flight",
+        "macintosh",
+        "retro",
+        "arcade",
+        "level editor"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "ArcadeGame",
-        "Simulation"
+        "Game"
       ]
     },
     "media": {

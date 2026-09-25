@@ -1,0 +1,116 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.deepin.calculator",
+      "name": "Deepin Calculator",
+      "summary": "Perform everyday arithmetic and scientific calculations in an intuitive desktop interface",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Deepin Calculator is an intuitive and user-friendly desktop calculator application built using the Deepin Tool Kit (DTK) and Qt. Designed to provide a clean and accessible interface for everyday users, it integrates smoothly with modern desktop environments while maintaining lightweight performance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Whether for simple daily arithmetic, quick accounting, or standard mathematical tasks, Deepin Calculator offers responsive controls and comprehensive mathematical accuracy."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Clean and modern user interface built with the Deepin Tool Kit (DTK)"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Standard arithmetic calculations for day-to-day computing tasks"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native vector graphics rendering powered by Qt SVG support"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Lightweight and responsive performance optimized for desktop workflows"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Deepin Calculator Developers",
+        "url": "https://github.com/linuxdeepin/deepin-calculator"
+      },
+      "homepage": "https://github.com/linuxdeepin/deepin-calculator",
+      "repository": "https://github.com/pkgforge-dev/Deepin-Calculator-AppImage",
+      "keywords": [
+        "calculator",
+        "math",
+        "arithmetic",
+        "dtk",
+        "qt",
+        "deepin",
+        "computation",
+        "numbers"
+      ],
+      "categories": [
+        "Utility",
+        "Office",
+        "Finance"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/deepin-calculator.png",
+      "screenshots": [
+        {
+          "caption": "Deepin Calculator screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Deepin-Calculator-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

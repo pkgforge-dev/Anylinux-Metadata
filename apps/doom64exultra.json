@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.atsb.doom64ex_plus_doom64exultra",
       "name": "Doom64EX-Ultra",
-      "summary": "DOOM64 EX+ Ultra is an enhanced fork of the DOOM 64 source port, recreating the dark atmospheric Nintendo 64 installment of DOOM for modern PCs wit",
+      "summary": "Enhanced DOOM 64 source port recreating the Nintendo 64 experience with modern engine features and remaster support",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "DOOM64 EX+ Ultra is an enhanced fork of the DOOM 64 source port, recreating the dark atmospheric Nintendo 64 installment of DOOM for modern PCs with enhanced features, rendering improvements, and bug fixes."
+              "value": "Doom64EX-Ultra is an enhanced source port continuation of Samuel \"Kaiser\" Villarreal's Doom 64 EX project. Built modernizing around SDL3, OpenGL, and FMOD Studio, it aims to faithfully recreate the classic Nintendo 64 dark atmospheric DOOM experience on modern Linux systems while incorporating significant modding capabilities and performance improvements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine offers full compatibility with the official 2020 Nightdive Studios remaster IWAD, allowing players to experience the base game and \"The Lost Levels\" expansion with native KPF and PWAD mod support."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Faithfully recreates the unique atmosphere, textures, sprites, and ambient soundtrack of DOOM 64"
+                "value": "Native support for official 2020 remaster IWADs, KPF packages, and custom PWAD mods"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated OpenGL and Vulkan rendering with widescreen support"
+                "value": "Includes full campaign support for The Lost Levels expansion content"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full mouse-look, customizable crosshairs, and configurable keybindings"
+                "value": "Upgraded audio subsystem powered by FMOD Studio for high-quality audio playback"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Restored cut levels, extended modding capabilities, and custom map support"
+                "value": "Custom shaders delivering authentic Nintendo 64 3-point texture filtering"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced audio backend supporting atmospheric ambient reverb effects"
+                "value": "Modernized cross-platform codebase built on SDL3 and OpenGL rendering"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Quality-of-life additions including secret discovery notifications and expanded map slot capacity"
               }
             ]
           ]
@@ -60,14 +75,17 @@
       "homepage": "https://github.com/atsb/Doom64EX-Plus",
       "repository": "https://github.com/pkgforge-dev/DOOM64EXUltra-AppImage",
       "keywords": [
-        "doom64exultra",
-        "appimage",
-        "anylinux"
+        "doom",
+        "doom64",
+        "shooter",
+        "sourceport",
+        "sdl3",
+        "opengl",
+        "nintendo64",
+        "retro"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "Shooter"
+        "Game"
       ]
     },
     "media": {

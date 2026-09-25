@@ -5,14 +5,23 @@
     "metadata": {
       "id": "com.dec05eba.git.phoenix_x_server",
       "name": "Phoenix X Server",
-      "summary": "Phoenix is a modern X11 display server written from scratch in Zig",
+      "summary": "Modern X11 display server written from scratch in Zig",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Phoenix is a modern X11 display server written from scratch in Zig. Conceived as a memory-safe, lightweight alternative to the legacy Xorg server, Phoenix focuses on simplicity, security, and low resource overhead."
+              "value": "Phoenix is a modern, lightweight X11 display server built from the ground up using the Zig programming language. It is designed to offer a fresh implementation of the X Window System protocol, prioritizing efficiency, simplicity, and low-level system control."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged for maximum portability, it can run reliably across multiple Linux distributions without host dependencies or container setups."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Written in Zig for enhanced memory safety and predictable execution performance"
+                "value": "Clean, from-scratch implementation of the core X11 protocol written in Zig"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Implements core X11 protocols for running traditional Linux graphical applications"
+                "value": "Lightweight display server footprint for fast execution and minimal resource usage"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Significantly reduced codebase complexity compared to the monolithic Xorg server"
+                "value": "Modern systems-programming design focusing on safety and performance"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low memory footprint and instant startup times"
+                "value": "Standalone execution without requiring FUSE or container virtualization"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Ideal for embedded systems, lightweight desktop setups, and X11 experimentation"
+                "value": "Broad compatibility across modern, legacy, and musl-based Linux distributions"
               }
             ]
           ]
@@ -60,13 +69,18 @@
       "homepage": "https://git.dec05eba.com/phoenix",
       "repository": "https://github.com/pkgforge-dev/phoenix-x-server-AppImage",
       "keywords": [
-        "phoenix-x-server",
-        "appimage",
-        "anylinux"
+        "x11",
+        "xorg",
+        "display server",
+        "windowing",
+        "zig",
+        "graphics",
+        "xserver"
       ],
       "categories": [
         "System",
-        "Core"
+        "Utility",
+        "DesktopSettings"
       ]
     },
     "media": {

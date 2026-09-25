@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.freedesktop.gitlab.piglit",
       "name": "piglit",
-      "summary": "Piglit is an automated test suite designed for verifying OpenGL, OpenCL, and Vulkan driver implementations",
+      "summary": "Automated test suite designed for verifying OpenGL, OpenCL, and Vulkan driver implementations",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Piglit is an automated test suite designed for verifying OpenGL, OpenCL, and Vulkan driver implementations. Widely utilized in the development and quality assurance of Mesa graphics drivers, Piglit runs thousands of compliance and regression tests."
+              "value": "Piglit is a comprehensive open-source automated testing suite developed under the Mesa project for validating graphics hardware drivers. It provides developers and testers with robust tools to verify driver compliance, catch regressions, and ensure conformance across modern graphical computing APIs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "By executing test matrices against standard graphics profiles and shader pipelines, Piglit delivers detailed test reports to isolate issues in rendering, hardware acceleration, and API behaviors."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Comprehensive automated testing for OpenGL core profiles, extensions, and shaders"
+                "value": "Automated test execution across OpenGL, OpenGL ES, OpenCL, and Vulkan implementations"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Vulkan conformance and regression test integration"
+                "value": "Comprehensive shader verification covering GLSL compilation and execution"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Generates detailed HTML, JSON, and text test reports with visual pass/fail summaries"
+                "value": "Regression testing framework tailored for graphics driver quality assurance"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Concurrent multi-process test runner for rapid GPU hardware evaluation"
+                "value": "HTML and structured test result generation for benchmarking and tracking runs"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Indispensable tool for graphics driver developers and Linux hardware testers"
+                "value": "Extensive suite of functional rendering and compute verification tests"
               }
             ]
           ]
@@ -60,14 +69,22 @@
       "homepage": "https://gitlab.freedesktop.org/mesa/piglit",
       "repository": "https://github.com/pkgforge-dev/Piglit-AppImage",
       "keywords": [
-        "piglit",
-        "appimage",
-        "anylinux"
+        "opengl",
+        "vulkan",
+        "opencl",
+        "mesa",
+        "driver",
+        "testing",
+        "benchmark",
+        "graphics",
+        "conformance"
       ],
       "categories": [
         "Development",
+        "Graphics",
+        "Debugger",
         "Profiling",
-        "Debugger"
+        "3DGraphics"
       ]
     },
     "media": {

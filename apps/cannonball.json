@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.djyt.cannonball",
       "name": "Cannonball",
-      "summary": "Cannonball is an enhanced, open-source C++ engine rewrite of Yu Suzuki's classic 1986 arcade driving game OutRun",
+      "summary": "Enhanced open-source engine rewrite of the classic OutRun arcade driving game",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Cannonball is an enhanced, open-source C++ engine rewrite of Yu Suzuki's classic 1986 arcade driving game OutRun. It loads the original arcade ROM data to deliver a faithful recreation with extensive modern enhancements."
+              "value": "Cannonball is an enhanced, open-source C++ game engine rewrite of Yu Suzuki's classic 1986 arcade racing game OutRun. Built using SDL 2 and modern C++, it completely replaces the original Motorola 68000 and Z80 assembly code while preserving authentic arcade logic and delivering modern enhancements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine requires the original OutRun revision B arcade ROM files for audio and visual assets, modernizing the gameplay experience with improved performance and contemporary display capabilities."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Smooth 60 frames per second gameplay doubling the original arcade framerate"
+                "value": "Complete C++ rewrite of the original 68000 and Z80 arcade assembler codebase"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True widescreen 16:9 rendering with seamless scenery expansion"
+                "value": "Smooth 60 FPS gameplay and enhanced high frame-rate rendering support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Force feedback support for modern racing wheels and vibration gamepads"
+                "value": "True widescreen display modes alongside original 4:3 arcade aspect ratios"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Custom track layouts, time trial modes, and multiple difficulty levels"
+                "value": "Flexible hardware-accelerated rendering via OpenGL, OpenGLES, or SDL2"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-quality stereo music and sound effect playback"
+                "value": "Comprehensive XML-based configuration for custom controller mappings, video options, and ROM paths"
               }
             ]
           ]
@@ -60,14 +69,19 @@
       "homepage": "https://github.com/djyt/cannonball",
       "repository": "https://github.com/pkgforge-dev/Cannonball-AppImage",
       "keywords": [
-        "cannonball",
-        "appimage",
-        "anylinux"
+        "outrun",
+        "arcade",
+        "racing",
+        "driving",
+        "engine",
+        "sega",
+        "retro",
+        "sdl2",
+        "opengl"
       ],
       "categories": [
         "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "2DGraphics"
       ]
     },
     "media": {

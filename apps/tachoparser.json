@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.traconiq.tachoparser",
       "name": "tachoparser",
-      "summary": "tachoparser is an open-source application designed to read, inspect, and analyze digital tachograph driver cards and vehicle unit (.DDD / .TGD / .V",
+      "summary": "Decode, inspect, and verify digital and smart tachograph data files",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "tachoparser is an open-source application designed to read, inspect, and analyze digital tachograph driver cards and vehicle unit (.DDD / .TGD / .V1B) data files for transport compliance."
+              "value": "tachoparser is an open-source parsing and verification utility written in Go for processing digital tachograph driver card and vehicle unit (VU) data. It interprets raw tachograph binary files (.DDD, .TGD, .V1B) according to official technical specifications and converts complex record structures into standardized JSON."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for flexibility across desktop and server workflows, the suite includes standalone command-line tools, a lightweight graphical dialog interface, and gRPC service integrations for automated data analysis pipelines."
             }
           ]
         },
@@ -22,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Parses digital driver card files (.DDD) and vehicle unit data according to EU regulations"
+                "value": "Parses both first-generation digital tachograph (DT) and second-generation smart tachograph (ST) files"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Visualizes driving hours, rest breaks, daily work shifts, and weekly driving activity"
+                "value": "Verifies data authenticity using member state and root certificate public keys"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Identifies potential driving time infringements and regulation compliance issues"
+                "value": "Outputs fully structured JSON from STDIN to STDOUT for easy scripting and pipeline integration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Generates clear visual timelines and activity reports for transport managers"
+                "value": "Provides simplified extraction utilities for quick retrieval of driver names and identification numbers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Works completely locally ensuring confidential driver data remains private"
+                "value": "Includes a built-in Zenity-based UI for interactive file selection and conversion"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Features high-performance gRPC server and client components for networked file parsing"
               }
             ]
           ]
@@ -60,14 +75,19 @@
       "homepage": "https://github.com/traconiq/tachoparser",
       "repository": "https://github.com/pkgforge-dev/tachoparser-appimage",
       "keywords": [
-        "tachoparser",
-        "appimage",
-        "anylinux"
+        "tachograph",
+        "tachodata",
+        "drivercard",
+        "vehicleunit",
+        "parser",
+        "telematics",
+        "grpc",
+        "json"
       ],
       "categories": [
         "Utility",
-        "Engineering",
-        "DataVisualization"
+        "TextTools",
+        "Viewer"
       ]
     },
     "media": {

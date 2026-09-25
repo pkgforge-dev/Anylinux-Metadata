@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.trevorbayless.cli_chess",
       "name": "cli-chess",
-      "summary": "Highly customizable terminal chess client supporting online play via Lichess and offline AI",
+      "summary": "Customizable terminal chess client supporting online play via Lichess and offline AI",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "cli-chess is a terminal-based chess client written by Trevor Bayless. Designed for chess enthusiasts who prefer working in command-line environments, it provides board rendering and move validation."
+              "value": "cli-chess is a terminal-based chess client built in Python that allows players to enjoy chess directly in the console. It offers integration with Lichess.org for online multiplayer matches as well as offline gameplay against the integrated Fairy-Stockfish engine."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The client supports online multiplayer games through the official Lichess.org API, local matches, and single-player practice against the Fairy-Stockfish chess engine."
+              "value": "Designed for maximum flexibility and keyboard-driven efficiency, cli-chess provides support for all standard Lichess game variants, customizable color themes, and multiple move input formats."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Full integration with Lichess.org for online rated and casual chess games"
+                "value": "Play online matches using your Lichess account or play offline against Fairy-Stockfish"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Offline play against the powerful Fairy-Stockfish engine with adjustable difficulty"
+                "value": "Full support for all official Lichess chess variants"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for all standard Lichess variants including Chess960, Crazyhouse, and King of the Hill"
+                "value": "Multiple move notation inputs including UCI, SAN, and LAN"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable Unicode piece sets, board colors, and coordinate layouts"
+                "value": "Customizable themes and color schemes for the board, pieces, and UI elements"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "PGN game notation export and move history inspection in terminal"
+                "value": "In-game opponent chat, blindfold mode, and live Lichess TV streaming"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "PGN game export support for post-match analysis"
               }
             ]
           ]
@@ -69,21 +75,31 @@
       "homepage": "https://github.com/trevorbayless/cli-chess",
       "repository": "https://github.com/trevorbayless/cli-chess",
       "keywords": [
-        "cli-chess",
-        "appimage",
-        "anylinux"
+        "chess",
+        "lichess",
+        "stockfish",
+        "terminal",
+        "tui",
+        "boardgame",
+        "pgn",
+        "uci"
       ],
       "categories": [
         "Game",
-        "BoardGame"
+        "Network",
+        "Chat"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/cli-chess.png",
       "screenshots": [
         {
-          "caption": "cli-chess interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Playing an offline chess match against Fairy-Stockfish in the terminal",
+          "source": "https://github.com/trevorbayless/cli-chess/assets/3620552/6d02585e-bca7-4260-aa5c-ccb228d41033"
+        },
+        {
+          "caption": "Watching a live UltraBullet game on Lichess TV",
+          "source": "https://github.com/trevorbayless/cli-chess/assets/3620552/759ae63b-9e8b-4bee-adb0-1762b13c41a7"
         }
       ]
     }

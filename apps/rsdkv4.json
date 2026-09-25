@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.rubberduckycooly.sonic_1_2_2013_decompilation_rsdkv4",
       "name": "RSDKv4",
-      "summary": "RSDKv4 is a complete, open-source standalone decompilation of the 2013 mobile remasters of Sonic the Hedgehog 1 and Sonic the Hedgehog 2 running on",
+      "summary": "Standalone decompilation of Retro Engine v4 for Sonic the Hedgehog 1 and 2",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "RSDKv4 is a complete, open-source standalone decompilation of the 2013 mobile remasters of Sonic the Hedgehog 1 and Sonic the Hedgehog 2 running on the Retro Engine v4."
+              "value": "RSDKv4 is a complete standalone decompilation of Retro Engine v4 and the menus from the 2013 remasters of Sonic the Hedgehog 1 and Sonic the Hedgehog 2. It offers an open-source reimplementation designed to run natively on modern desktop platforms when supplied with original game assets."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "In addition to authentic recreation of the original mobile remasters, the engine incorporates enhanced debugging tools, extended modding capabilities, and modern quality-of-life adjustments."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern 64-bit operating systems without mobile emulation"
+                "value": "Built-in mod loader and API supporting save file redirection, custom achievements, and XML configuration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "True 16:9 widescreen rendering with smooth 60 FPS side-scrolling action"
+                "value": "Custom networking system and dedicated menus for hosting and joining Sonic 2 2-player versus multiplayer"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Restored cut content, hidden zones (such as Hidden Palace Zone), and debug modes"
+                "value": "Integrated script compiler backported from Retro Engine v5U"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Playable characters include Sonic, Tails, and Knuckles with unique movesets"
+                "value": "Comprehensive developer menu with scene jumping, hitbox visualization, and real-time palette monitoring"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full modern USB gamepad support and customizable keybindings"
+                "value": "Unified settings file configuration for easy management of display, gameplay, and engine options"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://github.com/Rubberduckycooly/Sonic-1-2-2013-Decompilation",
       "repository": "https://github.com/pkgforge-dev/RSDKv4-AppImage",
       "keywords": [
-        "rsdkv4",
-        "appimage",
-        "anylinux"
+        "sonic",
+        "retro engine",
+        "decompilation",
+        "engine",
+        "platformer",
+        "sega",
+        "multiplayer",
+        "mod loader"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "Debugger"
       ]
     },
     "media": {

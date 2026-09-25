@@ -5,14 +5,14 @@
     "metadata": {
       "id": "br.gov.receitafederal.itr2026",
       "name": "ITR 2026",
-      "summary": "Programa oficial da Receita Federal para elaboração e entrega da Declaração do ITR 2026",
+      "summary": "Prepare and submit the official Brazilian Rural Land Tax (ITR 2026) declaration",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "O ITR 2026 (Programa Gerador da Declaração do ITR 2026) é o aplicativo oficial da Secretaria Especial da Receita Federal do Brasil para preenchimento e transmissão da Declaração do Imposto sobre a Propriedade Territorial Rural."
+              "value": "ITR 2026 is the official software provided by the Brazilian Federal Revenue Service (Receita Federal) designed for the preparation, validation, and electronic submission of the Declaração do Imposto sobre a Propriedade Territorial Rural (DITR)."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "O programa possibilita o registro cadastral de imóveis rurais, cálculo automático do imposto territorial devido, validação de inconsistências e emissão do comprovante de entrega e DARF."
+              "value": "Packaged for enhanced portability across Linux distributions, the application enables taxpayers and accountants to manage rural land declarations with embedded runtime components and zero external dependency friction."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Preenchimento completo dos formulários de informação cadastral e apuração do ITR"
+                "value": "Creation, editing, and verification of rural property tax declarations"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Cálculo automático do valor do imposto devido de acordo com a área tributável"
+                "value": "Official calculation of land tax liabilities according to Receita Federal rules"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Validação automatizada de consistência cadastral e pendências fiscais"
+                "value": "Integrated transmission of tax returns directly to government servers"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Exportação, importação e restauração de declarações de exercícios anteriores"
+                "value": "Portable standalone execution without requiring root privileges or system FUSE"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Emissão direta do DARF para recolhimento e do recibo oficial de transmissão"
+                "value": "Built-in automated update notification system"
               }
             ]
           ]
@@ -69,14 +69,18 @@
       "homepage": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/ditr",
       "repository": "https://github.com/pkgforge-dev/ITR2026-AppImage",
       "keywords": [
-        "itr2026",
-        "appimage",
-        "anylinux"
+        "receita federal",
+        "ditr",
+        "imposto de renda",
+        "taxes",
+        "tax declaration",
+        "brazil",
+        "accounting",
+        "finance"
       ],
       "categories": [
         "Office",
-        "Finance",
-        "Utility"
+        "Finance"
       ]
     },
     "media": {

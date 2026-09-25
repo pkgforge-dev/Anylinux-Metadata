@@ -5,14 +5,23 @@
     "metadata": {
       "id": "net.riseup.riseup_vpn",
       "name": "RiseupVPN",
-      "summary": "RiseupVPN is an easy-to-use, personal virtual private network (VPN) service operated by the Riseup collective",
+      "summary": "Easy-to-use and secure personal virtual private network service operated by the Riseup collective",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "RiseupVPN is an easy-to-use, personal virtual private network (VPN) service operated by the Riseup collective. It routes your Internet traffic through encrypted tunnels to protect your privacy and circumvent censorship."
+              "value": "RiseupVPN is a personal virtual private network (VPN) client designed to provide secure, encrypted internet access without logging traffic. Powered by the LEAP Bitmask VPN technology, it routes your network traffic through trusted servers to protect communications against censorship and surveillance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The application runs out of the box with zero configuration required, allowing users to quickly connect and safeguard their online activity."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "One-click connection to secure, encrypted VPN gateways"
+                "value": "One-click connection to secure Riseup-operated VPN gateways"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Zero user activity logging or traffic tracking maintained by the non-profit Riseup collective"
+                "value": "Encrypted network tunnels that safeguard traffic against snooping and censorship"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Automatic configuration without needing to manage OpenVPN configuration files manually"
+                "value": "No-logging policy ensuring user activity remains private and anonymous"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "DNS leak prevention and automatic kill-switch safeguarding connection drops"
+                "value": "Integrated self-update capability to keep the client securely updated"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Clean, unobtrusive desktop indicator interface"
+                "value": "Built on Bitmask technology with broad compatibility across Linux distributions"
               }
             ]
           ]
@@ -60,13 +69,19 @@
       "homepage": "https://riseup.net/vpn",
       "repository": "https://github.com/pkgforge-dev/Riseup-VPN-AppImage",
       "keywords": [
-        "riseup-vpn",
-        "appimage",
-        "anylinux"
+        "vpn",
+        "privacy",
+        "security",
+        "encryption",
+        "bitmask",
+        "tunnel",
+        "proxy",
+        "anonymity"
       ],
       "categories": [
         "Network",
-        "Security"
+        "System",
+        "RemoteAccess"
       ]
     },
     "media": {

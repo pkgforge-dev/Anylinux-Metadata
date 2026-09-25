@@ -5,14 +5,23 @@
     "metadata": {
       "id": "net.launchpad.maniadrive",
       "name": "ManiaDrive",
-      "summary": "ManiaDrive is an arcade car driving and acrobatic stunt game in the spirit of TrackMania",
+      "summary": "Arcade car driving and acrobatic stunt game in the spirit of TrackMania",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ManiaDrive is an arcade car driving and acrobatic stunt game in the spirit of TrackMania. Built with realistic car physics, loop-the-loops, and death-defying jumps, it challenges players to beat track time records."
+              "value": "ManiaDrive is an arcade racing game centered on complex stunt driving and fast-paced acrobatic tracks. Inspired by the TrackMania series, the game challenges drivers to navigate intricate courses featuring loops, steep jumps, and tight obstacles requiring precise control and physics mastery."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with portable runtime dependencies, this release delivers seamless compatibility across varied Linux distributions without external configuration."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Acrobatic stunt tracks with extreme loops, ramps, wall-rides, and chicanes"
+                "value": "Acrobatic stunt courses including dramatic loops, corkscrews, and ramps"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Realistic vehicle dynamics and suspension physics powered by ODE"
+                "value": "Fast-paced arcade physics engine emphasizing quick reflexes and timing"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in 3D track editor enabling players to build and share custom stunt courses"
+                "value": "Time attack racing aimed at beating lap records and personal bests"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Energetic soundtrack featuring diverse licensed rock and electronic music"
+                "value": "Built-in update notification system ensuring up-to-date game builds"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Ghost car visualization to race against your personal best times"
+                "value": "Self-contained portable execution requiring no FUSE setup or system-level containers"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://launchpad.net/~aapo-rantalainen/+archive/ubuntu/games",
       "repository": "https://github.com/pkgforge-dev/ManiaDrive-AppImage",
       "keywords": [
-        "maniadrive",
-        "appimage",
-        "anylinux"
+        "racing",
+        "arcade",
+        "stunts",
+        "driving",
+        "cars",
+        "trackmania",
+        "physics",
+        "simulation"
       ],
       "categories": [
         "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "3DGraphics"
       ]
     },
     "media": {

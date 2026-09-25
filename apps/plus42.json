@@ -5,14 +5,23 @@
     "metadata": {
       "id": "com.thomasokken.plus42",
       "name": "Plus42",
-      "summary": "Plus42 is an advanced scientific programmable calculator based on Free42, extending the capabilities of the iconic HP-42S",
+      "summary": "Advanced scientific programmable calculator based on Free42 extending the iconic HP-42S",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Plus42 is an advanced scientific programmable calculator based on Free42, extending the capabilities of the iconic HP-42S. Designed for scientists, mathematicians, and engineers, it adds formula evaluation, units conversions, and expanded memory."
+              "value": "Plus42 is an advanced scientific programmable calculator based on Free42 that significantly expands upon the architecture and capabilities of the iconic HP-42S. Designed for engineers, scientists, and calculator enthusiasts, it provides an authentic Reverse Polish Notation (RPN) workflow alongside enhanced multi-line display features and expanded register handling."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Building directly on Free42's complete HP-42S emulation core, Plus42 incorporates additional mathematical operations, larger stack visualization, and improved program navigation while maintaining full backward compatibility with HP-42S code."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Complete HP-42S compatibility with Reverse Polish Notation (RPN) computation"
+                "value": "Full HP-42S compatibility with classic RPN stack execution and keystroke programming"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Expanded multi-line LCD display with dynamic font sizing"
+                "value": "Extended 8-line display showing multiple stack levels and system status simultaneously"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Algebraic expression evaluation and numerical integration"
+                "value": "Support for dynamic variable names, directories, and extended precision arithmetic"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Comprehensive unit conversion system covering scientific and engineering quantities"
+                "value": "Built-in matrix operations, complex number handling, and numerical integration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Matrix algebra, complex number arithmetic, and statistical distributions"
+                "value": "Programmable solver and statistical functions modeled after advanced scientific calculators"
               }
             ]
           ]
@@ -60,15 +69,19 @@
       "homepage": "https://thomasokken.com/plus42",
       "repository": "https://github.com/pkgforge-dev/Plus42-AppImage",
       "keywords": [
-        "plus42",
-        "appimage",
-        "anylinux"
+        "calculator",
+        "scientific",
+        "rpn",
+        "free42",
+        "hp-42s",
+        "programmable",
+        "mathematics",
+        "algebra"
       ],
       "categories": [
         "Utility",
-        "Calculator",
         "Science",
-        "Math"
+        "Finance"
       ]
     },
     "media": {

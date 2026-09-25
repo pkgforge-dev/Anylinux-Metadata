@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.rockinchaos.shiru",
       "name": "Shiru",
-      "summary": "Modern desktop client for Crunchyroll built using Electron and Vue",
+      "summary": "Personal anime library manager for watching and tracking media collections in real time",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Shiru is an open-source desktop client for streaming anime on Crunchyroll. Developed with Electron and Vue, it provides a clean, tailored desktop viewing experience."
+              "value": "Shiru is a feature-rich desktop anime library manager designed for speed, control, and a seamless playback experience. Built using Electron and Vue, it plays local media directly for near-instant native video performance without transcoding or compression."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The client supports episode tracking, watchlist synchronization, smooth video playback with hardware acceleration, and integrated Discord Rich Presence."
+              "value": "It acts as a centralized dashboard for tracking viewing progress, organizing series, and managing synchronization across third-party tracking services."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Streamlined desktop viewing environment without browser tab clutter"
+                "value": "AniList and MyAnimeList integration for list synchronization, progress tracking, and ratings"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated video decoding supporting 1080p high-definition streams"
+                "value": "Dub-first tracking with independent dub and sub schedules and customizable preference filters"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Watchlist synchronization and automatic playback progress tracking"
+                "value": "Comprehensive subtitle support for softcoded and external files including VTT, SSA, ASS, and SUB"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Discord Rich Presence integration displaying current show and episode status"
+                "value": "Real-time notifications for newly released subbed, dubbed, and batch episodes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Customizable player shortcuts, subtitle styling, and audio track selection"
+                "value": "Extensible architecture supporting personal media server and custom content source plugins"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fully customizable drag-and-drop keybinding editor for tailored playback controls"
               }
             ]
           ]
@@ -69,13 +75,19 @@
       "homepage": "https://github.com/RockinChaos/Shiru",
       "repository": "https://github.com/RockinChaos/Shiru",
       "keywords": [
-        "shiru",
-        "appimage",
-        "anylinux"
+        "anime",
+        "player",
+        "video",
+        "anilist",
+        "myanimelist",
+        "subtitles",
+        "media",
+        "library"
       ],
       "categories": [
         "AudioVideo",
-        "Player"
+        "Video",
+        "Viewer"
       ]
     },
     "media": {

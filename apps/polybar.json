@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.samueru_sama.polybar_appimage_polybar",
       "name": "polybar",
-      "summary": "Unofficial AppImage of polybar",
+      "summary": "Fast and easy-to-use status bar tool for desktop environments and window managers",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Unofficial AppImage of polybar. A fast easy-to-use status bar."
+              "value": "Polybar is a fast, highly customizable status bar tool designed to help users create beautiful and functional taskbars for lightweight window managers and desktop environments. It provides extensive modularity, allowing users to display workspace indicators, system resource monitors, network statuses, and multimedia controls with minimal overhead."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged as a standalone portable package bundled with all necessary runtime components, it runs seamlessly across virtually any Linux distribution without requiring external runtime dependencies or FUSE support."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive modular architecture supporting workspace switchers, battery, audio, and network indicators"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Highly flexible styling engine with custom colors, fonts, transparency, and formatting tags"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fully bundled portable runtime operating independently without FUSE requirements"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Optional integrated self-updater that checks for updates and notifies on new releases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for clickable areas, interactive actions, and custom external shell scripts"
+              }
+            ]
           ]
         }
       ],
@@ -25,12 +69,19 @@
       "homepage": "https://github.com/Samueru-sama/polybar-AppImage",
       "repository": "https://github.com/pkgforge-dev/polybar-AppImage",
       "keywords": [
-        "polybar",
-        "appimage",
-        "anylinux"
+        "status bar",
+        "panel",
+        "taskbar",
+        "window manager",
+        "desktop environment",
+        "system monitor",
+        "tray",
+        "i3",
+        "bspwm"
       ],
       "categories": [
         "System",
+        "Utility",
         "DesktopSettings"
       ]
     },

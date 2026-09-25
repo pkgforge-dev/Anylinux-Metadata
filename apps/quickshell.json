@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.outfoxxed.quickshell",
       "name": "Quickshell",
-      "summary": "Quickshell is a flexible framework for building custom desktop shells, status bars, notification daemons, and system widgets using QML and QtQuick",
+      "summary": "Flexible framework for building custom desktop shells, status bars, and system widgets using QML and QtQuick",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Quickshell is a flexible framework for building custom desktop shells, status bars, notification daemons, and system widgets using QML and QtQuick. It gives users complete control over their desktop interface design."
+              "value": "Quickshell is a flexible and lightweight framework designed for creating custom desktop shells, system widgets, status bars, and notification daemons using QML and QtQuick. It enables developers and users to build tailored, modular desktop interface components that integrate cleanly with modern Linux desktop environments."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Leveraging the reactive design of QtQuick and declarative QML, Quickshell offers full control over layout, styling, and system event handling, allowing users to configure or replace traditional desktop environment components."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Declarative UI creation leveraging modern QML and JavaScript syntax"
+                "value": "Declarative user interface creation powered by QtQuick and QML"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Deep Linux desktop integration with Wayland (layer-shell) and X11 support"
+                "value": "Framework for crafting custom status bars, panels, and docks"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "System service bindings for battery, audio volume, network, and window management"
+                "value": "Support for standalone notification daemons and popup overlays"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hot-reloading capabilities enabling real-time visual feedback during widget creation"
+                "value": "Modular system widget architecture for desktop customization"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Exceptionally fast rendering and low CPU utilization"
+                "value": "Seamless integration with Wayland and X11 display servers"
               }
             ]
           ]
@@ -60,14 +69,19 @@
       "homepage": "https://github.com/outfoxxed/quickshell",
       "repository": "https://github.com/pkgforge-dev/quickshell-appimage",
       "keywords": [
-        "quickshell",
-        "appimage",
-        "anylinux"
+        "qml",
+        "qtquick",
+        "desktop",
+        "status bar",
+        "panel",
+        "widget",
+        "wayland",
+        "shell",
+        "notifications"
       ],
       "categories": [
-        "Development",
-        "GUIDesigner",
-        "System"
+        "System",
+        "DesktopSettings"
       ]
     },
     "media": {

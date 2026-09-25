@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.pjasicek.openclaw",
       "name": "OpenClaw",
-      "summary": "OpenClaw is a modern, open-source reimplementation of Captain Claw (1997), the beloved 2D pirate side-scrolling platformer created by Monolith Prod",
+      "summary": "Modern open-source reimplementation of the classic Captain Claw platformer game",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "OpenClaw is a modern, open-source reimplementation of Captain Claw (1997), the beloved 2D pirate side-scrolling platformer created by Monolith Productions. It reconstructs the game engine in C++ and SDL2."
+              "value": "OpenClaw is a multiplatform C++ reimplementation written completely from scratch for the classic 1997 side-scrolling platformer Captain Claw. Powered by SDL2 and Box2D physics, it breathes new life into the beloved pirate adventure across modern operating systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine reads original game assets directly from the original CLAW.REZ archive, recreating authentic physics, audio, and gameplay dynamics on modern hardware."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern 64-bit operating systems with high framerates"
+                "value": "Complete from-scratch C++ engine reimplementation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and high-resolution display rendering with scalable HUD elements"
+                "value": "Original CLAW.REZ asset loading for authentic graphics and level data"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for modern gamepads, joysticks, and configurable keyboard controls"
+                "value": "Accurate 2D platforming physics powered by Box2D"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Faithfully reproduces all original levels, animated cutscenes, and swordplay"
+                "value": "Modern multiplatform rendering and input handling via SDL2"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Requires original Captain Claw game data files to run"
+                "value": "MIDI background soundtrack playback support via Timidity"
               }
             ]
           ]
@@ -60,14 +69,19 @@
       "homepage": "https://github.com/pjasicek/OpenClaw",
       "repository": "https://github.com/pkgforge-dev/OpenClaw-AppImage",
       "keywords": [
-        "openclaw",
-        "appimage",
-        "anylinux"
+        "captain claw",
+        "platformer",
+        "side-scroller",
+        "retro",
+        "pirate",
+        "sdl2",
+        "box2d",
+        "game engine",
+        "reimplementation"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "ArcadeGame"
+        "Midi"
       ]
     },
     "media": {

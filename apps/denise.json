@@ -5,14 +5,23 @@
     "metadata": {
       "id": "net.sourceforge.denise",
       "name": "Denise",
-      "summary": "Denise is a cycle-accurate, open-source Commodore 64 and Amiga 500/1000/2000 emulator",
+      "summary": "Emulate Commodore 64 and Amiga 500, 1000, and 2000 systems with cycle-accurate precision",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Denise is a cycle-accurate, open-source Commodore 64 and Amiga 500/1000/2000 emulator. Written in C++, it prioritizes emulation precision and clean audio-visual output to faithfully preserve vintage home computer experiences."
+              "value": "Denise is a cycle-accurate, open-source emulator targeting Commodore 64 and Commodore Amiga 500, 1000, and 2000 computers. Designed for accurate retrocomputing preservation, it provides clean audio and video reproduction alongside faithful hardware timing."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This portable package delivers seamless execution across various Linux distributions without requiring FUSE or container overhead."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Highly accurate MOS 6510 CPU, VIC-II, and SID chip emulation for Commodore 64"
+                "value": "Cycle-accurate emulation of Commodore 64 architectures"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Motorola 68000 and OCS/ECS custom chipset emulation for classic Commodore Amiga"
+                "value": "Faithful support for Amiga 500, 1000, and 2000 systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for D64, G64, T64, TAP, PRG, and ADF disk and tape image formats"
+                "value": "Self-contained portable execution with no external dependencies required"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable CRT shaders simulating scanlines, phosphors, and RF/composite signals"
+                "value": "FUSE-independent runtime environment"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Low audio and input latency with game controller and joystick remapping"
+                "value": "Built-in update notification and checking mechanisms"
               }
             ]
           ]
@@ -60,12 +69,15 @@
       "homepage": "https://sourceforge.net/projects/deniseemu/",
       "repository": "https://github.com/pkgforge-dev/denise-appimage",
       "keywords": [
-        "denise",
-        "appimage",
-        "anylinux"
+        "commodore",
+        "c64",
+        "amiga",
+        "emulator",
+        "retrogaming",
+        "retrocomputing",
+        "cycle-accurate"
       ],
       "categories": [
-        "System",
         "Game",
         "Emulator"
       ]

@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.samueru_sama.android_tools_appimage",
       "name": "android-tools",
-      "summary": "Unofficial AppImage of Android Platform Tools (adb, fastboot, etc)",
+      "summary": "Communicate, debug, and flash Android devices using official platform utilities",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Unofficial AppImage of Android Platform Tools (adb, fastboot, etc)."
+              "value": "android-tools packages the essential Android SDK Platform-Tools into a portable, standalone Linux bundle. It equips developers and enthusiasts with core command-line utilities such as the Android Debug Bridge (adb) and fastboot to interface with Android devices directly from any desktop distribution."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for maximum portability and compatibility, this distribution bundles all necessary runtime dependencies without requiring FUSE to execute."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Includes adb for debugging, sideloading firmware packages, file transfers, and remote shell access"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Provides fastboot for flashing system images, kernel partitions, and unlocking bootloaders"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Self-contained portable runtime operating across glibc and musl-based Linux distributions"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Runs out-of-the-box without requiring FUSE kernel modules or drivers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updating mechanism to detect and prompt for new upstream platform releases"
+              }
+            ]
           ]
         }
       ],
@@ -25,13 +69,18 @@
       "homepage": "https://github.com/Samueru-sama/android-tools-AppImage",
       "repository": "https://github.com/pkgforge-dev/android-tools-AppImage",
       "keywords": [
-        "android-tools",
-        "appimage",
-        "anylinux"
+        "adb",
+        "fastboot",
+        "android",
+        "debugging",
+        "flashing",
+        "sideload",
+        "firmware",
+        "bootloader"
       ],
       "categories": [
         "Development",
-        "Building",
+        "System",
         "Debugger"
       ]
     },

@@ -5,14 +5,14 @@
     "metadata": {
       "id": "chat.stoat.StoatDesktop",
       "name": "Stoat",
-      "summary": "Open source, user-first chat platform for messaging, voice channels, and communities",
+      "summary": "Connect with communities through messaging and voice channels",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Stoat is an open-source, user-first desktop chat and collaboration application developed by Revolt Platforms. It provides a customizable communication hub for communities, friends, and teams."
+              "value": "Stoat is an open-source, user-first communication platform designed for text messaging, voice channels, and community collaboration. Built as an extensible desktop client, Stoat provides a privacy-conscious, customizable chat environment that puts users in control of their digital spaces."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The client supports rich text messaging, customizable server roles, direct messages, and group voice channels without tracking or selling user data."
+              "value": "The platform enables private messaging, group discussions, and community server management with robust modern chat capabilities across multiple desktop operating systems."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "End-to-end user privacy without advertising, data harvesting, or tracking"
+                "value": "Organized community servers with configurable text channels and categories"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Rich text chat with Markdown rendering, file sharing, and custom emoji reactions"
+                "value": "Low-latency voice channels for group conversations and meetings"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity voice channels with low-latency audio transmission"
+                "value": "Direct messaging and group chat support for private conversations"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Community server structure with flexible permissions and granular role management"
+                "value": "Cross-platform desktop application built with web technologies"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native desktop client with system tray integration and configurable notifications"
+                "value": "Support for custom branding assets and custom server connections"
               }
             ]
           ]
@@ -69,14 +69,20 @@
       "homepage": "https://stoat.chat",
       "repository": "https://github.com/stoatchat/for-desktop",
       "keywords": [
-        "stoat",
-        "appimage",
-        "anylinux"
+        "chat",
+        "messaging",
+        "voice",
+        "community",
+        "im",
+        "collaboration",
+        "conference",
+        "server"
       ],
       "categories": [
         "Network",
+        "Chat",
         "InstantMessaging",
-        "Chat"
+        "VideoConference"
       ]
     },
     "media": {

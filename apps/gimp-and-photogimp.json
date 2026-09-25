@@ -5,23 +5,14 @@
     "metadata": {
       "id": "io.github.diolinux.photogimp",
       "name": "PhotoGIMP",
-      "summary": "Patch for GIMP providing an Adobe Photoshop-style interface layout and keyboard shortcuts",
+      "summary": "Transform GIMP with an Adobe Photoshop layout and keyboard shortcuts",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "PhotoGIMP is a curated customization patch for the GNU Image Manipulation Program (GIMP) crafted by Diolinux. It reshapes the GIMP environment into a layout familiar to Adobe Photoshop users."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "value": "The bundle includes custom workspace layouts, standard Photoshop keyboard shortcuts, thousands of curated fonts, and optimized default tool preferences."
+              "value": "PhotoGIMP is a patch that customizes the GNU Image Manipulation Program (GIMP) to provide an interface layout and workflow tailored for Adobe Photoshop users. It adapts the tool arrangements, default settings, and shortcuts so creators transitioning to open-source software can work comfortably without relearning fundamental controls."
             }
           ]
         },
@@ -31,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Adobe Photoshop-inspired toolbar organization and panel arrangement"
+                "value": "Reorganized tool layout mirroring standard Adobe Photoshop positions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Standard industry keyboard shortcut mappings for common image editing tools"
+                "value": "Photoshop-compatible keyboard shortcuts based on official desktop standards"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Curated bundle of open-source creative fonts ready for graphic design"
+                "value": "Optimized interface settings designed to maximize usable canvas space"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Streamlined export and saving dialog configurations"
+                "value": "Custom startup splash screen greeting users upon launching"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Complete non-destructive integration with underlying GIMP capabilities"
+                "value": "Dedicated desktop integration with distinct application naming and icon"
               }
             ]
           ]
@@ -69,22 +60,31 @@
       "homepage": "https://github.com/Diolinux/PhotoGIMP",
       "repository": "https://github.com/Diolinux/PhotoGIMP",
       "keywords": [
-        "gimp-and-photogimp",
-        "appimage",
-        "anylinux"
+        "gimp",
+        "photoshop",
+        "image editor",
+        "photo retouching",
+        "graphic design",
+        "shortcuts",
+        "raster graphics"
       ],
       "categories": [
         "Graphics",
         "2DGraphics",
-        "RasterGraphics"
+        "RasterGraphics",
+        "Photography"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/gimp-and-photogimp.png",
       "screenshots": [
         {
-          "caption": "PhotoGIMP interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "PhotoGIMP application window showing the Photoshop-style layout",
+          "source": "https://raw.githubusercontent.com/Diolinux/PhotoGIMP/master/screenshots/photogimp_3_-_diolinux.png"
+        },
+        {
+          "caption": "PhotoGIMP custom startup splash screen",
+          "source": "https://raw.githubusercontent.com/Diolinux/PhotoGIMP/master/.config/GIMP/3.0/splashes/splash-screen-2025-v2.png"
         }
       ]
     }

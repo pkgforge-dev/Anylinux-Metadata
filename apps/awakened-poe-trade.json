@@ -1,0 +1,124 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.snosme.awakened_poe_trade",
+      "name": "Awakened PoE Trade",
+      "summary": "Check item prices and trade efficiently in Path of Exile",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Awakened PoE Trade is a powerful companion tool designed for Path of Exile players to streamline in-game trading and price checking. Built to operate seamlessly alongside the game, it allows exiles to quickly evaluate the value of items, currency, and equipment without leaving their game session."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "This enhanced portable edition provides reliable execution across distributions without requiring FUSE or container overhead, offering out-of-the-box support for X11 environments."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Instant in-game price checking for equipment, gems, maps, and currencies"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Direct integration with official Path of Exile trade markets"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Pre-configured X11 compatibility out of the box"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated update notifications and seamless self-updating capabilities"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Autonomous operation without requiring FUSE runtime dependencies"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Awakened PoE Trade Developers",
+        "url": "https://snosme.github.io/awakened-poe-trade/download"
+      },
+      "homepage": "https://snosme.github.io/awakened-poe-trade/download",
+      "repository": "https://github.com/pkgforge-dev/Awakened-POE-Trade-AppImage-Enhanced",
+      "keywords": [
+        "path of exile",
+        "poe",
+        "trading",
+        "price checker",
+        "overlay",
+        "gaming tool",
+        "arpg"
+      ],
+      "categories": [
+        "Game",
+        "Utility"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/awakened-poe-trade.png",
+      "screenshots": [
+        {
+          "caption": "Awakened PoE Trade interface screenshot 1",
+          "source": "https://i.imgur.com/2XL5Wl8.png"
+        },
+        {
+          "caption": "Awakened PoE Trade interface screenshot 2",
+          "source": "https://i.imgur.com/MATqhv7.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Awakened-POE-Trade-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "net.sourceforge.zod_engine",
       "name": "Zod Engine",
-      "summary": "The Zod Engine is an open-source multiplayer remake of Z (1996), the classic real-time tactical strategy game developed by The Bitmap Brothers",
+      "summary": "Open-source multiplayer remake of the classic 1996 real-time tactical strategy game Z",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "The Zod Engine is an open-source multiplayer remake of Z (1996), the classic real-time tactical strategy game developed by The Bitmap Brothers. It modernizes the territory-conquering robotic war for modern systems."
+              "value": "The Zod Engine is an open-source remake and multiplayer expansion of Z, the classic 1996 real-time tactical strategy game created by The Bitmap Brothers. It faithfully restores the fast-paced territory capture and unit-manufacturing mechanics of the original game while modernizing the engine for contemporary platforms."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Unlike traditional real-time strategy games focused on resource harvesting and base building, gameplay revolves around aggressive territorial conquest where capturing sector flags directly controls production factories and unit reinforcement timers."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native cross-platform execution with support for high resolutions and modern displays"
+                "value": "Authentic real-time tactical strategy gameplay recreating original unit physics, vehicle driving mechanics, and robot AI behaviors"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Tactical real-time strategy gameplay focused on territory control, factories, and flags"
+                "value": "Multiplayer network support allowing cooperative and competitive skirmishes with human opponents over LAN or the Internet"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Robust multiplayer support for online and LAN battles against human opponents"
+                "value": "Sector-based territory domination system where holding command flags governs factory production and map control"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Challenging AI opponents for intense single-player skirmish matches"
+                "value": "Diverse battlefield environments featuring destructible obstacles, artillery, tanks, and infantry robot squads"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Faithful recreation of original robot units, tanks, gun emplacements, and humorous cutscenes"
+                "value": "Cross-platform game engine optimized for low latency and standalone execution on modern Linux systems"
               }
             ]
           ]
@@ -60,13 +69,16 @@
       "homepage": "https://sourceforge.net/projects/zod/",
       "repository": "https://github.com/pkgforge-dev/Zod-Engine-AppImage",
       "keywords": [
-        "zod-engine",
-        "appimage",
-        "anylinux"
+        "strategy",
+        "rts",
+        "tactical",
+        "multiplayer",
+        "retro",
+        "remake",
+        "bitmap brothers"
       ],
       "categories": [
-        "Game",
-        "StrategyGame"
+        "Game"
       ]
     },
     "media": {

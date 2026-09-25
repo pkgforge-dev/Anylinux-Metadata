@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.rainchus.donkeykong64recomp",
       "name": "Donkey Kong 64 Recompiled",
-      "summary": "Native PC port of Donkey Kong 64 created using static recompilation",
+      "summary": "Play Donkey Kong 64 natively on PC with enhanced graphics and modern features",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Donkey Kong 64 Recompiled is a native PC port of Rare's classic Nintendo 64 3D platformer Donkey Kong 64. Using static binary recompilation, it translates the N64 game code directly into native instructions."
+              "value": "Donkey Kong 64: Recompiled is an enhanced native PC port of the classic Nintendo 64 game created using static recompilation via N64: Recompiled. Powered by the RT64 rendering engine, it delivers high performance and modern PC enhancements without relying on traditional emulation."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The port provides fluid gameplay across all five playable Kongs with high framerates, widescreen support, modern camera controls, and instant world streaming."
+              "value": "The project requires an original game ROM to provide game assets and features faithful reproduction of original visual effects alongside modern display and control options."
             }
           ]
         },
@@ -31,31 +31,37 @@
             [
               {
                 "type": "text",
-                "value": "Native desktop binary execution delivering high framerates without emulation lag"
+                "value": "High framerate gameplay supporting arbitrary monitor refresh rates without affecting game logic"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for true widescreen, ultra-widescreen, and high-DPI displays"
+                "value": "Widescreen and ultrawide aspect ratio support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modern dual-analog camera controls with customizable deadzones"
+                "value": "Fully intact N64 graphical and screen effects rendered via RT64 with Vulkan and Direct3D 12 backends"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable quality-of-life options and seamless character swapping"
+                "value": "Low input lag and instant load times compared to original hardware"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Direct gamepad input compatibility including rumble feedback support"
+                "value": "Comprehensive in-game configuration menus usable via mouse, keyboard, or gamepad"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Native compatibility for Linux desktop and Steam Deck"
               }
             ]
           ]
@@ -69,14 +75,17 @@
       "homepage": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled",
       "repository": "https://github.com/Rainchus/Donkey-Kong-64-Recompiled",
       "keywords": [
-        "donkeykong64recomp",
-        "appimage",
-        "anylinux"
+        "nintendo",
+        "n64",
+        "recompilation",
+        "recompiled",
+        "port",
+        "rt64",
+        "platformer",
+        "retro"
       ],
       "categories": [
-        "Game",
-        "ActionGame",
-        "AdventureGame"
+        "Game"
       ]
     },
     "media": {

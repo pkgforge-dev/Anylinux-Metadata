@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.harbourmasters.lighthouse",
       "name": "Lighthouse",
-      "summary": "Harbour Masters native PC port and launcher for Banjo-Kazooie",
+      "summary": "Native PC port and launcher for Banjo-Kazooie by Harbour Masters",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Lighthouse is the official companion launcher and modern PC port of Banjo-Kazooie created by the Harbour Masters development group. It allows the classic 3D platformer to run with PC graphics and control features."
+              "value": "Lighthouse is Harbour Masters' native PC port and launcher for Banjo-Kazooie, powered by a complete 100% decompilation of the original game. It enables running the classic 3D platformer natively on modern operating systems without emulation overhead, delivering improved performance and modern system integration."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The application bundles native asset management, configuration tools, widescreen presentation, and low-latency input handling."
+              "value": "By leveraging authentic game assets extracted from legally obtained original game ROMs, the project ensures accurate game mechanics and audio-visual fidelity while opening up possibilities for native enhancements."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native x86_64 execution with uncapped framerates and fluid camera movement"
+                "value": "Native PC execution compiled directly for modern Linux systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Widescreen and ultra-wide display resolution support with corrected aspect ratios"
+                "value": "Full compatibility with multiple original game releases including US v1.0, US v1.1, JP, and PAL"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Configurable input mapping for modern gamepads and keyboard/mouse setups"
+                "value": "Modular architecture allowing targeted extraction and building of individual game levels and modules"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Built-in mod and texture pack management capabilities"
+                "value": "Automated asset extraction pipeline verified against authentic SHA-1 ROM checksums"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-fidelity digital sound reproduction with multichannel audio support"
+                "value": "Built on a complete 100% decompilation codebase of the original title"
               }
             ]
           ]
@@ -69,13 +69,17 @@
       "homepage": "https://www.harbourmasters.org",
       "repository": "https://github.com/HarbourMasters/Lighthouse",
       "keywords": [
-        "lighthouse",
-        "appimage",
-        "anylinux"
+        "banjo-kazooie",
+        "decompilation",
+        "port",
+        "platformer",
+        "n64",
+        "harbour masters",
+        "launcher",
+        "retro"
       ],
       "categories": [
-        "Game",
-        "ActionGame"
+        "Game"
       ]
     },
     "media": {

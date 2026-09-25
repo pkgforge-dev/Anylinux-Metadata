@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.ffmpeg.ffmpeg",
       "name": "ffmpeg",
-      "summary": "FFmpeg is the universal, open-source multimedia framework capable of decoding, encoding, transcoding, muxing, demuxing, streaming, filtering, and p",
+      "summary": "Universal multimedia framework to decode, encode, transcode, mux, demux, stream, and filter audio and video",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "FFmpeg is the universal, open-source multimedia framework capable of decoding, encoding, transcoding, muxing, demuxing, streaming, filtering, and playing virtually any audio or video format."
+              "value": "FFmpeg is the leading universal, open-source multimedia framework capable of decoding, encoding, transcoding, muxing, demuxing, streaming, filtering, and playing almost anything that humans and machines have created. It supports a vast range of legacy formats as well as the most cutting-edge audio and video standards."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for maximum portability and high performance across platforms, this portable package bundles all necessary libraries and runtime components for dependable command-line processing on any Linux distribution."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Complete multimedia toolset including the ffmpeg, ffprobe, and ffplay binaries"
+                "value": "Comprehensive decoding and encoding support for virtually all modern and legacy media formats"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Hardware-accelerated video decoding and encoding via VA-API, NVENC, and QuickSync"
+                "value": "High-efficiency transcoding, multiplexing, and demultiplexing for audio and video streams"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Broad codec support including AV1, H.264, HEVC, VP9, AAC, FLAC, and Opus"
+                "value": "Extensive library of video and audio filters for rendering, post-processing, and audio enhancement"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Powerful audio and video filtering pipeline for resizing, cropping, and color grading"
+                "value": "Real-time streaming and network broadcasting capabilities via multiple standard protocols"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Comprehensive container support for MP4, MKV, WebM, MOV, and streaming protocols"
+                "value": "Fully self-contained portable packaging with no external dependencies required"
               }
             ]
           ]
@@ -60,15 +69,19 @@
       "homepage": "https://www.ffmpeg.org/",
       "repository": "https://github.com/pkgforge-dev/FFmpeg-AppImage",
       "keywords": [
-        "ffmpeg",
-        "appimage",
-        "anylinux"
+        "transcoder",
+        "encoder",
+        "decoder",
+        "multimedia",
+        "video",
+        "audio",
+        "muxer",
+        "streamer"
       ],
       "categories": [
         "AudioVideo",
-        "AudioVideoEditing",
-        "Recorder",
-        "ConsoleOnly"
+        "Audio",
+        "Video"
       ]
     },
     "media": {

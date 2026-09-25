@@ -5,15 +5,59 @@
     "metadata": {
       "id": "com.cursor.cursor",
       "name": "cursor",
-      "summary": "Built to make you extraordinarily productive, Cursor is the best way to code with AI",
+      "summary": "AI-powered code editor designed to boost developer productivity with intelligent assistance",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Built to make you extraordinarily productive, Cursor is the best way to code with AI."
+              "value": "Cursor is an intelligent, AI-first code editor built on top of the VS Code foundation, engineered to accelerate software development workflows through conversational and inline code assistance."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with all required dependencies bundled for broad Linux distribution support, Cursor provides a full-featured development environment without relying on external system libraries."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "AI-assisted code completion, intelligent refactoring, and contextual code generation"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Interactive in-editor chat for navigating, explaining, and modifying complex codebases"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with standard Visual Studio Code extensions and configurations"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Comprehensive language support with syntax highlighting, debugging tools, and integrated terminal"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated self-updater system with automatic detection and notification of new releases"
+              }
+            ]
           ]
         }
       ],
@@ -25,14 +69,20 @@
       "homepage": "https://www.cursor.com/",
       "repository": "https://github.com/pkgforge-dev/Cursor-AppImage-enhanced",
       "keywords": [
-        "cursor",
-        "appimage",
-        "anylinux"
+        "editor",
+        "ide",
+        "coding",
+        "ai",
+        "copilot",
+        "development",
+        "programming",
+        "vscode"
       ],
       "categories": [
         "Development",
         "IDE",
-        "TextEditor"
+        "Debugger",
+        "TextTools"
       ]
     },
     "media": {

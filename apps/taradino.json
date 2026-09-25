@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.fabiangreffrath.taradino",
       "name": "Taradino",
-      "summary": "Taradino is an open-source modern source port of Rise of the Triad: Dark War (1994), Apogee Software's classic over-the-top first-person shooter",
+      "summary": "Modern SDL2 source port of the classic first-person shooter Rise of the Triad",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Taradino is an open-source modern source port of Rise of the Triad: Dark War (1994), Apogee Software's classic over-the-top first-person shooter. Built with SDL2, it brings high-flying missile combat natively to Linux."
+              "value": "Taradino is an open-source modern source port of Rise of the Triad: Dark War, the classic 1994 first-person shooter by Apogee Software. Built using SDL2 and SDL_mixer, it faithfully reproduces the gameplay and features of the original title on contemporary operating systems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine has been updated with modern portability fixes to run smoothly across modern Linux environments, while preserving the fast-paced retro action of the original release."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Native execution on modern 64-bit systems with high-resolution display rendering"
+                "value": "Cross-platform support for 64-bit and big-endian computer architectures"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Smooth mouselook controls, customizable key bindings, and gamepad support"
+                "value": "Powered by modern Simple DirectMedia Layer (SDL2) video and input backends"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "All original playable characters with distinct speed and health characteristics"
+                "value": "Audio playback handled via SDL_mixer"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Ludicrous gibs, trampolines, dog mode, god mode, and explosive rocket weaponry"
+                "value": "Optional authentic OPL3 and AdLib music synthesis powered by libADLMIDI"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Restored digital audio and Roland Sound Canvas MIDI music playback"
+                "value": "Compatible with both shareware and registered retail game data files"
               }
             ]
           ]
@@ -60,14 +69,19 @@
       "homepage": "https://github.com/fabiangreffrath/taradino",
       "repository": "https://github.com/pkgforge-dev/Taradino-AppImage",
       "keywords": [
-        "taradino",
-        "appimage",
-        "anylinux"
+        "rise of the triad",
+        "rott",
+        "apogee",
+        "fps",
+        "source port",
+        "retro",
+        "shooter",
+        "sdl2",
+        "adlmidi"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "Midi"
       ]
     },
     "media": {

@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.uowuo.abaddon",
       "name": "Abaddon",
-      "summary": "An alternative fast and efficient Discord client",
+      "summary": "Lightweight and customizable alternative Discord client written in C++ and GTK",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Abaddon is an alternative Discord client written in C++ and GTK 3 designed for high performance and low memory consumption. It provides a native, responsive chat experience without the heavy resource footprint associated with Electron-based applications."
+              "value": "Abaddon is an alternative, resource-efficient Discord client built with C++ and GTK. Designed as a native desktop application without Electron, it delivers high performance and a fully customizable interface for communicating across servers and direct messages."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The client focuses on responsiveness and a lightweight footprint while supporting essential platform interactions, including server administration tools and voice communication."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Integrated voice chat support including listening and speaking"
+                "value": "Native voice call support and comprehensive chat message rendering including embeds and replies"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native GTK 3 interface with customizable themes and fonts"
+                "value": "Full interface theming and visual customization options"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for direct messages, group chats, servers, and channels"
+                "value": "Direct messaging, group DMs, and thread support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Rich message rendering including Markdown, embeds, custom emojis, and reactions"
+                "value": "Server moderation capabilities such as role management, audit logs, and member moderation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Minimal CPU and RAM usage compared to the official desktop client"
+                "value": "Desktop notifications, unread indicators, and mention badges"
               }
             ]
           ]
@@ -60,30 +69,40 @@
       "homepage": "https://github.com/uowuo/abaddon",
       "repository": "https://github.com/pkgforge-dev/Abaddon-AppImage",
       "keywords": [
-        "abaddon",
-        "appimage",
-        "anylinux"
+        "discord",
+        "chat",
+        "messaging",
+        "instant messaging",
+        "gtk",
+        "voice",
+        "voip",
+        "communication"
       ],
       "categories": [
         "Network",
         "InstantMessaging",
-        "Chat"
+        "Chat",
+        "Telephony"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/abaddon.png",
       "screenshots": [
         {
-          "caption": "Abaddon interface screenshot 1",
+          "caption": "Chat view displaying server channels, message history, and user list",
           "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s5.png"
         },
         {
-          "caption": "Abaddon interface screenshot 2",
+          "caption": "Customizable theme layout and dark interface view",
           "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s6.png"
         },
         {
-          "caption": "Abaddon interface screenshot 3",
+          "caption": "Direct message and thread conversation interface",
           "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s7.png"
+        },
+        {
+          "caption": "Compact channel browser and embedded media view",
+          "source": "https://raw.githubusercontent.com/uowuo/abaddon/master/.readme/s8.png"
         }
       ]
     }

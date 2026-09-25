@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.mmatyas.supermariowar_super_mario_war",
+      "name": "Super Mario War",
+      "summary": "Multiplayer deathmatch platformer game set in the Super Mario universe",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Super Mario War is an open-source, fan-made 2D multiplayer platform deathmatch game where players compete against each other by jumping on opponents' heads and using classic power-ups across a variety of arenas."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Featuring extensive customization, players can compete in team-based battles, craft custom levels, or construct entire worlds with unique rules and mechanics."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Multiple competitive gameplay modes including deathmatch and team-based matches"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for up to four local and network multiplayer players"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Integrated level and world editors for designing custom arenas"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Extensive library of classic items, power-ups, and interactive map hazards"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable player skins, characters, and soundtrack support"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "Super Mario War Developers",
+        "url": "https://github.com/mmatyas/supermariowar"
+      },
+      "homepage": "https://github.com/mmatyas/supermariowar",
+      "repository": "https://github.com/pkgforge-dev/Supermariowar-AppImage",
+      "keywords": [
+        "mario",
+        "deathmatch",
+        "multiplayer",
+        "platformer",
+        "arcade",
+        "party",
+        "level-editor",
+        "2d"
+      ],
+      "categories": [
+        "Game",
+        "2DGraphics"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/super-mario-war.png",
+      "screenshots": [
+        {
+          "caption": "In-game deathmatch battles and gameplay modes",
+          "source": "https://raw.githubusercontent.com/mmatyas/supermariowar/master/docs/gfx/screenshots.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Supermariowar-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

@@ -5,14 +5,14 @@
     "metadata": {
       "id": "io.github.itgmania.itgmania",
       "name": "ITGmania",
-      "summary": "ITGmania is an open-source rhythm game engine forked from StepMania 5.1, tailored specifically for modern arcade and home dance gaming",
+      "summary": "Modern open-source rhythm game engine tailored for arcade and home dance gaming",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ITGmania is an open-source rhythm game engine forked from StepMania 5.1, tailored specifically for modern arcade and home dance gaming. It focuses on precision timing, low input latency, and custom theme support."
+              "value": "ITGmania is an open-source rhythm game engine forked from StepMania 5.1, specifically optimized for modern operating systems, competitive dance gaming, and arcade cabinets. Built with native 64-bit support and integrated network connectivity, it delivers a smooth and responsive experience for 4-panel and custom rhythm gaming setups."
             }
           ]
         },
@@ -22,31 +22,37 @@
             [
               {
                 "type": "text",
-                "value": "Highly optimized input polling system delivering low latency on modern dance pads"
+                "value": "Built-in online networking support for connected profiles and leaderboards"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full support for In The Groove and Dance Dance Revolution simfiles, charts, and music"
+                "value": "Optimized 64-bit performance tailored for modern operating systems"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modernized Linux audio backends including PipeWire, ALSA, and PulseAudio"
+                "value": "In-game song reload functionality directly from the song select screen"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Broad theme support with real-time score tracking, timing statistics, and modifiers"
+                "value": "Per-player timing window configuration and visual delay adjustment"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Robust USB dance pad profile saving and online leaderboard integrations"
+                "value": "Engine-level tracking of held misses to assist in dance pad debugging"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Configurable note rendering order preferences and fixes for overlapping holds"
               }
             ]
           ]
@@ -60,14 +66,17 @@
       "homepage": "https://github.com/itgmania/itgmania",
       "repository": "https://github.com/pkgforge-dev/ITGmania-AppImage",
       "keywords": [
-        "itgmania",
-        "appimage",
-        "anylinux"
+        "stepmania",
+        "rhythm",
+        "dance",
+        "arcade",
+        "simulator",
+        "in the groove",
+        "music"
       ],
       "categories": [
         "Game",
-        "ArcadeGame",
-        "SportsGame"
+        "Midi"
       ]
     },
     "media": {

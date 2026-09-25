@@ -1,0 +1,116 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.macemu.basiliskii",
+      "name": "BasiliskII",
+      "summary": "Emulate classic 68k Macintosh computers and run vintage Mac OS software",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "BasiliskII is an open-source 68k Macintosh emulator that enables modern computing platforms to run classic Mac OS versions such as System 7.x through Mac OS 8.1. Built on SDL2, it provides a stable environment for legacy Macintosh software and games with support for multiple architectures."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for performance and portability, BasiliskII features an optimized JIT compiler on supported x86 systems alongside cross-architecture emulation capabilities for ARM-based devices."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "High-performance dynamic JIT compiler support on x86 and x86_64 architectures"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Cross-platform SDL2 integration for display, input handling, and sound playback"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full compatibility with 64-bit ARM (arm64) systems using GMP and MPFR math acceleration"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Customizable desktop desktop integration and recommended keyboard bindings for modern window managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-2.0-or-later",
+      "developer": {
+        "name": "BasiliskII Developers",
+        "url": "https://github.com/kanjitalk755/macemu"
+      },
+      "homepage": "https://github.com/kanjitalk755/macemu",
+      "repository": "https://github.com/pkgforge-dev/BasiliskII-AppImage-Enhanced",
+      "keywords": [
+        "macintosh",
+        "emulator",
+        "classic mac",
+        "motorola 68k",
+        "system 7",
+        "mac os",
+        "sdl2",
+        "jit"
+      ],
+      "categories": [
+        "System",
+        "Utility",
+        "Emulator"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/basiliskii.png",
+      "screenshots": [
+        {
+          "caption": "BasiliskII screenshot",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/BasiliskII-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

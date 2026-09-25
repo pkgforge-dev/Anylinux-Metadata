@@ -1,0 +1,125 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "org.harbourmasters.PaperBoat",
+      "name": "PaperBoat",
+      "summary": "Native PC port of Paper Mario 64 with enhanced rendering and customizable controls",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "PaperBoat is a native PC port of the classic Nintendo 64 title Paper Mario developed by the Harbour Masters team. Built upon reverse-engineered decompilation efforts and modern graphics runtimes, it brings the beloved storybook role-playing adventure to desktop operating systems with native performance and flexible visual backends."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The port requires a legally acquired retail game ROM dump to extract and assemble original game assets. Once configured, PaperBoat provides high-framerate rendering, customizable keyboard and gamepad bindings, and support for user mods and replacement texture packages."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Native PC rendering supporting high resolutions, arbitrary aspect ratios, and unlocked framerates"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Multiple graphics backend options including OpenGL and DirectX with runtime switching"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Full controller mapping with modern gamepads alongside customizable keyboard controls"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Legitimate asset extraction pipeline powered by retail N64 Paper Mario ROM dumps"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Support for custom game modifications and high-resolution texture asset packages"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "CC0-1.0",
+      "developer": {
+        "name": "Harbour Masters",
+        "url": "https://www.harbourmasters.org"
+      },
+      "homepage": "https://www.harbourmasters.org",
+      "repository": "https://github.com/HarbourMasters/PaperBoat",
+      "keywords": [
+        "paperboat",
+        "papermario",
+        "n64",
+        "port",
+        "decompilation",
+        "mario",
+        "rpg",
+        "harbourmasters",
+        "libultraship"
+      ],
+      "categories": [
+        "Game",
+        "RolePlaying"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/paperboat.png",
+      "screenshots": [
+        {
+          "caption": "PaperBoat interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Paperboat-AppImage-Enhanced"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "full",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [
+      "gpu",
+      "input"
+    ],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

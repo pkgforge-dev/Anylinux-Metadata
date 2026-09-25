@@ -5,14 +5,23 @@
     "metadata": {
       "id": "com.gitlab.diffpdf",
       "name": "DiffPDF",
-      "summary": "DiffPDF is a specialized graphical utility used to compare two PDF files side by side",
+      "summary": "Compare two PDF files side by side visually or by text",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "DiffPDF is a specialized graphical utility used to compare two PDF files side by side. It highlights visual differences in page layout, graphics, and text, making it an essential tool for proofreaders, editors, and technical authors."
+              "value": "DiffPDF is a specialized graphical desktop utility designed to compare two PDF files side by side and highlight differences between them. Built using Qt and Poppler, it offers an efficient and intuitive way to verify document revisions, proofread publications, and inspect formatting changes."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The tool supports dual comparison modes, allowing users to inspect files either textually or visually based on layout rendering and appearance."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Side-by-side visual comparison with clear highlighting of changes"
+                "value": "Side-by-side synchronized view for comparing PDF documents simultaneously"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Text mode to identify inserted, deleted, or altered words across pages"
+                "value": "Text comparison mode to detect textual modifications, deletions, and additions across pages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Appearance mode to detect font differences, spacing shifts, and graphic modifications"
+                "value": "Visual appearance comparison mode to catch subtle layout, font, and graphic changes"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Synchronized page scrolling and zooming for fast visual navigation"
+                "value": "Clear visual highlighting of matching and non-matching areas directly on document pages"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Ability to generate and export comparison reports"
+                "value": "Support for custom page ranges and individual page alignment across different document versions"
               }
             ]
           ]
@@ -60,9 +69,13 @@
       "homepage": "https://gitlab.com/eang/diffpdf",
       "repository": "https://github.com/pkgforge-dev/diffpdf-appimage",
       "keywords": [
-        "diffpdf",
-        "appimage",
-        "anylinux"
+        "pdf",
+        "diff",
+        "compare",
+        "document",
+        "poppler",
+        "proofreading",
+        "side-by-side"
       ],
       "categories": [
         "Office",

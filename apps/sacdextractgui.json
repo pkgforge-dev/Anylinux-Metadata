@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.pickrecalled.sacdextractgui",
       "name": "SACDExtractGUI",
-      "summary": "SACDExtractGUI is a user-friendly graphical interface for sacd_extract",
+      "summary": "Extract audio tracks and data from Super Audio CD images with a graphical interface",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "SACDExtractGUI is a user-friendly graphical interface for sacd_extract. It simplifies extracting high-resolution DSD audio files (DFF, DSF) and audio tracks from Super Audio CD (SACD) ISO images and network players."
+              "value": "SACDExtractGUI provides a cross-platform graphical user interface for sacd_extract, simplifying the process of processing and extracting high-resolution audio from Super Audio CD (SACD) disc images. Developed in Java, it removes the need to manually execute command-line instructions when managing SACD rips."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed specifically for modern forks of sacd_extract, this utility streamlines configuration options and workflow management into an intuitive desktop layout."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Extracts high-resolution stereo and multi-channel DSD audio streams"
+                "value": "Intuitive front-end eliminating complex command-line parameter handling"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Supports converting SACD ISO disc images directly to DSF and DFF track files"
+                "value": "Tailored integration with the setmind fork of sacd-ripper tools"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Preserves album art, track numbers, performers, and title metadata"
+                "value": "Cross-platform Java desktop interface running seamlessly on Linux"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Batch processing queue for ripping entire collections of SACD images"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Clean graphical interface with real-time extraction progress meters"
+                "value": "Convenient selection and conversion of SACD ISO image files"
               }
             ]
           ]
@@ -60,14 +63,19 @@
       "homepage": "https://github.com/PickRecalled/SACDExtractGUI",
       "repository": "https://github.com/pkgforge-dev/sacdextractgui-appimage",
       "keywords": [
-        "sacdextractgui",
-        "appimage",
-        "anylinux"
+        "sacd",
+        "ripper",
+        "audio",
+        "extraction",
+        "iso",
+        "dsd",
+        "dsf",
+        "gui"
       ],
       "categories": [
         "AudioVideo",
         "Audio",
-        "AudioVideoEditing"
+        "Utility"
       ]
     },
     "media": {

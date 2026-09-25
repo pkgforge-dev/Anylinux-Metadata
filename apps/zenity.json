@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/schema/app-manifest.json",
+  "appstream": {
+    "type": "manual",
+    "metadata": {
+      "id": "io.github.samueru_sama.zenity_gtk3_appimage_zenity",
+      "name": "zenity",
+      "summary": "Display GTK3 dialog boxes and graphical prompts from shell scripts",
+      "description": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Zenity is a graphical dialog utility built on GTK3 that allows shell scripts and command-line tools to present user-friendly graphical interfaces, file pickers, notifications, and prompts."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with portable runtime enhancements, this build ensures maximum compatibility across different Linux distributions without relying on external system libraries."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Creates native GTK3 dialogs including messages, entries, progress bars, and calendar pickers"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Fully portable runtime bundled with dependencies for glibc and musl environments"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Runs without requiring FUSE installed on the host system"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Built-in self-updater notification support with automatic detection of external package managers"
+              }
+            ]
+          ]
+        }
+      ],
+      "projectLicense": "GPL-3.0-or-later",
+      "developer": {
+        "name": "zenity Developers",
+        "url": "https://github.com/Samueru-sama/Zenity-GTK3-AppImage"
+      },
+      "homepage": "https://github.com/Samueru-sama/Zenity-GTK3-AppImage",
+      "repository": "https://github.com/pkgforge-dev/Zenity-GTK3-AppImage",
+      "keywords": [
+        "dialog",
+        "gtk3",
+        "gui",
+        "shell",
+        "prompt",
+        "scripting",
+        "filepicker"
+      ],
+      "categories": [
+        "Utility",
+        "Development",
+        "GUIDesigner"
+      ]
+    },
+    "media": {
+      "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/zenity.png",
+      "screenshots": [
+        {
+          "caption": "zenity interface screenshot 1",
+          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+        }
+      ]
+    }
+  },
+  "addedAt": "2026-09-25",
+  "origin": {
+    "type": "third-party"
+  },
+  "releaseSource": {
+    "type": "github",
+    "repository": "pkgforge-dev/Zenity-GTK3-AppImage"
+  },
+  "sandbox": {
+    "network": "full",
+    "display": "wayland-or-x11",
+    "audio": "none",
+    "processes": "isolated",
+    "ipc": true,
+    "filesystem": [],
+    "devices": [],
+    "sessionBus": {
+      "access": "none",
+      "rules": []
+    },
+    "systemBus": {
+      "access": "none",
+      "rules": []
+    }
+  }
+}

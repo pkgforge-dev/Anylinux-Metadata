@@ -5,14 +5,23 @@
     "metadata": {
       "id": "org.bitbucket.ecwolf",
       "name": "ECWolf",
-      "summary": "ECWolf is an advanced open-source source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark",
+      "summary": "Advanced open-source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "ECWolf is an advanced open-source source port for Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark. Based on the Wolf4SDL engine, it modernizes the gameplay while maintaining full compatibility with classic mods and extensions."
+              "value": "ECWolf is an advanced open-source source port based on the Wolfenstein 3D engine, bringing modern enhancements and broad platform compatibility to classic first-person shooters including Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Packaged with an embedded runtime for wide compatibility across Linux distributions, it loads custom and original game data files directly from local user directories."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "High-resolution rendering supporting widescreen and arbitrary aspect ratios"
+                "value": "Compatibility with Wolfenstein 3D, Spear of Destiny, and Super 3D Noah's Ark game data"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Modernized controls including unrestricted mouse-look and strafing"
+                "value": "Automatic game asset discovery and loading from standard user data directories"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extended modding capabilities with support for DECORATE scripting and ZIP archives"
+                "value": "Support for modern screen resolutions, aspect ratios, and enhanced controls"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full automap system with navigation tracking"
+                "value": "Self-contained portable execution without requiring root privileges or system FUSE support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "High-quality digital sound effects and OPL2/OPL3 music synthesis emulation"
+                "value": "Integrated update notifications and compatibility with popular package managers"
               }
             ]
           ]
@@ -60,14 +69,18 @@
       "homepage": "https://bitbucket.org/ecwolf/ecwolf",
       "repository": "https://github.com/pkgforge-dev/ECWolf-AppImage",
       "keywords": [
-        "ecwolf",
-        "appimage",
-        "anylinux"
+        "wolfenstein",
+        "fps",
+        "shooter",
+        "retro",
+        "classic",
+        "source port",
+        "spear of destiny",
+        "id software"
       ],
       "categories": [
         "Game",
-        "ActionGame",
-        "Shooter"
+        "ActionGame"
       ]
     },
     "media": {

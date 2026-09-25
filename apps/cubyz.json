@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.pixelguys.cubyz",
       "name": "Cubyz",
-      "summary": "Cubyz is an open-source voxel sandbox role-playing game featuring a procedurally generated world with near-infinite height and depth",
+      "summary": "3D open-source voxel sandbox game featuring procedurally generated worlds with unlimited height and depth",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Cubyz is an open-source voxel sandbox role-playing game featuring a procedurally generated world with near-infinite height and depth. Built with a custom Java and OpenGL engine, it emphasizes exploration, crafting, and adventure."
+              "value": "Cubyz is an open-source 3D voxel sandbox game written in Zig that focuses on deep procedural generation and performance. Taking inspiration from classic block-building sandbox titles, it utilizes OpenGL 4.3 to deliver expansive, customizable worlds with extreme verticality and high rendering efficiency."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The engine is architected around true three-dimensional chunking and extensive procedural systems, allowing players to explore seamless landscapes and craft custom equipment without standard architectural limitations."
             }
           ]
         },
@@ -22,31 +31,25 @@
             [
               {
                 "type": "text",
-                "value": "Vast procedurally generated terrain with diverse biomes, caves, and structures"
+                "value": "Level of Detail (LoD) rendering enabling expansive view distances across the landscape"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Dynamic weather, atmospheric lighting, and day-night environmental cycles"
+                "value": "Full 3D chunk architecture removing traditional height and depth limits for subterranean and sky exploration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "In-depth crafting system with realistic material blending and tool durability"
+                "value": "Procedural tool crafting system providing vast possibilities for combinations and equipment"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Extensible modding support through an integrated addon architecture"
-              }
-            ],
-            [
-              {
-                "type": "text",
-                "value": "Optimized multithreaded chunk generation delivering smooth world rendering"
+                "value": "High-performance native core written in Zig leveraging modern OpenGL graphics"
               }
             ]
           ]
@@ -60,14 +63,18 @@
       "homepage": "https://github.com/PixelGuys/Cubyz",
       "repository": "https://github.com/pkgforge-dev/cubyz-appimage",
       "keywords": [
-        "cubyz",
-        "appimage",
-        "anylinux"
+        "voxel",
+        "sandbox",
+        "procedural",
+        "crafting",
+        "opengl",
+        "zig",
+        "mining",
+        "building"
       ],
       "categories": [
         "Game",
-        "Simulation",
-        "RolePlaying"
+        "3DGraphics"
       ]
     },
     "media": {

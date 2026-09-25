@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.github.themix_project.Oomox",
       "name": "Themix",
-      "summary": "Graphical application for generating customized Numix, Materia, and Oomox desktop themes",
+      "summary": "Design and generate customized desktop themes and icon packs",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Themix (formerly known as Oomox) is a graphical theme designer for Linux desktops. It enables users to generate custom color palettes for GTK2, GTK3, GTK4, and window manager themes."
+              "value": "Themix is a graphical theme designer that allows users to create, preview, and export customized desktop themes and icon suites across various Linux environments."
             }
           ]
         },
@@ -21,7 +21,7 @@
           "content": [
             {
               "type": "text",
-              "value": "The application can export generated color schemes across popular desktop themes like Numix and Materia, icon sets like Papirus and Suru++, and terminal color profiles."
+              "value": "Through an extensible plugin architecture, it facilitates effortless color scheme generation and styling across GTK, window managers, and diverse terminal and desktop applications."
             }
           ]
         },
@@ -31,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Visual theme customizer for Numix, Materia, and Arc desktop theme engines"
+                "value": "Export custom Oomox and Materia themes for GTK2, GTK3, Cinnamon, GNOME, Openbox, and Xfwm"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Color variation generator for popular icon packs including Papirus and Suru++"
+                "value": "Customize icon themes including Archdroid, Gnome-Colors, Numix, Papirus, and Suru++"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Terminal emulator color scheme export (Xresources, Alacritty, Kitty)"
+                "value": "Import and generate color schemes directly from image files and Xresources"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Support for importing and exporting complete theme preset configurations"
+                "value": "Leverage Base16 plugins to export themes for Alacritty, Emacs, GTK4, KDE, and Qt"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Live theme preview window reflecting color alterations in real time"
+                "value": "Include HiDPI scaling workarounds and CSS modifications for tiling window managers"
               }
             ]
           ]
@@ -69,22 +69,31 @@
       "homepage": "https://github.com/themix-project/themix-gui",
       "repository": "https://github.com/themix-project/themix-gui",
       "keywords": [
-        "themix",
-        "appimage",
-        "anylinux"
+        "theme",
+        "theming",
+        "gtk",
+        "oomox",
+        "materia",
+        "icons",
+        "base16",
+        "palette",
+        "customization"
       ],
       "categories": [
         "Settings",
-        "DesktopSettings",
-        "Utility"
+        "DesktopSettings"
       ]
     },
     "media": {
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/themix.png",
       "screenshots": [
         {
-          "caption": "Themix interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "Themix graphical interface for customizing desktop theme colors",
+          "source": "https://raw.githubusercontent.com/themix-project/oomox/master/screenshots/screenshot_gui.png"
+        },
+        {
+          "caption": "Generating a color palette from an imported image",
+          "source": "https://raw.githubusercontent.com/themix-project/oomox/master/screenshots/pokedex_dawn.png"
         }
       ]
     }

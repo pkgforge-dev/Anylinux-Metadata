@@ -5,14 +5,14 @@
     "metadata": {
       "id": "com.cursor.cursor_cli",
       "name": "cursor-cli",
-      "summary": "Cursor CLI is the official command-line interface for the Cursor AI code editor ecosystem",
+      "summary": "Command-line interface for the Cursor AI code editor ecosystem",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Cursor CLI is the official command-line interface for the Cursor AI code editor ecosystem. It provides terminal-based developer tools to interact with Cursor's AI models, search codebases, and manage background coding sessions."
+              "value": "Cursor CLI provides command-line access to the Cursor AI-powered coding environment. It allows developers to interact with Cursor services, manage editor sessions, and integrate Cursor features directly from the terminal."
             }
           ]
         },
@@ -22,31 +22,31 @@
             [
               {
                 "type": "text",
-                "value": "Direct command-line interaction with advanced AI programming models"
+                "value": "Seamless integration with the Cursor AI code editor workflow"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Fast repository indexing and codebase-wide semantic search capabilities"
+                "value": "Fully portable and standalone bundle compatible with standard and musl-based Linux distributions"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Seamless terminal workflows for asking questions and generating code diffs"
+                "value": "Runs without requiring FUSE installed on the host system"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Integration with local developer environments and CI/CD pipelines"
+                "value": "Integrated update notifications and self-updater support"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Rapid access to project context and documentation summaries"
+                "value": "Automatic integration and interoperability with Linux package managers"
               }
             ]
           ]
@@ -60,14 +60,20 @@
       "homepage": "https://cursor.com/cli",
       "repository": "https://github.com/pkgforge-dev/cursor-cli-AppImage",
       "keywords": [
-        "cursor-cli",
-        "appimage",
-        "anylinux"
+        "cursor",
+        "terminal",
+        "cli",
+        "editor",
+        "developer",
+        "ai",
+        "coding",
+        "programming"
       ],
       "categories": [
         "Development",
-        "TextEditor",
-        "ConsoleOnly"
+        "Utility",
+        "IDE",
+        "TextTools"
       ]
     },
     "media": {

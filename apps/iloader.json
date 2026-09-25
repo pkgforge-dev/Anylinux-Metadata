@@ -5,15 +5,59 @@
     "metadata": {
       "id": "io.github.nab138.iloader",
       "name": "iloader",
-      "summary": "User friendly sideloader",
+      "summary": "Sideload iOS apps and configure pairing files with ease",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "User friendly sideloader."
+              "value": "iloader is a user-friendly desktop application designed to streamline sideloading iOS applications and pairing configuration for Apple devices. Connecting via usbmuxd and integrating with your Apple ID, it simplifies the setup of alternate app environments and custom IPA installations."
             }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "The tool automates certificate management and pairing file setup, providing intelligent troubleshooting suggestions to resolve common device configuration hurdles."
+            }
+          ]
+        },
+        {
+          "type": "unordered-list",
+          "items": [
+            [
+              {
+                "type": "text",
+                "value": "Automate SideStore and LiveContainer installation with automatic certificate and pairing placement"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Import and install custom IPA files to connected iOS devices"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Manage pairing files across compatible apps including StikDebug and SideStore"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Inspect and revoke development certificates and App IDs directly"
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "value": "Receive intelligent error diagnosis suggestions to quickly fix deployment issues"
+              }
+            ]
           ]
         }
       ],
@@ -25,9 +69,14 @@
       "homepage": "https://github.com/nab138/iloader",
       "repository": "https://github.com/pkgforge-dev/iloader-AppImage-Enhanced",
       "keywords": [
-        "iloader",
-        "appimage",
-        "anylinux"
+        "sideload",
+        "sidestore",
+        "ipa",
+        "ios",
+        "apple",
+        "usbmuxd",
+        "pairing",
+        "installer"
       ],
       "categories": [
         "Utility",
@@ -38,8 +87,8 @@
       "icon": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-Metadata/main/icons/iloader.png",
       "screenshots": [
         {
-          "caption": "iloader interface screenshot 1",
-          "source": "https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/main/assets/banner.png"
+          "caption": "iloader main interface and action selection screen",
+          "source": "https://github.com/user-attachments/assets/93cd135d-6d89-46ee-9b9f-12c596806911"
         }
       ]
     }

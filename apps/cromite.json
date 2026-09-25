@@ -5,14 +5,23 @@
     "metadata": {
       "id": "io.github.uazo.cromite",
       "name": "Cromite",
-      "summary": "Cromite is a privacy-hardened, open-source web browser forked from Chromium, continuing the legacy of Bromite",
+      "summary": "Privacy-hardened open-source web browser based on Chromium and Bromite with ad blocking",
       "description": [
         {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "value": "Cromite is a privacy-hardened, open-source web browser forked from Chromium, continuing the legacy of Bromite. It integrates built-in ad blocking, DNS-over-HTTPS, and security patches designed to defend against online tracking and fingerprinting."
+              "value": "Cromite is a privacy-focused web browser built as a fork of Chromium, carrying forward the privacy and security enhancements originally introduced by the Bromite project. It aims to minimize telemetry, tracking vectors, and tight browser integration with upstream device or platform services, returning control to the user."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "value": "Designed for clean and secure daily browsing, Cromite disables intrusive tracking mechanisms by default and provides powerful tools to customize browsing privacy and behavior."
             }
           ]
         },
@@ -22,31 +31,31 @@
             [
               {
                 "type": "text",
-                "value": "Built-in ad-blocking engine using customizable filter lists"
+                "value": "Built-in ad blocking engines and tracking script mitigation"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Enhanced privacy settings disabling telemetry, metrics, and background pings"
+                "value": "Continuity of research, patches, and security mitigations from Bromite"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Advanced fingerprinting countermeasures for canvas, audio, and client hints"
+                "value": "Anti-fingerprinting protections designed to limit habitual tracking"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Full Chromium extension support with regular security updates"
+                "value": "Disabled telemetry and reduced platform-manufacturer integration"
               }
             ],
             [
               {
                 "type": "text",
-                "value": "Native Linux desktop integration with dark mode and Wayland support"
+                "value": "Granular user toggles for privacy and web platform capabilities"
               }
             ]
           ]
@@ -60,9 +69,14 @@
       "homepage": "https://github.com/uazo/cromite",
       "repository": "https://github.com/pkgforge-dev/Cromite-AppImage",
       "keywords": [
-        "cromite",
-        "appimage",
-        "anylinux"
+        "browser",
+        "chromium",
+        "bromite",
+        "privacy",
+        "adblocker",
+        "security",
+        "antitracking",
+        "web"
       ],
       "categories": [
         "Network",
