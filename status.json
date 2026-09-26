@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-25T09:18:23.815Z",
-  "totalAnylinuxApps": 468,
-  "flathubCoveredCount": 243,
+  "updatedAt": "2026-09-26T09:00:59.774Z",
+  "totalAnylinuxApps": 469,
+  "flathubCoveredCount": 244,
   "targetCount": 225,
   "completedCount": 225,
   "pendingCount": 0,
@@ -1582,6 +1582,7 @@
     "VisualBoyAdvance-M",
     "vokoscreenNG",
     "Warp",
+    "Warpinator",
     "Webcamoid",
     "WebCord",
     "WhatSie",
