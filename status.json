@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-27T09:46:00.028Z",
-  "totalAnylinuxApps": 469,
+  "updatedAt": "2026-09-28T10:27:07.528Z",
+  "totalAnylinuxApps": 471,
   "flathubCoveredCount": 244,
-  "targetCount": 225,
+  "targetCount": 227,
   "completedCount": 225,
-  "pendingCount": 0,
-  "progressPercent": 100,
+  "pendingCount": 2,
+  "progressPercent": 99,
   "completed": [
     {
       "name": "12to11",
@@ -1358,7 +1358,20 @@
       "slug": "stoat"
     }
   ],
-  "pending": [],
+  "pending": [
+    {
+      "name": "xed",
+      "url": "https://github.com/pkgforge-dev/Xed-AppImage",
+      "repo": "pkgforge-dev/Xed-AppImage",
+      "slug": "xed"
+    },
+    {
+      "name": "Zrythm",
+      "url": "https://github.com/pkgforge-dev/Zrythm-AppImage",
+      "repo": "pkgforge-dev/Zrythm-AppImage",
+      "slug": "zrythm"
+    }
+  ],
   "flathubCovered": [
     "86Box",
     "AAAAXY",
