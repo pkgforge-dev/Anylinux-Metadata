@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-09-30*
+*Last synchronized: 2026-10-01*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `471` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `472` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `244` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `227` | Exclusive non-Flathub apps requiring metadata |
+| **Target Database Apps** | `228` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `225` (`99%`) | Fully validated and ready |
-| **Pending Backlog** | `2` | Pending manifest creation or verification |
+| **Pending Backlog** | `3` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,11 +240,12 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (2)
+## Pending Backlog (3)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
 | Application | Slug | Release Source |
 | :--- | :--- | :--- |
+| **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
 | **xed** | `xed` | [`pkgforge-dev/Xed-AppImage`](https://github.com/pkgforge-dev/Xed-AppImage) |
 | **Zrythm** | `zrythm` | [`pkgforge-dev/Zrythm-AppImage`](https://github.com/pkgforge-dev/Zrythm-AppImage) |

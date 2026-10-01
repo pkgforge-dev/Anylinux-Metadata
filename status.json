@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-30T10:14:36.581Z",
-  "totalAnylinuxApps": 471,
+  "updatedAt": "2026-10-01T10:40:34.146Z",
+  "totalAnylinuxApps": 472,
   "flathubCoveredCount": 244,
-  "targetCount": 227,
+  "targetCount": 228,
   "completedCount": 225,
-  "pendingCount": 2,
+  "pendingCount": 3,
   "progressPercent": 99,
   "completed": [
     {
@@ -1359,6 +1359,12 @@
     }
   ],
   "pending": [
+    {
+      "name": "Open CoD:UO",
+      "url": "https://github.com/pkgforge-dev/opencoduo-AppImage",
+      "repo": "pkgforge-dev/opencoduo-AppImage",
+      "slug": "open-cod-uo"
+    },
     {
       "name": "xed",
       "url": "https://github.com/pkgforge-dev/Xed-AppImage",
