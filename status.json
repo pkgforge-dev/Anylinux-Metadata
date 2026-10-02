@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-01T10:40:34.146Z",
-  "totalAnylinuxApps": 472,
+  "updatedAt": "2026-10-02T10:16:29.918Z",
+  "totalAnylinuxApps": 473,
   "flathubCoveredCount": 244,
-  "targetCount": 228,
+  "targetCount": 229,
   "completedCount": 225,
-  "pendingCount": 3,
-  "progressPercent": 99,
+  "pendingCount": 4,
+  "progressPercent": 98,
   "completed": [
     {
       "name": "12to11",
@@ -1359,6 +1359,12 @@
     }
   ],
   "pending": [
+    {
+      "name": "Namida",
+      "url": "https://github.com/pkgforge-dev/Namida-AppImage",
+      "repo": "pkgforge-dev/Namida-AppImage",
+      "slug": "namida"
+    },
     {
       "name": "Open CoD:UO",
       "url": "https://github.com/pkgforge-dev/opencoduo-AppImage",
