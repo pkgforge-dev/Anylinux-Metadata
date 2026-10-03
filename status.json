@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-02T10:16:29.918Z",
-  "totalAnylinuxApps": 473,
+  "updatedAt": "2026-10-03T09:36:52.895Z",
+  "totalAnylinuxApps": 474,
   "flathubCoveredCount": 244,
-  "targetCount": 229,
+  "targetCount": 230,
   "completedCount": 225,
-  "pendingCount": 4,
+  "pendingCount": 5,
   "progressPercent": 98,
   "completed": [
     {
@@ -1359,6 +1359,12 @@
     }
   ],
   "pending": [
+    {
+      "name": "KytyPS5",
+      "url": "https://github.com/pkgforge-dev/KytyPS5-AppImage",
+      "repo": "pkgforge-dev/KytyPS5-AppImage",
+      "slug": "kytyps5"
+    },
     {
       "name": "Namida",
       "url": "https://github.com/pkgforge-dev/Namida-AppImage",
