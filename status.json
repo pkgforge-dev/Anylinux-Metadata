@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-04T10:22:36.242Z",
-  "totalAnylinuxApps": 474,
-  "flathubCoveredCount": 244,
-  "targetCount": 230,
+  "updatedAt": "2026-10-05T11:07:04.658Z",
+  "totalAnylinuxApps": 476,
+  "flathubCoveredCount": 245,
+  "targetCount": 231,
   "completedCount": 225,
-  "pendingCount": 5,
-  "progressPercent": 98,
+  "pendingCount": 6,
+  "progressPercent": 97,
   "completed": [
     {
       "name": "12to11",
@@ -1378,6 +1378,12 @@
       "slug": "open-cod-uo"
     },
     {
+      "name": "Syncthing",
+      "url": "https://github.com/pkgforge-dev/Syncthing-AppImage",
+      "repo": "pkgforge-dev/Syncthing-AppImage",
+      "slug": "syncthing"
+    },
+    {
       "name": "xed",
       "url": "https://github.com/pkgforge-dev/Xed-AppImage",
       "repo": "pkgforge-dev/Xed-AppImage",
@@ -1537,6 +1543,7 @@
     "PDF Tricks",
     "Pinta",
     "Pinta-GTK3",
+    "Pix",
     "Planify",
     "Play!",
     "PokeMMO",
