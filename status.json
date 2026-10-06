@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-05T11:07:04.658Z",
-  "totalAnylinuxApps": 476,
-  "flathubCoveredCount": 245,
+  "updatedAt": "2026-10-06T10:59:01.280Z",
+  "totalAnylinuxApps": 477,
+  "flathubCoveredCount": 246,
   "targetCount": 231,
   "completedCount": 225,
   "pendingCount": 6,
@@ -1456,6 +1456,7 @@
     "freac",
     "FreeTube",
     "Fretboard",
+    "FS-UAE",
     "GCAP2025",
     "GCAP2026",
     "GCstar",
