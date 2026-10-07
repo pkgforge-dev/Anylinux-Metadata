@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-06*
+*Last synchronized: 2026-10-07*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `477` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `246` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `231` | Exclusive non-Flathub apps requiring metadata |
+| **Total AnyLinux AppImages** | `479` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `247` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `232` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `225` (`97%`) | Fully validated and ready |
-| **Pending Backlog** | `6` | Pending manifest creation or verification |
+| **Pending Backlog** | `7` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,7 +240,7 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (6)
+## Pending Backlog (7)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -252,3 +252,4 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **Syncthing** | `syncthing` | [`pkgforge-dev/Syncthing-AppImage`](https://github.com/pkgforge-dev/Syncthing-AppImage) |
 | **xed** | `xed` | [`pkgforge-dev/Xed-AppImage`](https://github.com/pkgforge-dev/Xed-AppImage) |
 | **Zrythm** | `zrythm` | [`pkgforge-dev/Zrythm-AppImage`](https://github.com/pkgforge-dev/Zrythm-AppImage) |
+| **Carpocalypse2** | `carpocalypse2` | [`Link4Electronics/Carpocalypse2`](https://github.com/Link4Electronics/Carpocalypse2) |

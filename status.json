@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-06T10:59:01.280Z",
-  "totalAnylinuxApps": 477,
-  "flathubCoveredCount": 246,
-  "targetCount": 231,
+  "updatedAt": "2026-10-07T10:48:38.128Z",
+  "totalAnylinuxApps": 479,
+  "flathubCoveredCount": 247,
+  "targetCount": 232,
   "completedCount": 225,
-  "pendingCount": 6,
+  "pendingCount": 7,
   "progressPercent": 97,
   "completed": [
     {
@@ -1394,6 +1394,12 @@
       "url": "https://github.com/pkgforge-dev/Zrythm-AppImage",
       "repo": "pkgforge-dev/Zrythm-AppImage",
       "slug": "zrythm"
+    },
+    {
+      "name": "Carpocalypse2",
+      "url": "https://github.com/Link4Electronics/Carpocalypse2",
+      "repo": "Link4Electronics/Carpocalypse2",
+      "slug": "carpocalypse2"
     }
   ],
   "flathubCovered": [
@@ -1631,6 +1637,7 @@
     "Xiphos",
     "xournalpp",
     "Ymir",
+    "Zathura",
     "Zed",
     "Zen Browser",
     "ZSNES",
