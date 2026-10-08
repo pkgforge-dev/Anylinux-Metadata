@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-07T10:48:38.128Z",
-  "totalAnylinuxApps": 479,
+  "updatedAt": "2026-10-08T11:06:23.112Z",
+  "totalAnylinuxApps": 489,
   "flathubCoveredCount": 247,
-  "targetCount": 232,
+  "targetCount": 242,
   "completedCount": 225,
-  "pendingCount": 7,
-  "progressPercent": 97,
+  "pendingCount": 17,
+  "progressPercent": 93,
   "completed": [
     {
       "name": "12to11",
@@ -1360,10 +1360,46 @@
   ],
   "pending": [
     {
+      "name": "DeckCraft",
+      "url": "https://github.com/pkgforge-dev/DeckCraft-AppImage",
+      "repo": "pkgforge-dev/DeckCraft-AppImage",
+      "slug": "deckcraft"
+    },
+    {
+      "name": "DesignCraft",
+      "url": "https://github.com/pkgforge-dev/DesignCraft-AppImage",
+      "repo": "pkgforge-dev/DesignCraft-AppImage",
+      "slug": "designcraft"
+    },
+    {
+      "name": "EffectCraft",
+      "url": "https://github.com/pkgforge-dev/EffectCraft-AppImage",
+      "repo": "pkgforge-dev/EffectCraft-AppImage",
+      "slug": "effectcraft"
+    },
+    {
+      "name": "FilmCraft",
+      "url": "https://github.com/pkgforge-dev/FilmCraft-AppImage",
+      "repo": "pkgforge-dev/FilmCraft-AppImage",
+      "slug": "filmcraft"
+    },
+    {
       "name": "KytyPS5",
       "url": "https://github.com/pkgforge-dev/KytyPS5-AppImage",
       "repo": "pkgforge-dev/KytyPS5-AppImage",
       "slug": "kytyps5"
+    },
+    {
+      "name": "LightCraft",
+      "url": "https://github.com/pkgforge-dev/LightCraft-AppImage",
+      "repo": "pkgforge-dev/LightCraft-AppImage",
+      "slug": "lightcraft"
+    },
+    {
+      "name": "MaSzyna",
+      "url": "https://github.com/pkgforge-dev/MaSzyna-AppImage",
+      "repo": "pkgforge-dev/MaSzyna-AppImage",
+      "slug": "maszyna"
     },
     {
       "name": "Namida",
@@ -1378,10 +1414,34 @@
       "slug": "open-cod-uo"
     },
     {
+      "name": "PdfCraft",
+      "url": "https://github.com/pkgforge-dev/PdfCraft-AppImage",
+      "repo": "pkgforge-dev/PdfCraft-AppImage",
+      "slug": "pdfcraft"
+    },
+    {
+      "name": "PhotoCraft",
+      "url": "https://github.com/pkgforge-dev/PhotoCraft-AppImage",
+      "repo": "pkgforge-dev/PhotoCraft-AppImage",
+      "slug": "photocraft"
+    },
+    {
       "name": "Syncthing",
       "url": "https://github.com/pkgforge-dev/Syncthing-AppImage",
       "repo": "pkgforge-dev/Syncthing-AppImage",
       "slug": "syncthing"
+    },
+    {
+      "name": "VectorCraft",
+      "url": "https://github.com/pkgforge-dev/VectorCraft-AppImage",
+      "repo": "pkgforge-dev/VectorCraft-AppImage",
+      "slug": "vectorcraft"
+    },
+    {
+      "name": "WordCraft",
+      "url": "https://github.com/pkgforge-dev/WordCraft-AppImage",
+      "repo": "pkgforge-dev/WordCraft-AppImage",
+      "slug": "wordcraft"
     },
     {
       "name": "xed",

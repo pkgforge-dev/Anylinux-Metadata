@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-07*
+*Last synchronized: 2026-10-08*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `479` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `489` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `247` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `232` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `225` (`97%`) | Fully validated and ready |
-| **Pending Backlog** | `7` | Pending manifest creation or verification |
+| **Target Database Apps** | `242` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `225` (`93%`) | Fully validated and ready |
+| **Pending Backlog** | `17` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,16 +240,26 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (7)
+## Pending Backlog (17)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
 | Application | Slug | Release Source |
 | :--- | :--- | :--- |
+| **DeckCraft** | `deckcraft` | [`pkgforge-dev/DeckCraft-AppImage`](https://github.com/pkgforge-dev/DeckCraft-AppImage) |
+| **DesignCraft** | `designcraft` | [`pkgforge-dev/DesignCraft-AppImage`](https://github.com/pkgforge-dev/DesignCraft-AppImage) |
+| **EffectCraft** | `effectcraft` | [`pkgforge-dev/EffectCraft-AppImage`](https://github.com/pkgforge-dev/EffectCraft-AppImage) |
+| **FilmCraft** | `filmcraft` | [`pkgforge-dev/FilmCraft-AppImage`](https://github.com/pkgforge-dev/FilmCraft-AppImage) |
 | **KytyPS5** | `kytyps5` | [`pkgforge-dev/KytyPS5-AppImage`](https://github.com/pkgforge-dev/KytyPS5-AppImage) |
+| **LightCraft** | `lightcraft` | [`pkgforge-dev/LightCraft-AppImage`](https://github.com/pkgforge-dev/LightCraft-AppImage) |
+| **MaSzyna** | `maszyna` | [`pkgforge-dev/MaSzyna-AppImage`](https://github.com/pkgforge-dev/MaSzyna-AppImage) |
 | **Namida** | `namida` | [`pkgforge-dev/Namida-AppImage`](https://github.com/pkgforge-dev/Namida-AppImage) |
 | **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
+| **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
+| **PhotoCraft** | `photocraft` | [`pkgforge-dev/PhotoCraft-AppImage`](https://github.com/pkgforge-dev/PhotoCraft-AppImage) |
 | **Syncthing** | `syncthing` | [`pkgforge-dev/Syncthing-AppImage`](https://github.com/pkgforge-dev/Syncthing-AppImage) |
+| **VectorCraft** | `vectorcraft` | [`pkgforge-dev/VectorCraft-AppImage`](https://github.com/pkgforge-dev/VectorCraft-AppImage) |
+| **WordCraft** | `wordcraft` | [`pkgforge-dev/WordCraft-AppImage`](https://github.com/pkgforge-dev/WordCraft-AppImage) |
 | **xed** | `xed` | [`pkgforge-dev/Xed-AppImage`](https://github.com/pkgforge-dev/Xed-AppImage) |
 | **Zrythm** | `zrythm` | [`pkgforge-dev/Zrythm-AppImage`](https://github.com/pkgforge-dev/Zrythm-AppImage) |
 | **Carpocalypse2** | `carpocalypse2` | [`Link4Electronics/Carpocalypse2`](https://github.com/Link4Electronics/Carpocalypse2) |
