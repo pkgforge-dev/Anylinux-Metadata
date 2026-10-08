@@ -41,7 +41,7 @@
   "author": "AnyLinux Community",
   "license": "CC0-1.0",
   "dependencies": {
-    "spdx-expression-parse": "^4.0.0",
+    "spdx-expression-parse": "^5.0.0",
     "spdx-license-ids": "^3.0.21",
     "zod": "^3.23.8",
     "zod-to-json-schema": "^3.23.5"
