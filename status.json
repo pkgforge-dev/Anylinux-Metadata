@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-09T11:05:27.927Z",
-  "totalAnylinuxApps": 489,
+  "updatedAt": "2026-10-10T10:23:20.655Z",
+  "totalAnylinuxApps": 491,
   "flathubCoveredCount": 247,
-  "targetCount": 242,
+  "targetCount": 244,
   "completedCount": 225,
-  "pendingCount": 17,
-  "progressPercent": 93,
+  "pendingCount": 19,
+  "progressPercent": 92,
   "completed": [
     {
       "name": "12to11",
@@ -1359,6 +1359,18 @@
     }
   ],
   "pending": [
+    {
+      "name": "ChatGPT",
+      "url": "https://github.com/pkgforge-dev/ChatGPT-Desktop-AppImage",
+      "repo": "pkgforge-dev/ChatGPT-Desktop-AppImage",
+      "slug": "chatgpt"
+    },
+    {
+      "name": "Chocolate Stunts",
+      "url": "https://github.com/pkgforge-dev/Chocolate-Stunts-AppImage",
+      "repo": "pkgforge-dev/Chocolate-Stunts-AppImage",
+      "slug": "chocolate-stunts"
+    },
     {
       "name": "DeckCraft",
       "url": "https://github.com/pkgforge-dev/DeckCraft-AppImage",

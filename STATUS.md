@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-09*
+*Last synchronized: 2026-10-10*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `489` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `491` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `247` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `242` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `225` (`93%`) | Fully validated and ready |
-| **Pending Backlog** | `17` | Pending manifest creation or verification |
+| **Target Database Apps** | `244` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `225` (`92%`) | Fully validated and ready |
+| **Pending Backlog** | `19` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,12 +240,14 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (17)
+## Pending Backlog (19)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
 | Application | Slug | Release Source |
 | :--- | :--- | :--- |
+| **ChatGPT** | `chatgpt` | [`pkgforge-dev/ChatGPT-Desktop-AppImage`](https://github.com/pkgforge-dev/ChatGPT-Desktop-AppImage) |
+| **Chocolate Stunts** | `chocolate-stunts` | [`pkgforge-dev/Chocolate-Stunts-AppImage`](https://github.com/pkgforge-dev/Chocolate-Stunts-AppImage) |
 | **DeckCraft** | `deckcraft` | [`pkgforge-dev/DeckCraft-AppImage`](https://github.com/pkgforge-dev/DeckCraft-AppImage) |
 | **DesignCraft** | `designcraft` | [`pkgforge-dev/DesignCraft-AppImage`](https://github.com/pkgforge-dev/DesignCraft-AppImage) |
 | **EffectCraft** | `effectcraft` | [`pkgforge-dev/EffectCraft-AppImage`](https://github.com/pkgforge-dev/EffectCraft-AppImage) |
