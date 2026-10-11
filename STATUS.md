@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-10*
+*Last synchronized: 2026-10-11*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `491` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `247` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `244` | Exclusive non-Flathub apps requiring metadata |
+| **Total AnyLinux AppImages** | `493` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `248` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `245` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `225` (`92%`) | Fully validated and ready |
-| **Pending Backlog** | `19` | Pending manifest creation or verification |
+| **Pending Backlog** | `20` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,7 +240,7 @@
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 
-## Pending Backlog (19)
+## Pending Backlog (20)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -257,6 +257,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **MaSzyna** | `maszyna` | [`pkgforge-dev/MaSzyna-AppImage`](https://github.com/pkgforge-dev/MaSzyna-AppImage) |
 | **Namida** | `namida` | [`pkgforge-dev/Namida-AppImage`](https://github.com/pkgforge-dev/Namida-AppImage) |
 | **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
+| **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
 | **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
 | **PhotoCraft** | `photocraft` | [`pkgforge-dev/PhotoCraft-AppImage`](https://github.com/pkgforge-dev/PhotoCraft-AppImage) |
 | **Syncthing** | `syncthing` | [`pkgforge-dev/Syncthing-AppImage`](https://github.com/pkgforge-dev/Syncthing-AppImage) |

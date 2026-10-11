@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-10T10:23:20.655Z",
-  "totalAnylinuxApps": 491,
-  "flathubCoveredCount": 247,
-  "targetCount": 244,
+  "updatedAt": "2026-10-11T10:31:35.776Z",
+  "totalAnylinuxApps": 493,
+  "flathubCoveredCount": 248,
+  "targetCount": 245,
   "completedCount": 225,
-  "pendingCount": 19,
+  "pendingCount": 20,
   "progressPercent": 92,
   "completed": [
     {
@@ -1426,6 +1426,12 @@
       "slug": "open-cod-uo"
     },
     {
+      "name": "OpenRealm",
+      "url": "https://github.com/pkgforge-dev/OpenRealm-AppImage",
+      "repo": "pkgforge-dev/OpenRealm-AppImage",
+      "slug": "openrealm"
+    },
+    {
       "name": "PdfCraft",
       "url": "https://github.com/pkgforge-dev/PdfCraft-AppImage",
       "repo": "pkgforge-dev/PdfCraft-AppImage",
@@ -1539,6 +1545,7 @@
     "GCAP2026",
     "GCstar",
     "Gear Lever",
+    "Ghidra",
     "gImageReader",
     "Gnome Calculator",
     "Gnome Text Editor",
