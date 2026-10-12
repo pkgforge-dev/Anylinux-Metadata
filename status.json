@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-11T10:31:35.776Z",
-  "totalAnylinuxApps": 493,
+  "updatedAt": "2026-10-12T11:36:27.334Z",
+  "totalAnylinuxApps": 495,
   "flathubCoveredCount": 248,
-  "targetCount": 245,
+  "targetCount": 247,
   "completedCount": 225,
-  "pendingCount": 20,
-  "progressPercent": 92,
+  "pendingCount": 22,
+  "progressPercent": 91,
   "completed": [
     {
       "name": "12to11",
@@ -1394,6 +1394,18 @@
       "url": "https://github.com/pkgforge-dev/FilmCraft-AppImage",
       "repo": "pkgforge-dev/FilmCraft-AppImage",
       "slug": "filmcraft"
+    },
+    {
+      "name": "Glypha",
+      "url": "https://github.com/pkgforge-dev/Glypha-AppImage",
+      "repo": "pkgforge-dev/Glypha-AppImage",
+      "slug": "glypha"
+    },
+    {
+      "name": "GridCraft",
+      "url": "https://github.com/pkgforge-dev/GridCraft-AppImage",
+      "repo": "pkgforge-dev/GridCraft-AppImage",
+      "slug": "gridcraft"
     },
     {
       "name": "KytyPS5",
