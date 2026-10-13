@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T11:36:27.334Z",
+  "updatedAt": "2026-10-13T11:21:31.062Z",
   "totalAnylinuxApps": 495,
   "flathubCoveredCount": 248,
   "targetCount": 247,
@@ -1202,12 +1202,6 @@
       "slug": "vibeprint-studio"
     },
     {
-      "name": "Vita3K",
-      "url": "https://github.com/pkgforge-dev/Vita3K-AppImage-Enhanced",
-      "repo": "pkgforge-dev/Vita3K-AppImage-Enhanced",
-      "slug": "vita3k"
-    },
-    {
       "name": "VypressChat",
       "url": "https://github.com/pkgforge-dev/VypressChat-AppImage",
       "repo": "pkgforge-dev/VypressChat-AppImage",
@@ -1356,6 +1350,12 @@
       "url": "https://github.com/stoatchat/for-desktop",
       "repo": "stoatchat/for-desktop",
       "slug": "stoat"
+    },
+    {
+      "name": "Vita3K",
+      "url": "https://github.com/vita3k/vita3k",
+      "repo": "vita3k/vita3k",
+      "slug": "vita3k"
     }
   ],
   "pending": [

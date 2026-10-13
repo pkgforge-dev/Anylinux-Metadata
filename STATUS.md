@@ -1,6 +1,6 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-12*
+*Last synchronized: 2026-10-13*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
@@ -213,7 +213,6 @@
 | **UnleashedRecomp** | [`apps/unleashedrecomp.json`](apps/unleashedrecomp.json) | [`pkgforge-dev/UnleashedRecomp-AppImage`](https://github.com/pkgforge-dev/UnleashedRecomp-AppImage) |
 | **VeraCrypt** | [`apps/veracrypt.json`](apps/veracrypt.json) | [`pkgforge-dev/VeraCrypt-AppImage`](https://github.com/pkgforge-dev/VeraCrypt-AppImage) |
 | **Vibeprint Studio** | [`apps/vibeprint-studio.json`](apps/vibeprint-studio.json) | [`pkgforge-dev/Vibeprint-Studio-AppImage`](https://github.com/pkgforge-dev/Vibeprint-Studio-AppImage) |
-| **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`pkgforge-dev/Vita3K-AppImage-Enhanced`](https://github.com/pkgforge-dev/Vita3K-AppImage-Enhanced) |
 | **VypressChat** | [`apps/vypresschat.json`](apps/vypresschat.json) | [`pkgforge-dev/VypressChat-AppImage`](https://github.com/pkgforge-dev/VypressChat-AppImage) |
 | **Webamp-Desktop** | [`apps/webamp-desktop.json`](apps/webamp-desktop.json) | [`pkgforge-dev/Webamp-Desktop-AppImage-Enhanced`](https://github.com/pkgforge-dev/Webamp-Desktop-AppImage-Enhanced) |
 | **WhatsDesk** | [`apps/whatsdesk.json`](apps/whatsdesk.json) | [`pkgforge-dev/WhatsDesk-AppImage`](https://github.com/pkgforge-dev/WhatsDesk-AppImage) |
@@ -239,6 +238,7 @@
 | **OpenTubeX** | [`apps/opentubex.json`](apps/opentubex.json) | [`OpenTubeX/OpenTubeX`](https://github.com/OpenTubeX/OpenTubeX) |
 | **QDash** | [`apps/qdash.json`](apps/qdash.json) | [`https://git.crueter.xyz/QFRC/QDash`](https://git.crueter.xyz/QFRC/QDash) |
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
+| **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
 ## Pending Backlog (22)
 
