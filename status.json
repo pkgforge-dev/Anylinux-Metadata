@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T11:21:31.062Z",
+  "updatedAt": "2026-10-14T09:14:05.556Z",
   "totalAnylinuxApps": 495,
   "flathubCoveredCount": 248,
   "targetCount": 247,
@@ -20,16 +20,16 @@
       "slug": "2ship2harkinian"
     },
     {
-      "name": "Adobe Flash Player",
-      "url": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage",
-      "repo": "pkgforge-dev/Adobe-Flash-Player-AppImage",
-      "slug": "adobe-flash-player"
-    },
-    {
       "name": "Abaddon",
       "url": "https://github.com/pkgforge-dev/Abaddon-AppImage",
       "repo": "pkgforge-dev/Abaddon-AppImage",
       "slug": "abaddon"
+    },
+    {
+      "name": "Adobe Flash Player",
+      "url": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage",
+      "repo": "pkgforge-dev/Adobe-Flash-Player-AppImage",
+      "slug": "adobe-flash-player"
     },
     {
       "name": "Aerofoil",
@@ -1046,16 +1046,16 @@
       "slug": "servo"
     },
     {
-      "name": "Shiru",
-      "url": "https://github.com/pkgforge-dev/Shiru-AppImage",
-      "repo": "pkgforge-dev/Shiru-AppImage",
-      "slug": "shiru"
-    },
-    {
       "name": "SheepShaver",
       "url": "https://github.com/pkgforge-dev/SheepShaver-AppImage",
       "repo": "pkgforge-dev/SheepShaver-AppImage",
       "slug": "sheepshaver"
+    },
+    {
+      "name": "Shiru",
+      "url": "https://github.com/pkgforge-dev/Shiru-AppImage",
+      "repo": "pkgforge-dev/Shiru-AppImage",
+      "slug": "shiru"
     },
     {
       "name": "Shockolate",
@@ -1621,8 +1621,8 @@
     "NewsFlash",
     "Nomacs",
     "OBS Studio",
-    "Odamex",
     "Obsidian",
+    "Odamex",
     "okteta",
     "opencode",
     "opencode-cli",
@@ -1696,9 +1696,9 @@
     "system-monitoring-center",
     "Tagger",
     "Taisei Project",
-    "Tokodon",
     "Tauon",
     "Telegram",
+    "Tokodon",
     "transmission-qt",
     "Trelby",
     "Tutanota Desktop",

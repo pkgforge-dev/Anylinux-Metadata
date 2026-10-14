@@ -1,6 +1,6 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-13*
+*Last synchronized: 2026-10-14*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
@@ -16,8 +16,8 @@
 | :--- | :--- | :--- |
 | **12to11** | [`apps/12to11.json`](apps/12to11.json) | [`pkgforge-dev/12to11-AppImage`](https://github.com/pkgforge-dev/12to11-AppImage) |
 | **2ship2harkinian** | [`apps/2ship2harkinian.json`](apps/2ship2harkinian.json) | [`pkgforge-dev/2ship2harkinian-AppImage-Enhanced`](https://github.com/pkgforge-dev/2ship2harkinian-AppImage-Enhanced) |
-| **Adobe Flash Player** | [`apps/adobe-flash-player.json`](apps/adobe-flash-player.json) | [`pkgforge-dev/Adobe-Flash-Player-AppImage`](https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage) |
 | **Abaddon** | [`apps/abaddon.json`](apps/abaddon.json) | [`pkgforge-dev/Abaddon-AppImage`](https://github.com/pkgforge-dev/Abaddon-AppImage) |
+| **Adobe Flash Player** | [`apps/adobe-flash-player.json`](apps/adobe-flash-player.json) | [`pkgforge-dev/Adobe-Flash-Player-AppImage`](https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage) |
 | **Aerofoil** | [`apps/aerofoil.json`](apps/aerofoil.json) | [`pkgforge-dev/Aerofoil-AppImage`](https://github.com/pkgforge-dev/Aerofoil-AppImage) |
 | **Akhenaten** | [`apps/akhenaten.json`](apps/akhenaten.json) | [`pkgforge-dev/Akhenaten-AppImage`](https://github.com/pkgforge-dev/Akhenaten-AppImage) |
 | **alacritty** | [`apps/alacritty.json`](apps/alacritty.json) | [`pkgforge-dev/alacritty-AppImage`](https://github.com/pkgforge-dev/alacritty-AppImage) |
@@ -187,8 +187,8 @@
 | **scrcpy** | [`apps/scrcpy.json`](apps/scrcpy.json) | [`pkgforge-dev/scrcpy-AppImage`](https://github.com/pkgforge-dev/scrcpy-AppImage) |
 | **SDLPoP** | [`apps/sdlpop.json`](apps/sdlpop.json) | [`pkgforge-dev/SDLPoP-AppImage`](https://github.com/pkgforge-dev/SDLPoP-AppImage) |
 | **servo** | [`apps/servo.json`](apps/servo.json) | [`pkgforge-dev/servo-AppImage`](https://github.com/pkgforge-dev/servo-AppImage) |
-| **Shiru** | [`apps/shiru.json`](apps/shiru.json) | [`pkgforge-dev/Shiru-AppImage`](https://github.com/pkgforge-dev/Shiru-AppImage) |
 | **SheepShaver** | [`apps/sheepshaver.json`](apps/sheepshaver.json) | [`pkgforge-dev/SheepShaver-AppImage`](https://github.com/pkgforge-dev/SheepShaver-AppImage) |
+| **Shiru** | [`apps/shiru.json`](apps/shiru.json) | [`pkgforge-dev/Shiru-AppImage`](https://github.com/pkgforge-dev/Shiru-AppImage) |
 | **Shockolate** | [`apps/shockolate.json`](apps/shockolate.json) | [`pkgforge-dev/Shockolate-AppImage`](https://github.com/pkgforge-dev/Shockolate-AppImage) |
 | **Simitone** | [`apps/simitone.json`](apps/simitone.json) | [`pkgforge-dev/Simitone-AppImage`](https://github.com/pkgforge-dev/Simitone-AppImage) |
 | **SkyEmu** | [`apps/skyemu.json`](apps/skyemu.json) | [`pkgforge-dev/SkyEmu-AppImage`](https://github.com/pkgforge-dev/SkyEmu-AppImage) |
