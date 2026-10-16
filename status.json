@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-15T08:46:45.831Z",
-  "totalAnylinuxApps": 495,
-  "flathubCoveredCount": 248,
+  "updatedAt": "2026-10-16T08:42:09.640Z",
+  "totalAnylinuxApps": 496,
+  "flathubCoveredCount": 249,
   "targetCount": 247,
   "completedCount": 225,
   "pendingCount": 22,
@@ -1659,6 +1659,7 @@
     "QtCreator",
     "Readest",
     "Reco",
+    "RetroArch",
     "Rewaita",
     "RigelEngine",
     "Ristretto",

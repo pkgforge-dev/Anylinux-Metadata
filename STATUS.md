@@ -1,11 +1,11 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-15*
+*Last synchronized: 2026-10-16*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `495` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `248` | Handled directly by Flathub AppStream |
+| **Total AnyLinux AppImages** | `496` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `249` | Handled directly by Flathub AppStream |
 | **Target Database Apps** | `247` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `225` (`91%`) | Fully validated and ready |
 | **Pending Backlog** | `22` | Pending manifest creation or verification |
