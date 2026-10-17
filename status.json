@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-16T08:42:09.640Z",
-  "totalAnylinuxApps": 496,
+  "updatedAt": "2026-10-17T08:12:50.547Z",
+  "totalAnylinuxApps": 497,
   "flathubCoveredCount": 249,
-  "targetCount": 247,
+  "targetCount": 248,
   "completedCount": 225,
-  "pendingCount": 22,
+  "pendingCount": 23,
   "progressPercent": 91,
   "completed": [
     {
@@ -1430,6 +1430,12 @@
       "url": "https://github.com/pkgforge-dev/Namida-AppImage",
       "repo": "pkgforge-dev/Namida-AppImage",
       "slug": "namida"
+    },
+    {
+      "name": "NSCB Desktop",
+      "url": "https://github.com/pkgforge-dev/NSCB-Desktop-AppImage-Enhanced",
+      "repo": "pkgforge-dev/NSCB-Desktop-AppImage-Enhanced",
+      "slug": "nscb-desktop"
     },
     {
       "name": "Open CoD:UO",
