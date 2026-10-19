@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-18*
+*Last synchronized: 2026-10-19*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `497` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `249` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `248` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `225` (`91%`) | Fully validated and ready |
-| **Pending Backlog** | `23` | Pending manifest creation or verification |
+| **Total AnyLinux AppImages** | `499` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `250` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `249` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `225` (`90%`) | Fully validated and ready |
+| **Pending Backlog** | `24` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,7 +240,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (23)
+## Pending Backlog (24)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -263,6 +263,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
 | **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
 | **PhotoCraft** | `photocraft` | [`pkgforge-dev/PhotoCraft-AppImage`](https://github.com/pkgforge-dev/PhotoCraft-AppImage) |
+| **SoundCraft** | `soundcraft` | [`pkgforge-dev/SoundCraft-AppImage`](https://github.com/pkgforge-dev/SoundCraft-AppImage) |
 | **Syncthing** | `syncthing` | [`pkgforge-dev/Syncthing-AppImage`](https://github.com/pkgforge-dev/Syncthing-AppImage) |
 | **VectorCraft** | `vectorcraft` | [`pkgforge-dev/VectorCraft-AppImage`](https://github.com/pkgforge-dev/VectorCraft-AppImage) |
 | **WordCraft** | `wordcraft` | [`pkgforge-dev/WordCraft-AppImage`](https://github.com/pkgforge-dev/WordCraft-AppImage) |

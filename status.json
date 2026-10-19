@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-18T08:30:06.089Z",
-  "totalAnylinuxApps": 497,
-  "flathubCoveredCount": 249,
-  "targetCount": 248,
+  "updatedAt": "2026-10-19T09:32:12.600Z",
+  "totalAnylinuxApps": 499,
+  "flathubCoveredCount": 250,
+  "targetCount": 249,
   "completedCount": 225,
-  "pendingCount": 23,
-  "progressPercent": 91,
+  "pendingCount": 24,
+  "progressPercent": 90,
   "completed": [
     {
       "name": "12to11",
@@ -1462,6 +1462,12 @@
       "slug": "photocraft"
     },
     {
+      "name": "SoundCraft",
+      "url": "https://github.com/pkgforge-dev/SoundCraft-AppImage",
+      "repo": "pkgforge-dev/SoundCraft-AppImage",
+      "slug": "soundcraft"
+    },
+    {
       "name": "Syncthing",
       "url": "https://github.com/pkgforge-dev/Syncthing-AppImage",
       "repo": "pkgforge-dev/Syncthing-AppImage",
@@ -1694,6 +1700,7 @@
     "SRB2Kart",
     "Stella",
     "strawberry",
+    "Stremio",
     "Supermodel",
     "SuperTux",
     "SuperTuxKart",
