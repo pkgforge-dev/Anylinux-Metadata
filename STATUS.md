@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-19*
+*Last synchronized: 2026-10-20*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `499` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `500` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `250` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `249` | Exclusive non-Flathub apps requiring metadata |
+| **Target Database Apps** | `250` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `225` (`90%`) | Fully validated and ready |
-| **Pending Backlog** | `24` | Pending manifest creation or verification |
+| **Pending Backlog** | `25` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,7 +240,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (24)
+## Pending Backlog (25)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -259,6 +259,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **MaSzyna** | `maszyna` | [`pkgforge-dev/MaSzyna-AppImage`](https://github.com/pkgforge-dev/MaSzyna-AppImage) |
 | **Namida** | `namida` | [`pkgforge-dev/Namida-AppImage`](https://github.com/pkgforge-dev/Namida-AppImage) |
 | **NSCB Desktop** | `nscb-desktop` | [`pkgforge-dev/NSCB-Desktop-AppImage-Enhanced`](https://github.com/pkgforge-dev/NSCB-Desktop-AppImage-Enhanced) |
+| **OpenCMR2** | `opencmr2` | [`pkgforge-dev/OpenCMR2-AppImage`](https://github.com/pkgforge-dev/OpenCMR2-AppImage) |
 | **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
 | **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
 | **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
