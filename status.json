@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-24T08:35:04.380Z",
-  "totalAnylinuxApps": 500,
+  "updatedAt": "2026-10-25T08:54:16.884Z",
+  "totalAnylinuxApps": 501,
   "flathubCoveredCount": 250,
-  "targetCount": 250,
+  "targetCount": 251,
   "completedCount": 225,
-  "pendingCount": 25,
+  "pendingCount": 26,
   "progressPercent": 90,
   "completed": [
     {
@@ -1430,6 +1430,12 @@
       "url": "https://github.com/pkgforge-dev/Namida-AppImage",
       "repo": "pkgforge-dev/Namida-AppImage",
       "slug": "namida"
+    },
+    {
+      "name": "Nota DAW",
+      "url": "https://github.com/pkgforge-dev/Nota-DAW-AppImage-Enhanced",
+      "repo": "pkgforge-dev/Nota-DAW-AppImage-Enhanced",
+      "slug": "nota-daw"
     },
     {
       "name": "NSCB Desktop",
