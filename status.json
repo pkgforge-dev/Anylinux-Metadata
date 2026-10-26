@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-25T08:54:16.884Z",
-  "totalAnylinuxApps": 501,
+  "updatedAt": "2026-10-26T09:36:39.306Z",
+  "totalAnylinuxApps": 502,
   "flathubCoveredCount": 250,
-  "targetCount": 251,
+  "targetCount": 252,
   "completedCount": 225,
-  "pendingCount": 26,
-  "progressPercent": 90,
+  "pendingCount": 27,
+  "progressPercent": 89,
   "completed": [
     {
       "name": "12to11",
@@ -1394,6 +1394,12 @@
       "url": "https://github.com/pkgforge-dev/FilmCraft-AppImage",
       "repo": "pkgforge-dev/FilmCraft-AppImage",
       "slug": "filmcraft"
+    },
+    {
+      "name": "Geartowns",
+      "url": "https://github.com/pkgforge-dev/Geartowns-AppImage",
+      "repo": "pkgforge-dev/Geartowns-AppImage",
+      "slug": "geartowns"
     },
     {
       "name": "Glypha",

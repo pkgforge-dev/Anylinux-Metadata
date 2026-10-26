@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-25*
+*Last synchronized: 2026-10-26*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `501` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `502` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `250` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `251` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `225` (`90%`) | Fully validated and ready |
-| **Pending Backlog** | `26` | Pending manifest creation or verification |
+| **Target Database Apps** | `252` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `225` (`89%`) | Fully validated and ready |
+| **Pending Backlog** | `27` | Pending manifest creation or verification |
 
 ## Completed Applications (225)
 
@@ -240,7 +240,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (26)
+## Pending Backlog (27)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -252,6 +252,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **DesignCraft** | `designcraft` | [`pkgforge-dev/DesignCraft-AppImage`](https://github.com/pkgforge-dev/DesignCraft-AppImage) |
 | **EffectCraft** | `effectcraft` | [`pkgforge-dev/EffectCraft-AppImage`](https://github.com/pkgforge-dev/EffectCraft-AppImage) |
 | **FilmCraft** | `filmcraft` | [`pkgforge-dev/FilmCraft-AppImage`](https://github.com/pkgforge-dev/FilmCraft-AppImage) |
+| **Geartowns** | `geartowns` | [`pkgforge-dev/Geartowns-AppImage`](https://github.com/pkgforge-dev/Geartowns-AppImage) |
 | **Glypha** | `glypha` | [`pkgforge-dev/Glypha-AppImage`](https://github.com/pkgforge-dev/Glypha-AppImage) |
 | **GridCraft** | `gridcraft` | [`pkgforge-dev/GridCraft-AppImage`](https://github.com/pkgforge-dev/GridCraft-AppImage) |
 | **KytyPS5** | `kytyps5` | [`pkgforge-dev/KytyPS5-AppImage`](https://github.com/pkgforge-dev/KytyPS5-AppImage) |
