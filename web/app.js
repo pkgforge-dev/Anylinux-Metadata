@@ -1336,9 +1336,9 @@
     if (filtered.length === 0) {
       catalogResultsCountEl.innerText = 'No applications found matching your criteria';
       catalogGridEl.innerHTML = `
-        <div class="empty-state" role="status" style="grid-column: 1/-1; text-align: center; padding: 4rem 1rem; color: var(--text-dim);">
-          <p style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text-secondary);">No applications found matching your criteria</p>
-          <p style="font-size: 0.85rem;">Try clearing the search query or selecting "All Categories"</p>
+        <div class="empty-state" role="status">
+          <p class="empty-state-title">No applications found matching your criteria</p>
+          <p class="empty-state-desc">Try clearing the search query or selecting "All Categories"</p>
         </div>
       `;
       return;
@@ -1491,7 +1491,7 @@
     if (filtered.length === 0) {
       backlogTableBodyEl.innerHTML = `
         <tr role="status">
-          <td colspan="4" style="text-align: center; padding: 2.5rem; color: var(--text-dim);">
+          <td colspan="4" class="table-empty-cell">
             No pending applications match your search query.
           </td>
         </tr>
