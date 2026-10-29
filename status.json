@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-28T10:17:04.039Z",
-  "totalAnylinuxApps": 502,
+  "updatedAt": "2026-10-29T10:40:40.913Z",
+  "totalAnylinuxApps": 503,
   "flathubCoveredCount": 250,
-  "targetCount": 252,
+  "targetCount": 253,
   "completedCount": 225,
-  "pendingCount": 27,
+  "pendingCount": 28,
   "progressPercent": 89,
   "completed": [
     {
@@ -1394,6 +1394,12 @@
       "url": "https://github.com/pkgforge-dev/FilmCraft-AppImage",
       "repo": "pkgforge-dev/FilmCraft-AppImage",
       "slug": "filmcraft"
+    },
+    {
+      "name": "Firefox-PowerPC64",
+      "url": "https://github.com/pkgforge-dev/Firefox-PowerPC64-AppImage",
+      "repo": "pkgforge-dev/Firefox-PowerPC64-AppImage",
+      "slug": "firefox-powerpc64"
     },
     {
       "name": "Geartowns",
