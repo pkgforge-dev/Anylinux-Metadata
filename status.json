@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-29T10:40:40.913Z",
+  "updatedAt": "2026-10-30T10:41:18.277Z",
   "totalAnylinuxApps": 503,
-  "flathubCoveredCount": 250,
-  "targetCount": 253,
-  "completedCount": 225,
+  "flathubCoveredCount": 252,
+  "targetCount": 251,
+  "completedCount": 223,
   "pendingCount": 28,
   "progressPercent": 89,
   "completed": [
@@ -30,12 +30,6 @@
       "url": "https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage",
       "repo": "pkgforge-dev/Adobe-Flash-Player-AppImage",
       "slug": "adobe-flash-player"
-    },
-    {
-      "name": "Aerofoil",
-      "url": "https://github.com/pkgforge-dev/Aerofoil-AppImage",
-      "repo": "pkgforge-dev/Aerofoil-AppImage",
-      "slug": "aerofoil"
     },
     {
       "name": "Akhenaten",
@@ -162,12 +156,6 @@
       "url": "https://github.com/pkgforge-dev/Catfish-AppImage",
       "repo": "pkgforge-dev/Catfish-AppImage",
       "slug": "catfish"
-    },
-    {
-      "name": "ChiPass",
-      "url": "https://github.com/pkgforge-dev/ChiPass-AppImage",
-      "repo": "pkgforge-dev/ChiPass-AppImage",
-      "slug": "chipass"
     },
     {
       "name": "ClassicImageViewer",
@@ -1531,6 +1519,7 @@
   "flathubCovered": [
     "86Box",
     "AAAAXY",
+    "Aerofoil",
     "Amarok",
     "Amiberry",
     "anki",
@@ -1548,6 +1537,7 @@
     "Blender",
     "C-Dogs_SDL",
     "Cemu",
+    "ChiPass",
     "Chrome",
     "Cine",
     "Clapper",

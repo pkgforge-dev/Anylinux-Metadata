@@ -1,16 +1,16 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-29*
+*Last synchronized: 2026-10-30*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
 | **Total AnyLinux AppImages** | `503` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `250` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `253` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `225` (`89%`) | Fully validated and ready |
+| **Flathub Covered** | `252` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `251` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `223` (`89%`) | Fully validated and ready |
 | **Pending Backlog** | `28` | Pending manifest creation or verification |
 
-## Completed Applications (225)
+## Completed Applications (223)
 
 | Application | Manifest | Release Source |
 | :--- | :--- | :--- |
@@ -18,7 +18,6 @@
 | **2ship2harkinian** | [`apps/2ship2harkinian.json`](apps/2ship2harkinian.json) | [`pkgforge-dev/2ship2harkinian-AppImage-Enhanced`](https://github.com/pkgforge-dev/2ship2harkinian-AppImage-Enhanced) |
 | **Abaddon** | [`apps/abaddon.json`](apps/abaddon.json) | [`pkgforge-dev/Abaddon-AppImage`](https://github.com/pkgforge-dev/Abaddon-AppImage) |
 | **Adobe Flash Player** | [`apps/adobe-flash-player.json`](apps/adobe-flash-player.json) | [`pkgforge-dev/Adobe-Flash-Player-AppImage`](https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage) |
-| **Aerofoil** | [`apps/aerofoil.json`](apps/aerofoil.json) | [`pkgforge-dev/Aerofoil-AppImage`](https://github.com/pkgforge-dev/Aerofoil-AppImage) |
 | **Akhenaten** | [`apps/akhenaten.json`](apps/akhenaten.json) | [`pkgforge-dev/Akhenaten-AppImage`](https://github.com/pkgforge-dev/Akhenaten-AppImage) |
 | **alacritty** | [`apps/alacritty.json`](apps/alacritty.json) | [`pkgforge-dev/alacritty-AppImage`](https://github.com/pkgforge-dev/alacritty-AppImage) |
 | **Android Tools** | [`apps/android-tools.json`](apps/android-tools.json) | [`pkgforge-dev/android-tools-AppImage`](https://github.com/pkgforge-dev/android-tools-AppImage) |
@@ -40,7 +39,6 @@
 | **Cataclysm-TLG** | [`apps/cataclysm-tlg.json`](apps/cataclysm-tlg.json) | [`pkgforge-dev/Cataclysm-TLG-AppImage`](https://github.com/pkgforge-dev/Cataclysm-TLG-AppImage) |
 | **CatacombGL** | [`apps/catacombgl.json`](apps/catacombgl.json) | [`pkgforge-dev/CatacombGL-AppImage`](https://github.com/pkgforge-dev/CatacombGL-AppImage) |
 | **Catfish** | [`apps/catfish.json`](apps/catfish.json) | [`pkgforge-dev/Catfish-AppImage`](https://github.com/pkgforge-dev/Catfish-AppImage) |
-| **ChiPass** | [`apps/chipass.json`](apps/chipass.json) | [`pkgforge-dev/ChiPass-AppImage`](https://github.com/pkgforge-dev/ChiPass-AppImage) |
 | **ClassicImageViewer** | [`apps/classicimageviewer.json`](apps/classicimageviewer.json) | [`pkgforge-dev/ClassicImageViewer-AppImage-Enhanced`](https://github.com/pkgforge-dev/ClassicImageViewer-AppImage-Enhanced) |
 | **ClassiCube** | [`apps/classicube.json`](apps/classicube.json) | [`pkgforge-dev/ClassiCube-AppImage`](https://github.com/pkgforge-dev/ClassiCube-AppImage) |
 | **Claude Code** | [`apps/claude-code.json`](apps/claude-code.json) | [`pkgforge-dev/claude-code-AppImage`](https://github.com/pkgforge-dev/claude-code-AppImage) |
