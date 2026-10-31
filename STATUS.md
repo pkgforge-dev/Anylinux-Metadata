@@ -1,16 +1,16 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-30*
+*Last synchronized: 2026-10-31*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
 | **Total AnyLinux AppImages** | `503` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `252` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `251` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `223` (`89%`) | Fully validated and ready |
+| **Flathub Covered** | `253` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `250` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `222` (`89%`) | Fully validated and ready |
 | **Pending Backlog** | `28` | Pending manifest creation or verification |
 
-## Completed Applications (223)
+## Completed Applications (222)
 
 | Application | Manifest | Release Source |
 | :--- | :--- | :--- |
@@ -18,7 +18,6 @@
 | **2ship2harkinian** | [`apps/2ship2harkinian.json`](apps/2ship2harkinian.json) | [`pkgforge-dev/2ship2harkinian-AppImage-Enhanced`](https://github.com/pkgforge-dev/2ship2harkinian-AppImage-Enhanced) |
 | **Abaddon** | [`apps/abaddon.json`](apps/abaddon.json) | [`pkgforge-dev/Abaddon-AppImage`](https://github.com/pkgforge-dev/Abaddon-AppImage) |
 | **Adobe Flash Player** | [`apps/adobe-flash-player.json`](apps/adobe-flash-player.json) | [`pkgforge-dev/Adobe-Flash-Player-AppImage`](https://github.com/pkgforge-dev/Adobe-Flash-Player-AppImage) |
-| **Akhenaten** | [`apps/akhenaten.json`](apps/akhenaten.json) | [`pkgforge-dev/Akhenaten-AppImage`](https://github.com/pkgforge-dev/Akhenaten-AppImage) |
 | **alacritty** | [`apps/alacritty.json`](apps/alacritty.json) | [`pkgforge-dev/alacritty-AppImage`](https://github.com/pkgforge-dev/alacritty-AppImage) |
 | **Android Tools** | [`apps/android-tools.json`](apps/android-tools.json) | [`pkgforge-dev/android-tools-AppImage`](https://github.com/pkgforge-dev/android-tools-AppImage) |
 | **Android Translation Layer** | [`apps/android-translation-layer.json`](apps/android-translation-layer.json) | [`pkgforge-dev/android_translation_layer-AppImage`](https://github.com/pkgforge-dev/android_translation_layer-AppImage) |
