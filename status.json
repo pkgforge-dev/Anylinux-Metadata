@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-31T10:08:16.659Z",
-  "totalAnylinuxApps": 503,
+  "updatedAt": "2026-11-01T10:59:26.256Z",
+  "totalAnylinuxApps": 504,
   "flathubCoveredCount": 253,
-  "targetCount": 250,
+  "targetCount": 251,
   "completedCount": 222,
-  "pendingCount": 28,
-  "progressPercent": 89,
+  "pendingCount": 29,
+  "progressPercent": 88,
   "completed": [
     {
       "name": "12to11",
@@ -1466,6 +1466,12 @@
       "url": "https://github.com/pkgforge-dev/PhotoCraft-AppImage",
       "repo": "pkgforge-dev/PhotoCraft-AppImage",
       "slug": "photocraft"
+    },
+    {
+      "name": "Shadow of the Wyrm",
+      "url": "https://github.com/pkgforge-dev/Shadow-of-the-Wyrm-AppImage",
+      "repo": "pkgforge-dev/Shadow-of-the-Wyrm-AppImage",
+      "slug": "shadow-of-the-wyrm"
     },
     {
       "name": "SoundCraft",

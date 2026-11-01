@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-10-31*
+*Last synchronized: 2026-11-01*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `503` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `504` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `253` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `250` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `222` (`89%`) | Fully validated and ready |
-| **Pending Backlog** | `28` | Pending manifest creation or verification |
+| **Target Database Apps** | `251` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `222` (`88%`) | Fully validated and ready |
+| **Pending Backlog** | `29` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,7 +237,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (28)
+## Pending Backlog (29)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -264,6 +264,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
 | **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
 | **PhotoCraft** | `photocraft` | [`pkgforge-dev/PhotoCraft-AppImage`](https://github.com/pkgforge-dev/PhotoCraft-AppImage) |
+| **Shadow of the Wyrm** | `shadow-of-the-wyrm` | [`pkgforge-dev/Shadow-of-the-Wyrm-AppImage`](https://github.com/pkgforge-dev/Shadow-of-the-Wyrm-AppImage) |
 | **SoundCraft** | `soundcraft` | [`pkgforge-dev/SoundCraft-AppImage`](https://github.com/pkgforge-dev/SoundCraft-AppImage) |
 | **Syncthing** | `syncthing` | [`pkgforge-dev/Syncthing-AppImage`](https://github.com/pkgforge-dev/Syncthing-AppImage) |
 | **VectorCraft** | `vectorcraft` | [`pkgforge-dev/VectorCraft-AppImage`](https://github.com/pkgforge-dev/VectorCraft-AppImage) |
