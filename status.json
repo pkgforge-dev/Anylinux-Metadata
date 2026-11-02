@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-01T10:59:26.256Z",
-  "totalAnylinuxApps": 504,
-  "flathubCoveredCount": 253,
-  "targetCount": 251,
+  "updatedAt": "2026-11-02T11:57:22.684Z",
+  "totalAnylinuxApps": 507,
+  "flathubCoveredCount": 254,
+  "targetCount": 253,
   "completedCount": 222,
-  "pendingCount": 29,
+  "pendingCount": 31,
   "progressPercent": 88,
   "completed": [
     {
@@ -1426,6 +1426,12 @@
       "slug": "namida"
     },
     {
+      "name": "NetHack-X11",
+      "url": "https://github.com/pkgforge-dev/NetHack-X11-AppImage",
+      "repo": "pkgforge-dev/NetHack-X11-AppImage",
+      "slug": "nethack-x11"
+    },
+    {
       "name": "Nota DAW",
       "url": "https://github.com/pkgforge-dev/Nota-DAW-AppImage-Enhanced",
       "repo": "pkgforge-dev/Nota-DAW-AppImage-Enhanced",
@@ -1502,6 +1508,12 @@
       "url": "https://github.com/pkgforge-dev/Xed-AppImage",
       "repo": "pkgforge-dev/Xed-AppImage",
       "slug": "xed"
+    },
+    {
+      "name": "Xepub",
+      "url": "https://github.com/pkgforge-dev/Xepub-AppImage",
+      "repo": "pkgforge-dev/Xepub-AppImage",
+      "slug": "xepub"
     },
     {
       "name": "Zrythm",
@@ -1632,6 +1644,7 @@
     "LightZone",
     "LMMS",
     "LocalSend",
+    "Lollypop",
     "Luanti",
     "MAME",
     "masterkey",

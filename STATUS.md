@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-11-01*
+*Last synchronized: 2026-11-02*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `504` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `253` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `251` | Exclusive non-Flathub apps requiring metadata |
+| **Total AnyLinux AppImages** | `507` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `254` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `253` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `222` (`88%`) | Fully validated and ready |
-| **Pending Backlog** | `29` | Pending manifest creation or verification |
+| **Pending Backlog** | `31` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,7 +237,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (29)
+## Pending Backlog (31)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -257,6 +257,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **LightCraft** | `lightcraft` | [`pkgforge-dev/LightCraft-AppImage`](https://github.com/pkgforge-dev/LightCraft-AppImage) |
 | **MaSzyna** | `maszyna` | [`pkgforge-dev/MaSzyna-AppImage`](https://github.com/pkgforge-dev/MaSzyna-AppImage) |
 | **Namida** | `namida` | [`pkgforge-dev/Namida-AppImage`](https://github.com/pkgforge-dev/Namida-AppImage) |
+| **NetHack-X11** | `nethack-x11` | [`pkgforge-dev/NetHack-X11-AppImage`](https://github.com/pkgforge-dev/NetHack-X11-AppImage) |
 | **Nota DAW** | `nota-daw` | [`pkgforge-dev/Nota-DAW-AppImage-Enhanced`](https://github.com/pkgforge-dev/Nota-DAW-AppImage-Enhanced) |
 | **NSCB Desktop** | `nscb-desktop` | [`pkgforge-dev/NSCB-Desktop-AppImage-Enhanced`](https://github.com/pkgforge-dev/NSCB-Desktop-AppImage-Enhanced) |
 | **OpenCMR2** | `opencmr2` | [`pkgforge-dev/OpenCMR2-AppImage`](https://github.com/pkgforge-dev/OpenCMR2-AppImage) |
@@ -270,5 +271,6 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **VectorCraft** | `vectorcraft` | [`pkgforge-dev/VectorCraft-AppImage`](https://github.com/pkgforge-dev/VectorCraft-AppImage) |
 | **WordCraft** | `wordcraft` | [`pkgforge-dev/WordCraft-AppImage`](https://github.com/pkgforge-dev/WordCraft-AppImage) |
 | **xed** | `xed` | [`pkgforge-dev/Xed-AppImage`](https://github.com/pkgforge-dev/Xed-AppImage) |
+| **Xepub** | `xepub` | [`pkgforge-dev/Xepub-AppImage`](https://github.com/pkgforge-dev/Xepub-AppImage) |
 | **Zrythm** | `zrythm` | [`pkgforge-dev/Zrythm-AppImage`](https://github.com/pkgforge-dev/Zrythm-AppImage) |
 | **Carpocalypse2** | `carpocalypse2` | [`Link4Electronics/Carpocalypse2`](https://github.com/Link4Electronics/Carpocalypse2) |
