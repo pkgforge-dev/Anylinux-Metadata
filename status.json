@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-03T11:33:37.034Z",
-  "totalAnylinuxApps": 509,
+  "updatedAt": "2026-11-04T11:49:09.092Z",
+  "totalAnylinuxApps": 510,
   "flathubCoveredCount": 256,
-  "targetCount": 253,
+  "targetCount": 254,
   "completedCount": 222,
-  "pendingCount": 31,
-  "progressPercent": 88,
+  "pendingCount": 32,
+  "progressPercent": 87,
   "completed": [
     {
       "name": "12to11",
@@ -1400,6 +1400,12 @@
       "url": "https://github.com/pkgforge-dev/GridCraft-AppImage",
       "repo": "pkgforge-dev/GridCraft-AppImage",
       "slug": "gridcraft"
+    },
+    {
+      "name": "KeeperFX",
+      "url": "https://github.com/pkgforge-dev/KeeperFX-AppImage",
+      "repo": "pkgforge-dev/KeeperFX-AppImage",
+      "slug": "keeperfx"
     },
     {
       "name": "KytyPS5",

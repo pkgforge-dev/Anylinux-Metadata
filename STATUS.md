@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-11-03*
+*Last synchronized: 2026-11-04*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `509` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `510` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `256` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `253` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `222` (`88%`) | Fully validated and ready |
-| **Pending Backlog** | `31` | Pending manifest creation or verification |
+| **Target Database Apps** | `254` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `222` (`87%`) | Fully validated and ready |
+| **Pending Backlog** | `32` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,7 +237,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (31)
+## Pending Backlog (32)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -253,6 +253,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **Geartowns** | `geartowns` | [`pkgforge-dev/Geartowns-AppImage`](https://github.com/pkgforge-dev/Geartowns-AppImage) |
 | **Glypha** | `glypha` | [`pkgforge-dev/Glypha-AppImage`](https://github.com/pkgforge-dev/Glypha-AppImage) |
 | **GridCraft** | `gridcraft` | [`pkgforge-dev/GridCraft-AppImage`](https://github.com/pkgforge-dev/GridCraft-AppImage) |
+| **KeeperFX** | `keeperfx` | [`pkgforge-dev/KeeperFX-AppImage`](https://github.com/pkgforge-dev/KeeperFX-AppImage) |
 | **KytyPS5** | `kytyps5` | [`pkgforge-dev/KytyPS5-AppImage`](https://github.com/pkgforge-dev/KytyPS5-AppImage) |
 | **LightCraft** | `lightcraft` | [`pkgforge-dev/LightCraft-AppImage`](https://github.com/pkgforge-dev/LightCraft-AppImage) |
 | **MaSzyna** | `maszyna` | [`pkgforge-dev/MaSzyna-AppImage`](https://github.com/pkgforge-dev/MaSzyna-AppImage) |
