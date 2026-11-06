@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-11-05*
+*Last synchronized: 2026-11-06*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `510` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
-| **Flathub Covered** | `256` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `254` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `222` (`87%`) | Fully validated and ready |
-| **Pending Backlog** | `32` | Pending manifest creation or verification |
+| **Total AnyLinux AppImages** | `518` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Flathub Covered** | `258` | Handled directly by Flathub AppStream |
+| **Target Database Apps** | `260` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `222` (`85%`) | Fully validated and ready |
+| **Pending Backlog** | `38` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,21 +237,25 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (32)
+## Pending Backlog (38)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
 | Application | Slug | Release Source |
 | :--- | :--- | :--- |
+| **Candle** | `candle` | [`pkgforge-dev/Candle-AppImage`](https://github.com/pkgforge-dev/Candle-AppImage) |
 | **ChatGPT** | `chatgpt` | [`pkgforge-dev/ChatGPT-Desktop-AppImage`](https://github.com/pkgforge-dev/ChatGPT-Desktop-AppImage) |
 | **Chocolate Stunts** | `chocolate-stunts` | [`pkgforge-dev/Chocolate-Stunts-AppImage`](https://github.com/pkgforge-dev/Chocolate-Stunts-AppImage) |
 | **DeckCraft** | `deckcraft` | [`pkgforge-dev/DeckCraft-AppImage`](https://github.com/pkgforge-dev/DeckCraft-AppImage) |
 | **DesignCraft** | `designcraft` | [`pkgforge-dev/DesignCraft-AppImage`](https://github.com/pkgforge-dev/DesignCraft-AppImage) |
+| **Devin Desktop** | `devin-desktop` | [`pkgforge-dev/Devin-Desktop-AppImage`](https://github.com/pkgforge-dev/Devin-Desktop-AppImage) |
+| **Distrobox** | `distrobox` | [`pkgforge-dev/Distrobox-AppImage`](https://github.com/pkgforge-dev/Distrobox-AppImage) |
 | **EffectCraft** | `effectcraft` | [`pkgforge-dev/EffectCraft-AppImage`](https://github.com/pkgforge-dev/EffectCraft-AppImage) |
 | **FilmCraft** | `filmcraft` | [`pkgforge-dev/FilmCraft-AppImage`](https://github.com/pkgforge-dev/FilmCraft-AppImage) |
 | **Firefox-PowerPC64** | `firefox-powerpc64` | [`pkgforge-dev/Firefox-PowerPC64-AppImage`](https://github.com/pkgforge-dev/Firefox-PowerPC64-AppImage) |
 | **Geartowns** | `geartowns` | [`pkgforge-dev/Geartowns-AppImage`](https://github.com/pkgforge-dev/Geartowns-AppImage) |
 | **Glypha** | `glypha` | [`pkgforge-dev/Glypha-AppImage`](https://github.com/pkgforge-dev/Glypha-AppImage) |
+| **goose Desktop** | `goose-desktop` | [`pkgforge-dev/goose-Desktop-AppImage`](https://github.com/pkgforge-dev/goose-Desktop-AppImage) |
 | **GridCraft** | `gridcraft` | [`pkgforge-dev/GridCraft-AppImage`](https://github.com/pkgforge-dev/GridCraft-AppImage) |
 | **KeeperFX** | `keeperfx` | [`pkgforge-dev/KeeperFX-AppImage`](https://github.com/pkgforge-dev/KeeperFX-AppImage) |
 | **KytyPS5** | `kytyps5` | [`pkgforge-dev/KytyPS5-AppImage`](https://github.com/pkgforge-dev/KytyPS5-AppImage) |
@@ -264,11 +268,13 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **OpenCMR2** | `opencmr2` | [`pkgforge-dev/OpenCMR2-AppImage`](https://github.com/pkgforge-dev/OpenCMR2-AppImage) |
 | **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
 | **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
+| **Patchy** | `patchy` | [`pkgforge-dev/Patchy-AppImage`](https://github.com/pkgforge-dev/Patchy-AppImage) |
 | **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
 | **PhotoCraft** | `photocraft` | [`pkgforge-dev/PhotoCraft-AppImage`](https://github.com/pkgforge-dev/PhotoCraft-AppImage) |
 | **Shadow of the Wyrm** | `shadow-of-the-wyrm` | [`pkgforge-dev/Shadow-of-the-Wyrm-AppImage`](https://github.com/pkgforge-dev/Shadow-of-the-Wyrm-AppImage) |
 | **SoundCraft** | `soundcraft` | [`pkgforge-dev/SoundCraft-AppImage`](https://github.com/pkgforge-dev/SoundCraft-AppImage) |
 | **Syncthing** | `syncthing` | [`pkgforge-dev/Syncthing-AppImage`](https://github.com/pkgforge-dev/Syncthing-AppImage) |
+| **Tibia** | `tibia` | [`pkgforge-dev/Tibia-AppImage`](https://github.com/pkgforge-dev/Tibia-AppImage) |
 | **VectorCraft** | `vectorcraft` | [`pkgforge-dev/VectorCraft-AppImage`](https://github.com/pkgforge-dev/VectorCraft-AppImage) |
 | **WordCraft** | `wordcraft` | [`pkgforge-dev/WordCraft-AppImage`](https://github.com/pkgforge-dev/WordCraft-AppImage) |
 | **xed** | `xed` | [`pkgforge-dev/Xed-AppImage`](https://github.com/pkgforge-dev/Xed-AppImage) |

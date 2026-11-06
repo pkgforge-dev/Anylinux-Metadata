@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-05T11:48:38.540Z",
-  "totalAnylinuxApps": 510,
-  "flathubCoveredCount": 256,
-  "targetCount": 254,
+  "updatedAt": "2026-11-06T11:44:49.576Z",
+  "totalAnylinuxApps": 518,
+  "flathubCoveredCount": 258,
+  "targetCount": 260,
   "completedCount": 222,
-  "pendingCount": 32,
-  "progressPercent": 87,
+  "pendingCount": 38,
+  "progressPercent": 85,
   "completed": [
     {
       "name": "12to11",
@@ -1342,6 +1342,12 @@
   ],
   "pending": [
     {
+      "name": "Candle",
+      "url": "https://github.com/pkgforge-dev/Candle-AppImage",
+      "repo": "pkgforge-dev/Candle-AppImage",
+      "slug": "candle"
+    },
+    {
       "name": "ChatGPT",
       "url": "https://github.com/pkgforge-dev/ChatGPT-Desktop-AppImage",
       "repo": "pkgforge-dev/ChatGPT-Desktop-AppImage",
@@ -1364,6 +1370,18 @@
       "url": "https://github.com/pkgforge-dev/DesignCraft-AppImage",
       "repo": "pkgforge-dev/DesignCraft-AppImage",
       "slug": "designcraft"
+    },
+    {
+      "name": "Devin Desktop",
+      "url": "https://github.com/pkgforge-dev/Devin-Desktop-AppImage",
+      "repo": "pkgforge-dev/Devin-Desktop-AppImage",
+      "slug": "devin-desktop"
+    },
+    {
+      "name": "Distrobox",
+      "url": "https://github.com/pkgforge-dev/Distrobox-AppImage",
+      "repo": "pkgforge-dev/Distrobox-AppImage",
+      "slug": "distrobox"
     },
     {
       "name": "EffectCraft",
@@ -1394,6 +1412,12 @@
       "url": "https://github.com/pkgforge-dev/Glypha-AppImage",
       "repo": "pkgforge-dev/Glypha-AppImage",
       "slug": "glypha"
+    },
+    {
+      "name": "goose Desktop",
+      "url": "https://github.com/pkgforge-dev/goose-Desktop-AppImage",
+      "repo": "pkgforge-dev/goose-Desktop-AppImage",
+      "slug": "goose-desktop"
     },
     {
       "name": "GridCraft",
@@ -1468,6 +1492,12 @@
       "slug": "openrealm"
     },
     {
+      "name": "Patchy",
+      "url": "https://github.com/pkgforge-dev/Patchy-AppImage",
+      "repo": "pkgforge-dev/Patchy-AppImage",
+      "slug": "patchy"
+    },
+    {
       "name": "PdfCraft",
       "url": "https://github.com/pkgforge-dev/PdfCraft-AppImage",
       "repo": "pkgforge-dev/PdfCraft-AppImage",
@@ -1496,6 +1526,12 @@
       "url": "https://github.com/pkgforge-dev/Syncthing-AppImage",
       "repo": "pkgforge-dev/Syncthing-AppImage",
       "slug": "syncthing"
+    },
+    {
+      "name": "Tibia",
+      "url": "https://github.com/pkgforge-dev/Tibia-AppImage",
+      "repo": "pkgforge-dev/Tibia-AppImage",
+      "slug": "tibia"
     },
     {
       "name": "VectorCraft",
@@ -1584,6 +1620,7 @@
     "EDuke32",
     "Elastic",
     "Element Desktop",
+    "Emacs",
     "ET Legacy",
     "Extension Manager",
     "ExtremeTuxRacer",
@@ -1618,6 +1655,7 @@
     "Graphs",
     "gThumb",
     "Gwenview",
+    "halloy",
     "Haruna",
     "Hatari",
     "Identity",
