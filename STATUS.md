@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-11-06*
+*Last synchronized: 2026-11-07*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `518` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `519` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `258` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `260` | Exclusive non-Flathub apps requiring metadata |
+| **Target Database Apps** | `261` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `222` (`85%`) | Fully validated and ready |
-| **Pending Backlog** | `38` | Pending manifest creation or verification |
+| **Pending Backlog** | `39` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,7 +237,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (38)
+## Pending Backlog (39)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -253,6 +253,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **EffectCraft** | `effectcraft` | [`pkgforge-dev/EffectCraft-AppImage`](https://github.com/pkgforge-dev/EffectCraft-AppImage) |
 | **FilmCraft** | `filmcraft` | [`pkgforge-dev/FilmCraft-AppImage`](https://github.com/pkgforge-dev/FilmCraft-AppImage) |
 | **Firefox-PowerPC64** | `firefox-powerpc64` | [`pkgforge-dev/Firefox-PowerPC64-AppImage`](https://github.com/pkgforge-dev/Firefox-PowerPC64-AppImage) |
+| **FlatCAM** | `flatcam` | [`pkgforge-dev/FlatCAM-AppImage`](https://github.com/pkgforge-dev/FlatCAM-AppImage) |
 | **Geartowns** | `geartowns` | [`pkgforge-dev/Geartowns-AppImage`](https://github.com/pkgforge-dev/Geartowns-AppImage) |
 | **Glypha** | `glypha` | [`pkgforge-dev/Glypha-AppImage`](https://github.com/pkgforge-dev/Glypha-AppImage) |
 | **goose Desktop** | `goose-desktop` | [`pkgforge-dev/goose-Desktop-AppImage`](https://github.com/pkgforge-dev/goose-Desktop-AppImage) |

@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-06T11:44:49.576Z",
-  "totalAnylinuxApps": 518,
+  "updatedAt": "2026-11-07T10:51:04.588Z",
+  "totalAnylinuxApps": 519,
   "flathubCoveredCount": 258,
-  "targetCount": 260,
+  "targetCount": 261,
   "completedCount": 222,
-  "pendingCount": 38,
+  "pendingCount": 39,
   "progressPercent": 85,
   "completed": [
     {
@@ -1400,6 +1400,12 @@
       "url": "https://github.com/pkgforge-dev/Firefox-PowerPC64-AppImage",
       "repo": "pkgforge-dev/Firefox-PowerPC64-AppImage",
       "slug": "firefox-powerpc64"
+    },
+    {
+      "name": "FlatCAM",
+      "url": "https://github.com/pkgforge-dev/FlatCAM-AppImage",
+      "repo": "pkgforge-dev/FlatCAM-AppImage",
+      "slug": "flatcam"
     },
     {
       "name": "Geartowns",
