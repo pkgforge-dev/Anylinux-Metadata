@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T12:27:27.740Z",
-  "totalAnylinuxApps": 519,
-  "flathubCoveredCount": 258,
+  "updatedAt": "2026-11-10T12:01:50.702Z",
+  "totalAnylinuxApps": 520,
+  "flathubCoveredCount": 259,
   "targetCount": 261,
   "completedCount": 222,
   "pendingCount": 39,
@@ -1794,6 +1794,7 @@
     "Telegram",
     "Tokodon",
     "transmission-qt",
+    "TreeSheets",
     "Trelby",
     "Tutanota Desktop",
     "Tux Football",
