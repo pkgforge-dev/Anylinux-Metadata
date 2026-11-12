@@ -41,7 +41,7 @@ jobs:
         run: bun run validate
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "${{ github.event.issue.title }}"
           title: "${{ github.event.issue.title }}"
