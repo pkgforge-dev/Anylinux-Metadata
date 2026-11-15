@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-11-14T11:10:01.369Z",
-  "totalAnylinuxApps": 520,
+  "updatedAt": "2026-11-15T11:43:13.238Z",
+  "totalAnylinuxApps": 521,
   "flathubCoveredCount": 259,
-  "targetCount": 261,
+  "targetCount": 262,
   "completedCount": 222,
-  "pendingCount": 39,
+  "pendingCount": 40,
   "progressPercent": 85,
   "completed": [
     {
@@ -1496,6 +1496,12 @@
       "url": "https://github.com/pkgforge-dev/OpenRealm-AppImage",
       "repo": "pkgforge-dev/OpenRealm-AppImage",
       "slug": "openrealm"
+    },
+    {
+      "name": "OpenUnleashed",
+      "url": "https://github.com/pkgforge-dev/OpenUnleashed-AppImage",
+      "repo": "pkgforge-dev/OpenUnleashed-AppImage",
+      "slug": "openunleashed"
     },
     {
       "name": "Patchy",

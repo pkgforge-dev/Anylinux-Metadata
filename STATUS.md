@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-11-14*
+*Last synchronized: 2026-11-15*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `520` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `521` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `259` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `261` | Exclusive non-Flathub apps requiring metadata |
+| **Target Database Apps** | `262` | Exclusive non-Flathub apps requiring metadata |
 | **Completed Manifests** | `222` (`85%`) | Fully validated and ready |
-| **Pending Backlog** | `39` | Pending manifest creation or verification |
+| **Pending Backlog** | `40` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,7 +237,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (39)
+## Pending Backlog (40)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -269,6 +269,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **OpenCMR2** | `opencmr2` | [`pkgforge-dev/OpenCMR2-AppImage`](https://github.com/pkgforge-dev/OpenCMR2-AppImage) |
 | **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
 | **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
+| **OpenUnleashed** | `openunleashed` | [`pkgforge-dev/OpenUnleashed-AppImage`](https://github.com/pkgforge-dev/OpenUnleashed-AppImage) |
 | **Patchy** | `patchy` | [`pkgforge-dev/Patchy-AppImage`](https://github.com/pkgforge-dev/Patchy-AppImage) |
 | **PdfCraft** | `pdfcraft` | [`pkgforge-dev/PdfCraft-AppImage`](https://github.com/pkgforge-dev/PdfCraft-AppImage) |
 | **PhotoCraft** | `photocraft` | [`pkgforge-dev/PhotoCraft-AppImage`](https://github.com/pkgforge-dev/PhotoCraft-AppImage) |
