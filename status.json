@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-15T11:43:13.238Z",
-  "totalAnylinuxApps": 521,
+  "updatedAt": "2026-11-16T12:23:12.687Z",
+  "totalAnylinuxApps": 523,
   "flathubCoveredCount": 259,
-  "targetCount": 262,
+  "targetCount": 264,
   "completedCount": 222,
-  "pendingCount": 40,
-  "progressPercent": 85,
+  "pendingCount": 42,
+  "progressPercent": 84,
   "completed": [
     {
       "name": "12to11",
@@ -1432,6 +1432,12 @@
       "slug": "gridcraft"
     },
     {
+      "name": "KDE Partition Manager",
+      "url": "https://github.com/pkgforge-dev/KDE-Partition-Manager-AppImage",
+      "repo": "pkgforge-dev/KDE-Partition-Manager-AppImage",
+      "slug": "kde-partition-manager"
+    },
+    {
       "name": "KeeperFX",
       "url": "https://github.com/pkgforge-dev/KeeperFX-AppImage",
       "repo": "pkgforge-dev/KeeperFX-AppImage",
@@ -1490,6 +1496,12 @@
       "url": "https://github.com/pkgforge-dev/opencoduo-AppImage",
       "repo": "pkgforge-dev/opencoduo-AppImage",
       "slug": "open-cod-uo"
+    },
+    {
+      "name": "OpenKeeper",
+      "url": "https://github.com/pkgforge-dev/OpenKeeper-AppImage",
+      "repo": "pkgforge-dev/OpenKeeper-AppImage",
+      "slug": "openkeeper"
     },
     {
       "name": "OpenRealm",

@@ -1,14 +1,14 @@
 # Catalog Coverage and Status Dashboard
 
-*Last synchronized: 2026-11-15*
+*Last synchronized: 2026-11-16*
 
 | Metric | Count | Details |
 | :--- | :--- | :--- |
-| **Total AnyLinux AppImages** | `521` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| **Total AnyLinux AppImages** | `523` | [pkgforge-dev/Anylinux-AppImages](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 | **Flathub Covered** | `259` | Handled directly by Flathub AppStream |
-| **Target Database Apps** | `262` | Exclusive non-Flathub apps requiring metadata |
-| **Completed Manifests** | `222` (`85%`) | Fully validated and ready |
-| **Pending Backlog** | `40` | Pending manifest creation or verification |
+| **Target Database Apps** | `264` | Exclusive non-Flathub apps requiring metadata |
+| **Completed Manifests** | `222` (`84%`) | Fully validated and ready |
+| **Pending Backlog** | `42` | Pending manifest creation or verification |
 
 ## Completed Applications (222)
 
@@ -237,7 +237,7 @@
 | **Stoat** | [`apps/stoat.json`](apps/stoat.json) | [`stoatchat/for-desktop`](https://github.com/stoatchat/for-desktop) |
 | **Vita3K** | [`apps/vita3k.json`](apps/vita3k.json) | [`vita3k/vita3k`](https://github.com/vita3k/vita3k) |
 
-## Pending Backlog (40)
+## Pending Backlog (42)
 
 To submit an application, use the [Application Submission Form](../../issues/new?template=add-app.yml) or the [Web Editor](https://pkgforge-dev.github.io/Anylinux-Metadata/).
 
@@ -258,6 +258,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **Glypha** | `glypha` | [`pkgforge-dev/Glypha-AppImage`](https://github.com/pkgforge-dev/Glypha-AppImage) |
 | **goose Desktop** | `goose-desktop` | [`pkgforge-dev/goose-Desktop-AppImage`](https://github.com/pkgforge-dev/goose-Desktop-AppImage) |
 | **GridCraft** | `gridcraft` | [`pkgforge-dev/GridCraft-AppImage`](https://github.com/pkgforge-dev/GridCraft-AppImage) |
+| **KDE Partition Manager** | `kde-partition-manager` | [`pkgforge-dev/KDE-Partition-Manager-AppImage`](https://github.com/pkgforge-dev/KDE-Partition-Manager-AppImage) |
 | **KeeperFX** | `keeperfx` | [`pkgforge-dev/KeeperFX-AppImage`](https://github.com/pkgforge-dev/KeeperFX-AppImage) |
 | **KytyPS5** | `kytyps5` | [`pkgforge-dev/KytyPS5-AppImage`](https://github.com/pkgforge-dev/KytyPS5-AppImage) |
 | **LightCraft** | `lightcraft` | [`pkgforge-dev/LightCraft-AppImage`](https://github.com/pkgforge-dev/LightCraft-AppImage) |
@@ -268,6 +269,7 @@ To submit an application, use the [Application Submission Form](../../issues/new
 | **NSCB Desktop** | `nscb-desktop` | [`pkgforge-dev/NSCB-Desktop-AppImage-Enhanced`](https://github.com/pkgforge-dev/NSCB-Desktop-AppImage-Enhanced) |
 | **OpenCMR2** | `opencmr2` | [`pkgforge-dev/OpenCMR2-AppImage`](https://github.com/pkgforge-dev/OpenCMR2-AppImage) |
 | **Open CoD:UO** | `open-cod-uo` | [`pkgforge-dev/opencoduo-AppImage`](https://github.com/pkgforge-dev/opencoduo-AppImage) |
+| **OpenKeeper** | `openkeeper` | [`pkgforge-dev/OpenKeeper-AppImage`](https://github.com/pkgforge-dev/OpenKeeper-AppImage) |
 | **OpenRealm** | `openrealm` | [`pkgforge-dev/OpenRealm-AppImage`](https://github.com/pkgforge-dev/OpenRealm-AppImage) |
 | **OpenUnleashed** | `openunleashed` | [`pkgforge-dev/OpenUnleashed-AppImage`](https://github.com/pkgforge-dev/OpenUnleashed-AppImage) |
 | **Patchy** | `patchy` | [`pkgforge-dev/Patchy-AppImage`](https://github.com/pkgforge-dev/Patchy-AppImage) |
